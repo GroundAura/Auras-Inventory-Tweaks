@@ -1,1 +1,1 @@
-# Aura-s-Inventory-Tweaks
+# Auras-Inventory-Tweaks
