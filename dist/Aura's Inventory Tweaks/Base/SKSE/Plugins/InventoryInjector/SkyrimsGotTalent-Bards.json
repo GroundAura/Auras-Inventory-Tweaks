@@ -1,0 +1,16 @@
+{
+"$schema": "https://raw.githubusercontent.com/Exit-9B/InventoryInjector/main/docs/InventoryInjector.schema.json",
+"rules": [
+	{
+		"match": {
+			"formType": "MiscItem",
+			"keywords": [ "OCF_MiscInstrument" ]
+		},
+		"assign": {
+			"itemClass": "1",
+			"iconSource": "I4IconAddon/icons.swf",
+			"iconLabel": "misc_instrument"
+		}
+	}
+]
+}

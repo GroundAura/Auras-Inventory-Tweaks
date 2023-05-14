@@ -1,0 +1,934 @@
+{
+"$schema": "https://raw.githubusercontent.com/Exit-9B/InventoryInjector/main/docs/InventoryInjector.schema.json",
+"rules": [
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Potion",
+			"archetype": {
+				"anyOf": [
+					"CureAddiction",
+					"CureDisease",
+					"CureParalysis",
+					"CurePoison"
+				]
+			}
+		},
+		"assign": {
+			"subTypeDisplay": "$MagicCure"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Potion",
+			"archetype": "PeakValueModifier"
+		},
+		"assign": {
+			"subTypeDisplay": "$MagicFortify"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Potion",
+			"archetype": "PeakValueModifier",
+			"actorValue": "CarryWeight"
+		},
+		"assign": {
+			"subTypeDisplay": "$MagicEnhance"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Potion",
+			"archetype": "Invisibility"
+		},
+		"assign": {
+			"subTypeDisplay": "$MagicInvisibility"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Potion",
+			"actorValue": { "anyOf": [ "WaterBreathing", "WaterWalking" ] }
+		},
+		"assign": {
+			"subTypeDisplay": "$MagicEnhance"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "OCF_AlchPotion_Misc" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$Potion",
+			"iconLabel": "default_potion",
+			"iconColor": "#FFFFFF"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Potion",
+			"actorValue": "MagicResist"
+		},
+		"assign": {
+			"subTypeDisplay": "$MagicResist"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "FireResist"
+		},
+		"assign": {
+			"subTypeDisplay": "$MagicResist"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "FrostResist"
+		},
+		"assign": {
+			"subTypeDisplay": "$MagicResist"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "ElectricResist"
+		},
+		"assign": {
+			"subTypeDisplay": "$MagicResist"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Potion",
+			"actorValue": "PoisonResist"
+		},
+		"assign": {
+			"subTypeDisplay": "$MagicResist"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Potion",
+			"actorValue": { "anyOf": [ "DiseaseResist", "DamageResist" ] }
+		},
+		"assign": {
+			"subTypeDisplay": "$MagicResist"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "VendorItemPoison" ]
+		},
+		"assign": {
+			"subType": "Poison"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "OCF_AlchPoison_Food" ]
+		},
+		"assign": {
+			"iconLabel": "default_food"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Poison",
+			"keywords": [ "CACO_MagicAlchWeaponOil" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemMiscOil"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": { "anyOf": [ "OCF_AlchFood", "OCF_AlchSpoiled", "OCF_AlchBait" ] }
+		},
+		"assign": {
+			"subType": "Food"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": { "anyOf": [ "OCF_AlchDrink", "OCF_AlchDrug", "OCF_AlchSnow" ] }
+		},
+		"assign": {
+			"subType": "Drink"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Food",
+			"keywords": {
+				"anyOf": [
+					"OCF_AlchFood_Baked",
+					"VendorItemFoodPastry",
+					"VendorItemFoodPastrySmall",
+					"VendorItemFoodPastryLarge"
+				]
+			}
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemFoodBaked",
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "food_pie"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Food",
+			"keywords": {
+				"anyOf": [
+					"OCF_AlchFood_Bread",
+					"VendorItemFoodBread"
+				]
+			}
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemFoodBread",
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "food_bread"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Food",
+			"keywords": {
+				"anyOf": [
+					"OCF_AlchFood_Cheese",
+					"OCF_AlchFood_CheeseBowl",
+					"VendorItemFoodCheese",
+					"VendorItemFoodCheeseBowl"
+				]
+			}
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemFoodCheese",
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "food_cheese"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Food",
+			"keywords": {
+				"anyOf": [
+					"OCF_AlchFood_Fruit",
+					"VendorItemFoodFruit"
+				]
+			}
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemFoodFruit",
+			"iconLabel": "default_food"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Food",
+			"keywords": {
+				"anyOf": [
+					"OCF_AlchFood_Meal",
+					"VendorItemFoodMeal"
+				]
+			}
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemFoodMeal",
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "food_meal"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Food",
+			"keywords": {
+				"anyOf": [
+					"OCF_AlchFood_Stew",
+					"VendorItemFoodStew",
+					"VendorItemFoodStewSimple",
+					"VendorItemFoodStewComplex"
+				]
+			}
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemFoodStew",
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "food_stew"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Food",
+			"keywords": {
+				"anyOf": [
+					"OCF_AlchFood_Treat",
+					"VendorItemFoodTreat"
+				]
+			}
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemFoodTreat",
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "food_honeycomb"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Food",
+			"keywords": {
+				"anyOf": [
+					"OCF_AlchFood_Vegetable",
+					"VendorItemFoodVegetable"
+				]
+			}
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemFoodVegetable",
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "food_vegetable"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Food",
+			"keywords": { "anyOf": [ "OCF_IngrPlant", "OCF_IngrPlant_Flower" ] }
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_herbs"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Food",
+			"keywords": [ "OCF_IngrPlant_Mushroom" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "food_mushroom"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Food",
+			"keywords": [ "OCF_IngrPlant_Root" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_herbs"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Food",
+			"keywords": [ "OCF_IngrPlant_SoulHusk" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_herbs"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Food",
+			"keywords": {
+				"anyOf": [
+					"OCF_AlchFood_Meat",
+					"VendorItemFoodMeat"
+				]
+			}
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemFoodMeat",
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "food_meat"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Food",
+			"keywords": [ "OCF_AlchFood_MeatRaw" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemFoodMeatRaw",
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "food_meat"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Food",
+			"keywords": [ "OCF_IngrRemains_BugBee" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_bee"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Food",
+			"keywords": [ "OCF_IngrRemains_BugDragonfly" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_dragonfly"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Food",
+			"keywords": [ "OCF_IngrRemains_OrganEye" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_eyeball"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Food",
+			"keywords": [ "OCF_IngrRemains_OrganHeart" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_heart"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Food",
+			"keywords": {
+				"anyOf": [
+					"OCF_AlchFood_Seafood",
+					"VendorItemFoodSeafood"
+				]
+			}
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemFoodSeafood",
+			"iconSource": "BOOBIES Immersive Icons/food.swf",
+			"iconLabel": "crab"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Food",
+			"keywords": [ "OCF_AlchFood_SeafoodRaw" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemFoodSeafoodRaw"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Food",
+			"keywords": {
+				"anyOf": [
+					"OCF_AlchFood_Fish",
+					"VendorItemFoodFish"
+				]
+			}
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemFoodFish",
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "food_fish"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Food",
+			"keywords": [ "OCF_AlchFood_FishRaw" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemFoodFishRaw"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Food",
+			"keywords": {
+				"anyOf": [
+					"OCF_AlchFood_Egg",
+					"VendorItemFoodEgg"
+				]
+			}
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemFoodEgg",
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "food_egg"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Food",
+			"keywords": [ "OCF_AlchFood_EggRaw" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemFoodEggRaw",
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "food_egg"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Drink",
+			"keywords": {
+				"anyOf": [
+					"OCF_AlchDrinkAlcohol",
+					"VendorItemDrinkAlcohol",
+					"VendorItemDrinkAlcoholWeak",
+					"VendorItemDrinkAlcoholModerate",
+					"VendorItemDrinkAlcoholStrong"
+				]
+			}
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemFoodAlcohol"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Drink",
+			"keywords": [ "OCF_AlchDrink_Coffee" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemFoodCoffee"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Drink",
+			"keywords": [ "OCF_AlchDrink_Juice" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemFoodJuice"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Drink",
+			"keywords": {
+				"anyOf": [
+					"OCF_AlchDrink_Milk",
+					"VendorItemDrinkMilk"
+				]
+			}
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemFoodMilk"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Drink",
+			"keywords": [ "OCF_AlchDrink_MilkRaw" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemFoodMilkRaw"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Drink",
+			"keywords": [ "OCF_AlchDrink_Tea" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemFoodTea"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Drink",
+			"keywords": {
+				"anyOf": [
+					"OCF_AlchDrink_Water",
+					"VendorItemDrinkWater"
+				]
+			}
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemFoodWater"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Drink",
+			"keywords": [ "OCF_AlchDrink_WaterRaw" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemFoodWaterRaw"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Drink",
+			"keywords": { "anyOf": [ "OCF_AlchDrink_WaterSalt", "_SHSaltWaterKeyword" ] }
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemFoodWaterSalt"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Drink",
+			"keywords": [ "OCF_AlchSnow" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemFoodSnow",
+			"iconLabel": "magic_frost",
+			"iconColor": "#FFFFFF"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Drink",
+			"keywords": [ "OCF_AlchDrug" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemPotionDrug",
+			"iconSource": "AIT/Aura/icons.swf",
+			"iconLabel": "potion_skooma"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Drink",
+			"keywords": [ "OCF_AlchDrugSap" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemPotionSap"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Drink",
+			"keywords": {
+				"anyOf": [
+					"OCF_AlchDrugSkooma",
+					"VendorItemDrinkSkoomaWeak",
+					"VendorItemDrinkSkoomaStrong"
+				]
+			}
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemPotionSkooma"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Drink",
+			"keywords": [ "OCF_AlchDrugTonic" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemPotionTonic"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": { "anyOf": [ "Food", "Drink" ] },
+			"keywords": {
+				"anyOf": [
+					"OCF_AlchFood_Ingredient",
+					"VendorItemFoodDryGoods",
+					"VendorItemFoodFat"
+				]
+			}
+		},
+		"assign": {
+			"subTypeDisplay": "$Ingredient"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": { "anyOf": [ "Food", "Drink" ] },
+			"keywords": [ "OCF_AlchFood_IngredientRaw" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemFoodIngredientRaw"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": { "anyOf": [ "Food", "Drink" ] },
+			"keywords": [ "OCF_AlchBait" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemFoodBait"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": { "anyOf": [ "Food", "Drink" ] },
+			"keywords": [ "OCF_AlchSpoiled" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemFoodSpoiled"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": {
+				"anyOf": [
+					"OCF_AlchBlood",
+					"OCF_AlchBlood_Creature",
+					"OCF_AlchBlood_Humanoid",
+					"OCF_AlchBlood_Werebeast",
+					"AlchIsBlood",
+					"_SHBloodDrink",
+					"VendorItemDrinkBloodPotion"
+				]
+			}
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemPotionBlood",
+			"iconLabel": "default_potion"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "OCF_AlchPoison_Food" ]
+		},
+		"assign": {
+			"itemType": "3",
+			"itemClass": "8",
+			"subTypeDisplay": "$ItemFoodPoisoned"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": {
+				"anyOf": [
+						"OCF_VesselBag",
+						"OCF_VesselSack"
+					]
+				}
+		},
+		"assign": {
+			"iconLabel": "misc_goldsack"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": {
+				"anyOf": [
+						"OCF_VesselBottleDunmer",
+						"_SH_SujammaBottleKeyword",
+						"OCF_VesselBottleWine",
+						"_SH_WineBottleKeyword",
+						"OCF_VesselCup",
+						"OCF_VesselFlagon",
+						"OCF_VesselFlask",
+						"OCF_VesselJug",
+						"OCF_VesselKettle",
+						"OCF_VesselTankard",
+						"OCF_VesselWaterskin"
+					]
+				}
+		},
+		"assign": {
+			"iconLabel": "food_wine"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": {
+				"anyOf": [
+					"OCF_VesselBottleMead",
+					"_SH_MeadBottleKeyword"
+				]
+			}
+		},
+		"assign": {
+			"iconLabel": "food_beer"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "OCF_VesselBottleSkooma" ]
+		},
+		"assign": {
+			"iconSource": "AIT/Aura/icons.swf",
+			"iconLabel": "potion_skooma"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": { "anyOf": [ "Food", "Drink" ] },
+			"keywords": [ "OCF_VesselBottlePotion" ]
+		},
+		"assign": {
+			"iconLabel": "default_potion"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": { "anyOf": [ "Food", "Drink" ] },
+			"keywords": [ "OCF_VesselBowl" ]
+		},
+		"assign": {
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "food_stew"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "OCF_VesselSmokingPipe" ]
+		},
+		"assign": {
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "misc_drug"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "OCF_ArtifactDaedric_Bittercup" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$Artifact",
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_amphora"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "OCF_ArtifactLegendary_WhitePhial" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$Artifact"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "OCF_AlchFood_EggMagic" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemFoodEggMagic",
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "food_magicegg"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": { "anyOf": [ "WAF_WeapTypeGrenade", "BOS_SmokeBombKeyword" ] }
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemWeaponBomb",
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "weapon_bomb",
+			"iconColor": "#A4A5BF"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": { "anyOf": [ "OCF_RelicAyleid_Crystal", "IconAyleidCrystal" ] }
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemMiscAyleidCrystal",
+			"iconSource": "I4IconAddon/icons.swf",
+			"iconLabel": "soulgem_ayleidcrystalfull",
+			"iconColor": "#5BC4C9"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": { "anyOf": [ "OCF_MiscCampingGear", "IconCampsite" ] }
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemMiscCampingGear",
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_tent",
+			"iconColor": "#BF8E60"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "OCF_RelicDwarven_Fairy" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemMiscRelic",
+			"iconSource": "I4IconAddon/icons.swf",
+			"iconLabel": "misc_dwarvenscrap",
+			"iconColor": "#705F32"
+		}
+	}
+]
+}

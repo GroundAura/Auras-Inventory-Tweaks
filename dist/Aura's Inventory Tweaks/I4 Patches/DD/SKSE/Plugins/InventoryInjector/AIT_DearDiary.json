@@ -1,0 +1,552 @@
+{
+"$schema": "https://raw.githubusercontent.com/Exit-9B/InventoryInjector/main/docs/InventoryInjector.schema.json",
+"rules": [
+	{
+		"match": {
+			"iconColor": { "anyOf": [ null, "#FFFFFF" ] }
+		},
+		"assign": {
+			"iconColor": "#2A2A2A"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "FoodTypeSnow" ]
+		},
+		"assign": {
+			"iconColor": "#DDDDDD"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
+			"keywords": [ "FoodTypeSnow" ]
+		},
+		"assign": {
+			"iconColor": "#DDDDDD"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#A4A5BF"
+		},
+		"assign": {
+			"iconColor": "#2A2A2A"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#A89E8C"
+		},
+		"assign": {
+			"iconColor": "#2A2A2A"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#EDDA87"
+		},
+		"assign": {
+			"iconColor": "#2A2A2A"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#8F6B46"
+		},
+		"assign": {
+			"iconColor": "#412600"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#4C9EA4"
+		},
+		"assign": {
+			"iconColor": "#006A70"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#C73636"
+		},
+		"assign": {
+			"iconColor": "#990033"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#993899"
+		},
+		"assign": {
+			"iconColor": "#5E2B72"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#00AC00"
+		},
+		"assign": {
+			"iconColor": "#1E5419"
+		}
+	},
+	{
+		"match": {
+			"iconLabel": "potion_frost"
+		},
+		"assign": {
+			"iconColor": "#00575E"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#DB2E73"
+		},
+		"assign": {
+			"iconColor": "#990033"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#51DB2E"
+		},
+		"assign": {
+			"iconColor": "#006D00"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#2E9FDB"
+		},
+		"assign": {
+			"iconColor": "#005FAF"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#CCCC33"
+		},
+		"assign": {
+			"iconColor": "#FFD700"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#1FFBFF"
+		},
+		"assign": {
+			"iconColor": "#005FAF"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#EAAB00"
+		},
+		"assign": {
+			"iconColor": "#714700"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#828282"
+		},
+		"assign": {
+			"iconColor": "#3C4554"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#FFB0D1"
+		},
+		"assign": {
+			"iconColor": "#733050"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#AD00B3"
+		},
+		"assign": {
+			"iconColor": "#74007D"
+		}
+	},
+	{
+		"match": {
+			"iconColor": { "anyOf": [ "#ABA3FF", "#E3E0FF", "#D7D4FF", "#C0BAFF", "#948BFC" ] }
+		},
+		"assign": {
+			"iconColor": "#005FAF"
+		}
+	},
+	{
+		"match": {
+			"iconColor": { "anyOf": [ "#756000", "#DBB36E", "#BABD23" ] }
+		},
+		"assign": {
+			"iconColor": "#594819"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#6B7585"
+		},
+		"assign": {
+			"iconColor": "#3C4554"
+		}
+	},
+
+	{
+		"match": {
+			"iconColor": "#75664D"
+		},
+		"assign": {
+			"iconColor": "#443720"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#FFFF00"
+		},
+		"assign": {
+			"iconColor": "#FFAA00"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#634538"
+		},
+		"assign": {
+			"iconColor": "#593E32"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#8E745B"
+		},
+		"assign": {
+			"iconColor": "#5B442D"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#FFD867"
+		},
+		"assign": {
+			"iconColor": "#FFC61F"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#F9A602"
+		},
+		"assign": {
+			"iconColor": "#F9A602"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#8FA0A5"
+		},
+		"assign": {
+			"iconColor": "#607278"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#7A0505"
+		},
+		"assign": {
+			"iconColor": "#7A0505"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#7F5F23"
+		},
+		"assign": {
+			"iconColor": "#664C1C"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#6F3729"
+		},
+		"assign": {
+			"iconColor": "#6F3729"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#F9906F"
+		},
+		"assign": {
+			"iconColor": "#F8754C"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#C9B889"
+		},
+		"assign": {
+			"iconColor": "#6D4000"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#EBAF4C"
+		},
+		"assign": {
+			"iconColor": "#E69C22"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#216E23"
+		},
+		"assign": {
+			"iconColor": "#216E23"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#FFC878"
+		},
+		"assign": {
+			"iconColor": "#FF9A07"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#005493"
+		},
+		"assign": {
+			"iconColor": "#005493"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#712754"
+		},
+		"assign": {
+			"iconColor": "#66234C"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#4D3911"
+		},
+		"assign": {
+			"iconColor": "#4D3911"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#8E2129"
+		},
+		"assign": {
+			"iconColor": "#721A21"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#5BC4C9"
+		},
+		"assign": {
+			"iconColor": "#2B8084"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#BF8E60"
+		},
+		"assign": {
+			"iconColor": "#7B5531"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#62A636"
+		},
+		"assign": {
+			"iconColor": "#457426"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#345F4C"
+		},
+		"assign": {
+			"iconColor": "#223E31"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#705F32"
+		},
+		"assign": {
+			"iconColor": "#5A4C28"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#78558E"
+		},
+		"assign": {
+			"iconColor": "#5A406A"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#8B7C5A"
+		},
+		"assign": {
+			"iconColor": "#61573F"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#FFCC99"
+		},
+		"assign": {
+			"iconColor": "#FFAD5C"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#059142"
+		},
+		"assign": {
+			"iconColor": "#05823B"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#7569FF"
+		},
+		"assign": {
+			"iconColor": "#5E2B72"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#4A592A"
+		},
+		"assign": {
+			"iconColor": "#435026"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#9328FF"
+		},
+		"assign": {
+			"iconColor": "#6700CE"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#68FBFF"
+		},
+		"assign": {
+			"iconColor": "#008C90"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#3B55FF"
+		},
+		"assign": {
+			"iconColor": "#1C3AFF"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#855A41"
+		},
+		"assign": {
+			"iconColor": "#503627"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#6ED117"
+		},
+		"assign": {
+			"iconColor": "#427D0E"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#AA845E"
+		},
+		"assign": {
+			"iconColor": "#795C40"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#FF8700"
+		},
+		"assign": {
+			"iconColor": "#FF931A"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#583FFF"
+		},
+		"assign": {
+			"iconColor": "#3C1FFF"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#CDCBC4"
+		},
+		"assign": {
+			"iconColor": "#D2D0CA"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#4F4F4F"
+		},
+		"assign": {
+			"iconColor": "#3F3F3F"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#E0642F"
+		},
+		"assign": {
+			"iconColor": "#E0642F"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#D8CA9E"
+		},
+		"assign": {
+			"iconColor": "#D8CA9E"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#A14040"
+		},
+		"assign": {
+			"iconColor": "#A14040"
+		}
+	},
+	{
+		"match": {
+			"iconColor": "#FFD700"
+		},
+		"assign": {
+			"iconColor": "#FFD700"
+		}
+	}
+]
+}

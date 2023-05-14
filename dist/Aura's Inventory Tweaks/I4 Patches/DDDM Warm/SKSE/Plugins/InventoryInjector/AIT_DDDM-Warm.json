@@ -1,0 +1,31 @@
+{
+"$schema": "https://raw.githubusercontent.com/Exit-9B/InventoryInjector/main/docs/InventoryInjector.schema.json",
+"rules": [
+	{
+		"match": {
+			"iconColor": { "anyOf": [ null, "#FFFFFF" ] }
+		},
+		"assign": {
+			"iconColor": "#FFCC99"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "FoodTypeSnow" ]
+		},
+		"assign": {
+			"iconColor": "#FFFFFF"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
+			"keywords": [ "FoodTypeSnow" ]
+		},
+		"assign": {
+			"iconColor": "#FFFFFF"
+		}
+	}
+]
+}

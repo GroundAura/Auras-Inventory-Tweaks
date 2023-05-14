@@ -1,0 +1,79 @@
+{
+"$schema": "https://raw.githubusercontent.com/Exit-9B/InventoryInjector/main/docs/InventoryInjector.schema.json",
+"rules": [
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "_SH_SoupKeyword" ]
+		},
+		"assign": {
+			"SHHunger": "75",
+			"SHThirst": "20",
+			"SHFW": "20"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "_SH_HeavyFoodKeyword" ]
+		},
+		"assign": {
+			"SHHunger": "125"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "_SH_MediumFoodKeyword" ]
+		},
+		"assign": {
+			"SHHunger": "75"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "_SH_LightFoodKeyword" ]
+		},
+		"assign": {
+			"SHHunger": "40"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "_SH_DrinkKeyword" ]
+		},
+		"assign": {
+			"SHThirst": "80"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "_SH_AlcoholDrinkKeyword" ]
+		},
+		"assign": {
+			"SHThirst": "40"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "_SHSaltWaterKeyword" ]
+		},
+		"assign": {
+			"SHThirst": "-20"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "_SHHotBeverage" ]
+		},
+		"assign": {
+			"SHFW": "10"
+		}
+	}
+]
+}

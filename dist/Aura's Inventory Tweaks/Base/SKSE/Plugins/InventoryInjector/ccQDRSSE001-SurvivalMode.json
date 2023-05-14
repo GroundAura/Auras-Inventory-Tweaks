@@ -1,0 +1,59 @@
+{
+"$schema": "https://raw.githubusercontent.com/Exit-9B/InventoryInjector/main/docs/InventoryInjector.schema.json",
+"rules": [
+	{
+		"match": {
+			"formType": "Potion",
+			"effectKeywords": ["CCSM_RestoreHungerLarge" ]
+		},
+		"assign": {
+			"infoHunger": "380"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"effectKeywords": ["CCSM_RestoreHungerMedium" ]
+		},
+		"assign": {
+			"infoHunger": "220"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"effectKeywords": ["CCSM_RestoreHungerSmall" ]
+		},
+		"assign": {
+			"infoHunger": "18"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"effectKeywords": ["CCSM_RestoreHungerTiny" ]
+		},
+		"assign": {
+			"infoHunger": "2"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"effectKeywords": ["CCSM_RestoreCold" ]
+		},
+		"assign": {
+			"restoreCold": "200"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"effectKeywords": ["CCSM_FortifyWarmth" ]
+		},
+		"assign": {
+			"fWarmth": "25"
+		}
+	}
+]
+}
