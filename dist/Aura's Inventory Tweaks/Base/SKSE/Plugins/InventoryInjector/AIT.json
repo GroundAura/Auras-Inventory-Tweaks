@@ -1,5 +1,5 @@
 {
-	"$schema": "https://raw.githubusercontent.com/Exit-9B/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
 	"rules": [
 		{
 			"match": {
