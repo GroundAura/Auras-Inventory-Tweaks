@@ -6019,7 +6019,7 @@
 		{
 			"match": {
 				"formType": "MiscItem",
-				"keywords": { "anyOf": [ "OCF_AnimalPartKarstaag", "OCF_IngrRemains_BoneSkull_Karstaag" ] }
+				"keywords": { "anyOf": [ "OCF_AnimalPartKarstaag", "OCF_IngrRemains_BoneSkull_FrostGiant" ] }
 			},
 			"assign": {
 				"iconSource": "AIT/Aura/icons.swf",
@@ -7316,6 +7316,15 @@
 		{
 			"match": {
 				"formType": "MiscItem",
+				"keywords": [ "OCF_VesselTorch" ]
+			},
+			"assign": {
+				"iconLabel": "misc_torch"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
 				"keywords": [ "OCF_VesselVial" ]
 			},
 			"assign": {
@@ -7521,6 +7530,15 @@
 		{
 			"match": {
 				"formType": "MiscItem",
+				"keywords": [ "OCF_ArtifactDaedric_ObsidianHusk" ]
+			},
+			"assign": {
+				"iconLabel": "misc_ore"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
 				"keywords": [ "OCF_ArtifactDaedric_SkeletonKey" ]
 			},
 			"assign": {
@@ -7666,6 +7684,84 @@
 		{
 			"match": {
 				"formType": "SoulGem",
+				"keywords": { "anyOf": [ "OCF_SlgmBloodCommon", "OCF_SlgmRoseCommon" ] },
+				"status": "Empty"
+			},
+			"assign": {
+				"iconLabel": "soulgem_empty"
+			}
+		},
+		{
+			"match": {
+				"formType": "SoulGem",
+				"keywords": { "anyOf": [ "OCF_SlgmBloodCommon", "OCF_SlgmRoseCommon" ] },
+				"status": "Partial"
+			},
+			"assign": {
+				"iconLabel": "soulgem_partial"
+			}
+		},
+		{
+			"match": {
+				"formType": "SoulGem",
+				"keywords": { "anyOf": [ "OCF_SlgmBloodCommon", "OCF_SlgmRoseCommon" ] },
+				"status": "Full"
+			},
+			"assign": {
+				"iconLabel": "soulgem_full"
+			}
+		},
+		{
+			"match": {
+				"formType": "SoulGem",
+				"keywords": [ "OCF_SlgmBloodGreat" ],
+				"status": "Empty"
+			},
+			"assign": {
+				"iconLabel": "soulgem_grandempty"
+			}
+		},
+		{
+			"match": {
+				"formType": "SoulGem",
+				"keywords": [ "OCF_SlgmBloodGreat" ],
+				"status": "Partial"
+			},
+			"assign": {
+				"iconLabel": "soulgem_grandpartial"
+			}
+		},
+		{
+			"match": {
+				"formType": "SoulGem",
+				"keywords": [ "OCF_SlgmBloodGreat" ],
+				"status": "Full"
+			},
+			"assign": {
+				"iconLabel": "soulgem_grandfull"
+			}
+		},
+		{
+			"match": {
+				"formType": "SoulGem",
+				"keywords": { "anyOf": [ "OCF_SlgmBloodCommon", "OCF_SlgmBloodGreat" ] }
+			},
+			"assign": {
+				"iconColor": "#8E2129"
+			}
+		},
+		{
+			"match": {
+				"formType": "SoulGem",
+				"keywords": [ "OCF_SlgmRoseCommon" ]
+			},
+			"assign": {
+				"iconColor": "#FF5050"
+			}
+		},
+		{
+			"match": {
+				"formType": "SoulGem",
 				"keywords": [ "OCF_AmmoTypeBullet" ]
 			},
 			"assign": {
@@ -7693,7 +7789,7 @@
 		{
 			"match": {
 				"formType": "SoulGem",
-				"keywords": [ "OCF_ReplicaDaedric_AzuraStar" ]
+				"keywords": { "anyOf": [ "OCF_ReplicaDaedric_AzuraStar", "OCF_ReplicaDaedric_BlackStar" ] }
 			},
 			"assign": {
 				"iconLabel": "soulgem_azura"
