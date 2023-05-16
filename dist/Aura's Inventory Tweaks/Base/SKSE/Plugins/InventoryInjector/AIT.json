@@ -2079,23 +2079,23 @@
 		{
 			"match": {
 				"formType": "Armor",
-				"keywords": [ "OCF_HeadTypeMaskCloth" ]
-			},
-			"assign": {
-				"subTypeDisplay": "$ItemArmorFace",
-				"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
-				"iconLabel": "armor_facemask"
-			}
-		},
-		{
-			"match": {
-				"formType": "Armor",
 				"keywords": [ "OCF_HeadTypeMaskEyes" ]
 			},
 			"assign": {
 				"subTypeDisplay": "$ItemArmorFace",
 				"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
 				"iconLabel": "armor_smallmask"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [ "OCF_HeadTypeMaskMouth" ]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorFace",
+				"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+				"iconLabel": "armor_facemask"
 			}
 		},
 		{
@@ -2468,7 +2468,7 @@
 		{
 			"match": {
 				"formType": "Armor",
-				"keywords": [ "OCF_FeetTypeShoes" ]
+				"keywords": { "anyOf": [ "OCF_FeetTypeBarefoot", "OCF_FeetTypeShoes" ] }
 			},
 			"assign": {
 				"subTypeDisplay": "$Feet",
