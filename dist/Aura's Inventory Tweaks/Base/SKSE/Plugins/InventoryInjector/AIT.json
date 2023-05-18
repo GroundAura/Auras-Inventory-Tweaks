@@ -7639,52 +7639,7 @@
 		{
 			"match": {
 				"formType": "SoulGem",
-				"formId": "Skyrim.esm|43E26"
-			},
-			"assign": {
-				"iconLabel": "soulgem_grandempty"
-			}
-		},
-		{
-			"match": {
-				"formType": "SoulGem",
-				"keywords": [ "OCF_SlgmBXX" ],
-				"status": "Empty"
-			},
-			"assign": {
-				"canHoldNPCSoul": "1",
-				"iconLabel": "soulgem_empty",
-				"iconColor": "#7569FF"
-			}
-		},
-		{
-			"match": {
-				"formType": "SoulGem",
-				"keywords": [ "OCF_SlgmBXX" ],
-				"status": "Partial"
-			},
-			"assign": {
-				"canHoldNPCSoul": "1",
-				"iconLabel": "soulgem_partial",
-				"iconColor": "#7569FF"
-			}
-		},
-		{
-			"match": {
-				"formType": "SoulGem",
-				"keywords": [ "OCF_SlgmBXX" ],
-				"status": "Full"
-			},
-			"assign": {
-				"canHoldNPCSoul": "1",
-				"iconLabel": "soulgem_full",
-				"iconColor": "#7569FF"
-			}
-		},
-		{
-			"match": {
-				"formType": "SoulGem",
-				"keywords": { "anyOf": [ "OCF_SlgmBloodCommon", "OCF_SlgmRoseCommon" ] },
+				"keywords": { "anyOf": [ "OCF_SlgmShapePetty", "OCF_SlgmShapeLesser", "OCF_SlgmShapeCommon", "OCF_SlgmShapeBlack" ] },
 				"status": "Empty"
 			},
 			"assign": {
@@ -7694,7 +7649,7 @@
 		{
 			"match": {
 				"formType": "SoulGem",
-				"keywords": { "anyOf": [ "OCF_SlgmBloodCommon", "OCF_SlgmRoseCommon" ] },
+				"keywords": { "anyOf": [ "OCF_SlgmShapePetty", "OCF_SlgmShapeLesser", "OCF_SlgmShapeCommon", "OCF_SlgmShapeBlack" ] },
 				"status": "Partial"
 			},
 			"assign": {
@@ -7704,7 +7659,7 @@
 		{
 			"match": {
 				"formType": "SoulGem",
-				"keywords": { "anyOf": [ "OCF_SlgmBloodCommon", "OCF_SlgmRoseCommon" ] },
+				"keywords": { "anyOf": [ "OCF_SlgmShapePetty", "OCF_SlgmShapeLesser", "OCF_SlgmShapeCommon", "OCF_SlgmShapeBlack" ] },
 				"status": "Full"
 			},
 			"assign": {
@@ -7714,7 +7669,7 @@
 		{
 			"match": {
 				"formType": "SoulGem",
-				"keywords": [ "OCF_SlgmBloodGreat" ],
+				"keywords": { "anyOf": [ "OCF_SlgmShapeGreater", "OCF_SlgmShapeGrand" ] },
 				"status": "Empty"
 			},
 			"assign": {
@@ -7724,7 +7679,7 @@
 		{
 			"match": {
 				"formType": "SoulGem",
-				"keywords": [ "OCF_SlgmBloodGreat" ],
+				"keywords": { "anyOf": [ "OCF_SlgmShapeGreater", "OCF_SlgmShapeGrand" ] },
 				"status": "Partial"
 			},
 			"assign": {
@@ -7734,7 +7689,7 @@
 		{
 			"match": {
 				"formType": "SoulGem",
-				"keywords": [ "OCF_SlgmBloodGreat" ],
+				"keywords": { "anyOf": [ "OCF_SlgmShapeGreater", "OCF_SlgmShapeGrand" ] },
 				"status": "Full"
 			},
 			"assign": {
@@ -7744,7 +7699,17 @@
 		{
 			"match": {
 				"formType": "SoulGem",
-				"keywords": { "anyOf": [ "OCF_SlgmBloodCommon", "OCF_SlgmBloodGreat" ] }
+				"keywords": { "anyOf": [ "OCF_SlgmBXX", "OCF_SlgmBlack" ] }
+			},
+			"assign": {
+				"canHoldNPCSoul": "1",
+				"iconColor": "#7569FF"
+			}
+		},
+		{
+			"match": {
+				"formType": "SoulGem",
+				"keywords": [ "OCF_SlgmBasic_Blood" ]
 			},
 			"assign": {
 				"iconColor": "#8E2129"
@@ -7753,46 +7718,10 @@
 		{
 			"match": {
 				"formType": "SoulGem",
-				"keywords": [ "OCF_SlgmRoseCommon" ]
+				"keywords": [ "OCF_SlgmBasic_Rose" ]
 			},
 			"assign": {
 				"iconColor": "#FF5050"
-			}
-		},
-		{
-			"match": {
-				"formType": "SoulGem",
-				"keywords": [ "OCF_AmmoTypeBullet" ]
-			},
-			"assign": {
-				"equipType": "3",
-				"equipTypeDisplay": "$EqpAmmo",
-				"itemType": "1",
-				"itemClass": "6",
-				"itemSort": "1",
-				"subTypeDisplay": "$ItemAmmoBullet",
-				"iconSource": "AIT/MoreIcons/icons.swf",
-				"iconLabel": "weapon_bullet",
-				"iconColor": "#A89E8C"
-			}
-		},
-		{
-			"match": {
-				"formType": "SoulGem",
-				"keywords": { "anyOf": [ "OCF_ArtifactDaedric_AzuraStar", "OCF_ArtifactDaedric_BlackStar" ] }
-			},
-			"assign": {
-				"subTypeDisplay": "$Artifact",
-				"iconLabel": "soulgem_azura"
-			}
-		},
-		{
-			"match": {
-				"formType": "SoulGem",
-				"keywords": { "anyOf": [ "OCF_ReplicaDaedric_AzuraStar", "OCF_ReplicaDaedric_BlackStar" ] }
-			},
-			"assign": {
-				"iconLabel": "soulgem_azura"
 			}
 		},
 		{
@@ -7842,7 +7771,8 @@
 			"assign": {
 				"subTypeDisplay": "$ItemMiscSigilStone",
 				"iconSource": "AIT/Aura/icons.swf",
-				"iconLabel": "misc_artifactdaedra"
+				"iconLabel": "misc_artifactdaedra",
+				"iconColor": "#A14040"
 			}
 		},
 		{
@@ -7882,6 +7812,59 @@
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "soulgem_tomatofull",
 				"iconColor": "#7A0505"
+			}
+		},
+		{
+			"match": {
+				"formType": "SoulGem",
+				"keywords": [ "OCF_Artifact" ]
+			},
+			"assign": {
+				"subTypeDisplay": "$Artifact"
+			}
+		},
+		{
+			"match": {
+				"formType": "SoulGem",
+				"keywords": { "anyOf": [ "OCF_ArtifactDaedric", "OCF_RarityDaedric" ] }
+			},
+			"assign": {
+				"iconColor": "#A14040"
+			}
+		},
+		{
+			"match": {
+				"formType": "SoulGem",
+				"keywords": [ "OCF_ArtifactDaedric_BlackStar" ]
+			},
+			"assign": {
+				"iconColor": "#7569FF"
+			}
+		},
+		{
+			"match": {
+				"formType": "SoulGem",
+				"keywords": { "anyOf": [ "OCF_ArtifactDaedric_AzuraStar", "OCF_ArtifactDaedric_BlackStar", "OCF_ReplicaDaedric_AzuraStar", "OCF_ReplicaDaedric_BlackStar", "OCF_SlgmShapeStar" ] }
+			},
+			"assign": {
+				"iconLabel": "soulgem_azura"
+			}
+		},
+		{
+			"match": {
+				"formType": "SoulGem",
+				"keywords": [ "OCF_AmmoTypeBullet" ]
+			},
+			"assign": {
+				"equipType": "3",
+				"equipTypeDisplay": "$EqpAmmo",
+				"itemType": "1",
+				"itemClass": "6",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemAmmoBullet",
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "weapon_bullet",
+				"iconColor": "#A89E8C"
 			}
 		},
 		{
