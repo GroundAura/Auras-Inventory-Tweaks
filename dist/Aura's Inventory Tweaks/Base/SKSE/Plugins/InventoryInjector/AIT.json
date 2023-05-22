@@ -2263,8 +2263,28 @@
 				"keywords": [ "OCF_BodyTypeTorso" ]
 			},
 			"assign": {
-				"subType": "Body",
+				"iconLabel": "clothing_body",
 				"subTypeDisplay": "$ItemArmorTorso"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [ "OCF_BodyTypeTorso" ],
+				"weightClass": "Light"
+			},
+			"assign": {
+				"iconLabel": "lightarmor_body"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [ "OCF_BodyTypeTorso" ],
+				"weightClass": "Heavy"
+			},
+			"assign": {
+				"iconLabel": "armor_body"
 			}
 		},
 		{
@@ -2282,6 +2302,16 @@
 			"match": {
 				"formType": "Armor",
 				"keywords": [ "OCF_BodyTypeUnderwear_FullF" ]
+			},
+			"assign": {
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "clothing_lingerie"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [ "OCF_BodyTypeLingerie" ]
 			},
 			"assign": {
 				"iconSource": "AIT/MoreIcons/icons.swf",
