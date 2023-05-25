@@ -2498,7 +2498,7 @@
 		{
 			"match": {
 				"formType": "Armor",
-				"keywords": { "anyOf": [ "OCF_FeetTypeBarefoot", "OCF_FeetTypeShoes" ] }
+				"keywords": { "anyOf": [ "OCF_FeetTypeFootwraps", "OCF_FeetTypeSandals", "OCF_FeetTypeShoes" ] }
 			},
 			"assign": {
 				"subTypeDisplay": "$Feet",
@@ -2682,7 +2682,7 @@
 				"keywords": [ "OCF_AccessoryBelt" ]
 			},
 			"assign": {
-				"subTypeDisplay": "$ItemArmorBelt",
+				"subTypeDisplay": "$ItemArmorAccessory",
 				"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
 				"iconLabel": "armor_belt"
 			}
@@ -2725,7 +2725,7 @@
 		{
 			"match": {
 				"formType": "Armor",
-				"keywords": [ "OCF_ToolLantern_Paper" ]
+				"keywords": [ "OCF_ToolLanternPaper" ]
 			},
 			"assign": {
 				"iconSource": "AIT/MoreIcons/icons.swf",
@@ -2735,7 +2735,7 @@
 		{
 			"match": {
 				"formType": "Armor",
-				"keywords": { "anyOf": [ "OCF_ToolLantern_Bug", "OCF_MiscBugJar" ] }
+				"keywords": [ "OCF_MiscBugJar" ]
 			},
 			"assign": {
 				"iconSource": "I4IconAddon/icons.swf",
@@ -5238,15 +5238,6 @@
 		{
 			"match": {
 				"formType": "Book",
-				"keywords": [ "OCF_BookBindingJournal" ]
-			},
-			"assign": {
-				"iconLabel": "book_journal"
-			}
-		},
-		{
-			"match": {
-				"formType": "Book",
 				"keywords": [ "OCF_BookBindingNote" ]
 			},
 			"assign": {
@@ -5348,7 +5339,8 @@
 				"bookType": "Note",
 				"itemClass": "2",
 				"subTypeDisplay": "$Map",
-				"iconLabel": "book_map"
+				"iconLabel": "book_map",
+				"iconColor": "#C2A487"
 			}
 		},
 		{
@@ -5359,7 +5351,19 @@
 			"assign": {
 				"subTypeDisplay": "$ItemBookMissive",
 				"iconSource": "BOOBIES Immersive Icons/books.swf",
-				"iconLabel": "book_missive"
+				"iconLabel": "book_missive",
+				"iconColor": "#B4B454"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"keywords": [ "OCF_BookTextRansom" ]
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/books.swf",
+				"iconLabel": "book_missive",
+				"iconColor": "#7B2424"
 			}
 		},
 		{
@@ -5618,10 +5622,11 @@
 			"match": {
 				"formType": "Book",
 				"bookType": "Book",
-				"keywords": { "anyOf": [ "OCF_BookBindingJournal", "VendorItemJournal" ] }
+				"keywords": [ "OCF_BookBindingJournal" ]
 			},
 			"assign": {
-				"iconLabel": "book_journal"
+				"iconLabel": "book_journal",
+				"iconColor":"#685629"
 			}
 		},
 		{
@@ -7182,7 +7187,8 @@
 			},
 			"assign": {
 				"subTypeDisplay": "$Map",
-				"iconLabel": "book_map"
+				"iconLabel": "book_map",
+				"iconColor": "#C2A487"
 			}
 		},
 		{
