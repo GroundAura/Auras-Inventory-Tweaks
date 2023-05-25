@@ -2631,7 +2631,8 @@
 				"itemClass": "10",
 				"itemSort": "1",
 				"subTypeDisplay": "$ItemArmorBag",
-				"iconLabel": "misc_goldsack"
+				"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+				"iconLabel": "armor_pouch"
 			}
 		},
 		{
@@ -2652,8 +2653,8 @@
 			},
 			"assign": {
 				"subTypeDisplay": "$ItemArmorBeltBag",
-				"iconSource": "AIT/Aura/icons.swf",
-				"iconLabel": "misc_satchel"
+				"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+				"iconLabel": "armor_pouch"
 			}
 		},
 		{
@@ -2673,7 +2674,10 @@
 				"keywords": [ "WAF_ClothingAccessories" ]
 			},
 			"assign": {
-				"subTypeDisplay": "$ItemArmorAccessory"
+				"itemClass": "11",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemArmorAccessory",
+				"iconLabel": "default_armor"
 			}
 		},
 		{
@@ -2695,6 +2699,16 @@
 			"assign": {
 				"subTypeDisplay": "$ItemArmorBeltBook",
 				"iconLabel": "book_journal"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": { "anyOf": [ "OCF_MiscEmptyVessel_Flask", "OCF_VesselFlask", "OCF_MiscEmptyVessel_Waterskin", "OCF_VesselWaterskin" ] }
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorAccessory",
+				"iconLabel": "default_armor"
 			}
 		},
 		{
@@ -2766,6 +2780,17 @@
 		{
 			"match": {
 				"formType": "Armor",
+				"keywords": [ "OCF_AccessoryKatana" ]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorAccessory",
+				"iconSource": "skyui_weapons_pack/icons.swf",
+				"iconLabel": "weapon_katana"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
 				"keywords": [ "OCF_AccessoryPiercing" ]
 			},
 			"assign": {
@@ -2777,12 +2802,22 @@
 		{
 			"match": {
 				"formType": "Armor",
-				"keywords": [ "OCF_AccessoryShield" ],
-				"weightClass": "Heavy"
+				"keywords": [ "OCF_AccessoryShield" ]
 			},
 			"assign": {
 				"itemClass": "11",
 				"itemSort": "1",
+				"subTypeDisplay": "$ItemArmorAccessory",
+				"iconLabel": "default_armor"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [ "OCF_AccessoryShield" ],
+				"weightClass": "Heavy"
+			},
+			"assign": {
 				"iconLabel": "armor_shield"
 			}
 		},
@@ -2793,8 +2828,6 @@
 				"weightClass": "Light"
 			},
 			"assign": {
-				"itemClass": "11",
-				"itemSort": "1",
 				"iconLabel": "lightarmor_shield"
 			}
 		},
