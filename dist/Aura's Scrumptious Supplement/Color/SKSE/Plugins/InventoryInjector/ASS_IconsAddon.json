@@ -1,5 +1,5 @@
 {
-"$schema": "https://raw.githubusercontent.com/Exit-9B/InventoryInjector/main/docs/InventoryInjector.schema.json",
+"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
 "rules": [
 	{
 		"match": {
@@ -409,6 +409,17 @@
 		"match": {
 			"formType": "Potion",
 			"subType": "Food",
+			"keywords": { "anyOf": [ "OCF_IngrRemains_Bug", "OCF_IngrRemains_BugDragonfly" ] }
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_dragonfly"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Food",
 			"keywords": [ "OCF_IngrRemains_BugBee" ]
 		},
 		"assign": {
@@ -420,11 +431,11 @@
 		"match": {
 			"formType": "Potion",
 			"subType": "Food",
-			"keywords": [ "OCF_IngrRemains_BugDragonfly" ]
+			"keywords": { "anyOf": [ "OCF_IngrRemains_Organ", "OCF_IngrRemains_OrganHeart" ] }
 		},
 		"assign": {
 			"iconSource": "AIT/GameIcons/icons.swf",
-			"iconLabel": "misc_dragonfly"
+			"iconLabel": "misc_heart"
 		}
 	},
 	{
@@ -436,17 +447,6 @@
 		"assign": {
 			"iconSource": "AIT/GameIcons/icons.swf",
 			"iconLabel": "misc_eyeball"
-		}
-	},
-	{
-		"match": {
-			"formType": "Potion",
-			"subType": "Food",
-			"keywords": [ "OCF_IngrRemains_OrganHeart" ]
-		},
-		"assign": {
-			"iconSource": "AIT/GameIcons/icons.swf",
-			"iconLabel": "misc_heart"
 		}
 	},
 	{
@@ -696,8 +696,9 @@
 			"keywords": {
 				"anyOf": [
 					"OCF_AlchDrugSkooma",
-					"VendorItemDrinkSkoomaWeak",
-					"VendorItemDrinkSkoomaStrong"
+					"VendorItemDrinkSkooma",
+					"VendorItemDrinkSkoomaStrong",
+					"VendorItemDrinkSkoomaWeak"
 				]
 			}
 		},
@@ -772,9 +773,8 @@
 					"OCF_AlchBlood_Creature",
 					"OCF_AlchBlood_Humanoid",
 					"OCF_AlchBlood_Werebeast",
-					"AlchIsBlood",
-					"_SHBloodDrink",
-					"VendorItemDrinkBloodPotion"
+					"VendorItemDrinkBloodPotion",
+					"_SHBloodDrink"
 				]
 			}
 		},
@@ -799,12 +799,7 @@
 	{
 		"match": {
 			"formType": "Potion",
-			"keywords": {
-				"anyOf": [
-						"OCF_VesselBag",
-						"OCF_VesselSack"
-					]
-				}
+			"keywords": [ "OCF_VesselBag"]
 		},
 		"assign": {
 			"iconLabel": "misc_goldsack"
@@ -816,16 +811,7 @@
 			"keywords": {
 				"anyOf": [
 						"OCF_VesselBottleDunmer",
-						"_SH_SujammaBottleKeyword",
-						"OCF_VesselBottleWine",
-						"_SH_WineBottleKeyword",
-						"OCF_VesselCup",
-						"OCF_VesselFlagon",
-						"OCF_VesselFlask",
-						"OCF_VesselJug",
-						"OCF_VesselKettle",
-						"OCF_VesselTankard",
-						"OCF_VesselWaterskin"
+						"_SH_SujammaBottleKeyword"
 					]
 				}
 		},
@@ -861,10 +847,34 @@
 		"match": {
 			"formType": "Potion",
 			"subType": { "anyOf": [ "Food", "Drink" ] },
+			"keywords": [ "OCF_VesselBottlePoison" ]
+		},
+		"assign": {
+			"iconLabel": "potion_poison"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": { "anyOf": [ "Food", "Drink" ] },
 			"keywords": [ "OCF_VesselBottlePotion" ]
 		},
 		"assign": {
 			"iconLabel": "default_potion"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": {
+				"anyOf": [
+						"OCF_VesselBottleWine",
+						"_SH_WineBottleKeyword"
+					]
+				}
+		},
+		"assign": {
+			"iconLabel": "food_wine"
 		}
 	},
 	{
@@ -881,6 +891,95 @@
 	{
 		"match": {
 			"formType": "Potion",
+			"subType": { "anyOf": [ "Food", "Drink" ] },
+			"keywords": [ "OCF_VesselCup" ]
+		},
+		"assign": {
+			"iconLabel": "food_wine"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": { "anyOf": [ "Food", "Drink" ] },
+			"keywords": [ "OCF_VesselDrinkingHorn" ]
+		},
+		"assign": {
+			"iconLabel": "food_wine"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": { "anyOf": [ "Food", "Drink" ] },
+			"keywords": [ "OCF_VesselFlagon" ]
+		},
+		"assign": {
+			"iconLabel": "food_wine"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": { "anyOf": [ "Food", "Drink" ] },
+			"keywords": [ "OCF_VesselFlask" ]
+		},
+		"assign": {
+			"iconLabel": "food_wine"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "OCF_VesselHoneyPot" ]
+		},
+		"assign": {
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "food_stew"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "OCF_VesselJar" ]
+		},
+		"assign": {
+			"iconSource": "I4IconAddon/icons.swf",
+			"iconLabel": "misc_jar"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": { "anyOf": [ "Food", "Drink" ] },
+			"keywords": [ "OCF_VesselJug" ]
+		},
+		"assign": {
+			"iconLabel": "food_wine"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "OCF_VesselKettle" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_teapot"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "OCF_VesselSack"]
+		},
+		"assign": {
+			"iconLabel": "misc_goldsack"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
 			"keywords": [ "OCF_VesselSmokingPipe" ]
 		},
 		"assign": {
@@ -891,9 +990,41 @@
 	{
 		"match": {
 			"formType": "Potion",
+			"subType": { "anyOf": [ "Food", "Drink" ] },
+			"keywords": [ "OCF_VesselTankard" ]
+		},
+		"assign": {
+			"iconLabel": "food_wine"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": { "anyOf": [ "Food", "Drink" ] },
+			"keywords": [ "OCF_VesselVial" ]
+		},
+		"assign": {
+			"iconSource": "AIT/Aura/icons.swf",
+			"iconLabel": "potion_vial"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": { "anyOf": [ "Food", "Drink" ] },
+			"keywords": [ "OCF_VesselWaterskin" ]
+		},
+		"assign": {
+			"iconLabel": "food_wine"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
 			"keywords": [ "OCF_ArtifactDaedric_Bittercup" ]
 		},
 		"assign": {
+			"itemClass": "0",
 			"subTypeDisplay": "$Artifact",
 			"iconSource": "AIT/GameIcons/icons.swf",
 			"iconLabel": "misc_amphora",
@@ -906,7 +1037,32 @@
 			"keywords": [ "OCF_ArtifactLegendary_WhitePhial" ]
 		},
 		"assign": {
+			"itemClass": "0",
 			"subTypeDisplay": "$Artifact"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": { "anyOf": [ "OCF_RelicAyleid_Crystal", "IconAyleidCrystal" ] }
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemMiscAyleidCrystal",
+			"iconSource": "I4IconAddon/icons.swf",
+			"iconLabel": "soulgem_ayleidcrystalfull",
+			"iconColor": "#5BC4C9"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "OCF_RelicDwarven_Fairy" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemMiscRelic",
+			"iconSource": "I4IconAddon/icons.swf",
+			"iconLabel": "misc_dwarvenscrap",
+			"iconColor": "#705F32"
 		}
 	},
 	{
@@ -936,18 +1092,6 @@
 	{
 		"match": {
 			"formType": "Potion",
-			"keywords": { "anyOf": [ "OCF_RelicAyleid_Crystal", "IconAyleidCrystal" ] }
-		},
-		"assign": {
-			"subTypeDisplay": "$ItemMiscAyleidCrystal",
-			"iconSource": "I4IconAddon/icons.swf",
-			"iconLabel": "soulgem_ayleidcrystalfull",
-			"iconColor": "#5BC4C9"
-		}
-	},
-	{
-		"match": {
-			"formType": "Potion",
 			"keywords": { "anyOf": [ "OCF_MiscCampingGear", "IconCampsite" ] }
 		},
 		"assign": {
@@ -960,13 +1104,19 @@
 	{
 		"match": {
 			"formType": "Potion",
-			"keywords": [ "OCF_RelicDwarven_Fairy" ]
+			"keywords": [ "OCF_InvColorDaedric" ]
 		},
 		"assign": {
-			"subTypeDisplay": "$ItemMiscRelic",
-			"iconSource": "I4IconAddon/icons.swf",
-			"iconLabel": "misc_dwarvenscrap",
-			"iconColor": "#705F32"
+			"iconColor": "#A14040"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "OCF_InvColorLegendary" ]
+		},
+		"assign": {
+			"iconColor": "#C1884D"
 		}
 	}
 ]
