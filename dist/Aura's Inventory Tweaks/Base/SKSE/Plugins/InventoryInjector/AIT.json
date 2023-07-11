@@ -245,7 +245,19 @@
 			},
 			"assign": {
 				"itemSort": "2",
-				"subTypeDisplay": "$ItemWeaponKunai"
+				"subTypeDisplay": "$ItemWeaponKunai",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "weapon_kunai"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": [ "OCF_WeapTypeRevDagger1H" ]
+			},
+			"assign": {
+				"iconSource": "AIT/Aura/icons.swf",
+				"iconLabel": "weapon_daggerrev"
 			}
 		},
 		{
@@ -311,8 +323,8 @@
 			"assign": {
 				"itemSort": "2",
 				"subTypeDisplay": "$ItemMiscTableware",
-				"iconSource": "AIT/MoreIcons/icons.swf",
-				"iconLabel": "misc_tablewear"
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_cutlery"
 			}
 		},
 		{
@@ -353,8 +365,17 @@
 				"keywords": [ "OCF_WeapTypeHuntingKnife1H" ]
 			},
 			"assign": {
-				"itemSort": "2",
 				"subTypeDisplay": "$ItemWeaponHuntingKnife"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": [ "WAF_WeapTypeScalpel" ]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_scalpel"
 			}
 		},
 		{
@@ -2057,7 +2078,7 @@
 			},
 			"assign": {
 				"subTypeDisplay": "$ItemArmorHorns",
-				"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+				"iconSource": "AIT/GameIcons/icons.swf",
 				"iconLabel": "armor_horns"
 			}
 		},
@@ -2471,8 +2492,9 @@
 				"keywords": [ "OCF_FeetTypeHooves" ]
 			},
 			"assign": {
-				"subType": "Feet",
-				"subTypeDisplay": "$Feet"
+				"subTypeDisplay": "$Feet",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "armor_hoof"
 			}
 		},
 		{
@@ -2677,7 +2699,8 @@
 				"itemClass": "11",
 				"itemSort": "1",
 				"subTypeDisplay": "$ItemArmorAccessory",
-				"iconLabel": "default_armor"
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "armor_ribbon"
 			}
 		},
 		{
@@ -2749,7 +2772,7 @@
 		{
 			"match": {
 				"formType": "Armor",
-				"keywords": [ "OCF_MiscBugJar" ]
+				"keywords": [ "OCF_MiscJarBug" ]
 			},
 			"assign": {
 				"iconSource": "I4IconAddon/icons.swf",
@@ -4293,7 +4316,6 @@
 							"OCF_VesselFlagon",
 							"OCF_VesselFlask",
 							"OCF_VesselJug",
-							"OCF_VesselKettle",
 							"OCF_VesselTankard",
 							"OCF_VesselWaterskin"
 						]
@@ -4346,6 +4368,16 @@
 			"assign": {
 				"iconSource": "AIT/MoreIcons/icons.swf",
 				"iconLabel": "food_stew"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"keywords": [ "OCF_VesselKettle" ]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_teapot"
 			}
 		},
 		{
@@ -5868,7 +5900,9 @@
 				}
 			},
 			"assign": {
-				"subTypeDisplay": "$ItemMiscCandle"
+				"subTypeDisplay": "$ItemMiscCandle",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_candle"
 			}
 		},
 		{
@@ -6078,20 +6112,40 @@
 		{
 			"match": {
 				"formType": "MiscItem",
-				"keywords": [ "OCF_IngrRemains_BoneSkull" ]
+				"keywords": { "anyOf": [ "OCF_IngrRemains_BoneSkull_Animal", "OCF_IngrRemains_BoneSkull_Dragon" ] }
 			},
 			"assign": {
-				"iconLabel": "misc_remains"
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_cowskull"
 			}
 		},
 		{
 			"match": {
 				"formType": "MiscItem",
-				"keywords": { "anyOf": [ "OCF_AnimalPartKarstaag", "OCF_IngrRemains_BoneSkull_FrostGiant" ] }
+				"keywords": [ "OCF_IngrRemains_BoneSkull_Bird" ]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_birdskull"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": { "anyOf": [ "OCF_IngrRemains_BoneSkull_FrostGiant", "OCF_AnimalPartKarstaag" ] }
 			},
 			"assign": {
 				"iconSource": "AIT/Aura/icons.swf",
 				"iconLabel": "misc_karstaagskull"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": { "anyOf": [ "OCF_IngrRemains_BoneSkull_Hominid", "OCF_IngrRemains_BoneSkull_Goblin" ] }
+			},
+			"assign": {
+				"iconLabel": "misc_remains"
 			}
 		},
 		{
@@ -6566,6 +6620,17 @@
 		{
 			"match": {
 				"formType": "MiscItem",
+				"keywords": [ "OCF_MiscFossil" ]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscFossil",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_fossil"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
 				"keywords": [ "OCF_SlgmPiece" ]
 			},
 			"assign": {
@@ -6609,7 +6674,7 @@
 		{
 			"match": {
 				"formType": "MiscItem",
-				"keywords": [ "OCF_MiscBugJar" ]
+				"keywords": [ "OCF_MiscJarBug" ]
 			},
 			"assign": {
 				"subTypeDisplay": "$ItemMiscJarBug",
@@ -6977,7 +7042,7 @@
 		{
 			"match": {
 				"formType": "MiscItem",
-				"keywords": [ "OCF_ToolAlchemy" ]
+				"keywords": { "anyOf": [ "OCF_ToolAlchemy", "OCF_ToolCrucible", "OCF_ToolMortarPestle" ] }
 			},
 			"assign": {
 				"subTypeDisplay": "$ItemMiscAlchemy",
@@ -7004,22 +7069,18 @@
 				"keywords": { "anyOf": [ "OCF_ToolAlembic", "OCF_ToolRetort" ] }
 			},
 			"assign": {
-				"subTypeDisplay": "$ItemMiscAlchemy",
 				"iconSource": "AIT/MoreIcons/icons.swf",
-				"iconLabel": "misc_flask",
-				"iconColor": "#059142"
+				"iconLabel": "misc_flask"
 			}
 		},
 		{
 			"match": {
 				"formType": "MiscItem",
-				"keywords": { "anyOf": [ "OCF_ToolMortarPestle", "OCF_ToolCauldron", "OCF_ToolCrucible" ] }
+				"keywords": [ "OCF_ToolCauldron" ]
 			},
 			"assign": {
-				"subTypeDisplay": "$ItemMiscAlchemy",
-				"iconSource": "AIT/Aura/icons.swf",
-				"iconLabel": "misc_mortar",
-				"iconColor": "#059142"
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_cauldron"
 			}
 		},
 		{
@@ -7047,11 +7108,35 @@
 		{
 			"match": {
 				"formType": "MiscItem",
+				"keywords": [ "OCF_ToolHourglass" ]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_hourglass"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
 				"keywords": [ "OCF_ToolLantern" ]
 			},
 			"assign": {
 				"iconSource": "AIT/MoreIcons/icons.swf",
 				"iconLabel": "misc_lantern"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [ "OCF_ToolLight_Torch" ]
+			},
+			"assign": {
+				"itemType": "2",
+				"itemClass": "0",
+				"itemSort": "2",
+				"subTypeDisplay": "$Torch",
+				"iconLabel": "misc_torch",
+				"iconColor": "#FFAA00"
 			}
 		},
 		{
@@ -7067,6 +7152,36 @@
 		{
 			"match": {
 				"formType": "MiscItem",
+				"keywords": [ "OCF_ToolMirror" ]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_mirror"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [ "OCF_ToolQuill" ]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_feather"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [ "OCF_ToolSaw" ]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "weapon_saw"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
 				"keywords": [ "OCF_ToolScissors" ]
 			},
 			"assign": {
@@ -7077,15 +7192,11 @@
 		{
 			"match": {
 				"formType": "MiscItem",
-				"keywords": [ "OCF_ToolLight_Torch" ]
+				"keywords": [ "OCF_ToolSpyglass" ]
 			},
 			"assign": {
-				"itemType": "2",
-				"itemClass": "0",
-				"itemSort": "2",
-				"subTypeDisplay": "$Torch",
-				"iconLabel": "misc_torch",
-				"iconColor": "#FFAA00"
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_spyglass"
 			}
 		},
 		{
@@ -7325,11 +7436,31 @@
 		{
 			"match": {
 				"formType": "MiscItem",
+				"keywords": [ "OCF_VesselCauldron" ]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_cauldron"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
 				"keywords": [ "OCF_VesselCloth" ]
 			},
 			"assign": {
 				"iconSource": "AIT/GameIcons/icons.swf",
 				"iconLabel": "misc_cloth"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [ "OCF_VesselComb" ]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_comb"
 			}
 		},
 		{
@@ -7370,6 +7501,16 @@
 			"assign": {
 				"iconSource": "AIT/MoreIcons/icons.swf",
 				"iconLabel": "misc_barrel"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"keywords": [ "OCF_VesselKettle" ]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_teapot"
 			}
 		},
 		{
@@ -7611,8 +7752,8 @@
 				"keywords": [ "OCF_ArtifactDaedric_SkeletonKey" ]
 			},
 			"assign": {
-				"iconSource": "BOOBIES Immersive Icons/daedric artefacts.swf",
-				"iconLabel": "skeleton_key"
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_skeletonkey"
 			}
 		},
 		{
