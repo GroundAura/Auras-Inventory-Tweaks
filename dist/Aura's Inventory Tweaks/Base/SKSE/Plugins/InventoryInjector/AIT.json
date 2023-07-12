@@ -1187,6 +1187,7 @@
 				"formType": "Weapon",
 				"keywords": {
 					"anyOf": [
+						"OCF_WeapTypeGun1H_Gravity",
 						"OCF_WeapTypeGun1H_Special",
 						"OCF_WeapTypeGun2H_Special"
 					]
@@ -1222,41 +1223,73 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": { "anyOf": [ "MagicDamageFire", "OCF_ColorFire" ] }
+				"keywords": [ "OCF_InvColorBlood" ]
 			},
 			"assign": {
-				"itemSort": "2",
+				"iconColor": "#8E2129"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": [ "OCF_InvColorDwarven" ]
+			},
+			"assign": {
+				"iconColor": "#705F32"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": [ "OCF_InvColorFire" ]
+			},
+			"assign": {
 				"iconColor": "#C73636"
 			}
 		},
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": { "anyOf": [ "MagicDamageFrost", "OCF_ColorFrost" ] }
+				"keywords": [ "OCF_InvColorFrost" ]
 			},
 			"assign": {
-				"itemSort": "3",
 				"iconColor": "#1FFBFF"
 			}
 		},
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": { "anyOf": [ "MagicDamageShock", "OCF_ColorShock" ] }
+				"keywords": [ "OCF_InvColorPoison" ]
 			},
 			"assign": {
-				"itemSort": "4",
+				"iconColor": "#62A636"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": [ "OCF_InvColorShock" ]
+			},
+			"assign": {
 				"iconColor": "#EAAB00"
 			}
 		},
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": { "anyOf": [ "MAG_MagicDamagePoison", "OCF_ColorPoison" ] }
+				"keywords": [ "OCF_InvColorSun" ]
 			},
 			"assign": {
-				"itemSort": "5",
-				"iconColor": "#62A636"
+				"iconColor": "#FF8700"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": [ "OCF_InvColorWater" ]
+			},
+			"assign": {
+				"iconColor": "#005493"
 			}
 		},
 		{
@@ -1281,7 +1314,7 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [ "OCF_VesselBottlePotion" ]
+				"keywords": [ "OCF_VesselBottlePoison" ]
 			},
 			"assign": {
 				"iconLabel": "potion_poison"
@@ -1290,7 +1323,16 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": { "anyOf": [ "OCF_ArtifactAedric", "OCF_RelicAedric" ] }
+				"keywords": [ "OCF_VesselBottlePotion" ]
+			},
+			"assign": {
+				"iconLabel": "default_potion"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": { "anyOf": [ "OCF_ArtifactAedric", "OCF_RelicAedric", "OCF_InvColorAedric" ] }
 			},
 			"assign": {
 				"iconColor": "#0099CC"
@@ -1319,7 +1361,7 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": { "anyOf": [ "OCF_ArtifactDaedric", "OCF_RelicDaedric" ] }
+				"keywords": { "anyOf": [ "OCF_ArtifactDaedric", "OCF_RelicDaedric", "OCF_InvColorDaedric" ] }
 			},
 			"assign": {
 				"iconColor": "#A14040"
@@ -1340,7 +1382,20 @@
 				"formType": "Weapon",
 				"keywords": {
 					"anyOf": [
-						"OCF_ArtifactDaedric_EbonyBlade", "OCF_ReplicaDaedric_EbonyBlade",
+						"OCF_ArtifactDaedric_EbonyBlade", "OCF_ReplicaDaedric_EbonyBlade"
+					]
+				}
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/daedric artefacts.swf",
+				"iconLabel": "ebony_blade"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": {
+					"anyOf": [
 						"OCF_ArtifactDaedric_Eltonbrand", "OCF_ReplicaDaedric_Eltonbrand",
 						"OCF_ArtifactDaedric_Goldbrand", "OCF_ReplicaDaedric_Goldbrand"
 					]
@@ -1566,52 +1621,7 @@
 		{
 			"match": {
 				"formType": "Ammo",
-				"keywords": { "anyOf": [ "MagicDamageFire", "OCF_ColorFire" ] }
-			},
-			"assign": {
-				"iconColor": "#C73636"
-			}
-		},
-		{
-			"match": {
-				"formType": "Ammo",
-				"keywords": { "anyOf": [ "MagicDamageFrost", "OCF_ColorFrost" ] }
-			},
-			"assign": {
-				"iconColor": "#1FFBFF"
-			}
-		},
-		{
-			"match": {
-				"formType": "Ammo",
-				"keywords": { "anyOf": [ "MAG_MagicDamagePoison", "OCF_ColorPoison" ] }
-			},
-			"assign": {
-				"iconColor": "#62A636"
-			}
-		},
-		{
-			"match": {
-				"formType": "Ammo",
-				"keywords": { "anyOf": [ "MagicDamageShock", "OCF_ColorShock" ] }
-			},
-			"assign": {
-				"iconColor": "#EAAB00"
-			}
-		},
-		{
-			"match": {
-				"formType": "Ammo",
-				"keywords": { "anyOf": [ "MAG_MagicDamageSun", "OCF_ColorSun" ] }
-			},
-			"assign": {
-				"iconColor": "#FF8700"
-			}
-		},
-		{
-			"match": {
-				"formType": "Ammo",
-				"keywords": [ "OCF_RarityAedric" ]
+				"keywords": [ "OCF_InvColorAedric" ]
 			},
 			"assign": {
 				"iconColor": "#0099CC"
@@ -1620,10 +1630,73 @@
 		{
 			"match": {
 				"formType": "Ammo",
-				"keywords": [ "OCF_RarityDaedric" ]
+				"keywords": [ "OCF_InvColorBlood" ]
+			},
+			"assign": {
+				"iconColor": "#8E2129"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ammo",
+				"keywords": [ "OCF_InvColorDaedric" ]
 			},
 			"assign": {
 				"iconColor": "#A14040"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ammo",
+				"keywords": [ "OCF_InvColorFire" ]
+			},
+			"assign": {
+				"iconColor": "#C73636"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ammo",
+				"keywords": [ "OCF_InvColorFrost" ]
+			},
+			"assign": {
+				"iconColor": "#1FFBFF"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ammo",
+				"keywords": [ "OCF_InvColorPoison" ]
+			},
+			"assign": {
+				"iconColor": "#62A636"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ammo",
+				"keywords": [ "OCF_InvColorShock" ]
+			},
+			"assign": {
+				"iconColor": "#EAAB00"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ammo",
+				"keywords": [ "OCF_InvColorSun" ]
+			},
+			"assign": {
+				"iconColor": "#FF8700"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ammo",
+				"keywords": [ "OCF_InvColorWater" ]
+			},
+			"assign": {
+				"iconColor": "#005493"
 			}
 		},
 		{
@@ -3002,6 +3075,28 @@
 		{
 			"match": {
 				"formType": "Armor",
+				"keywords": { "anyOf": [ "BYOHAdoptionToyKeyword", "OCF_MiscChildToy", "IconToy" ] }
+			},
+			"assign": {
+				"subTypeDisplay": "$Toy",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_toy"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [ "OCF_MiscChildToy_Doll" ]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscDoll",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_toy"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
 				"keywords": { "anyOf": [ "OCF_MiscHorseGear", "CCHorseArmorKeyword", "IconHorseTack" ] }
 			},
 			"assign": {
@@ -3362,7 +3457,7 @@
 		{
 			"match": {
 				"formType": "Armor",
-				"keywords": [ "OCF_ArtifactLegendary" ]
+				"keywords": { "anyOf": [ "OCF_ArtifactLegendary", "OCF_InvColorLegendary " ] }
 			},
 			"assign": {
 				"iconColor": "#C1884D"
@@ -4756,7 +4851,7 @@
 		{
 			"match": {
 				"formType": "Scroll",
-				"keywords": { "anyOf": [ "BYOHAdoptionToyKeyword", "IconToy" ] }
+				"keywords": { "anyOf": [ "BYOHAdoptionToyKeyword", "OCF_MiscChildToy", "IconToy" ] }
 			},
 			"assign": {
 				"itemClass": "4",
@@ -4773,7 +4868,9 @@
 				"keywords": [ "OCF_MiscChildToy_Doll" ]
 			},
 			"assign": {
-				"subTypeDisplay": "$ItemMiscDoll"
+				"subTypeDisplay": "$ItemMiscDoll",
+				"iconLabel": "misc_toy",
+				"iconColor": "#FFFFFF"
 			}
 		},
 		{
@@ -5354,7 +5451,7 @@
 				"keywords": [ "OCF_InvColorPink" ]
 			},
 			"assign": {
-				"iconColor": "#7B2424"
+				"iconColor": "#FF5050"
 			}
 		},
 		{
@@ -6709,7 +6806,7 @@
 		{
 			"match": {
 				"formType": "MiscItem",
-				"keywords": { "anyOf": [ "BYOHAdoptionToyKeyword", "IconToy" ] }
+				"keywords": { "anyOf": [ "BYOHAdoptionToyKeyword", "OCF_MiscChildToy", "IconToy" ] }
 			},
 			"assign": {
 				"subTypeDisplay": "$Toy",
@@ -7265,23 +7362,22 @@
 		{
 			"match": {
 				"formType": "MiscItem",
+				"keywords": [ "OCF_ToolBroom" ]
+			},
+			"assign": {
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_tool"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
 				"keywords": { "anyOf": [ "OCF_ToolCompass", "ArmorTypeShieldCompass" ] }
 			},
 			"assign": {
 				"subTypeDisplay": "$ItemMiscCompass",
 				"iconSource": "AIT/GameIcons/icons.swf",
 				"iconLabel": "misc_compass"
-			}
-		},
-		{
-			"match": {
-				"formType": "MiscItem",
-				"keywords": { "anyOf": [ "OCF_WeapTypeFishingRod1H", "IconFishingRod" ] }
-			},
-			"assign": {
-				"subTypeDisplay": "$ItemWeaponFishingRod",
-				"iconSource": "I4IconAddon/icons.swf",
-				"iconLabel": "weapon_fishingrod"
 			}
 		},
 		{
@@ -7302,6 +7398,21 @@
 			"assign": {
 				"iconSource": "AIT/MoreIcons/icons.swf",
 				"iconLabel": "misc_lantern"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [ "OCF_ToolLight_Candle" ]
+			},
+			"assign": {
+				"itemType": "2",
+				"itemClass": "0",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemMiscCandle",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_candle",
+				"iconColor": "#FFAA00"
 			}
 		},
 		{
@@ -7341,6 +7452,16 @@
 		{
 			"match": {
 				"formType": "MiscItem",
+				"keywords": [ "OCF_ToolParaglider" ]
+			},
+			"assign": {
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_tool"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
 				"keywords": [ "OCF_ToolQuill" ]
 			},
 			"assign": {
@@ -7371,11 +7492,52 @@
 		{
 			"match": {
 				"formType": "MiscItem",
+				"keywords": [ "OCF_ToolSextant" ]
+			},
+			"assign": {
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_tool"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [ "OCF_ToolShovel" ]
+			},
+			"assign": {
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_tool"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
 				"keywords": [ "OCF_ToolSpyglass" ]
 			},
 			"assign": {
 				"iconSource": "AIT/GameIcons/icons.swf",
 				"iconLabel": "misc_spyglass"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": { "anyOf": [ "OCF_WeapTypeFishingRod1H", "IconFishingRod" ] }
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemWeaponFishingRod",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "weapon_fishingrod"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [ "WAF_WeapTypeScalpel" ]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_scalpel"
 			}
 		},
 		{
@@ -7409,8 +7571,7 @@
 			},
 			"assign": {
 				"subTypeDisplay": "$ItemMiscCoin",
-				"iconLabel": "misc_gold",
-				"iconColor": "#CCCC33"
+				"iconLabel": "misc_gold"
 			}
 		},
 		{
@@ -7420,8 +7581,7 @@
 			},
 			"assign": {
 				"subTypeDisplay": "$ItemMiscCoinpurse",
-				"iconLabel": "misc_goldsack",
-				"iconColor": "#CCCC33"
+				"iconLabel": "misc_goldsack"
 			}
 		},
 		{
@@ -7442,10 +7602,8 @@
 				"keywords": [ "ClothingCrown" ]
 			},
 			"assign": {
-				"subTypeDisplay": "$ItemArmorCrown",
 				"iconSource": "AIT/MoreIcons/icons.swf",
-				"iconLabel": "clothing_crown",
-				"iconColor": "#CCCC33"
+				"iconLabel": "clothing_crown"
 			}
 		},
 		{
@@ -7891,7 +8049,7 @@
 		{
 			"match": {
 				"formType": "MiscItem",
-				"keywords": { "anyOf": [ "OCF_ArtifactDaedric", "OCF_RarityDaedric" ] }
+				"keywords": { "anyOf": [ "OCF_ArtifactDaedric", "OCF_InvColorDaedric" ] }
 			},
 			"assign": {
 				"iconColor": "#A14040"
@@ -7938,7 +8096,7 @@
 		{
 			"match": {
 				"formType": "MiscItem",
-				"keywords": { "anyOf": [ "OCF_ArtifactLegendary", "OCF_RarityLegendary" ] }
+				"keywords": { "anyOf": [ "OCF_ArtifactLegendary", "OCF_InvColorLegendary" ] }
 			},
 			"assign": {
 				"iconColor": "#C1884D"
@@ -8016,6 +8174,42 @@
 		},
 		{
 			"match": {
+				"formType": "MiscItem",
+				"keywords": [ "OCF_InvColorCopper" ]
+			},
+			"assign": {
+				"iconColor": "#B87333"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [ "OCF_InvColorEldritch" ]
+			},
+			"assign": {
+				"iconColor": "#345F4C"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [ "OCF_InvColorGold" ]
+			},
+			"assign": {
+				"iconColor": "#CCCC33"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [ "OCF_InvColorSilver" ]
+			},
+			"assign": {
+				"iconColor": "#C0C0C0"
+			}
+		},
+		{
+			"match": {
 				"formType": "SoulGem"
 			},
 			"assign": {
@@ -8088,29 +8282,11 @@
 		{
 			"match": {
 				"formType": "SoulGem",
-				"keywords": { "anyOf": [ "OCF_SlgmBXX", "OCF_SlgmBlack" ] }
+				"keywords": { "anyOf": [ "OCF_SlgmBlack", "OCF_SlgmBXX" ] }
 			},
 			"assign": {
 				"canHoldNPCSoul": "1",
 				"iconColor": "#7569FF"
-			}
-		},
-		{
-			"match": {
-				"formType": "SoulGem",
-				"keywords": [ "OCF_SlgmBasic_Blood" ]
-			},
-			"assign": {
-				"iconColor": "#8E2129"
-			}
-		},
-		{
-			"match": {
-				"formType": "SoulGem",
-				"keywords": [ "OCF_SlgmBasic_Rose" ]
-			},
-			"assign": {
-				"iconColor": "#FF5050"
 			}
 		},
 		{
@@ -8215,7 +8391,7 @@
 		{
 			"match": {
 				"formType": "SoulGem",
-				"keywords": { "anyOf": [ "OCF_ArtifactDaedric", "OCF_RarityDaedric" ] }
+				"keywords": { "anyOf": [ "OCF_ArtifactDaedric", "OCF_InvColorDaedric" ] }
 			},
 			"assign": {
 				"iconColor": "#A14040"
@@ -8237,6 +8413,24 @@
 			},
 			"assign": {
 				"iconLabel": "soulgem_azura"
+			}
+		},
+		{
+			"match": {
+				"formType": "SoulGem",
+				"keywords": { "anyOf": [ "OCF_SlgmBasic_Blood", "OCF_InvColorBlood" ] }
+			},
+			"assign": {
+				"iconColor": "#8E2129"
+			}
+		},
+		{
+			"match": {
+				"formType": "SoulGem",
+				"keywords": { "anyOf": [ "OCF_SlgmBasic_Rose", "OCF_InvColorPink" ] }
+			},
+			"assign": {
+				"iconColor": "#FF5050"
 			}
 		},
 		{
