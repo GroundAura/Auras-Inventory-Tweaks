@@ -9057,7 +9057,6 @@
 				"subTypeDisplay": "$MagicCharm"
 			}
 		},
-
 		{
 			"match": {
 				"formType": "Spell",
@@ -9567,70 +9566,6 @@
 				"iconColor": "#00AC00"
 			}
 		},
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 		{
 			"match": {
 				"formType": "Spell",
@@ -9712,7 +9647,6 @@
 				"iconColor": "#9328FF"
 			}
 		},
-
 		{
 			"match": {
 				"formType": "Spell",
@@ -9864,8 +9798,6 @@
 				"subTypeDisplay": "$MagicTime"
 			}
 		},
-
-
 		{
 			"match": {
 				"formType": "Spell",
@@ -9878,7 +9810,6 @@
 				"subTypeDisplay": "$MagicAbsorb"
 			}
 		},
-
 		{
 			"match": {
 				"formType": "Spell",
@@ -10067,7 +9998,6 @@
 				"iconColor": "#3B55FF"
 			}
 		},
-
 		{
 			"match": {
 				"formType": "Spell",
@@ -10145,7 +10075,6 @@
 				"iconColor": "#FF8700"
 			}
 		},
-
 		{
 			"match": {
 				"formType": "Spell",
@@ -10216,7 +10145,6 @@
 				"iconColor": "#9328FF"
 			}
 		},
-
 		{
 			"match": {
 				"formType": "Spell",
@@ -10381,7 +10309,6 @@
 				"iconColor": "#4F4F4F"
 			}
 		},
-
 		{
 			"match": {
 				"formType": "Spell",
