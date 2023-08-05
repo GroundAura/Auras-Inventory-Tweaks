@@ -1,0 +1,59 @@
+{
+"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+"rules": [
+	{
+		"match": {
+			"formType": "Potion",
+			"effectKeywords": ["CCSM_RestoreHungerLarge" ]
+		},
+		"assign": {
+			"infoHunger": "150"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"effectKeywords": ["CCSM_RestoreHungerMedium" ]
+		},
+		"assign": {
+			"infoHunger": "80"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"effectKeywords": ["CCSM_RestoreHungerSmall" ]
+		},
+		"assign": {
+			"infoHunger": "50"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"effectKeywords": ["CCSM_RestoreHungerTiny" ]
+		},
+		"assign": {
+			"infoHunger": "20"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"effectKeywords": ["CCSM_RestoreCold" ]
+		},
+		"assign": {
+			"restoreCold": "200"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"effectKeywords": ["CCSM_FortifyWarmth" ]
+		},
+		"assign": {
+			"fWarmth": "25"
+		}
+	}
+]
+}
