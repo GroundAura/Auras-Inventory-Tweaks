@@ -383,7 +383,7 @@
 			"resistance": "DiseaseResist"
 		},
 		"assign": {
-			"magicClassDisplay": "$MagicPoison",
+			"magicClassDisplay": "$MagicToxin",
 			"subTypeDisplay": "$MagicDisease",
 			"iconLabel": "misc_remains",
 			"iconColor": "#62A636"
@@ -469,7 +469,7 @@
 		},
 		"assign": {
 			"magicClassDisplay": "$MagicHoly",
-			"subTypeDisplay": "$MagicHoly",
+			"subTypeDisplay": "$MagicSun",
 			"iconSource": "I4IconAddon/icons.swf",
 			"iconLabel": "magic_sun",
 			"iconColor": "#FF8700"
@@ -483,7 +483,7 @@
 			"resistance": "PoisonResist"
 		},
 		"assign": {
-			"magicClassDisplay": "$MagicPoison",
+			"magicClassDisplay": "$MagicToxin",
 			"subTypeDisplay": "$MagicPoison",
 			"iconSource": "I4IconAddon/icons.swf",
 			"iconLabel": "magic_water",
@@ -498,7 +498,7 @@
 			"effectKeywords": { "anyOf": [ "MAG_MagicDamagePoison", "MAG_PoisonCloakSpell", "IconMagicPoison" ] }
 		},
 		"assign": {
-			"magicClassDisplay": "$MagicPoison",
+			"magicClassDisplay": "$MagicToxin",
 			"subTypeDisplay": "$MagicPoison",
 			"iconSource": "I4IconAddon/icons.swf",
 			"iconLabel": "magic_water",
@@ -703,7 +703,7 @@
 			"effectKeywords": [ "MagicRestoreHealth" ]
 		},
 		"assign": {
-			"magicClassDisplay": "$MagicArcane",
+			"magicClassDisplay": "$MagicHoly",
 			"subTypeDisplay": "$MagicHeal"
 		}
 	},
@@ -929,7 +929,7 @@
 			"effectKeywords": [ "MAG_MagicShieldPoison" ]
 		},
 		"assign": {
-			"magicClassDisplay": "$MagicPoison",
+			"magicClassDisplay": "$MagicToxin",
 			"subTypeDisplay": "$MagicShield",
 			"iconLabel": "default_armor",
 			"iconColor": "#62A636"
@@ -1033,7 +1033,8 @@
 		},
 		"assign": {
 			"magicClassDisplay": "$MagicArcane",
-			"subTypeDisplay": "$MagicSummonDaedra"
+			"subTypeDisplay": "$MagicSummonDaedra",
+			"iconColor": "#A14040"
 		}
 	},
 	{
@@ -1097,7 +1098,7 @@
 			"magicClassDisplay": "$MagicNecromancy",
 			"subTypeDisplay": "$MagicReanimate",
 			"iconLabel": "misc_remains",
-			"iconColor": "#3B55FF"
+			"iconColor": "#20C47D"
 		}
 	},
 	{
@@ -1154,13 +1155,27 @@
 		"match": {
 			"formType": "Spell",
 			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
-			"school": { "anyOf": [ "Alteration", "Restoration" ] },
+			"school": "Alteration",
 			"effectKeywords": [ "MagicWard" ]
 		},
 		"assign": {
 			"magicClassDisplay": "$MagicArcane",
 			"subTypeDisplay": "$MagicWard",
 			"iconLabel": "default_armor"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"school": "Restoration",
+			"effectKeywords": [ "MagicWard" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicArcane",
+			"subTypeDisplay": "$MagicWard",
+			"iconLabel": "default_armor",
+			"iconColor": "#00BCFF"
 		}
 	},
 	{
@@ -1267,8 +1282,7 @@
 		},
 		"assign": {
 			"magicClassDisplay": "$MagicArcane",
-			"subTypeDisplay": "$MagicBound",
-			"iconColor": "#993899"
+			"subTypeDisplay": "$MagicBound"
 		}
 	},
 	{
@@ -1279,8 +1293,7 @@
 		},
 		"assign": {
 			"magicClassDisplay": "$MagicHoly",
-			"subTypeDisplay": "$MagicCure",
-			"iconColor": "#00AC00"
+			"subTypeDisplay": "$MagicCure"
 		}
 	},
 	{
@@ -1478,7 +1491,7 @@
 			}
 		},
 		"assign": {
-			"magicClassDisplay": "$MagicPoison",
+			"magicClassDisplay": "$MagicToxin",
 			"subTypeDisplay": "$MagicDisease",
 			"iconLabel": "misc_remains",
 			"iconColor": "#62A636"
@@ -1622,7 +1635,7 @@
 		},
 		"assign": {
 			"magicClassDisplay": "$MagicHoly",
-			"subTypeDisplay": "$MagicHoly",
+			"subTypeDisplay": "$MagicSun",
 			"iconSource": "I4IconAddon/icons.swf",
 			"iconLabel": "magic_sun",
 			"iconColor": "#FF8700"
@@ -1789,7 +1802,7 @@
 			}
 		},
 		"assign": {
-			"magicClassDisplay": "$MagicPoison",
+			"magicClassDisplay": "$MagicToxin",
 			"subTypeDisplay": "$MagicPoison",
 			"iconSource": "I4IconAddon/icons.swf",
 			"iconLabel": "magic_water",
@@ -2267,7 +2280,7 @@
 		},
 		"assign": {
 			"magicClassDisplay": "$MagicMind",
-			"subTypeDisplay": "$MagicParalysis",
+			"subTypeDisplay": "$MagicParalyze",
 			"iconLabel": "default_illusion",
 			"iconColor": "#4C9EA4"
 		}
@@ -2293,7 +2306,7 @@
 		},
 		"assign": {
 			"magicClassDisplay": "$MagicArcane",
-			"subTypeDisplay": "$MagicParalysis"
+			"subTypeDisplay": "$MagicParalyze"
 		}
 	},
 	{
@@ -2352,7 +2365,7 @@
 			"effectKeywords": [ "OCF_MgefSpellProtect_ElementPoison" ]
 		},
 		"assign": {
-			"magicClassDisplay": "$MagicPoison",
+			"magicClassDisplay": "$MagicToxin",
 			"subTypeDisplay": "$MagicShield",
 			"iconLabel": "default_armor",
 			"iconColor": "#62A636"
@@ -2463,6 +2476,20 @@
 		"assign": {
 			"magicClassDisplay": "$MagicArcane",
 			"subTypeDisplay": "$MagicSacrifice"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefSpellSacrifice_Blood" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicBlood",
+			"subTypeDisplay": "$MagicSacrifice",
+			"iconSource": "I4IconAddon/icons.swf",
+			"iconLabel": "magic_vampire",
+			"iconColor": "#8E2129"
 		}
 	},
 	{
@@ -2856,7 +2883,7 @@
 			"effectKeywords": [ "OCF_MgefClassPoison" ]
 		},
 		"assign": {
-			"magicClassDisplay": "$MagicPoison",
+			"magicClassDisplay": "$MagicToxin",
 			"iconColor": "#62A636"
 		}
 	},
@@ -3092,6 +3119,16 @@
 		"match": {
 			"formType": "Spell",
 			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_InvColorArcane" ]
+		},
+		"assign": {
+			"iconColor": "#00BCFF"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
 			"effectKeywords": [ "OCF_InvColorBlack" ]
 		},
 		"assign": {
@@ -3286,6 +3323,16 @@
 		},
 		"assign": {
 			"iconColor": "#E0E021"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_InvColorDefault" ]
+		},
+		"assign": {
+			"iconColor": "#FFFFFF"
 		}
 	},
 	{
