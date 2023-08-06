@@ -1,6 +1,644 @@
 {
-	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
-	"rules": [
-
-	]
+"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+"rules": [
+	{
+		"match": {
+			"formType": "Ingredient"
+		},
+		"assign": {
+			"itemType": "6",
+			"foodGreenPact": "0",
+			"iconLabel": "default_ingredient"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_AlchGreenPact" ]
+		},
+		"assign": {
+			"foodGreenPact": "1",
+			"foodGreenPactDisplay": "$GreenPactTrue"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "_SR_KeywordElixir" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemSpellResearchElixir"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_IngrMisc_Beehive" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_herbs"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_IngrMisc_Honeycomb" ]
+		},
+		"assign": {
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "food_honeycomb",
+			"iconColor": "#EBAF4C"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_AlchSnow" ]
+		},
+		"assign": {
+			"iconLabel": "magic_frost",
+			"iconColor": "#FFFFFF"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_IngrPlant" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_herbs",
+			"iconColor": "#216E23"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_IngrPlant_Mushroom" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "food_mushroom",
+			"iconColor": "#634538"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_IngrPlant_Root" ]
+		},
+		"assign": {
+			"iconColor": "#634538"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_IngrPlant_SoulHusk" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_herbs",
+			"iconColor": "#8FA0A5"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_IngrRemains" ]
+		},
+		"assign": {
+			"iconLabel": "misc_remains"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_IngrRemains_Bone" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_bone"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_IngrRemains_BoneSkull" ]
+		},
+		"assign": {
+			"iconLabel": "misc_remains"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_AlchBlood" ]
+		},
+		"assign": {
+			"iconLabel": "default_potion",
+			"iconColor": "#8E2129"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_IngrRemains_Bug" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_dragonfly"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_IngrRemains_BugBee" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_bee"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_IngrRemains_BugButterfly" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_butterfly"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_IngrRemains_Crustacean" ]
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/food.swf",
+			"iconLabel": "crab",
+			"iconColor": "#8FA0A5"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_IngrRemains_Egg" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "food_egg"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_MiscSoap" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_soap"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_IngrRemains_Fiber" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_cloth"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_IngrRemains_FiberHair" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_herbs",
+			"iconColor": "#634538"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_IngrRemains_Fish" ]
+		},
+		"assign": {
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "food_fish",
+			"iconColor": "#8FA0A5"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_IngrRemains_Flesh" ]
+		},
+		"assign": {
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "food_meat",
+			"iconColor": "#F9906F"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_IngrRemains_FleshCooked" ]
+		},
+		"assign": {
+			"iconColor": "#6F3729"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_IngrRemains_Feather" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_feather"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_IngrRemains_Organ" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_heart",
+			"iconColor": "#7B2424"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_IngrRemains_OrganEye" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_eyeball",
+			"iconColor": "#FFFFFF"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_IngrRemains_Plate" ]
+		},
+		"assign": {
+			"iconSource": "I4IconAddon/icons.swf",
+			"iconLabel": "misc_chitin",
+			"iconColor": "#8FA0A5"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_IngrRemains_PlateHide" ]
+		},
+		"assign": {
+			"iconLabel": "misc_hide",
+			"iconColor": "#DBB36E"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_AlchPoison" ]
+		},
+		"assign": {
+			"iconLabel": "potion_poison",
+			"iconColor": "#AD00B3"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_IngrRemains_Sharp" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_horn"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_IngrRemains_SharpAntler" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_antlers",
+			"iconColor": "#634538"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_IngrRemains_SharpBeak" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_birdclaw",
+			"iconColor": "#634538"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_IngrRemains_SharpClaw" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_claws"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_IngrRemains_SharpHorn" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_horn"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_IngrRemains_SharpTalon" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_birdclaw",
+			"iconColor": "#634538"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_IngrRemains_SharpTeeth" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_fangs"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_IngrRemains_SharpTusk" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_tusk"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "VendorItemGem" ]
+		},
+		"assign": {
+			"iconLabel": "misc_gem",
+			"iconColor": "#FFB0D1"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_IngrRemains_Pearl" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_seashell",
+			"iconColor": "#FFFFFF"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_AlchSpoiled" ]
+		},
+		"assign": {
+			"iconColor": "#4D3911"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_InvColorAedric" ]
+		},
+		"assign": {
+			"iconColor": "#0099CC"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_InvColorBlack" ]
+		},
+		"assign": {
+			"iconColor": "#333333"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_InvColorBlue" ]
+		},
+		"assign": {
+			"iconColor": "#005493"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_InvColorDaedric" ]
+		},
+		"assign": {
+			"iconColor": "#A14040"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_InvColorDwarven" ]
+		},
+		"assign": {
+			"iconColor": "#705F32"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_InvColorFire" ]
+		},
+		"assign": {
+			"iconColor": "#C73636"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_InvColorFrost" ]
+		},
+		"assign": {
+			"iconColor": "#1FFBFF"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_InvColorGray" ]
+		},
+		"assign": {
+			"iconColor": "#111111"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_InvColorGreen" ]
+		},
+		"assign": {
+			"iconColor": "#216E23"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_InvColorLegendary" ]
+		},
+		"assign": {
+			"iconColor": "#C1884D"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_InvColorOrange" ]
+		},
+		"assign": {
+			"iconColor": "#C07A00"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_InvColorPink" ]
+		},
+		"assign": {
+			"iconColor": "#FF7AAC"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_InvColorPurple" ]
+		},
+		"assign": {
+			"iconColor": "#782FAD"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_InvColorRed" ]
+		},
+		"assign": {
+			"iconColor": "#7B2424"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_InvColorShock" ]
+		},
+		"assign": {
+			"iconColor": "#EAAB00"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_InvColorWhite" ]
+		},
+		"assign": {
+			"iconColor": "#FFFFFF"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_InvColorYellow" ]
+		},
+		"assign": {
+			"iconColor": "#E0E021"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_VesselBag" ]
+		},
+		"assign": {
+			"iconLabel": "misc_goldsack"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_VesselBottlePotion" ]
+		},
+		"assign": {
+			"iconLabel": "default_potion"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": { "anyOf": [ "OCF_VesselBottleWine", "_SH_WineBottleKeyword" ] }
+		},
+		"assign": {
+			"iconLabel": "food_wine"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_VesselBowl" ]
+		},
+		"assign": {
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "food_stew"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_VesselJar" ]
+		},
+		"assign": {
+			"iconSource": "I4IconAddon/icons.swf",
+			"iconLabel": "misc_jar"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_VesselVial" ]
+		},
+		"assign": {
+			"iconSource": "AIT/Aura/icons.swf",
+			"iconLabel": "potion_vial"
+		}
+	}
+]
 }

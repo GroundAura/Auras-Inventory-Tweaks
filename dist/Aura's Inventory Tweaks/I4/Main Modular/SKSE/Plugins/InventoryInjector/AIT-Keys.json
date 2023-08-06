@@ -1,6 +1,33 @@
 {
-	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
-	"rules": [
-
-	]
+"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+"rules": [
+	{
+		"match": {
+			"formType": "Key"
+		},
+		"assign": {
+			"itemType": "8",
+			"iconLabel": "default_key"
+		}
+	},
+	{
+		"match": {
+			"formType": "Key",
+			"keywords": [ "OCF_KeyPlayerHome" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemKeyHome",
+			"iconLabel": "key_house"
+		}
+	},
+	{
+		"match": {
+			"formType": "Key",
+			"keywords": [ "OCF_RelicDwarven" ]
+		},
+		"assign": {
+			"iconColor": "#705F32"
+		}
+	}
+]
 }
