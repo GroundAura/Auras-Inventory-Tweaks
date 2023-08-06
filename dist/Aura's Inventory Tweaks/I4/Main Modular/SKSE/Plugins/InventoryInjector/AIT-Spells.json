@@ -464,7 +464,7 @@
 		"match": {
 			"formType": "Spell",
 			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
-			"school": "Destruction",
+			"school": { "anyOf": [ "Destruction", "Restoration" ] },
 			"effectKeywords": { "anyOf": [ "MAG_MagicDamageSun", "IconMagicSun" ] }
 		},
 		"assign": {
@@ -703,7 +703,7 @@
 			"effectKeywords": [ "MagicRestoreHealth" ]
 		},
 		"assign": {
-			"magicClassDisplay": "$MagicMystic",
+			"magicClassDisplay": "$MagicArcane",
 			"subTypeDisplay": "$MagicHeal"
 		}
 	},
@@ -716,7 +716,7 @@
 		},
 		"assign": {
 			"magicClassDisplay": "$MagicShadow",
-			"subTypeDisplay": "$MagicInvisibility",
+			"subTypeDisplay": "$MagicStealth",
 			"iconColor": "#9328FF"
 		}
 	},
@@ -729,7 +729,7 @@
 		},
 		"assign": {
 			"magicClassDisplay": "$MagicShadow",
-			"subTypeDisplay": "$MagicInvisibility",
+			"subTypeDisplay": "$MagicStealth",
 			"iconColor": "#9328FF"
 		}
 	},
@@ -953,20 +953,6 @@
 		"match": {
 			"formType": "Spell",
 			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
-			"school": "Conjuration",
-			"archetype": "Reanimate"
-		},
-		"assign": {
-			"magicClassDisplay": "$MagicNecromancy",
-			"subTypeDisplay": "$MagicReanimate",
-			"iconLabel": "misc_remains",
-			"iconColor": "#3B55FF"
-		}
-	},
-	{
-		"match": {
-			"formType": "Spell",
-			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
 			"school": "Illusion",
 			"effectKeywords": [ "MAG_MagicInfluenceSilence" ]
 		},
@@ -1104,11 +1090,25 @@
 		"match": {
 			"formType": "Spell",
 			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"school": "Conjuration",
+			"archetype": "Reanimate"
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicNecromancy",
+			"subTypeDisplay": "$MagicReanimate",
+			"iconLabel": "misc_remains",
+			"iconColor": "#3B55FF"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
 			"school": { "anyOf": [ "Alteration", "Illusion", "Conjuration" ] },
 			"archetype": "SlowTime"
 		},
 		"assign": {
-			"magicClassDisplay": "$MagicMystic",
+			"magicClassDisplay": "$MagicArcane",
 			"subTypeDisplay": "$MagicTime"
 		}
 	},
@@ -1180,7 +1180,11 @@
 			"effectKeywords": [ "OCF_MgefPowerCheat" ]
 		},
 		"assign": {
-			"subTypeDisplay": "$MagicUtility"
+			"magicClassDisplay": "$MagicUtility",
+			"subTypeDisplay": "$MagicConfig",
+			"iconSource": "I4IconAddon/icons.swf",
+			"iconLabel": "misc_dwarvenscrap",
+			"iconColor": "#FFFFFF"
 		}
 	},
 	{
@@ -1190,7 +1194,11 @@
 			"effectKeywords": [ "OCF_MgefPowerConfig" ]
 		},
 		"assign": {
-			"subTypeDisplay": "$MagicUtility"
+			"magicClassDisplay": "$MagicUtility",
+			"subTypeDisplay": "$MagicConfig",
+			"iconSource": "I4IconAddon/icons.swf",
+			"iconLabel": "misc_dwarvenscrap",
+			"iconColor": "#FFFFFF"
 		}
 	},
 	{
@@ -2168,7 +2176,7 @@
 		},
 		"assign": {
 			"magicClassDisplay": "$MagicShadow",
-			"subTypeDisplay": "$MagicInvisibility",
+			"subTypeDisplay": "$MagicStealth",
 			"iconColor": "#9328FF"
 		}
 	},
@@ -2654,7 +2662,7 @@
 		"match": {
 			"formType": "Spell",
 			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
-			"effectKeywords": [ "OCF_MgefSpellTurnUndead" ]
+			"effectKeywords": { "anyOf": [ "OCF_MgefSpellTurnUndead", "OCF_MgefSpellTurnUndeadCircle" ] }
 		},
 		"assign": {
 			"magicClassDisplay": "$MagicHoly",
@@ -3622,7 +3630,7 @@
 			"effectKeywords": { "anyOf": [ "OCF_MgefSpellDispel", "MAG_MagicDispelSpell" ] }
 		},
 		"assign": {
-			"magicClassDisplay": "$MagicMystic",
+			"magicClassDisplay": "$MagicArcane",
 			"subTypeDisplay": "$MagicDispel",
 			"iconLabel": "default_alteration",
 			"iconColor": "#8F6B46"
@@ -3636,7 +3644,7 @@
 			"effectKeywords": { "anyOf": [ "OCF_MgefSpellDispel", "MAG_MagicDispelSpell" ] }
 		},
 		"assign": {
-			"magicClassDisplay": "$MagicMystic",
+			"magicClassDisplay": "$MagicArcane",
 			"subTypeDisplay": "$MagicDispel",
 			"iconLabel": "default_conjuration",
 			"iconColor": "#993899"
@@ -3650,7 +3658,7 @@
 			"effectKeywords": { "anyOf": [ "OCF_MgefSpellDispel", "MAG_MagicDispelSpell" ] }
 		},
 		"assign": {
-			"magicClassDisplay": "$MagicMystic",
+			"magicClassDisplay": "$MagicArcane",
 			"subTypeDisplay": "$MagicDispel",
 			"iconLabel": "default_illusion",
 			"iconColor": "#4C9EA4"
@@ -3664,7 +3672,7 @@
 			"effectKeywords": { "anyOf": [ "OCF_MgefSpellDispel", "MAG_MagicDispelSpell" ] }
 		},
 		"assign": {
-			"magicClassDisplay": "$MagicMystic",
+			"magicClassDisplay": "$MagicArcane",
 			"subTypeDisplay": "$MagicDispel",
 			"iconLabel": "default_restoration",
 			"iconColor": "#00AC00"
