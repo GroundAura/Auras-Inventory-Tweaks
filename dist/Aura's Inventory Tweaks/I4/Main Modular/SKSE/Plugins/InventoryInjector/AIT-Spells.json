@@ -1182,9 +1182,16 @@
 		"match": {
 			"formType": "Spell",
 			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
-			"effectKeywords": [ "OCF_MgefPowerAction" ]
+			"effectKeywords": {
+				"anyOf": [
+					"OCF_MgefPowerAction",
+					"OCF_MgefPowerAction_Influence",
+					"OCF_MgefPowerAction_InfluenceEngage"
+				]
+			}
 		},
 		"assign": {
+			"magicClassDisplay": "$MagicGeneral",
 			"subTypeDisplay": "$MagicAction"
 		}
 	},
