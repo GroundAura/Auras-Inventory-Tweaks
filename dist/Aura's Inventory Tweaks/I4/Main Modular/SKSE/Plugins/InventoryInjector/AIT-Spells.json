@@ -1326,7 +1326,7 @@
 			"magicClassDisplay": "$MagicAstral",
 			"subTypeDisplay": "$MagicCounter",
 			"iconLabel": "default_armor",
-			"iconColor": "#FFFFFF"
+			"iconColor": "#583FFF"
 		}
 	},
 	{
@@ -2368,7 +2368,8 @@
 		},
 		"assign": {
 			"magicClassDisplay": "$MagicArcane",
-			"subTypeDisplay": "$MagicEnhance"
+			"subTypeDisplay": "$MagicEnhance",
+			"iconLabel": "default_alteration"
 		}
 	},
 	{
@@ -2831,7 +2832,7 @@
 		},
 		"assign": {
 			"magicClassDisplay": "$MagicDruid",
-			"subTypeDisplay": "$MagicReflect",
+			"subTypeDisplay": "$MagicCounter",
 			"iconColor": "#6ED117"
 		}
 	},
@@ -3729,6 +3730,16 @@
 		},
 		"assign": {
 			"iconColor": "#FF8000"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_InvColorWater" ]
+		},
+		"assign": {
+			"iconColor": "#005493"
 		}
 	},
 	{
