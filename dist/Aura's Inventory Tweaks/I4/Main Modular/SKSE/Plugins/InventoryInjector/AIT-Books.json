@@ -155,12 +155,14 @@
 	{
 		"match": {
 			"formType": "Book",
-			"keywords": [ "VendorItemSpellTome" ]
+			"keywords": [ "OCF_BookSpellTome_Other" ]
 		},
 		"assign": {
 			"itemClass": "4",
 			"itemSort": "0",
-			"subTypeDisplay": "$ItemBookSpellTomePower"
+			"subTypeDisplay": "$ItemBookSpellTomePower",
+			"iconSource": "BOOBIES Immersive Icons/books.swf",
+			"iconLabel": "book_blank"
 		}
 	},
 	{
@@ -170,6 +172,7 @@
 			"keywords": [ "OCF_BookSpellTome_Alteration" ]
 		},
 		"assign": {
+			"itemClass": "4",
 			"itemSort": "1",
 			"subTypeDisplay": "$ItemBookSpellTomeAlteration",
 			"iconSource": "BOOBIES Immersive Icons/books.swf",
@@ -184,6 +187,7 @@
 			"keywords": [ "OCF_BookSpellTome_Illusion" ]
 		},
 		"assign": {
+			"itemClass": "4",
 			"itemSort": "2",
 			"subTypeDisplay": "$ItemBookSpellTomeIllusion",
 			"iconSource": "BOOBIES Immersive Icons/books.swf",
@@ -198,6 +202,7 @@
 			"keywords": [ "OCF_BookSpellTome_Destruction" ]
 		},
 		"assign": {
+			"itemClass": "4",
 			"itemSort": "3",
 			"subTypeDisplay": "$ItemBookSpellTomeDestruction",
 			"iconSource": "BOOBIES Immersive Icons/books.swf",
@@ -212,6 +217,7 @@
 			"keywords": [ "OCF_BookSpellTome_Conjuration" ]
 		},
 		"assign": {
+			"itemClass": "4",
 			"itemSort": "4",
 			"subTypeDisplay": "$ItemBookSpellTomeConjuration",
 			"iconSource": "BOOBIES Immersive Icons/books.swf",
@@ -226,6 +232,7 @@
 			"keywords": [ "OCF_BookSpellTome_Restoration" ]
 		},
 		"assign": {
+			"itemClass": "4",
 			"itemSort": "5",
 			"subTypeDisplay": "$ItemBookSpellTomeRestoration",
 			"iconSource": "BOOBIES Immersive Icons/books.swf",
@@ -240,6 +247,7 @@
 			"keywords": [ "OCF_BookSpellTome_Shehai" ]
 		},
 		"assign": {
+			"itemClass": "4",
 			"itemSort": "0",
 			"subTypeDisplay": "$ItemBookSpellTomeSwordSing",
 			"iconSource": "BOOBIES Immersive Icons/books.swf",
@@ -254,7 +262,7 @@
 			"keywords": [ "OCF_MiscChildToy_Doll" ]
 		},
 		"assign": {
-			"subTypeDisplay": "$ItemMiscDoll",
+			"itemClass": "4",
 			"iconSource": "I4IconAddon/icons.swf",
 			"iconLabel": "misc_toy"
 		}
@@ -266,6 +274,7 @@
 			"keywords": [ "OCF_RelicDwarven" ]
 		},
 		"assign": {
+			"itemClass": "4",
 			"subTypeDisplay": "$ItemMiscRelic",
 			"iconSource": "I4IconAddon/icons.swf",
 			"iconLabel": "misc_dwarvenscrap",
@@ -482,11 +491,33 @@
 	{
 		"match": {
 			"formType": "Book",
-			"keywords": [ "OCF_Placeholder_FireFuel_DwarvenOil", "OCF_Placeholder_FireFuel_Fat" ]
+			"keywords": [ "OCF_Placeholder_FireFuel_DwarvenOil" ]
+		},
+		"assign": {
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "food_stew",
+			"iconColor": "#705F32"
+		}
+	},
+	{
+		"match": {
+			"formType": "Book",
+			"keywords": [ "OCF_Placeholder_FireFuel_Fat" ]
 		},
 		"assign": {
 			"iconSource": "AIT/MoreIcons/icons.swf",
 			"iconLabel": "food_stew"
+		}
+	},
+	{
+		"match": {
+			"formType": "Book",
+			"keywords": [ "OCF_Placeholder_FireFuel_FireSalts" ]
+		},
+		"assign": {
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "food_stew",
+			"iconColor": "#C73636"
 		}
 	},
 	{

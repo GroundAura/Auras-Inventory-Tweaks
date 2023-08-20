@@ -1351,6 +1351,26 @@
 	{
 		"match": {
 			"formType": "Weapon",
+			"keywords": { "anyOf": [ "OCF_ArtifactAedric_CrusaderMace", "OCF_ReplicaAedric_CrusaderMace" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/aedric artefacts.swf",
+			"iconLabel": "crusader_mace"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"keywords": { "anyOf": [ "OCF_ArtifactAedric_CrusaderSword", "OCF_ReplicaAedric_CrusaderSword" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/aedric artefacts.swf",
+			"iconLabel": "crusader_sword"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
 			"keywords": { "anyOf": [ "OCF_ArtifactAedric_StaffMagnus", "OCF_ReplicaAedric_StaffMagnus" ] }
 		},
 		"assign": {
@@ -1365,6 +1385,16 @@
 		},
 		"assign": {
 			"iconColor": "#A14040"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"keywords": { "anyOf": [ "OCF_ArtifactDaedric_BowStagPrince", "OCF_ReplicaDaedric_BowStagPrince" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/daedric artefacts.swf",
+			"iconLabel": "nightingale_bow"
 		}
 	},
 	{
@@ -1424,6 +1454,46 @@
 		"assign": {
 			"iconSource": "BOOBIES Immersive Icons/daedric artefacts.swf",
 			"iconLabel": "mehrunes_razor"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"keywords": { "anyOf": [ "OCF_ArtifactDaedric_MiraakStaff", "OCF_ReplicaDaedric_MiraakStaff" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/daedric artefacts.swf",
+			"iconLabel": "miraak_staff"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"keywords": { "anyOf": [ "OCF_ArtifactDaedric_MiraakSword", "OCF_ReplicaDaedric_MiraakSword" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/daedric artefacts.swf",
+			"iconLabel": "miraak_sword"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"keywords": { "anyOf": [ "OCF_ArtifactDaedric_NightingaleBlade", "OCF_ReplicaDaedric_NightingaleBlade" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/daedric artefacts.swf",
+			"iconLabel": "nightingale_blade"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"keywords": { "anyOf": [ "OCF_ArtifactDaedric_NightingaleBow", "OCF_ReplicaDaedric_NightingaleBow" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/daedric artefacts.swf",
+			"iconLabel": "nightingale_bow"
 		}
 	},
 	{
@@ -1498,6 +1568,16 @@
 	{
 		"match": {
 			"formType": "Weapon",
+			"keywords": { "anyOf": [ "OCF_ArtifactDwarven_BlackbowFate", "OCF_ReplicaDwarven_BlackbowFate" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/dwemer artefacts.swf",
+			"iconLabel": "weapon_blackbow"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
 			"keywords": { "anyOf": [ "OCF_ArtifactDwarven_Keening", "OCF_ReplicaDwarven_Keening" ] }
 		},
 		"assign": {
@@ -1522,6 +1602,66 @@
 		},
 		"assign": {
 			"iconColor": "#C1884D"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"keywords": { "anyOf": [ "OCF_ArtifactLegendary_BloodskalBlade", "OCF_ReplicaLegendary_BloodskalBlade" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/legendary artefacts.swf",
+			"iconLabel": "weapon_bloodskal"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"keywords": { "anyOf": [ "OCF_ArtifactLegendary_Chillrend", "OCF_ReplicaLegendary_Chillrend" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/legendary artefacts.swf",
+			"iconLabel": "weapon_chillrend"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"keywords": { "anyOf": [ "OCF_ArtifactLegendary_DawnguardRuneAxe", "OCF_ReplicaLegendary_DawnguardRuneAxe" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/legendary artefacts.swf",
+			"iconLabel": "dawnguard_runeaxe"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"keywords": { "anyOf": [ "OCF_ArtifactLegendary_DawnguardRuneHammer", "OCF_ReplicaLegendary_DawnguardRuneHammer" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/legendary artefacts.swf",
+			"iconLabel": "dawnguard_runehammer"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"keywords": { "anyOf": [ "OCF_ArtifactLegendary_IceBladeMonarch1H", "OCF_ReplicaLegendary_IceBladeMonarch1H" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/legendary artefacts.swf",
+			"iconLabel": "weapon_icebladeofthemonarch1H"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"keywords": { "anyOf": [ "OCF_ArtifactLegendary_IceBladeMonarch2H", "OCF_ReplicaLegendary_IceBladeMonarch2H" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/legendary artefacts.swf",
+			"iconLabel": "weapon_icebladeofthemonarch2H"
 		}
 	},
 	{

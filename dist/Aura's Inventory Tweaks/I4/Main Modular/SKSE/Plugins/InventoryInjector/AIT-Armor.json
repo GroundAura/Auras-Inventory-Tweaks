@@ -1586,6 +1586,66 @@
 	{
 		"match": {
 			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ArtifactAedric_AurielShield", "OCF_ReplicaAedric_AurielShield" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/aedric artefacts.swf",
+			"iconLabel": "auriel_shield"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ArtifactAedric_CrusaderHelm", "OCF_ReplicaAedric_CrusaderHelm" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/aedric artefacts.swf",
+			"iconLabel": "crusader_helm"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ArtifactAedric_CrusaderCuirass", "OCF_ReplicaAedric_CrusaderCuirass" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/aedric artefacts.swf",
+			"iconLabel": "crusader_cuirass"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ArtifactAedric_CrusaderGauntlets", "OCF_ReplicaAedric_CrusaderGauntlets" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/aedric artefacts.swf",
+			"iconLabel": "crusader_gauntlets"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ArtifactAedric_CrusaderBoots", "OCF_ReplicaAedric_CrusaderBoots" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/aedric artefacts.swf",
+			"iconLabel": "crusader_boots"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ArtifactAedric_CrusaderShield", "OCF_ReplicaAedric_CrusaderShield" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/aedric artefacts.swf",
+			"iconLabel": "crusader_shield"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
 			"keywords": { "anyOf": [ "OCF_ArtifactAedric_ElderScroll", "OCF_ReplicaAedric_ElderScroll" ] }
 		},
 		"assign": {
@@ -1670,6 +1730,16 @@
 		},
 		"assign": {
 			"iconColor": "#FFD700"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ArtifactDwarven_AetherialCrown", "OCF_ReplicaDwarven_AetherialCrown" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/dwemer artefacts.swf",
+			"iconLabel": "aetherial_crown"
 		}
 	},
 	{
