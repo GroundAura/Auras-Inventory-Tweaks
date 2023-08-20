@@ -1998,6 +1998,26 @@
 	{
 		"match": {
 			"formType": "Weapon",
+			"keywords": { "anyOf": [ "OCF_ArtifactAedric_CrusaderMace", "OCF_ReplicaAedric_CrusaderMace" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/aedric artefacts.swf",
+			"iconLabel": "crusader_mace"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"keywords": { "anyOf": [ "OCF_ArtifactAedric_CrusaderSword", "OCF_ReplicaAedric_CrusaderSword" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/aedric artefacts.swf",
+			"iconLabel": "crusader_sword"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
 			"keywords": { "anyOf": [ "OCF_ArtifactAedric_StaffMagnus", "OCF_ReplicaAedric_StaffMagnus" ] }
 		},
 		"assign": {
@@ -2012,6 +2032,16 @@
 		},
 		"assign": {
 			"iconColor": "#A14040"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"keywords": { "anyOf": [ "OCF_ArtifactDaedric_BowStagPrince", "OCF_ReplicaDaedric_BowStagPrince" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/daedric artefacts.swf",
+			"iconLabel": "nightingale_bow"
 		}
 	},
 	{
@@ -2071,6 +2101,46 @@
 		"assign": {
 			"iconSource": "BOOBIES Immersive Icons/daedric artefacts.swf",
 			"iconLabel": "mehrunes_razor"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"keywords": { "anyOf": [ "OCF_ArtifactDaedric_MiraakStaff", "OCF_ReplicaDaedric_MiraakStaff" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/daedric artefacts.swf",
+			"iconLabel": "miraak_staff"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"keywords": { "anyOf": [ "OCF_ArtifactDaedric_MiraakSword", "OCF_ReplicaDaedric_MiraakSword" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/daedric artefacts.swf",
+			"iconLabel": "miraak_sword"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"keywords": { "anyOf": [ "OCF_ArtifactDaedric_NightingaleBlade", "OCF_ReplicaDaedric_NightingaleBlade" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/daedric artefacts.swf",
+			"iconLabel": "nightingale_blade"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"keywords": { "anyOf": [ "OCF_ArtifactDaedric_NightingaleBow", "OCF_ReplicaDaedric_NightingaleBow" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/daedric artefacts.swf",
+			"iconLabel": "nightingale_bow"
 		}
 	},
 	{
@@ -2145,6 +2215,16 @@
 	{
 		"match": {
 			"formType": "Weapon",
+			"keywords": { "anyOf": [ "OCF_ArtifactDwarven_BlackbowFate", "OCF_ReplicaDwarven_BlackbowFate" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/dwemer artefacts.swf",
+			"iconLabel": "weapon_blackbow"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
 			"keywords": { "anyOf": [ "OCF_ArtifactDwarven_Keening", "OCF_ReplicaDwarven_Keening" ] }
 		},
 		"assign": {
@@ -2169,6 +2249,66 @@
 		},
 		"assign": {
 			"iconColor": "#C1884D"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"keywords": { "anyOf": [ "OCF_ArtifactLegendary_BloodskalBlade", "OCF_ReplicaLegendary_BloodskalBlade" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/legendary artefacts.swf",
+			"iconLabel": "weapon_bloodskal"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"keywords": { "anyOf": [ "OCF_ArtifactLegendary_Chillrend", "OCF_ReplicaLegendary_Chillrend" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/legendary artefacts.swf",
+			"iconLabel": "weapon_chillrend"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"keywords": { "anyOf": [ "OCF_ArtifactLegendary_DawnguardRuneAxe", "OCF_ReplicaLegendary_DawnguardRuneAxe" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/legendary artefacts.swf",
+			"iconLabel": "dawnguard_runeaxe"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"keywords": { "anyOf": [ "OCF_ArtifactLegendary_DawnguardRuneHammer", "OCF_ReplicaLegendary_DawnguardRuneHammer" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/legendary artefacts.swf",
+			"iconLabel": "dawnguard_runehammer"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"keywords": { "anyOf": [ "OCF_ArtifactLegendary_IceBladeMonarch1H", "OCF_ReplicaLegendary_IceBladeMonarch1H" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/legendary artefacts.swf",
+			"iconLabel": "weapon_icebladeofthemonarch1H"
+		}
+	},
+	{
+		"match": {
+			"formType": "Weapon",
+			"keywords": { "anyOf": [ "OCF_ArtifactLegendary_IceBladeMonarch2H", "OCF_ReplicaLegendary_IceBladeMonarch2H" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/legendary artefacts.swf",
+			"iconLabel": "weapon_icebladeofthemonarch2H"
 		}
 	},
 	{
@@ -3994,6 +4134,66 @@
 	{
 		"match": {
 			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ArtifactAedric_AurielShield", "OCF_ReplicaAedric_AurielShield" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/aedric artefacts.swf",
+			"iconLabel": "auriel_shield"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ArtifactAedric_CrusaderHelm", "OCF_ReplicaAedric_CrusaderHelm" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/aedric artefacts.swf",
+			"iconLabel": "crusader_helm"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ArtifactAedric_CrusaderCuirass", "OCF_ReplicaAedric_CrusaderCuirass" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/aedric artefacts.swf",
+			"iconLabel": "crusader_cuirass"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ArtifactAedric_CrusaderGauntlets", "OCF_ReplicaAedric_CrusaderGauntlets" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/aedric artefacts.swf",
+			"iconLabel": "crusader_gauntlets"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ArtifactAedric_CrusaderBoots", "OCF_ReplicaAedric_CrusaderBoots" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/aedric artefacts.swf",
+			"iconLabel": "crusader_boots"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ArtifactAedric_CrusaderShield", "OCF_ReplicaAedric_CrusaderShield" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/aedric artefacts.swf",
+			"iconLabel": "crusader_shield"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
 			"keywords": { "anyOf": [ "OCF_ArtifactAedric_ElderScroll", "OCF_ReplicaAedric_ElderScroll" ] }
 		},
 		"assign": {
@@ -4078,6 +4278,16 @@
 		},
 		"assign": {
 			"iconColor": "#FFD700"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ArtifactDwarven_AetherialCrown", "OCF_ReplicaDwarven_AetherialCrown" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/dwemer artefacts.swf",
+			"iconLabel": "aetherial_crown"
 		}
 	},
 	{
@@ -6416,12 +6626,14 @@
 	{
 		"match": {
 			"formType": "Book",
-			"keywords": [ "VendorItemSpellTome" ]
+			"keywords": [ "OCF_BookSpellTome_Other" ]
 		},
 		"assign": {
 			"itemClass": "4",
 			"itemSort": "0",
-			"subTypeDisplay": "$ItemBookSpellTomePower"
+			"subTypeDisplay": "$ItemBookSpellTomePower",
+			"iconSource": "BOOBIES Immersive Icons/books.swf",
+			"iconLabel": "book_blank"
 		}
 	},
 	{
@@ -6431,6 +6643,7 @@
 			"keywords": [ "OCF_BookSpellTome_Alteration" ]
 		},
 		"assign": {
+			"itemClass": "4",
 			"itemSort": "1",
 			"subTypeDisplay": "$ItemBookSpellTomeAlteration",
 			"iconSource": "BOOBIES Immersive Icons/books.swf",
@@ -6445,6 +6658,7 @@
 			"keywords": [ "OCF_BookSpellTome_Illusion" ]
 		},
 		"assign": {
+			"itemClass": "4",
 			"itemSort": "2",
 			"subTypeDisplay": "$ItemBookSpellTomeIllusion",
 			"iconSource": "BOOBIES Immersive Icons/books.swf",
@@ -6459,6 +6673,7 @@
 			"keywords": [ "OCF_BookSpellTome_Destruction" ]
 		},
 		"assign": {
+			"itemClass": "4",
 			"itemSort": "3",
 			"subTypeDisplay": "$ItemBookSpellTomeDestruction",
 			"iconSource": "BOOBIES Immersive Icons/books.swf",
@@ -6473,6 +6688,7 @@
 			"keywords": [ "OCF_BookSpellTome_Conjuration" ]
 		},
 		"assign": {
+			"itemClass": "4",
 			"itemSort": "4",
 			"subTypeDisplay": "$ItemBookSpellTomeConjuration",
 			"iconSource": "BOOBIES Immersive Icons/books.swf",
@@ -6487,6 +6703,7 @@
 			"keywords": [ "OCF_BookSpellTome_Restoration" ]
 		},
 		"assign": {
+			"itemClass": "4",
 			"itemSort": "5",
 			"subTypeDisplay": "$ItemBookSpellTomeRestoration",
 			"iconSource": "BOOBIES Immersive Icons/books.swf",
@@ -6501,6 +6718,7 @@
 			"keywords": [ "OCF_BookSpellTome_Shehai" ]
 		},
 		"assign": {
+			"itemClass": "4",
 			"itemSort": "0",
 			"subTypeDisplay": "$ItemBookSpellTomeSwordSing",
 			"iconSource": "BOOBIES Immersive Icons/books.swf",
@@ -6515,7 +6733,7 @@
 			"keywords": [ "OCF_MiscChildToy_Doll" ]
 		},
 		"assign": {
-			"subTypeDisplay": "$ItemMiscDoll",
+			"itemClass": "4",
 			"iconSource": "I4IconAddon/icons.swf",
 			"iconLabel": "misc_toy"
 		}
@@ -6527,6 +6745,7 @@
 			"keywords": [ "OCF_RelicDwarven" ]
 		},
 		"assign": {
+			"itemClass": "4",
 			"subTypeDisplay": "$ItemMiscRelic",
 			"iconSource": "I4IconAddon/icons.swf",
 			"iconLabel": "misc_dwarvenscrap",
@@ -6743,11 +6962,33 @@
 	{
 		"match": {
 			"formType": "Book",
-			"keywords": [ "OCF_Placeholder_FireFuel_DwarvenOil", "OCF_Placeholder_FireFuel_Fat" ]
+			"keywords": [ "OCF_Placeholder_FireFuel_DwarvenOil" ]
+		},
+		"assign": {
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "food_stew",
+			"iconColor": "#705F32"
+		}
+	},
+	{
+		"match": {
+			"formType": "Book",
+			"keywords": [ "OCF_Placeholder_FireFuel_Fat" ]
 		},
 		"assign": {
 			"iconSource": "AIT/MoreIcons/icons.swf",
 			"iconLabel": "food_stew"
+		}
+	},
+	{
+		"match": {
+			"formType": "Book",
+			"keywords": [ "OCF_Placeholder_FireFuel_FireSalts" ]
+		},
+		"assign": {
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "food_stew",
+			"iconColor": "#C73636"
 		}
 	},
 	{
