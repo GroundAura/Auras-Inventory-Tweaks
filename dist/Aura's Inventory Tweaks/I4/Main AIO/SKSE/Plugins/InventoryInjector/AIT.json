@@ -11922,7 +11922,8 @@
 		},
 		"assign": {
 			"magicClassDisplay": "$MagicArcane",
-			"subTypeDisplay": "$MagicEthereal"
+			"subTypeDisplay": "$MagicEthereal",
+			"iconColor": "#00BCFF"
 		}
 	},
 	{
@@ -12073,6 +12074,19 @@
 			"subTypeDisplay": "$MagicControl",
 			"iconLabel": "default_illusion",
 			"iconColor": "#4C9EA4"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefSpellMind_ControlVampire" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicVampire",
+			"subTypeDisplay": "$MagicControl",
+			"iconLabel": "default_illusion",
+			"iconColor": "#9328FF"
 		}
 	},
 	{
@@ -12394,6 +12408,32 @@
 		"assign": {
 			"magicClassDisplay": "$MagicArcane",
 			"subTypeDisplay": "$MagicTransform"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefSpellShapechange_Vampire" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicVampire",
+			"subTypeDisplay": "$MagicTransform",
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_fangs"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefSpellShapechange_Werebeast" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicWerebeast",
+			"subTypeDisplay": "$MagicTransform",
+			"iconSource": "AIT/Aura/icons.swf",
+			"iconLabel": "magic_moons"
 		}
 	},
 	{
@@ -12995,9 +13035,7 @@
 			"effectKeywords": [ "OCF_MgefClassRace_Vampire" ]
 		},
 		"assign": {
-			"magicClassDisplay": "$MagicVampire",
-			"iconSource": "AIT/GameIcons/icons.swf",
-			"iconLabel": "misc_fangs"
+			"magicClassDisplay": "$MagicVampire"
 		}
 	},
 	{
@@ -13200,6 +13238,16 @@
 		},
 		"assign": {
 			"iconColor": "#7B2424"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_InvColorShadow" ]
+		},
+		"assign": {
+			"iconColor": "#9328FF"
 		}
 	},
 	{
