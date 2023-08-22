@@ -575,8 +575,7 @@
 			"magicClassDisplay": "$MagicArcane",
 			"subTypeDisplay": "$MagicFeather",
 			"iconSource": "AIT/GameIcons/icons.swf",
-			"iconLabel": "misc_feather",
-			"iconColor": "#00AC00"
+			"iconLabel": "misc_feather"
 		}
 	},
 	{
@@ -636,8 +635,7 @@
 		"assign": {
 			"magicClassDisplay": "$MagicWater",
 			"subTypeDisplay": "$MagicEnhance",
-			"iconSource": "I4IconAddon/icons.swf",
-			"iconLabel": "magic_water",
+			"iconLabel": "default_alteration",
 			"iconColor": "#005493"
 		}
 	},
@@ -652,8 +650,7 @@
 		"assign": {
 			"magicClassDisplay": "$MagicWater",
 			"subTypeDisplay": "$MagicEnhance",
-			"iconSource": "I4IconAddon/icons.swf",
-			"iconLabel": "magic_water",
+			"iconLabel": "default_alteration",
 			"iconColor": "#005493"
 		}
 	},
@@ -958,7 +955,8 @@
 		},
 		"assign": {
 			"magicClassDisplay": "$MagicArcane",
-			"subTypeDisplay": "$MagicSilence"
+			"subTypeDisplay": "$MagicSilence",
+			"iconColor": "#00BCFF"
 		}
 	},
 	{
@@ -2080,8 +2078,7 @@
 			"magicClassDisplay": "$MagicArcane",
 			"subTypeDisplay": "$MagicFeather",
 			"iconSource": "AIT/GameIcons/icons.swf",
-			"iconLabel": "misc_feather",
-			"iconColor": "#00AC00"
+			"iconLabel": "misc_feather"
 		}
 	},
 	{
@@ -2329,6 +2326,18 @@
 		"match": {
 			"formType": "Spell",
 			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefSpellEnhance_Health" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicArcane",
+			"subTypeDisplay": "$MagicEnhance",
+			"iconLabel": "default_restoration"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
 			"effectKeywords": [ "OCF_MgefSpellEnhance_Jump" ]
 		},
 		"assign": {
@@ -2428,8 +2437,7 @@
 		"assign": {
 			"magicClassDisplay": "$MagicWater",
 			"subTypeDisplay": "$MagicEnhance",
-			"iconSource": "I4IconAddon/icons.swf",
-			"iconLabel": "magic_water",
+			"iconLabel": "default_alteration",
 			"iconColor": "#005493"
 		}
 	},
@@ -2442,8 +2450,7 @@
 		"assign": {
 			"magicClassDisplay": "$MagicWater",
 			"subTypeDisplay": "$MagicEnhance",
-			"iconSource": "I4IconAddon/icons.swf",
-			"iconLabel": "magic_water",
+			"iconLabel": "default_alteration",
 			"iconColor": "#005493"
 		}
 	},
@@ -2456,8 +2463,7 @@
 		"assign": {
 			"magicClassDisplay": "$MagicWater",
 			"subTypeDisplay": "$MagicEnhance",
-			"iconSource": "I4IconAddon/icons.swf",
-			"iconLabel": "magic_water",
+			"iconLabel": "default_alteration",
 			"iconColor": "#005493"
 		}
 	},
@@ -2927,6 +2933,8 @@
 		"assign": {
 			"magicClassDisplay": "$MagicBlood",
 			"subTypeDisplay": "$MagicSacrifice",
+			"iconSource": "I4IconAddon/icons.swf",
+			"iconLabel": "magic_vampire",
 			"iconColor": "#8E2129"
 		}
 	},
@@ -2950,8 +2958,7 @@
 		"assign": {
 			"magicClassDisplay": "$MagicArcane",
 			"subTypeDisplay": "$MagicSilence",
-			"iconLabel": "default_illusion",
-			"iconColor": "#4C9EA4"
+			"iconColor": "#00BCFF"
 		}
 	},
 	{
@@ -4163,7 +4170,7 @@
 			"magicClassDisplay": "$MagicArcane",
 			"subTypeDisplay": "$MagicDispel",
 			"iconLabel": "default_alteration",
-			"iconColor": "#8F6B46"
+			"iconColor": "#00BCFF"
 		}
 	},
 	{
@@ -4191,7 +4198,7 @@
 			"magicClassDisplay": "$MagicArcane",
 			"subTypeDisplay": "$MagicDispel",
 			"iconLabel": "default_illusion",
-			"iconColor": "#4C9EA4"
+			"iconColor": "#00BCFF"
 		}
 	},
 	{
@@ -4205,7 +4212,7 @@
 			"magicClassDisplay": "$MagicArcane",
 			"subTypeDisplay": "$MagicDispel",
 			"iconLabel": "default_restoration",
-			"iconColor": "#00AC00"
+			"iconColor": "#00BCFF"
 		}
 	}
 ]
