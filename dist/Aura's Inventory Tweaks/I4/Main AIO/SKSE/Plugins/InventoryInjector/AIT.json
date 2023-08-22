@@ -11591,7 +11591,8 @@
 		"assign": {
 			"magicClassDisplay": "$MagicDruid",
 			"subTypeDisplay": "$MagicEnhance",
-			"iconColor": "#FF7AAC"
+			"iconLabel": "default_alteration",
+			"iconColor": "#8E2129"
 		}
 	},
 	{
@@ -11603,8 +11604,7 @@
 		"assign": {
 			"magicClassDisplay": "$MagicDruid",
 			"subTypeDisplay": "$MagicEnhance",
-			"iconLabel": "default_alteration",
-			"iconColor": "#8E2129"
+			"iconColor": "#FF7AAC"
 		}
 	},
 	{
@@ -11829,19 +11829,6 @@
 			"magicClassDisplay": "$MagicShadow",
 			"subTypeDisplay": "$MagicEnhance",
 			"iconColor": "#9328FF"
-		}
-	},
-	{
-		"match": {
-			"formType": "Spell",
-			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
-			"effectKeywords": [ "OCF_MgefSpellEnhance_RegenWater" ]
-		},
-		"assign": {
-			"magicClassDisplay": "$MagicWater",
-			"subTypeDisplay": "$MagicEnhance",
-			"iconLabel": "default_alteration",
-			"iconColor": "#005493"
 		}
 	},
 	{
@@ -12316,6 +12303,19 @@
 		"match": {
 			"formType": "Spell",
 			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefSpellRestore_MagickaWater" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicWater",
+			"subTypeDisplay": "$MagicRestore",
+			"iconLabel": "default_restoration",
+			"iconColor": "#005493"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
 			"effectKeywords": {
 				"anyOf": [
 					"OCF_MgefSpellRestore_Stamina",
@@ -12328,6 +12328,19 @@
 			"subTypeDisplay": "$MagicRestore",
 			"iconLabel": "default_restoration",
 			"iconColor": "#00AC00"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefSpellRestore_StaminaDruid" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicDruid",
+			"subTypeDisplay": "$MagicRestore",
+			"iconLabel": "default_restoration",
+			"iconColor": "#6ED117"
 		}
 	},
 	{
@@ -12361,8 +12374,6 @@
 		"assign": {
 			"magicClassDisplay": "$MagicBlood",
 			"subTypeDisplay": "$MagicSacrifice",
-			"iconSource": "I4IconAddon/icons.swf",
-			"iconLabel": "magic_vampire",
 			"iconColor": "#8E2129"
 		}
 	},
@@ -12455,6 +12466,31 @@
 			"magicClassDisplay": "$MagicShadow",
 			"subTypeDisplay": "$MagicStealth",
 			"iconColor": "#9328FF"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefSpellStealth_Invisibility" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicShadow",
+			"subTypeDisplay": "$MagicStealth",
+			"iconColor": "#9328FF"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefSpellStealth_InvisibilityDruid" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicDruid",
+			"subTypeDisplay": "$MagicStealth",
+			"iconLabel": "default_alteration",
+			"iconColor": "#6ED117"
 		}
 	},
 	{
