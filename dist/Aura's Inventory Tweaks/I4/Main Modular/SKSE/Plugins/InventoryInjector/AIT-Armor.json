@@ -1056,7 +1056,8 @@
 		},
 		"assign": {
 			"subTypeDisplay": "$ItemArmorAccessory",
-			"iconLabel": "default_armor"
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "food_waterskin"
 		}
 	},
 	{

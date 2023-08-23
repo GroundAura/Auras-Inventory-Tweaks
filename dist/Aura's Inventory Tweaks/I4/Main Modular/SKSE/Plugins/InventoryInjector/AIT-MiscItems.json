@@ -726,7 +726,9 @@
 			"keywords": [ "OCF_MiscEmptyVessel_Waterskin" ]
 		},
 		"assign": {
-			"subTypeDisplay": "$ItemMiscEmptyWaterskin"
+			"subTypeDisplay": "$ItemMiscEmptyWaterskin",
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "food_waterskin"
 		}
 	},
 	{
@@ -1721,7 +1723,8 @@
 			"keywords": [ "OCF_VesselWaterskin" ]
 		},
 		"assign": {
-			"iconLabel": "default_potion"
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "food_waterskin"
 		}
 	},
 	{

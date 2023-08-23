@@ -1180,17 +1180,187 @@
 		"match": {
 			"formType": "Spell",
 			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefPowerAction" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicGeneral",
+			"subTypeDisplay": "$MagicAction"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefPowerAction_Bag" ]
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+			"iconLabel": "armor_pouch"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefPowerAction_Bard" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicBard",
+			"iconSource": "I4IconAddon/icons.swf",
+			"iconLabel": "misc_instrument"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefPowerAction_Bathe" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_soap",
+			"iconColor": "#FFCC99"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefPowerAction_BuryCorpse" ]
+		},
+		"assign": {
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "tool_shovel"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefPowerAction_Campfire" ]
+		},
+		"assign": {
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_campfire"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefPowerAction_Coin" ]
+		},
+		"assign": {
+			"iconLabel": "misc_gold"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefPowerAction_Craft" ]
+		},
+		"assign": {
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_createitem"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefPowerAction_HarvestCorpse" ]
+		},
+		"assign": {
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "food_meat"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefPowerAction_HarvestWood" ]
+		},
+		"assign": {
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_harvestwood"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefPowerAction_Instincts" ]
+		},
+		"assign": {
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_instincts"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefPowerAction_Lantern" ]
+		},
+		"assign": {
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "misc_lantern"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefPowerAction_PeekKeyhole" ]
+		},
+		"assign": {
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_instincts"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefPowerAction_Potion" ]
+		},
+		"assign": {
+			"iconLabel": "default_potion"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefPowerAction_Pray" ]
+		},
+		"assign": {
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_prayer"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
 			"effectKeywords": {
 				"anyOf": [
-					"OCF_MgefPowerAction",
 					"OCF_MgefPowerAction_Influence",
-					"OCF_MgefPowerAction_InfluenceEngage"
+					"OCF_MgefPowerAction_InfluenceEngage",
+					"OCF_MgefPowerAction_CommandFollower",
+					"OCF_MgefPowerAction_Relax",
+					"OCF_MgefPowerAction_Speech",
+					"OCF_MgefPowerAction_TameAnimal"
 				]
 			}
 		},
 		"assign": {
 			"magicClassDisplay": "$MagicGeneral",
-			"subTypeDisplay": "$MagicAction"
+			"subTypeDisplay": "$MagicAction",
+			"iconLabel": "default_power",
+			"iconColor": "#FFFFFF"
 		}
 	},
 	{
@@ -2401,7 +2571,7 @@
 		},
 		"assign": {
 			"magicClassDisplay": "$MagicArcane",
-			"subTypeDisplay": "$MagicEnhance"
+			"subTypeDisplay": "$MagicDivination"
 		}
 	},
 	{

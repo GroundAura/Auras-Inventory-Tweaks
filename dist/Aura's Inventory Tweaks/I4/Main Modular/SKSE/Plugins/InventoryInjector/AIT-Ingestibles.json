@@ -1129,7 +1129,8 @@
 			"keywords": [ "OCF_VesselWaterskin" ]
 		},
 		"assign": {
-			"iconLabel": "food_wine"
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "food_waterskin"
 		}
 	},
 	{
