@@ -12832,7 +12832,9 @@
 		},
 		"assign": {
 			"magicClassDisplay": "$MagicArcane",
-			"subTypeDisplay": "$MagicTransform"
+			"subTypeDisplay": "$MagicTransform",
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_cowskull"
 		}
 	},
 	{
@@ -12937,6 +12939,7 @@
 		"assign": {
 			"magicClassDisplay": "$MagicShadow",
 			"subTypeDisplay": "$MagicStealth",
+			"iconLabel": "default_illusion",
 			"iconColor": "#9328FF"
 		}
 	},
@@ -12949,6 +12952,7 @@
 		"assign": {
 			"magicClassDisplay": "$MagicShadow",
 			"subTypeDisplay": "$MagicStealth",
+			"iconLabel": "default_illusion",
 			"iconColor": "#9328FF"
 		}
 	},
