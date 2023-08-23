@@ -357,7 +357,9 @@
 		},
 		"assign": {
 			"magicClassDisplay": "$MagicArcane",
-			"subTypeDisplay": "$MagicDivination"
+			"subTypeDisplay": "$MagicDivination",
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_instincts"
 		}
 	},
 	{
@@ -1269,6 +1271,17 @@
 		"match": {
 			"formType": "Spell",
 			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefPowerAction_FillWater" ]
+		},
+		"assign": {
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_fillbottle"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
 			"effectKeywords": [ "OCF_MgefPowerAction_HarvestCorpse" ]
 		},
 		"assign": {
@@ -1345,12 +1358,43 @@
 		"match": {
 			"formType": "Spell",
 			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefPowerAction_Relax" ]
+		},
+		"assign": {
+			"iconLabel": "default_power"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefPowerAction_StatusSunhelm" ]
+		},
+		"assign": {
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_continuancealt"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefPowerAction_WeaponGrip" ]
+		},
+		"assign": {
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_reverse"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
 			"effectKeywords": {
 				"anyOf": [
+					"OCF_MgefPowerAction_CommandFollower",
 					"OCF_MgefPowerAction_Influence",
 					"OCF_MgefPowerAction_InfluenceEngage",
-					"OCF_MgefPowerAction_CommandFollower",
-					"OCF_MgefPowerAction_Relax",
 					"OCF_MgefPowerAction_Speech",
 					"OCF_MgefPowerAction_TameAnimal"
 				]
@@ -1359,7 +1403,8 @@
 		"assign": {
 			"magicClassDisplay": "$MagicGeneral",
 			"subTypeDisplay": "$MagicAction",
-			"iconLabel": "default_power",
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_commandfollowers",
 			"iconColor": "#FFFFFF"
 		}
 	},
@@ -2224,7 +2269,9 @@
 		},
 		"assign": {
 			"magicClassDisplay": "$MagicArcane",
-			"subTypeDisplay": "$MagicDivination"
+			"subTypeDisplay": "$MagicDivination",
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_instincts"
 		}
 	},
 	{
@@ -2571,7 +2618,9 @@
 		},
 		"assign": {
 			"magicClassDisplay": "$MagicArcane",
-			"subTypeDisplay": "$MagicDivination"
+			"subTypeDisplay": "$MagicDivination",
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_instincts"
 		}
 	},
 	{
@@ -4431,6 +4480,99 @@
 			"subTypeDisplay": "$MagicDispel",
 			"iconLabel": "default_restoration",
 			"iconColor": "#00BCFF"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"formId": "Spellsiphon.esp|2B4A26"
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicArcane",
+			"subTypeDisplay": "$MagicAction",
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_spellsiphon"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"formId": "Spellsiphon.esp|1FD77B"
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicArcane",
+			"subTypeDisplay": "$MagicAction",
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_reverse"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"formId": "Spellsiphon.esp|390EC9"
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicArcane",
+			"subTypeDisplay": "$MagicAction",
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_refocus"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"formId": "Spellsiphon.esp|9DFA9"
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicArcane",
+			"subTypeDisplay": "$MagicAction",
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_reshape"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"formId": "Spellsiphon.esp|721A40"
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicArcane",
+			"subTypeDisplay": "$MagicAction",
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_realign"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"formId": "Spellsiphon.esp|721A3E"
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicArcane",
+			"subTypeDisplay": "$MagicAction",
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_entangle"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"formId": "Spellsiphon.esp|73AF52"
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicArcane",
+			"subTypeDisplay": "$MagicAction",
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_untangle"
+		}
+	},
+	{
+		"match": {
+			"formId": "Spellsiphon.esp|331C"
+		},
+		"assign": {
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "voice_bind"
 		}
 	}
 ]
