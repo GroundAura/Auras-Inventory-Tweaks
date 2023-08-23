@@ -9650,6 +9650,16 @@
 	{
 		"match": {
 			"formType": "Spell",
+			"spellType": { "anyOf": [ "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefPowerGrand" ]
+		},
+		"assign": {
+			"skillLevel": "175",
+			"infoCastLevel": "$MagicPowerGrand"
+		}
+	},
+	{
+		"match": {
 			"spellType": "VoicePower"
 		},
 		"assign": {
@@ -10094,7 +10104,9 @@
 		},
 		"assign": {
 			"magicClassDisplay": "$MagicArcane",
-			"subTypeDisplay": "$MagicEnhance"
+			"subTypeDisplay": "$MagicDivination",
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_instincts"
 		}
 	},
 	{
@@ -10803,7 +10815,8 @@
 		},
 		"assign": {
 			"iconSource": "Dodo/powers.swf",
-			"iconLabel": "power_instincts"
+			"iconLabel": "power_instincts",
+			"iconColor": "#9328FF"
 		}
 	},
 	{
@@ -10824,7 +10837,7 @@
 		},
 		"assign": {
 			"iconSource": "Dodo/powers.swf",
-			"iconLabel": "power_prayer"
+			"iconLabel": "power_prayeralt"
 		}
 	},
 	{
@@ -11343,6 +11356,19 @@
 		"match": {
 			"formType": "Spell",
 			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefSpellDamage_FireCloakDunmer" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicRacial",
+			"iconSource": "IAmNotSimon/RacialIcons.swf",
+			"iconLabel": "race_dunmer",
+			"iconColor": "#C73636"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
 			"effectKeywords": {
 				"anyOf": [
 					"OCF_MgefSpellDamage_FireShock",
@@ -11673,6 +11699,20 @@
 		"match": {
 			"formType": "Spell",
 			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefSpellDamage_PoisonDoomstone" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicToxin",
+			"subTypeDisplay": "$MagicPoison",
+			"iconSource": "IAmNotSimon/StandingStone.swf",
+			"iconLabel": "effect_stone",
+			"iconColor": "#62A636"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
 			"effectKeywords": {
 				"anyOf": [
 					"OCF_MgefSpellDamage_PoisonEldritch",
@@ -11773,6 +11813,18 @@
 		"match": {
 			"formType": "Spell",
 			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefSpellEnhance_Attack" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicArcane",
+			"subTypeDisplay": "$MagicEnhance",
+			"iconLabel": "default_alteration"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
 			"effectKeywords": [ "OCF_MgefSpellEnhance_CarryWeight" ]
 		},
 		"assign": {
@@ -11786,12 +11838,60 @@
 		"match": {
 			"formType": "Spell",
 			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefSpellEnhance_Casting" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicArcane",
+			"subTypeDisplay": "$MagicEnhance"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefSpellEnhance_CastingDruid" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicDruid",
+			"subTypeDisplay": "$MagicEnhance",
+			"iconLabel": "default_alteration",
+			"iconColor": "#6ED117"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefSpellEnhance_CastingEldritch" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicDruid",
+			"subTypeDisplay": "$MagicEnhance",
+			"iconLabel": "default_alteration",
+			"iconColor": "#6ED117"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
 			"effectKeywords": [ "OCF_MgefSpellEnhance_CritShadowInvis" ]
 		},
 		"assign": {
 			"magicClassDisplay": "$MagicShadow",
 			"subTypeDisplay": "$MagicEnhance",
 			"iconColor": "#9328FF"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefSpellEnhance_Damage" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicArcane",
+			"subTypeDisplay": "$MagicEnhance"
 		}
 	},
 	{
@@ -12111,17 +12211,6 @@
 		"match": {
 			"formType": "Spell",
 			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
-			"effectKeywords": [ "OCF_MgefSpellEnhance_SpellCost" ]
-		},
-		"assign": {
-			"magicClassDisplay": "$MagicArcane",
-			"subTypeDisplay": "$MagicEnhance"
-		}
-	},
-	{
-		"match": {
-			"formType": "Spell",
-			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
 			"effectKeywords": [ "OCF_MgefSpellEnhance_StaminaDruid" ]
 		},
 		"assign": {
@@ -12253,6 +12342,19 @@
 		"match": {
 			"formType": "Spell",
 			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefSpellHeal_LivingWater" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicWater",
+			"subTypeDisplay": "$MagicHeal",
+			"iconLabel": "default_restoration",
+			"iconColor": "#005493"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
 			"effectKeywords": {
 				"anyOf": [
 					"OCF_MgefSpellHeal_Self",
@@ -12278,18 +12380,6 @@
 			"subTypeDisplay": "$MagicMend",
 			"iconLabel": "default_restoration",
 			"iconColor": "#20C47D"
-		}
-	},
-	{
-		"match": {
-			"formType": "Spell",
-			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
-			"effectKeywords": [ "OCF_MgefSpellInvisibility" ]
-		},
-		"assign": {
-			"magicClassDisplay": "$MagicShadow",
-			"subTypeDisplay": "$MagicStealth",
-			"iconColor": "#9328FF"
 		}
 	},
 	{
@@ -12323,6 +12413,19 @@
 		"match": {
 			"formType": "Spell",
 			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefSpellMind_CharmImperial" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicRacial",
+			"subTypeDisplay": "$MagicCharm",
+			"iconSource": "IAmNotSimon/RacialIcons.swf",
+			"iconLabel": "race_imperial"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
 			"effectKeywords": [ "OCF_MgefSpellMind_Control" ]
 		},
 		"assign": {
@@ -12330,6 +12433,19 @@
 			"subTypeDisplay": "$MagicControl",
 			"iconLabel": "default_illusion",
 			"iconColor": "#4C9EA4"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefSpellMind_ControlBosmer" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicRacial",
+			"subTypeDisplay": "$MagicControl",
+			"iconSource": "IAmNotSimon/RacialIcons.swf",
+			"iconLabel": "race_bosmer"
 		}
 	},
 	{
@@ -12375,6 +12491,19 @@
 		"match": {
 			"formType": "Spell",
 			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefSpellMind_FearNord" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicRacial",
+			"subTypeDisplay": "$MagicFear",
+			"iconSource": "IAmNotSimon/RacialIcons.swf",
+			"iconLabel": "race_nord"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
 			"effectKeywords": [ "OCF_MgefSpellMind_Frenzy" ]
 		},
 		"assign": {
@@ -12382,6 +12511,19 @@
 			"subTypeDisplay": "$MagicFrenzy",
 			"iconLabel": "default_illusion",
 			"iconColor": "#4C9EA4"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefSpellMind_FrenzyShadow" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicShadow",
+			"subTypeDisplay": "$MagicFrenzy",
+			"iconLabel": "default_illusion",
+			"iconColor": "#9328FF"
 		}
 	},
 	{
@@ -12513,6 +12655,19 @@
 		"match": {
 			"formType": "Spell",
 			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefSpellProtect_Magic" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicArcane",
+			"subTypeDisplay": "$MagicShield",
+			"iconLabel": "default_armor",
+			"iconColor": "#00BCFF"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
 			"effectKeywords": [ "OCF_MgefSpellProtect_Warmth" ]
 		},
 		"assign": {
@@ -12531,6 +12686,20 @@
 			"magicClassDisplay": "$MagicNecromancy",
 			"subTypeDisplay": "$MagicReanimate",
 			"iconLabel": "misc_remains",
+			"iconColor": "#20C47D"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefSpellReanimateDoomstone" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicNecromancy",
+			"subTypeDisplay": "$MagicReanimate",
+			"iconSource": "IAmNotSimon/StandingStone.swf",
+			"iconLabel": "effect_stone",
 			"iconColor": "#20C47D"
 		}
 	},
@@ -12780,6 +12949,20 @@
 		"assign": {
 			"magicClassDisplay": "$MagicShadow",
 			"subTypeDisplay": "$MagicStealth",
+			"iconColor": "#9328FF"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefSpellStealth_InvisibilityDoomstone" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicShadow",
+			"subTypeDisplay": "$MagicStealth",
+			"iconSource": "IAmNotSimon/StandingStone.swf",
+			"iconLabel": "effect_stone",
 			"iconColor": "#9328FF"
 		}
 	},
@@ -13400,6 +13583,16 @@
 		"match": {
 			"formType": "Spell",
 			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_InvColorEldritch" ]
+		},
+		"assign": {
+			"iconColor": "#345F4C"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
 			"effectKeywords": [ "OCF_InvColorFire" ]
 		},
 		"assign": {
@@ -13964,16 +14157,6 @@
 			"subTypeDisplay": "$MagicDispel",
 			"iconLabel": "default_restoration",
 			"iconColor": "#00BCFF"
-		}
-	},
-	{
-		"match": {
-			"formType": "Spell",
-			"formId": "SkillsOfTheWild.esp|861"
-		},
-		"assign": {
-			"iconSource": "AIT/GameIcons/icons.swf",
-			"iconLabel": "misc_jaw"
 		}
 	},
 	{
