@@ -167,7 +167,8 @@
 					"Dragonborn.esm|1DF9C",
 					"Dragonborn.esm|1DFAB",
 					"Dragonborn.esm|1DFA7",
-					"Dragonborn.esm|1DFA5"
+					"Dragonborn.esm|1DFA5",
+					"Sacrosanct - Vampires of Skyrim.esp|5EAFD"
 				]
 			}
 		},
@@ -1110,7 +1111,9 @@
 		},
 		"assign": {
 			"magicClassDisplay": "$MagicArcane",
-			"subTypeDisplay": "$MagicTime"
+			"subTypeDisplay": "$MagicTime",
+			"iconSource": "IAmNotSimon/Time.swf",
+			"iconLabel": "magic_time"
 		}
 	},
 	{
@@ -1285,8 +1288,8 @@
 			"effectKeywords": [ "OCF_MgefPowerAction_HarvestCorpse" ]
 		},
 		"assign": {
-			"iconSource": "AIT/MoreIcons/icons.swf",
-			"iconLabel": "food_meat"
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_jaw"
 		}
 	},
 	{
@@ -1361,7 +1364,8 @@
 			"effectKeywords": [ "OCF_MgefPowerAction_Relax" ]
 		},
 		"assign": {
-			"iconLabel": "default_power"
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_hourglass"
 		}
 	},
 	{
@@ -1373,6 +1377,17 @@
 		"assign": {
 			"iconSource": "Dodo/powers.swf",
 			"iconLabel": "power_continuancealt"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefPowerAction_TameAnimal" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_cowskull"
 		}
 	},
 	{
@@ -1395,8 +1410,7 @@
 					"OCF_MgefPowerAction_CommandFollower",
 					"OCF_MgefPowerAction_Influence",
 					"OCF_MgefPowerAction_InfluenceEngage",
-					"OCF_MgefPowerAction_Speech",
-					"OCF_MgefPowerAction_TameAnimal"
+					"OCF_MgefPowerAction_Speech"
 				]
 			}
 		},

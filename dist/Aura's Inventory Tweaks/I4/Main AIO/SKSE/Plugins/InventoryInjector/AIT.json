@@ -4750,6 +4750,24 @@
 			"subType": "Food",
 			"keywords": {
 				"anyOf": [
+					"OCF_AlchFood_Sandwich",
+					"FoodTypeSandwich"
+				]
+			}
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemFoodSandwich",
+			"iconSource": "MissileSandwiches/icons.swf",
+			"iconLabel": "missile_sandwich",
+			"iconColor": "#8E745B"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Food",
+			"keywords": {
+				"anyOf": [
 					"OCF_AlchFood_Stew",
 					"VendorItemFoodStew",
 					"VendorItemFoodStewSimple",
@@ -8457,8 +8475,8 @@
 			"keywords": [ "OCF_ToolShovel" ]
 		},
 		"assign": {
-			"iconSource": "I4IconAddon/icons.swf",
-			"iconLabel": "misc_tool"
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "tool_shovel"
 		}
 	},
 	{
@@ -8501,7 +8519,7 @@
 			"subTypeDisplay": "$ItemMiscTrap",
 			"iconSource": "I4IconAddon/icons.swf",
 			"iconLabel": "misc_beartrap",
-			"iconColor": "#A89E8C"
+			"iconColor": "#BF8E60"
 		}
 	},
 	{
@@ -9619,7 +9637,8 @@
 					"Dragonborn.esm|1DF9C",
 					"Dragonborn.esm|1DFAB",
 					"Dragonborn.esm|1DFA7",
-					"Dragonborn.esm|1DFA5"
+					"Dragonborn.esm|1DFA5",
+					"Sacrosanct - Vampires of Skyrim.esp|5EAFD"
 				]
 			}
 		},
@@ -10562,7 +10581,9 @@
 		},
 		"assign": {
 			"magicClassDisplay": "$MagicArcane",
-			"subTypeDisplay": "$MagicTime"
+			"subTypeDisplay": "$MagicTime",
+			"iconSource": "IAmNotSimon/Time.swf",
+			"iconLabel": "magic_time"
 		}
 	},
 	{
@@ -10737,8 +10758,8 @@
 			"effectKeywords": [ "OCF_MgefPowerAction_HarvestCorpse" ]
 		},
 		"assign": {
-			"iconSource": "AIT/MoreIcons/icons.swf",
-			"iconLabel": "food_meat"
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_jaw"
 		}
 	},
 	{
@@ -10813,7 +10834,8 @@
 			"effectKeywords": [ "OCF_MgefPowerAction_Relax" ]
 		},
 		"assign": {
-			"iconLabel": "default_power"
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_hourglass"
 		}
 	},
 	{
@@ -10825,6 +10847,17 @@
 		"assign": {
 			"iconSource": "Dodo/powers.swf",
 			"iconLabel": "power_continuancealt"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefPowerAction_TameAnimal" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_cowskull"
 		}
 	},
 	{
@@ -10847,8 +10880,7 @@
 					"OCF_MgefPowerAction_CommandFollower",
 					"OCF_MgefPowerAction_Influence",
 					"OCF_MgefPowerAction_InfluenceEngage",
-					"OCF_MgefPowerAction_Speech",
-					"OCF_MgefPowerAction_TameAnimal"
+					"OCF_MgefPowerAction_Speech"
 				]
 			}
 		},
@@ -13932,6 +13964,16 @@
 			"subTypeDisplay": "$MagicDispel",
 			"iconLabel": "default_restoration",
 			"iconColor": "#00BCFF"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"formId": "SkillsOfTheWild.esp|861"
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_jaw"
 		}
 	},
 	{
