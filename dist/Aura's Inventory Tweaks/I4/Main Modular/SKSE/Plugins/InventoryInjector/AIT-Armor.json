@@ -1775,6 +1775,16 @@
 	{
 		"match": {
 			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ArtifactLegendary_DawnguardRuneShield", "OCF_ReplicaLegendary_DawnguardRuneShield" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/legendary artefacts.swf",
+			"iconLabel": "dawnguard_runeshield "
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
 			"keywords": { "anyOf": [ "OCF_ArtifactLegendary_DragonPriestMask", "OCF_ReplicaLegendary_DragonPriestMask" ] }
 		},
 		"assign": {

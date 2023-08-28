@@ -1235,8 +1235,18 @@
 		},
 		"assign": {
 			"iconSource": "AIT/GameIcons/icons.swf",
-			"iconLabel": "misc_soap",
-			"iconColor": "#FFCC99"
+			"iconLabel": "misc_soap"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefPowerAction_Bless" ]
+		},
+		"assign": {
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_emptyhands"
 		}
 	},
 	{
@@ -1246,8 +1256,8 @@
 			"effectKeywords": [ "OCF_MgefPowerAction_BuryCorpse" ]
 		},
 		"assign": {
-			"iconSource": "AIT/MoreIcons/icons.swf",
-			"iconLabel": "tool_shovel"
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_burial"
 		}
 	},
 	{
@@ -1300,8 +1310,19 @@
 			"effectKeywords": [ "OCF_MgefPowerAction_HarvestCorpse" ]
 		},
 		"assign": {
-			"iconSource": "AIT/GameIcons/icons.swf",
-			"iconLabel": "misc_jaw"
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_harvestalt"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefPowerAction_HarvestGather" ]
+		},
+		"assign": {
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_harvestalt"
 		}
 	},
 	{
@@ -1353,6 +1374,17 @@
 		"match": {
 			"formType": "Spell",
 			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefPowerAction_PitchTent" ]
+		},
+		"assign": {
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_pitchtent"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
 			"effectKeywords": [ "OCF_MgefPowerAction_Potion" ]
 		},
 		"assign": {
@@ -1377,8 +1409,8 @@
 			"effectKeywords": [ "OCF_MgefPowerAction_Relax" ]
 		},
 		"assign": {
-			"iconSource": "AIT/GameIcons/icons.swf",
-			"iconLabel": "misc_hourglass"
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_meditate"
 		}
 	},
 	{
@@ -1399,8 +1431,8 @@
 			"effectKeywords": [ "OCF_MgefPowerAction_TameAnimal" ]
 		},
 		"assign": {
-			"iconSource": "AIT/GameIcons/icons.swf",
-			"iconLabel": "misc_cowskull"
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_tamebeast"
 		}
 	},
 	{
@@ -2820,7 +2852,9 @@
 		},
 		"assign": {
 			"magicClassDisplay": "$MagicArcane",
-			"subTypeDisplay": "$MagicHarvest"
+			"subTypeDisplay": "$MagicHarvest",
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_harvestalt"
 		}
 	},
 	{
@@ -4031,6 +4065,28 @@
 		},
 		"assign": {
 			"magicClassDisplay": "$MagicSurvival"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefClassSurvival_Needs" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicSurvival",
+			"iconColor": "#F48037"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefClassSurvival_Wilderness" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicSurvival",
+			"iconColor": "#E08300"
 		}
 	},
 	{
