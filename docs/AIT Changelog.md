@@ -1,5 +1,9 @@
 # Aura's Inventory Tweaks for SkyUI - Changelog
 
+## Version 4.1.2
+
+- **I4 Main Module (Armor/AIO):** Tiny fix. Removed a single space that prevented the Dawnguard Rune Shield from having an icon.
+
 ## Version 4.1.1
 
 - **Now requires** OCF v4.2.1+.
