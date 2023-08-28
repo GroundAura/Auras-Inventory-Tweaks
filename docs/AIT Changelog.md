@@ -3,7 +3,8 @@
 ## Version 4.1.0
 
 - Now requires BOOBIES v2.0.0+.
-- Now requires OCF v4.2.0+
+- Now requires OCF v4.2.0+.
+- Now requires THICC v1.4.0+.
 - FOMOD: Updated header image.
 - AIT Translations: Removed Chinese, German, Polish, and Russian translation files. Now other people will manage translations on their own pages. Still feel free to contact me with translation questions.
 - AIT Translations: Added temporary file with old Polish and Russian translations as a base for others to update.
