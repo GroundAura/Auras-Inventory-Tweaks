@@ -1,5 +1,15 @@
 # Aura's Inventory Tweaks for SkyUI - Changelog
 
+## Version 4.1.1
+
+- **Now requires** OCF v4.2.1+.
+
+- **AIT Translations:** Added new strings: "$ItemBookSong" ("Songbook").
+
+- **I4 Main Module (Book/AIO):** Added songbook type.
+
+- **I4 Main Module (Spell/AIO):** Added mod support and power icons.
+
 ## Version 4.1.0
 
 - Now requires BOOBIES v2.0.0+.

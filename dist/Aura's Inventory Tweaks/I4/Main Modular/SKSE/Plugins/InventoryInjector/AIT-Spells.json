@@ -1307,6 +1307,24 @@
 		"match": {
 			"formType": "Spell",
 			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": { 
+				"anyOf": [
+					"OCF_MgefPowerAction_Goggles",
+					"OCF_MgefPowerAction_GogglesSight"
+				]
+			}
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicArtificer",
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_instincts",
+			"iconColor": "#705F32"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
 			"effectKeywords": [ "OCF_MgefPowerAction_HarvestCorpse" ]
 		},
 		"assign": {
@@ -1334,6 +1352,17 @@
 		"assign": {
 			"iconSource": "Dodo/powers.swf",
 			"iconLabel": "power_harvestwood"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefPowerAction_Horse" ]
+		},
+		"assign": {
+			"iconSource": "I4IconAddon/icons.swf",
+			"iconLabel": "misc_horsetack"
 		}
 	},
 	{
@@ -2764,6 +2793,60 @@
 		},
 		"assign": {
 			"magicClassDisplay": "$MagicArcane",
+			"subTypeDisplay": "$MagicDivination",
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_instincts"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefSpellEnhance_SightKhajiit" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicRacial",
+			"subTypeDisplay": "$MagicDivination",
+			"iconSource": "IAmNotSimon/RacialIcons.swf",
+			"iconLabel": "race_khajiit"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefSpellEnhance_SightVampireBlood" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicVampire",
+			"subTypeDisplay": "$MagicDivination",
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_instincts",
+			"iconColor": "#8E2129"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefSpellEnhance_SightVampireShadow" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicVampire",
+			"subTypeDisplay": "$MagicDivination",
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_instincts",
+			"iconColor": "#9328FF"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefSpellEnhance_SightWerebeast" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicWerebeast",
 			"subTypeDisplay": "$MagicDivination",
 			"iconSource": "Dodo/powers.swf",
 			"iconLabel": "power_instincts"

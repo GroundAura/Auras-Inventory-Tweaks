@@ -63,6 +63,15 @@
 	{
 		"match": {
 			"formType": "Book",
+			"keywords": [ "OCF_BookTextSong" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemBookSong"
+		}
+	},
+	{
+		"match": {
+			"formType": "Book",
 			"keywords": {
 				"anyOf": [
 					"VendorItemRecipe",
