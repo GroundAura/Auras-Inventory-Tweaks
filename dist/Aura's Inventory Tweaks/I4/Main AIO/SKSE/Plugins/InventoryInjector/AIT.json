@@ -5797,7 +5797,7 @@
 	{
 		"match": {
 			"formType": "Scroll",
-			"keywords": { "anyOf": [ "BYOHAdoptionToyKeyword", "OCF_MiscChildToy", "IconToy" ] }
+			"keywords": { "anyOf": [ "BYOHAdoptionToyKeyword", "OCF_MiscChildToy", "OCF_MiscPetGear_Toy", "IconToy" ] }
 		},
 		"assign": {
 			"itemClass": "4",
@@ -5815,8 +5815,25 @@
 		},
 		"assign": {
 			"subTypeDisplay": "$ItemMiscDoll",
+			"iconSource": "I4IconAddon/icons.swf",
 			"iconLabel": "misc_toy",
 			"iconColor": "#FFFFFF"
+		}
+	},
+	{
+		"match": {
+			"formType": "Scroll",
+			"keywords": [ "OCF_WeapTypeDart1H" ]
+		},
+		"assign": {
+			"equipType": "1",
+			"equipTypeDisplay": "$EqpOneHanded",
+			"itemType": "1",
+			"itemClass": "1",
+			"itemSort": "2",
+			"subTypeDisplay": "$ItemAmmoDart",
+			"iconLabel": "weapon_bolt",
+			"iconColor": "#A4A5BF"
 		}
 	},
 	{
@@ -8131,6 +8148,17 @@
 		"assign": {
 			"iconSource": "AIT/MoreIcons/icons.swf",
 			"iconLabel": "misc_backpack"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
+			"keywords": [ "OCF_MiscPetGear_Toy" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$Toy",
+			"iconSource": "I4IconAddon/icons.swf",
+			"iconLabel": "misc_toy"
 		}
 	},
 	{
@@ -10805,6 +10833,7 @@
 		},
 		"assign": {
 			"magicClassDisplay": "$MagicArtificer",
+			"subTypeDisplay": "$MagicAction",
 			"iconSource": "Dodo/powers.swf",
 			"iconLabel": "power_instincts",
 			"iconColor": "#705F32"
@@ -10935,6 +10964,17 @@
 		"match": {
 			"formType": "Spell",
 			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefPowerAction_StatusFrostfall" ]
+		},
+		"assign": {
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_instincts"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
 			"effectKeywords": [ "OCF_MgefPowerAction_StatusSunhelm" ]
 		},
 		"assign": {
@@ -10951,6 +10991,17 @@
 		"assign": {
 			"iconSource": "Dodo/powers.swf",
 			"iconLabel": "power_tamebeast"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefPowerAction_Train" ]
+		},
+		"assign": {
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_refocus"
 		}
 	},
 	{
@@ -14121,6 +14172,17 @@
 		"match": {
 			"formType": "Spell",
 			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_WeapTypeKunai1H" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "weapon_kunai"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
 			"effectKeywords": [ "OCF_WeapTypeMace1H" ]
 		},
 		"assign": {
@@ -14190,6 +14252,17 @@
 		"assign": {
 			"iconSource": "BOOBIES Immersive Icons/weapons.swf",
 			"iconLabel": "weapon_scythe"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_WeapTypeShuriken1H" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "weapon_shuriken"
 		}
 	},
 	{

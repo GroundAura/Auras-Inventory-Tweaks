@@ -133,7 +133,7 @@
 	{
 		"match": {
 			"formType": "Scroll",
-			"keywords": { "anyOf": [ "BYOHAdoptionToyKeyword", "OCF_MiscChildToy", "IconToy" ] }
+			"keywords": { "anyOf": [ "BYOHAdoptionToyKeyword", "OCF_MiscChildToy", "OCF_MiscPetGear_Toy", "IconToy" ] }
 		},
 		"assign": {
 			"itemClass": "4",
@@ -151,8 +151,25 @@
 		},
 		"assign": {
 			"subTypeDisplay": "$ItemMiscDoll",
+			"iconSource": "I4IconAddon/icons.swf",
 			"iconLabel": "misc_toy",
 			"iconColor": "#FFFFFF"
+		}
+	},
+	{
+		"match": {
+			"formType": "Scroll",
+			"keywords": [ "OCF_WeapTypeDart1H" ]
+		},
+		"assign": {
+			"equipType": "1",
+			"equipTypeDisplay": "$EqpOneHanded",
+			"itemType": "1",
+			"itemClass": "1",
+			"itemSort": "2",
+			"subTypeDisplay": "$ItemAmmoDart",
+			"iconLabel": "weapon_bolt",
+			"iconColor": "#A4A5BF"
 		}
 	},
 	{

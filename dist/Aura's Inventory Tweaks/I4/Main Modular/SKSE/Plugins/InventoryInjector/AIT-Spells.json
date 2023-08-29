@@ -1316,6 +1316,7 @@
 		},
 		"assign": {
 			"magicClassDisplay": "$MagicArtificer",
+			"subTypeDisplay": "$MagicAction",
 			"iconSource": "Dodo/powers.swf",
 			"iconLabel": "power_instincts",
 			"iconColor": "#705F32"
@@ -1446,6 +1447,17 @@
 		"match": {
 			"formType": "Spell",
 			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefPowerAction_StatusFrostfall" ]
+		},
+		"assign": {
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_instincts"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
 			"effectKeywords": [ "OCF_MgefPowerAction_StatusSunhelm" ]
 		},
 		"assign": {
@@ -1462,6 +1474,17 @@
 		"assign": {
 			"iconSource": "Dodo/powers.swf",
 			"iconLabel": "power_tamebeast"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefPowerAction_Train" ]
+		},
+		"assign": {
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "power_refocus"
 		}
 	},
 	{
@@ -4632,6 +4655,17 @@
 		"match": {
 			"formType": "Spell",
 			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_WeapTypeKunai1H" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "weapon_kunai"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
 			"effectKeywords": [ "OCF_WeapTypeMace1H" ]
 		},
 		"assign": {
@@ -4701,6 +4735,17 @@
 		"assign": {
 			"iconSource": "BOOBIES Immersive Icons/weapons.swf",
 			"iconLabel": "weapon_scythe"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_WeapTypeShuriken1H" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "weapon_shuriken"
 		}
 	},
 	{

@@ -985,6 +985,17 @@
 	{
 		"match": {
 			"formType": "MiscItem",
+			"keywords": [ "OCF_MiscPetGear_Toy" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$Toy",
+			"iconSource": "I4IconAddon/icons.swf",
+			"iconLabel": "misc_toy"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
 			"keywords": [ "OCF_MiscPillow" ]
 		},
 		"assign": {
