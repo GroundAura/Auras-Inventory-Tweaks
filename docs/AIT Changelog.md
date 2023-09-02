@@ -1,5 +1,15 @@
 # Aura's Inventory Tweaks for SkyUI - Changelog
 
+## Version 4.1.4
+
+- **Now requires** OCF v4.2.3+. For new mod support and fixes.
+
+- **I4 Main Module (Armor/AIO):** Underwear changes.
+
+- **I4 Main Module (Ingredient/AIO):** Added mod support.
+
+- **I4 Main Module (Spell/AIO):** New icon. Added mod support. Fixes.
+
 ## Version 4.1.3
 
 - **Now requires** OCF v4.2.2+.

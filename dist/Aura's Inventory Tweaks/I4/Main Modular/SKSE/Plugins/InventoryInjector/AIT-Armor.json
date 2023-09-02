@@ -640,6 +640,16 @@
 		},
 		"assign": {
 			"subTypeDisplay": "$ItemArmorUnderwear",
+			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+			"iconLabel": "armor_underwears"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_BodyTypeUnderwearM" ]
+		},
+		"assign": {
 			"iconSource": "AIT/MoreIcons/icons.swf",
 			"iconLabel": "clothing_Mpanty"
 		}
@@ -647,31 +657,11 @@
 	{
 		"match": {
 			"formType": "Armor",
-			"keywords": [ "OCF_BodyTypeUnderwear_FullF" ]
+			"keywords": [ "ClothingBra" ]
 		},
 		"assign": {
-			"iconSource": "AIT/MoreIcons/icons.swf",
-			"iconLabel": "clothing_lingerie"
-		}
-	},
-	{
-		"match": {
-			"formType": "Armor",
-			"keywords": [ "OCF_BodyTypeLingerie" ]
-		},
-		"assign": {
-			"iconSource": "AIT/MoreIcons/icons.swf",
-			"iconLabel": "clothing_lingerie"
-		}
-	},
-	{
-		"match": {
-			"formType": "Armor",
-			"keywords": { "anyOf": [ "OCF_BodyTypeUnderwear_Top", "ClothingBra" ] }
-		},
-		"assign": {
-			"iconSource": "AIT/MoreIcons/icons.swf",
-			"iconLabel": "clothing_bra"
+			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+			"iconLabel": "armor_bra"
 		}
 	},
 	{
@@ -682,6 +672,26 @@
 		"assign": {
 			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
 			"iconLabel": "armor_panties"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_BodyTypeUnderwearF_Full1P" ]
+		},
+		"assign": {
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "clothing_lingerie"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_BodyTypeUnderwearF_Full2P" ]
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+			"iconLabel": "armor_underwears"
 		}
 	},
 	{

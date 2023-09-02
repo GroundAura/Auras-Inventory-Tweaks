@@ -523,6 +523,15 @@
 	{
 		"match": {
 			"formType": "Ingredient",
+			"keywords": [ "OCF_InvColorMagenta" ]
+		},
+		"assign": {
+			"iconColor": "#C03797"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
 			"keywords": [ "OCF_InvColorOrange" ]
 		},
 		"assign": {

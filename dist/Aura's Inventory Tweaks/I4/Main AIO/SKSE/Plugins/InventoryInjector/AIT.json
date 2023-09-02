@@ -3188,6 +3188,16 @@
 		},
 		"assign": {
 			"subTypeDisplay": "$ItemArmorUnderwear",
+			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+			"iconLabel": "armor_underwears"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_BodyTypeUnderwearM" ]
+		},
+		"assign": {
 			"iconSource": "AIT/MoreIcons/icons.swf",
 			"iconLabel": "clothing_Mpanty"
 		}
@@ -3195,31 +3205,11 @@
 	{
 		"match": {
 			"formType": "Armor",
-			"keywords": [ "OCF_BodyTypeUnderwear_FullF" ]
+			"keywords": [ "ClothingBra" ]
 		},
 		"assign": {
-			"iconSource": "AIT/MoreIcons/icons.swf",
-			"iconLabel": "clothing_lingerie"
-		}
-	},
-	{
-		"match": {
-			"formType": "Armor",
-			"keywords": [ "OCF_BodyTypeLingerie" ]
-		},
-		"assign": {
-			"iconSource": "AIT/MoreIcons/icons.swf",
-			"iconLabel": "clothing_lingerie"
-		}
-	},
-	{
-		"match": {
-			"formType": "Armor",
-			"keywords": { "anyOf": [ "OCF_BodyTypeUnderwear_Top", "ClothingBra" ] }
-		},
-		"assign": {
-			"iconSource": "AIT/MoreIcons/icons.swf",
-			"iconLabel": "clothing_bra"
+			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+			"iconLabel": "armor_bra"
 		}
 	},
 	{
@@ -3230,6 +3220,26 @@
 		"assign": {
 			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
 			"iconLabel": "armor_panties"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_BodyTypeUnderwearF_Full1P" ]
+		},
+		"assign": {
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "clothing_lingerie"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_BodyTypeUnderwearF_Full2P" ]
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+			"iconLabel": "armor_underwears"
 		}
 	},
 	{
@@ -6397,6 +6407,15 @@
 		},
 		"assign": {
 			"iconColor": "#C1884D"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_InvColorMagenta" ]
+		},
+		"assign": {
+			"iconColor": "#C03797"
 		}
 	},
 	{
@@ -10858,7 +10877,7 @@
 		},
 		"assign": {
 			"iconSource": "Dodo/powers.swf",
-			"iconLabel": "power_harvestalt"
+			"iconLabel": "power_harvest"
 		}
 	},
 	{
@@ -12251,7 +12270,22 @@
 		},
 		"assign": {
 			"magicClassDisplay": "$MagicArcane",
-			"subTypeDisplay": "$MagicEnhance"
+			"subTypeDisplay": "$MagicEnhance",
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "armor_wing"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefSpellEnhance_Flight" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicShock",
+			"subTypeDisplay": "$MagicEnhance",
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "armor_wing"
 		}
 	},
 	{
@@ -12285,7 +12319,9 @@
 		},
 		"assign": {
 			"magicClassDisplay": "$MagicArcane",
-			"subTypeDisplay": "$MagicEnhance"
+			"subTypeDisplay": "$MagicEnhance",
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "armor_wing"
 		}
 	},
 	{
@@ -12453,6 +12489,7 @@
 		"assign": {
 			"magicClassDisplay": "$MagicArcane",
 			"subTypeDisplay": "$MagicEthereal",
+			"iconLabel": "default_illusion",
 			"iconColor": "#00BCFF"
 		}
 	},
@@ -12477,7 +12514,7 @@
 			"magicClassDisplay": "$MagicArcane",
 			"subTypeDisplay": "$MagicHarvest",
 			"iconSource": "Dodo/powers.swf",
-			"iconLabel": "power_harvestalt"
+			"iconLabel": "power_harvest"
 		}
 	},
 	{
@@ -12691,6 +12728,19 @@
 		"match": {
 			"formType": "Spell",
 			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefSpellMind_FearVampire" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicVampire",
+			"subTypeDisplay": "$MagicFear",
+			"iconLabel": "default_illusion",
+			"iconColor": "#8E2129"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
 			"effectKeywords": [ "OCF_MgefSpellMind_Frenzy" ]
 		},
 		"assign": {
@@ -12748,6 +12798,23 @@
 		"assign": {
 			"magicClassDisplay": "$MagicArcane",
 			"subTypeDisplay": "$MagicParalyze"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": {
+				"anyOf": [
+					"OCF_MgefSpellParalysis_Ash",
+					"OCF_MgefSpellParalysis_AshCloak"
+				]
+			}
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicAsh",
+			"subTypeDisplay": "$MagicParalyze",
+			"iconColor": "#AA845E"
 		}
 	},
 	{
@@ -13168,6 +13235,19 @@
 			"subTypeDisplay": "$MagicStealth",
 			"iconLabel": "default_alteration",
 			"iconColor": "#6ED117"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefSpellStealth_InvisibilityVampire" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicVampire",
+			"subTypeDisplay": "$MagicStealth",
+			"iconLabel": "default_illusion",
+			"iconColor": "#9328FF"
 		}
 	},
 	{
