@@ -1,5 +1,17 @@
 # Aura's Inventory Tweaks for SkyUI - Changelog
 
+## Version 4.1.5
+
+- **FOMOD:** Updated dummy BOOBIES files. Should be temporary as WDAL should be adding an icons-only option in BOOBIES' next update.
+
+- **FOMOD:** Updated some descriptions and added a couple of options.
+
+- **AIT Translations:** Added new strings: "$MagicEnchant" ("Enchant"), "$MagicSkill" ("Skill").
+
+- **I4 Main Module (Spell/AIO):** Added more support for Spellsiphon.
+
+- **SkyUI Config:** Added text color patch for Edge UI (v0.45).
+
 ## Version 4.1.4
 
 - **Now requires** OCF v4.2.3+. For new mod support and fixes.
