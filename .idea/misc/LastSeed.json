@@ -1,0 +1,213 @@
+{
+"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+"rules": [
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": {
+				"anyOf": [
+					"VendorItemFoodVegetable",
+					"VendorItemFoodCheese",
+					"VendorItemDrinkMilk"
+				]
+			}
+		},
+		"assign": {
+			"infoHunger": "1"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": {
+				"anyOf": [
+					"VendorItemFoodBread",
+					"VendorItemFoodFruit",
+					"VendorItemFoodTreat"
+				]
+			}
+		},
+		"assign": {
+			"infoHunger": "2"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": {
+				"anyOf": [
+					"VendorItemFoodPastrySmall",
+					"VendorItemFoodStewSimple",
+					"VendorItemFoodCheeseBowl"
+				]
+			}
+		},
+		"assign": {
+			"infoHunger": "3"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": {
+				"anyOf": [
+					"VendorItemFoodPastryLarge",
+					"VendorItemFoodStewComplex"
+				]
+			}
+		},
+		"assign": {
+			"infoHunger": "4"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "VendorItemFoodMeat" ]
+		},
+		"assign": {
+			"infoHunger": "3"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "VendorItemFoodMeat", "VendorItemFoodRaw" ]
+		},
+		"assign": {
+			"infoHunger": "2"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "VendorItemFoodMeatSmall" ]
+		},
+		"assign": {
+			"infoHunger": "1"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "VendorItemFoodMeatSmall", "VendorItemFoodRaw" ]
+		},
+		"assign": {
+			"infoHunger": "2"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "VendorItemFoodFish" ]
+		},
+		"assign": {
+			"infoHunger": "1"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "VendorItemFoodFish", "VendorItemFoodRaw" ]
+		},
+		"assign": {
+			"infoHunger": "2"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "VendorItemFoodSeafood" ]
+		},
+		"assign": {
+			"infoHunger": "1"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "VendorItemFoodSeafood", "VendorItemFoodRaw" ]
+		},
+		"assign": {
+			"infoHunger": "2"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "VendorItemDrinkAlcoholWeak" ]
+		},
+		"assign": {
+			"infoAlcohol": "1"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "VendorItemDrinkAlcoholModerate" ]
+		},
+		"assign": {
+			"infoAlcohol": "2"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "VendorItemDrinkAlcoholStrong" ]
+		},
+		"assign": {
+			"infoAlcohol": "3"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": {
+				"anyOf": [
+					"VendorItemDrinkSkoomaWeak",
+					"VendorItemDrinkSkoomaStrong"
+				]
+			}
+		},
+		"assign": {
+			"infoAlcohol": "4"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "VendorItemFoodRestoreHungerLight" ]
+		},
+		"assign": {
+			"infoHunger": "1"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "VendorItemFoodRestoreHungerMedium" ]
+		},
+		"assign": {
+			"infoHunger": "2"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "VendorItemFoodRestoreHungerFilling" ]
+		},
+		"assign": {
+			"infoHunger": "3"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"keywords": [ "VendorItemFoodRestoreHungerHearty" ]
+		},
+		"assign": {
+			"infoHunger": "4"
+		}
+	}
+]
+}

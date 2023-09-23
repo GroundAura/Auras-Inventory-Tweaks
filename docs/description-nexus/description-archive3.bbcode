@@ -1,0 +1,961 @@
+Aura's Inventory Tweaks (AIT) is a project whose goal is to improve Skyrim's inventory and related menus, with a specific focus on quality of life. Currently AIT uses SkyUI's config file and some KID files to make some sorting and informational tweaks which should hopefully make using item and magic menus more enjoyable.
+
+
+[b][color=#ffd966]Aura's Inventory Tweaks
+[/color][/b]
+
+[b][color=#ffd966]The Problems[/color][/b]
+
+SkyUI is a wonderful mod that improves Skyrim's inventory menu and other interfaces. That was the first mod I ever downloaded, and I would recommend to everyone. However, there are elements of it that I wasn't satisfied with.
+[list=1]
+[*]The first of these things was the look, for which I personally started using [url=https://www.nexusmods.com/skyrimspecialedition/mods/23010]Dear Diary[/url]﻿, but there are plenty of great choices like [url=https://www.nexusmods.com/skyrimspecialedition/mods/49881]Nordic UI[/url]﻿ and [url=https://www.nexusmods.com/skyrimspecialedition/mods/60837]Dear Diary Dark Mode[/url]﻿.
+[*]The second thing is sorting. You could consider me a hoarder. My goblin brain sees items, picks up items, repeat. Sorting through all that [s]junk[/s] shiny loot can be difficult with SkyUI's limited sorting function. It mostly just sorts items alphabetically by name, with no regard to if it is a sword, potion, or heavy shield. Some mods try and help with this aspect. [url=https://www.nexusmods.com/skyrimspecialedition/mods/49095]Better SkyUI Config[/url]﻿ attempts to sort items by type, and [url=https://www.nexusmods.com/skyrimspecialedition/mods/17601]SkyUI AIO Survival[/url]﻿ adds columns with more information to help you pick out what you want.
+[*]The third thing I wasn't satisfied with was the classifications. SkyUI added 2 ways to help see at a glance what kind of item something is: an icon, and a type. For example, you can easily identify "Aversion to Frost" as a poison because of it's purple skull bottle icon and poison type. However, this feature is severely limited. The Ancient Nordic Pickaxe from the Dragonborn DLC doesn't have a pickaxe icon and typing. Notes don't have a note icon or type without the help of [url=https://www.nexusmods.com/skyrimspecialedition/mods/32561]Fix Note Icon[/url]. Modded items like spears don't really fit in the vanilla types of greatsword or battleaxe, which inspired [url=https://www.nexusmods.com/skyrimspecialedition/mods/37231]SkyUI Weapons Pack[/url]﻿.
+[/list]
+[b][color=#ffd966]The Solutions
+[/color][/b]
+There is always room for improvement. That's why I made Aura's Inventory Tweaks, to fill in some holes I saw. Here's how AIT tackles these issues:
+[list=1]
+[*]﻿AIT doesn't really touch aesthetics much, aside from icon colors. However, AIT offers several versions to work with your choice of SkyUI skin.
+[*]AIT [b][i]COMPLETELY[/i][/b] overhauls sorting. I do this using a combination of [url=https://www.nexusmods.com/skyrimspecialedition/mods/55728]Keyword Item Distributer[/url]﻿ inis and SkyUI's own config.txt to overhaul sorting. AIT does this by breaking apart items into hopefully intuitive groupings of categories and subcategories (open to feedback). I've also tried to put the best, strongest, and/or most used items or spells near the top.
+[*]AIT tweaks and adds a ton of new classifications for all item types, allowing you to easily distinguish items like Black Soul Gems, Skill Books, [url=https://www.nexusmods.com/skyrimspecialedition/mods/74054]Hand-Crossbows[/url]﻿, Cheese, Maps, Nodachi (2-handed katanas), and SO much more. This usually requires manually adding the items to the correct categories in a KID ini, so if you use a mod that isn't supported yet, let me know in the comments and I'll try to add it.
+[/list]
+
+[b][color=#ffd966]FAQ
+[/color][/b]
+[b][color=#93c47d]Q1:[/color] [/b]How exactly, [i]specifically,[/i] are items and spells sorted?
+[b][color=#93c47d]A1:[/color][/b] Hopefully, the sorting should be fairly intuitive for the most part, once you get used to it, but for an in-depth breakdown of how items and magic are sorted, open the spoiler. It may not be completely up to date as I move around and add a couple things now and then.
+
+[spoiler]
+[b][color=#93c47d]Items[/color][/b]
+
+Items are sorted by tab.
+[list]
+[*][b]Weapons[/b]
+[/list][spoiler]
+Weapons are sorted by class, then type.
+[list]
+[*][b]Melee[/b]
+[/list][spoiler]
+[b]1H Daggers[/b]
+[list]
+[*]Dagger
+[*]Claw
+[*]Hunting Knife
+[*]Tablewear
+[*]Tanto
+[*]Tool
+[/list][b]1H Swords[/b]
+[list]
+[*]Sword
+[*]Katana
+[*]Saber (Cutlass, Rapier)
+[*]Scimitar
+[/list][b]1H Polearms[/b]
+[list]
+[*]Spear
+[*]Javelin
+[/list][b]1H Axes[/b]
+[list]
+[*]War Axe
+[*]Chakram
+[*]Crescent
+[*]Sickle
+[*]Warpick
+[/list][b]1H Blunt[/b]
+[list]
+[*]Mace
+[*]Club
+[*]Hammer
+[*]Whip
+[/list][b]2H Swords[/b]
+[list]
+[*]Greatsword
+[*]Nodachi (Katana)
+[*]Dadao (Scimitar)
+[/list][b]2H Spears[/b]
+[list]
+[*]Spear
+[*]Halberd
+[*]Pike
+[/list][b]2H Axes[/b]
+[list]
+[*]Battleaxe
+[*]Chakram
+[*]Crescent
+[*]Scythe
+[/list][b]2H Blunt[/b]
+[list]
+[*]Warhammer
+[*]Greatclub
+[*]Longmace
+[*]Quarterstaff
+[/list][/spoiler]
+[list]
+[*][b]Tools[/b]
+[/list][spoiler]
+[list]
+[*]Fishing Rod
+[*]Pickaxe
+[*]Wood Axe
+[/list][/spoiler]
+[list]
+[*][b]Throwable[/b]
+[/list][spoiler]
+[b]1H[/b]
+[list]
+[*]Bomb
+[*]Dagger
+[*]Shuriken
+[*]Javelin
+[*]War Axe
+[*]Chakram
+[*]Crescent
+[*]Boomerang
+[*]Hammer
+[/list][b]2H[/b][list]
+[*]Battleaxe
+[*]Chakram
+[*]Crescent
+[*]Warhammer
+[/list][/spoiler]
+[list]
+[*][b]Ranged[/b]
+[/list][spoiler]
+[b]Bows[/b]
+[list]
+[*]Bow
+[*]Bowblade
+[*]Greatbow
+[*]Longbow
+[*]Shortbow
+[/list][b]Crossbows[/b]
+[list]
+[*]Hand Crossbow
+[*]Crossbow
+[/list][b]Other[/b]
+[list]
+[*]Blowgun
+[*]Gun
+[*]Slingshot
+[/list][/spoiler]
+[list]
+[*][b]Ammo[/b]
+[/list][spoiler]
+[b]Bow (Arrows)[/b]
+[list]
+[*]Arrow
+[*]Javelin
+[*]Greatarrow
+[/list][b]Crossbow (Bolts)[/b]
+[list]
+[*]Bolt
+[/list][b]Other[/b]
+[list]
+[*]Dart
+[*]Bullet
+[*]Pellet
+[/list][/spoiler]
+[list]
+[*][b]Staves[/b]
+[/list][spoiler]
+[list]
+[*]Staff
+[/list][/spoiler]
+
+Weapons are then sorted by stats.
+[list]
+[*]Damage (9-0)
+[*]Base Damage (9-0)
+[*]Speed (9-0)
+[*]Reach (9-0)
+[*]Stagger (9-0)
+[*]Enchanted (yes-no)
+[/list][/spoiler]
+[list]
+[*][b]Armor[/b]
+[/list][spoiler]
+Armor is sorted by class, then type.
+
+[list]
+[*][b]Apparel (Vanilla Slots)[/b]
+[/list][spoiler]
+[list]
+[*]Head
+[*]Body
+[*]Arms
+[*]Feet
+[/list][/spoiler]
+[list]
+[*][b]Shield (Vanilla Slot)[/b]
+[/list][spoiler]
+[b]Shields[/b]
+[list]
+[*]Shield
+[*]Throwable Shield
+[*]Buckler
+[*]Tower Shield
+[/list][b]Tools[/b][list]
+[*]Compass
+[*]Map
+[*]Walking Stick
+[/list][/spoiler]
+[list]
+[*][b]Jewelry (Vanilla Slots)[/b]
+[/list][spoiler]
+[b]Circlet[/b]
+[list]
+[*]Circlet
+[*]Crown
+[*]Horns
+[*]Head
+[*]Blindfold
+[*]Mask
+[/list][b]Amulet[/b]
+[list]
+[*]Amulet
+[*]Choker
+[*]Necklace
+[*]Pendant
+[/list][b]Ring[/b]
+[list]
+[*]Ring
+[/list][/spoiler]
+[list]
+[*][b]Jewelry (Modded Slots)[/b]
+[/list][spoiler]
+[b]Head[/b]
+[list]
+[*]Earring
+[*]Ear Cuff
+[/list][b]Body[/b][list]
+[*]Choker
+[*]Necklace
+[*]Torc
+[/list][b]Hands[/b]
+[list]
+[*]Bracelet
+[*]Ring
+[/list][/spoiler]
+[list]
+[*][b]Apparel (Modded Slots)[/b]
+[/list][spoiler]
+[b]Head[/b]
+[list]
+[*]Horns
+[*]Head
+[*]Forehead
+[*]Eyes
+[*]Ears
+[*]Face
+[*]Mask
+[*]Mouth
+[*]Neck
+[*]Cloak
+[/list][b]Body[/b][list]
+[*]Shoulders
+[*]Body
+[*]Wings
+[*]Tail
+[*]Waist
+[*]Legs
+[*]Underwear
+[/list][b]Arms[/b]
+[list]
+[*]Arms
+[*]Claws
+[*]Nails
+[/list][b]Feet[/b]
+[list]
+[*]Feet
+[/list][/spoiler]
+[list]
+[*][b]Other (Modded Slots)[/b]
+[/list][spoiler]
+[b]Storage[/b]
+[list]
+[*]Backpack
+[*]Bandolier
+[/list][b]Light[/b]
+[list]
+[*]Lantern
+[*]Magic Lights
+[/list][b]Other[/b]
+[list]
+[*]Accessory
+[/list][b]Magic[/b]
+[list]
+[*]FX
+[/list][/spoiler]
+
+Armor is then sorted by weight.
+[list]
+[*]Heavy
+[*]Light
+[*]Unarmored
+[/list]
+Armor is then sorted by stats.
+[list]
+[*]Armor (9-0)
+[*]Base Armor (9-0)
+[*]Warmth (9-0)
+[*]Coverage (9-0)
+[*]Enchanted (yes-no)
+[/list][/spoiler]
+[list]
+[*][b]Potions[/b]
+[/list][spoiler]
+Potions are sorted by class, then type.
+[list]
+[*][b]Artifact[/b]
+[/list][spoiler]
+[list]
+[*]White Phial
+[/list][/spoiler]
+[list]
+[*][b]Potion[/b]
+[/list][spoiler]
+[b]Health[/b]
+[list]
+[*]Restore / Fortify Max
+[*]Fortify Regen
+[/list][b]Stamina[/b]
+[list]
+[*]Restore / Fortify Max
+[*]Fortify Regen
+[/list][b]Magicka[/b]
+[list]
+[*]Restore / Fortify Max
+[*]Fortify Regen
+[/list][b]Cure[/b]
+[list]
+[*]Cure (disease, poison, etc.)
+[/list][b]Resist[/b]
+[list]
+[*]Magic
+[*]Fire
+[*]Frost
+[*]Shock
+[*]Other (poison, disease, paralysis, etc.)
+[/list][b]Fortify[/b]
+[list]
+[*]Feather (carry weight)
+[*]Illusion
+[*]Conjuration
+[*]Destruction
+[*]Restoration
+[*]Alteration
+[*]Enchanting
+[*]Smithing
+[*]Heavy Armor
+[*]Block
+[*]Two-Handed
+[*]One-Handed
+[*]Archery
+[*]Light Armor
+[*]Sneak
+[*]Lockpicking
+[*]Pickpocket
+[*]Speech
+[/list][b]Other[/b]
+[list]
+[*]Blood
+[*]Mutagen (wings)
+[*]Potion (other)
+[/list][/spoiler]
+[list]
+[*][b]Drug[/b]
+[/list][spoiler]
+[list]
+[*]Hist Sap
+[/list][/spoiler]
+[list]
+[*][b]Poison[/b]
+[/list][spoiler]
+[list]
+[*]Poison
+[/list][/spoiler]
+[list]
+[*][b]Food[/b]
+[/list][spoiler]
+[list]
+[*]Bait
+[/list][/spoiler]
+
+Potions are then sorted by stats.
+[list]
+[*]Magnitude (9-0)
+[*]Duration (9-0)
+[/list]
+Note: Most potions will sort by the first effect.[/spoiler]
+[list]
+[*][b]Scrolls[/b]
+[/list][spoiler]
+Scrolls are sorted by type.
+[list]
+[*]Scroll
+[*]Spider
+[/list]
+Scrolls are then sorted by element.
+[list]
+[*]None/Other
+[*]Fire
+[*]Frost
+[*]Shock
+[*]Poison
+[*]Disease
+[/list]
+Scrolls are then sorted by stats.
+[list]
+[*]Magnitude (9-0)
+[*]Duration (9-0)
+[/list][/spoiler]
+[list]
+[*][b]Food[/b]
+[/list][spoiler]
+Food is sorted by class, then type.
+
+[list]
+[*][b]Food[/b]
+[/list][spoiler]
+[list]
+[*]Bread
+[*]Cheese
+[*]Pastry
+[*]Stew
+[*]Treat
+[*]Egg
+[*]Meat
+[*]Seafood
+[*]Fruit
+[*]Vegetable
+[/list][/spoiler]
+[list]
+[*][b]Drinks[/b]
+[/list][spoiler]
+[list]
+[*]Alcohol
+[*]Drink
+[*]Water
+[*]Waterskin
+[/list][/spoiler]
+[list]
+[*][b]Drugs[/b]
+[/list][spoiler]
+[list]
+[*]Skooma
+[/list][/spoiler]
+[list]
+[*][b]Ingredients[/b]
+[/list][spoiler]
+[list]
+[*]Foodstuff
+[/list][/spoiler]
+[list]
+[*][b]Bait[/b]
+[/list][spoiler]
+[list]
+[*]Bait
+[/list][/spoiler]
+[list]
+[*][b]Spoiled[/b]
+[/list][spoiler]
+[list]
+[*]Spoiled
+[/list][/spoiler]
+Food is then sorted by stats.
+[list]
+[*]Restore Hunger (9-0)
+[*]Restore Thirst (9-0)
+[*]Restore Cold (9-0)
+[*]Fortify Warmth (9-0)
+[*]Magnitude (9-0)
+[*]Duration (9-0)
+[/list][/spoiler]
+[list]
+[*][b]Ingredients[/b]
+[/list][spoiler]
+Ingredients are sorted by type.
+[list]
+[*]Blood
+[*]Elixir
+[*]Ingredient
+[/list][/spoiler]
+[list]
+[*][b]Books[/b]
+[/list][spoiler]
+Books are sorted by class, then type.
+
+[list]
+[*][b]Mundane[/b]
+[/list][spoiler]
+[list]
+[*]Book
+[*]Journal
+[*]Scroll
+[*]Note
+[/list][/spoiler]
+[list]
+[*][b]Useful[/b]
+[/list][spoiler]
+[list]
+[*]Document
+[*]Manual
+[*]Map
+[*]Recipe
+[*]Request (Bounty, Missive)
+[*]Skill Book
+[/list][/spoiler]
+[list]
+[*][b]Artifacts[/b]
+[/list][spoiler]
+[list]
+[*]Artifact
+[*]Elder Scroll
+[*]Eldritch Page
+[*]Eldritch Tome (Black Book)
+[*]Relic
+[/list][/spoiler]
+[list]
+[*][b]Tomes[/b]
+[/list][spoiler]
+Other
+[list]
+[*]Bionics
+[*]Doll
+[/list]Spell Tome
+[list]
+[*]Power Tome
+[*]Alteration Tome
+[*]Illusion Tome
+[*]Destruction Tome
+[*]Conjuration Tome
+[*]Restoration Tome
+[/list][/spoiler]
+[/spoiler]
+[list]
+[*][b]Keys[/b]
+[/list][spoiler]
+Keys are sorted by type.
+[list]
+[*]Key
+[/list][/spoiler]
+[list]
+[*][b]Misc[/b]
+[/list][spoiler]
+Misc Items are sorted by class.
+
+[list]
+[*][b]Light[/b]
+[/list][spoiler]
+Light is sorted by type.
+[list]
+[*]Everlight
+[*]Candle
+[*]Lantern
+[*]Torch
+[*]Throwable Torch
+[/list][/spoiler]
+[list]
+[*][b]Misc[/b]
+[/list][spoiler]
+Misc Items are sorted by class, then type.
+[list]
+[*]
+[/list][/spoiler]
+[list]
+[*][b]Soul Gems[/b]
+[/list][spoiler]
+Soul Gems are sorted by max soul size.
+[list]
+[*]None
+[*]Petty
+[*]Lesser
+[*]Common
+[*]Greater
+[*]Grand
+[*]Azura's Star
+[/list]
+Soul Gems are then sorted by color.
+[list]
+[*]White
+[*]Black
+[/list]
+Soul Gems are then sorted by current soul size.
+[list]
+[*]None
+[*]Petty
+[*]Lesser
+[*]Common
+[*]Greater
+[*]Grand
+[/list][/spoiler]
+[/spoiler]
+Items are then sorted by text.
+[list]
+[*]Name (A-Z)
+[/list]
+
+[b][color=#93c47d]Magic[/color]
+[/b]
+Magic is sorted by tab.[list]
+[*][b]Alteration[/b]
+[/list][spoiler]
+[/spoiler]
+[list]
+[*][b]Illusion[/b]
+[/list][spoiler]
+[/spoiler]
+[list]
+[*][b]Destruction[/b]
+[/list][spoiler]
+[/spoiler]
+[list]
+[*][b]Conjuration[/b]
+[/list][spoiler]
+[/spoiler]
+[list]
+[*][b]Restoration[/b]
+[/list][spoiler]
+[/spoiler][list]
+[*][b]Shouts[/b]
+[/list][spoiler]
+[/spoiler]
+[list]
+[*][b]Powers[/b]
+[/list][spoiler]
+[/spoiler]
+[list]
+[*][b]Effects[/b]
+[/list][spoiler]
+[/spoiler]
+
+Magic is then sorted by text.
+[list]
+[*]Name (A-Z)
+[/list][/spoiler]
+[b][color=#93c47d]
+Q2:[/color][/b] X mod also includes the file "config.txt". Is AIT compatible with that mod?
+[b][color=#93c47d]A2:[/color][/b] Check the compatibility section. As a general rule, if it modifies the file "/data/interface/skyui/config.txt", I've probably looked at it at some point while making AIT. I've probably either included support for it if applicable or it makes similar tweaks to AIT (in which case it's probably redundant). Just overwrite X mod with AIT and let me know if you think something's not working as intended.
+
+[b][color=#93c47d]
+Q3:[/color][/b] The icons and types aren't showing up in the crafting or favorites menus. Why?
+[b][color=#93c47d]A3:[/color][/b] SkyUI wasn't actually coded to use the overwrite data from config.txt in those menus for some reason. I plan to try and fix this in a future update, but I will have to learn some ActionScript, and get permission from a couple authors to include their files in AIT.
+
+[b][color=#93c47d]
+Q4:[/color][/b] I want to put equipped items and/or unread books on top like [url=https://www.nexusmods.com/skyrimspecialedition/mods/49095]BSC[/url]. How do I do that?
+[b][color=#93c47d]A4:[/color][/b] In your inventory, select the default sorting arrow (at the top of the icon column) until it is pointing down. It will then sort the same as before, but put equipped weapons/armor/spells and unread books at the top.
+
+[b][color=#93c47d]
+Q5:[/color][/b] How do I change what info columns are visible?
+[b][color=#93c47d]A5:[/color][/b] In your inventory, select the gear icon in the top-right corner and check or uncheck whatever columns you want until you're satisfied. Then save your game. SkyUI will remember your preferences for the rest of the save file.
+
+If you want to change the default settings, check the spoiler.
+[spoiler]
+Go into the config, under [color=#8e7cc3][ListLayout][/color], and change [color=#8e7cc3].hidden[/color] to [color=#8e7cc3]true[/color] or [color=#8e7cc3]false[/color] on the columns you want.
+
+For example you could change:
+[color=#8e7cc3]﻿columns.valueWeightColumn.hidden = true[/color]
+to
+[color=#8e7cc3]﻿columns.valueWeightColumn.hidden = false[/color]
+﻿[/spoiler]
+[b][color=#93c47d]
+Q6:[/color][/b] I want to change the text and/or icon colors. How would I do that?
+[b][color=#93c47d]A6:[/color][/b] Go into the config and change the hex color code for the color you want to change. I like [url=https://convertingcolors.com/]this tool[/url] for messing with hex colors.
+[b]
+Entry Text Colors[/b]
+[spoiler]
+Under [color=#8e7cc3][Appearance][/color], look for:
+
+[color=#8e7cc3]colors.text.enabled = 0xFFFFFF
+colors.stolen.enabled = 0xFFFFFF
+colors.negative.enabled = 0xFF0000
+colors.text.disabled = 0x4C4C4C
+colors.stolen.disabled = 0x4C4C4C
+colors.negative.disabled = 0x800000[/color]
+
+[/spoiler]
+[b]Column Header Text Color[/b]
+[spoiler]
+Under [color=#8e7cc3][ListLayout][/color], look for:
+
+[color=#8e7cc3]﻿defaults.label.textFormat.color = 0xFFFFFF[/color]
+
+[/spoiler]
+[b]Icon Colors[/b]
+[spoiler]
+Under [color=#8e7cc3][Properties][/color], look for:
+
+[color=#8e7cc3]﻿vars.color_default.value = 0xFFFFFF
+
+vars.color_magicAlteration.value = 0x412600
+vars.color_magicConjuration.value = 0x5E2B72
+vars.color_magicDestruction.value = 0x990033
+vars.color_magicIllusion.value = 0x006A70
+vars.color_magicRestoration.value = 0x1E5419
+
+vars.color_magicFire.value = color_magicDestruction
+vars.color_magicFrost.value = 0x005FAF
+vars.color_magicShock.value = 0xEAAB00
+
+vars.color_magicAsh.value = 0x74532F
+vars.color_magicBlood.value = 0x880808
+vars.color_magicDisease.value = 0x46863A
+vars.color_magicEarth.value = color_magicAlteration
+vars.color_magicEldritch.value = color_magicRestoration
+vars.color_magicHoly.value = 0xFFDA1D
+vars.color_magicLight.value = 0x00C2C6
+vars.color_magicNature.value = color_magicRestoration
+vars.color_magicNecromancy.value = 0x2650C7
+vars.color_magicPoison.value = 0x46863A
+vars.color_magicShadow.value = color_magicConjuration
+vars.color_magicWater.value = 0x005695
+vars.color_magicWind.value = 0x555555
+
+vars.color_miscWood.value = 0x412600
+vars.color_miscHide.value = 0x594819
+vars.color_miscLeather.value = color_miscHide
+vars.color_miscChitin.value = 0x443C2C
+vars.color_miscMetal.value = 0x3C4554
+vars.color_miscCopper.value = 0x684A00
+vars.color_miscDwemer.value = color_miscCopper
+vars.color_miscSilver.value = 0xB3B4BA
+vars.color_miscGold.value = 0xFFD700
+vars.color_miscGem.value = 0x733050
+vars.color_miscLight.value = 0xFFD700
+
+vars.color_armorHeavy.value = color_miscMetal
+vars.color_armorLight.value = color_miscHide
+vars.color_armorClothing.value = color_default
+vars.color_armorJewelry.value = color_default
+vars.color_armorOther.value = color_default
+
+vars.color_weaponDefault.value = color_miscMetal
+vars.color_weaponTool.value = color_miscMetal
+vars.color_weaponThrow.value = color_miscMetal
+vars.color_weaponRanged.value = 0x443C2C
+vars.color_weaponAmmo.value = 0x443C2C
+vars.color_weaponStaff.value = 0x443C2C
+
+vars.color_potionHealth.value = color_magicDestruction
+vars.color_potionStamina.value = 0x006D00
+vars.color_potionMagicka.value = color_magicFrost
+vars.color_potionFortify.value = 0xC07100
+vars.color_potionPoison.value = 0x74007D
+
+vars.color_foodRaw.value = color_default
+vars.color_foodPrepared.value = color_magicDestruction
+vars.color_foodDrink.value = 0x005695
+vars.color_foodAlcohol.value = 0xA24911
+vars.color_foodDrug.value = 0x993899
+
+vars.color_soulgemPetty.value = color_magicFrost
+vars.color_soulgemLesser.value = color_magicFrost
+vars.color_soulgemCommon.value = color_magicFrost
+vars.color_soulgemGreater.value = color_magicFrost
+vars.color_soulgemGrand.value = color_magicFrost
+vars.color_soulgemBlack.value = color_magicConjuration[/color]
+
+[/spoiler]
+[b][color=#93c47d]
+Q7:[/color][/b] I want to change something else in the config. How do I do that?
+[b][color=#93c47d]A7:[/color][/b] I made [url=https://www.nexusmods.com/skyrimspecialedition/articles/4215]this article about working with config.txt[/url] a while ago. Although it's somewhat unfinished and unpolished, it might help you. If you can't figure it out on your own, leave a comment and I can help you.
+
+[b][color=#93c47d]
+Q8:[/color][/b] Something else?
+[b][color=#93c47d]A8:[/color][/b] Leave a comment :D
+
+
+[b][color=#ffd966]Installation
+[/color]
+[/b]Install AIT with your choice of mod manager. Overwrite any other files if asked. Let me know if you have any problems.
+
+[list=1]
+[*]Install [url=http://skse.silverlock.org/]SKSE[/url]﻿ & [url=https://www.nexusmods.com/skyrimspecialedition/mods/12604]SkyUI﻿[/url]﻿.
+[*]Install [url=https://www.nexusmods.com/skyrimspecialedition/mods/32444]Address Library for SKSE Plugins[/url]﻿﻿, [url=https://www.nexusmods.com/skyrimspecialedition/mods/51073]powerofthree's Tweaks﻿[/url]﻿ (including INI file!), [url=https://www.nexusmods.com/skyrimspecialedition/mods/22854]powerofthree's Papyrus Extender[/url]﻿, & [url=https://www.nexusmods.com/skyrimspecialedition/mods/55728]Keyword Item Distributer[/url]﻿﻿.
+[*]Install [url=https://www.nexusmods.com/skyrimspecialedition/mods/32561]Fix Note Icon for SkyUI[/url]﻿﻿.
+[*]Optionally, install your choice of SkyUI skin (like [url=https://www.nexusmods.com/skyrimspecialedition/mods/49881]Nordic UI[/url]﻿﻿, [url=https://www.nexusmods.com/skyrimspecialedition/mods/23010]Dear Diary[/url]﻿﻿, or [url=https://www.nexusmods.com/skyrimspecialedition/mods/60837]Dear Diary Dark Mode[/url]﻿) and/or any other UI mods.
+[*]Install [url=https://www.nexusmods.com/skyrimspecialedition/mods/17601]SkyUI AIO Survival[/url]﻿.
+[*]If using Nordic UI, install [url=https://www.nexusmods.com/skyrimspecialedition/mods/63879]SAS Nordic UI Patch[/url]﻿﻿.
+[*]Install Aura's Inventory Tweaks.
+[/list]
+[color=#ffd966][b]Compatibility
+[/b][/color]
+[color=#93c47d][b]Required[/b][/color]
+[list]
+[*]SKSE
+[*]SkyUI
+[*]Address Library for SKSE Plugins
+[*]powerofthree's Tweaks
+[*]Keyword Item Distributer
+[*]Fix Note Icon for SkyUI
+[*]SkyUI AIO Survival
+[/list]
+[color=#93c47d][b]Fully Compatible[/b][/color]
+[list]
+[*]Dear Diary (& most reskins)
+[*]Dear Diary Dark Mode (& most reskins)
+[*]Nordic UI (with SAS Nordic UI Patch)
+[*]Immersive Jewelry
+[*]Left Handed Rings
+[*]Forget Spell
+[*]Frostfall
+[*]One-Handed Crossbow Framework
+[/list]
+[b][color=#93c47d]Partially Compatible[/color][/b]
+[list]
+[*]SkyUI The Adventurer Theme (no SAS option, so some features will be lost; don't choose the alternate inventory icons option when installing)
+[*]Dragonbreaker UI (no SAS option, so some features will be lost)
+[*]Horizons UI (no SAS option, so some features will be lost)
+[*]Clear UI (no SAS option, so some features will be lost)
+[*]Dwemer Readius UI (no SAS option, so some features will be lost; icons & text will probably look weird)
+[*]Icons in SkyUI Header (must manually edit translation file to work)
+[/list]
+[b][color=#93c47d]Included or Redundant[/color][/b]
+[list]
+[*]SkyUI Weapons Pack
+[*]Better SkyUI Config
+[*]Equipped Items on Top
+[/list]
+
+[b][color=#ffd966]Future Plans & TODO
+[/color][/b][list]
+[*]See pinned comment.
+[/list]
+
+[b][color=#ffd966]Credits[/color][/b]
+[spoiler]
+[b]Assets Included:[/b]
+The file "icons_item_psychosteve.swf" includes assets taken from
+[list]
+[*][url=https://www.nexusmods.com/skyrimspecialedition/mods/12604]SkyUI[/url]﻿
+[*][url=https://www.nexusmods.com/skyrimspecialedition/mods/37231]SkyUI Weapons Pack[/url]﻿ (open permissions)
+[/list]
+[b]Mods Referenced:[/b]
+[list]
+[*][url=https://www.nexusmods.com/skyrimspecialedition/mods/12604]SkyUI[/url]﻿ by [url=https://www.nexusmods.com/skyrimspecialedition/users/28794]schlangster[/url]﻿, [url=https://www.nexusmods.com/skyrim/users/37741]psychosteve[/url]﻿, & the SkyUI team. ([url=https://github.com/schlangster/skyui]source code[/url]﻿)
+[*][url=https://www.nexusmods.com/skyrimspecialedition/mods/37231]SkyUI Weapons Pack[/url]﻿ by [url=https://www.nexusmods.com/skyrimspecialedition/users/10236085]Ashingda[/url].﻿
+[*][url=https://www.nexusmods.com/skyrimspecialedition/mods/32561]Fix Notes for SkyUI[/url]﻿ by [url=https://www.nexusmods.com/skyrimspecialedition/users/9645369]0xC0000005[/url]﻿. ([url=https://www.nexusmods.com/skyrimspecialedition/mods/32561?tab=files]source code[/url]﻿)
+[*][url=https://www.nexusmods.com/skyrimspecialedition/mods/23010]Dear Diary[/url]﻿ & [url=https://www.nexusmods.com/skyrimspecialedition/mods/60837]Dear Diary Dark Mode[/url]﻿ by [url=https://www.nexusmods.com/skyrimspecialedition/users/1863120]uranreactor[/url]﻿.
+[*][url=https://www.nexusmods.com/skyrimspecialedition/mods/32711]Equipped Items on Top[/url]﻿ by [url=https://www.nexusmods.com/skyrimspecialedition/users/59086436]lilebonymace[/url]﻿.
+[*][url=https://www.nexusmods.com/skyrimspecialedition/mods/49095]Better SkyUI Config[/url]﻿ by [url=https://www.nexusmods.com/skyrimspecialedition/users/111923278]jn64[/url]﻿.
+[*][url=https://www.nexusmods.com/skyrimspecialedition/mods/17601]SkyUI AIO Survival[/url]﻿ by [url=https://www.nexusmods.com/skyrimspecialedition/users/5947991]BVN[/url]﻿.
+[*][url=https://www.nexusmods.com/skyrimspecialedition/mods/35568]SkyUI The Adventurer Theme[/url]﻿ by [url=https://www.nexusmods.com/skyrimspecialedition/users/6960827]ElSopa[/url]﻿.
+[*][url=https://www.nexusmods.com/skyrimspecialedition/mods/49881]Nordic UI[/url]﻿ by [url=https://www.nexusmods.com/skyrimspecialedition/users/27579385]dopesan[/url]﻿.
+[*][url=https://www.nexusmods.com/skyrimspecialedition/mods/63879]Nordic UI - SkyUI AIO Survival Patch[/url]﻿ by [url=https://www.nexusmods.com/skyrimspecialedition/users/14083160]infernalryan[/url]﻿.
+[*][url=https://www.nexusmods.com/skyrimspecialedition/mods/68423]Body Slots x Total Weight x Total Value - Nordic UI[/url]﻿ by [url=https://www.nexusmods.com/skyrimspecialedition/users/6714743]fyryNy[/url]﻿.
+[*][url=https://www.nexusmods.com/skyrimspecialedition/mods/55728]Keyword Item Distributer[/url]﻿ by [url=https://www.nexusmods.com/skyrimspecialedition/users/2148728]powerofthree[/url]﻿.
+[*][url=https://www.nexusmods.com/skyrimspecialedition/mods/45544]SkyUI Weapons Pack - Unofficial Patches[/url]﻿ by [url=https://www.nexusmods.com/skyrimspecialedition/users/25225299]LeonardoVAC[/url]﻿.
+[*][url=https://www.nexusmods.com/skyrimspecialedition/mods/59484]Automatic Animations - Including Icon Identification[/url]﻿ by [url=https://www.nexusmods.com/skyrimspecialedition/users/61720101]TateTaylorOH[/url]﻿.
+[*][url=https://www.nexusmods.com/skyrimspecialedition/mods/5336]Immersive Jewelry[/url]﻿ by [url=https://www.nexusmods.com/skyrimspecialedition/users/758255]Forteverum[/url]﻿.
+[*][url=https://www.nexusmods.com/skyrimspecialedition/mods/74054]One-Handed Crossbow Framework[/url]﻿ by [url=https://www.nexusmods.com/skyrimspecialedition/users/5646623]AndrealphusVIII[/url]﻿.
+[/list]
+[b]Tools Used:
+[/b][list]
+[*][url=https://www.nexusmods.com/fallout4/mods/6821]FOMOD Creation Tool[/url] ([url=https://youtu.be/rr79YmimJW0]tutorial[/url]﻿)
+[*][url=https://github.com/jindrapetrik/jpexs-decompiler/releases/tag/version15.1.1]JPEXS Free Flash Decompiler[/url]﻿
+[*][url=https://notepad-plus-plus.org/downloads/]Notepad++[/url]﻿
+[*][url=https://code.visualstudio.com/]Visual Studio Code[/url]﻿
+[/list]
+[b]Special Thanks To:[/b]
+[list]
+[*][url=https://www.nexusmods.com/skyrimspecialedition/users/10236085]Ashingda[/url]
+[*][url=https://www.nexusmods.com/skyrimspecialedition/users/79655]CDCooley[/url]﻿
+[*][url=https://www.nexusmods.com/skyrimspecialedition/users/758255]Forteverum[/url]
+[*][url=https://www.nexusmods.com/skyrimspecialedition/users/927130]PRieST47[/url]﻿
+[*][url=https://www.nexusmods.com/skyrimspecialedition/users/136745758]TomeOfDread[/url]
+[*][url=https://www.nexusmods.com/skyrimspecialedition/users/1863120]uranreactor[/url]﻿
+[/list]For their contributions toward AIT.
+[/spoiler]
+
+
+
+
+
+[b]Comment:[/b]
+
+Hey everyone,
+Thanks for taking an interest in AIT.
+
+If you have any questions, problems, or want to make your own tweaks, read this pinned comment and the Description first (especially the FAQ). You could also take a look at recent comments ;). If those don't answer your questions feel free to leave a comment. Also feel free to share any tweaks you make or ideas you have and I might include some of them.
+
+[color=#ffd966][b][size=3]News:
+[/size][/b][/color][list]
+[*][b][color=#93c47d]AIT v1.4 is out![/color][/b] I've integrated [url=https://www.nexusmods.com/skyrimspecialedition/mods/17601]SkyUI AIO Survival[/url] (and the [url=https://www.nexusmods.com/skyrimspecialedition/mods/63879]Nordic UI Patch[/url]) thanks to open permissions, so those mods are no longer required. Check the Requirements/Installation sections to make sure you have all the required mods. I've also made a few optional tweaks on some SAS files.
+[*]I'm working on updating the DDDM files to be consistent with DDDM v1.1.1 and add full compatibility for DDDM's white option. It's taking longer than I thought so it didn't make it into AIT v1.4, but hopefully I can get it figured out in not too long. I'm also working on several technical advancements that should improve AIT. [color=#e06666](WIP)[/color]
+[/list]
+[b][color=#ffd966][size=3]Planned Features:[/size][/color]
+[/b]
+[spoiler]
+[b][color=#93c47d]Inventory Menus:[/color][/b]
+[list]
+[*]Create additional icons (eg: backpack, tablewear, lantern, meat, cheese, water spell, earth spell).
+[*]Update icon colors to better fit with different UI skins.
+[*]Add new info columns (eg: item total value).
+[*]Overhaul sorting to use new keywords from [url=https://www.nexusmods.com/skyrimspecialedition/mods/81469]Object Categorization Framework[/url]﻿. I need to do more work on OCF before this can happen though.
+[*][s]Move sorting code from config.txt's properties section to actionscript in the .swf files. This would hopefully reduce the lag that sometimes happens when opening the inventory.[/s] Move type/icon code from config.txt to [url=https://www.nexusmods.com/skyrimspecialedition/mods/85702]Inventory Interface Information Injector[/url] .json configs.﻿
+[*]Update .swf files to fully support the following UI skins: (vanilla SkyUI, Dear Diary, Dear Diary Dark Mode warm, Dear Diary Dark Mode white, Nordic UI, Horizons UI, Dragonbreaker UI, Immortal UI, Untarnished UI, Clear UI, SkyUI The Adventurer Theme, Dwemer Readius UI).
+[*]Update .swf files to fully support the following UI mods: (Forget Spell, moreHUD Inventory Edition).
+[*]Fix the "extended menu" options for SkyUI and Nordic UI and maybe add the option to more UI skins.
+[*]Attempt to support 21x9 and 32x9 aspect ratios.
+[/list]
+[b][color=#93c47d]Crafting Menus:[/color][/b]
+[list]
+[*]Fix oversight in SkyUI preventing tweaks in config.txt from working in the crafting menus.
+[*]Update [url=https://www.nexusmods.com/skyrimspecialedition/mods/81409]Constructible Object Custom Keyword System[/url]﻿'s menus to be compatible with AIT's new info columns.
+[*]COCKS: Patch versions of constructibleobjectmenu.swf to ensure consistency with supported UI skins, extended menu options, and aspect ratios.
+[*]COCKS: Overhaul groupings to be consistent with AIT and OCF's organization and keywords, keeping in mind having multiple options and the ideas of already available COCKS group tweak mods (eg: [url=https://www.nexusmods.com/skyrimspecialedition/mods/81598]Light Usability Tweaks[/url]﻿, [url=https://www.nexusmods.com/skyrimspecialedition/mods/81787]Seperate Weapons & Armor[/url]﻿, [url=https://www.nexusmods.com/skyrimspecialedition/mods/84875]Cooking Categories Improvement[/url]﻿, [url=https://www.nexusmods.com/skyrimspecialedition/mods/85419]Versatile Item & Group Re-Assignment[/url], etc.﻿).
+[/list]
+[b][color=#93c47d]Favorites Menu:[/color][/b][list]
+[*]Fix oversight in SkyUI preventing tweaks in config.txt from working in the favorites menu.
+[*]Reorganize the favorites menu somehow to make using it easier and more satisfying.
+[/list]
+[b][color=#93c47d]HUD Mod Widgets:[/color][/b][list]
+[*]Update [url=https://www.nexusmods.com/skyrimspecialedition/mods/69980]QuickLoot EE[/url]﻿'s loot menu widget, [url=https://www.nexusmods.com/skyrimspecialedition/mods/62775]TrueHud[/url]﻿'s item pickup widget, and [url=https://www.nexusmods.com/skyrimspecialedition/mods/27008]iEquip[/url]﻿'s widget, to be fully compatible with AIT's new icons/types. This will probably require editing their SKSE plugins, so it will be a while. It sounds like Parapets may be working on an api for I4 to interact with SKSE widgets, so that may be done before I can get to this.
+[/list]
+[b][color=#93c47d]Other:[/color][/b][list]
+[*]Complete language translations. If anyone wants to help provide translations for your language send me a PM.
+[*]Create a SKSE plugin (using CommonLibNG) to replace dependency on and features of SAS and Fix Note Icon .dlls, add new features, and fully support all features in all game versions (SE/AE/GOG/VR).
+[*]Introduce ways for users to more easily customize features.
+[*]Add item card and 3d item offset presets for MCM Helper.
+[/list][/spoiler]
+[b][color=#ffd966][size=3]Equipped Items on Top:[/size][/color][/b]
+[list]
+[*]The way I have equipped items on top set up in v1.4+ is state 2 of the icon column arrow. Meaning if you click the arrow above the icon column so that it's pointing down, equipped items are put on top. If you want to change sorting by equipped to the default behavior, just switch the 1st and 2nd states of the icon column.
+[/list][spoiler]
+Change this:
+[code]; ICON COLUMN -------------------------------------------------------
+columns.iconColumn.type = ITEM_ICON
+columns.iconColumn.states = 2
+columns.iconColumn.icon.size = n_iconSize
+columns.iconColumn.border = a_iconBorder
+
+columns.iconColumn.state1.label.text = ' '
+columns.iconColumn.state1.label.arrowDown = false
+columns.iconColumn.state1.sortAttributes = <timeSort, catSort, typeSort, levelSort, weaponStatsSort, armorStatsSort, potionStatsSort, scrollStatsSort, foodStatsSort, spellStatsSort, cat2Sort, cooldownSort, nameSort>
+columns.iconColumn.state1.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.iconColumn.state2.label.text = ' '
+columns.iconColumn.state2.label.arrowDown = true
+columns.iconColumn.state2.sortAttributes = <equipSort, readSort, timeSort, catSort, typeSort, levelSort, weaponStatsSort, armorStatsSort, potionStatsSort, scrollStatsSort, foodStatsSort, spellStatsSort, cat2Sort, cooldownSort, nameSort>
+columns.iconColumn.state2.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+[/code]
+To this:
+[code]; ICON COLUMN -------------------------------------------------------
+columns.iconColumn.type = ITEM_ICON
+columns.iconColumn.states = 2
+columns.iconColumn.icon.size = n_iconSize
+columns.iconColumn.border = a_iconBorder
+
+columns.iconColumn.state1.label.text = ' '
+columns.iconColumn.state1.label.arrowDown = false
+columns.iconColumn.state1.sortAttributes = <equipSort, readSort, timeSort, catSort, typeSort, levelSort, weaponStatsSort, armorStatsSort, potionStatsSort, scrollStatsSort, foodStatsSort, spellStatsSort, cat2Sort, cooldownSort, nameSort>
+columns.iconColumn.state2.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.iconColumn.state2.label.text = ' '
+columns.iconColumn.state2.label.arrowDown = true
+columns.iconColumn.state2.sortAttributes = <timeSort, catSort, typeSort, levelSort, weaponStatsSort, armorStatsSort, potionStatsSort, scrollStatsSort, foodStatsSort, spellStatsSort, cat2Sort, cooldownSort, nameSort>
+columns.iconColumn.state1.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+[/code]
+Feel free to just copy the 2nd section of code and replace the 1st section of code if your config.txt.
+[/spoiler]

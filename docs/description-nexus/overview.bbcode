@@ -1,0 +1,1 @@
+Aura's Inventory Tweaks (AIT) is a project whose goal is to improve Skyrim's inventory and related menus, with a specific focus on quality of life. AIT improves inventory sorting, types, icons, column information, and more.

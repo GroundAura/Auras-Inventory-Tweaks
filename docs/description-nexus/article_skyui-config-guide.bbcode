@@ -1,0 +1,2901 @@
+[size=2][b][color=#e06666]PSA: This article was written in June of 2022 when I knew less, and even then it was more of a rough draft. Contact me directly for explanation/help with config.txt.[/color][/b]
+
+[/size][center][color=#ffd966][size=6][b]GROUNDAURA'S GUIDE
+ON HOW TO USE
+[u]SKYUI'S CONFIG.TXT[/u][/b][/size][/color][/center][size=2]
+[/size][center][color=#f6b26b][size=2][b][u]INTRODUCTION[/u][/b][/size][/color][/center][size=2]
+I'm making this article as an attempt to provide some documentation for modifying SkyUI's config.txt. Very little information about how to use the config is available, and most of that information is from scattered mod authors minor edits to the config. I would like to provide a detailed account of how SkyUI's config works as what I know about it took a lot of time and effort to acquire, and I would like to make it easier on all of you.
+
+[left][/left][b][u][center][color=#f6b26b]General Information & Notes[/color][/center][/u][/b]
+Any text after a [b][color=#8e7cc3]; [/color][/b](semicolon) is "commented out" meaning the rest of that line is ignored. This is a good way to leave notes or create separators.
+[color=#93c47d]Examples:[/color]
+[spoiler]
+In these examples any text in yellow is commented out.
+
+[b][color=#93c47d]Example 1:[/color][/b]
+[i][color=#8e7cc3];[/color] [color=#ffd966]===============[/color]
+[color=#8e7cc3];[/color] [color=#ffd966]COLUMNS[/color]
+[color=#8e7cc3];[/color] [color=#ffd966]===============[/color][/i]
+
+[b][color=#93c47d]Example 2:[/color][/b]
+[i][color=#8e7cc3]﻿﻿quantityMenu.minCount = 6 ; [/color][color=#ffd966]Number of items required to trigger quantity dialog. 0 is disabled[/color][/i]
+
+[/spoiler]
+
+Options that are configurable in the in-game MCM will overwrite the values defined in config.txt. I could be mistaken, but I believe due to how SkyUI is written, any variables that are configurable in the MCM render changing those same values in config.txt completely redundant. I'm pretty sure they aren't used at all.
+
+
+config.txt is seperated into 7 sections. They start with [color=#8e7cc3][SectionName] [/color]and end with the next [color=#8e7cc3][SectionName][/color]. Certain options need to configured in certain sections to work properly. Any variables you create can only be called within the section they are defined.
+
+
+You can create a variable like so: [color=#8e7cc3]vars.variableName.value = VALUE[/color], replacing [color=#8e7cc3]variableName[/color] with the name of your custom variable, and [color=#8e7cc3]VALUE[/color] with the number, boolean, or other value for your variable. Ex: [color=#8e7cc3]vars.testVar.value = true[/color].
+If you want to set the value to a string, you need to use apostrophes ([color=#8e7cc3]' '[/color]). Ex: [color=#8e7cc3]vars.testVar.value = 'Dawnbreaker'[/color].
+If you want to set the value to a series of values, you need to use greater-than and less-than signs ([color=#8e7cc3]< >[/color]). Ex: [color=#8e7cc3]vars.testVar.value = <0, 4, 4, 0>[/color].
+
+
+[b][u][center][color=#f6b26b][Input][/color][/center][/u][/b]
+[color=#8e7cc3][Input][/color] is the 1st section of the config.
+This section allows you to change the input keybinds of certain inventory actions. The values are formatted in DirectX ScanCodes which are listed [url=https://www.creationkit.com/index.php?title=Input_Script]here[/url].
+At least the keyboard controls are configurable in the MCM. I've never used Skyrim with a controller, so I'm not sure about the gamepad controls.
+
+[i][color=#8e7cc3]controls.pc.search = 57 ; SPACE
+controls.pc.switchTab = 56 ; ALT
+controls.pc.equipMode = 42 ; LSHIFT
+controls.gamepad.switchTab = 271 ; BACK
+controls.gamepad.prevColumn = 274 ; LEFT_SHOULDER
+controls.gamepad.nextColumn = 275 ; RIGHT_SHOULDER
+controls.gamepad.sortOrder = 272 ; LEFT_THUMB[/color][/i]
+
+
+[b][u][center][color=#f6b26b][SearchBox][/color][/center][/u][/b]
+[color=#8e7cc3][SearchBox][/color] is the 2nd section of the config.
+This section relates to the search filter in the upper right hand hand corner of the inventory.
+It only seems to contain variables which should probably be left as default, rendering this section redundant.
+
+[color=#8e7cc3][i]autoupdate.enable = true
+autoupdate.delay = 0[/i][/color]
+
+
+[color=#f6b26b][center][b][u][ItemInfo][/u][/b][/center][/color]
+[color=#8e7cc3][ItemInfo][/color] is the 3rd section of the config.
+This section relates to the item card, which is the information that appears of the right half of your screen in the inventory.
+All these variables are also configurable in the MCM, rendering this section redundant.
+
+[i][color=#8e7cc3]itemcard.align = center
+itemcard.xOffset = -35
+itemcard.yOffset = 0[/color][/i]
+
+
+[b][u][center][color=#f6b26b][ItemList][/color][/center][/u][/b]
+[color=#8e7cc3][ItemList][/color] is the 4th section of the config.
+It only contains 1 variable, which controls the minimum number of items required to trigger quantity dialog.
+This variable is also configurable in the MCM, rendering this section redundant.
+
+[i][color=#8e7cc3]quantityMenu.minCount = 6 ; Number of items required to trigger quantity dialog. 0 is disabled[/color][/i]
+
+
+[b][u][center][color=#f6b26b][Appearance][/color][/center][/u][/b]
+[color=#8e7cc3][Appearance][/color] is the 5th section of the config.
+This is probably the first section you may want to modify. The Appearance Section includes 4 things.
+[color=#93c47d]1:[/color] The links to the .swf files that contain the icons for the category and item/magic icons. You probably shouldn't change these.
+
+[color=#8e7cc3][i]icons.category.source = 'skyui/icons_category_psychosteve.swf'[/i]
+
+[i]icons.item.source = 'skyui/icons_item_psychosteve.swf'[/i][/color]
+
+
+
+[color=#93c47d]2:[/color] The option to disable icon colors, making them all the default icon color. If this is set to false, you will still have gray for heavy armor, pink for gems, red for fire resistance potions, etc.
+
+[color=#8e7cc3][i]icons.item.noColor = false[/i][/color]
+
+
+[color=#93c47d]3:[/color] The option to disable the little red hand icon that appears after an item's name if it is stolen.
+
+[color=#8e7cc3][i]icons.item.showStolen = true[/i][/color]
+
+
+[color=#93c47d]4:[/color] Options to change the text colors for various scenarios. These values will likely the main difference between menu skin replacers like Dear Diary, Dear Diary Dark Mode, SkyUI The Adventurer's Theme, and default SkyUI values.
+
+[color=#8e7cc3][i]colors.text.enabled = 0xffffff
+colors.stolen.enabled = 0xffffff
+colors.negative.enabled = 0xff0000
+colors.text.disabled = 0x4c4c4c
+colors.stolen.disabled = 0x4c4c4c
+colors.negative.disabled = 0x800000[/i][/color]
+
+
+Here are the text color values from several mods for reference.
+[spoiler]
+[color=#93c47d][b]Default SkyUI:[/b][/color]
+
+[color=#8e7cc3][i]colors.text.enabled = 0xffffff
+colors.stolen.enabled = 0xffffff
+colors.negative.enabled = 0xff0000
+colors.text.disabled = 0x4c4c4c
+colors.stolen.disabled = 0x4c4c4c
+colors.negative.disabled = 0x800000[/i][/color]
+
+[color=#93c47d][b]Dear Diary:[/b][/color]
+
+[color=#8e7cc3][i]colors.text.enabled = 0x141414
+colors.stolen.enabled = 0x141414
+colors.negative.enabled = 0x780000
+colors.text.disabled = 0x550000
+colors.stolen.disabled = 0x550000
+colors.negative.disabled = 0x800000[/i][/color]
+
+[color=#93c47d][b]Dear Diary Dark Mode (White Text):[/b][/color]
+
+[color=#8e7cc3][i]colors.text.enabled = 0xffffff
+colors.stolen.enabled = 0xffffff
+colors.negative.enabled = 0xee0000
+colors.text.disabled = 0x4c4c4c
+colors.stolen.disabled = 0x4c4c4c
+colors.negative.disabled = 0x700000[/i][/color]
+
+[color=#93c47d][b]Dear Diary Dark Mode (Warm Text):[/b][/color]
+
+[color=#8e7cc3][i]colors.text.enabled = 0xffcc99
+colors.stolen.enabled = 0xffcc99
+colors.negative.enabled = 0xee0000
+colors.text.disabled = 0x4c4c4c
+colors.stolen.disabled = 0x4c4c4c
+colors.negative.disabled = 0x700000[/i][/color]
+
+[color=#93c47d][b]SkyUI The Adventurer Theme:[/b][/color]
+
+[color=#8e7cc3][i]colors.text.enabled = 0x431111
+colors.stolen.enabled = 0x431111
+colors.negative.enabled = 0x431111
+colors.text.disabled = 0x431111
+colors.stolen.disabled = 0x431111
+colors.negative.disabled = 0x431111[/i][/color]
+[/spoiler]
+
+
+[b][u][center][color=#f6b26b][ListLayout][/color][/center][/u][/b]
+[color=#8e7cc3][ListLayout][/color] is the 6th section of the config.
+This section contains all of the configurable information for the columns. This includes which columns exist, which are enabled by default, how they are sorted, and much much more.
+
+
+[b][u][center][color=#f6b26b]Columns[/color][/center][/u][/b]
+Columns is the 1st part of [color=#8e7cc3][ListLayout][/color].
+
+[color=#f6b26b][b]Sections:[/b][/color]
+
+It starts with some defaults that will be used for the columns unless specified otherwise.
+
+[color=#8e7cc3]defaults.entry.textFormat[/color] controls the text formatting for the entry. The entry is the value that appears under the label for each item. Ex: Dawnbreaker, 12, Ingredient.
+
+[color=#8e7cc3]defaults.label.textFormat[/color] controls the text formatting for the label. The label is the name of the column. Ex: Name, Type, Weight.
+
+[spoiler]
+[color=#8e7cc3]vars.a_textBorder.value = <0, 0, 1.1, 0> ;[/color] left right top bottom
+[color=#8e7cc3]vars.n_iconSize.value = 18[/color]
+
+[color=#8e7cc3]defaults.entryWidth = 530[/color]
+
+[color=#8e7cc3];[/color] Default text format defaults -------------------------------------------------------
+[color=#8e7cc3]defaults.entry.textFormat.font = '$EverywhereMediumFont'[/color]
+[color=#8e7cc3]defaults.entry.textFormat.align = right[/color]
+[color=#8e7cc3]defaults.entry.textFormat.bold = false[/color]
+[color=#8e7cc3]defaults.entry.textFormat.italic = false[/color]
+[color=#8e7cc3]defaults.entry.textFormat.underline = false[/color]
+[color=#8e7cc3]defaults.entry.textFormat.size = 14[/color]
+[color=#8e7cc3]defaults.entry.textFormat.letterSpacing = 0.8[/color]
+[color=#8e7cc3]defaults.entry.textFormat.kerning = false[/color]
+[color=#8e7cc3]defaults.entry.textFormat.leftMargin = 0[/color]
+[color=#8e7cc3]defaults.entry.textFormat.rightMargin = 0[/color]
+[color=#8e7cc3]defaults.entry.textFormat.indent = 0[/color]
+[color=#8e7cc3]defaults.entry.textFormat.leading = 0[/color]
+
+[color=#8e7cc3]defaults.label.textFormat.font = '$EverywhereMediumFont'[/color]
+[color=#8e7cc3]defaults.label.textFormat.align = right[/color]
+[color=#8e7cc3]defaults.label.textFormat.bold = false[/color]
+[color=#8e7cc3]defaults.label.textFormat.italic = false[/color]
+[color=#8e7cc3]defaults.label.textFormat.underline = false[/color]
+[color=#8e7cc3]defaults.label.textFormat.size = 12[/color]
+[color=#8e7cc3]defaults.label.textFormat.letterSpacing = 0.8[/color]
+[color=#8e7cc3]defaults.label.textFormat.kerning = false[/color]
+[color=#8e7cc3]defaults.label.textFormat.leftMargin = 0[/color]
+[color=#8e7cc3]defaults.label.textFormat.rightMargin = 0[/color]
+[color=#8e7cc3]defaults.label.textFormat.indent = 0[/color]
+[color=#8e7cc3]defaults.label.textFormat.leading = 0[/color]
+[/spoiler]
+
+Next is the Equip Icon Column with [color=#8e7cc3]type = EQUIP_ICON[/color]. This is the column that shows the icon to the left of the inventory when you have an item or spell equipped.
+[spoiler]
+[color=#8e7cc3];[/color] EQUIP ICON COLUMN -------------------------------------------------------
+[color=#8e7cc3]columns.equipColumn.type = EQUIP_ICON
+columns.equipColumn.passive = true
+columns.equipColumn.states = 1
+columns.equipColumn.indent = -28
+columns.equipColumn.icon.size = n_iconSize
+columns.equipColumn.border = <0, 10, 3, 3> ;[/color] left right top bottom
+[color=#8e7cc3]columns.equipColumn.state1.label.text = ' '[/color]
+[/spoiler]
+Then we have the Icon Column(s) with [color=#8e7cc3]type = ITEM_ICON[/color]. This is the column that shows the item/magic icons like Helmet, Ingredient, Misc, etc. If this column is set as the primary column in the Views section (more on that later) it will be the column that is selected by default when you open your inventory, and thus the one you would want the change the sorting attributes for. This would be what you would modify to change the default sorting order. I will touch on how to change sortAttributes later.
+[spoiler]
+[color=#8e7cc3];[/color] ICON COLUMN (ITEM) -------------------------------------------------------
+[color=#8e7cc3]columns.iconColumn.type = ITEM_ICON
+columns.iconColumn.states = 2
+columns.iconColumn.icon.size = n_iconSize
+columns.iconColumn.border = <0, 3, 3, 3> ;[/color] left right top bottom
+
+[color=#8e7cc3]columns.iconColumn.state1.label.text = ' '
+columns.iconColumn.state1.label.arrowDown = false
+columns.iconColumn.state1.sortAttributes = <isEquipped, type, formType, subType, weightClass, bipedSlots, material, infoDamage, infoBaseDamage, infoReach, infoSpeed, infoStagger, infoArmor, actorValue, resistance, magnitude, duration, text>
+columns.iconColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.iconColumn.state2.label.text = ' '
+columns.iconColumn.state2.label.arrowDown = true
+columns.iconColumn.state2.sortAttributes = <isEquipped, type, formType, subType, weightClass, bipedSlots, material, infoDamage, infoBaseDamage, infoReach, infoSpeed, infoStagger, infoArmor, actorValue, resistance, magnitude, duration, text>
+columns.iconColumn.state2.sortOptions = <{DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {DESCENDING | CASEINSENSITIVE}, {DESCENDING | CASEINSENSITIVE}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {DESCENDING | CASEINSENSITIVE}>[/color]
+[/spoiler]
+Next are the Name Column(s) with [color=#8e7cc3]type = NAME[/color]. This column shows the main entry for an item, the name. Ex: Iron Sword, Broom, Flames, etc.
+[spoiler]
+[color=#8e7cc3]columns.magicNameColumn.type = NAME
+columns.magicNameColumn.name = '$NAME'
+columns.magicNameColumn.states = 2
+columns.magicNameColumn.weight = 1.0
+columns.magicNameColumn.border = a_textBorder
+columns.magicNameColumn.label.textFormat.align = left
+columns.magicNameColumn.hidden = false
+
+columns.magicNameColumn.state1.label.text = '$NAME'
+columns.magicNameColumn.state1.label.arrowDown = false
+columns.magicNameColumn.state1.entry.text = @text
+columns.magicNameColumn.state1.sortOptions = {ASCENDING | CASEINSENSITIVE}
+
+columns.magicNameColumn.state2.label.text = '$FAVORITE'
+columns.magicNameColumn.state2.label.arrowDown = false
+columns.magicNameColumn.state2.entry.text = @text
+columns.magicNameColumn.state2.sortAttributes = <favorite, text>
+columns.magicNameColumn.state2.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+columns.magicNameColumn.state2.playerOnly = true[/color]
+[/spoiler]
+Lastly, are the rest of the columns with [color=#8e7cc3]type = TEXT[/color]. This type is what you will use for almost all columns. Ex: Subtype, Value, Damage, School, etc.
+[spoiler]
+[color=#8e7cc3];[/color] WEIGHT COLUMN -------------------------------------------------------
+[color=#8e7cc3]columns.weightColumn.type = TEXT
+columns.weightColumn.name = '$WEIGHT'
+columns.weightColumn.states = 2
+columns.weightColumn.width = 0.06
+columns.weightColumn.border = a_textBorder
+columns.weightColumn.hidden = false
+
+columns.weightColumn.state1.label.text = '$WGT'
+columns.weightColumn.state1.label.arrowDown = true
+columns.weightColumn.state1.entry.text = @infoWeight
+columns.weightColumn.state1.sortAttributes = <infoWeight, text>
+columns.weightColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.weightColumn.state2.label.text = '$WGT'
+columns.weightColumn.state2.label.arrowDown = false
+columns.weightColumn.state2.entry.text = @infoWeight
+columns.weightColumn.state2.sortAttributes = <infoWeight, text>
+columns.weightColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>[/color]
+[/spoiler]
+
+[b][color=#f6b26b]SPECIFIC EXPLANATIONS:[/color][/b]
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]columns.columnName.type = VALUE[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"VALUE": [color=#8e7cc3]EQUIP_ICON[/color],[color=#8e7cc3] ITEM_ICON[/color], [color=#8e7cc3]NAME[/color], [color=#8e7cc3]TEXT[/color].
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]type[/color] controls the type of column, as explained above. You should use [color=#8e7cc3]TEXT[/color] in most cases.
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]columns.columnName.name = '$STRING'[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"$STRING": Any string that is defined in the translation file. Ex: [color=#8e7cc3]'$NAME'[/color], [color=#8e7cc3]'$WEIGHT'[/color], etc.
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]name[/color] defines the text of the label that shows up when you click the settings gear in the upper right hand corner of your inventory to enable or disable certain columns.
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]columns.columnName.states = NUMBER[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"NUMBER": any number greater than or equal to [color=#8e7cc3]1[/color] that you also define states for.
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]states[/color] controls the number of times you can click of a column to sort by it. Whatever number you choose, you will need to define additional information for each state.
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]columns.columnName.state#.label.text = '$STRING'[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"$STRING": any string that is defined in the translation file. Ex: [color=#8e7cc3]'$ARM'[/color], [color=#8e7cc3]'$WGT'[/color], etc.
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]state#.label.text[/color] defines the text of the label that shows up in the header area at the top of the inventory. This is where you would put the shortened text so that more columns can easily fit on your screen.
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]columns.columnName.state#.label.arrowDown = BOOLEAN[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"BOOLEAN": [color=#8e7cc3]true[/color] or [color=#8e7cc3]false[/color], (or [color=#8e7cc3]1[/color] or [color=#8e7cc3]0[/color]).
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]state#.label.arrowDown[/color] controls if the little arrow next to the label you have highlighted points up or down. The arrow will point up if the value is [color=#8e7cc3]false[/color], which should be used for sorting A-Z or 1-9. The arrow will point down if the value is [color=#8e7cc3]true[/color], which should be used for sorting Z-A or 9-1.
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]columns.columnName.state#.entry.text = @attribute[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"attribute": See Attribute List.
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]state#.entry.text[/color] defines the value that shows up in the entry for that column. SkyUI gets a certain value from an item and places it in the entry for that column. Ex: [color=#8e7cc3]@text[/color], [color=#8e7cc3]@subTypeDisplay[/color], [color=#8e7cc3]@infoArmor[/color].
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]columns.columnName.state#.sortAttributes = <attribute, attribute, attribute>
+columns.columnName.state#.sortOptions = <{SORTORDER | SORTTYPE}, {SORTORDER | SORTTYPE}, {SORTORDER | SORTTYPE}>[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"attribute": See Attribute List.
+"SORTORDER": [color=#8e7cc3]ASCENDING[/color], [color=#8e7cc3]DESCENDING[/color].
+"SORTTYPE": [color=#8e7cc3]NUMERIC[/color], [color=#8e7cc3]CASEINSENSITIVE[/color], (also [color=#8e7cc3]CASESENSITIVE[/color], probably).
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]state#.sortAttributes[/color] and [color=#8e7cc3]state#.sortOptions[/color] control the sorting order when a column is selected and in that state. [color=#8e7cc3]sortAttributes[/color] is a list of at least 1 attribute of an entry to sort by. Priority is from left to right: entries are sorted by attribute1, then attribute2, then attribute3, etc. [color=#8e7cc3]sortOptions[/color] provides mandatory information about how to sort each attribute. You need an a value ([color=#8e7cc3]{SORTORDER | SORTTYPE}[/color]) in [color=#8e7cc3]sortOptions[/color] for each value ([color=#8e7cc3]attribute[/color]) in [color=#8e7cc3]sortAttributes[/color]. [color=#8e7cc3]ASCENDING[/color] sorts from A-Z or 1-9. [color=#8e7cc3]DESCENDING[/color] sorts from Z-A or 9-1. I haven't done much testing with SORTTYPE, but [color=#8e7cc3]NUMERIC[/color] should probably be used when sorting numeric values like [color=#8e7cc3]infoDamage[/color] or boolean values like [color=#8e7cc3]isEquipped[/color], whereas [color=#8e7cc3]CASEINSENSITIVE[/color] should be used only when sorting specifically alphabetical values like [color=#8e7cc3]text [/color]or [color=#8e7cc3]infoSchoolName[/color]. I would assume [color=#8e7cc3]CASESENSITIVE[/color] would also be a valid value if you can think of a reason to use that.
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]columns.columnName.state#.playerOnly = BOOLEAN[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"BOOLEAN": [color=#8e7cc3]true[/color] or [color=#8e7cc3]false[/color].
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]state#.playerOnly[/color] should make the state only show up in the player inventory. This state wouldn't be selectable in menus like containers if I understand it correctly. Ex: [color=#8e7cc3]playerOnly[/color] is used in the [color=#8e7cc3]itemName[/color] column for the stolen state, so you should only be able to sort by stolen in your own inventory.
+[spoiler]
+[color=#8e7cc3]columns.itemNameColumnDefault.state3.label.text = '$STOLEN'
+columns.itemNameColumnDefault.state3.label.arrowDown = false
+columns.itemNameColumnDefault.state3.entry.text = @text
+columns.itemNameColumnDefault.state3.sortAttributes = <isStolen, text>
+columns.itemNameColumnDefault.state3.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+columns.itemNameColumnDefault.state3.playerOnly = true[/color]
+[/spoiler]
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]columns.columnName.border = VALUE[/color]
+[b][color=#93c47d]Known Valid Values:[/color]
+[/b]"VALUE": [color=#8e7cc3]a_textBorder[/color], [color=#8e7cc3]<#, #, #, #>[/color].
+[b][color=#93c47d]Explanation:[/color][/b]
+I haven't looked into what exactly border does, but you should include the default value [color=#8e7cc3]border = a_textBorder[/color]. [color=#8e7cc3]a_textBorder [/color]is a variable that by default is set to [color=#8e7cc3]<0, 0, 1.1, 0>[/color]. The other option is to use a custom list of 4 numbers, [color=#8e7cc3]<left, right, top, bottom>[/color]. Ex: [color=#8e7cc3]equipColumn.border = <0, 10, 3, 3>[/color], [color=#8e7cc3]iconColumn.border = <0, 3, 3, 3>[/color].
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]columns.columnName.width = DECIMAL[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"DECIMAL": any number. Ex: [color=#8e7cc3]0.14[/color], [color=#8e7cc3]0.06[/color].
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]width[/color] controls the width of the column. Default values used range from [color=#8e7cc3]0.06[/color] to [color=#8e7cc3]0.4[/color] depending on how much text needs to fit in the entry and how many columns need to fit in a view.
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]columns.columnName.weight = DECIMAL[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"DECIMAL": any number. Ex: [color=#8e7cc3]1.0[/color].
+[b][color=#93c47d]Explanation:[/color][/b]
+I'm also not completely sure what this does, but it's only used in the name columns. [color=#8e7cc3]itemNameColumn.type = NAME[/color], [color=#8e7cc3]itemNameColumn.weight = 1.0[/color].
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]columns.columnName.hidden = BOOLEAN[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"BOOLEAN": [color=#8e7cc3]true[/color] or [color=#8e7cc3]false[/color].
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]hidden[/color] controls whether or not a column is visible by default. You can use the settings gear in the upper right hand corner of the inventory to turn columns on and off, and once you save the game, your visible columns settings are saved for that save game. [color=#8e7cc3]hidden = true[/color] just makes that column unchecked by default.
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]columns.columnName.passive = BOOLEAN[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"BOOLEAN": [color=#8e7cc3]true[/color] or [color=#8e7cc3]false[/color].
+[b][color=#93c47d]Explanation:[/color][/b]
+I'm not completely sure what this does, but if I had to guess, [color=#8e7cc3]passive = true[/color] makes it so you can't select a column. It's only used for the equip icons column by default: [color=#8e7cc3]columns.equipColumn.passive = true[/color].
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]columns.columnName.indent = NUMBER[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"NUMBER": any positive or negative number. Ex: [color=#8e7cc3]0[/color] , [color=#8e7cc3]-28[/color].
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]indent[/color] controls how far left or right the column is indented.
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]columns.columnName.icon.size = NUMBER[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"NUMBER": [color=#8e7cc3]n_iconSize[/color], any number. Ex: [color=#8e7cc3]18[/color].
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]icon.size[/color] controls the size of the icon. [color=#8e7cc3]n_iconSize[/color] is a variable that by default is set to [color=#8e7cc3]18[/color].
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]textFormat.font = '$FONT'[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"$FONT": Fonts defined in the font config file. See Fonts List. Ex: [color=#8e7cc3]'[/color][color=#8e7cc3]$EverywhereMediumFont'[/color].
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]font[/color] controls the font of the text. It should be able to be set to any font that is defined in the font config file (/data/interface/fontconfig.txt).
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]textFormat.align = ALIGNMENT[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"ALIGNMENT": [color=#8e7cc3]left[/color], [color=#8e7cc3]center[/color], or [color=#8e7cc3]right[/color].
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]align[/color] controls the alignment of the text.
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]textFormat.color = COLOR[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"COLOR": a hex color between [color=#8e7cc3]0x000000[/color] and [color=#8e7cc3]0xFFFFFF[/color]. Ex: [color=#8e7cc3]0xFFE044[/color].
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]color[/color] controls the color of the text.
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]textFormat.bold = BOOLEAN[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"BOOLEAN": [color=#8e7cc3]true[/color] or [color=#8e7cc3]false[/color].
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]bold[/color] controls whether the text is bold or not.
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]textFormat.italic = BOOLEAN[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"BOOLEAN": [color=#8e7cc3]true[/color] or [color=#8e7cc3]false[/color].
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]italic[/color] controls whether the text is italic or not.
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]textFormat.underline = BOOLEAN[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"BOOLEAN": [color=#8e7cc3]true[/color] or [color=#8e7cc3]false[/color].
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]underline[/color] controls whether the text is underlined or not.
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]textFormat.size = NUMBER[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"NUMBER": any number. Ex: [color=#8e7cc3]12[/color], [color=#8e7cc3]14[/color].
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]size[/color] controls the size of the text.
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]textFormat.letterSpacing = DECIMAL[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"DECIMAL": any number. Ex: [color=#8e7cc3]0.8[/color].
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]letterSpacing[/color] controls the spacing between letters.
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]textFormat.kerning = BOOLEAN[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"BOOLEAN": [color=#8e7cc3]true[/color] or [color=#8e7cc3]false[/color].
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]kerning[/color] affects the horizontal spacing between letters. Google "kerning" for more info.
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]textFormat.leftMargin = NUMBER[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"NUMBER": any number. Ex: [color=#8e7cc3]0[/color].
+[b][color=#93c47d]Explanation:[/color][/b]
+Not sure how exactly the margins work. They are set to [color=#8e7cc3]0[/color] by default.
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]textFormat.rightMargin = NUMBER[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"NUMBER": any number. Ex: [color=#8e7cc3]0[/color].
+[b][color=#93c47d]Explanation:[/color][/b]
+Not sure how exactly the margins work. They are set to [color=#8e7cc3]0[/color] by default.
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]textFormat.indent = NUMBER[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"NUMBER": any positive or negative number. Ex: [color=#8e7cc3]0[/color] , [color=#8e7cc3]-28[/color].
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]indent[/color] controls how far left or right the column is indented.
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]textFormat.leading = NUMBER[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"NUMBER": any number. Ex: [color=#8e7cc3]0[/color].
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]leading[/color] affects the vertical spacing between lines. Google "leading text" for more info.
+
+[b][color=#93c47d]Code:[/color][/b]
+---
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+---
+[b][color=#93c47d]Explanation:[/color][/b]
+---
+
+
+
+
+[b][u][color=#f6b26b][center]Views[/center][/color][/u][/b]
+Views is the 2nd part of [color=#8e7cc3][ListLayout][/color].
+A view is the combination of a bunch of columns to use for certain tabs. This controls which columns are available for the All tab, Weapons tab, Misc tab, etc.
+
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]views.viewName.primaryColumn = columnName[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"columnName": any column variable defined in Columns.
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]primaryColumn[/color] controls which column is selected by default when you navigate to a tab in your inventory.
+
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]views.viewName.columns = <columnName, columnName, columnName>[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"columnName": any column variable defined in Columns.
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]columns[/color] controls which columns are available when selecting a tab that uses that view.
+
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]views.viewName.category = <Inventory.FILTERFLAG_FILTER, Inventory.FILTERFLAG_FILTER>[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"FILTERFLAG_FILTER": See Category FilterFlag List. Ex: [color=#8e7cc3]Inventory.FILTERFLAG_INV_ARMOR[/color].
+[spoiler]
+[color=#93c47d][b]Category FilterFlag List:[/b][/color]
+Can be found here: [url=https://github.com/schlangster/skyui/blob/master/src/Common/skyui/defines/Inventory.as]src/common/skyui/defines/Inventory.as[/url].
+When using, prepend with "[color=#8e7cc3]Inventory.[/color]"
+[color=#8e7cc3]
+FILTERFLAG_INV_ALL
+FILTERFLAG_INV_FAVORITES
+FILTERFLAG_INV_WEAPONS
+FILTERFLAG_INV_ARMOR
+FILTERFLAG_INV_POTIONS
+FILTERFLAG_INV_SCROLLS
+FILTERFLAG_INV_FOOD
+FILTERFLAG_INV_INGREDIENTS
+FILTERFLAG_INV_BOOKS
+FILTERFLAG_INV_KEYS
+FILTERFLAG_INV_MISC
+
+FILTERFLAG_CONTAINER_ALL
+FILTERFLAG_CONTAINER_WEAPONS
+FILTERFLAG_CONTAINER_ARMOR
+FILTERFLAG_CONTAINER_POTIONS
+FILTERFLAG_CONTAINER_SCROLLS
+FILTERFLAG_CONTAINER_FOOD
+FILTERFLAG_CONTAINER_INGREDIENTS
+FILTERFLAG_CONTAINER_BOOKS
+FILTERFLAG_CONTAINER_KEYS
+FILTERFLAG_CONTAINER_MISC
+
+FILTERFLAG_MAGIC_ALL
+FILTERFLAG_MAGIC_FAVORITES
+FILTERFLAG_MAGIC_ALTERATION
+FILTERFLAG_MAGIC_ILLUSION
+FILTERFLAG_MAGIC_DESTRUCTION
+FILTERFLAG_MAGIC_CONJURATION
+FILTERFLAG_MAGIC_RESTORATION
+FILTERFLAG_MAGIC_SHOUTS
+FILTERFLAG_MAGIC_POWERS
+FILTERFLAG_MAGIC_ACTIVEEFFECTS
+
+FILTERFLAG_ENCHANTING_ITEM
+FILTERFLAG_ENCHANTING_DISENCHANT
+FILTERFLAG_ENCHANTING_ENCHANTMENT
+FILTERFLAG_ENCHANTING_SOULGEM
+
+FILTERFLAG_CRAFT_JEWELRY
+FILTERFLAG_CRAFT_FOOD
+FILTERFLAG_CRAFT_MISC
+
+FILTERFLAG_CUST_CRAFT_ALL
+FILTERFLAG_CUST_CRAFT_WEAPONS
+FILTERFLAG_CUST_CRAFT_AMMO
+FILTERFLAG_CUST_CRAFT_ARMOR
+FILTERFLAG_CUST_CRAFT_JEWELRY
+FILTERFLAG_CUST_CRAFT_FOOD
+FILTERFLAG_CUST_CRAFT_MISC
+
+FILTERFLAG_CUST_ALCH_INGREDIENTS
+FILTERFLAG_CUST_ALCH_GOOD
+FILTERFLAG_CUST_ALCH_BAD
+FILTERFLAG_CUST_ALCH_OTHER[/color]
+[/spoiler]
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]category[/color] filters which types of records use that view. If [color=#8e7cc3]category[/color] is not defined on a view, it defaults to all records.
+
+
+[b][u][color=#f6b26b][center]Layouts[/center][/color][/u][/b]
+Layouts is the 3rd part of [color=#8e7cc3][ListLayout][/color].
+Layouts are the combination of views (which are combinations of columns), which are actually shipped out to be used by the game.
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]layouts.layoutName.name = 'STRING'[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"STRING": any string.
+[b][color=#93c47d]Explanation:[/color][/b]
+I don't know if the [color=#8e7cc3]name[/color] is actually used anywhere or if it is just for the user to easily identify what the layout is used for.
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]layouts.layoutName.views = <viewName, viewName, viewName>[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"viewName": any view variable defined in Views.
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]views[/color] controls which views are actually used by the game. I don't know if you can create new layouts or just modify the default ones. The order of views (left to right) decides which views take priority.
+For example, [color=#8e7cc3]armorView[/color] has a category filter of [color=#8e7cc3]FILTERFLAG_INV_ARMOR[/color] and [color=#8e7cc3]FILTERFLAG_CONTAINER ARMOR[/color], and [color=#8e7cc3]defaultItemView[/color] has no category filters. A layout of [color=#8e7cc3]layouts.itemListLayout.views = <armorView, defaultItemView>[/color] would have a specific set of columns when in the Armor tab, but all other item tabs would default back to [color=#8e7cc3]defaultItemView[/color]'s columns. If the layout was set up like this: [color=#8e7cc3]layouts.itemListLayout.views = <defaultItemView, armorView>[/color], since [color=#8e7cc3]defaultItemView[/color] doesn't have any filters, it would override any views that come after it, meaning all tabs would use the columns defined by [color=#8e7cc3]defaultItemView [/color]and [color=#8e7cc3]armorView[/color] wouldn't be used.
+
+
+[b][u][center][color=#f6b26b][Properties][/color][/center][/u][/b]
+[color=#8e7cc3][Properties][/color] is the 7th and last section of the config.
+This is one of the most powerful and complicated sections of the config. It allows you to overwrite various properties or attributes of an item or spell/effect. These are the same attributes that appear in the entries of columns and can be used to sort those columns.
+
+
+Just like [color=#8e7cc3][ListLayout][/color], [color=#8e7cc3][Properties][/color] works by allowing you to set a bunch of variables which are compacted into a few specific variables that are sent to the game to be used. For [color=#8e7cc3][Properties][/color] these special variables are: [color=#8e7cc3]itemProperties[/color], [color=#8e7cc3]itemIcons[/color], [color=#8e7cc3]itemCompoundProperties[/color], [color=#8e7cc3]magicProperties[/color], [color=#8e7cc3]magicIcons[/color], and [color=#8e7cc3]magicCompoundProperties[/color].
+
+The difference between [color=#8e7cc3]itemProperties[/color] and [color=#8e7cc3]magicProperties[/color] is pretty simple. [color=#8e7cc3]itemProperties[/color] is used to set the properties of armor, weapons, misc items, potions, etc. [color=#8e7cc3]magicProperties[/color] is used to set the properties of spells, powers, shouts, magic effects, etc. This is the same for all of the item/magic variables.
+
+There doesn't seem to be any difference between how the game handles [color=#8e7cc3]itemProperties[/color] and [color=#8e7cc3]itemIcons[/color]. You can use them the exact same way. Just think of them as [color=#8e7cc3]itemProps1[/color] and [color=#8e7cc3]itemProps2[/color]. I haven't found a good reason to use 2 property variables yet, but there might be an advantage besides organization.
+
+itemCompoundProperties and magicCompoundProperties are unique from the other 4 variables. I'm not exactly sure how or why to use them yet. Until I look into them more, here's some fragments of code/information I've gathered in this spoiler.
+[spoiler]
+[color=#8e7cc3];[/color] Set Compound Properties -------------------------------------------------------
+[color=#8e7cc3];[/color] Set properties that are a combination of other properties, used for icon column sorting
+[color=#8e7cc3];[/color] By changing concatenateList you can change your icon column sorting.
+[color=#8e7cc3];[/color] For example compoundProps.armorTotalSort.concatenateList = <'formType', 'weightClass', 'subType', 'material'>
+[color=#8e7cc3];[/color] will put all heavy armor together and then sort by body/head/etc vs the default of putting all body/head/etc
+[color=#8e7cc3];[/color] together and then sorting by weight class.
+
+[color=#8e7cc3];[/color] Compound Properties ----------------------------------------------
+[color=#8e7cc3];[/color] itemCompoundProperties
+[color=#8e7cc3];[/color] magicCompoundProperties
+
+[color=#8e7cc3]compoundProps.itemCompoundGroup.propertyToSet = 'mySortProperty'
+compoundProps.itemCompoundGroup.filter = ...
+compoundProps.itemCompoundGroup.concatenateList = <'type', 'formType', ...>
+compoundProps.itemCompoundGroup.defaultValues = <'type': undefined, 'formType': undefined, ...>
+
+itemCompoundProperties = <'itemCompoundGroup', ...>
+
+compoundProps.magicCompoundGroup.propertyToSet = 'mySortProperty'
+compoundProps.magicCompoundGroup.filter = ...
+compoundProps.magicCompoundGroup.concatenateList = <'type', 'formType', ...>
+compoundProps.magicCompoundGroup.defaultValues = <'type': undefined, 'formType': undefined, ...>
+
+magicCompoundProperties = <'magicCompoundGroup', ...>[/color]
+[/spoiler]
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]props.itemGroupName.propertiesToSet = <'attribute', 'attribute'>[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"attribute": See Attribute List.
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]propertiesToSet[/color] shows which properties you are setting in that group variable. It does not seem to be necessary to list all attributes you wish to set to be able to properly set them, but it's probably good practice to list them anyways.
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]props.itemGroupName.filter = <'attribute': VALUE, 'attribute': VALUE>[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"attribute": See Attribute List. Ex: [color=#8e7cc3]'formType'[/color].
+"VALUE": A valid value for the attribute you're filtering by. See Attribute List. Ex: [color=#8e7cc3]Form.TYPE_ARMOR[/color].
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]filter[/color] allows you to filter a group variable to a specific subset of items. Ex: [color=#8e7cc3]props.armorIcon.filter = <'formType': Form.TYPE_ARMOR>[/color].
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]props.itemGroupName.keywords.keywordName = <'attribute': VALUE, 'attribute': VALUE>[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"keywordName": any keyword. Ex: [color=#8e7cc3]VendorItemFirewood[/color], [color=#8e7cc3]WAF_MaterialChitin[/color].
+"attribute": See Attribute List.
+"VALUE": A valid value for the attribute you're filtering by. See Attribute List.
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]keywords[/color] allows you to set properties based on a keyword.
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]props.itemGroupName.dataMember#.filter = <'attribute': VALUE, 'attribute': VALUE>[/color]
+[color=#8e7cc3]props.itemGroupName.dataMember#.set = <'attribute': VALUE, 'attribute': VALUE>[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"attribute": See Attribute List.
+"VALUE": A valid value for the attribute you're filtering by. See Attribute List.
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]dataMember#[/color] allows you to set properties based on other properties.
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]props.itemGroupName.defaultValues = <'attribute': VALUE, 'attribute': VALUE>[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"attribute": See Attribute List.
+"VALUE": A valid value for the attribute you're filtering by. See Attribute List.
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]defaultValues[/color] --- ?
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]props.itemGroupName.overwrite = BOOLEAN[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"BOOLEAN": [color=#8e7cc3]true[/color] or [color=#8e7cc3]false[/color].
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]overwrite[/color] --- ?
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]itemProperties = <itemGroupName, itemGroupName, itemGroupName>
+itemIcons = <itemGroupName, itemGroupName, itemGroupName>
+magicProperties = <magicGroupName, magicGroupName, magicGroupName>
+magicIcons = <magicGroupName, magicGroupName, magicGroupName>[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"itemGroupName": any props group name you've defined.
+"magicGroupName": any props group name you've defined.
+[b][color=#93c47d]Explanation:[/color][/b]
+These are the special variables that are sent to the game.
+
+[b][color=#93c47d]Code:[/color][/b]
+---
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+---
+[b][color=#93c47d]Explanation:[/color][/b]
+---
+
+[spoiler]
+[color=#f6b26b][b]Compound Properties:[/b][/color]
+Compound Properties are somehow used for more specific sorting. I haven't messed with this much yet, so I don't know much about the nuances of how it works.
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]compoundProps.itemCompGroupName.propertyToSet = 'attribute'[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"attribute": See Attribute List.
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]propertyToSet[/color] controls the property/attribute you set. You can create a new attribute. You can use this attribute for column sorting.
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]compoundProps.itemCompGroupName.filter = <'attribute': VALUE, 'attribute': VALUE>[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"attribute": See Attribute List.
+"VALUE": A valid value for the attribute you're filtering by. See Attribute List.
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]filter[/color] allows you to filter a group variable to a specific subset of items.
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]compoundProps.itemCompGroupName.concatenateList = <'attribute', 'attribute', 'attribute'>[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"attribute": See Attribute List.
+"VALUE": A valid value for the attribute you're filtering by. See Attribute List.
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]concatenateList[/color] --- ?
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]compoundProps.itemCompGroupName.defaultValues = <'attribute': VALUE, 'attribute': VALUE>[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"attribute": See Attribute List.
+[b][color=#93c47d]Explanation:[/color][/b]
+[color=#8e7cc3]defaultValues[/color] --- ?
+
+[b][color=#93c47d]Code:[/color][/b]
+[color=#8e7cc3]itemCompoundProperties = <itemCompGroupName, itemCompGroupName, itemCompGroupName>
+magicCompoundProperties = <magicCompGroupName, magicCompGroupName, magicCompGroupName>[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+"itemCompGroupName": any compoundProps group name you've defined.
+"magicCompGroupName": any compoundProps group name you've defined.
+[b][color=#93c47d]Explanation:[/color][/b]
+These are the special variables that are sent to the game.
+[/spoiler]
+
+
+[color=#f6b26b][b][u][center]LISTS OF VALUES[/center][/u][/b][/color]
+[b][color=#f6b26b]
+Attributes:
+[/color][/b]
+Attributes or Properties are variables that contain key information about an item or spell/effect. Only some attributes are provided with values by default through SkyUI/SKSE/swfs. You can create custom attributes and fill them with information by adding them through the interface (.swf files) or through the config. It might be difficult to fill your custom attributes for every item/spell/effect through the config though. I'm still figuring out how/if you can create full, proper attributes from the config alone.
+
+Keep in mind that if you overwrite an attribute, that information may be purely visual. Eg: If you overwrite the infoDamage of a iron dagger from 4 to 1000, it will show up as 1000 damage under the DMG column in your inventory, but it will still only do ~4 damage.
+
+Here is a list of known attributes you can use that already have values assigned to them, and what some of those values are. Some of these might have to be added in if you aren't using DD/DDDM or SAS, but I'll look into that later.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]actorValue[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+[color=#8e7cc3]Actor.AV_AGGRESSION
+Actor.AV_CONFIDENCE
+Actor.AV_ENERGY
+Actor.AV_MORALITY
+Actor.AV_MOOD
+Actor.AV_ASSISTANCE
+Actor.AV_ONEHANDED
+Actor.AV_TWOHANDED
+Actor.AV_MARKSMAN
+Actor.AV_BLOCK
+Actor.AV_SMITHING
+Actor.AV_HEAVYARMOR
+Actor.AV_LIGHTARMOR
+Actor.AV_PICKPOCKET
+Actor.AV_LOCKPICKING
+Actor.AV_SNEAK
+Actor.AV_ALCHEMY
+Actor.AV_SPEECHCRAFT
+Actor.AV_ALTERATION
+Actor.AV_CONJURATION
+Actor.AV_DESTRUCTION
+Actor.AV_ILLUSION
+Actor.AV_RESTORATION
+Actor.AV_ENCHANTING
+Actor.AV_HEALTH
+Actor.AV_MAGICKA
+Actor.AV_STAMINA
+Actor.AV_HEALRATE
+Actor.AV_MAGICKARATE
+Actor.AV_STAMINARATE
+Actor.AV_SPEEDMULT
+Actor.AV_INVENTORYWEIGHT
+Actor.AV_CARRYWEIGHT
+Actor.AV_CRITCHANCE
+Actor.AV_MELEEDAMAGE
+Actor.AV_UNARMEDDAMAGE
+Actor.AV_MASS
+Actor.AV_VOICEPOINTS
+Actor.AV_VOICERATE
+Actor.AV_DAMAGERESIST
+Actor.AV_POISONRESIST
+Actor.AV_FIRERESIST
+Actor.AV_ELECTRICRESIST
+Actor.AV_FROSTRESIST
+Actor.AV_MAGICRESIST
+Actor.AV_DISEASERESIST
+Actor.AV_PERCEPTIONCONDITION
+Actor.AV_ENDURANCECONDITION
+Actor.AV_LEFTATTACKCONDITION
+Actor.AV_RIGHTATTACKCONDITION
+Actor.AV_LEFTMOBILITYCONDITION
+Actor.AV_RIGHTMOBILITYCONDITION
+Actor.AV_BRAINCONDITION
+Actor.AV_PARALYSIS
+Actor.AV_INVISIBILITY
+Actor.AV_NIGHTEYE
+Actor.AV_DETECTLIFERANGE
+Actor.AV_WATERBREATHING
+Actor.AV_WATERWALKING
+Actor.AV_IGNORECRIPPLEDLIMBS
+Actor.AV_FAME
+Actor.AV_INFAMY
+Actor.AV_JUMPINGBONUS
+Actor.AV_WARDPOWER
+Actor.AV_RIGHTITEMCHARGE
+Actor.AV_ARMORPERKS
+Actor.AV_SHIELDPERKS
+Actor.AV_WARDDEFLECTION
+Actor.AV_BOWSPEEDBONUS
+Actor.AV_FAVORACTIVE
+Actor.AV_FAVORSPERDAY
+Actor.AV_FAVORSPERDAYTIMER
+Actor.AV_LEFTITEMCHARGE
+Actor.AV_ABSORBCHANCE
+Actor.AV_BLINDNESS
+Actor.AV_WEAPONSPEEDMULT
+Actor.AV_SHOUTRECOVERYMULT
+Actor.AV_BOWSTAGGERBONUS
+Actor.AV_TELEKINESIS
+Actor.AV_FAVORPOINTSBONUS
+Actor.AV_LASTBRIBEDINTIMIDATED
+Actor.AV_LASTFLATTERED
+Actor.AV_MOVEMENTNOISEMULT
+Actor.AV_BYPASSVENDORSTOLENCHECK
+Actor.AV_BYPASSVENDORKEYWORDCHECK
+Actor.AV_WAITINGFORPLAYER
+Actor.AV_ONEHANDEDMOD
+Actor.AV_TWOHANDEDMOD
+Actor.AV_MARKSMANMOD
+Actor.AV_BLOCKMOD
+Actor.AV_SMITHINGMOD
+Actor.AV_HEAVYARMORMOD
+Actor.AV_LIGHTARMORMOD
+Actor.AV_PICKPOCKETMOD
+Actor.AV_LOCKPICKINGMOD
+Actor.AV_SNEAKMOD
+Actor.AV_ALCHEMYMOD
+Actor.AV_SPEECHCRAFTMOD
+Actor.AV_ALTERATIONMOD
+Actor.AV_CONJURATIONMOD
+Actor.AV_DESTRUCTIONMOD
+Actor.AV_ILLUSIONMOD
+Actor.AV_RESTORATIONMOD
+Actor.AV_ENCHANTINGMOD
+Actor.AV_ONEHANDEDSKILLADVANCE
+Actor.AV_TWOHANDEDSKILLADVANCE
+Actor.AV_MARKSMANSKILLADVANCE
+Actor.AV_BLOCKSKILLADVANCE
+Actor.AV_SMITHINGSKILLADVANCE
+Actor.AV_HEAVYARMORSKILLADVANCE
+Actor.AV_LIGHTARMORSKILLADVANCE
+Actor.AV_PICKPOCKETSKILLADVANCE
+Actor.AV_LOCKPICKINGSKILLADVANCE
+Actor.AV_SNEAKSKILLADVANCE
+Actor.AV_ALCHEMYSKILLADVANCE
+Actor.AV_SPEECHCRAFTSKILLADVANCE
+Actor.AV_ALTERATIONSKILLADVANCE
+Actor.AV_CONJURATIONSKILLADVANCE
+Actor.AV_DESTRUCTIONSKILLADVANCE
+Actor.AV_ILLUSIONSKILLADVANCE
+Actor.AV_RESTORATIONSKILLADVANCE
+Actor.AV_ENCHANTINGSKILLADVANCE
+Actor.AV_LEFTWEAPONSPEEDMULT
+Actor.AV_DRAGONSOULS
+Actor.AV_COMBATHEALTHREGENMULT
+Actor.AV_ONEHANDEDPOWERMOD
+Actor.AV_TWOHANDEDPOWERMOD
+Actor.AV_MARKSMANPOWERMOD
+Actor.AV_BLOCKPOWERMOD
+Actor.AV_SMITHINGPOWERMOD
+Actor.AV_HEAVYARMORPOWERMOD
+Actor.AV_LIGHTARMORPOWERMOD
+Actor.AV_PICKPOCKETPOWERMOD
+Actor.AV_LOCKPICKINGPOWERMOD
+Actor.AV_SNEAKPOWERMOD
+Actor.AV_ALCHEMYPOWERMOD
+Actor.AV_SPEECHCRAFTPOWERMOD
+Actor.AV_ALTERATIONPOWERMOD
+Actor.AV_CONJURATIONPOWERMOD
+Actor.AV_DESTRUCTIONPOWERMOD
+Actor.AV_ILLUSIONPOWERMOD
+Actor.AV_RESTORATIONPOWERMOD
+Actor.AV_ENCHANTINGPOWERMOD
+Actor.AV_DRAGONREND
+Actor.AV_ATTACKDAMAGEMULT
+Actor.AV_HEALRATEMULT
+Actor.AV_MAGICKARATEMULT
+Actor.AV_STAMINARATEMULT
+Actor.AV_WEREWOLFPERKS
+Actor.AV_VAMPIREPERKS
+Actor.AV_GRABACTOROFFSET
+Actor.AV_GRABBED
+Actor.AV_DEPRECATED05
+Actor.AV_REFLECTDAMAGE[/color]
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+PC/NPC related value used by magic effect.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]archetype[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+[color=#8e7cc3]Magic.ARCHETYPE_VALUEMOD
+Magic.ARCHETYPE_SCRIPT
+Magic.ARCHETYPE_DISPEL
+Magic.ARCHETYPE_CUREDISEASE
+Magic.ARCHETYPE_ABSORB
+Magic.ARCHETYPE_DUALVALUEMOD
+Magic.ARCHETYPE_CALM
+Magic.ARCHETYPE_DEMORALIZE
+Magic.ARCHETYPE_FRENZY
+Magic.ARCHETYPE_DISARM
+Magic.ARCHETYPE_COMMANDSUMMONED
+Magic.ARCHETYPE_INVISIBILITY
+Magic.ARCHETYPE_LIGHT
+
+Magic.ARCHETYPE_LOCK
+Magic.ARCHETYPE_OPEN
+Magic.ARCHETYPE_BOUNDWEAPON
+Magic.ARCHETYPE_SUMMONCREATURE
+Magic.ARCHETYPE_DETECTLIFE
+Magic.ARCHETYPE_TELEKINESIS
+Magic.ARCHETYPE_PARALYSIS
+Magic.ARCHETYPE_REANIMATE
+Magic.ARCHETYPE_SOULTRAP
+Magic.ARCHETYPE_TURNUNDEAD
+Magic.ARCHETYPE_GUIDE
+Magic.ARCHETYPE_WEREWOLFFEED
+Magic.ARCHETYPE_CUREPARALYSIS
+Magic.ARCHETYPE_CUREADDICTION
+Magic.ARCHETYPE_CUREPOISON
+Magic.ARCHETYPE_CONCUSSION
+Magic.ARCHETYPE_VALUEANDPARTS
+Magic.ARCHETYPE_ACCUMULATEMAGNITUDE
+Magic.ARCHETYPE_STAGGER
+Magic.ARCHETYPE_PEAKVALUEMOD
+Magic.ARCHETYPE_CLOAK
+Magic.ARCHETYPE_WEREWOLF
+Magic.ARCHETYPE_SLOWTIME
+Magic.ARCHETYPE_RALLY
+Magic.ARCHETYPE_ENHANCEWEAPON
+Magic.ARCHETYPE_SPAWNHAZARD
+Magic.ARCHETYPE_ETHEREALIZE
+Magic.ARCHETYPE_BANISH
+
+Magic.ARCHETYPE_DISGUISE
+Magic.ARCHETYPE_GRABACTOR
+Magic.ARCHETYPE_VAMPIRELORD[/color]
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Magic effect archetype.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]archetypeDisplay[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+String defined in translation file.
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+AIT. Spell subtype.
+
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]baseId[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+?
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+?
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]bipedSlots[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+[url=https://github.com/schlangster/skyui/blob/master/src/Common/skyui/defines/Armor.as]/src/Common/skyui/defines/Armor.as[/url]
+
+[color=#8e7cc3]Armor.PARTMASK_HEAD
+Armor.PARTMASK_HAIR
+Armor.PARTMASK_BODY
+Armor.PARTMASK_HANDS
+Armor.PARTMASK_FOREARMS
+Armor.PARTMASK_AMULET
+Armor.PARTMASK_RING
+Armor.PARTMASK_FEET
+Armor.PARTMASK_CALVES
+Armor.PARTMASK_SHIELD
+Armor.PARTMASK_TAIL
+Armor.PARTMASK_LONGHAIR
+Armor.PARTMASK_CIRCLET
+Armor.PARTMASK_EARS
+Armor.PARTMASK_UNNAMED14
+Armor.PARTMASK_UNNAMED15
+Armor.PARTMASK_UNNAMED16
+Armor.PARTMASK_UNNAMED17
+Armor.PARTMASK_UNNAMED18
+Armor.PARTMASK_UNNAMED19
+Armor.PARTMASK_DECAPITATEHEAD
+Armor.PARTMASK_DECAPITATE
+Armor.PARTMASK_UNNAMED22
+Armor.PARTMASK_UNNAMED23
+Armor.PARTMASK_UNNAMED24
+Armor.PARTMASK_UNNAMED25
+Armor.PARTMASK_UNNAMED26
+Armor.PARTMASK_UNNAMED27
+Armor.PARTMASK_UNNAMED28
+Armor.PARTMASK_UNNAMED29
+Armor.PARTMASK_UNNAMED30
+Armor.PARTMASK_FX01[/color]
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Armor body slots.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]bipedSlotsDisplay[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+Can be found [url=http://wiki.tesnexus.com/index.php/Skyrim_bodyparts_number]here[/url]﻿.﻿
+
+[color=#8e7cc3]30[/color]   ﻿; Head
+[color=#8e7cc3]31[/color]   ﻿; Hair
+[color=#8e7cc3]32[/color]   ﻿; Body
+[color=#8e7cc3]33[/color]   ﻿; Hands
+[color=#8e7cc3]34[/color]   ﻿; Forearms
+[color=#8e7cc3]35[/color]   ﻿; Amulet
+[color=#8e7cc3]36[/color]   ﻿; Ring
+[color=#8e7cc3]37[/color]   ﻿; Feet
+[color=#8e7cc3]38[/color]   ﻿; Calves
+[color=#8e7cc3]39[/color]   ﻿; Shield
+[color=#8e7cc3]40[/color]   ﻿; Tail
+[color=#8e7cc3]41[/color]   ﻿; Long Hair
+[color=#8e7cc3]42[/color]   ﻿; Circlet
+[color=#8e7cc3]43[/color]   ﻿; Ears
+[color=#8e7cc3]44[/color]   ﻿; Face/Mouth
+[color=#8e7cc3]45[/color]   ﻿; Neck (cape, scarf, shawl, neck-tie, etc.)
+[color=#8e7cc3]46[/color]   ﻿; Chest Primary or Outergarment
+[color=#8e7cc3]47[/color]   ﻿; Back (backpack, wings, etc.)
+[color=#8e7cc3]48[/color]   ﻿; Misc/FX
+[color=#8e7cc3]49[/color]   ﻿; Pelvis Primary or Outergarment
+[color=#8e7cc3]50[/color]   ﻿; Decapitated Head
+[color=#8e7cc3]51[/color]   ﻿; Decapitate
+[color=#8e7cc3]52[/color]   ﻿; Pelvis Secondary or Undergarment
+[color=#8e7cc3]53[/color]   ﻿; Leg Primary or Outergarment or Right Leg
+[color=#8e7cc3]54[/color]   ﻿; Leg Secondary or Undergarment or Left Leg
+[color=#8e7cc3]55[/color]   ﻿; Face Alternate or Jewelry
+[color=#8e7cc3]56[/color]   ﻿; Chest Secondary or Undergarment
+[color=#8e7cc3]57[/color]   ﻿; Shoulder
+[color=#8e7cc3]58[/color]   ﻿; Arm Secondary or Undergarment or Left Arm
+[color=#8e7cc3]59[/color]   ﻿; Arm Primary or Outergarment or Right Arm
+[color=#8e7cc3]60[/color]   ﻿; Misc/FX
+[color=#8e7cc3]61[/color]   ﻿; FX01
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Armor body slots (display).
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]cardName[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+String.
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Used for magic effect "SOURCE" column.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]duration[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+#
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+How long a magic effect lasts.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]effectName[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+String.
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Enchantment name.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]equipState[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+[color=#8e7cc3]Form.EQUIP_RIGHT_HAND
+Form.EQUIP_LEFT_HAND
+Form.EQUIP_EITHER_HAND
+Form.EQUIP_BOTH_HANDS
+Form.EQUIP_VOICE[/color]
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+How an item/spell is equipped.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]filterFlag[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+[color=#8e7cc3]Inventory.FILTERFLAG_INV_ALL
+Inventory.FILTERFLAG_INV_FAVORITES
+Inventory.FILTERFLAG_INV_WEAPONS
+Inventory.FILTERFLAG_INV_ARMOR
+Inventory.FILTERFLAG_INV_POTIONS
+Inventory.FILTERFLAG_INV_SCROLLS
+Inventory.FILTERFLAG_INV_FOOD
+Inventory.FILTERFLAG_INV_INGREDIENTS
+Inventory.FILTERFLAG_INV_BOOKS
+Inventory.FILTERFLAG_INV_KEYS
+Inventory.FILTERFLAG_INV_MISC
+
+Inventory.FILTERFLAG_CONTAINER_ALL
+Inventory.FILTERFLAG_CONTAINER_WEAPONS
+Inventory.FILTERFLAG_CONTAINER_ARMOR
+Inventory.FILTERFLAG_CONTAINER_POTIONS
+Inventory.FILTERFLAG_CONTAINER_SCROLLS
+Inventory.FILTERFLAG_CONTAINER_FOOD
+Inventory.FILTERFLAG_CONTAINER_INGREDIENTS
+Inventory.FILTERFLAG_CONTAINER_BOOKS
+Inventory.FILTERFLAG_CONTAINER_KEYS
+Inventory.FILTERFLAG_CONTAINER_MISC
+
+Inventory.FILTERFLAG_MAGIC_ALL
+Inventory.FILTERFLAG_MAGIC_FAVORITES
+Inventory.FILTERFLAG_MAGIC_ALTERATION
+Inventory.FILTERFLAG_MAGIC_ILLUSION
+Inventory.FILTERFLAG_MAGIC_DESTRUCTION
+Inventory.FILTERFLAG_MAGIC_CONJURATION
+Inventory.FILTERFLAG_MAGIC_RESTORATION
+Inventory.FILTERFLAG_MAGIC_SHOUTS
+Inventory.FILTERFLAG_MAGIC_POWERS
+Inventory.FILTERFLAG_MAGIC_ACTIVEEFFECTS
+
+Inventory.FILTERFLAG_ENCHANTING_ITEM
+Inventory.FILTERFLAG_ENCHANTING_DISENCHANT
+Inventory.FILTERFLAG_ENCHANTING_ENCHANTMENT
+Inventory.FILTERFLAG_ENCHANTING_SOULGEM
+
+Inventory.FILTERFLAG_CRAFT_JEWELRY
+Inventory.FILTERFLAG_CRAFT_FOOD
+Inventory.FILTERFLAG_CRAFT_MISC
+
+Inventory.FILTERFLAG_CUST_CRAFT_ALL
+Inventory.FILTERFLAG_CUST_CRAFT_WEAPONS
+Inventory.FILTERFLAG_CUST_CRAFT_AMMO
+Inventory.FILTERFLAG_CUST_CRAFT_ARMOR
+Inventory.FILTERFLAG_CUST_CRAFT_JEWELRY
+Inventory.FILTERFLAG_CUST_CRAFT_FOOD
+Inventory.FILTERFLAG_CUST_CRAFT_MISC
+
+Inventory.FILTERFLAG_CUST_ALCH_INGREDIENTS
+Inventory.FILTERFLAG_CUST_ALCH_GOOD
+Inventory.FILTERFLAG_CUST_ALCH_BAD
+Inventory.FILTERFLAG_CUST_ALCH_OTHER[/color]
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Relates to which inventory tab an item/spell/effect is sorted into.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]formId[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+?
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+?
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]formType[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+[url=https://github.com/schlangster/skyui/blob/master/src/Common/skyui/defines/Form.as]/src/Common/skyui/defines/Form.as[/url]
+
+[color=#8e7cc3]Form.TYPE_AMMO
+Form.TYPE_ARMOR
+Form.TYPE_BOOK
+Form.TYPE_INGREDIENT
+Form.TYPE_KEY
+Form.TYPE_LIGHT
+Form.TYPE_MISC
+Form.TYPE_POTION
+Form.TYPE_SCROLLITEM
+Form.TYPE_SOULGEM
+Form.TYPE_WEAPON[/color]
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Type of item.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]gemColor[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+[color=#8e7cc3]1[/color] ;white
+[color=#8e7cc3]2[/color] ;black
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+AIT. Whether the soul gem can contain white or black souls.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]gemColorDisplay[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+[color=#8e7cc3]$White[/color]
+[color=#8e7cc3]$Black[/color]
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+AIT. Whether the soul gem can contain white or black souls (display).
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]gemSize[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+[color=#8e7cc3]Item.SOULGEM_NONE[/color]
+[color=#8e7cc3]Item.SOULGEM_PETTY[/color]
+[color=#8e7cc3]Item.SOULGEM_LESSER[/color]
+[color=#8e7cc3]Item.SOULGEM_COMMON[/color]
+[color=#8e7cc3]Item.SOULGEM_GREATER[/color]
+[color=#8e7cc3]Item.SOULGEM_GRAND[/color]
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Maximum soul size of a soul gem.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]gemSizeDisplay[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+[color=#8e7cc3]$None
+$Petty
+$Lesser
+$Common
+$Greater
+$Grand
+$Black[/color]
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+AIT. Maximum soul size of a soul gem (display).
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]gender[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+[color=#8e7cc3]0[/color] ;both/either
+[color=#8e7cc3]1[/color] ;male only
+[color=#8e7cc3]2[/color] ;female only
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+AIT. Armor gender model options.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]genderDisplay[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+[color=#8e7cc3]$Genderless
+$Male
+$Female[/color]
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+AIT. Armor gender model options (display).
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]iconColor[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+Any color in hex format: [color=#8e7cc3]0xFFFFFF[/color].
+Any color in decimal format: [color=#8e7cc3]16777215[/color].
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Color of the icon.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]iconLabel[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+Any icon label defined in icon swf.
+
+[color=#8e7cc3]armor_amulet   
+armor_body
+armor_bracer
+armor_calves
+armor_circlet
+armor_daedra
+armor_feet
+armor_forearms
+armor_hands
+armor_head
+armor_mask
+armor_ring
+armor_shield
+clothing_body
+clothing_feet
+clothing_forearms
+clothing_hands
+clothing_head
+clothing_mask
+clothing_pants
+clothing_robe
+clothing_shield
+clothing_shoes
+default_armor
+lightarmor_body
+lightarmor_calves
+lightarmor_feet
+lightarmor_forearms
+lightarmor_hands
+lightarmor_head
+lightarmor_mask
+lightarmor_shield
+
+book_journal
+book_map
+book_note
+book_tome
+book_tome_read
+default_book
+default_book_read
+
+default_food
+food_beer
+food_wine
+
+default_potion
+potion_poison
+potion_fire
+potion_frost
+potion_shock
+potion_health
+potion_magic
+potion_stam
+
+default_ingredient
+
+default_key
+key_house
+
+default_misc
+misc_artifact
+misc_clutter
+misc_dragonclaw
+misc_gem
+misc_gold
+misc_goldsack
+misc_hide
+misc_ingot
+misc_leather
+misc_lockpick
+misc_ore
+misc_remains
+misc_strips
+misc_wood
+misc_torch
+
+misc_soulgem
+soulgem_empty
+soulgem_partial
+soulgem_full
+soulgem_grandempty
+soulgem_grandpartial
+soulgem_grandfull
+soulgem_azura
+
+default_scroll
+
+default_weapon
+weapon_battleaxe
+weapon_bow
+weapon_crossbow
+weapon_daedra
+weapon_dagger
+weapon_greatsword
+weapon_hammer
+weapon_mace
+weapon_pickaxe
+weapon_staff
+weapon_sword
+weapon_waraxe
+weapon_woodaxe
+weapon_arrow
+weapon_bolt
+
+default_alteration
+default_conjuration
+default_destruction
+default_illusion
+default_restoration
+default_power
+default_shout
+default_effect
+magic_fire
+magic_frost
+magic_shock[/color]
+
+[b];SkyUI Weapons Pack[/b]
+[color=#8e7cc3]weapon_claw
+weapon_gun
+weapon_halberd
+weapon_javelin
+weapon_katana
+weapon_pike
+weapon_quarterstaff
+weapon_rapier
+weapon_scythe
+weapon_spear
+weapon_whip[/color]
+
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Icon.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]infoArmor[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+#
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Weapon armor (armor + armor modifiers).
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]infoBaseArmor[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+#
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+SAS/AIT. Weapon base armor (armor).
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]infoBaseDamage[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+#
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+DD/SAS/AIT. Weapon base damage (damage).
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]infoCastLevel[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+[color=#8e7cc3]Novice
+Apprentice
+Adapt
+Expert
+Master[/color]
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Spell skill level (display).
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]infoCritical[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+#
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+AIT. Weapon critical damage.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]infoDamage[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+#
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Weapon damage (damage + damage modifiers).
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]infoReach[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+#
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+DD/SAS/AIT. Weapon reach.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]infoSchoolName[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+[color=#8e7cc3]Alteration
+Conjuration
+Destruction
+Illusion
+Restoration[/color]
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Spell school.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]infoSpeed[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+#
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+DD/SAS/AIT. Weapon swing speed.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]infoSpellCost[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+#
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Spell casting cost.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]infoStagger[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+#
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+DD/SAS/AIT. Weapon stagger.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]infoTotalValue[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+#
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+AIT. Item total value (value * number of items).
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]infoTotalWeight[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+#
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+DD/SAS/AIT. Item total weight (weight * number of items).
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]infoValue[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+#
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Item value (value).
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]infoValueWeight[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+#
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Item value per 1 weight (value / weight).
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]infoWeight[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+#
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Item weight (weight).
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]isEnchanted[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+[color=#8e7cc3]true[/color] or [color=#8e7cc3]1[/color]
+[color=#8e7cc3]false[/color] or [color=#8e7cc3]0[/color]
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Whether an item is enchanted or not.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]isEquipped[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+[color=#8e7cc3]true[/color] or [color=#8e7cc3]1[/color]
+[color=#8e7cc3]false[/color] or [color=#8e7cc3]0[/color]
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Whether an item or spell is equipped or not.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]isPoisoned[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+[color=#8e7cc3]true[/color] or [color=#8e7cc3]1[/color]
+[color=#8e7cc3]false[/color] or [color=#8e7cc3]0[/color]
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Whether a weapon is poisoned or not.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]isRead[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+[color=#8e7cc3]true[/color] or [color=#8e7cc3]1[/color]
+[color=#8e7cc3]false[/color] or [color=#8e7cc3]0[/color]
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Whether a book has been read before or not.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]isStolen[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+[color=#8e7cc3]true[/color] or [color=#8e7cc3]1[/color]
+[color=#8e7cc3]false[/color] or [color=#8e7cc3]0[/color]
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Whether an item counts as having been stolen or not.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]magnitude[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+#
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Spell strength, power, or damage.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]material[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+[color=#8e7cc3]Material.AETHERIUM
+Material.ARTIFACT
+Material.BONEMOLD
+Material.BROTHERHOOD
+Material.CHITIN
+Material.CLOTHING
+Material.DAEDRIC
+Material.DAWNGUARD
+Material.DRAGONBONE
+Material.DRAGONPLATE
+Material.DRAGONSCALE
+Material.DRAUGR
+Material.DRAUGRHONED
+Material.DEATHBRAND
+Material.DWARVEN
+Material.EBONY
+Material.ELVEN
+Material.ELVENGILDED
+Material.FALMER
+Material.FALMERHARDENED
+Material.FALMERHONED
+Material.FUR
+Material.GLASS
+Material.HIDE
+Material.HUNTER
+Material.IMPERIAL
+Material.IMPERIALSTUDDED
+Material.IRON
+Material.IRONBANDED
+Material.LEATHER
+Material.MAGIC
+Material.MORAGTONG
+Material.NIGHTINGALE
+Material.NORDIC
+Material.ORCISH
+Material.SCALED
+Material.SILVER
+Material.STALHRIM
+Material.STEEL
+Material.STEELPLATE
+Material.STORMCLOAK
+Material.STUDDED
+Material.VAMPIRE
+Material.WOOD[/color]
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Item crafting material.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]materialDisplay[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+String defined in translation file.
+
+[color=#8e7cc3]$Aetherium
+$Artifact
+$Bonemold
+$Brotherhood
+$Chitin
+$Clothing
+$Daedric
+$Dawnguard
+$Dragonbone
+$Dragonplate
+$Dragonscale
+$Draugr
+$Draugr Honed
+$Deathbrand
+$Dwarven
+$Ebony
+$Elven
+$Elven Gilded
+$Falmer
+$Falmer Hardened
+$Falmer Honed
+$Fur
+$Glass
+$Hide
+$Hunter
+$Imperial
+$Studded
+$Iron
+$Iron Banded
+$Leather
+$Magic
+$Morag Tong
+$Nightingale
+$Nordic
+$Orcish
+$Scaled
+$Silver
+$Stalhrim
+$Steel
+$Steel Plate
+$Stormcloak
+$Studded
+$Vampire
+$Wood[/color]
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Item crafting material (display).
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]PowerCooldown[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+#
+[color=#8e7cc3]$Ready[/color]
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+SAS. Time until you can cast a power again.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]PowerType[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+[color=#8e7cc3]$Lesser Power
+$Greater Power[/color]
+
+;AIT
+[color=#8e7cc3]$Superior Power[/color]
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+SAS/AIT. Whether a power is a lesser power or greater power.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]resistance[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+[color=#8e7cc3]Actor.AV_DAMAGERESIST
+Actor.AV_MAGICRESIST
+Actor.AV_FIRERESIST
+Actor.AV_FROSTRESIST
+Actor.AV_ELECTRICRESIST
+Actor.AV_POISONRESIST
+Actor.AV_DISEASERESIST[/color]
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Item/spell damage resistance.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]resistanceDisplay[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+String defined in translation files.
+[color=#8e7cc3]
+$DamageLow
+$Magic
+$Fire
+$Frost
+$Shock
+$Poison
+$Disease[/color]
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+AIT. Damage resistance (display).
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]skillLevel[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+[color=#8e7cc3]0[/color]   ﻿;Novice
+[color=#8e7cc3]25[/color]   ﻿;Apprentice
+[color=#8e7cc3]50[/color]   ﻿;Adept
+[color=#8e7cc3]75[/color]   ﻿;Expert
+[color=#8e7cc3]100[/color]   ﻿;Master
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Spell skill level.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]soulSize[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+[color=#8e7cc3]Item.SOULGEM_NONE
+Item.SOULGEM_PETTY
+Item.SOULGEM_LESSER
+Item.SOULGEM_COMMON
+Item.SOULGEM_GREATER
+Item.SOULGEM_GRAND
+Item.SOULGEM_AZURA[/color]
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Size of the soul currently in a soul gem.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]soulSizeDisplay[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+[color=#8e7cc3]$None
+$Petty
+$Lesser
+$Common
+$Greater
+$Grand[/color]
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Size of the soul currently in a soul gem (display).
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]spellCostDisplay[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+#
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Spell casting cost (rounded to nearest whole number).
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]status[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+[color=#8e7cc3]Item.SOULGEMSTATUS_EMPTY
+Item.SOULGEMSTATUS_PARTIAL
+Item.SOULGEMSTATUS_FULL[/color]
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Relation of the size of the soul contained in the soul gem to the maximum size of soul that that soul gem can contain.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]subType[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+[color=#8e7cc3]Weapon.TYPE_MELEE
+Weapon.TYPE_SWORD
+Weapon.TYPE_DAGGER
+Weapon.TYPE_WARAXE
+Weapon.TYPE_MACE
+Weapon.TYPE_GREATSWORD
+Weapon.TYPE_BATTLEAXE
+Weapon.TYPE_WARHAMMER
+Weapon.TYPE_BOW
+Weapon.TYPE_CROSSBOW
+Weapon.TYPE_STAFF
+Weapon.TYPE_PICKAXE
+Weapon.TYPE_WOODAXE
+
+Weapon.AMMO_ARROW
+Weapon.AMMO_BOLT
+
+Armor.EQUIP_HEAD
+Armor.EQUIP_HAIR
+Armor.EQUIP_LONGHAIR
+Armor.EQUIP_BODY
+Armor.EQUIP_FOREARMS
+Armor.EQUIP_HANDS
+Armor.EQUIP_SHIELD
+Armor.EQUIP_CALVES
+Armor.EQUIP_FEET
+Armor.EQUIP_CIRCLET
+Armor.EQUIP_AMULET
+Armor.EQUIP_EARS
+Armor.EQUIP_RING
+Armor.EQUIP_TAIL
+
+Item.POTION_HEALTH
+Item.POTION_HEALRATE
+Item.POTION_HEALRATEMULT
+Item.POTION_MAGICKA
+Item.POTION_MAGICKARATE
+Item.POTION_MAGICKARATEMULT
+Item.POTION_STAMINA
+Item.POTION_STAMINARATE
+Item.POTION_STAMINARATEMULT
+Item.POTION_FIRERESIST
+Item.POTION_ELECTRICRESIST
+Item.POTION_FROSTRESIST
+Item.POTION_POTION
+Item.POTION_DRINK
+Item.POTION_FOOD
+Item.POTION_POISON
+
+Item.MISC_GEM
+Item.MISC_DRAGONCLAW
+Item.MISC_ARTIFACT
+Item.MISC_LEATHER
+Item.MISC_LEATHERSTRIPS
+Item.MISC_HIDE
+Item.MISC_REMAINS
+Item.MISC_INGOT
+Item.MISC_TOOL
+Item.MISC_CHILDRENSCLOTHES
+Item.MISC_TOY
+Item.MISC_FIREWOOD
+Item.MISC_HOUSEPART
+Item.MISC_CLUTTER
+Item.MISC_LOCKPICK
+Item.MISC_GOLD
+
+Item.BOOK_SPELLTOME
+Item.BOOK_NOTE
+Item.BOOK_RECIPE
+
+Item.SOULGEM_NONE
+Item.SOULGEM_PETTY
+Item.SOULGEM_LESSER
+Item.SOULGEM_COMMON
+Item.SOULGEM_GREATER
+Item.SOULGEM_GRAND
+Item.SOULGEM_AZURA[/color]
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Item subtype.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]subTypeDisplay[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+String defined in the translation file.
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Item subtype (display).
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]text[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+String.
+[b][color=#93c47d]Description:[/color][/b]
+Item or spell name.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]timeRemaining[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+#
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Time until effect ends.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]timeRemainingDisplay[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+[color=#8e7cc3]d[/color] #
+[color=#8e7cc3]h[/color] #
+[color=#8e7cc3]m[/color] #
+[color=#8e7cc3]s[/color] #
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Time until effect ends (formatted and rounded).
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]type[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+[color=#8e7cc3]Inventory.ICT_ARMOR
+Inventory.ICT_WEAPON
+Inventory.ICT_MISC
+Inventory.ICT_BOOK
+Inventory.ICT_FOOD
+Inventory.ICT_POTION
+Inventory.ICT_SPELL
+Inventory.ICT_INGREDIENT
+Inventory.ICT_KEY
+Inventory.ICT_SHOUT
+Inventory.ICT_ACTIVE_EFFECT
+Inventory.ICT_SOUL_GEMS
+Inventory.ICT_SPELL_DEFAULT[/color]
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Item/spell/effect type.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]weightClass[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+[color=#8e7cc3]Armor.WEIGHT_NONE
+Armor.WEIGHT_HEAVY
+Armor.WEIGHT_LIGHT
+Armor.WEIGHT_CLOTHING
+Armor.WEIGHT_JEWELRY[/color]
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Armor weight class.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]weightClassDisplay[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+String defined in translation file.
+
+[color=#8e7cc3]$Other
+$Heavy
+$Light
+$Clothing
+$Jewelry[/color]
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Armor weight class (display).
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]word0
+word1
+word2[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+String.
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Shout 1st, 2nd, and 3rd word names.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]word0Color
+word1Color
+word2Color[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+Color.
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+Sets text color of shout word to enabled or disabled text color depending on whether shout word is unlocked or not.
+
+[b][color=#93c47d]Attribute:[/color][/b]
+[color=#8e7cc3]word0Recharge
+word1Recharge
+word2Recharge[/color]
+[b][color=#93c47d]Known Valid Values:[/color][/b]
+[spoiler]
+?
+[/spoiler]
+[b][color=#93c47d]Description:[/color][/b]
+?
+
+
+
+[b][color=#f6b26b]All "/SkyUI/Defines" Variables:[/color][/b]
+A reformatted list of all variables located in the defines folder. [url=https://github.com/schlangster/skyui/tree/master/src/Common/skyui/defines]/src/Common/skyui/defines[/url].
+
+[url=https://github.com/schlangster/skyui/blob/master/src/Common/skyui/defines/Actor.as]/src/Common/skyui/defines/Actor.as[/url]
+[spoiler]
+Actor.AV_NONE   =   0xFFFFFFFF
+
+Actor.AV_AGGRESSION   =   0
+Actor.AV_CONFIDENCE   =   1
+Actor.AV_ENERGY   =   2
+Actor.AV_MORALITY   =   3
+Actor.AV_MOOD   =   4
+Actor.AV_ASSISTANCE   =   5
+Actor.AV_ONEHANDED   =   6
+Actor.AV_TWOHANDED   =   7
+Actor.AV_MARKSMAN   =   8
+Actor.AV_BLOCK   =   9
+Actor.AV_SMITHING   =   10
+Actor.AV_HEAVYARMOR   =   11
+Actor.AV_LIGHTARMOR   =   12
+Actor.AV_PICKPOCKET   =   13
+Actor.AV_LOCKPICKING   =   14
+Actor.AV_SNEAK   =   15
+Actor.AV_ALCHEMY   =   16
+Actor.AV_SPEECHCRAFT   =   17
+Actor.AV_ALTERATION   =   18
+Actor.AV_CONJURATION   =   19
+Actor.AV_DESTRUCTION   =   20
+Actor.AV_ILLUSION   =   21
+Actor.AV_RESTORATION   =   22
+Actor.AV_ENCHANTING   =   23
+Actor.AV_HEALTH   =   24
+Actor.AV_MAGICKA   =   25
+Actor.AV_STAMINA   =   26
+Actor.AV_HEALRATE   =   27
+Actor.AV_MAGICKARATE   =   28
+Actor.AV_STAMINARATE   =   29
+Actor.AV_SPEEDMULT   =   30
+Actor.AV_INVENTORYWEIGHT   =   31
+Actor.AV_CARRYWEIGHT   =   32
+Actor.AV_CRITCHANCE   =   33
+Actor.AV_MELEEDAMAGE   =   34
+Actor.AV_UNARMEDDAMAGE   =   35
+Actor.AV_MASS   =   36
+Actor.AV_VOICEPOINTS   =   37
+Actor.AV_VOICERATE   =   38
+Actor.AV_DAMAGERESIST   =   39
+Actor.AV_POISONRESIST   =   40
+Actor.AV_FIRERESIST   =   41
+Actor.AV_ELECTRICRESIST   =   42
+Actor.AV_FROSTRESIST   =   43
+Actor.AV_MAGICRESIST   =   44
+Actor.AV_DISEASERESIST   =   45
+Actor.AV_PERCEPTIONCONDITION   =   46
+Actor.AV_ENDURANCECONDITION   =   47
+Actor.AV_LEFTATTACKCONDITION   =   48
+Actor.AV_RIGHTATTACKCONDITION   =   49
+Actor.AV_LEFTMOBILITYCONDITION   =   50
+Actor.AV_RIGHTMOBILITYCONDITION   =   51
+Actor.AV_BRAINCONDITION   =   52
+Actor.AV_PARALYSIS   =   53
+Actor.AV_INVISIBILITY   =   54
+Actor.AV_NIGHTEYE   =   55
+Actor.AV_DETECTLIFERANGE   =   56
+Actor.AV_WATERBREATHING   =   57
+Actor.AV_WATERWALKING   =   58
+Actor.AV_IGNORECRIPPLEDLIMBS   =   59
+Actor.AV_FAME   =   60
+Actor.AV_INFAMY   =   61
+Actor.AV_JUMPINGBONUS   =   62
+Actor.AV_WARDPOWER   =   63
+Actor.AV_RIGHTITEMCHARGE   =   64
+Actor.AV_ARMORPERKS   =   65
+Actor.AV_SHIELDPERKS   =   66
+Actor.AV_WARDDEFLECTION   =   67
+Actor.AV_VARIABLE01   =   68
+Actor.AV_VARIABLE02   =   69
+Actor.AV_VARIABLE03   =   70
+Actor.AV_VARIABLE04   =   71
+Actor.AV_VARIABLE05   =   72
+Actor.AV_VARIABLE06   =   73
+Actor.AV_VARIABLE07   =   74
+Actor.AV_VARIABLE08   =   75
+Actor.AV_VARIABLE09   =   76
+Actor.AV_VARIABLE10   =   77
+Actor.AV_BOWSPEEDBONUS   =   78
+Actor.AV_FAVORACTIVE   =   79
+Actor.AV_FAVORSPERDAY   =   80
+Actor.AV_FAVORSPERDAYTIMER   =   81
+Actor.AV_LEFTITEMCHARGE   =   82
+Actor.AV_ABSORBCHANCE   =   83
+Actor.AV_BLINDNESS   =   84
+Actor.AV_WEAPONSPEEDMULT   =   85
+Actor.AV_SHOUTRECOVERYMULT   =   86
+Actor.AV_BOWSTAGGERBONUS   =   87
+Actor.AV_TELEKINESIS   =   88
+Actor.AV_FAVORPOINTSBONUS   =   89
+Actor.AV_LASTBRIBEDINTIMIDATED   =   90
+Actor.AV_LASTFLATTERED   =   91
+Actor.AV_MOVEMENTNOISEMULT   =   92
+Actor.AV_BYPASSVENDORSTOLENCHECK   =   93
+Actor.AV_BYPASSVENDORKEYWORDCHECK   =   94
+Actor.AV_WAITINGFORPLAYER   =   95
+Actor.AV_ONEHANDEDMOD   =   96
+Actor.AV_TWOHANDEDMOD   =   97
+Actor.AV_MARKSMANMOD   =   98
+Actor.AV_BLOCKMOD   =   99
+Actor.AV_SMITHINGMOD   =   100
+Actor.AV_HEAVYARMORMOD   =   101
+Actor.AV_LIGHTARMORMOD   =   102
+Actor.AV_PICKPOCKETMOD   =   103
+Actor.AV_LOCKPICKINGMOD   =   104
+Actor.AV_SNEAKMOD   =   105
+Actor.AV_ALCHEMYMOD   =   106
+Actor.AV_SPEECHCRAFTMOD   =   107
+Actor.AV_ALTERATIONMOD   =   108
+Actor.AV_CONJURATIONMOD   =   109
+Actor.AV_DESTRUCTIONMOD   =   110
+Actor.AV_ILLUSIONMOD   =   111
+Actor.AV_RESTORATIONMOD   =   112
+Actor.AV_ENCHANTINGMOD   =   113
+Actor.AV_ONEHANDEDSKILLADVANCE   =   114
+Actor.AV_TWOHANDEDSKILLADVANCE   =   115
+Actor.AV_MARKSMANSKILLADVANCE   =   116
+Actor.AV_BLOCKSKILLADVANCE   =   117
+Actor.AV_SMITHINGSKILLADVANCE   =   118
+Actor.AV_HEAVYARMORSKILLADVANCE   =   119
+Actor.AV_LIGHTARMORSKILLADVANCE   =   120
+Actor.AV_PICKPOCKETSKILLADVANCE   =   121
+Actor.AV_LOCKPICKINGSKILLADVANCE   =   122
+Actor.AV_SNEAKSKILLADVANCE   =   123
+Actor.AV_ALCHEMYSKILLADVANCE   =   124
+Actor.AV_SPEECHCRAFTSKILLADVANCE   =   125
+Actor.AV_ALTERATIONSKILLADVANCE   =   126
+Actor.AV_CONJURATIONSKILLADVANCE   =   127
+Actor.AV_DESTRUCTIONSKILLADVANCE   =   128
+Actor.AV_ILLUSIONSKILLADVANCE   =   129
+Actor.AV_RESTORATIONSKILLADVANCE   =   130
+Actor.AV_ENCHANTINGSKILLADVANCE   =   131
+Actor.AV_LEFTWEAPONSPEEDMULT   =   132
+Actor.AV_DRAGONSOULS   =   133
+Actor.AV_COMBATHEALTHREGENMULT   =   134
+Actor.AV_ONEHANDEDPOWERMOD   =   135
+Actor.AV_TWOHANDEDPOWERMOD   =   136
+Actor.AV_MARKSMANPOWERMOD   =   137
+Actor.AV_BLOCKPOWERMOD   =   138
+Actor.AV_SMITHINGPOWERMOD   =   139
+Actor.AV_HEAVYARMORPOWERMOD   =   140
+Actor.AV_LIGHTARMORPOWERMOD   =   141
+Actor.AV_PICKPOCKETPOWERMOD   =   142
+Actor.AV_LOCKPICKINGPOWERMOD   =   143
+Actor.AV_SNEAKPOWERMOD   =   144
+Actor.AV_ALCHEMYPOWERMOD   =   145
+Actor.AV_SPEECHCRAFTPOWERMOD   =   146
+Actor.AV_ALTERATIONPOWERMOD   =   147
+Actor.AV_CONJURATIONPOWERMOD   =   148
+Actor.AV_DESTRUCTIONPOWERMOD   =   149
+Actor.AV_ILLUSIONPOWERMOD   =   150
+Actor.AV_RESTORATIONPOWERMOD   =   151
+Actor.AV_ENCHANTINGPOWERMOD   =   152
+Actor.AV_DRAGONREND   =   153
+Actor.AV_ATTACKDAMAGEMULT   =   154
+Actor.AV_HEALRATEMULT   =   155
+Actor.AV_MAGICKARATEMULT   =   156
+Actor.AV_STAMINARATEMULT   =   157
+Actor.AV_WEREWOLFPERKS   =   158
+Actor.AV_VAMPIREPERKS   =   159
+Actor.AV_GRABACTOROFFSET   =   160
+Actor.AV_GRABBED   =   161
+Actor.AV_DEPRECATED05   =   162
+Actor.AV_REFLECTDAMAGE   =   163
+[/spoiler]
+
+[url=https://github.com/schlangster/skyui/blob/master/src/Common/skyui/defines/Armor.as]/src/Common/skyui/defines/Armor.as[/url]
+[spoiler]
+Armor.WEIGHT_LIGHT   =   0
+Armor.WEIGHT_HEAVY   =   1
+Armor.WEIGHT_NONE   =   2
+
+; SkyUI
+Armor.WEIGHT_CLOTHING   =   3
+Armor.WEIGHT_JEWELRY   =   4
+
+Armor.PARTMASK_HEAD   =   0x00000001
+Armor.PARTMASK_HAIR   =   0x00000002
+Armor.PARTMASK_BODY   =   0x00000004
+Armor.PARTMASK_HANDS   =   0x00000008
+Armor.PARTMASK_FOREARMS   =   0x00000010
+Armor.PARTMASK_AMULET   =   0x00000020
+Armor.PARTMASK_RING   =   0x00000040
+Armor.PARTMASK_FEET   =   0x00000080
+Armor.PARTMASK_CALVES   =   0x00000100
+Armor.PARTMASK_SHIELD   =   0x00000200
+Armor.PARTMASK_TAIL   =   0x00000400
+Armor.PARTMASK_LONGHAIR   =   0x00000800
+Armor.PARTMASK_CIRCLET   =   0x00001000
+Armor.PARTMASK_EARS   =   0x00002000
+Armor.PARTMASK_UNNAMED14   =   0x00004000
+Armor.PARTMASK_UNNAMED15   =   0x00008000
+Armor.PARTMASK_UNNAMED16   =   0x00010000
+Armor.PARTMASK_UNNAMED17   =   0x00020000
+Armor.PARTMASK_UNNAMED18   =   0x00040000
+Armor.PARTMASK_UNNAMED19   =   0x00080000
+Armor.PARTMASK_DECAPITATEHEAD   =   0x00100000
+Armor.PARTMASK_DECAPITATE   =   0x00200000
+Armor.PARTMASK_UNNAMED22   =   0x00400000
+Armor.PARTMASK_UNNAMED23   =   0x00800000
+Armor.PARTMASK_UNNAMED24   =   0x01000000
+Armor.PARTMASK_UNNAMED25   =   0x02000000
+Armor.PARTMASK_UNNAMED26   =   0x04000000
+Armor.PARTMASK_UNNAMED27   =   0x08000000
+Armor.PARTMASK_UNNAMED28   =   0x10000000
+Armor.PARTMASK_UNNAMED29   =   0x20000000
+Armor.PARTMASK_UNNAMED30   =   0x40000000
+Armor.PARTMASK_FX01   =   0x80000000
+
+PARTMASK_PRECEDENCE: Array =    [
+                        PARTMASK_BODY,
+                        PARTMASK_HAIR,
+                        PARTMASK_HANDS,
+                        PARTMASK_FOREARMS,
+                        PARTMASK_FEET,
+                        PARTMASK_CALVES,
+                        PARTMASK_SHIELD,
+                        PARTMASK_AMULET,
+                        PARTMASK_RING,
+                        PARTMASK_LONGHAIR,
+                        PARTMASK_EARS,
+                        PARTMASK_HEAD,
+                        PARTMASK_CIRCLET,
+                        PARTMASK_TAIL,
+                        PARTMASK_UNNAMED14,
+                        PARTMASK_UNNAMED15,
+                        PARTMASK_UNNAMED16,
+                        PARTMASK_UNNAMED17,
+                        PARTMASK_UNNAMED18,
+                        PARTMASK_UNNAMED19,
+                        PARTMASK_DECAPITATEHEAD,
+                        PARTMASK_DECAPITATE,
+                        PARTMASK_UNNAMED22,
+                        PARTMASK_UNNAMED23,
+                        PARTMASK_UNNAMED24,
+                        PARTMASK_UNNAMED25,
+                        PARTMASK_UNNAMED26,
+                        PARTMASK_UNNAMED27,
+                        PARTMASK_UNNAMED28,
+                        PARTMASK_UNNAMED29,
+                        PARTMASK_UNNAMED30,
+                        PARTMASK_FX01
+                        ]
+
+; SkyUI
+Armor.EQUIP_HEAD   =   0
+Armor.EQUIP_HAIR   =   1
+Armor.EQUIP_LONGHAIR   =   2
+Armor.EQUIP_BODY   =   3
+Armor.EQUIP_FOREARMS   =   4
+Armor.EQUIP_HANDS   =   5
+Armor.EQUIP_SHIELD   =   6
+Armor.EQUIP_CALVES   =   7
+Armor.EQUIP_FEET   =   8
+Armor.EQUIP_CIRCLET   =   9
+Armor.EQUIP_AMULET   =   10
+Armor.EQUIP_EARS   =   11
+Armor.EQUIP_RING   =   12
+Armor.EQUIP_TAIL   =   13
+[/spoiler]
+
+[url=https://github.com/schlangster/skyui/blob/master/src/Common/skyui/defines/Form.as]/src/Common/skyui/defines/Form.as[/url]
+[spoiler]
+Form.TYPE_NONE   =   0
+
+Form.TYPE_EFFECTSETTING   =   18
+
+Form.TYPE_ENCHANTMENT   =   21
+Form.TYPE_SPELL   =   22
+Form.TYPE_SCROLLITEM   =   23
+
+Form.TYPE_ARMOR   =   26
+Form.TYPE_BOOK   =   27
+
+Form.TYPE_INGREDIENT   =   30
+Form.TYPE_LIGHT   =   31   ; Torch
+Form.TYPE_MISC   =   32
+
+Form.TYPE_WEAPON   =   41
+Form.TYPE_AMMO   =   42
+
+Form.TYPE_KEY   =   45
+Form.TYPE_POTION   =   46
+
+Form.TYPE_SOULGEM   =   52
+
+Form.TYPE_SHOUT   =   119
+
+;
+; Lots of commented out stuff here
+;
+
+; baseId = (formId & 0x00FFFFFF)
+; Armor
+Form.BASEID_CLOTHESWEDDINGWREATH   =   0x08895A
+Form.BASEID_DLC1CLOTHESVAMPIRELORDARMOR   =   0x011A84
+
+; Ammo
+Form.BASEID_BOUNDARROW   =   0x10B0A7
+Form.BASEID_CWARROW   =   0x020DDF
+Form.BASEID_CWARROWSHORT   =   0x020F02
+Form.BASEID_DAEDRICARROW   =   0x0139C0
+Form.BASEID_DRAUGRARROW   =   0x034182
+Form.BASEID_DUNARCHERPRATICEARROW   =   0x0CAB52
+Form.BASEID_DUNGEIRMUNDSIGDISARROWSILLUSION   =   0x0E738A
+Form.BASEID_DWARVENARROW   =   0x0139BC
+Form.BASEID_DWARVENSPHEREARROW   =   0x07B932
+Form.BASEID_DWARVENSPHEREBOLT01   =   0x07B935
+Form.BASEID_DWARVENSPHEREBOLT02   =   0x10EC8C
+Form.BASEID_EBONYARROW   =   0x0139BF
+Form.BASEID_ELVENARROW   =   0x0139BD
+Form.BASEID_FALMERARROW   =   0x038341
+Form.BASEID_FOLLOWERIRONARROW   =   0x10E2DE
+Form.BASEID_FORSWORNARROW   =   0x0CEE9E
+Form.BASEID_GLASSARROW   =   0x0139BE
+Form.BASEID_IRONARROW   =   0x01397D
+Form.BASEID_MQ101STEELARROW   =   0x105EE7
+Form.BASEID_NORDHEROARROW   =   0x0EAFDF
+Form.BASEID_ORCISHARROW   =   0x0139BB
+Form.BASEID_STEELARROW   =   0x01397F
+Form.BASEID_TRAPDART   =   0x0236DD
+Form.BASEID_DLC1ELVENARROWBLESSED   =   0x0098A1
+Form.BASEID_DLC1ELVENARROWBLOOD   =   0x0098A0
+Form.BASEID_TESTDLC1BOLT   =   0x00590C
+Form.BASEID_DLC2DWARVENBALLISTABOLT   =   0x0339A1
+Form.BASEID_DLC2RIEKLINGSPEARTHROWN   =   0x017720
+
+; Misc
+Form.BASEID_LOCKPICK   =   0x00000A
+Form.BASEID_GOLD001   =   0x00000F
+
+Form.BASEID_LEATHER01   =   0x0DB5D2
+Form.BASEID_LEATHERSTRIPS   =   0x0800E4
+
+Form.BASEID_GEMAMETHYSTFLAWLESS   =   0x06851E
+
+Form.BASEID_RUBYDRAGONCLAW   =   0x04B56C
+Form.BASEID_IVORYDRAGONCLAW   =   0x0AB7BB
+Form.BASEID_GLASSCLAW   =   0x07C260
+Form.BASEID_EBONYCLAW   =   0x05AF48
+Form.BASEID_EMERALDDRAGONCLAW   =   0x0ED417
+Form.BASEID_DIAMONDCLAW   =   0x0AB375
+Form.BASEID_IRONCLAW   =   0x08CDFA
+Form.BASEID_CORALDRAGONCLAW   =   0x0B634C
+Form.BASEID_E3GOLDENCLAW   =   0x0999E7
+Form.BASEID_SAPPHIREDRAGONCLAW   =   0x0663D7
+Form.BASEID_MS13GOLDENCLAW   =   0x039647
+
+Form.BASEID_DA01AZURASSTARBROKEN   =   0x028AD7
+
+; SoulGem
+Form.BASEID_DA01SOULGEMBLACKSTAR   =   0x063B29
+Form.BASEID_DA01SOULGEMAZURASSTAR   =   0x063B27
+
+; Weapons
+Form.BASEID_WEAPPICKAXE   =   0x0E3C16
+Form.BASEID_SSDROCKSPLINTERPICKAXE   =   0x06A707
+Form.BASEID_DUNVOLUNRUUDPICKAXE   =   0x1019D4
+
+Form.BASEID_AXE01   =   0x02F2F4
+Form.BASEID_DUNHALTEDSTREAMPOACHERSAXE   =   0x0AE086
+
+; Form IDs
+; Sound Descriptors
+Form.FORMID_ITMPotionUse   =   0x000B6435
+
+; EquipType
+Form.EQUIP_RIGHT_HAND   =   0x00013f42
+Form.EQUIP_LEFT_HAND   =   0x00013f43
+Form.EQUIP_EITHER_HAND   =   0x00013f44
+Form.EQUIP_BOTH_HANDS   =   0x00013f45
+Form.EQUIP_VOICE   =   0x00025bee
+[/spoiler]
+
+[url=https://github.com/schlangster/skyui/blob/master/src/Common/skyui/defines/Input.as]/src/Common/skyui/defines/Input.as[/url]
+[spoiler]
+DEVICE_KEYBOARD   =   0
+DEVICE_MOUSE   =   1
+DEVICE_GAMEPAD   =   2
+
+CONTEXT_GAMEPLAY   =   0
+CONTEXT_MENUMODE   =   1
+CONTEXT_CONSOLE   =   2
+CONTEXT_ITEMMENU   =   3
+CONTEXT_INVENTORY   =   4
+CONTEXT_DEBUGTEXT   =   5
+CONTEXT_FAVORITES   =   6
+CONTEXT_MAP   =   7
+CONTEXT_STATS   =   8
+CONTEXT_CURSOR   =   9
+CONTEXT_BOOK   =   10
+CONTEXT_DEBUGOVERLAY   =   11
+CONTEXT_JOURNAL   =   12
+CONTEXT_TFCMODE   =   13
+CONTEXT_MAPDEBUG   =   14
+CONTEXT_LOCKPICKING   =   15
+CONTEXT_FAVOR   =   16
+
+; Controlmap
+ChargeItem   =   {name: "ChargeItem", context: CONTEXT_INVENTORY}
+XButton   =   {name: "XButton", context: CONTEXT_ITEMMENU}
+YButton   =   {name: "YButton", context: CONTEXT_ITEMMENU}
+Wait   =   {name: "Wait", context: CONTEXT_GAMEPLAY}
+Jump   =   {name: "Jump", context: CONTEXT_GAMEPLAY}
+Sprint   =   {name: "Sprint", context: CONTEXT_GAMEPLAY}
+Shout   =   {name: "Shout", context: CONTEXT_GAMEPLAY}
+Activate   =   {name: "Activate", context: CONTEXT_GAMEPLAY}
+ReadyWeapon   =   {name: "Ready Weapon", context: CONTEXT_GAMEPLAY}
+TogglePOV   =   {name: "Toggle POV", context: CONTEXT_GAMEPLAY}
+Accept   =   {name: "Accept", context: CONTEXT_MENUMODE}
+Cancel   =   {name: "Cancel", context: CONTEXT_MENUMODE}
+JournalXButton   =   {name: "XButton", context: CONTEXT_JOURNAL}
+JournalYButton   =   {name: "YButton", context: CONTEXT_JOURNAL}
+
+; Custom
+LeftRight: Array = [
+               {name: "Left", context: CONTEXT_MENUMODE}
+               {name: "Right", context: CONTEXT_MENUMODE
+               ]
+Equip: Array = [
+            {name: "RightEquip", context: CONTEXT_ITEMMENU},
+            {name: "LeftEquip", context: CONTEXT_ITEMMENU}
+            ]
+SortColumn = [
+            {keyCode: 274},
+            {keyCode: 275}
+            ]
+SortOrder   =   {keyCode: 272}
+
+; Raw
+GamepadBack   =   {keyCode: 271}
+Enter   =   {keyCode: 28}
+Tab   =   {keyCode: 15}
+Shift   =   {keyCode: 42}
+Space   =   {keyCode: 57}
+Alt   =   {keyCode: 56}
+[/spoiler]
+
+[url=https://github.com/schlangster/skyui/blob/master/src/Common/skyui/defines/Inventory.as]/src/Common/skyui/defines/Inventory.as[/url]
+[spoiler]
+Inventory.ICT_NONE   =   0
+Inventory.ICT_ARMOR   =   1
+Inventory.ICT_WEAPON   =   2
+Inventory.ICT_MISC   =   3
+Inventory.ICT_BOOK   =   4
+Inventory.ICT_FOOD   =   5
+Inventory.ICT_POTION   =   6
+Inventory.ICT_SPELL   =   7
+Inventory.ICT_INGREDIENT   =   8
+Inventory.ICT_KEY   =   9
+Inventory.ICT_SHOUT   =   10
+Inventory.ICT_ACTIVE_EFFECT   =   11
+Inventory.ICT_SOUL_GEMS   =   12
+Inventory.ICT_SPELL_DEFAULT   =   13
+Inventory.ICT_LIST   =   14
+Inventory.ICT_CRAFT_ENCHANTING   =   15
+Inventory.ICT_HOUSE_PART   =   16
+
+Inventory.ES_NONE   =   0
+Inventory.ES_EQUIPPED   =   1
+Inventory.ES_LEFT_EQUIPPED   =   2
+Inventory.ES_RIGHT_EQUIPPED   =   3
+Inventory.ES_BOTH_EQUIPPED   =   4
+
+Inventory.QUANTITY_MENU_COUNT_LIMIT   =   5
+
+; Category filterflags
+Inventory.FILTERFLAG_DIVIDER   =   0x00000000
+
+Inventory.FILTERFLAG_INV_ALL   =   0x000003FF   ; Sum of below
+Inventory.FILTERFLAG_INV_FAVORITES   =   0x00000001
+Inventory.FILTERFLAG_INV_WEAPONS   =   0x00000002
+Inventory.FILTERFLAG_INV_ARMOR   =   0x00000004
+Inventory.FILTERFLAG_INV_POTIONS   =   0x00000008
+Inventory.FILTERFLAG_INV_SCROLLS   =   0x00000010
+Inventory.FILTERFLAG_INV_FOOD   =   0x00000020
+Inventory.FILTERFLAG_INV_INGREDIENTS   =   0x00000040
+Inventory.FILTERFLAG_INV_BOOKS   =   0x00000080
+Inventory.FILTERFLAG_INV_KEYS   =   0x00000100
+Inventory.FILTERFLAG_INV_MISC   =   0x00000200
+
+Inventory.FILTERFLAG_CONTAINER_ALL   =   0x000FFC00   ; Sum of below
+Inventory.FILTERFLAG_CONTAINER_WEAPONS   =   0x00000800
+Inventory.FILTERFLAG_CONTAINER_ARMOR   =   0x00001000
+Inventory.FILTERFLAG_CONTAINER_POTIONS   =   0x00002000
+Inventory.FILTERFLAG_CONTAINER_SCROLLS   =   0x00004000
+Inventory.FILTERFLAG_CONTAINER_FOOD   =   0x00008000
+Inventory.FILTERFLAG_CONTAINER_INGREDIENTS   =   0x00010000
+Inventory.FILTERFLAG_CONTAINER_BOOKS   =   0x00020000
+Inventory.FILTERFLAG_CONTAINER_KEYS   =   0x00040000
+Inventory.FILTERFLAG_CONTAINER_MISC   =   0x00080000
+
+Inventory.FILTERFLAG_MAGIC_ALL   =   -257   ; 0xFFFFFEFF
+Inventory.FILTERFLAG_MAGIC_FAVORITES   =   0x00000001
+Inventory.FILTERFLAG_MAGIC_ALTERATION   =   0x00000002
+Inventory.FILTERFLAG_MAGIC_ILLUSION   =   0x00000004
+Inventory.FILTERFLAG_MAGIC_DESTRUCTION   =   0x00000008
+Inventory.FILTERFLAG_MAGIC_CONJURATION   =   0x00000010
+Inventory.FILTERFLAG_MAGIC_RESTORATION   =   0x00000020
+Inventory.FILTERFLAG_MAGIC_SHOUTS   =   0x00000040
+Inventory.FILTERFLAG_MAGIC_POWERS   =   0x00000080
+Inventory.FILTERFLAG_MAGIC_ACTIVEEFFECTS   =   0x00000100
+
+Inventory.FILTERFLAG_ENCHANTING_ITEM   =   0x00000005   ;5
+Inventory.FILTERFLAG_ENCHANTING_DISENCHANT   =   0x0000000A   ;10
+Inventory.FILTERFLAG_ENCHANTING_ENCHANTMENT   =   0x00000030   ;48
+Inventory.FILTERFLAG_ENCHANTING_SOULGEM   =   0x00000040   ;64
+
+; incomplete, but others are irrelevant for now
+Inventory.FILTERFLAG_CRAFT_JEWELRY   =   0x00010000
+Inventory.FILTERFLAG_CRAFT_FOOD   =   0x00020000
+Inventory.FILTERFLAG_CRAFT_MISC   =   0x40000000
+
+; Filter flags for custom categories in ConstructObject crafting
+Inventory.FILTERFLAG_CUST_CRAFT_ALL   =   0x0000003F
+Inventory.FILTERFLAG_CUST_CRAFT_WEAPONS   =   0x00000001
+Inventory.FILTERFLAG_CUST_CRAFT_AMMO   =   0x00000002
+Inventory.FILTERFLAG_CUST_CRAFT_ARMOR   =   0x00000004
+Inventory.FILTERFLAG_CUST_CRAFT_JEWELRY   =   0x00000008
+Inventory.FILTERFLAG_CUST_CRAFT_FOOD   =   0x00000010
+Inventory.FILTERFLAG_CUST_CRAFT_MISC   =   0x00000020
+
+; Filter flags for custom categories in ConstructObject alchemy
+Inventory.FILTERFLAG_CUST_ALCH_INGREDIENTS   =   0x00000001
+Inventory.FILTERFLAG_CUST_ALCH_GOOD   =   0x00000002
+Inventory.FILTERFLAG_CUST_ALCH_BAD   =   0x00000004
+Inventory.FILTERFLAG_CUST_ALCH_OTHER   =   0x00000008
+[/spoiler]
+
+[url=https://github.com/schlangster/skyui/blob/master/src/Common/skyui/defines/Item.as]/src/Common/skyui/defines/Item.as[/url]
+[spoiler]
+Inventory.Item.OTHER   =   undefined
+
+Item.POTION_HEALTH   =   0
+Item.POTION_HEALRATE   =   1
+Item.POTION_HEALRATEMULT   =   2
+Item.POTION_MAGICKA   =   3
+Item.POTION_MAGICKARATE   =   4
+Item.POTION_MAGICKARATEMULT   =   5
+Item.POTION_STAMINA   =   6
+Item.POTION_STAMINARATE   =   7
+Item.POTION_STAMINARATEMULT   =   8
+Item.POTION_FIRERESIST   =   9
+Item.POTION_ELECTRICRESIST   =   10
+Item.POTION_FROSTRESIST   =   11
+Item.POTION_POTION   =   12
+Item.POTION_DRINK   =   13
+Item.POTION_FOOD   =   14
+Item.POTION_POISON   =   15
+
+Item.MISC_GEM   =   0
+Item.MISC_DRAGONCLAW   =   1
+Item.MISC_ARTIFACT   =   2
+Item.MISC_LEATHER   =   3
+Item.MISC_LEATHERSTRIPS   =   4
+Item.MISC_HIDE   =   5
+Item.MISC_REMAINS   =   6
+Item.MISC_INGOT   =   7
+Item.MISC_TOOL   =   8
+Item.MISC_CHILDRENSCLOTHES   =   9
+Item.MISC_TOY   =   10
+Item.MISC_FIREWOOD   =   11
+
+Item.MISC_FASTENER   =   12
+Item.MISC_WEAPONRACK   =   13
+Item.MISC_SHELF   =   14
+Item.MISC_FURNITURE   =   15
+Item.MISC_EXTERIOR   =   16
+Item.MISC_CONTAINER   =   17
+
+Item.MISC_HOUSEPART   =   18
+Item.MISC_CLUTTER   =   19
+Item.MISC_LOCKPICK   =   20
+Item.MISC_GOLD   =   21
+
+Item.BOOK_SPELLTOME   =   0
+Item.BOOK_NOTE   =   1
+Item.BOOK_RECIPE   =   2
+
+; SKSE
+
+; BOOK Flags
+Item.BOOKFLAG_SPELL   =   0x01
+Item.BOOKFLAG_SKILL   =   0x04
+Item.BOOKFLAG_READ   =   0x08
+
+; BOOK bookTypes
+Item.BOOKTYPE_NOTE   =   0xFF
+
+; ALCH Flags
+Item.ALCHFLAG_MANUALCALC   =   0x00001
+Item.ALCHFLAG_FOOD   =   0x00002
+Item.ALCHFLAG_MEDICINE   =   0x10000
+Item.ALCHFLAG_POISON   =   0x20000
+
+Item.SOULGEMSTATUS_EMPTY   =   0
+Item.SOULGEMSTATUS_PARTIAL   =   1
+Item.SOULGEMSTATUS_FULL   =   2
+
+Item.SOULGEM_NONE   =   0
+Item.SOULGEM_PETTY   =   1
+Item.SOULGEM_LESSER   =   2
+Item.SOULGEM_COMMON   =   3
+Item.SOULGEM_GREATER   =   4
+Item.SOULGEM_GRAND   =   5
+Item.SOULGEM_AZURA   =   6
+[/spoiler]
+
+[url=https://github.com/schlangster/skyui/blob/master/src/Common/skyui/defines/Magic.as]/src/Common/skyui/defines/Magic.as[/url]
+[spoiler]
+; Archetype
+Magic.ARCHETYPE_VALUEMOD   =   0
+Magic.ARCHETYPE_SCRIPT   =   1
+Magic.ARCHETYPE_DISPEL   =   2
+Magic.ARCHETYPE_CUREDISEASE   =   3
+Magic.ARCHETYPE_ABSORB   =   4
+Magic.ARCHETYPE_DUALVALUEMOD   =   5
+Magic.ARCHETYPE_CALM   =   6
+Magic.ARCHETYPE_DEMORALIZE   =   7
+Magic.ARCHETYPE_FRENZY   =   8
+Magic.ARCHETYPE_DISARM   =   9
+Magic.ARCHETYPE_COMMANDSUMMONED   =   10
+Magic.ARCHETYPE_INVISIBILITY   =   11
+Magic.ARCHETYPE_LIGHT   =   12
+
+Magic.ARCHETYPE_LOCK   =   15
+Magic.ARCHETYPE_OPEN   =   16
+Magic.ARCHETYPE_BOUNDWEAPON   =   17
+Magic.ARCHETYPE_SUMMONCREATURE   =   18
+Magic.ARCHETYPE_DETECTLIFE   =   19
+Magic.ARCHETYPE_TELEKINESIS   =   20
+Magic.ARCHETYPE_PARALYSIS   =   21
+Magic.ARCHETYPE_REANIMATE   =   22
+Magic.ARCHETYPE_SOULTRAP   =   23
+Magic.ARCHETYPE_TURNUNDEAD   =   24
+Magic.ARCHETYPE_GUIDE   =   25
+Magic.ARCHETYPE_WEREWOLFFEED   =   26
+Magic.ARCHETYPE_CUREPARALYSIS   =   27
+Magic.ARCHETYPE_CUREADDICTION   =   28
+Magic.ARCHETYPE_CUREPOISON   =   29
+Magic.ARCHETYPE_CONCUSSION   =   30
+Magic.ARCHETYPE_VALUEANDPARTS   =   31
+Magic.ARCHETYPE_ACCUMULATEMAGNITUDE   =   32
+Magic.ARCHETYPE_STAGGER   =   33
+Magic.ARCHETYPE_PEAKVALUEMOD   =   34
+Magic.ARCHETYPE_CLOAK   =   35
+Magic.ARCHETYPE_WEREWOLF   =   36
+Magic.ARCHETYPE_SLOWTIME   =   37
+Magic.ARCHETYPE_RALLY   =   38
+Magic.ARCHETYPE_ENHANCEWEAPON   =   39
+Magic.ARCHETYPE_SPAWNHAZARD   =   40
+Magic.ARCHETYPE_ETHEREALIZE   =   41
+Magic.ARCHETYPE_BANISH   =   42
+
+Magic.ARCHETYPE_DISGUISE   =   44
+Magic.ARCHETYPE_GRABACTOR   =   45
+Magic.ARCHETYPE_VAMPIRELORD   =   46
+
+; MGEF flags
+Magic.MGEFFLAG_HOSTILE   =   0x00000001
+Magic.MGEFFLAG_RECOVER   =   0x00000002
+Magic.MGEFFLAG_DETRIMENTAL   =   0x00000004
+Magic.MGEFFLAG_NOHITEVENT   =   0x00000010
+Magic.MGEFFLAG_DISPELKEYWORDS   =   0x00000100
+Magic.MGEFFLAG_NODURATION   =   0x00000200
+Magic.MGEFFLAG_NOMAGNITUDE   =   0x00000400
+Magic.MGEFFLAG_NOAREA   =   0x00000800
+Magic.MGEFFLAG_FXPERSIST   =   0x00001000
+Magic.MGEFFLAG_GLORYVISUALS   =   0x00004000
+Magic.MGEFFLAG_HIDEINUI   =   0x00008000
+Magic.MGEFFLAG_NORECAST   =   0x00020000
+Magic.MGEFFLAG_MAGNITUDE   =   0x00200000
+Magic.MGEFFLAG_DURATION   =   0x00400000
+Magic.MGEFFLAG_PAINLESS   =   0x04000000
+Magic.MGEFFLAG_NOHITEFFECT   =   0x08000000
+Magic.MGEFFLAG_NODEATHDISPEL   =   0x10000000
+[/spoiler]
+
+[url=https://github.com/schlangster/skyui/blob/master/src/Common/skyui/defines/Material.as]/src/Common/skyui/defines/Material.as
+[/url][spoiler]
+Material.AETHERIUM   =   0
+Material.ARTIFACT   =   1
+Material.BONEMOLD   =   2
+Material.BROTHERHOOD   =   3
+Material.CHITIN   =   4
+Material.CLOTHING   =   5
+Material.DAEDRIC   =   6
+Material.DAWNGUARD   =   7
+Material.DRAGONBONE   =   8
+Material.DRAGONPLATE   =   9
+Material.DRAGONSCALE   =   10
+Material.DRAUGR   =   11
+Material.DRAUGRHONED   =   12
+Material.DEATHBRAND   =   13
+Material.DWARVEN   =   14
+Material.EBONY   =   15
+Material.ELVEN   =   16
+Material.ELVENGILDED   =   17
+Material.FALMER   =   18
+Material.FALMERHARDENED   =   19
+Material.FALMERHONED   =   20
+Material.FUR   =   21
+Material.GLASS   =   22
+Material.HIDE   =   23
+Material.HUNTER   =   24
+Material.IMPERIAL   =   25
+Material.IMPERIALSTUDDED   =   26
+Material.IRON   =   27
+Material.IRONBANDED   =   28
+Material.LEATHER   =   29
+Material.MAGIC   =   30
+Material.MORAGTONG   =   31
+Material.NIGHTINGALE   =   32
+Material.NORDIC   =   33
+Material.ORCISH   =   34
+Material.SCALED   =   35
+Material.SILVER   =   36
+Material.STALHRIM   =   37
+Material.STEEL   =   38
+Material.STEELPLATE   =   39
+Material.STORMCLOAK   =   40
+Material.STUDDED   =   41
+Material.VAMPIRE   =   42
+Material.WOOD   =   43
+[/spoiler]
+
+[url=https://github.com/schlangster/skyui/blob/master/src/Common/skyui/defines/Weapon.as]/src/Common/skyui/defines/Weapon.as[/url]
+[spoiler]
+Weapon.ANIM_HANDTOHANDMELEE   =   0
+Weapon.ANIM_ONEHANDSWORD   =   1
+Weapon.ANIM_ONEHANDDAGGER   =   2
+Weapon.ANIM_ONEHANDAXE   =   3
+Weapon.ANIM_ONEHANDMACE   =   4
+Weapon.ANIM_TWOHANDSWORD   =   5
+Weapon.ANIM_TWOHANDAXE   =   6
+Weapon.ANIM_BOW   =   7
+Weapon.ANIM_STAFF   =   8
+Weapon.ANIM_CROSSBOW   =   9
+Weapon.ANIM_H2H   =   10
+Weapon.ANIM_1HS   =   11
+Weapon.ANIM_1HD   =   12
+Weapon.ANIM_1HA   =   13
+Weapon.ANIM_1HM   =   14
+Weapon.ANIM_2HS   =   15
+Weapon.ANIM_2HA   =   16
+Weapon.ANIM_BOW2   =   17
+Weapon.ANIM_STAFF2   =   18
+Weapon.ANIM_CBOW   =   19
+
+Weapon.TYPE_MELEE   =   0
+Weapon.TYPE_SWORD   =   1
+Weapon.TYPE_DAGGER   =   2
+Weapon.TYPE_WARAXE   =   3
+Weapon.TYPE_MACE   =   4
+Weapon.TYPE_GREATSWORD   =   5
+Weapon.TYPE_BATTLEAXE   =   6
+Weapon.TYPE_WARHAMMER   =   7
+Weapon.TYPE_BOW   =   8
+Weapon.TYPE_CROSSBOW   =   9
+Weapon.TYPE_STAFF   =   10
+Weapon.TYPE_PICKAXE   =   11
+Weapon.TYPE_WOODAXE   =   12
+
+; AMMO
+Weapon.AMMO_ARROW   =   0
+Weapon.AMMO_BOLT   =   1
+
+Weapon.AMMOFLAG_IGNORESNORMALWEAPONRESISTANCE   =   0x0001
+Weapon.AMMOFLAG_NONPLAYABLE   =   0x0002
+Weapon.AMMOFLAG_NONBOLT   =   0x0004
+[/spoiler]
+
+
+
+
+
+[b][u][center][color=#f6b26b]MORE INFORMATION[/color][/center][/u][/b]
+[b][center][color=#f6b26b][u]MORE CONFIG INFO[/u][/color][/center][/b]
+[color=#93c47d]Info:
+[/color]How to Use SkyUI's Config.txt by [url=https://www.nexusmods.com/skyrimspecialedition/users/97658973]GroundAura[/url] (You Are Here)
+[url=https://www.nexusmods.com/skyrimspecialedition/mods/17601?tab=files&file_id=251309]SAS Config Guide[/url] by [url=https://www.nexusmods.com/skyrimspecialedition/users/5947991]BVN[/url]
+
+[color=#93c47d]Some Mods That Modify Config.txt:[/color]
+[url=https://www.nexusmods.com/skyrimspecialedition/mods/68557]Aura's Inventory Tweaks[/url]
+[url=https://www.nexusmods.com/skyrimspecialedition/mods/17601]SkyUI AIO Survival[/url]
+[url=https://www.nexusmods.com/skyrimspecialedition/mods/49095]Better SkyUI Config[/url]
+[url=https://www.nexusmods.com/skyrimspecialedition/mods/32711]Equipped Items on Top[/url]
+[url=https://www.nexusmods.com/skyrimspecialedition/mods/20473]Icons in SkyUI Header[/url]
+[url=https://www.nexusmods.com/skyrimspecialedition/mods/23010]Dear Diary[/url]
+[url=https://www.nexusmods.com/skyrimspecialedition/mods/60837]Dear Diary Dark Mode[/url]
+[url=https://www.nexusmods.com/skyrimspecialedition/mods/35568]SkyUI The Adventurer Theme[/url]
+[url=https://www.nexusmods.com/skyrimspecialedition/mods/5336]Immersive Jewelry[/url]
+[url=https://www.nexusmods.com/skyrimspecialedition/mods/3240]Left Handed Rings[/url]
+
+
+[b][center][u][color=#f6b26b]TRANSLATION INFO[/color][/u][/center][/b]
+[color=#93c47d]Info:[/color]
+[color=#e06666]SkyUI Translation File Guide[/color] by [url=https://www.nexusmods.com/skyrimspecialedition/users/97658973]GroundAura[/url][color=#e06666]﻿ (PLANNED SOMETIME IN FUTURE)[/color]
+
+
+[center][color=#f6b26b][b][u]KID INFO[/u][/b][/color][/center]
+[color=#93c47d]Info:[/color]
+[url=https://www.nexusmods.com/skyrimspecialedition/mods/55728]Keyword Item Distributer Modpage[/url] by [url=https://www.nexusmods.com/skyrimspecialedition/users/2148728]powerofthree
+[/url][color=#e06666]Keyword Item Distributer Guide[/color] by [url=https://www.nexusmods.com/skyrimspecialedition/users/97658973]GroundAura[/url]﻿[color=#e06666] (PLANNED SOMETIME IN FUTURE)[/color]
+
+[b][u][center][color=#f6b26b]ICON SWFS INFO[/color][/center][/u][/b]
+[color=#93c47d]Info:[/color]
+[color=#e06666]Adding New Icons to SkyUI Guide[/color] by [url=https://www.nexusmods.com/skyrimspecialedition/users/97658973]GroundAura[/url][color=#e06666]﻿ (PLANNED SOMETIME IN FUTURE)[/color]
+
+
+[b][u][center][color=#f6b26b]MENU SWFS INFO[/color][/center][/u][/b]
+[color=#93c47d]Info:[/color]
+[color=#e06666]SkyUI SWF Guide[/color] by [url=https://www.nexusmods.com/skyrimspecialedition/users/97658973]GroundAura[/url][color=#e06666]﻿ (PLANNED SOMETIME IN FUTURE)[/color][/size]
