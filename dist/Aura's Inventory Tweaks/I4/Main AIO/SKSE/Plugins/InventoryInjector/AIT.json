@@ -5176,6 +5176,18 @@
 	{
 		"match": {
 			"formType": "Potion",
+			"subType": { "anyOf": [ "Food", "Drink" ] },
+			"keywords": [ "OCF_VesselWaterskin_000" ]
+		},
+		"assign": {
+			"itemSort": "2",
+			"subTypeDisplay": "$ItemMiscEmptyWaterskin",
+			"iconColor": "#FFFFFF"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
 			"subType": "Drink",
 			"keywords": [ "OCF_AlchSnow" ]
 		},
@@ -5541,11 +5553,64 @@
 		"match": {
 			"formType": "Potion",
 			"subType": { "anyOf": [ "Food", "Drink" ] },
-			"keywords": [ "OCF_VesselWaterskin" ]
+			"keywords": {
+				"anyOf": [
+					"OCF_VesselWaterskin",
+					"OCF_VesselWaterskin_100"
+				]
+			}
 		},
 		"assign": {
-			"iconSource": "Dodo/powers.swf",
-			"iconLabel": "food_waterskin"
+			"iconSource": "BOOBIES Immersive Icons/food.swf",
+			"iconLabel": "waterskin_3"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": { "anyOf": [ "Food", "Drink" ] },
+			"keywords": {
+				"anyOf": [
+					"OCF_VesselWaterskin_075",
+					"OCF_VesselWaterskin_066"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/food.swf",
+			"iconLabel": "waterskin_2"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": { "anyOf": [ "Food", "Drink" ] },
+			"keywords": {
+				"anyOf": [
+					"OCF_VesselWaterskin_050",
+					"OCF_VesselWaterskin_033"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/food.swf",
+			"iconLabel": "waterskin_1"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": { "anyOf": [ "Food", "Drink" ] },
+			"keywords": {
+				"anyOf": [
+					"OCF_VesselWaterskin_025",
+					"OCF_VesselWaterskin_000"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/food.swf",
+			"iconLabel": "waterskin_0"
 		}
 	},
 	{
@@ -6107,9 +6172,8 @@
 			"keywords": [ "OCF_IngrRemains_FiberHair" ]
 		},
 		"assign": {
-			"iconSource": "AIT/GameIcons/icons.swf",
-			"iconLabel": "misc_herbs",
-			"iconColor": "#634538"
+			"iconSource": "BOOBIES Immersive Icons/ingredients.swf",
+			"iconLabel": "hair"
 		}
 	},
 	{
@@ -6159,9 +6223,9 @@
 			"keywords": [ "OCF_IngrRemains_Organ" ]
 		},
 		"assign": {
-			"iconSource": "AIT/GameIcons/icons.swf",
-			"iconLabel": "misc_heart",
-			"iconColor": "#7B2424"
+			"iconSource": "BOOBIES Immersive Icons/ingredients.swf",
+			"iconLabel": "liver",
+			"iconColor": "#634538"
 		}
 	},
 	{
@@ -6173,6 +6237,17 @@
 			"iconSource": "AIT/GameIcons/icons.swf",
 			"iconLabel": "misc_eyeball",
 			"iconColor": "#FFFFFF"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_IngrRemains_OrganHeart" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_heart",
+			"iconColor": "#7B2424"
 		}
 	},
 	{
@@ -11073,7 +11148,12 @@
 		"match": {
 			"formType": "Spell",
 			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
-			"effectKeywords": [ "OCF_MgefPowerConfig" ]
+			"effectKeywords": {
+				"anyOf": [
+					"OCF_MgefPowerConfig",
+					"OCF_MgefPowerConfigWeatherChanger"
+				]
+			}
 		},
 		"assign": {
 			"magicClassDisplay": "$MagicUtility",

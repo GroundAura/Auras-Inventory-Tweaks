@@ -1537,7 +1537,12 @@
 		"match": {
 			"formType": "Spell",
 			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
-			"effectKeywords": [ "OCF_MgefPowerConfig" ]
+			"effectKeywords": {
+				"anyOf": [
+					"OCF_MgefPowerConfig",
+					"OCF_MgefPowerConfigWeatherChanger"
+				]
+			}
 		},
 		"assign": {
 			"magicClassDisplay": "$MagicUtility",

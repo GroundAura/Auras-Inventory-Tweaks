@@ -779,6 +779,18 @@
 	{
 		"match": {
 			"formType": "Potion",
+			"subType": { "anyOf": [ "Food", "Drink" ] },
+			"keywords": [ "OCF_VesselWaterskin_000" ]
+		},
+		"assign": {
+			"itemSort": "2",
+			"subTypeDisplay": "$ItemMiscEmptyWaterskin",
+			"iconColor": "#FFFFFF"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
 			"subType": "Drink",
 			"keywords": [ "OCF_AlchSnow" ]
 		},
@@ -1144,11 +1156,64 @@
 		"match": {
 			"formType": "Potion",
 			"subType": { "anyOf": [ "Food", "Drink" ] },
-			"keywords": [ "OCF_VesselWaterskin" ]
+			"keywords": {
+				"anyOf": [
+					"OCF_VesselWaterskin",
+					"OCF_VesselWaterskin_100"
+				]
+			}
 		},
 		"assign": {
-			"iconSource": "Dodo/powers.swf",
-			"iconLabel": "food_waterskin"
+			"iconSource": "BOOBIES Immersive Icons/food.swf",
+			"iconLabel": "waterskin_3"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": { "anyOf": [ "Food", "Drink" ] },
+			"keywords": {
+				"anyOf": [
+					"OCF_VesselWaterskin_075",
+					"OCF_VesselWaterskin_066"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/food.swf",
+			"iconLabel": "waterskin_2"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": { "anyOf": [ "Food", "Drink" ] },
+			"keywords": {
+				"anyOf": [
+					"OCF_VesselWaterskin_050",
+					"OCF_VesselWaterskin_033"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/food.swf",
+			"iconLabel": "waterskin_1"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": { "anyOf": [ "Food", "Drink" ] },
+			"keywords": {
+				"anyOf": [
+					"OCF_VesselWaterskin_025",
+					"OCF_VesselWaterskin_000"
+				]
+			}
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/food.swf",
+			"iconLabel": "waterskin_0"
 		}
 	},
 	{

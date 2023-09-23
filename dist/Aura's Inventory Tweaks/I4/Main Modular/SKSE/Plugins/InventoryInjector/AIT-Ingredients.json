@@ -218,9 +218,8 @@
 			"keywords": [ "OCF_IngrRemains_FiberHair" ]
 		},
 		"assign": {
-			"iconSource": "AIT/GameIcons/icons.swf",
-			"iconLabel": "misc_herbs",
-			"iconColor": "#634538"
+			"iconSource": "BOOBIES Immersive Icons/ingredients.swf",
+			"iconLabel": "hair"
 		}
 	},
 	{
@@ -270,9 +269,9 @@
 			"keywords": [ "OCF_IngrRemains_Organ" ]
 		},
 		"assign": {
-			"iconSource": "AIT/GameIcons/icons.swf",
-			"iconLabel": "misc_heart",
-			"iconColor": "#7B2424"
+			"iconSource": "BOOBIES Immersive Icons/ingredients.swf",
+			"iconLabel": "liver",
+			"iconColor": "#634538"
 		}
 	},
 	{
@@ -284,6 +283,17 @@
 			"iconSource": "AIT/GameIcons/icons.swf",
 			"iconLabel": "misc_eyeball",
 			"iconColor": "#FFFFFF"
+		}
+	},
+	{
+		"match": {
+			"formType": "Ingredient",
+			"keywords": [ "OCF_IngrRemains_OrganHeart" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_heart",
+			"iconColor": "#7B2424"
 		}
 	},
 	{
