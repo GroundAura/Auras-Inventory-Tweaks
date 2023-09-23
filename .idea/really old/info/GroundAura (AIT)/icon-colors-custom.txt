@@ -1,0 +1,90 @@
+
+
+==================== ICON COLORS ====================
+
+
+SPELL:
+Alteration			=	Brown (light)	=	0x8F6B46
+Alteration			=	Brown (dark)	=	0x412600
+Conjuration			=	Purple (light)	=	0x993899
+Conjuration			=	Purple (dark)	=	0x5E2B72
+Illusion			=	Teal (light)	= 	0x4C9EA4
+Illusion			=	Teal (dark)		=	0x006A70
+Restoration			=	Green (light)	=	0x00AC00
+Restoration			=	Green (dark)	=	0x1E5419
+Destruction/Fire	=	Red	(light)		=	0xC73636
+Destruction/Fire	=	Red (dark)		=	0x990033
+Shock				=	Yellow (light)	=	0xFFFF00
+Shock				=	Yellow (dark)	=	0xEAAB00
+Frost				=	Blue (light)	=	0x1FFBFF
+Frost				=	Blue (dark)		=	0x005FAF
+CUSTOM:
+
+
+POTION:
+Poison				=	Purple (light)	=	0xAD00B3
+Health				=	Red (light)		=	0xDB2E73
+Magicka				=	Blue (light)	=	0x2E9FDB
+Stamina				=	Green (light)	=	0x51DB2E
+CUSTOM:
+
+
+ARMOR:
+Clothing / Jewelry	=	Tan (sand)		=	0xEDDA87
+Light Armor			=	Brown (light)	=	0x756000
+Heavy Armor			=	Gray (dark)		=	0x6B7585
+CUSTOM:
+
+
+WEAPON:
+Weapon				=	Gray (clay)		=	0xA4A5BF
+Ammo				=	Brown (khaki)	=	0xA89E8C
+CUSTOM:
+
+
+MISC:
+Gem					=	Pink ()			=	0xFFB0D1
+Hide				=	Tan ()			=	0xDBB36E
+Ingot				=	Gray ()			=	0x828282
+Firewood			=	Brown (khaki)	=	0xA89E8C
+Gold				=	Yellow (gold)	=	0xCCCC33
+Leather / Strips	=	Brown (orange)	=	0xBA8D23
+CUSTOM:
+
+
+SOUL GEM:
+Empty				=	Blue (pale)		=	0xE3E0FF
+Petty				=	Blue ()			=	0xD7D4FF
+Lesser				=	Blue ()			=	0xC0BAFF
+Common				=	Blue ()			=	0xABA3FF
+Greater				=	Blue ()			=	0x948BFC
+Grand				=	Blue (dark)		=	0x7569FF
+CUSTOM:
+
+
+CUSTOM:
+Blood				=	Red (blood)		=	0x880808
+Poison				=	Green			=	0x51DB2E
+Sun					=	Yellow			=	0xFDD835
+Ash					=	Tan				=	0xC2A487
+Wind				=	Gray			=	0x555555
+					=	Light Blue		=	0xC0BAFF
+Water				=	Blue			=	0x0E87CC
+Earth				=	Brown			=	0x412600
+Shadow				=	Purple			=	0x5E2B72
+Nature				=	Green			=	0x00AC00
+
+
+Black Soul Gem		=	Purple (dark)	=	0x5E2B72
+
+
+
+
+
+
+alt ash =  0x675B58
+
+
+
+
+

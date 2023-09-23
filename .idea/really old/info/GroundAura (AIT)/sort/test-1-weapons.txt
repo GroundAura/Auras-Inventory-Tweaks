@@ -1,0 +1,297 @@
+Melee
+Sword
+Dagger
+War Axe
+Mace
+Greatsword
+Battleaxe
+Warhammer
+Bow
+Crossbow
+Staff
+Pickaxe
+Woodaxe
+
+
+
+Claw
+Gun
+Halberd
+Javelin
+Katana
+Pike
+Quarterstaff
+Rapier
+Scythe
+Spear
+Whip
+
+
+
+Scimitar
+Saber
+Cutlass
+Hammer
+Battlemace
+Chakram
+Club
+Crescent
+Hatchet
+Shiv
+Sickle
+Tanto
+Warpick
+Shortbow
+Longbow
+Greatbow
+Bowblade
+Slingshot
+Toy
+Tablewear
+Dadao
+Odachi
+
+Hatchet
+Boomerang
+Chakram
+Crescent
+Dagger
+Javelin
+Hammer
+War Axe
+Battleaxe
+Bomb
+
+
+
+
+
+
+
+
+
+
+
+AMMO:
+
+Arrow
+Bolt
+Bound
+Bullet
+Greatarrow
+Javelin
+Pellet
+
+
+
+MELEE:
+
+Battleaxe
+Battlemace
+Chakram
+Claw
+Club
+Crescent
+Cutlass
+Dadao
+Dagger
+Greatsword
+Halberd
+Hammer
+Hatchet
+Javelin
+Katana
+Mace
+Melee
+Odachi
+Pike
+Quarterstaff
+Rapier
+Saber
+Scimitar
+Scythe
+Shiv
+Sickle
+Spear
+Sword
+Tablewear
+Tanto
+Toy
+War Axe
+Warhammer
+Warpick
+Whip
+
+
+
+TOOL:
+
+Pickaxe
+Woodaxe
+
+
+
+RANGED:
+
+Bow
+Bowblade
+Crossbow
+Longbow
+Greatbow
+Gun
+Shortbow
+Slingshot
+
+
+
+THROWN:
+
+Battleaxe
+Bomb
+Boomerang
+Chakram
+Crescent
+Dagger
+Hammer
+Hatchet
+Javelin
+War Axe
+
+
+
+STAFF:
+
+Staff
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-|MELEE|-
+
+[1H Daggers]
+Claw
+Dagger (Glass Cutter/Hunting Knife/Scalpel/Shiv)
+Tablewear
+Tanto
+
+[1H Swords]
+Cutlass
+Katana (Ninjato/Wakizashi)
+Rapier
+Saber
+Scimitar
+Sword (Shortsword)
+
+[1H Poles]
+Javelin
+1H Spear (Shortspear)
+
+[1H Axes]
+Chakram
+Crescent
+Pickaxe
+Sickle
+War Axe (Hatchet)
+Warpick
+Woodaxe
+
+[1H Blunt]
+Club
+Hammer (Battle Hammer)
+Mace (Maul)
+Whip
+
+[2H Swords]
+Greatsword (Claymore/Longsword)
+2H Katana (Dai-Katana/Daito/Odachi/Nodachi)
+2H Scimitar (Changdao/Dadao)
+
+[2H Poles]
+2H Spear (Glaive/Trident)
+Halberd (Poleaxe)
+Pike (Half Pike/Lance/Partisan/Naginata)
+
+[2H Axes]
+Battleaxe (Double Axe)
+Scythe
+
+[2H Blunt]
+Longmace (Battlemace/Greatmace/Warmace)
+Quarterstaff (Battle Staff/Shortstaff)
+Warhammer (Battlehammer)
+
+
+-|THROWABLE|-
+
+[Throwable]
+Battleaxe
+Bomb (Potion)
+Boomerang
+Chakram
+Crescent
+Dagger
+Hammers
+Javelin
+War Axe (Hatchet)
+
+
+-|RANGED|-
+
+[Bow]
+Bow
+Bowblade
+Greatbow
+Longbow
+Shortbow
+
+[Crossbow]
+Crossbow
+1H Crossbow
+
+[Blowgun]
+Blowgun
+
+[Gun]
+Gun (Pistol)
+
+[Slingshot]
+Slingshot
+
+
+-|AMMO|-
+
+[Bow]
+Arrow (Bound)
+Greatarrow
+Javelin
+
+[Crossbow]
+Bolt
+
+[Blowgun]
+Dart
+
+[Gun]
+Bullet
+
+[Slingshot]
+Pellet
+
+
+-|MAGIC|-
+
+[Staff]
+Staff
+
+

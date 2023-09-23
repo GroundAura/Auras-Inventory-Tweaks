@@ -1,0 +1,126 @@
+-|MELEE|-
+
+[1H Daggers]
+Dagger (Shiv)
+Claw
+Tablewear
+Tanto
+
+[1H Swords]
+Sword (Shortsword)
+Katana (Ninjato/Wakizashi)
+Saber (Cutlass/Rapier)
+Scimitar
+
+[1H Poles]
+1H Spear (Shortspear)
+Javelin
+
+[1H Axes]
+War Axe (Hatchet)
+Chakram
+Crescent
+Sickle
+Warpick
+
+[1H Blunt]
+Mace (Maul)
+Club
+Hammer (Battle Hammer)
+Whip
+
+[2H Swords]
+Greatsword (Claymore/Longsword)
+2H Katana (Dai-Katana/Daito/Odachi/Nodachi)
+2H Scimitar (Changdao/Dadao)
+
+[2H Poles]
+2H Spear (Glaive/Trident)
+Halberd (Poleaxe)
+Pike (Half Pike/Lance/Partisan/Naginata)
+
+[2H Axes]
+Battleaxe (Double Axe)
+Scythe
+
+[2H Blunt]
+Warhammer (Battlehammer)
+Longmace (Battlemace/Greatmace/Warmace)
+Quarterstaff (Battle Staff/Shortstaff)
+
+
+-|TOOLS|-
+
+[1H Tools]
+Fishing Rod
+Tool (Glass Cutter/Hunting Knife/Scalpel)
+Pickaxe
+Woodaxe
+
+[2H Tools]
+Fishing Rod
+Pickaxe
+Woodaxe
+
+
+-|THROWABLE|-
+
+[Throwable]
+Battleaxe
+Bomb (Potion)
+Boomerang
+Chakram
+Crescent
+Dagger
+Hammers
+Javelin
+War Axe (Hatchet)
+
+
+-|RANGED|-
+
+[Bow]
+Bow
+Bowblade
+Greatbow
+Longbow
+Shortbow
+
+[Crossbow]
+Crossbow
+1H Crossbow
+
+[Blowgun]
+Blowgun
+
+[Gun]
+Gun (Pistol)
+
+[Slingshot]
+Slingshot
+
+
+-|AMMO|-
+
+[Bow]
+Arrow (Bound)
+Greatarrow
+Javelin
+
+[Crossbow]
+Bolt
+
+[Blowgun]
+Dart
+
+[Gun]
+Bullet
+
+[Slingshot]
+Pellet
+
+
+-|MAGIC|-
+
+[Staff]
+Staff

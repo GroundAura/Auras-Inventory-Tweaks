@@ -1,0 +1,42 @@
+-|POTION|-
+
+[Health]
+Restore
+Fortify Max
+Regenerate
+
+[Stamina]
+Restore
+Fortify Max
+Regenerate
+
+[Magicka]
+Restore
+Fortify Max
+Regenerate
+
+[Resist]
+Magic
+Fire
+Frost
+Shock
+Poison
+Disease
+Paralysis
+
+[Potion]
+Blood
+Cure
+Fortify
+Potion
+
+
+-|POISON|-
+
+[Poison]
+Poison
+
+-|DRUG|-
+
+[Drug]
+Hist Sap

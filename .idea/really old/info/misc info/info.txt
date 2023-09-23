@@ -1,0 +1,238 @@
+; =====================================================================================================================
+
+;INFO
+
+; SET PROPERTIES -------------------------------------------------------
+; Set values based on keywords/dataMembers
+; Often set a property like material with a numerical value for proper sorting
+; and then materialDisplay with text to show in the column.
+; ALL_CAPS like MATERIAL_IRON are constant numerical values set by skyUI.
+; For setting properties based on keywords:
+; .keywords.keywordname.set = <'propertyToSet': valueToSet>
+; For setting properties based on dataMembers:
+; .dataMember#.filter = <'dataMemberToMatch': valueToMatch>
+; .dataMember#.set = <'propertyToSet': valueToSet>
+
+; Set Compound Properties -------------------------------------------------------
+; Set properties that are a combination of other properties, used for icon column sorting
+; By changing concatenateList you can change your icon column sorting.
+; For example compoundProps.armorTotalSort.concatenateList = <'formType', 'weightClass', 'subType', 'material'>
+; will put all heavy armor together and then sort by body/head/etc vs the default of putting all body/head/etc
+; together and then sorting by weight class.
+
+; Properties -------------------------------------------------------
+; itemProperties
+; magicProperties
+
+; props.itemGroup.propertiesToSet = <'subType', 'subTypeDisplay'>
+; props.itemGroup.filter = <'formType': ...>
+; props.itemGroup.overwrite = true
+; props.itemGroup.dataMember1.filter = <'formId': ...>
+; props.itemGroup.dataMember1.set = <'subType': ..., 'subTypeDisplay': ...>
+;
+; props.itemGroupOther.propertiesToSet = <'subType', 'subTypeDisplay'>
+; props.itemGroupOther.filter = <'formType': ...>
+; props.itemGroupOther.defaultValues = <'subType': ..., 'subTypeDisplay': ...>
+; props.itemGroupOther.keywords.SomeKeyword = <'subType': ..., 'subTypeDisplay': ...>
+;
+; itemProperties = <'itemGroup', 'itemGroupOther', ...>
+
+
+; props.magicGroup.propertiesToSet = <'subType', 'subTypeDisplay'>
+; props.magicGroup.filter = <'formType': ...>
+; props.magicGroup.dataMember1.filter = <'formId': ...>
+; props.magicGroup.dataMember1.set = <'subType': ..., 'subTypeDisplay': ...>
+;
+; props.magicGroupOther.propertiesToSet = <'subType', 'subTypeDisplay'>
+; props.magicGroupOther.filter = <'formType': ...>
+; props.magicGroupOther.defaultValues = <'subType': ..., 'subTypeDisplay': ...>
+; props.magicGroupOther.keywords.SomeKeyword = <'subType': ..., 'subTypeDisplay': ...>
+;
+; magicProperties = <'magicGroup', 'magicGroupOther', ...>
+
+
+; Icon Labels ------------------------------------------------------
+; itemicons
+; magicIcons
+
+; props.itemIconGroup.propertiesToSet = <'iconLabel', 'iconColor'>
+; props.itemIconGroup.filter = <'formType': ...>
+; props.itemIconGroup.defaultValues = <'iconColor': ...>
+; props.itemIconGroup.dataMember1.filter = ...
+; props.itemIconGroup.dataMember1.set = ...
+;
+; itemicons = <'itemIconGroup', ...>
+
+
+; props.magicIconGroup...
+;
+; magicIcons = <'magicIconGroup', ...>
+
+; Compound Properties ----------------------------------------------
+; itemCompoundProperties
+; magicCompoundProperties
+
+; compoundProps.itemCompoundGroup.propertyToSet = 'mySortProperty'
+; compoundProps.itemCompoundGroup.filter = ...
+; compoundProps.itemCompoundGroup.concatenateList = <'type', 'formType', ...>
+; compoundProps.itemCompoundGroup.defaultValues = <'type': undefined, 'formType': undefined, ...>
+;
+; itemCompoundProperties = <'itemCompoundGroup', ...>
+
+
+; compoundProps.magicCompoundGroup.propertyToSet = 'mySortProperty'
+; compoundProps.magicCompoundGroup.filter = ...
+; compoundProps.magicCompoundGroup.concatenateList = <'type', 'formType', ...>
+; compoundProps.magicCompoundGroup.defaultValues = <'type': undefined, 'formType': undefined, ...>
+;
+; magicCompoundProperties = <'magicCompoundGroup', ...>
+
+; =====================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CDCooley's Tweaks
+
+props.clothingIcon.propertiesToSet = <'iconLabel', 'iconColor', 'subTypeDisplay'>
+props.clothingIcon.filter = <'formType': Form.TYPE_ARMOR>
+props.clothingIcon.keywords.isTorchLighting = <'iconLabel': 'misc_torch'> ; some wearable lanterns
+props.clothingIcon.keywords.ClothingPouch = <'iconLabel': 'clothing_pouch', 'iconColor': 0x666666>
+props.clothingIcon.keywords.CDC_PortableContainer = <'iconLabel': 'clothing_pouch', 'iconColor': 0x666666>
+props.clothingIcon.keywords.ClothingRing = <'iconLabel': 'armor_ring', 'subTypeDisplay': '$Ring'>
+props.clothingIcon.keywords.ClothingAmulet = <'iconLabel': 'armor_amulet', , 'subTypeDisplay': '$Amulet'>
+props.clothingIcon.keywords.ClothingCirclet = <'iconLabel': 'armor_circlet', , 'subTypeDisplay': '$Circlet'>
+props.clothingIcon.keywords.ClothingBracelet = <'iconLabel': 'armor_circlet', 'subTypeDisplay': 'Bracelet'>
+
+; recolor the misc items and in a few cases change the icons
+props.otherIcon.propertiesToSet = <'iconLabel', 'iconColor'>
+props.otherIcon.filter = <'formType': Form.TYPE_MISC>
+props.otherIcon.keywords.CDC_PortableContainer = <'iconLabel': 'clothing_pouch', 'iconColor': 0x888888>
+props.otherIcon.dataMember1.filter = <'subTypeDisplay': 'Lockpick'>
+props.otherIcon.dataMember1.set = <'iconLabel': 'misc_lockpick', 'iconColor': 0x88AAFF>
+props.otherIcon.dataMember2.filter = <'subTypeDisplay': 'Hide'>
+props.otherIcon.dataMember2.set = <'iconColor': 0x665533>
+props.otherIcon.dataMember3.filter = <'subTypeDisplay': 'Leather'>
+props.otherIcon.dataMember3.set = <'iconColor': 0x665533>
+props.otherIcon.dataMember4.filter = <'subTypeDisplay': 'Strips'>
+props.otherIcon.dataMember4.set = <'iconColor': 0x665533>
+props.otherIcon.dataMember5.filter = <'subTypeDisplay': 'Gem'>
+props.otherIcon.dataMember5.set = <'iconColor': 0xffffff>
+props.otherIcon.dataMember6.filter = <'subTypeDisplay': 'Gold'>
+props.otherIcon.dataMember6.set = <'iconColor': 0xffff00>
+; make all of the tools use a pickaxe icon
+props.otherIcon.keywords.VendorItemTool = <'iconLabel': 'weapon_pickaxe', 'iconColor': 0x88AAFF>
+props.otherIcon.keywords.VendorItemClutter = <'iconColor': 0xCCCCCC>
+
+; custom weapon icons colors mostly
+props.weaponIcon.propertiesToSet = <'iconLabel', 'iconColor'>
+props.weaponIcon.filter = <'formType': Form.TYPE_WEAPON>
+props.weaponIcon.dataMember1.filter = <'formType': Form.TYPE_WEAPON>
+props.weaponIcon.dataMember1.set = <'iconColor': 0xFF6666>
+; make this stand out as special
+props.weaponIcon.keywords.DLC2NordicPickaxe = <'iconLabel': 'weapon_pickaxe', 'iconColor': 0x888888>
+
+; ammo colors just because ammo needs its own "filter"
+props.ammoColor.propertiesToSet = <'iconColor'>
+props.ammoColor.filter = <'formType': Form.TYPE_AMMO>
+props.ammoColor.dataMember1.filter = <'formType': Form.TYPE_AMMO>
+props.ammoColor.dataMember1.set = <'iconColor': 0xAA6666>
+
+; I like spell tomes to have a slightly different color
+props.bookColor.propertiesToSet = <'iconColor'>
+props.bookColor.filter = <'formType': Form.TYPE_BOOK>
+props.bookColor.dataMember1.filter = <'subTypeDisplay': 'Spell Tome'>
+props.bookColor.dataMember1.set = <'iconColor': 0xDDCCFF>
+
+; major change to colors for armor clothing and jewelry
+props.armorColor.propertiesToSet = <'iconColor'>
+props.armorColor.filter = <'formType': Form.TYPE_ARMOR>
+props.armorColor.dataMember1.filter = <'weightClass': Armor.WEIGHT_LIGHT>
+props.armorColor.dataMember1.set = <'iconColor': 0x449955>
+props.armorColor.dataMember2.filter = <'weightClass': Armor.WEIGHT_HEAVY>
+props.armorColor.dataMember2.set = <'iconColor': 0x336633>
+props.armorColor.dataMember3.filter = <'weightClass': Armor.WEIGHT_CLOTHING>
+props.armorColor.dataMember3.set = <'iconColor': 0x55AA88>
+props.armorColor.dataMember4.filter = <'weightClass': Armor.WEIGHT_JEWELRY>
+props.armorColor.dataMember4.set = <'iconColor': 0xAAAA44>
+
+; tone down the colors for potions
+props.potionColor.propertiesToSet = <'iconColor'>
+props.potionColor.filter = <'formType': Form.TYPE_POTION>
+props.potionColor.dataMember1.filter = <'subType': Item.POTION_HEALTH>
+props.potionColor.dataMember1.set = <'iconColor': 0xFF99AA>
+props.potionColor.dataMember2.filter = <'subType': Item.POTION_HEALTHRATE>
+props.potionColor.dataMember2.set = <'iconColor': 0xFF99AA>
+props.potionColor.dataMember3.filter = <'subType': Item.POTION_HEALTHRATEMULT>
+props.potionColor.dataMember3.set = <'iconColor': 0xFF99AA>
+props.potionColor.dataMember4.filter = <'subType': Item.POTION_MAGICKA>
+props.potionColor.dataMember4.set = <'iconColor': 0x99AAFF>
+props.potionColor.dataMember5.filter = <'subType': Item.POTION_MAGICKARATE>
+props.potionColor.dataMember5.set = <'iconColor': 0x99AAFF>
+props.potionColor.dataMember6.filter = <'subType': Item.POTION_MAGICKARATEMULT>
+props.potionColor.dataMember6.set = <'iconColor': 0x99AAFF>
+props.potionColor.dataMember7.filter = <'subType': Item.POTION_STAMINA>
+props.potionColor.dataMember7.set = <'iconColor': 0x99FFAA>
+props.potionColor.dataMember8.filter = <'subType': Item.POTION_STAMINARATE>
+props.potionColor.dataMember8.set = <'iconColor': 0x99FFAA>
+props.potionColor.dataMember9.filter = <'subType': Item.POTION_STAMINARATEMULT>
+props.potionColor.dataMember9.set = <'iconColor': 0x99FFAA>
+props.potionColor.dataMember10.filter = <'subType': Item.POTION_POISON>
+props.potionColor.dataMember10.set = <'iconColor': 0xDDFFAA>
+props.potionColor.dataMember11.filter = <'subType': Item.POTION_FIRERESIST>
+props.potionColor.dataMember11.set = <'iconColor': 0xFFDDAA>
+props.potionColor.dataMember12.filter = <'subType': Item.POTION_ELECTRICRESIST>
+props.potionColor.dataMember12.set = <'iconColor': 0xFFEE99>
+props.potionColor.dataMember13.filter = <'subType': Item.POTION_FROSTRESIST>
+props.potionColor.dataMember13.set = <'iconColor': 0xAADDFF>
+props.potionColor.dataMember14.filter = <'subType': Item.POTION_POTION>
+props.potionColor.dataMember14.set = <'iconColor': 0xEECCFF>
+props.potionColor.dataMember15.filter = <'subType': Item.POTION_FOOD>
+props.potionColor.dataMember15.set = <'iconColor': 0xAAAAAA>
+props.potionColor.dataMember16.filter = <'subType': Item.POTION_DRINK>
+props.potionColor.dataMember16.set = <'iconColor': 0x999999>
+
+; make sure edible ingredients look like food
+props.edibleTag.propertiesToSet = <'iconColor', 'subTypeDisplay'>
+props.edibleTag.filter = <'formType': Form.TYPE_INGREDIENT>
+props.edibleTag.keywords.VendorItemFood = <'iconColor': 0x777777, 'subTypeDisplay': '$Food'>
+props.edibleTag.keywords.VendorItemFoodRaw = <'iconColor': 0x999999, 'subTypeDisplay': '$Food'>
+
+itemIcons = <potionColor, ammoColor, bookColor, armorColor, clothingIcon, weaponIcon, otherIcon, edibleTag>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

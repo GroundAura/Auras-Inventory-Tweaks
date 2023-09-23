@@ -1,0 +1,249 @@
+-----------------Armor-----------------
+Jewelry
+-Circlet (armor_circlet)
+-Amulet (armor_amulet)
+-Ring (armor_ring)
+
+
+
+Clothing
+-Hood (clothing_head)
+-Shirt (clothing_body)
+-Robes (clothing_robe)
+-Pants (clothing_pants)
+-Gloves (clothing_hands / clothing_forearms)
+-Boots (clothing_feet / clothing_calves)
+-Shoes (clothing_shoes)
+
+
+
+Armor (Heavy)
+-Helmet (armor_head)
+-Chestplate (armor_body)
+-Gauntlets (armor_hands / armor_forearms)
+-Greaves (armor_feet / armor_calves)
+-Shield (armor_shield)
+
+
+
+Armor (Light)
+-Helmet (lightarmor_head)
+-Cuirass (lightarmor_body)
+-Gauntlets (lightarmor_hands / lightarmor_forearms)
+-Bracers (armor_bracer)
+-Boots (lightarmor_feet / lightarmor_calves)
+-Shield (lightarmor_shield)
+
+
+
+Armor
+-Mask (armor_mask / lightarmor_mask / clothing_mask)
+-Daedric Shield (armor_daedra)
+-Default Armor (default_armor / clothing_shield)
+
+
+
+IDEAS
+>
+
+
+
+-----------------Book-----------------
+Book
+-Book (default_book)
+-Open Book (default_book_read)
+-Spell Tome (book_tome)
+-Open Spell Tome (book_tome_read)
+-Journal (book_journal)
+
+
+
+Paper
+-Note (book_note)
+-Map (book_map)
+
+
+
+IDEAS
+>
+
+
+
+-----------------Ingestible-----------------
+Potion
+-Potion (default_potion)
+-Health Potion (poiton_health)
+-Magicka Potion (potion_magic)
+-Stamina Potion (potion_stam)
+-Fire Resist Potion (potion_fire)
+-Frost Resist Potion (potion_frost)
+-Shock Resist Potion (potion_shock)
+
+
+
+Poison
+-Poison (potion_poison)
+
+
+
+Food
+-Food (default_food)
+
+
+
+Drink
+-Drink (food_wine)
+-Narrow Drink (food_beer)
+
+
+
+Ingredient
+-Ingredient (default_ingredient)
+
+
+
+IDEAS
+>Vial
+
+
+
+-----------------Key-----------------
+Keys
+-Key (default_key)
+-House Key (key_house)
+
+
+
+IDEAS
+>
+
+
+
+-----------------Misc-----------------
+
+Money
+-Coin (misc_gold)
+-Coinpurse/Sack (misc_goldsack)
+
+
+
+Minerals
+-Ingot (misc_ingot)
+-Ore (misc_ore)
+-Gem (misc_gem)
+
+
+
+Remains
+-Skull (misc_remains)
+-Troll Skull (misc_trollskull)
+-Hide (misc_hide)
+-Leather (misc_leather)
+-Leather Strips (misc_strips)
+
+
+
+Tools
+-Lockpick (misc_lockpick)
+-Torch (misc_torch)
+
+
+
+Soul Gems
+-Empty Soul Gem (soulgem_empty)
+-Partial Soul Gem (soulgem_partial)
+-Full Soul Gem (soulgem_full)
+-Empty Grand Soul Gem (soulgem_grandempty)
+-Partial Soul Gem (soulgem_grandpartial)
+-Full Soul Gem (soulgem_grandfull)
+-Azura's Star (soulgem_azura)
+
+
+
+More
+-Misc (default_misc)
+-Clutter (misc_clutter)
+-Artifact (misc_artifact)
+-Dragon Claw (misc_dragonclaw)
+-Firewood (misc_wood)
+-Clothing (clothing_body)
+
+
+
+IDEAS
+>Daedric Artifact
+>Backpack
+>Card
+>
+
+
+
+-----------------Scroll-----------------
+Scroll
+-Scroll (default_scroll)
+
+
+
+IDEAS
+>Spider
+
+-----------------Weapon-----------------
+Melee
+-Battleaxe (weapon_battleaxe)
+-Dagger (weapon_dagger0)
+-Greatsword (weapon_greatsword)
+-Warhammer (weapon_hammer)
+-Mace (weapon_mace)
+-Sword (weapon_sword)
+-War Axe (weapon_waraxe)
+
+
+
+Projectile
+-Bow (weapon_bow)
+-Crossbow (weapon_crossbow)
+-Arrow (weapon_arrow)
+-Bolt (weapon_bolt)
+-Staff (weapon_staff)
+
+
+
+Tool
+-Pickaxe (weapon_pickaxe)
+-Wood Axe (weapon_woodaxe)
+
+
+
+More
+-Weapon (default_weapon)
+-Daedric Sword (weapon_daedra)
+
+
+
+SkyUI Weapons Pack
+-Claw (weapon_claw)
+-Gun (weapon_gun)
+-Halberd (weapon_halberd)
+-Javelin (weapon_javelin)
+-Katana (weapon_katana)
+-Pike (weapon_pike)
+-Quarterstaff (weapon_quarterstaff)
+-Rapier (weapon_rapier)
+-Scythe (weapon_scythe)
+-Spear (weapon_spear)
+-Whip (weapon_whip)
+
+
+
+IDEAS
+>Scimitar
+>Cutlass
+>Saber
+>Battle Hammer
+>Club
+>Shiv
+>Sickle
+>Tanto
+>Warpick
+>Bomb
+>Tablewear

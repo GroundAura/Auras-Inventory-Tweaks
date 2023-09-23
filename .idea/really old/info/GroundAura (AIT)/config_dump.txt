@@ -1,0 +1,154 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+; ICON COLUMN (MAGIC) -------------------------------------------------------
+columns.iconColumnMagic.type = ITEM_ICON
+columns.iconColumnMagic.states = 2
+columns.iconColumnMagic.icon.size = n_iconSize
+columns.iconColumnMagic.border = <0, 3, 3, 3> ; left right top bottom
+
+columns.iconColumnMagic.state1.label.text = ' '
+columns.iconColumnMagic.state1.label.arrowDown = false
+columns.iconColumnMagic.state1.sortAttributes = <timeRemaining, isEquipped, type, formType, subType, infoSchoolName, archetypeDisplay, actorValue, resistance, skillLevel, magnitude, duration, text>
+columns.iconColumnMagic.state1.sortOptions = <{ASCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}, {ASCENDING | CASEINSENSITIVE}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.iconColumnMagic.state2.label.text = ' '
+columns.iconColumnMagic.state2.label.arrowDown = true
+columns.iconColumnMagic.state2.sortAttributes = <timeRemaining, type, formType, subType, infoSchoolName, archetypeDisplay, actorValue, resistance, skillLevel, magnitude, duration, text>
+columns.iconColumnMagic.state2.sortOptions = <{DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | CASEINSENSITIVE}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | CASEINSENSITIVE}>
+
+
+; ICON COLUMN (ITEM) -------------------------------------------------------
+columns.iconColumn.type = ITEM_ICON
+columns.iconColumn.states = 2
+columns.iconColumn.icon.size = n_iconSize
+columns.iconColumn.border = <0, 3, 3, 3> ; left right top bottom
+
+columns.iconColumn.state1.label.text = ' '
+columns.iconColumn.state1.label.arrowDown = false
+columns.iconColumn.state1.sortAttributes = <isEquipped, type, formType, subType, weightClass, bipedSlots, material, infoDamage, infoBaseDamage, infoReach, infoSpeed, infoStagger, infoArmor, actorValue, resistance, magnitude, duration, text>
+columns.iconColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.iconColumn.state2.label.text = ' '
+columns.iconColumn.state2.label.arrowDown = true
+columns.iconColumn.state2.sortAttributes = <isEquipped, type, formType, subType, weightClass, bipedSlots, material, infoDamage, infoBaseDamage, infoReach, infoSpeed, infoStagger, infoArmor, actorValue, resistance, magnitude, duration, text>
+columns.iconColumn.state2.sortOptions = <{DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {DESCENDING | CASEINSENSITIVE}, {DESCENDING | CASEINSENSITIVE}, {DESCENDING | NUMERIC}, {DESCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {ASCENDING | NUMERIC}, {DESCENDING | CASEINSENSITIVE}>
+
+
+; ICON COLUMN (ITEM - isRead) -------------------------------------------------------
+columns.iconColumn.type = ITEM_ICON
+columns.iconColumn.states = 2
+columns.iconColumn.icon.size = n_iconSize
+columns.iconColumn.border = <0, 3, 3, 3> ; left right top bottom
+
+columns.iconColumn.state1.label.text = ' '
+columns.iconColumn.state1.label.arrowDown = false
+columns.iconColumn.state1.sortAttributes = <isEquipped, type, formType, subType, weightClass, bipedSlots, material, infoDamage, infoBaseDamage, infoReach, infoSpeed, infoStagger, infoArmor, actorValue, resistance, magnitude, duration, isRead, text>
+columns.iconColumn.state1.sortOptions = <>
+
+columns.iconColumn.state2.label.text = ' '
+columns.iconColumn.state2.label.arrowDown = true
+columns.iconColumn.state2.sortAttributes = <isEquipped, type, formType, subType, weightClass, bipedSlots, material, infoDamage, infoBaseDamage, infoReach, infoSpeed, infoStagger, infoArmor, actorValue, resistance, magnitude, duration, isRead, text>
+columns.iconColumn.state2.sortOptions = <>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

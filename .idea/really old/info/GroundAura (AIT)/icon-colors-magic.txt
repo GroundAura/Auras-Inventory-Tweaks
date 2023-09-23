@@ -1,0 +1,170 @@
+==================== DEFAULT ====================
+
+SCROLL:
+Fire				=	0xC73636	0xC73636
+Shock				=	0xFFFF00	0xFFFF00
+Frost				=	0x1FFBFF	0x1FFBFF
+
+SPELL:
+Alteration 			=	null
+Conjuration 		=	null
+Destruction			=	null
+Illusion 			=	null
+Restoration 		=	null
+Fire 				=	0xC73636	0xC73636
+Shock 				=	0xEAAB00	0xEAAB00
+Frost 				=	0x1FFBFF	0x1FFBFF
+
+
+==================== DEAR DIARY ====================
+
+SCROLL:
+Fire				=	0xC73636	0xC73636
+Shock				=	0xFFFF00	0xFFFF00
+Frost				=	0x1FFBFF	0x1FFBFF
+
+SPELL:
+Alteration 			=	4269568		0x412600
+Conjuration 		=	6171506		0x5E2B72
+Destruction			=	10027059	0x990033
+Illusion 			=	27248		0x006A70
+Restoration 		=	1987609		0x1E5419
+Fire 				=	10027059	0x990033
+Shock 				=	16776960	0xFFFF00
+Frost 				=	24495		0x005FAF
+
+
+==================== DEAR DIARY - DARK MODE ====================
+
+SCROLL:
+Fire				=	13055542	0xC73636
+Shock				=	16776960	0xFFFF00
+Frost				=	2096127		0x1FFBFF
+
+SPELL:
+Alteration 			=	9399110		0x8F6B46
+Conjuration 		=	10041497	0x993899
+Destruction			=	13055542	0xC73636
+Illusion 			=	5021348		0x4C9EA4
+Restoration 		=	44032		0x00AC00
+Fire 				=	13055542	0xC73636
+Shock 				=	15379200	0xEAAB00
+Frost 				=	2096127		0x1FFBFF
+
+
+==================== NORDIC UI ====================
+
+SCROLL:
+Fire				=	13055542	0xC73636
+Shock				=	16776960	0xFFFF00
+Frost				=	2096127		0x1FFBFF
+
+SPELL:
+Alteration 			=	null
+Conjuration 		=	null
+Destruction			=	null
+Illusion 			=	null
+Restoration 		=	null
+Fire 				=	13055542	0xC73636
+Shock 				=	15379200	0xEAAB00
+Frost 				=	2096127		0x1FFBFF
+
+
+==================== MAGIC COLORS ====================
+
+
+SPELL:
+Alteration			=	Brown (Light)	=	0x8F6B46
+Alteration			=	Brown (Dark)	=	0x412600
+Conjuration			=	Purple (Light)	=	0x993899
+Conjuration			=	Purple (Dark)	=	0x5E2B72
+Illusion			=	Teal (Light)	= 	0x4C9EA4
+Illusion			=	Teal (Dark)		=	0x006A70
+Restoration			=	Green (Light)	=	0x00AC00
+Restoration			=	Green (Dark)	=	0x1E5419
+Destruction/Fire	=	Red	(Light)		=	0xC73636
+Destruction/Fire	=	Red (Dark)		=	0x990033
+Shock				=	Yellow (Light)	=	0xFFFF00
+Shock				=	Yellow (Dark)	=	0xEAAB00
+Frost				=	Blue (Light)	=	0x1FFBFF
+Frost				=	Blue (Dark)		=	0x005FAF
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+==================== PLACEHOLDER ====================
+
+SCROLL:
+Fire				=	
+Shock				=	
+Frost				=	
+
+ARMOR:
+Clothing / Jewelry	=	
+Light Armor			=	
+Heavy Armor			=	
+
+WEAPON:
+Weapon				=	
+Ammo				=	
+
+POTION:
+Poison				=	
+Health				=	
+Magicka				=	
+Stamina				=	
+Fire				=	
+Shock				=	
+Frost				=	
+
+SOUL GEM:
+Empty				=	
+Petty				=	
+Lesser				=	
+Common				=	
+Greater				=	
+Grand				=	
+Azura				=	
+
+MISC:
+Gem					=	
+Hide				=	
+Ingot				=	
+Firewood			=	
+Gold				=	
+Leather				=	
+Leather	Strips		=	
+Childrens Clothes	=	
+
+SPELL:
+Alteration 			=	
+Conjuration 		=	
+Destruction			=	
+Illusion 			=	
+Restoration 		=	
+Fire 				=	
+Shock 				=	
+Frost 				=	

@@ -1,0 +1,138 @@
+Default
+
+; =====================================================================================================================
+[Appearance]
+; =====================================================================================================================
+icons.category.source = 'skyui/icons_category_psychosteve.swf'
+
+icons.item.source = 'skyui/icons_item_psychosteve.swf'
+icons.item.noColor = false
+icons.item.showStolen = true
+
+colors.text.enabled = 0xffffff
+colors.stolen.enabled = 0xffffff
+colors.negative.enabled = 0xff0000
+colors.text.disabled = 0x4c4c4c
+colors.stolen.disabled = 0x4c4c4c
+colors.negative.disabled = 0x800000
+
+
+
+Dear Diary
+
+; =====================================================================================================================
+[Appearance] 
+; =====================================================================================================================
+icons.category.source = 'skyui/icons_category_psychosteve.swf'
+
+icons.item.source = 'skyui/icons_item_psychosteve.swf'
+icons.item.noColor = false
+icons.item.showStolen = true
+
+colors.text.enabled = 0x141414
+colors.stolen.enabled = 0x141414
+colors.negative.enabled = 0x780000
+colors.text.disabled = 0x550000
+colors.stolen.disabled = 0x550000
+colors.negative.disabled = 0x800000
+
+
+
+Dear Diary Dark Mode - White Text
+
+; =====================================================================================================================
+[Appearance] 
+; =====================================================================================================================
+icons.category.source = 'skyui/icons_category_psychosteve.swf'
+
+icons.item.source = 'skyui/icons_item_psychosteve.swf'
+icons.item.noColor = false
+icons.item.showStolen = true
+
+colors.text.enabled = 0xffffff
+colors.stolen.enabled = 0xffffff
+colors.negative.enabled = 0xee0000
+colors.text.disabled = 0x4c4c4c
+colors.stolen.disabled = 0x4c4c4c
+colors.negative.disabled = 0x700000
+
+
+Dear Diary Dark Mode - Warm Text
+
+; =====================================================================================================================
+[Appearance] 
+; =====================================================================================================================
+icons.category.source = 'skyui/icons_category_psychosteve.swf'
+
+icons.item.source = 'skyui/icons_item_psychosteve.swf'
+icons.item.noColor = false
+icons.item.showStolen = true
+
+colors.text.enabled = 0xffcc99
+colors.stolen.enabled = 0xffcc99
+colors.negative.enabled = 0xee0000
+colors.text.disabled = 0x4c4c4c
+colors.stolen.disabled = 0x4c4c4c
+colors.negative.disabled = 0x700000
+
+
+
+SkyUI The Adventurer Theme
+
+; =====================================================================================================================
+[Appearance] 
+; =====================================================================================================================
+icons.category.source = 'skyui/icons_category_psychosteve.swf'
+
+icons.item.source = 'skyui/icons_item_psychosteve.swf'
+icons.item.noColor = true
+icons.item.showStolen = true
+
+colors.text.enabled = 0x431111
+colors.stolen.enabled = 0x431111
+colors.negative.enabled = 0x431111
+colors.text.disabled = 0x431111
+colors.stolen.disabled = 0x431111
+colors.negative.disabled = 0x431111
+
+
+
+Nordic UI (from DDCrusader)
+
+; =====================================================================================================================
+[Appearance] 
+; =====================================================================================================================
+icons.category.source = 'skyui/icons_category_psychosteve.swf'
+
+icons.item.source = 'skyui/icons_item_psychosteve.swf'
+icons.item.noColor = false
+icons.item.showStolen = true
+
+colors.text.enabled = 0x91FFFF
+colors.stolen.enabled = 0x91FFFF
+colors.negative.enabled = 0xFFC8DC
+colors.text.disabled = 0x4A6666
+colors.stolen.disabled = 0x4A6666
+colors.negative.disabled = 0xD8ABBB
+
+
+
+Nordic UI (from Body Slots - Nordic UI)
+
+; =====================================================================================================================
+[Appearance] 
+; =====================================================================================================================
+icons.category.source = 'skyui/icons_category_psychosteve.swf'
+
+icons.item.source = 'skyui/icons_item_psychosteve.swf'
+icons.item.noColor = true
+icons.item.showStolen = true
+
+colors.text.enabled = 0xffffff
+colors.stolen.enabled = 0xffffff
+colors.negative.enabled = 0xff0000
+colors.text.disabled = 0x4c4c4c
+colors.stolen.disabled = 0x4c4c4c
+colors.negative.disabled = 0x800000
+
+

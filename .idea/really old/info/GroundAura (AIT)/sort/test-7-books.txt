@@ -1,0 +1,53 @@
+
+
+
+-|BOOK|-
+
+[Book]
+Book
+Journal
+
+[Paper]
+Note
+
+
+-|USEFUL|-
+
+[Other]
+Document (Bank Note/Commerce/Currency)
+Manual
+Map
+Recipe
+Request (Bounty/Missive)
+
+[Artifact]
+Artifact
+Elder Scroll
+Eldritch Page
+Eldritch Tome (Black Book/Oghma Infinium)
+Relic
+
+
+-|TOME|-
+
+[Other]
+Bionics
+
+[Power Tome]
+None
+Alteration
+Illusion
+Destruction
+Conjuration
+Restoration
+
+[Spell Tome]
+None
+Alteration
+Illusion
+Destruction
+Conjuration
+Restoration
+
+
+
