@@ -22,6 +22,8 @@
 
 - **AIT Translations:** Added new strings: "$MagicEnchant" ("Enchant"), "$MagicSkill" ("Skill").
 
+- **AIT Translations:** Added temporary updated Polish translation.
+
 - **I4 Main Module (Spell/AIO):** Added more support for Spellsiphon.
 
 - **SkyUI Config:** Added text color patch for Edge UI (v0.45).
