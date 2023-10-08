@@ -2,15 +2,17 @@
 
 ## Version 4.2.0
 
-- **Now requires** BOOBIES v2.1.0+ for new icons and icons-only FOMOD option.
+- **Now requires** BOOBIES v2.1.1+ for new icons, bugfixes, and icons-only FOMOD option.
 
-- **Now requires** OCF v4.3.0+ for keyword changes and new mod support.
+- **Now requires** OCF v4.5.0+ for keyword changes and new mod support.
 
 - **FOMOD:** Removed dummy BOOBIES files. Now requires choosing icons-only option in BOOBIES' FOMOD.
 
-- **I4 Main Module (Ingestible/AIO):** Changes to waterskins including new "fill status" icons.
+- **I4 Main Module (Ingestible/AIO):** Changes to waterskins including new "fill status" icons. Added new icons for hair and organs.
 
 - **I4 Main Module (Ingredient/AIO):** Added new icons for hair and organs.
+
+- **I4 Main Module (Misc/AIO):** Added new icons for hair and organs.
 
 - **I4 Main Module (Spell/AIO):** Added keyword for additional mod support.
 

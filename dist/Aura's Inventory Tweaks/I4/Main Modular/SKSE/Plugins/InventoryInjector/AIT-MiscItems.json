@@ -317,8 +317,9 @@
 			"keywords": [ "OCF_IngrRemains_Organ" ]
 		},
 		"assign": {
-			"iconSource": "AIT/GameIcons/icons.swf",
-			"iconLabel": "misc_heart"
+			"iconSource": "BOOBIES Immersive Icons/ingredients.swf",
+			"iconLabel": "liver",
+			"iconColor": "#634538"
 		}
 	},
 	{
@@ -328,7 +329,19 @@
 		},
 		"assign": {
 			"iconSource": "AIT/GameIcons/icons.swf",
-			"iconLabel": "misc_eyeball"
+			"iconLabel": "misc_eyeball",
+			"iconColor": "#FFFFFF"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
+			"keywords": [ "OCF_IngrRemains_OrganHeart" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_heart",
+			"iconColor": "#7B2424"
 		}
 	},
 	{
@@ -1667,6 +1680,26 @@
 		"assign": {
 			"iconSource": "AIT/MoreIcons/icons.swf",
 			"iconLabel": "misc_tablewear"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
+			"keywords": [ "OCF_VesselDice" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_gamepiece"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
+			"keywords": [ "OCF_VesselGamePiece" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_gamepiece"
 		}
 	},
 	{

@@ -547,11 +547,11 @@
 		"match": {
 			"formType": "Potion",
 			"subType": "Food",
-			"keywords": { "anyOf": [ "OCF_IngrRemains_Organ", "OCF_IngrRemains_OrganHeart" ] }
+			"keywords": [ "OCF_IngrRemains_Organ" ]
 		},
 		"assign": {
-			"iconSource": "AIT/GameIcons/icons.swf",
-			"iconLabel": "misc_heart"
+			"iconSource": "BOOBIES Immersive Icons/ingredients.swf",
+			"iconLabel": "liver"
 		}
 	},
 	{
@@ -563,6 +563,17 @@
 		"assign": {
 			"iconSource": "AIT/GameIcons/icons.swf",
 			"iconLabel": "misc_eyeball"
+		}
+	},
+	{
+		"match": {
+			"formType": "Potion",
+			"subType": "Food",
+			"keywords": [ "OCF_IngrRemains_OrganHeart" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_heart"
 		}
 	},
 	{
