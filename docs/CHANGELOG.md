@@ -2,17 +2,23 @@
 
 ## Version 4.2.0
 
-- **Now requires** BOOBIES v2.1.1+ for new icons, bugfixes, and icons-only FOMOD option.
+- **Now requires** BOOBIES v2.1.1+ for new icons, bugfixes, and icons-only FOMOD option. Now recommended to choose icons-only option in BOOBIES' FOMOD.
 
 - **Now requires** OCF v4.5.0+ for keyword changes and new mod support.
 
-- **FOMOD:** Removed dummy BOOBIES files. Now requires choosing icons-only option in BOOBIES' FOMOD.
+- **FOMOD:** Added more options for dummy overwrite files.
+
+- **I4 Main Module (Armor/AIO):** Added support and icon for equippable "knuckles". Changes to Wintersun artifacts including better icons.
+
+- **I4 Main Module (Book/AIO):** Added support for more icon colors through keyword.
 
 - **I4 Main Module (Ingestible/AIO):** Changes to waterskins including new "fill status" icons. Added new icons for hair and organs.
 
 - **I4 Main Module (Ingredient/AIO):** Added new icons for hair and organs.
 
-- **I4 Main Module (Misc/AIO):** Added new icons for hair and organs.
+- **I4 Main Module (Key/AIO):** Added support and icons for skulls and daedric/dwemer relics.
+
+- **I4 Main Module (Misc/AIO):** Added support and icons for hair, organs, game pieces, bullets, and more. Fixes and tweaks.
 
 - **I4 Main Module (Spell/AIO):** Added keyword for additional mod support.
 

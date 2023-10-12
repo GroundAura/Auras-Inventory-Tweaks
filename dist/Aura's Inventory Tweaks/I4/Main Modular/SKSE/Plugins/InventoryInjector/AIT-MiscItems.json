@@ -519,16 +519,6 @@
 	{
 		"match": {
 			"formType": "MiscItem",
-			"formId": "BSHeartland.esm|C9BDE"
-		},
-		"assign": {
-			"subTypeDisplay": "$ItemBookDocument",
-			"iconLabel": "default_scroll"
-		}
-	},
-	{
-		"match": {
-			"formType": "MiscItem",
 			"keywords": [ "OCF_BookTextJournal" ]
 		},
 		"assign": {
@@ -801,6 +791,37 @@
 	{
 		"match": {
 			"formType": "MiscItem",
+			"keywords": [ "OCF_IngrMisc_Mineral" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$Ingredient"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
+			"keywords": [ "OCF_IngrPlant" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$Ingredient",
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_herbs",
+			"iconColor": "#216E23"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
+			"keywords": [ "OCF_IngrPlant_Flower" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_herbs"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
 			"keywords": [ "OCF_MiscJarBug" ]
 		},
 		"assign": {
@@ -1019,7 +1040,17 @@
 	{
 		"match": {
 			"formType": "MiscItem",
-			"keywords": { "anyOf": [ "OCF_AlchPoison", "VendorItemPoison" ] }
+			"keywords": [ "OCF_AlchDrinkAlcohol" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemFoodAlcohol",
+			"iconColor": "#FFC878"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
+			"keywords": [ "OCF_AlchPoison" ]
 		},
 		"assign": {
 			"subTypeDisplay": "$Poison",
@@ -1030,7 +1061,17 @@
 	{
 		"match": {
 			"formType": "MiscItem",
-			"keywords": { "anyOf": [ "OCF_AlchPotion", "VendorItemPotion" ] }
+			"keywords": [ "OCF_AlchPoison_Food" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemFoodPoisoned",
+			"iconColor": "#AD00B3"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
+			"keywords": [ "OCF_AlchPotion" ]
 		},
 		"assign": {
 			"subTypeDisplay": "$Potion",
@@ -1422,8 +1463,7 @@
 		"assign": {
 			"subTypeDisplay": "$ItemMiscTreasure",
 			"iconSource": "AIT/MoreIcons/icons.swf",
-			"iconLabel": "misc_chest",
-			"iconColor": "#CCCC33"
+			"iconLabel": "misc_chest"
 		}
 	},
 	{
@@ -1456,6 +1496,15 @@
 			"iconSource": "AIT/GameIcons/icons.swf",
 			"iconLabel": "misc_cloth",
 			"iconColor": "#FFCC99"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
+			"keywords": [ "ArmorCuirass" ]
+		},
+		"assign": {
+			"iconLabel": "armor_body"
 		}
 	},
 	{
@@ -1932,7 +1981,7 @@
 	{
 		"match": {
 			"formType": "MiscItem",
-			"keywords": { "anyOf": [ "OCF_ArtifactDaedric", "OCF_InvColorDaedric" ] }
+			"keywords": [ "OCF_ArtifactDaedric" ]
 		},
 		"assign": {
 			"iconColor": "#A14040"
@@ -1979,7 +2028,7 @@
 	{
 		"match": {
 			"formType": "MiscItem",
-			"keywords": { "anyOf": [ "OCF_ArtifactLegendary", "OCF_InvColorLegendary" ] }
+			"keywords": [ "OCF_ArtifactLegendary" ]
 		},
 		"assign": {
 			"iconColor": "#C1884D"
@@ -2006,6 +2055,25 @@
 	{
 		"match": {
 			"formType": "MiscItem",
+			"keywords": [ "OCF_RelicAedric" ]
+		},
+		"assign": {
+			"iconColor": "#0099CC"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
+			"keywords": [ "OCF_RelicAedric_Sapling" ]
+		},
+		"assign": {
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "misc_sapling"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
 			"keywords": { "anyOf": [ "OCF_RelicAyleid_Crystal", "IconAyleidCrystal" ] }
 		},
 		"assign": {
@@ -2013,17 +2081,6 @@
 			"iconSource": "I4IconAddon/icons.swf",
 			"iconLabel": "soulgem_ayleidcrystalfull",
 			"iconColor": "#5BC4C9"
-		}
-	},
-	{
-		"match": {
-			"formType": "MiscItem",
-			"keywords": [ "OCF_RelicElder_Sapling" ]
-		},
-		"assign": {
-			"iconSource": "AIT/MoreIcons/icons.swf",
-			"iconLabel": "misc_sapling",
-			"iconColor": "#4A592A"
 		}
 	},
 	{
@@ -2058,10 +2115,55 @@
 	{
 		"match": {
 			"formType": "MiscItem",
-			"keywords": [ "OCF_InvColorCopper" ]
+			"keywords": {
+				"anyOf": [
+					"OCF_InvColorCopper",
+					"OCF_MiscTableware_Bronze",
+					"OCF_MiscTreasure_Bronze"
+				]
+			}
 		},
 		"assign": {
 			"iconColor": "#B87333"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
+			"keywords": {
+				"anyOf": [
+					"OCF_InvColorGold",
+					"OCF_MiscTableware_Gold",
+					"OCF_MiscTreasure_Gold"
+				]
+			}
+		},
+		"assign": {
+			"iconColor": "#CCCC33"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
+			"keywords": {
+				"anyOf": [
+					"OCF_InvColorSilver",
+					"OCF_MiscTableware_Silver",
+					"OCF_MiscTreasure_Silver"
+				]
+			}
+		},
+		"assign": {
+			"iconColor": "#C0C0C0"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
+			"keywords": [ "OCF_InvColorDaedric" ]
+		},
+		"assign": {
+			"iconColor": "#A14040"
 		}
 	},
 	{
@@ -2076,19 +2178,19 @@
 	{
 		"match": {
 			"formType": "MiscItem",
-			"keywords": [ "OCF_InvColorGold" ]
+			"keywords": [ "OCF_InvColorLegendary" ]
 		},
 		"assign": {
-			"iconColor": "#CCCC33"
+			"iconColor": "#C1884D"
 		}
 	},
 	{
 		"match": {
 			"formType": "MiscItem",
-			"keywords": [ "OCF_InvColorSilver" ]
+			"keywords": [ "OCF_InvColorRed" ]
 		},
 		"assign": {
-			"iconColor": "#C0C0C0"
+			"iconColor": "#7B2424"
 		}
 	},
 	{
@@ -2139,6 +2241,23 @@
 			"itemClass": "0",
 			"itemSort": "0",
 			"subTypeDisplay": "$ItemPlaceholderSeparate"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
+			"keywords": [ "OCF_AmmoTypeBullet" ]
+		},
+		"assign": {
+			"equipType": "3",
+			"equipTypeDisplay": "$EqpAmmo",
+			"itemType": "1",
+			"itemClass": "6",
+			"itemSort": "1",
+			"subTypeDisplay": "$ItemAmmoBullet",
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "weapon_bullet",
+			"iconColor": "#A89E8C"
 		}
 	},
 	{

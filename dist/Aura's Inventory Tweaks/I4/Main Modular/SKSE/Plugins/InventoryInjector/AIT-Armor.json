@@ -791,6 +791,17 @@
 	{
 		"match": {
 			"formType": "Armor",
+			"keywords": [ "OCF_WeapTypeCestus1H" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemWeaponFist",
+			"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+			"iconLabel": "weapon_knuckles"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
 			"keywords": [ "OCF_FeetTypeCuisses" ]
 		},
 		"assign": {
@@ -1578,16 +1589,6 @@
 	{
 		"match": {
 			"formType": "Armor",
-			"keywords": [ "OCF_ArmorWintersun" ]
-		},
-		"assign": {
-			"subTypeDisplay": "$Artifact",
-			"iconLabel": "misc_artifact"
-		}
-	},
-	{
-		"match": {
-			"formType": "Armor",
 			"keywords": [ "OCF_ArtifactAedric" ]
 		},
 		"assign": {
@@ -1668,6 +1669,16 @@
 	{
 		"match": {
 			"formType": "Armor",
+			"keywords": [ "OCF_ArtifactAedric_Worship" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$Artifact",
+			"iconLabel": "misc_artifact"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
 			"keywords": [ "OCF_ArtifactDaedric" ]
 		},
 		"assign": {
@@ -1732,6 +1743,17 @@
 		"assign": {
 			"iconSource": "BOOBIES Immersive Icons/daedric artefacts.swf",
 			"iconLabel": "spellbreaker"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_ArtifactDaedric_Worship" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$Artifact",
+			"iconSource": "AIT/Aura/icons.swf",
+			"iconLabel": "misc_artifactdaedra"
 		}
 	},
 	{

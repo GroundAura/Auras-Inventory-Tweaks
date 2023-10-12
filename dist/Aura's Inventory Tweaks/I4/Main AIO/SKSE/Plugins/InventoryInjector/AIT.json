@@ -3339,6 +3339,17 @@
 	{
 		"match": {
 			"formType": "Armor",
+			"keywords": [ "OCF_WeapTypeCestus1H" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemWeaponFist",
+			"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+			"iconLabel": "weapon_knuckles"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
 			"keywords": [ "OCF_FeetTypeCuisses" ]
 		},
 		"assign": {
@@ -4126,16 +4137,6 @@
 	{
 		"match": {
 			"formType": "Armor",
-			"keywords": [ "OCF_ArmorWintersun" ]
-		},
-		"assign": {
-			"subTypeDisplay": "$Artifact",
-			"iconLabel": "misc_artifact"
-		}
-	},
-	{
-		"match": {
-			"formType": "Armor",
 			"keywords": [ "OCF_ArtifactAedric" ]
 		},
 		"assign": {
@@ -4216,6 +4217,16 @@
 	{
 		"match": {
 			"formType": "Armor",
+			"keywords": [ "OCF_ArtifactAedric_Worship" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$Artifact",
+			"iconLabel": "misc_artifact"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
 			"keywords": [ "OCF_ArtifactDaedric" ]
 		},
 		"assign": {
@@ -4280,6 +4291,17 @@
 		"assign": {
 			"iconSource": "BOOBIES Immersive Icons/daedric artefacts.swf",
 			"iconLabel": "spellbreaker"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_ArtifactDaedric_Worship" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$Artifact",
+			"iconSource": "AIT/Aura/icons.swf",
+			"iconLabel": "misc_artifactdaedra"
 		}
 	},
 	{
@@ -7059,6 +7081,33 @@
 	{
 		"match": {
 			"formType": "Book",
+			"keywords": [ "OCF_InvColorAedric" ]
+		},
+		"assign": {
+			"iconColor": "#0099CC"
+		}
+	},
+	{
+		"match": {
+			"formType": "Book",
+			"keywords": [ "OCF_InvColorDaedric" ]
+		},
+		"assign": {
+			"iconColor": "#A14040"
+		}
+	},
+	{
+		"match": {
+			"formType": "Book",
+			"keywords": [ "OCF_InvColorEldritch" ]
+		},
+		"assign": {
+			"iconColor": "#345F4C"
+		}
+	},
+	{
+		"match": {
+			"formType": "Book",
 			"keywords": [ "CraftingSmithingForge" ]
 		},
 		"assign": {
@@ -7268,9 +7317,34 @@
 	{
 		"match": {
 			"formType": "Key",
+			"keywords": [ "OCF_IngrRemains_BoneSkull" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$Remains",
+			"iconLabel": "misc_remains"
+		}
+	},
+	{
+		"match": {
+			"formType": "Key",
+			"keywords": [ "OCF_RelicDaedric" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemMiscRelic",
+			"iconSource": "AIT/Aura/icons.swf",
+			"iconLabel": "misc_artifactdaedra",
+			"iconColor": "#A14040"
+		}
+	},
+	{
+		"match": {
+			"formType": "Key",
 			"keywords": [ "OCF_RelicDwarven" ]
 		},
 		"assign": {
+			"subTypeDisplay": "$ItemMiscRelic",
+			"iconSource": "I4IconAddon/icons.swf",
+			"iconLabel": "misc_dwarvenscrap",
 			"iconColor": "#705F32"
 		}
 	},
@@ -7792,16 +7866,6 @@
 	{
 		"match": {
 			"formType": "MiscItem",
-			"formId": "BSHeartland.esm|C9BDE"
-		},
-		"assign": {
-			"subTypeDisplay": "$ItemBookDocument",
-			"iconLabel": "default_scroll"
-		}
-	},
-	{
-		"match": {
-			"formType": "MiscItem",
 			"keywords": [ "OCF_BookTextJournal" ]
 		},
 		"assign": {
@@ -8074,6 +8138,37 @@
 	{
 		"match": {
 			"formType": "MiscItem",
+			"keywords": [ "OCF_IngrMisc_Mineral" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$Ingredient"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
+			"keywords": [ "OCF_IngrPlant" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$Ingredient",
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_herbs",
+			"iconColor": "#216E23"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
+			"keywords": [ "OCF_IngrPlant_Flower" ]
+		},
+		"assign": {
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_herbs"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
 			"keywords": [ "OCF_MiscJarBug" ]
 		},
 		"assign": {
@@ -8292,7 +8387,17 @@
 	{
 		"match": {
 			"formType": "MiscItem",
-			"keywords": { "anyOf": [ "OCF_AlchPoison", "VendorItemPoison" ] }
+			"keywords": [ "OCF_AlchDrinkAlcohol" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemFoodAlcohol",
+			"iconColor": "#FFC878"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
+			"keywords": [ "OCF_AlchPoison" ]
 		},
 		"assign": {
 			"subTypeDisplay": "$Poison",
@@ -8303,7 +8408,17 @@
 	{
 		"match": {
 			"formType": "MiscItem",
-			"keywords": { "anyOf": [ "OCF_AlchPotion", "VendorItemPotion" ] }
+			"keywords": [ "OCF_AlchPoison_Food" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemFoodPoisoned",
+			"iconColor": "#AD00B3"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
+			"keywords": [ "OCF_AlchPotion" ]
 		},
 		"assign": {
 			"subTypeDisplay": "$Potion",
@@ -8695,8 +8810,7 @@
 		"assign": {
 			"subTypeDisplay": "$ItemMiscTreasure",
 			"iconSource": "AIT/MoreIcons/icons.swf",
-			"iconLabel": "misc_chest",
-			"iconColor": "#CCCC33"
+			"iconLabel": "misc_chest"
 		}
 	},
 	{
@@ -8729,6 +8843,15 @@
 			"iconSource": "AIT/GameIcons/icons.swf",
 			"iconLabel": "misc_cloth",
 			"iconColor": "#FFCC99"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
+			"keywords": [ "ArmorCuirass" ]
+		},
+		"assign": {
+			"iconLabel": "armor_body"
 		}
 	},
 	{
@@ -9205,7 +9328,7 @@
 	{
 		"match": {
 			"formType": "MiscItem",
-			"keywords": { "anyOf": [ "OCF_ArtifactDaedric", "OCF_InvColorDaedric" ] }
+			"keywords": [ "OCF_ArtifactDaedric" ]
 		},
 		"assign": {
 			"iconColor": "#A14040"
@@ -9252,7 +9375,7 @@
 	{
 		"match": {
 			"formType": "MiscItem",
-			"keywords": { "anyOf": [ "OCF_ArtifactLegendary", "OCF_InvColorLegendary" ] }
+			"keywords": [ "OCF_ArtifactLegendary" ]
 		},
 		"assign": {
 			"iconColor": "#C1884D"
@@ -9279,6 +9402,25 @@
 	{
 		"match": {
 			"formType": "MiscItem",
+			"keywords": [ "OCF_RelicAedric" ]
+		},
+		"assign": {
+			"iconColor": "#0099CC"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
+			"keywords": [ "OCF_RelicAedric_Sapling" ]
+		},
+		"assign": {
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "misc_sapling"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
 			"keywords": { "anyOf": [ "OCF_RelicAyleid_Crystal", "IconAyleidCrystal" ] }
 		},
 		"assign": {
@@ -9286,17 +9428,6 @@
 			"iconSource": "I4IconAddon/icons.swf",
 			"iconLabel": "soulgem_ayleidcrystalfull",
 			"iconColor": "#5BC4C9"
-		}
-	},
-	{
-		"match": {
-			"formType": "MiscItem",
-			"keywords": [ "OCF_RelicElder_Sapling" ]
-		},
-		"assign": {
-			"iconSource": "AIT/MoreIcons/icons.swf",
-			"iconLabel": "misc_sapling",
-			"iconColor": "#4A592A"
 		}
 	},
 	{
@@ -9331,10 +9462,46 @@
 	{
 		"match": {
 			"formType": "MiscItem",
-			"keywords": [ "OCF_InvColorCopper" ]
+			"keywords": {
+				"anyOf": [
+					"OCF_InvColorCopper",
+					"OCF_MiscTableware_Bronze",
+					"OCF_MiscTreasure_Bronze"
+				]
+			}
 		},
 		"assign": {
 			"iconColor": "#B87333"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
+			"keywords": {
+				"anyOf": [
+					"OCF_InvColorGold",
+					"OCF_MiscTableware_Gold",
+					"OCF_MiscTreasure_Gold"
+				]
+			}
+		},
+		"assign": {
+			"iconColor": "#CCCC33"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
+			"keywords": {
+				"anyOf": [
+					"OCF_InvColorSilver",
+					"OCF_MiscTableware_Silver",
+					"OCF_MiscTreasure_Silver"
+				]
+			}
+		},
+		"assign": {
+			"iconColor": "#C0C0C0"
 		}
 	},
 	{
@@ -9349,19 +9516,10 @@
 	{
 		"match": {
 			"formType": "MiscItem",
-			"keywords": [ "OCF_InvColorGold" ]
+			"keywords": [ "OCF_InvColorRed" ]
 		},
 		"assign": {
-			"iconColor": "#CCCC33"
-		}
-	},
-	{
-		"match": {
-			"formType": "MiscItem",
-			"keywords": [ "OCF_InvColorSilver" ]
-		},
-		"assign": {
-			"iconColor": "#C0C0C0"
+			"iconColor": "#7B2424"
 		}
 	},
 	{
@@ -9412,6 +9570,23 @@
 			"itemClass": "0",
 			"itemSort": "0",
 			"subTypeDisplay": "$ItemPlaceholderSeparate"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
+			"keywords": [ "OCF_AmmoTypeBullet" ]
+		},
+		"assign": {
+			"equipType": "3",
+			"equipTypeDisplay": "$EqpAmmo",
+			"itemType": "1",
+			"itemClass": "6",
+			"itemSort": "1",
+			"subTypeDisplay": "$ItemAmmoBullet",
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "weapon_bullet",
+			"iconColor": "#A89E8C"
 		}
 	},
 	{

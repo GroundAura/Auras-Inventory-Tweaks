@@ -23,9 +23,34 @@
 	{
 		"match": {
 			"formType": "Key",
+			"keywords": [ "OCF_IngrRemains_BoneSkull" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$Remains",
+			"iconLabel": "misc_remains"
+		}
+	},
+	{
+		"match": {
+			"formType": "Key",
+			"keywords": [ "OCF_RelicDaedric" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemMiscRelic",
+			"iconSource": "AIT/Aura/icons.swf",
+			"iconLabel": "misc_artifactdaedra",
+			"iconColor": "#A14040"
+		}
+	},
+	{
+		"match": {
+			"formType": "Key",
 			"keywords": [ "OCF_RelicDwarven" ]
 		},
 		"assign": {
+			"subTypeDisplay": "$ItemMiscRelic",
+			"iconSource": "I4IconAddon/icons.swf",
+			"iconLabel": "misc_dwarvenscrap",
 			"iconColor": "#705F32"
 		}
 	}

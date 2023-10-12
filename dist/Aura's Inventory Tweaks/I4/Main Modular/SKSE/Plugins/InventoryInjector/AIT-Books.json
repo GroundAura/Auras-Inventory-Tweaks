@@ -436,6 +436,33 @@
 	{
 		"match": {
 			"formType": "Book",
+			"keywords": [ "OCF_InvColorAedric" ]
+		},
+		"assign": {
+			"iconColor": "#0099CC"
+		}
+	},
+	{
+		"match": {
+			"formType": "Book",
+			"keywords": [ "OCF_InvColorDaedric" ]
+		},
+		"assign": {
+			"iconColor": "#A14040"
+		}
+	},
+	{
+		"match": {
+			"formType": "Book",
+			"keywords": [ "OCF_InvColorEldritch" ]
+		},
+		"assign": {
+			"iconColor": "#345F4C"
+		}
+	},
+	{
+		"match": {
+			"formType": "Book",
 			"keywords": [ "CraftingSmithingForge" ]
 		},
 		"assign": {
