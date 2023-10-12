@@ -8387,7 +8387,15 @@
 	{
 		"match": {
 			"formType": "MiscItem",
-			"keywords": [ "OCF_AlchDrinkAlcohol" ]
+			"keywords": {
+				"anyOf": [
+					"OCF_AlchDrinkAlcohol",
+					"VendorItemDrinkAlcohol",
+					"VendorItemDrinkAlcoholWeak",
+					"VendorItemDrinkAlcoholModerate",
+					"VendorItemDrinkAlcoholStrong"
+				]
+			}
 		},
 		"assign": {
 			"subTypeDisplay": "$ItemFoodAlcohol",
@@ -8843,6 +8851,15 @@
 			"iconSource": "AIT/GameIcons/icons.swf",
 			"iconLabel": "misc_cloth",
 			"iconColor": "#FFCC99"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
+			"keywords": [ "OCF_MiscOther" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$Misc"
 		}
 	},
 	{
