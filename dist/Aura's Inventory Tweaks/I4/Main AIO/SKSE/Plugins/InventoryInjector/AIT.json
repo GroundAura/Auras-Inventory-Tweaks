@@ -7852,8 +7852,8 @@
 		},
 		"assign": {
 			"subTypeDisplay": "$ItemMiscArcana",
-			"iconLabel": "misc_strips",
-			"iconColor": "#78558E"
+			"iconLabel": "soulgem_full",
+			"iconColor": "#00BCFF"
 		}
 	},
 	{
@@ -11254,8 +11254,7 @@
 		},
 		"assign": {
 			"iconSource": "Dodo/powers.swf",
-			"iconLabel": "power_instincts",
-			"iconColor": "#9328FF"
+			"iconLabel": "power_instincts"
 		}
 	},
 	{

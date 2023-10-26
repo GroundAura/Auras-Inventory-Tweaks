@@ -505,8 +505,8 @@
 		},
 		"assign": {
 			"subTypeDisplay": "$ItemMiscArcana",
-			"iconLabel": "misc_strips",
-			"iconColor": "#78558E"
+			"iconLabel": "soulgem_full",
+			"iconColor": "#00BCFF"
 		}
 	},
 	{

@@ -1396,8 +1396,7 @@
 		},
 		"assign": {
 			"iconSource": "Dodo/powers.swf",
-			"iconLabel": "power_instincts",
-			"iconColor": "#9328FF"
+			"iconLabel": "power_instincts"
 		}
 	},
 	{
