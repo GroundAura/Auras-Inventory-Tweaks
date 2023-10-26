@@ -1,5 +1,17 @@
 # Aura's Inventory Tweaks for SkyUI - Changelog
 
+## Version 4.4.0
+
+- **Now requires** OCF v4.7.0+ for keyword changes and new mod support.
+
+- **FOMOD:** Added more dummy overwrite files.
+
+- **AIT Translations:** Added new strings: "$ItemMiscArcana" ("Arcana"), "$ItemMiscSoulShard" ("Soul Shard").
+
+- **I4 Main Module (Misc/AIO):** Added keywords for additional mod support.
+
+- **I4 Main Module (Spell/AIO):** Added keywords for additional mod support.
+
 ## Version 4.3.0
 
 - **FOMOD:** Updated some descriptions and added an option.

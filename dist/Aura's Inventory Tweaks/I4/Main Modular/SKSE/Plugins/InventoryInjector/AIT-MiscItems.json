@@ -501,6 +501,17 @@
 	{
 		"match": {
 			"formType": "MiscItem",
+			"keywords": [ "OCF_MiscArcana" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemMiscArcana",
+			"iconLabel": "misc_strips",
+			"iconColor": "#78558E"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
 			"keywords": [ "OCF_BookTextBook" ]
 		},
 		"assign": {

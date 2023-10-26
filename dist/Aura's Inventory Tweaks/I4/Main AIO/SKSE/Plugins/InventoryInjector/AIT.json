@@ -7848,6 +7848,17 @@
 	{
 		"match": {
 			"formType": "MiscItem",
+			"keywords": [ "OCF_MiscArcana" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemMiscArcana",
+			"iconLabel": "misc_strips",
+			"iconColor": "#78558E"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
 			"keywords": [ "OCF_BookTextBook" ]
 		},
 		"assign": {
@@ -11478,6 +11489,19 @@
 		"match": {
 			"formType": "Spell",
 			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefSpellAssist_Necromancy" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicNecromancy",
+			"subTypeDisplay": "$MagicAssist",
+			"iconLabel": "misc_remains",
+			"iconColor": "#20C47D"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
 			"effectKeywords": {
 				"anyOf": [
 					"OCF_MgefSpellBound_Ammo",
@@ -11603,6 +11627,19 @@
 			"magicClassDisplay": "$MagicDruid",
 			"subTypeDisplay": "$MagicCurse",
 			"iconColor": "#6ED117"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefSpellCurse_Necromancy" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicNecromancy",
+			"subTypeDisplay": "$MagicCurse",
+			"iconLabel": "misc_remains",
+			"iconColor": "#20C47D"
 		}
 	},
 	{
@@ -12285,6 +12322,19 @@
 			"magicClassDisplay": "$MagicArcane",
 			"subTypeDisplay": "$MagicEnhance",
 			"iconLabel": "default_alteration"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefSpellEnhance_AttackNecromancy" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicNecromancy",
+			"subTypeDisplay": "$MagicEnhance",
+			"iconLabel": "misc_remains",
+			"iconColor": "#20C47D"
 		}
 	},
 	{
@@ -13392,6 +13442,32 @@
 			"iconSource": "I4IconAddon/icons.swf",
 			"iconLabel": "magic_vampire",
 			"iconColor": "#8E2129"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefSpellSacrifice_Corpse" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicNecromancy",
+			"subTypeDisplay": "$MagicSacrifice",
+			"iconLabel": "misc_remains",
+			"iconColor": "#20C47D"
+		}
+	},
+	{
+		"match": {
+			"formType": "Spell",
+			"spellType": { "anyOf": [ "Spell", "Power", "LesserPower" ] },
+			"effectKeywords": [ "OCF_MgefSpellSacrifice_Summon" ]
+		},
+		"assign": {
+			"magicClassDisplay": "$MagicArcane",
+			"subTypeDisplay": "$MagicSacrifice",
+			"iconLabel": "misc_remains",
+			"iconColor": "#993899"
 		}
 	},
 	{
