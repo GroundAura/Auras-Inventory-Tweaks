@@ -1,5 +1,11 @@
 # Aura's Inventory Tweaks for SkyUI - Changelog
 
+## Version 4.3.0
+
+- **FOMOD:** Updated some descriptions and added an option.
+
+- **SkyUI Config:** Added option for default SkyUI name-only sorting.
+
 ## Version 4.2.0
 
 - **Now requires** BOOBIES v2.1.1+ for new icons, bugfixes, and icons-only FOMOD option. Now recommended to choose icons-only option in BOOBIES' FOMOD.
