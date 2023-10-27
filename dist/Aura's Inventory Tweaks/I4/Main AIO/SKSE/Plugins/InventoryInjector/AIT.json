@@ -9544,6 +9544,24 @@
 	{
 		"match": {
 			"formType": "MiscItem",
+			"keywords": [ "OCF_InvColorLegendary" ]
+		},
+		"assign": {
+			"iconColor": "#C1884D"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
+			"keywords": [ "OCF_InvColorNecromancy" ]
+		},
+		"assign": {
+			"iconColor": "#20C47D"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
 			"keywords": [ "OCF_InvColorRed" ]
 		},
 		"assign": {
