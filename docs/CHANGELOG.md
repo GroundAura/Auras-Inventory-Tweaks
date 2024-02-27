@@ -2,11 +2,13 @@
 
 ## Version 4.4.0
 
-- **Now requires** OCF v4.7.0+ for keyword changes and new mod support.
+- **Now requires** Object Categorization Framework v5.0.0+ for keyword changes and new mod support. Also make sure you update Keyword Item Distributor to v3.2.0+.
 
 - **FOMOD:** Added more dummy overwrite files.
 
 - **AIT Translations:** Added new strings: "$ItemMiscArcana" ("Arcana"), "$ItemMiscSoulShard" ("Soul Shard").
+
+- **I4 Main Module (Armor/AIO):** Updated keywords to work with OCF v5.0.0.
 
 - **I4 Main Module (Misc/AIO):** Added keywords for additional mod support.
 

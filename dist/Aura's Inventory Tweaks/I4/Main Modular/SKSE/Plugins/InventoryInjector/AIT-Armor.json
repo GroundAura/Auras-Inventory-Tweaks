@@ -170,7 +170,7 @@
 		"match": {
 			"formType": "Armor",
 			"mainPart": 42,
-			"keywords": [ "ClothingCirclet" ]
+			"keywords": { "anyOf": [ "OCF_HeadTypeCirclet", "ClothingCirclet" ] }
 		},
 		"assign": {
 			"itemSort": "1",
@@ -192,7 +192,7 @@
 		"match": {
 			"formType": "Armor",
 			"mainPart": 35,
-			"keywords": [ "ClothingNecklace" ]
+			"keywords": { "anyOf": [ "OCF_BodyTypeAmulet", "ClothingNecklace" ] }
 		},
 		"assign": {
 			"itemSort": "1",
@@ -213,7 +213,7 @@
 	{
 		"match": {
 			"formType": "Armor",
-			"keywords": [ "ClothingRing" ]
+			"keywords": { "anyOf": [ "OCF_HandTypeRing", "ClothingRing" ] }
 		},
 		"assign": {
 			"itemSort": "1",
@@ -315,7 +315,7 @@
 	{
 		"match": {
 			"formType": "Armor",
-			"keywords": [ "OCF_HeadTypeEarsReal" ]
+			"keywords": { "anyOf": [ "OCF_HeadTypeEars", "OCF_HeadTypeEarsReal" ] }
 		},
 		"assign": {
 			"subTypeDisplay": "$Ears",
@@ -389,7 +389,7 @@
 	{
 		"match": {
 			"formType": "Armor",
-			"keywords": [ "OCF_HeadTypeHood" ]
+			"keywords": { "anyOf": [ "OCF_HeadTypeHood", "OCF_HeadTypeHoodLowered" ] }
 		},
 		"assign": {
 			"subTypeDisplay": "$Head",
@@ -413,6 +413,7 @@
 			"keywords": {
 				"anyOf": [
 					"OCF_HeadTypeMask",
+					"OCF_HeadTypeMask_Full",
 					"OCF_HeadTypeMaskFull"
 					]
 				}
@@ -425,7 +426,7 @@
 	{
 		"match": {
 			"formType": "Armor",
-			"keywords": [ "OCF_HeadTypeMaskEyes" ]
+			"keywords": { "anyOf": [ "OCF_HeadTypeMask_Eyes", "OCF_HeadTypeMaskEyes" ] }
 		},
 		"assign": {
 			"subTypeDisplay": "$ItemArmorFace",
@@ -436,7 +437,7 @@
 	{
 		"match": {
 			"formType": "Armor",
-			"keywords": [ "OCF_HeadTypeMaskMouth" ]
+			"keywords": { "anyOf": [ "OCF_HeadTypeMask_Mouth", "OCF_HeadTypeMaskMouth" ] }
 		},
 		"assign": {
 			"subTypeDisplay": "$ItemArmorFace",
@@ -447,7 +448,7 @@
 	{
 		"match": {
 			"formType": "Armor",
-			"keywords": [ "OCF_HeadTypeMaskHood" ]
+			"keywords": { "anyOf": [ "OCF_HeadTypeHoodMasked", "OCF_HeadTypeMaskHood" ] }
 		},
 		"assign": {
 			"subTypeDisplay": "$Head",
@@ -467,7 +468,7 @@
 	{
 		"match": {
 			"formType": "Armor",
-			"keywords": { "anyOf": [ "OCF_BodyTypeChoker", "ClothingChoker" ] }
+			"keywords": { "anyOf": [ "OCF_BodyTypeGorget", "ClothingChoker" ] }
 		},
 		"assign": {
 			"subTypeDisplay": "$ItemArmorChoker",
@@ -478,7 +479,7 @@
 	{
 		"match": {
 			"formType": "Armor",
-			"keywords": [ "WAF_ClothingCloak" ]
+			"keywords": { "anyOf": [ "OCF_BodyTypeCloak", "WAF_ClothingCloak" ] }
 		},
 		"assign": {
 			"subTypeDisplay": "$ItemArmorCloak",
@@ -563,7 +564,7 @@
 	{
 		"match": {
 			"formType": "Armor",
-			"keywords": [ "OCF_BodyTypeTailReal" ]
+			"keywords": { "anyOf": [ "OCF_BodyTypeTail_Real", "OCF_BodyTypeTailReal" ] }
 		},
 		"assign": {
 			"subTypeDisplay": "$Tail",
@@ -574,7 +575,7 @@
 	{
 		"match": {
 			"formType": "Armor",
-			"keywords": [ "OCF_BodyTypeTailArmor" ]
+			"keywords": { "anyOf": [ "OCF_BodyTypeTail_Armor", "OCF_BodyTypeTailArmor" ] }
 		},
 		"assign": {
 			"subTypeDisplay": "$ItemArmorTailArmor",
@@ -657,7 +658,7 @@
 	{
 		"match": {
 			"formType": "Armor",
-			"keywords": [ "ClothingBra" ]
+			"keywords": { "anyOf": [ "OCF_BodyTypeUnderwearF_Top", "ClothingBra" ] }
 		},
 		"assign": {
 			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
@@ -667,7 +668,7 @@
 	{
 		"match": {
 			"formType": "Armor",
-			"keywords": [ "ClothingPanties" ]
+			"keywords": { "anyOf": [ "OCF_BodyTypeUnderwearF_Bottom", "ClothingPanties" ] }
 		},
 		"assign": {
 			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
@@ -791,7 +792,7 @@
 	{
 		"match": {
 			"formType": "Armor",
-			"keywords": [ "OCF_WeapTypeCestus1H" ]
+			"keywords": { "anyOf": [ "OCF_HandTypeCestus", "OCF_WeapTypeCestus1H" ] }
 		},
 		"assign": {
 			"subTypeDisplay": "$ItemWeaponFist",
@@ -993,53 +994,7 @@
 	{
 		"match": {
 			"formType": "Armor",
-			"keywords": [ "WAF_ClothingPouch" ]
-		},
-		"assign": {
-			"itemClass": "10",
-			"itemSort": "1",
-			"subTypeDisplay": "$ItemArmorBag",
-			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
-			"iconLabel": "armor_pouch"
-		}
-	},
-	{
-		"match": {
-			"formType": "Armor",
-			"keywords": [ "OCF_BagTypeBackpack" ]
-		},
-		"assign": {
-			"subTypeDisplay": "$ItemArmorBackpack",
-			"iconSource": "AIT/MoreIcons/icons.swf",
-			"iconLabel": "misc_backpack"
-		}
-	},
-	{
-		"match": {
-			"formType": "Armor",
-			"keywords": [ "OCF_BagTypeBelt" ]
-		},
-		"assign": {
-			"subTypeDisplay": "$ItemArmorBeltBag",
-			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
-			"iconLabel": "armor_pouch"
-		}
-	},
-	{
-		"match": {
-			"formType": "Armor",
-			"keywords": [ "OCF_BagTypeBandolier" ]
-		},
-		"assign": {
-			"subTypeDisplay": "$ItemArmorBandolier",
-			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
-			"iconLabel": "armor_bandolier"
-		}
-	},
-	{
-		"match": {
-			"formType": "Armor",
-			"keywords": [ "WAF_ClothingAccessories" ]
+			"keywords": { "anyOf": [ "OCF_Accessory", "WAF_ClothingAccessories" ] }
 		},
 		"assign": {
 			"itemClass": "11",
@@ -1084,7 +1039,7 @@
 	{
 		"match": {
 			"formType": "Armor",
-			"keywords": { "anyOf": [ "OCF_MiscInstrument", "IconInstrument" ] }
+			"keywords": { "anyOf": [ "OCF_AccessoryInstrument", "OCF_MiscInstrument", "IconInstrument" ] }
 		},
 		"assign": {
 			"itemClass": "11",
@@ -1097,7 +1052,7 @@
 	{
 		"match": {
 			"formType": "Armor",
-			"keywords": [ "OCF_ToolLantern" ]
+			"keywords": { "anyOf": [ "OCF_ToolLantern", "OCF_ToolLanternPaper" ] }
 		},
 		"assign": {
 			"subTypeDisplay": "$ItemMiscLantern",
@@ -1109,17 +1064,7 @@
 	{
 		"match": {
 			"formType": "Armor",
-			"keywords": [ "OCF_ToolLanternPaper" ]
-		},
-		"assign": {
-			"iconSource": "AIT/MoreIcons/icons.swf",
-			"iconLabel": "misc_lantern"
-		}
-	},
-	{
-		"match": {
-			"formType": "Armor",
-			"keywords": [ "OCF_MiscJarBug" ]
+			"keywords": { "anyOf": [ "OCF_ToolLantern_Bug", "OCF_MiscJarBug" ] }
 		},
 		"assign": {
 			"iconSource": "I4IconAddon/icons.swf",
@@ -1129,7 +1074,7 @@
 	{
 		"match": {
 			"formType": "Armor",
-			"keywords": [ "OCF_MiscEmptyVessel_Jar" ]
+			"keywords": { "anyOf": [ "OCF_ToolLantern_BugEmpty", "OCF_MiscEmptyVessel_Jar" ] }
 		},
 		"assign": {
 			"iconSource": "I4IconAddon/icons.swf",
@@ -1248,6 +1193,52 @@
 	{
 		"match": {
 			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_AccessoryBag", "WAF_ClothingPouch" ] }
+		},
+		"assign": {
+			"itemClass": "10",
+			"itemSort": "1",
+			"subTypeDisplay": "$ItemArmorBag",
+			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+			"iconLabel": "armor_pouch"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_AccessoryBag_Backpack", "OCF_BagTypeBackpack" ] }
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorBackpack",
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "misc_backpack"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_AccessoryBag_Belt", "OCF_BagTypeBelt" ] }
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorBeltBag",
+			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+			"iconLabel": "armor_pouch"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_AccessoryBag_Bandolier", "OCF_BagTypeBandolier" ] }
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorBandolier",
+			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+			"iconLabel": "armor_bandolier"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
 			"mainPart": 30
 		},
 		"assign": {
@@ -1349,7 +1340,7 @@
 	{
 		"match": {
 			"formType": "Armor",
-			"keywords": { "anyOf": [ "BYOHAdoptionToyKeyword", "OCF_MiscChildToy", "IconToy" ] }
+			"keywords": { "anyOf": [ "OCF_AccessoryToy", "BYOHAdoptionToyKeyword", "OCF_MiscChildToy", "IconToy" ] }
 		},
 		"assign": {
 			"subTypeDisplay": "$Toy",
@@ -1384,7 +1375,7 @@
 	{
 		"match": {
 			"formType": "Armor",
-			"keywords": [ "ClothingStrapOn" ]
+			"keywords": { "anyOf": [ "OCF_BodyTypeStrapOn", "ClothingStrapOn" ] }
 		},
 		"assign": {
 			"itemClass": "12",
@@ -1438,11 +1429,10 @@
 					"OCF_HeadTypeGag",
 					"OCF_HeadTypeHat",
 					"OCF_HeadTypeHood",
-					"OCF_HeadTypeMaskCloth",
-					"OCF_HeadTypeMaskHood",
-					"OCF_BodyTypeBottom",
-					"OCF_BodyTypeNeck",
-					"OCF_BodyTypeTop",
+					"OCF_HeadTypeMask_Face",
+					"OCF_HeadTypeHood_Masked",
+					"OCF_BodyTypePants",
+					"OCF_BodyTypeTorso",
 					"OCF_BodyTypeUnderwear",
 					"OCF_HandTypeCuffs",
 					"OCF_FeetTypeHeels",
@@ -1498,13 +1488,13 @@
 					"OCF_HeadTypeGlasses",
 					"OCF_HeadTypeGoggles",
 					"OCF_HeadTypeHorns",
-					"OCF_HeadTypeMaskEyes",
-					"OCF_HeadTypeMaskFace",
+					"OCF_HeadTypeMask_Eyes",
+					"OCF_HeadTypeHoodMasked",
 					"OCF_HeadTypeWig",
 					"OCF_BodyTypePauldron",
-					"OCF_BodyTypeTailArmor",
-					"OCF_BodyTypeTailReal",
-					"BodyTypeWings_Wings",
+					"OCF_BodyTypeTail_Armor",
+					"OCF_BodyTypeTail_Real",
+					"OCF_BodyTypeWings_Real",
 					"OCF_HandTypeClaws",
 					"OCF_HandTypeNails",
 					"OCF_FeetTypeNails",
