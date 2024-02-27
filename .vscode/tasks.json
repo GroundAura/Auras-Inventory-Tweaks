@@ -1,0 +1,81 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+        {
+            "label": "copy-img.bat",
+            "type": "shell",
+            "command": ".vscode\\scripts\\copy-img.bat",
+            "presentation": {"echo": false, "reveal": "always", "focus": false, "panel": "shared", "showReuseMessage": false, "clear": true},
+        },
+        {
+            "label": "md2nexus.bat",
+            "type": "shell",
+            "command": ".vscode\\scripts\\md2nexus.bat",
+            "presentation": {"echo": false, "reveal": "always", "focus": false, "panel": "shared", "showReuseMessage": false, "clear": true},
+        },
+        {
+            "label": "mo2-downloads.bat",
+            "type": "shell",
+            "command": ".vscode\\scripts\\mo2-downloads.bat",
+            "presentation": {"echo": false, "reveal": "always", "focus": false, "panel": "shared", "showReuseMessage": false, "clear": true},
+        },
+        {
+            "label": "mo2-mod.bat",
+            "type": "shell",
+            "command": ".vscode\\scripts\\mo2-mod.bat",
+            "presentation": {"echo": false, "reveal": "always", "focus": false, "panel": "shared", "showReuseMessage": false, "clear": true},
+        },
+        {
+            "label": "zip.bat",
+            "type": "shell",
+            "command": ".vscode\\scripts\\zip.bat",
+            "presentation": {"echo": false, "reveal": "always", "focus": false, "panel": "shared", "showReuseMessage": false, "clear": true},
+        },
+        {
+            "label": "zip2.bat",
+            "type": "shell",
+            "command": ".vscode\\scripts\\zip2.bat",
+            "presentation": {"echo": false, "reveal": "always", "focus": false, "panel": "shared", "showReuseMessage": false, "clear": true},
+        },
+        {
+            "label": "Zip to build",
+            "group": "build",
+            "dependsOn": [
+                "copy-img.bat",
+                "zip.bat",
+                "zip2.bat"
+            ]
+        },
+        {
+            "label": "Copy to dist",
+            "group": "build",
+            "dependsOn": [
+                "copy-img.bat"
+            ]
+        },
+        {
+            "label": "Zip to MO2\\downloads",
+            "group": "build",
+            "dependsOn": [
+                "copy-img.bat",
+                "zip.bat",
+                "mo2-downloads.bat"
+            ]
+        },
+        {
+            "label": "Copy to MO2\\mods",
+            "group": "build",
+            "dependsOn": [
+                "copy-img.bat",
+                "mo2-mod.bat"
+            ]
+        },
+        {
+            "label": "Compile description",
+            "group": "build",
+            "dependsOn": [
+                "md2nexus.bat"
+            ]
+        }
+    ]
+}
