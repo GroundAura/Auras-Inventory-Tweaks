@@ -4,6 +4,8 @@
 
 - **Now requires** Object Categorization Framework v5.0.0+ for keyword changes and new mod support. Also make sure you update Keyword Item Distributor to v3.2.0+.
 
+- **Now requires** The Handy Icon Collection Collective v1.6.0 for bugfixes and new icons.
+
 - **FOMOD:** Added more dummy overwrite files.
 
 - **AIT Translations:** Added new strings: "$ItemMiscArcana" ("Arcana"), "$ItemMiscSoulShard" ("Soul Shard").
