@@ -1,0 +1,179 @@
+[size=4][i][b]Old AIT Description before I rewrote it around 20 May 2022. For if I remove some information that could be useful to others.[/b][/i][/size]
+
+[b]Preface[/b]
+[size=3]This mod page is me sharing my progress tweaking the inventory and other menus to make it how I want. I thought I could share because other people might be interested in some of the tweaks I'm making as well.
+
+[i]Also, this description is a bit out of date, so I'll rewrite it when I can.[/i]
+[/size]
+[b][size=6][u]Aura's Inventory Tweaks[/u][/size]
+
+[/b][b][size=5][u]Introduction[/u][/size]
+[/b][size=3]As you may know, when using SkyUI it separates information into columns. Left to right these are Icon, Name, Type, and then more such as Weight, Value, etc. I'm dealing with 2 columns mainly: Icon and Type.[/size]
+
+[size=3]The Icon is a small shape that helps give you an idea at a glance of what sort of item something might be. Like a sword, pickaxe, helmet, food, ingredient, health potion, etc. You get the idea. There are approximately 88 different item shapes included in the SkyUI interface files. However 19 or so are completely unused so you have probably never seen them before. For example there is a dragon priest mask, pants, a map, a journal, a troll skull, ore, etc. If you have SkyUI all these files are in your game, they're just not used. Even more are underutilized. There's an icon for Daedric artifacts that's only applied to the Skeleton Key. So, I thought I would try and use these icons.[/size]
+
+[size=3]The Type is a name that together with the icon can be used to identify what sort of item something is and how you might use it, and can be helpful with sorting through your inventory or chests to find types of items you're looking for. Examples of types include Sword, Body, Food, Clutter, Shield, Mace, Book, Stamina, etc.[/size]
+
+[size=3]What originally inspired me to go down this rabbit hole was pickaxes. If you are as bothered by tiny things as I am you may have noticed that there is a pickaxe icon and type that is used for vanilla pickaxes. However, for some reason it is not applied to Ancient Nordic Pickaxes, making them have the icon and type for generic war axes. This inconsistency bugged me. So I fixed it. I dug through files and played around until I got it to work.[/size]
+
+[size=3]A couple of mods that sort of do something similar are [url=https://www.nexusmods.com/skyrimspecialedition/mods/32561?tab=files]Fix Note Icon for SkyUI[/url] and [url=https://www.nexusmods.com/skyrimspecialedition/mods/37231]SkyUI Weapons Pack[/url], though they both do different things in different ways then I currently am. Fix Note Icon makes the note icon and type apply correctly. This is done through an SKSE plugin. SkyUI Weapons Pack adds new weapon icons and types by adding them directly to the interface (.swf) files.[/size]
+
+[size=3]Editing the .swf files directly is the only way I know of to add completely new icons, but also has the added problem of requiring complicated patches if you want to use those new icons with a menu skin replacer. [/size][url=https://www.nexusmods.com/skyrimspecialedition/mods/23010][size=3]Dear Diary[/size][/url][size=3] is an example on a menu skin replacer, and it's the one I currently use, however DD and it's reskins specifically have already included SkyUI Weapons Pack in them which is wonderful.[/size]
+
+[b][size=5][u]My Implementation[/u][/size]
+[/b][size=3]These are both slightly more complicated implementations then I was ready for so I found another way. This brings us to my mod. I found a way to use SkyUI's config file [/size][size=2]([i]/interface/skyui/config.txt[/i])[/size][size=3] to make my tweaks. This is done by overwriting some of the inventory data of any item with a defined Keyword.[/size]
+
+[size=3]For example this line of code in the config file will have the effect of changing the icon and type of Firewood from a clutter icon and the type "Clutter" to a wooden log icon and the type "Wood" [/size][size=2](as defined in [i]/interface/translations/skyui_se_english.txt[/i])[/size][size=3].[/size]
+[size=3][u]
+[/u][/size][code]props.miscIcon.keywords.VendorItemFirewood = <'iconLabel': 'misc_wood', 'subTypeDisplay': '$Firewood'>
+[/code]
+[img]https://staticdelivery.nexusmods.com/mods/1704/images/68557/68557-1653477047-1841615121.jpeg[/img]
+[img]https://staticdelivery.nexusmods.com/mods/1704/images/68557/68557-1653477059-2011807667.jpeg[/img]
+
+
+[size=3]Not all items I want to modify have any keywords at all. This makes them hard to modify. I would have to edit each individual item in xEdit, which would require lots of patches to work with everyone's load orders. This is where [/size][url=https://www.nexusmods.com/skyrimspecialedition/mods/55728][size=3]po3's Keyword Item Distributer[/size][/url][size=3] comes in. Keyword Item Distributer or KID allows you to use a text file to add keywords to items on runtime, which allows for easier and more compatible implementation of my mod.[/size]
+
+[size=3]This is how I've done what I've done. Now for what you can get out of it.[/size]
+
+[b][size=5][u]Downloadable Files[/u]
+[/size][/b][size=3]I will update this as often as is necessary as I make progress or add new files but this is what I've got for you at this time. Feel free to make suggestions.[/size]
+
+[b][size=5]Demo Version[/size]
+[/b][size=3]A very simple version, just to help you get an idea of what this can do.[/size]
+
+[size=3]Requirements:[/size]
+[list]
+[*][size=3]SkyUI[/size]
+[*][size=3]Fix Note Icon for SkyUI[/size]
+[*][size=3]Keyword Item Distributer[/size]
+[*][size=3]Dear Diary[/size]
+[/list][size=3]
+Features:
+[/size][list]
+[*][size=3]Consistent Pickaxes [/size][size=2](basically Fix Pickaxe Icon for SkyUI)[/size]
+[*][size=3]New Ore icon and type[/size]
+[*][size=3]New Firewood icon and type[/size]
+[/list]
+[b][size=5]Full Versions[/size][/b]
+[size=3]An expansive and ever-growing version based on what I currently use for my massive load order.[/size]
+[size=3]I'll probably update this version a lot so don't be afraid to find and share bugs or inconsistencies.[/size]
+[size=3]
+Features:
+[/size][list]
+[*][size=3]New weapon classifications such as Pickaxes, Katanas, Clubs, Sabers, and much more.[/size]
+[*][size=3]New armor classifications such as Cloaks, Backpacks, Wings, and much more[/size]
+[*][size=3]New book classifications such as Journals, Maps, Recipes, Elder Scrolls, and much more[/size]
+[*][size=3]New ingestible classifications such as Stews, Meat, Alcohol, Cure potions, and much more.[/size]
+[*][size=3]New misc item classifications such as Artifacts, Tablewear, Ore, Tools, Treasure, and much more.[/size]
+[*][size=3]You get the idea. Consistency fixes, icon implementation, new types.[/size]
+[*][size=3]Also includes personal tweaks to the types in the english translation file like changing "Gold" to "Coin" and "Hide" to "Pelt".[/size]
+[/list]
+[b][size=4]Aura's Interface Tweaks - [b]SkyUI (Default)[/b][/size][/b]
+[size=3]Full version for use [b]without[/b] Dear Diary.
+
+Requirements:[/size]
+[list]
+[*][size=3]SkyUI[/size]
+[*][size=3]Fix Note Icon for SkyUI[/size]
+[*][size=3]Keyword Item Distributer[/size]
+[*][size=3]SkyUI Weapons Pack[/size]
+[/list]
+[b][size=4]Aura's Interface Tweaks - [b]Dear Diary (Default)[/b][/size][/b]
+[size=3]Full version for use with Dear Diary or some DD reskins.[/size]
+[size=3]
+Requirements:
+[/size][list]
+[*][size=3]SkyUI[/size]
+[*][size=3]Fix Note Icon for SkyUI[/size]
+[*][size=3]Keyword Item Distributer[/size]
+[*][size=3]Dear Diary (or a DD reskin)[/size]
+[/list]
+[b][size=4]Aura's Interface Tweaks - [b]Dear Diary (Dark Mode)[/b][/size]
+[/b][size=3]Full version for use with Dear Diary Dark Mode.
+
+Requirements:
+[list]
+[*]SkyUI
+[*]Fix Note Icon for SkyUI
+[*]Keyword Item Distributer
+[*]Dear Diary Dark Mode
+[/list][/size]
+[b][size=5][u]Installation[/u][/size]
+[/b][size=3]Use a mod manager or manually copy into Data folder. Overwrite any other files if asked.[/size]
+
+[b][size=5][u]Compatibility[/u][/size][/b][size=3]
+I haven't done a lot of testing outside of my own load order. This should be considered an early access mod. I'm learning new things and finding new challenges all the time.[/size]
+
+[size=3]Make sure you have SkyUI, KID, and Dear Diary or Dear Diary Dark Mode.[/size]
+[size=3]If you use a reskin of Dear Diary or a different menu reskin altogether let me know if it works for you, and if it doesn't I might be able to make it work.[/size]
+
+[b][size=3]Important:[/size]
+[/b][size=3]This mod replaces the config.txt file located at [/size][size=2]([i]/interface/skyui/config.txt[/i])[/size][size=3] to work. Any other mod that replaces this file will not work out of the box. Tweaks will have to be manually merged for both mods to function as intended.[/size]
+[size=3]Mods I know of that replace this file are:[/size]
+
+[b][size=3]Compatible:
+[/size][/b][list]
+[*][size=3][url=https://www.nexusmods.com/skyrimspecialedition/mods/23010]Dear Diary[/url]﻿ [/size][size=2](Choose Dear Diary version)[/size]
+[*][size=3][url=https://www.nexusmods.com/skyrimspecialedition/mods/60837]Dear Diary Dark Mode[/url]﻿ [/size][size=2](Choose Dear Diary Dark Mode version)[/size]
+[*][size=3][url=https://www.nexusmods.com/skyrimspecialedition/mods/5336]Immersive Jewelry[/url]﻿ [/size][size=2](tweaks integrated)[/size]
+[*][url=https://www.nexusmods.com/skyrimspecialedition/mods/49095][size=3]Better SkyUI Config[/size][/url] [size=2](tweaks currently integrated)[/size]﻿
+[/list]
+[b][size=3]Incompatible [/size][size=2](Has to be Manually Merged)[/size][size=3]:[/size][/b][list]
+[*][size=3][url=https://www.nexusmods.com/skyrimspecialedition/mods/17601]SkyUI AIO Survival[/url]﻿[/size]
+[*][size=3][url=https://www.nexusmods.com/skyrimspecialedition/mods/20473]Icons in SkyUI Header[/url]﻿[/size]
+[/list]
+[size=3]I may may versions/patches for these mods in the future or integrate some of their tweaks in my main files. For now, if you want to attempt to patch these mods yourselves copy everything from [/size][b][size=3]my mod's[/size][/b][size=3] config.txt under the [/size][i][Properties][/i][size=3] section to the other mod's config.txt file.[/size]
+
+[b][size=5][u]Recommendations[/u]
+[/size][/b]
+[b][size=4]Recommended Mods for Menu UI:[/size][/b]
+[list]
+[*][size=3][url=https://www.nexusmods.com/skyrimspecialedition/mods/50018]Dear Diary - Normal Lockpicking Menu[/url]﻿[/size]
+[*][size=3][url=https://www.nexusmods.com/skyrimspecialedition/mods/49958]Dear Diary - Normal Book Menu[/url]﻿[/size]
+[*][size=3][url=https://www.nexusmods.com/skyrimspecialedition/mods/29773]Oblivionesque Category Icons for Dear Diary[/url]﻿[/size]
+[*][size=3][url=https://www.nexusmods.com/skyrimspecialedition/mods/18619]moreHUD - Inventory[/url]﻿[/size]
+[*][size=3][url=https://www.nexusmods.com/skyrimspecialedition/mods/56430]Mod Manager Menu Disabled[/url]﻿[/size]
+[*][size=3][url=https://www.nexusmods.com/skyrimspecialedition/mods/22825]Full-screen MCM Menu[/url]﻿[/size]
+[*][size=3][url=https://www.nexusmods.com/skyrimspecialedition/mods/25271]Better SkyUI Container Controls[/url]﻿[/size]
+[*][size=3][url=https://www.nexusmods.com/skyrimspecialedition/mods/386]Sovngarde - A Nordic Font[/url][/size]
+[*][size=3][url=https://www.nexusmods.com/skyrimspecialedition/mods/49952]Sovngarde - Alt Size for Dear Diary﻿[/url]﻿[/size]
+[*][size=3][url=https://www.nexusmods.com/skyrimspecialedition/mods/38708]Oblivion-like Loading Menu[/url]﻿[/size]
+[*][size=3][url=https://www.nexusmods.com/skyrimspecialedition/mods/1523]Skill Interface Retexture[/url]﻿[/size]
+[/list]
+[b][size=4]Recommended Mods for HUD UI:[/size][/b]
+[list]
+[*][size=3][url=https://www.nexusmods.com/skyrimspecialedition/mods/29682]Oblivionesque Active Effects for SkyUI[/url]﻿[/size]
+[*][size=3][url=https://www.nexusmods.com/skyrimspecialedition/mods/30431]Oblivionesque iNeed Icons[/url]﻿[/size]
+[*][size=3][url=https://www.nexusmods.com/skyrimspecialedition/mods/12937]A Matter of Time[/url]﻿[/size]
+[*][size=3][url=https://www.nexusmods.com/skyrimspecialedition/mods/12688]moreHUD[/url]﻿[/size]
+[*][size=3][url=https://www.nexusmods.com/skyrimspecialedition/mods/21085]Quick Loot RE[/url]﻿[/size]
+[*][size=3][url=https://www.nexusmods.com/skyrimspecialedition/mods/463]SkyHUD[/url]﻿[/size]
+[*][size=3][url=https://www.nexusmods.com/skyrimspecialedition/mods/47748]Paper HUD[/url]﻿[/size]
+[*][size=3][url=https://www.nexusmods.com/skyrimspecialedition/mods/12440]Immersive HUD[/url]﻿[/size]
+[*][size=3][url=https://www.nexusmods.com/skyrimspecialedition/mods/27008]iEquip[/url]﻿[/size]
+[*][size=3][url=https://www.nexusmods.com/skyrimspecialedition/mods/18075]No Empty Text on Containers[/url]﻿[/size]
+[*][size=3][url=https://www.nexusmods.com/skyrimspecialedition/mods/13604]Pastel Map Markers[/url]﻿[/size]
+[*][size=3][url=https://www.nexusmods.com/skyrimspecialedition/mods/9762]Undiscovered Means Unknown[/url]﻿[/size]
+[/list]
+[b][size=5][u]Final Words[/u][/size]
+[/b][size=3]If you have any problems or questions, make a post/discussion or DM me. I'll do my best to get back to you.[/size]
+[size=3]Again, remember that this mod is in a somewhat unpolished state. I just thought I would share my progress and journey.
+
+
+[/size][center]﻿
+[b][size=5]Check Out My Other Mods[/size]
+[/b]
+[b][u][size=2]
+[/size][size=4]UI[/size][/u][/b]
+[size=3][url=https://www.nexusmods.com/skyrimspecialedition/mods/68557]Aura's Inventory Tweaks[/url]﻿
+[/size]
+[size=4][b][u]Eyes & Hair[/u][/b][/size]
+[size=3][url=https://www.nexusmods.com/skyrimspecialedition/mods/68119]Aura's Playable Karliah Eyes[/url]﻿
+[url=https://www.nexusmods.com/skyrimspecialedition/mods/68123]Aura's Bald Head[/url]﻿
+[url=https://www.nexusmods.com/skyrimspecialedition/mods/68124]Aura's Eye Sockets[/url]﻿
+[/size]
+[size=4][b][u]Tweaks & Patches﻿[/u][/b][/size]
+[size=3][url=https://www.nexusmods.com/skyrimspecialedition/mods/68097]Less Shiny Bloody Bones - Skeleton Replacer HD[/url]﻿
+[url=https://www.nexusmods.com/skyrimspecialedition/mods/68694]Cliffracers on Solstheim - Tweaks & Patches[/url]﻿
+[url=https://www.nexusmods.com/skyrimspecialedition/mods/68697]Vargr (a Draugr Hound) - Tweaks & Patches[/url]﻿
+[url=https://www.nexusmods.com/skyrimspecialedition/mods/68200]RW2 Alt Volcanic Water Color + Underwater Visibility Patch[/url][/size][/center]
