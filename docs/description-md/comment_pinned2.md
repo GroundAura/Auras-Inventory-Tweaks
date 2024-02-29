@@ -1,0 +1,12 @@
+You can order the columns however you want, it just requires making some tweaks to the _config.txt_ file.
+Go into the SkyUI config (_/interface/skyui/config.txt_), navigate to the \[color=#b4a7d6\]\[ListLayout\]\[/color\] section, then to the \[color=#b4a7d6\]VIEWS\[/color\] subsection. There should be a list of "views" that correspond to tabs in your inventory.
+For example look at the \[color=#b4a7d6\]weaponView\[/color\], which corresponds to the Weapons tab in your inventory. \[color=#b4a7d6\]views.weaponView.columns\[/color\] determines which columns are available in the Weapons tab. It also determines the order they appear, left to right. You can simply change the order of each entry to whatever you want and repeat for each "view". Example in spoiler.
+\[spoiler\]
+To swap the locations of the "Value" and "Total Value" columns with the "Weight" and "Total Weight" columns in the Weapons tab you would change the following:
+\[color=#b4a7d6\]views.weaponView.columns = <equipColumn, iconColumn, gearNameColumn, itemSubTypeColumn, gearMaterialColumn, weaponEquipColumn, weaponDamageColumn, weaponBaseDamageColumn, weaponSpeedColumn, weaponReachColumn, weaponStaggerColumn, **itemValColumn**, **itemTValColumn**, itemValWtColumn, **itemWtColumn**, **itemTWtColumn**>\[/color\]
+to:
+\[color=#b4a7d6\]views.weaponView.columns = <equipColumn, iconColumn, gearNameColumn, itemSubTypeColumn, gearMaterialColumn, weaponEquipColumn, weaponDamageColumn, weaponBaseDamageColumn, weaponSpeedColumn, weaponReachColumn, weaponStaggerColumn, **itemWtColumn**, **itemTWtColumn**, itemValWtColumn, **itemValColumn**, **itemTValColumn**>\[/color\]
+
+You would need to repeat this step for every view (\[color=#b4a7d6\]views.xxxx.columns\[/color\]) that displays the Value column (\[color=#b4a7d6\]itemValColumn\[/color\]), or whatever columns you want to change the order of for consistency.
+\[/spoiler\]
+Unlike most files, you can actually change SkyUI's config.txt with the game open and immediately see the effects without reloading the game. Just open Skyrim, alt+tab to the config in a text editor, make your tweaks, alt+tab back to Skyrim, close and reopen the inventory, and see if the tweaks worked the way you want.
