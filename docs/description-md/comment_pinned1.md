@@ -7,8 +7,10 @@ If you have any questions, problems, or want to make your own tweaks, read the p
 \[color=#93c47d\]**AIT v2 is out!**\[/color\]
 I've completely rewritten the mod (again). It now uses an [Inventory Interface Information Injector](https://www.nexusmods.com/skyrimspecialedition/mods/85702) (I4) config to apply most of the data instead of config.txt. This should improve performance comparatively, and I4﻿ unlocks a lot of new options and features which I have utilized.
 I've also created [Object Categorization Framework](https://www.nexusmods.com/skyrimspecialedition/mods/81469) (OCF), whose keywords I've utilized instead of creating AIT-exclusive keywords. OCF also has a lot more compatibility with modded items. **Make sure to keep OCF up to date as any updates I make to that will be utilized in AIT.** This means that updating OCF may dynamically add new item support which will show up in inventories, even if AIT itself doesn't need an update.
+
 \[color=#ffd966\]\[size=3\]**Planned Features:**\[/size\]\[/color\]
 \[spoiler\]
+
 - Create additional icons.
 - Make all info columns work regardless of what SWF files the user has. I have a couple ideas for this, but it might take a while.
 - Make it so journals are detected by art object in a similar way to how notes are detected.
@@ -21,6 +23,7 @@ I've also created [Object Categorization Framework](https://www.nexusmods.com/sk
 - Figure out how to sort negative active effects on top.
 - Look into displaying more survival data for more survival mods. The mods on my radar to look at are: [CC Survival Mode](https://en.uesp.net/wiki/Skyrim:Survival_Mode), [SunHelm](https://www.nexusmods.com/skyrimspecialedition/mods/39414), [Frostfall](https://www.nexusmods.com/skyrimspecialedition/mods/671), [Frostbite](https://www.nexusmods.com/skyrimspecialedition/mods/27693), [iNeed](https://www.nexusmods.com/skyrimspecialedition/mods/645)/[Continued](https://www.nexusmods.com/skyrimspecialedition/mods/19390), [ELAF Hypothermia](https://www.nexusmods.com/skyrimspecialedition/mods/78307), [Hypothermia Plus](https://www.nexusmods.com/skyrimspecialedition/mods/12809), [Immersive Needs](https://www.nexusmods.com/skyrimspecialedition/mods/29317), [Last Seed](https://www.nexusmods.com/skyrimspecialedition/mods/56393), [RND](https://www.nexusmods.com/skyrimspecialedition/mods/3487)/[2.0](https://www.nexusmods.com/skyrimspecialedition/mods/23799), [The Frozen North](https://www.nexusmods.com/skyrimspecialedition/mods/33068), [CACO](https://www.nexusmods.com/skyrimspecialedition/mods/19924), [CCSM - Realistic Food Hunger Points](https://www.nexusmods.com/skyrimspecialedition/mods/58853), [CCSM - Realistic Food Patch](https://www.nexusmods.com/skyrimspecialedition/mods/33291), [CCSM - Improved SKSE](https://www.nexusmods.com/skyrimspecialedition/mods/78244), [CCSM - Conner's Survival Mode](https://www.nexusmods.com/skyrimspecialedition/mods/19152), CCSM - Simple Survival Mode Tweaks.
 \[/spoiler\]
+
 \[color=#ffd966\]\[size=3\]**Equipped Items on Top:**\[/size\]\[/color\]
 The way I have equipped items on top set up is state 2 of the icon column arrow. This means if you click the arrow above the icon column so that it's pointing [b]down[/b], equipped items (as well as unread books) are put on top. If you want to change sorting by equipped to the default behavior, just switch the 1st and 2nd states of the icon column.
 [spoiler]
