@@ -178,45 +178,62 @@ Install AIT and it's requirements with your choice of mod manager. Overwrite any
 [*]Install Aura's Inventory Tweaks and put it at the bottom of your asset load order so it overwrites any files.
 [*]Put AIT.esp at the bottom of your plugin load order. It needs to load as late as possible to ensure all of its I4 changes are applied correctly. You can load other plugins with I4 configs tied to them after AIT.esp if you want their rules to overwrite AIT's, but I take no responsibility for effects of other mods' I4 configs.
 [/list]
+[size=5][font=Verdana][b]Requirements[/b][/font][/size]
+
+[list]
+[*][url=https://www.nexusmods.com/skyrimspecialedition/mods/12604]SkyUI[/url]
+[*][url=https://www.nexusmods.com/skyrimspecialedition/mods/55728]Keyword Item Distributer[/url]
+[*][url=https://www.nexusmods.com/skyrimspecialedition/mods/81469]Object Categorization Framework[/url]
+[*][url=https://www.nexusmods.com/skyrimspecialedition/mods/85702]Inventory Interface Information Injector[/url] - If you are running Skyrim SE v1.5.97, you will also need [url=https://www.nexusmods.com/skyrimspecialedition/mods/87002]I4 for 1.5[/url].
+[*][url=https://www.nexusmods.com/skyrimspecialedition/mods/90508]The Handy Icon Collection Collective[/url]
+[*][url=https://www.nexusmods.com/skyrimspecialedition/mods/89241]B.O.O.B.I.E.S (aka Immersive Icons)[/url] - When installing, pick the "Only Files for AIT" option in the FOMOD.
+[/list]
+[size=5][font=Verdana][b]Optional Requirements[/b][/font][/size]
+
+[list]
+[*][url=https://www.nexusmods.com/skyrimspecialedition/mods/53000]MCM Helper[/url] - Recommended as this makes SkyUI's MCM options actually persist, which can help if your item card or model preview offsets get messed up.
+[/list]
 [size=5][font=Verdana][b]Mod Order (Mods View)[/b][/font][/size]
 
-[spoiler]
-[b]. . .[/b]
-[b]SkyUI[/b]
-[b]MCM Helper[/b]
-[b]Inventory Interface Information Injector[/b]
-(Inventory Interface Information Injector for Skyrim 1.5)
-(Dear Diary / Dear Diary Dark Mode / Nordic UI / Horizons UI / SkyUI The Adventurer Theme)
-(Dear Diary UI Skins / The Wooden Pad / Wood & Paper / Dwemer Readius UI / Factions UI / Dragonbreaker UI / Immortal UI / New Horizons UI / Untarnished UI)
-(SkyUI AIO Survival)
-(Nordic UI - SkyUI AIO Survival Patch)
-[b]. . .[/b]
-[b]The Handy Icon Collection Collective[/b]
-[b]Beautifully Overhauled & Objectively Better Icons Enriched for SkyUI[/b]
-[b]Object Categorization Framework[/b]
-[b]Aura's Inventory Tweaks[/b]
-(Custom AIT Patches)
-[/spoiler]
+Load AIT after every other mod that it has file conflicts with, unless noted otherwise in this mod's Compatibility section, or in those mods' descriptions.
 
 [size=5][font=Verdana][b]Plugin Order (Plugins View)[/b][/font][/size]
 
-[spoiler]
-(Base Skyrim plugins)
-(Creation Club plugins)
-(Unofficial Patch plugins)
-[i][b]OCF.esp[/b]
-SAS.esl[/i]
-[b]. . .[/b]
-[i][b]SkyUI_SE.esp[/b][/i]
-[i][b]MCMHelper.esp[/b][/i]
-[b]. . .[/b]
-[i]I4IconAddon.esp[/i] / (Any other plugins that have I4 configs, as those configs might conflict with AIT. You can put them after [i]AIT.esp[/i], but any categorization inconsistencies will not be my fault.)
-[i][b]AIT.esp[/b][/i]
-[i]AIT_DearDiary.esp[/i] / [i]AIT_DDDM-Warm.esp[/i] / [i]AIT_AdventurerTheme.esp[/i]
-[i]AIT_CustomPatch.esp[/i]
+I4 loads and applies its configs based on the load order of plugins that have the same name as those configs (eg [font=Courier New]I4IconAddon.esp[/font]/[font=Courier New]I4IconAddon.json[/font], [font=Courier New]AIT.esp[/font]/[font=Courier New]AIT.json[/font]). This means that the order that these plugins are in determines which icons, colors, and subtypes are displayed in-game.
 
-The important things are that OCF.esp loads before most mods that have keywords and that AIT.esp and its patches or custom patches made for AIT are after any mods that might have I4 configs.
-[/spoiler]
+[font=Verdana][b]The following plugins should load [i]before[/i] AIT.esp:[/b][/font]
+
+[list]
+[*][font=Courier New]I4IconAddon.esp[/font]
+[*][font=Courier New]Diseases - I4.esp[/font]
+[*][font=Courier New]Racial Abilities - I4.esp[/font]
+[*][font=Courier New]Standing Stones - I4.esp[/font]
+[*]and most any other plugin with an I4 json tied to it.
+[/list]
+[font=Verdana][b]The following plugins should load [i]after[/i] AIT.esp:[/b][/font]
+
+[list]
+[*][font=Courier New]I4ArmorIconsOverhaul.esp[/font]
+[*][font=Courier New]I4ShoutIconsOverhaul.esp[/font]
+[*][font=Courier New]I4WeaponIconsOverhaul.esp[/font]
+[*][font=Courier New]AIT_AdventurerTheme.esp[/font]
+[*][font=Courier New]AIT_DearDiary.esp[/font]
+[*][font=Courier New]AIT_DDDM-Warm.esp[/font]
+[*][font=Courier New]MarkAsJunk.esp[/font].
+[/list]
+[font=Verdana][b]Example Plugin Order:[/b][/font]
+[font=Courier New]I4IconAddon.esp[/font]
+[font=Courier New]Diseases - I4.esp[/font]
+[font=Courier New]Racial Abilities - I4.esp[/font]
+[font=Courier New]Standing Stones - I4.esp[/font]
+[font=Courier New]AIT.esp[/font]
+[font=Courier New]I4ArmorIconsOverhaul.esp[/font]
+[font=Courier New]I4ShoutIconsOverhaul.esp[/font]
+[font=Courier New]I4WeaponIconsOverhaul.esp[/font]
+[font=Courier New]AIT_AdventurerTheme.esp[/font]
+[font=Courier New]AIT_DearDiary.esp[/font]
+[font=Courier New]AIT_DDDM-Warm.esp[/font]
+[font=Courier New]MarkAsJunk.esp[/font]
 
 [size=5][center][img]https://raw.githubusercontent.com/GroundAura/Auras-Inventory-Tweaks/main/docs/images/banners/Compatibility.png[/img][/center][/size]
 
