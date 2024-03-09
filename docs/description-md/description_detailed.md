@@ -168,32 +168,27 @@ AIT only has native support for English, but others have made translations for o
 
 ## \[center\]![Installation](https://raw.githubusercontent.com/GroundAura/Auras-Inventory-Tweaks/main/docs/images/banners/Installation.png)\[/center\]
 
-Install AIT and it's requirements with your choice of mod manager. Overwrite any other files if asked. Let me know if you have any problems.
-
-1. Install [SkyUI](https://www.nexusmods.com/skyrimspecialedition/mods/12604), [Keyword Item Distributer](https://www.nexusmods.com/skyrimspecialedition/mods/55728), [Object Categorization Framework](https://www.nexusmods.com/skyrimspecialedition/mods/81469), [Inventory Interface Information Injector](https://www.nexusmods.com/skyrimspecialedition/mods/85702), [MCM Helper](https://www.nexusmods.com/skyrimspecialedition/mods/53000), [The Handy Icon Collection Collective](https://www.nexusmods.com/skyrimspecialedition/mods/90508), & their requirements.
-2. If your Skyrim executable is v1.5.97, install [Inventory Interface Information Injector for Skyrim 1.5](https://www.nexusmods.com/skyrimspecialedition/mods/87002).
-3. Install [B.O.O.B.I.E.S (aka Immersive Icons)](https://www.nexusmods.com/skyrimspecialedition/mods/89241). This mod is required only for icon .swf files found in (_/Interface/BOOBIES Immersive Icons/_). You can delete the rest of the files if you want, but leaving them shouldn't hurt anything. I recommend choosing the "Only files for AIT" option in the installer.
-4. Optionally, install a UI mod with SWF files that can provide data for some of the new info columns that require it. (Eg: [Dear Diary](https://www.nexusmods.com/skyrimspecialedition/mods/23010), [Dear Diary Dark Mode](https://www.nexusmods.com/skyrimspecialedition/mods/60837), [SkyUI AIO Survival](https://www.nexusmods.com/skyrimspecialedition/mods/17601), [Nordic UI - SkyUI AIO Survival Patch](https://www.nexusmods.com/skyrimspecialedition/mods/63879), etc.)
-5. Install Aura's Inventory Tweaks and put it at the bottom of your asset load order so it overwrites any files.
-6. Put AIT.esp at the bottom of your plugin load order. It needs to load as late as possible to ensure all of its I4 changes are applied correctly. You can load other plugins with I4 configs tied to them after AIT.esp if you want their rules to overwrite AIT's, but I take no responsibility for effects of other mods' I4 configs.
+Install AIT like any other mod, with MO2 or another mod manager.
 
 ## \[font=Verdana\]**Requirements**\[/font\]
 
-- [SkyUI](https://www.nexusmods.com/skyrimspecialedition/mods/12604)
+- [B.O.O.B.I.E.S. (Immersive Icons)](https://www.nexusmods.com/skyrimspecialedition/mods/89241) - When installing, pick the "Only Files for AIT" option in the FOMOD.
+
+- [Inventory Interface Information Injector](https://www.nexusmods.com/skyrimspecialedition/mods/85702) - If you are running Skyrim SE v1.5.97, you will also need [I4 for 1.5](https://www.nexusmods.com/skyrimspecialedition/mods/87002).
 
 - [Keyword Item Distributer](https://www.nexusmods.com/skyrimspecialedition/mods/55728)
 
 - [Object Categorization Framework](https://www.nexusmods.com/skyrimspecialedition/mods/81469)
 
-- [Inventory Interface Information Injector](https://www.nexusmods.com/skyrimspecialedition/mods/85702) - If you are running Skyrim SE v1.5.97, you will also need [I4 for 1.5](https://www.nexusmods.com/skyrimspecialedition/mods/87002).
+- [SkyUI](https://www.nexusmods.com/skyrimspecialedition/mods/12604)
 
 - [The Handy Icon Collection Collective](https://www.nexusmods.com/skyrimspecialedition/mods/90508)
-
-- [B.O.O.B.I.E.S (aka Immersive Icons)](https://www.nexusmods.com/skyrimspecialedition/mods/89241) - When installing, pick the "Only Files for AIT" option in the FOMOD.
 
 ## \[font=Verdana\]**Optional Requirements**\[/font\]
 
 - [MCM Helper](https://www.nexusmods.com/skyrimspecialedition/mods/53000) - Recommended as this makes SkyUI's MCM options actually persist, which can help if your item card or model preview offsets get messed up.
+
+- [SkyUI AIO Survival](https://www.nexusmods.com/skyrimspecialedition/mods/17601) - Some of the info columns included in AIT don't work on their own, and require specific code in some files to enable that functionality. SAS is currently the mod that provides the best. However, there are many known issues with this method (Skyrim version support, UI overhaul support, etc.), and I intend to make my own mod to provide this functionality as an alternative to SAS.
 
 ## \[font=Verdana\]**Mod Order (Mods View)**\[/font\]
 
