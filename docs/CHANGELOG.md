@@ -1,5 +1,9 @@
 # Aura's Inventory Tweaks for SkyUI - Changelog
 
+## Version 4.4.1
+
+- **I4 Main Module (Armor/AIO):** Fix for one of the underwear icons not rendering.
+
 ## Version 4.4.0
 
 - **Now requires** Object Categorization Framework v5.0.0+ for keyword changes and new mod support. Also make sure you update Keyword Item Distributor to v3.2.0+.

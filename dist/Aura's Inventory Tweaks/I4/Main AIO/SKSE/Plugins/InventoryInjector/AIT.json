@@ -3189,8 +3189,8 @@
 		},
 		"assign": {
 			"subTypeDisplay": "$ItemArmorUnderwear",
-			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
-			"iconLabel": "armor_underwears"
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "clothing_lingerie"
 		}
 	},
 	{
@@ -3239,8 +3239,8 @@
 			"keywords": [ "OCF_BodyTypeUnderwearF_Full2P" ]
 		},
 		"assign": {
-			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
-			"iconLabel": "armor_underwears"
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "clothing_lingerie"
 		}
 	},
 	{
