@@ -1,0 +1,1866 @@
+{
+"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+"rules": [
+	{
+		"match": {
+			"formType": "Armor"
+		},
+		"assign": {
+			"itemType": "2"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor"
+		},
+		"assign": {
+			"itemClass": "11",
+			"itemSort": "1",
+			"subTypeDisplay": "$ItemArmorAccessory"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"subType": "Circlet"
+		},
+		"assign": {
+			"itemClass": "5",
+			"itemSort": "1",
+			"subTypeDisplay": "$Circlet"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"subType": "Ears"
+		},
+		"assign": {
+			"itemClass": "5",
+			"itemSort": "2",
+			"subTypeDisplay": "$Ears"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"subType": "Amulet"
+		},
+		"assign": {
+			"itemClass": "6",
+			"itemSort": "1",
+			"subTypeDisplay": "$Amulet"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"subType": "Tail"
+		},
+		"assign": {
+			"itemClass": "6",
+			"itemSort": "2",
+			"subTypeDisplay": "$Tail"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"subType": "Ring"
+		},
+		"assign": {
+			"itemClass": "7",
+			"itemSort": "1",
+			"subTypeDisplay": "$Ring"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"subType": "Shield"
+		},
+		"assign": {
+			"itemClass": "0",
+			"itemSort": "1",
+			"subTypeDisplay": "$Shield"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_ArmorTypeHead_Main" ]
+		},
+		"assign": {
+			"itemClass": "1",
+			"itemSort": "1",
+			"subType": "Head",
+			"subTypeDisplay": "$Head"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_ArmorTypeBody_Main" ]
+		},
+		"assign": {
+			"itemClass": "2",
+			"itemSort": "1",
+			"subTypeDisplay": "$Body"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_ArmorTypeHands_Main" ]
+		},
+		"assign": {
+			"itemClass": "3",
+			"itemSort": "1",
+			"subTypeDisplay": "$Hands"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_ArmorTypeFeet_Main" ]
+		},
+		"assign": {
+			"itemClass": "4",
+			"itemSort": "1",
+			"subTypeDisplay": "$Feet"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"parts": [ 46 ]
+		},
+		"assign": {
+			"itemClass": "6",
+			"itemSort": "2",
+			"subTypeDisplay": "$ItemArmorCloak",
+			"iconSource": "I4IconAddon/icons.swf",
+			"iconLabel": "clothing_cloak"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"parts": [ 47 ]
+		},
+		"assign": {
+			"itemClass": "10",
+			"itemSort": "1",
+			"subTypeDisplay": "$ItemArmorBackpack",
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "misc_backpack"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_ArmorTypeHead_Alt" ]
+		},
+		"assign": {
+			"itemClass": "5",
+			"itemSort": "2"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"mainPart": 42,
+			"keywords": { "anyOf": [ "OCF_HeadTypeCirclet", "ClothingCirclet" ] }
+		},
+		"assign": {
+			"itemSort": "1",
+			"subTypeDisplay": "$Circlet",
+			"iconLabel": "armor_circlet"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "ArmorTypeBody_Alt" ]
+		},
+		"assign": {
+			"itemClass": "6",
+			"itemSort": "2"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"mainPart": 35,
+			"keywords": { "anyOf": [ "OCF_BodyTypeAmulet", "ClothingNecklace" ] }
+		},
+		"assign": {
+			"itemSort": "1",
+			"subTypeDisplay": "$Amulet",
+			"iconLabel": "armor_amulet"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_ArmorTypeHands_Alt" ]
+		},
+		"assign": {
+			"itemClass": "7",
+			"itemSort": "2"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_HandTypeRing", "ClothingRing" ] }
+		},
+		"assign": {
+			"itemSort": "1",
+			"subTypeDisplay": "$Ring",
+			"iconLabel": "armor_ring"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_ArmorTypeFeet_Alt" ]
+		},
+		"assign": {
+			"itemClass": "8",
+			"itemSort": "2"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_HeadTypeBandage" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorFace",
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "armor_eyepatch"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_HeadTypeBandana" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorBandana",
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "armor_bandana"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_HeadTypeBarrette" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorAccessory",
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_feather"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_HeadTypeBlindfold" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorFace",
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "armor_eyepatch"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_HeadTypeCrown", "ClothingCrown" ] }
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorCrown",
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "clothing_crown"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_HeadTypeEarCuffs", "ClothingEarCuffs" ] }
+		},
+		"assign": {
+			"itemClass": "5",
+			"itemSort": "2",
+			"subTypeDisplay": "$ItemArmorEarCuffs",
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "armor_earring"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_HeadTypeEarrings", "ClothingEarrings" ] }
+		},
+		"assign": {
+			"itemClass": "5",
+			"itemSort": "2",
+			"subTypeDisplay": "$ItemArmorEarrings",
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "armor_earring"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_HeadTypeEars", "OCF_HeadTypeEarsReal" ] }
+		},
+		"assign": {
+			"subTypeDisplay": "$Ears",
+			"iconLabel": "default_armor"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_HeadTypeEyePatch" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorFace",
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "armor_eyepatch"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_HeadTypeGag" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorGag",
+			"iconLabel": "armor_mask"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_HeadTypeGlasses" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorFace",
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "armor_glasses"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_HeadTypeGoggles" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorFace",
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "armor_goggles"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_HeadTypeHalo" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorHalo",
+			"iconLabel": "armor_circlet"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_HeadTypeHat" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$Head",
+			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+			"iconLabel": "armor_hat"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_HeadTypeHood", "OCF_HeadTypeHoodLowered" ] }
+		},
+		"assign": {
+			"subTypeDisplay": "$Head",
+			"iconLabel": "clothing_head"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_HeadTypeHorns" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorHorns",
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "armor_horns"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": {
+				"anyOf": [
+					"OCF_HeadTypeMask",
+					"OCF_HeadTypeMask_Full",
+					"OCF_HeadTypeMaskFull"
+					]
+				}
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorFace",
+			"iconLabel": "armor_mask"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_HeadTypeMask_Eyes", "OCF_HeadTypeMaskEyes" ] }
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorFace",
+			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+			"iconLabel": "armor_smallmask"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_HeadTypeMask_Mouth", "OCF_HeadTypeMaskMouth" ] }
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorFace",
+			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+			"iconLabel": "armor_facemask"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_HeadTypeHoodMasked", "OCF_HeadTypeMaskHood" ] }
+		},
+		"assign": {
+			"subTypeDisplay": "$Head",
+			"iconLabel": "clothing_head"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_HeadTypeWig" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorWig",
+			"iconLabel": "clothing_head"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_BodyTypeGorget", "ClothingChoker" ] }
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorChoker",
+			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+			"iconLabel": "armor_choker"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_BodyTypeCloak", "WAF_ClothingCloak" ] }
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorCloak",
+			"iconSource": "I4IconAddon/icons.swf",
+			"iconLabel": "clothing_cloak"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_BodyTypeHighNecklace", "ClothingHighNecklace" ] }
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorNecklace",
+			"iconLabel": "armor_amulet"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_BodyTypeNeck" ]
+		},
+		"assign": {
+			"iconLabel": "clothing_head"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_BodyTypeMantle" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorMantle",
+			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+			"iconLabel": "armor_scarf"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_BodyTypePants" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorPants",
+			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+			"iconLabel": "armor_trousers"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_BodyTypeScarf" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorScarf",
+			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+			"iconLabel": "armor_scarf"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_BodyTypePauldron" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorPauldron",
+			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+			"iconLabel": "armor_shoulder"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_BodyTypeSkirt" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorSkirt",
+			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+			"iconLabel": "armor_skirt"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_BodyTypeTail_Real", "OCF_BodyTypeTailReal" ] }
+		},
+		"assign": {
+			"subTypeDisplay": "$Tail",
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "armor_tail"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_BodyTypeTail_Armor", "OCF_BodyTypeTailArmor" ] }
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorTailArmor",
+			"iconLabel": "default_armor"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_BodyTypeTasset" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorTasset",
+			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+			"iconLabel": "armor_skirt"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_BodyTypeTorc", "OCF_ClothingTorc", "ArmorTorc", "JewelryTorc" ] }
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorTorc",
+			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+			"iconLabel": "armor_choker"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_BodyTypeTorso" ]
+		},
+		"assign": {
+			"iconLabel": "clothing_body",
+			"subTypeDisplay": "$ItemArmorTorso"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_BodyTypeTorso" ],
+			"weightClass": "Light"
+		},
+		"assign": {
+			"iconLabel": "lightarmor_body"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_BodyTypeTorso" ],
+			"weightClass": "Heavy"
+		},
+		"assign": {
+			"iconLabel": "armor_body"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_BodyTypeUnderwear" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorUnderwear",
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "clothing_lingerie"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_BodyTypeUnderwearM" ]
+		},
+		"assign": {
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "clothing_Mpanty"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_BodyTypeUnderwearF_Top", "ClothingBra" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+			"iconLabel": "armor_bra"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_BodyTypeUnderwearF_Bottom", "ClothingPanties" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+			"iconLabel": "armor_panties"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_BodyTypeUnderwearF_Full1P" ]
+		},
+		"assign": {
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "clothing_lingerie"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_BodyTypeUnderwearF_Full2P" ]
+		},
+		"assign": {
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "clothing_lingerie"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_BodyTypeWings" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorWings",
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "armor_wings"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"formId": "Skyrim On Skooma.esp|8EF"
+		},
+		"assign": {
+			"iconSource": "AIT/Aura/icons.swf",
+			"iconLabel": "potion_skooma"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"formId": "Skyrim On Skooma.esp|8F0"
+		},
+		"assign": {
+			"iconLabel": "food_beer"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_HandTypeArmlet" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorArmlet",
+			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+			"iconLabel": "armor_armlets"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_HandTypeBracelet", "ClothingBracelet" ] }
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorBracelet",
+			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+			"iconLabel": "armor_armlets"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_HandTypeBracer" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$Hands",
+			"iconLabel": "armor_bracer"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "WAF_SpikedGauntletGloves" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorHandsBrawling",
+			"iconSource": "JELFearsomeFistsImproved/icons.swf",
+			"iconLabel": "fff_brawlinggauntlet"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_HandTypeClaws" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorClaws",
+			"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+			"iconLabel": "weapon_claws"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_HandTypeNails" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorNails",
+			"iconLabel": "clothing_hands"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_HandTypeCestus", "OCF_WeapTypeCestus1H" ] }
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemWeaponFist",
+			"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+			"iconLabel": "weapon_knuckles"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_FeetTypeCuisses" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorLegs",
+			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+			"iconLabel": "armor_cuisses"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_FeetTypeGreaves" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorLegs",
+			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+			"iconLabel": "armor_greaves"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_FeetTypeHeels" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$Feet",
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "clothing_heels"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_FeetTypeHooves" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$Feet",
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "armor_hoof"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_FeetTypeNails" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorNails",
+			"iconLabel": "clothing_shoes"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_FeetTypeSabatons" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorSabatons",
+			"iconLabel": "armor_feet"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_FeetTypeFootwraps", "OCF_FeetTypeSandals", "OCF_FeetTypeShoes" ] }
+		},
+		"assign": {
+			"subTypeDisplay": "$Feet",
+			"iconLabel": "clothing_shoes"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_FeetTypeStockings" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorStockings",
+			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+			"iconLabel": "armor_stockings"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ShieldTypeBuckler", "ArmorShieldBuckler" ] },
+			"weightClass": "Heavy"
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorShieldBuckler"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ShieldTypeBuckler", "ArmorShieldBuckler" ] },
+			"weightClass": "Light"
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorShieldBuckler"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ShieldTypeKite", "ArmorShieldKite" ] },
+			"weightClass": "Heavy"
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorShieldKite"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ShieldTypeKite", "ArmorShieldKite" ] },
+			"weightClass": "Light"
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorShieldKite"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ShieldTypeTower", "ArmorShieldTower" ] },
+			"weightClass": "Heavy"
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorShieldTower"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ShieldTypeTower", "ArmorShieldTower" ] },
+			"weightClass": "Light"
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorShieldTower"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ToolCompass", "ArmorTypeShieldCompass" ] }
+		},
+		"assign": {
+			"itemSort": "2",
+			"subTypeDisplay": "$ItemMiscCompass",
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "misc_compass"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_BookTextMap", "ArmorTypeShieldMap", "IconMap" ] }
+		},
+		"assign": {
+			"itemSort": "2",
+			"subTypeDisplay": "$Map",
+			"iconLabel": "book_map"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_ToolSpyglass" ]
+		},
+		"assign": {
+			"itemSort": "2",
+			"subTypeDisplay": "$ItemMiscSpyglass",
+			"iconLabel": "misc_artifact"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_ToolWalkingStick" ]
+		},
+		"assign": {
+			"itemSort": "2",
+			"subTypeDisplay": "$ItemArmorWalkingStick",
+			"iconSource": "skyui_weapons_pack/icons.swf",
+			"iconLabel": "weapon_quarterstaff"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_Accessory", "WAF_ClothingAccessories" ] }
+		},
+		"assign": {
+			"itemClass": "11",
+			"itemSort": "1",
+			"subTypeDisplay": "$ItemArmorAccessory",
+			"iconSource": "AIT/GameIcons/icons.swf",
+			"iconLabel": "armor_ribbon"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_AccessoryBelt" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorAccessory",
+			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+			"iconLabel": "armor_belt"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_ArmorBeltBook" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorBeltBook",
+			"iconLabel": "book_journal"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_MiscEmptyVessel_Flask", "OCF_VesselFlask", "OCF_MiscEmptyVessel_Waterskin", "OCF_VesselWaterskin" ] }
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorAccessory",
+			"iconSource": "Dodo/powers.swf",
+			"iconLabel": "food_waterskin"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_AccessoryInstrument", "OCF_MiscInstrument", "IconInstrument" ] }
+		},
+		"assign": {
+			"itemClass": "11",
+			"itemSort": "1",
+			"subTypeDisplay": "$ItemMiscInstrument",
+			"iconSource": "I4IconAddon/icons.swf",
+			"iconLabel": "misc_instrument"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ToolLantern", "OCF_ToolLanternPaper" ] }
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemMiscLantern",
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "misc_lantern",
+			"iconColor": "#FFAA00"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ToolLantern_Bug", "OCF_MiscJarBug" ] }
+		},
+		"assign": {
+			"iconSource": "I4IconAddon/icons.swf",
+			"iconLabel": "misc_jar"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ToolLantern_BugEmpty", "OCF_MiscEmptyVessel_Jar" ] }
+		},
+		"assign": {
+			"iconSource": "I4IconAddon/icons.swf",
+			"iconLabel": "misc_jar",
+			"iconColor": "#FFFFFF"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_AccessoryJewelry" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorAccessory",
+			"iconLabel": "armor_amulet"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_AccessoryKatana" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorAccessory",
+			"iconSource": "skyui_weapons_pack/icons.swf",
+			"iconLabel": "weapon_katana"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_AccessoryPiercing" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorPiercing",
+			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+			"iconLabel": "armor_piercing"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_AccessoryShield" ]
+		},
+		"assign": {
+			"itemClass": "11",
+			"itemSort": "1",
+			"subTypeDisplay": "$ItemArmorAccessory",
+			"iconLabel": "default_armor"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_AccessoryShield" ],
+			"weightClass": "Heavy"
+		},
+		"assign": {
+			"iconLabel": "armor_shield"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_AccessoryShield" ],
+			"weightClass": "Light"
+		},
+		"assign": {
+			"iconLabel": "lightarmor_shield"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_AccessoryTattoo" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorTattoo",
+			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+			"iconLabel": "armor_tattoo"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_AccessoryMagic" ]
+		},
+		"assign": {
+			"iconLabel": "misc_artifact"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_ToolExtractor" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemMiscAlchemy",
+			"iconSource": "I4IconAddon/icons.swf",
+			"iconLabel": "misc_dwarvenscrap",
+			"iconColor": "#705F32"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_AccessoryEffect" ]
+		},
+		"assign": {
+			"itemClass": "11",
+			"itemSort": "2",
+			"subTypeDisplay": "$ItemArmorEffect",
+			"iconLabel": "default_effect"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_AccessoryBag", "WAF_ClothingPouch" ] }
+		},
+		"assign": {
+			"itemClass": "10",
+			"itemSort": "1",
+			"subTypeDisplay": "$ItemArmorBag",
+			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+			"iconLabel": "armor_pouch"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_AccessoryBag_Backpack", "OCF_BagTypeBackpack" ] }
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorBackpack",
+			"iconSource": "AIT/MoreIcons/icons.swf",
+			"iconLabel": "misc_backpack"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_AccessoryBag_Belt", "OCF_BagTypeBelt" ] }
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorBeltBag",
+			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+			"iconLabel": "armor_pouch"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_AccessoryBag_Bandolier", "OCF_BagTypeBandolier" ] }
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorBandolier",
+			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+			"iconLabel": "armor_bandolier"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"mainPart": 30
+		},
+		"assign": {
+			"itemClass": "1",
+			"itemSort": "1",
+			"subTypeDisplay": "$Head"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"mainPart": 31
+		},
+		"assign": {
+			"itemClass": "1",
+			"itemSort": "1",
+			"subTypeDisplay": "$Head"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"mainPart": 41
+		},
+		"assign": {
+			"itemClass": "1",
+			"itemSort": "1",
+			"subTypeDisplay": "$Head"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"mainPart": 32
+		},
+		"assign": {
+			"itemClass": "2",
+			"itemSort": "1",
+			"subTypeDisplay": "$Body"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"mainPart": 33
+		},
+		"assign": {
+			"itemClass": "3",
+			"itemSort": "1",
+			"subTypeDisplay": "$Hands"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"mainPart": 34
+		},
+		"assign": {
+			"itemClass": "3",
+			"itemSort": "1",
+			"subTypeDisplay": "$Hands"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"mainPart": 37
+		},
+		"assign": {
+			"itemClass": "4",
+			"itemSort": "1",
+			"subTypeDisplay": "$Feet"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"mainPart": 38
+		},
+		"assign": {
+			"itemClass": "4",
+			"itemSort": "1",
+			"subTypeDisplay": "$Feet"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"mainPart": 32,
+			"keywords": [ "ClothingRing" ]
+		},
+		"assign": {
+			"itemClass": "2",
+			"itemSort": "2",
+			"subTypeDisplay": "$Ring",
+			"iconLabel": "armor_ring"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_AccessoryToy", "BYOHAdoptionToyKeyword", "OCF_MiscChildToy", "IconToy" ] }
+		},
+		"assign": {
+			"subTypeDisplay": "$Toy",
+			"iconSource": "I4IconAddon/icons.swf",
+			"iconLabel": "misc_toy"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_MiscChildToy_Doll" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemMiscDoll",
+			"iconSource": "I4IconAddon/icons.swf",
+			"iconLabel": "misc_toy"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_MiscHorseGear", "CCHorseArmorKeyword", "IconHorseTack" ] }
+		},
+		"assign": {
+			"itemClass": "11",
+			"itemSort": "3",
+			"subTypeDisplay": "$ItemMiscHorseTack",
+			"iconSource": "I4IconAddon/icons.swf",
+			"iconLabel": "misc_horsetack"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_BodyTypeStrapOn", "ClothingStrapOn" ] }
+		},
+		"assign": {
+			"itemClass": "12",
+			"itemSort": "1",
+			"subTypeDisplay": "$ItemArmorStrapOn"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "WAF_ClothingMedicalHealing" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorBandages"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_HandTypeCuffs", "OCF_HeadTypeGag" ] }
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemArmorBindings"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_IngrRemains_BoneSkull_Troll" ]
+		},
+		"assign": {
+			"iconLabel": "misc_trollskull"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"weightClass": { "anyOf": [ "Jewelry", "Other" ] },
+			"keywords": {
+				"anyOf": [
+					"ArmorClothing",
+					"VendorItemClothing",
+					"BYOHAdoptionClothesKeyword",
+					"ClothingHead",
+					"ClothingBody",
+					"ClothingHands",
+					"ClothingFeet",
+					"OCF_HeadTypeBandana",
+					"OCF_HeadTypeBlindfold",
+					"OCF_HeadTypeEyePatch",
+					"OCF_HeadTypeGag",
+					"OCF_HeadTypeHat",
+					"OCF_HeadTypeHood",
+					"OCF_HeadTypeMask_Face",
+					"OCF_HeadTypeHood_Masked",
+					"OCF_BodyTypePants",
+					"OCF_BodyTypeTorso",
+					"OCF_BodyTypeUnderwear",
+					"OCF_HandTypeCuffs",
+					"OCF_FeetTypeHeels",
+					"OCF_FeetTypeShoes",
+					"OCF_FeetTypeStockings"
+				]
+			}
+		},
+		"assign": {
+			"weightClass": "Clothing",
+			"weightClassDisplay": "$Clothing",
+			"armorClass": "4"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"weightClass": { "anyOf": [ "Clothing", "Other" ] },
+			"keywords": {
+				"anyOf": [
+					"ArmorJewelry",
+					"VendorItemJewelry",
+					"ClothingCrown",
+					"ClothingEarCuffs",
+					"ClothingEarrings",
+					"ClothingChoker",
+					"ClothingHighNecklace",
+					"ClothingNecklace",
+					"JewelryTorc",
+					"ClothingBracelet",
+					"ClothingRing",
+					"BodyTypeWings_Jewelry"
+				]
+			}
+		},
+		"assign": {
+			"weightClass": "Jewelry",
+			"weightClassDisplay": "$Jewelry",
+			"armorClass": "5"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"weightClass": { "anyOf": [ "Clothing", "Jewelry" ] },
+			"keywords": {
+				"anyOf": [
+					"ArmorShield",
+					"WAF_ClothingPouch",
+					"WAF_ClothingAccessories",
+					"WAF_ClothingMedicalHealing",
+					"OCF_HeadTypeEarsReal",
+					"OCF_HeadTypeGlasses",
+					"OCF_HeadTypeGoggles",
+					"OCF_HeadTypeHorns",
+					"OCF_HeadTypeMask_Eyes",
+					"OCF_HeadTypeHoodMasked",
+					"OCF_HeadTypeWig",
+					"OCF_BodyTypePauldron",
+					"OCF_BodyTypeTail_Armor",
+					"OCF_BodyTypeTail_Real",
+					"OCF_BodyTypeWings_Real",
+					"OCF_HandTypeClaws",
+					"OCF_HandTypeNails",
+					"OCF_FeetTypeNails",
+					"OCF_FeetTypeSabatons"
+				]
+			}
+		},
+		"assign": {
+			"weightClass": "Other",
+			"weightClassDisplay": "$Other",
+			"armorClass": "6"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"formId": "Skyrim.esm|8895A"
+		},
+		"assign": {
+			"weightClass": "Other",
+			"armorClass": "6",
+			"weightClassDisplay": "$Other",
+			"subTypeDisplay": "$Circlet",
+			"iconLabel": "armor_circlet"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"weightClass": "Heavy"
+		},
+		"assign": {
+			"armorClass": "1"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"weightClass": "Light"
+		},
+		"assign": {
+			"armorClass": "3"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"weightClass": "Clothing"
+		},
+		"assign": {
+			"armorClass": "4"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"weightClass": "Jewelry"
+		},
+		"assign": {
+			"armorClass": "5"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"weightClass": "Other"
+		},
+		"assign": {
+			"armorClass": "6"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "ArmorMedium" ]
+		},
+		"assign": {
+			"armorClass": "2",
+			"weightClassDisplay": "$ArmorMedium"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_ArtifactAedric" ]
+		},
+		"assign": {
+			"iconColor": "#0099CC"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ArtifactAedric_AurielShield", "OCF_ReplicaAedric_AurielShield" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/aedric artefacts.swf",
+			"iconLabel": "auriel_shield"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ArtifactAedric_CrusaderHelm", "OCF_ReplicaAedric_CrusaderHelm" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/aedric artefacts.swf",
+			"iconLabel": "crusader_helm"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ArtifactAedric_CrusaderCuirass", "OCF_ReplicaAedric_CrusaderCuirass" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/aedric artefacts.swf",
+			"iconLabel": "crusader_cuirass"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ArtifactAedric_CrusaderGauntlets", "OCF_ReplicaAedric_CrusaderGauntlets" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/aedric artefacts.swf",
+			"iconLabel": "crusader_gauntlets"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ArtifactAedric_CrusaderBoots", "OCF_ReplicaAedric_CrusaderBoots" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/aedric artefacts.swf",
+			"iconLabel": "crusader_boots"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ArtifactAedric_CrusaderShield", "OCF_ReplicaAedric_CrusaderShield" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/aedric artefacts.swf",
+			"iconLabel": "crusader_shield"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ArtifactAedric_ElderScroll", "OCF_ReplicaAedric_ElderScroll" ] }
+		},
+		"assign": {
+			"subTypeDisplay": "$ItemBookElderScroll",
+			"iconSource": "I4IconAddon/icons.swf",
+			"iconLabel": "misc_elderscroll"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_ArtifactAedric_Worship" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$Artifact",
+			"iconLabel": "misc_artifact"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_ArtifactDaedric" ]
+		},
+		"assign": {
+			"iconColor": "#A14040"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ArtifactDaedric_EbonyMail", "OCF_ReplicaDaedric_EbonyMail" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/daedric artefacts.swf",
+			"iconLabel": "ebony_mail"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ArtifactDaedric_MasqueClavicusVile", "OCF_ReplicaDaedric_MasqueClavicusVile" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/daedric artefacts.swf",
+			"iconLabel": "mask_clavicus_vile"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ArtifactDaedric_RingHircine", "OCF_ReplicaDaedric_RingHircine" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/daedric artefacts.swf",
+			"iconLabel": "ring_hircine"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ArtifactDaedric_RingNamira", "OCF_ReplicaDaedric_RingNamira" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/daedric artefacts.swf",
+			"iconLabel": "ring_namira"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ArtifactDaedric_SaviorsHide", "OCF_ReplicaDaedric_SaviorsHide" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/daedric artefacts.swf",
+			"iconLabel": "savior_hide"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ArtifactDaedric_Spellbreaker", "OCF_ReplicaDaedric_Spellbreaker" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/daedric artefacts.swf",
+			"iconLabel": "spellbreaker"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_ArtifactDaedric_Worship" ]
+		},
+		"assign": {
+			"subTypeDisplay": "$Artifact",
+			"iconSource": "AIT/Aura/icons.swf",
+			"iconLabel": "misc_artifactdaedra"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_ArtifactDwarven" ]
+		},
+		"assign": {
+			"iconColor": "#FFD700"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ArtifactDwarven_AetherialCrown", "OCF_ReplicaDwarven_AetherialCrown" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/dwemer artefacts.swf",
+			"iconLabel": "aetherial_crown"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ArtifactDwarven_AetherialShield", "OCF_ReplicaDwarven_AetherialShield" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/dwemer artefacts.swf",
+			"iconLabel": "aetherial_shield"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ArtifactDwarven_Wraithguard", "OCF_ReplicaDwarven_Wraithguard" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/dwemer artefacts.swf",
+			"iconLabel": "armor_wraithguard"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ArtifactLegendary", "OCF_InvColorLegendary " ] }
+		},
+		"assign": {
+			"iconColor": "#C1884D"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ArtifactLegendary_DawnguardRuneShield", "OCF_ReplicaLegendary_DawnguardRuneShield" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/legendary artefacts.swf",
+			"iconLabel": "dawnguard_runeshield"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ArtifactLegendary_DragonPriestMask", "OCF_ReplicaLegendary_DragonPriestMask" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+			"iconLabel": "armor_dragonmask"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_ArtifactLegendary_ShieldYsgramor", "OCF_ReplicaLegendary_ShieldYsgramor" ] }
+		},
+		"assign": {
+			"iconSource": "BOOBIES Immersive Icons/legendary artefacts.swf",
+			"iconLabel": "ysgramor_shield"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": { "anyOf": [ "OCF_Placeholder_BuildingPart", "IconHousePart" ] }
+		},
+		"assign": {
+			"itemType": "9",
+			"itemClass": "0",
+			"subTypeDisplay": "$ItemPlaceholderBuild",
+			"iconSource": "I4IconAddon/icons.swf",
+			"iconLabel": "misc_housepart",
+			"iconColor": "#FFFFFF"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_Placeholder_Filter" ]
+		},
+		"assign": {
+			"itemClass": "0",
+			"itemSort": "0",
+			"subTypeDisplay": "$ItemPlaceholderFilter",
+			"iconLabel": "default_book_read",
+			"iconColor": "#FFFFFF"
+		}
+	},
+	{
+		"match": {
+			"formType": "Armor",
+			"keywords": [ "OCF_Placeholder_Separate" ]
+		},
+		"assign": {
+			"itemClass": "0",
+			"itemSort": "0",
+			"subTypeDisplay": "$ItemPlaceholderSeparate"
+		}
+	}
+]
+}

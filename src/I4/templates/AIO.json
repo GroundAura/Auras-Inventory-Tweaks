@@ -1,0 +1,15 @@
+{
+"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+"rules": [
+[OTHER]
+[WEAPONS]
+[ARMOR]
+[INGESTIBLES]
+[SCROLLS]
+[INGREDIENTS]
+[BOOKS]
+[KEYS]
+[MISC]
+[SPELLS]
+]
+}

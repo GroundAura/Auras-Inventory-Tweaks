@@ -76,6 +76,13 @@
             "dependsOn": [
                 "md2nexus.bat"
             ]
+        },
+        {
+            "label": "Compile jsons",
+            "type": "shell",
+            "command": "${command:python.interpreterPath}",
+            "args": [".vscode\\scripts\\json.py"],
+            "group": "build"
         }
     ]
 }
