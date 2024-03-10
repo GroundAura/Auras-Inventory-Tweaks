@@ -78,10 +78,10 @@
             ]
         },
         {
-            "label": "Compile jsons",
+            "label": "Compile I4",
             "type": "shell",
             "command": "${command:python.interpreterPath}",
-            "args": [".vscode\\scripts\\json.py"],
+            "args": [".vscode\\scripts\\generate-json.py"],
             "group": "build"
         }
     ]
