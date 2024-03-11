@@ -26,6 +26,10 @@ build/release/
 # Custom #
 *temp.*
 *snippets.*
+test*.bat
+test*.ini
+test*.json
+test*.py
 
 # Dependencies #
 
