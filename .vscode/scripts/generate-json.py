@@ -4,8 +4,10 @@ import os
 
 ROOT_PATH = os.getcwd()
 
-def read_config(file_path):
+def read_config(file_path, case_sensitive):
 	config = configparser.ConfigParser(comment_prefixes=(";", "#", "//"), inline_comment_prefixes=(";", "#", "//"))
+	if case_sensitive:
+		config.optionxform = lambda option: option
 	config.read(file_path)
 	return config
 
@@ -42,11 +44,18 @@ def fix_json_formatting(text):
 # 	text = text.replace("{\n\t", "\t{\n\t")
 # 	return text
 
+# def replace_colors(text, config):
+# 	for section in config.sections():
+# 		for key, value in config.items(section):
+# 			# print(f"{key} = #{value}")
+# 			text = text.replace(key, "#" + value)
+# 			text = text.replace(key, value)
+
 def main():
 	SOURCES_PATH = os.path.join(ROOT_PATH, "src\\I4\\rules\\sources.ini")
 
 	print(f"Trying to read config file from: {SOURCES_PATH}")
-	config_sources = read_config(SOURCES_PATH)
+	config_sources = read_config(SOURCES_PATH, False)
 	if not config_sources:
 		print("sources config not found or failed to read")
 		return
@@ -59,13 +68,20 @@ def main():
 			if file.endswith('.ini'):
 				TEMPLATE_PATH = os.path.join(TEMPLATES_PATH, file)
 				print(f"Trying to read config file from: {TEMPLATE_PATH}")
-				template_config = read_config(TEMPLATE_PATH)
+				template_config = read_config(TEMPLATE_PATH, False)
 				if not template_config:
 					print("template config not found or failed to read")
 					return
 
 				template_file = os.path.join(ROOT_PATH, template_config.get('GENERAL', 'TEMPLATE_FILE'))
 				output_file = os.path.join(ROOT_PATH, template_config.get('GENERAL', 'OUTPUT_FILE'))
+				color_file = os.path.join(ROOT_PATH, template_config.get('GENERAL', 'COLOR_THEME'))
+
+				print(f"Trying to read config file from: {color_file}")
+				config_colors = read_config(color_file, True)
+				if not config_colors:
+					print("colors config not found or failed to read")
+					return
 
 				with open(template_file, 'r') as f:
 					output = f.read()
@@ -78,6 +94,11 @@ def main():
 						block_name = f"[{section}]"
 						output = output.replace(block_name, concatenated_content)
 						output = fix_json_formatting(output)
+						# output = replace_colors(output, config_colors)
+						for section in config_colors.sections():
+							for key, value in config_colors.items(section):
+								# print(f"{key} = #{value}")
+								output = output.replace(key, "#" + value)
 
 				with open(output_file, 'w') as f:
 					f.write(output)
