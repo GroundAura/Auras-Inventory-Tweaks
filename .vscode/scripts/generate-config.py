@@ -23,6 +23,7 @@ def concatenate_files_from_directory(starting_directory, excluded_dirs):
 		for file in files:
 			if file.endswith('.ini'):
 				with open(os.path.join(root, file), 'r') as f:
+					# combined_content = f.read()
 					combined_content += f.read() + "\n"
 					# combined_content = combined_content.removesuffix(suffix_to_remove)
 	return combined_content
