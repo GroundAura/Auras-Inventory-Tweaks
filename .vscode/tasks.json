@@ -8,6 +8,12 @@
             "presentation": {"echo": false, "reveal": "always", "focus": false, "panel": "shared", "showReuseMessage": false, "clear": true},
         },
         {
+            "label": "generate-config.py",
+            "type": "shell",
+            "command": "${command:python.interpreterPath}",
+            "args": [".vscode\\scripts\\generate-config.py"]
+        },
+        {
             "label": "generate-json.py",
             "type": "shell",
             "command": "${command:python.interpreterPath}",
@@ -55,6 +61,13 @@
             "group": "build",
             "dependsOn": [
                 "generate-json.py"
+            ]
+        },
+        {
+            "label": "Compile SkyUI Config",
+            "group": "build",
+            "dependsOn": [
+                "generate-config.py"
             ]
         },
         {
