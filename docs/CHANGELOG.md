@@ -1,5 +1,11 @@
 # Aura's Inventory Tweaks for SkyUI - Changelog
 
+## Version 4.4.2
+
+- **I4 Main Module (Misc/AIO):** Fix minor inconsistencies between AIO and Modular versions.
+
+- **I4 Main Module (Spell/AIO):** Fix minor inconsistencies between AIO and Modular versions.
+
 ## Version 4.4.1
 
 - **I4 Main Module (Armor/AIO):** Fix for one of the underwear icons not rendering.

@@ -1928,7 +1928,6 @@
 			"subTypeDisplay": "$ItemSpellResearchArtifact"
 		}
 	},
-
 	{
 		"match": {
 			"formType": "MiscItem",

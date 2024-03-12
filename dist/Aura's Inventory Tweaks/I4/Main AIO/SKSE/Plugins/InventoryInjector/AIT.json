@@ -9265,7 +9265,6 @@
 			"subTypeDisplay": "$ItemSpellResearchArtifact"
 		}
 	},
-
 	{
 		"match": {
 			"formType": "MiscItem",
@@ -9520,6 +9519,15 @@
 		},
 		"assign": {
 			"iconColor": "#C0C0C0"
+		}
+	},
+	{
+		"match": {
+			"formType": "MiscItem",
+			"keywords": [ "OCF_InvColorDaedric" ]
+		},
+		"assign": {
+			"iconColor": "#A14040"
 		}
 	},
 	{
@@ -13473,8 +13481,7 @@
 		"assign": {
 			"magicClassDisplay": "$MagicArcane",
 			"subTypeDisplay": "$MagicSacrifice",
-			"iconLabel": "misc_remains",
-			"iconColor": "#993899"
+			"iconLabel": "misc_remains"
 		}
 	},
 	{
