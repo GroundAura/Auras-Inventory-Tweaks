@@ -16,7 +16,7 @@ def exclude_directories(dirs, exclude_list):
 	# 	exclude_list = ['']
 	return [d for d in dirs if d not in exclude_list]
 
-def concatenate_json_files_from_directory(starting_directory, excluded_dirs):
+def concatenate_files_from_directory(starting_directory, excluded_dirs):
 	combined_content = ""
 	prefix_to_remove_1 = "{\n\"$schema\": \"https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json\",\n\"rules\": [\n"
 	prefix_to_remove_2 = "{\n\"$schema\": \"https://raw.githubusercontent.com/Exit-9B/InventoryInjector/main/docs/InventoryInjector.schema.json\",\n\"rules\": [\n"
@@ -33,14 +33,14 @@ def concatenate_json_files_from_directory(starting_directory, excluded_dirs):
 					combined_content += "\n"
 	return combined_content
 
-def fix_json_formatting(text):
+def fix_formatting(text):
 	text = text.replace("\n\n", "\n")
 	text = text.replace("}\n\t{", "},\n\t{")
 	text = text.replace("},\n]", "}\n]")
 	# text = text.replace("", "")
 	return text
 
-# def fix_json_indent(text)
+# def fix_indent(text)
 # 	text = text.replace("{\n\t", "\t{\n\t")
 # 	return text
 
@@ -68,14 +68,14 @@ def main():
 			if file.endswith('.ini'):
 				TEMPLATE_PATH = os.path.join(TEMPLATES_PATH, file)
 				print(f"Trying to read config file from: {TEMPLATE_PATH}")
-				template_config = read_config(TEMPLATE_PATH, False)
-				if not template_config:
+				config_template = read_config(TEMPLATE_PATH, False)
+				if not config_template:
 					print("template config not found or failed to read")
 					return
 
-				template_file = os.path.join(ROOT_PATH, template_config.get('GENERAL', 'TEMPLATE_FILE'))
-				output_file = os.path.join(ROOT_PATH, template_config.get('GENERAL', 'OUTPUT_FILE'))
-				color_file = os.path.join(ROOT_PATH, template_config.get('GENERAL', 'COLOR_THEME'))
+				template_file = os.path.join(ROOT_PATH, config_template.get('GENERAL', 'TEMPLATE_FILE'))
+				output_file = os.path.join(ROOT_PATH, config_template.get('GENERAL', 'OUTPUT_FILE'))
+				color_file = os.path.join(ROOT_PATH, config_template.get('GENERAL', 'COLOR_THEME'))
 
 				print(f"Trying to read config file from: {color_file}")
 				config_colors = read_config(color_file, True)
@@ -93,7 +93,7 @@ def main():
 						concatenated_content = concatenate_json_files_from_directory(source_folder, excluded_dirs)
 						block_name = f"[{section}]"
 						output = output.replace(block_name, concatenated_content)
-						output = fix_json_formatting(output)
+						output = fix_formatting(output)
 						# output = replace_colors(output, config_colors)
 						for section in config_colors.sections():
 							for key, value in config_colors.items(section):
