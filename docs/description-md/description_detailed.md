@@ -172,7 +172,9 @@ Install AIT like any other mod, with MO2 or another mod manager.
 
 ## \[font=Verdana\]**Requirements**\[/font\]
 
-- [B.O.O.B.I.E.S. (Immersive Icons)](https://www.nexusmods.com/skyrimspecialedition/mods/89241) - When installing, pick the "Only Files for AIT" option in the FOMOD.
+Make sure to keep these mods updated as new features and fixes that are introduced may be quickly utilized by AIT (sometimes even without AIT itself needing an update). Check AIT's changelog and file summary for specific version requirements.
+
+- [B.O.O.B.I.E.S. (Immersive Icons)](https://www.nexusmods.com/skyrimspecialedition/mods/89241) - When installing, pick the "`Only Files for AIT`" option in the FOMOD.
 
 - [Inventory Interface Information Injector (I4)](https://www.nexusmods.com/skyrimspecialedition/mods/85702) - If you are running Skyrim SE v1.5.97, you will also need [I4 for 1.5](https://www.nexusmods.com/skyrimspecialedition/mods/87002).
 
@@ -188,7 +190,7 @@ Install AIT like any other mod, with MO2 or another mod manager.
 
 - [MCM Helper](https://www.nexusmods.com/skyrimspecialedition/mods/53000) - Recommended as this makes SkyUI's MCM options actually persist, which can help if your item card or model preview offsets get messed up.
 
-- [SkyUI AIO Survival (SAS)](https://www.nexusmods.com/skyrimspecialedition/mods/17601) - Some of the info columns included in AIT don't work on their own, and require specific code in some files to enable that functionality. SAS is currently the mod that provides that best. However, there are many known issues with this mod in its current state (Skyrim version support, UI overhaul support, etc.), and I intend to work on a new mod to provide this functionality as an alternative to SAS.
+- [SkyUI AIO Survival (SAS)](https://www.nexusmods.com/skyrimspecialedition/mods/17601) - Some of the info columns included in AIT don't work on their own, and require specific code in some files to enable that functionality. SAS is currently the mod that provides that best. However, there are many known issues with this mod in its current state (Skyrim version support, UI overhaul support, etc.), and I intend to work on a new mod to provide this functionality to AIT, as an alternative to SAS.
 
 ## \[font=Verdana\]**Mod Order (Mods View)**\[/font\]
 
@@ -218,6 +220,7 @@ I4 loads and applies its configs based on the load order of plugins that have th
 - `MarkAsJunk.esp` ([Mark As Junk](https://www.nexusmods.com/skyrimspecialedition/mods/105245))
 
 \[font=Verdana\]**Example Plugin Order:**\[/font\]
+
 `I4IconAddon.esp`
 `Diseases - I4.esp`
 `Racial Abilities - I4.esp`
@@ -236,45 +239,9 @@ I4 loads and applies its configs based on the load order of plugins that have th
 
 ## \[font=Verdana\]\[color=#00ac46\]**Compatible:**\[/color\]\[/font\]
 
-AIT provides several versions of config.txt as well as I4 icon color patches to apply the correct text colors, icon colors, and other changes for the following UI mods.
+\[font=Verdana\]\[color=#00ac46\]These UI overhaul mods are compatible with the correct AIT installer options and mod/plugin order.\[/color\]\[/font\]
 
-Again, you DO NOT need A.S.S. or P.E.N.I.S. when using Aura's Inventory Tweaks. AIT includes all the features of A.S.S. and P.E.N.I.S. Those mods are mainly made for the [NOLVUS](https://www.nolvus.net/) modlist or for those who _DON'T_ want to use Aura's Inventory Tweaks because they don't like all the changes or just want a lighter option. I know it may be confusing, but _please_ at least read the compatibility sections of mod descriptions before you try to use similar mods together.
-
-**Parts** of the following mods are redundant when using AIT. You can delete the redundant files from these mods if you want, although you won't have any problems if you just leave them alone (as long as AIT loads after them and overwrites any files if asked).
-\[spoiler\]
-Any file that I have overwritten with files in AIT.
-
-Any mod's version of "_/interface/skyui/config.txt_".
-\[spoiler\]
-AIT incorporates the relevant features of mods that edit SkyUI's config.txt. Always overwrite all instances of "_/interface/skyui/config.txt_" with AIT's version.
-
-All these mods' config.txt features are confirmed to be integrated into or supported by AIT.
-
-- [Equipped Items on Top](https://www.nexusmods.com/skyrimspecialedition/mods/32711)
-- [Better SkyUI Config](https://www.nexusmods.com/skyrimspecialedition/mods/49095)
-- [Dear Diary](https://www.nexusmods.com/skyrimspecialedition/mods/23010)
-- [Dear Diary Dark Mode](https://www.nexusmods.com/skyrimspecialedition/mods/60837)
-- [SkyUI AIO Survival](https://www.nexusmods.com/skyrimspecialedition/mods/17601)
-- [Nordic UI - SkyUI AIO Survival Patch](https://www.nexusmods.com/skyrimspecialedition/mods/63879)
-- [Body Slots x Total Weight x Total Value - Nordic UI](https://www.nexusmods.com/skyrimspecialedition/mods/68423)
-- [SkyUI AIO Survival (SAS) Patch for Equipped Items On Top](https://www.nexusmods.com/skyrimspecialedition/mods/52948)
-- [Immersive Jewelry](https://www.nexusmods.com/skyrimspecialedition/mods/5336)
-- [Left Handed Rings Modified](https://www.nexusmods.com/skyrimspecialedition/mods/3240)
-- [One-Handed Crossbow Framework](https://www.nexusmods.com/skyrimspecialedition/mods/74054)
-- [Helps To Have A Map](https://www.nexusmods.com/skyrimspecialedition/mods/37239)
-- [Body Slots - SkyUI](https://www.nexusmods.com/skyrimspecialedition/mods/49608)
-- [Body Slots - NORDIC UI](https://www.nexusmods.com/skyrimspecialedition/mods/58803)
-- [Body Slots - SkyUI Weapon Pack Merged](https://www.nexusmods.com/skyrimspecialedition/mods/58835?tab=description)
-- [Untarnished UI](https://www.nexusmods.com/skyrimspecialedition/mods/75188)
-- [Dwemer Readius UI](https://www.nexusmods.com/skyrimspecialedition/mods/46393)
-- [Horizons UI](https://www.nexusmods.com/skyrimspecialedition/mods/55441)
-- [SkyUI The Adventurer Theme](https://www.nexusmods.com/skyrimspecialedition/mods/35568)
-
-\[/spoiler\]
-
-\[/spoiler\]
-
-\[font=Verdana\]\[color=#00ac46\]Compatible UI Overhauls\[/color\]\[/font\]
+- [Body Slots - SkyUI](https://www.nexusmods.com/skyrimspecialedition/mods/49608), [Body Slots - NORDIC UI](https://www.nexusmods.com/skyrimspecialedition/mods/58803), [Body Slots - SkyUI Weapon Pack Merged](https://www.nexusmods.com/skyrimspecialedition/mods/58835), [Body Slots x Total Weight x Total Value - Nordic UI](https://www.nexusmods.com/skyrimspecialedition/mods/68423), and any other "Body Slots" mod
 
 - [Clear UI](https://www.nexusmods.com/skyrimspecialedition/mods/51783)
 
@@ -290,7 +257,7 @@ All these mods' config.txt features are confirmed to be integrated into or suppo
 
 - [Dwemer Readius UI](https://www.nexusmods.com/skyrimspecialedition/mods/46393)
 
-- [Edge UI](https://discord.gg/sGjm2uvKAu) ([v0.45](https://www.patreon.com/posts/edge-ui-0-45-86137607), [v0.50](https://www.patreon.com/posts/edge-ui-0-50-pre-89750615), [v0.55](https://www.patreon.com/posts/edge-ui-0-55-98401985))
+- [Edge UI](https://discord.gg/sGjm2uvKAu) ([v0.45](https://www.patreon.com/posts/edge-ui-0-45-86137607), [v0.50](https://www.patreon.com/posts/edge-ui-0-50-pre-89750615), [v0.55](https://www.patreon.com/posts/edge-ui-0-55-98401985), likely other versions)
 
 - [Factions UI](https://www.nexusmods.com/skyrimspecialedition/mods/64376) (College Mysticism, Daedric Domination, Elven Freedom, Imperial Might, Stormcloak Independence, Thalmor Supremacy)
 
@@ -302,13 +269,13 @@ All these mods' config.txt features are confirmed to be integrated into or suppo
 
 - [Nordic UI](https://www.nexusmods.com/skyrimspecialedition/mods/49881)
 
-- [Nordic UI SAS Patch](https://www.nexusmods.com/skyrimspecialedition/mods/63879) (Default, Extended)
-
 - [Outlander UI](https://www.nexusmods.com/skyrimspecialedition/mods/53752)
 
 - [SkyUI](https://www.nexusmods.com/skyrimspecialedition/mods/12604)
 
 - [SkyUI AIO Survival](https://www.nexusmods.com/skyrimspecialedition/mods/17601) (Default, Extended)
+
+- [SkyUI AIO Survival - Nordic UI Patch](https://www.nexusmods.com/skyrimspecialedition/mods/63879) (Default, Extended)
 
 - [SkyUI The Adventurer Theme](https://www.nexusmods.com/skyrimspecialedition/mods/35568)
 
@@ -318,7 +285,7 @@ All these mods' config.txt features are confirmed to be integrated into or suppo
 
 - [Wood & Paper](https://www.nexusmods.com/skyrimspecialedition/mods/44174)
 
-\[font=Verdana\]\[color=#00ac46\]Compatible I4 Mods (with correct load order)\[/color\]\[/font\]
+\[font=Verdana\]\[color=#00ac46\]These icon mods are compatible with the correct mod/plugin order.\[/color\]\[/font\]
 
 - [Abyss - Custom I4 Icons](https://www.nexusmods.com/skyrimspecialedition/mods/104957)
 
@@ -339,6 +306,8 @@ All these mods' config.txt features are confirmed to be integrated into or suppo
 - [I4 Shout Icons Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/107334)
 
 - [I4 Weapon Icons Overhaul](https://www.nexusmods.com/skyrimspecialedition/mods/106432)
+
+- [Immersive Jewelry](https://www.nexusmods.com/skyrimspecialedition/mods/5336)
 
 - [Inquisition - Custom I4 Icons](https://www.nexusmods.com/skyrimspecialedition/mods/106758)
 
@@ -374,9 +343,9 @@ All these mods' config.txt features are confirmed to be integrated into or suppo
 
 - [Wounds - I4 and Wheeler Patch](https://www.nexusmods.com/skyrimspecialedition/mods/92614)
 
-## \[font=Verdana\]\[color=#dc0000\]**Incompatible:**\[/color\]\[/font\]
+## \[font=Verdana\]\[color=#dc0000\]**Obsolete/Included/Included Similar Functionality:**\[/color\]\[/font\]
 
-\[font=Verdana\]\[color=#dc0000\]All Features Already Included in AIT\[/color\]\[/font\]
+\[font=Verdana\]\[color=#dc0000\]These mods are completely replaced by AIT. Uninstall them for the best experience.\[/color\]\[/font\]
 
 - [Arclight Icon - I4 Add-On](https://www.nexusmods.com/skyrimspecialedition/mods/92733)
 
@@ -396,17 +365,25 @@ All these mods' config.txt features are confirmed to be integrated into or suppo
 
 - [Fix Note Icon for SkyUI](https://www.nexusmods.com/skyrimspecialedition/mods/32561)
 
+- [Helps To Have A Map](https://www.nexusmods.com/skyrimspecialedition/mods/37239) (SkyUI Icon & Type Edit optional file)
+
 - [Helps To Have A Map - I4 Addon](https://www.nexusmods.com/skyrimspecialedition/mods/110485)
 
 - [I4 - SkyUI Weapons Pack](https://www.nexusmods.com/skyrimspecialedition/mods/85703)
 
 - [Keeping Warm 4 I4](https://www.nexusmods.com/skyrimspecialedition/mods/86377)
 
+- [Left Handed Rings Modified](https://www.nexusmods.com/skyrimspecialedition/mods/3240) (Left Hand Ring Icon for SkyUI file)
+
 - [Necrom Icon - I4 Add-On](https://www.nexusmods.com/skyrimspecialedition/mods/92406)
+
+- [One-Handed Crossbow Framework](https://www.nexusmods.com/skyrimspecialedition/mods/74054) (SkyUI Icon & Type Edit optional file)
 
 - [Pauldrons I4 Patch](https://www.nexusmods.com/skyrimspecialedition/mods/86301)
 
 - [Phenomenally Enriched and Nuanced Ingredients for SkyUI](https://www.nexusmods.com/skyrimspecialedition/mods/90526)
+
+- [SkyUI AIO Survival (SAS) Patch for Equipped Items On Top](https://www.nexusmods.com/skyrimspecialedition/mods/52948)
 
 - [Sonic Magic - I4 patch](https://www.nexusmods.com/skyrimspecialedition/mods/92091)
 
@@ -416,9 +393,28 @@ All these mods' config.txt features are confirmed to be integrated into or suppo
 
 - [Tail Armors - I4 Tail Icons](https://www.nexusmods.com/skyrimspecialedition/mods/110374)
 
+## \[font=Verdana\]\[color=#dc0000\]**Incompatible:**\[/color\]\[/font\]
+
+\[font=Verdana\]\[color=#dc0000\]All or some of these mods' inventory features will _not_ work when using AIT. I may or may not offer support for these in the future.\[/color\]\[/font\]
+
+- [Icons in SkyUI Header](https://www.nexusmods.com/skyrimspecialedition/mods/20473)
+
+\[font=Verdana\]\[color=#dc0000\]These mods or mod series are overhauls that work very similarly to AIT. _Chose either AIT or mods in this list._ I am _not likely_ to offer support for these mods here, but I _may_ integrate some functionality from them.\[/color\]\[/font\]
+
+The "Bundle for Aesthetic Loot Lists with SkyUI (aka B.A.L.L.S.)" or "B.O.O.B.I.E.S.+" Experience
+
+- [Beautifully Overhauled & Objectively Better Icons Enriched for SkyUI (aka B.O.O.B.I.E.S., aka Immersive Icons)](https://www.nexusmods.com/skyrimspecialedition/mods/89241) (specifically the full "`Core Files`" version, the "`Only Files for AIT`" version works and is required for AIT)
+- [Aura's Scrumptious Supplement (aka A.S.S. for B.O.O.B.I.E.S.)](https://www.nexusmods.com/skyrimspecialedition/mods/89823)
+- [Phenomenally Enriched and Nuanced Ingredients for SkyUI (aka P.E.N.I.S. for B.O.O.B.I.E.S.)](https://www.nexusmods.com/skyrimspecialedition/mods/90526)
+- [Spell Tomes - I4 Icons](https://www.nexusmods.com/skyrimspecialedition/mods/96117)
+
+The "Komegaki" or "Kome's Inventory Tweaks (aka K.I.T.)" Experience
+
+- Kome's Inventory Tweaks (aka K.I.T.) (WIP unreleased mod)
+
 ## \[font=Verdana\]\[color=#fdc500\]**Untested:**\[/color\]\[/font\]
 
-\[font=Verdana\]\[color=#fdc500\]Untested I4 Mods\[/color\]\[/font\]
+\[font=Verdana\]\[color=#fdc500\]These mods have not been widely tested with AIT so I don't know if/how their inventory features will work when using AIT. Such features are likely very mod/plugin order dependant. I may or may not offer support for these in the future if they don't work.\[/color\]\[/font\]
 
 - [Amazing Lockpicks - Enhancements](https://www.nexusmods.com/skyrimspecialedition/mods/109455)
 
