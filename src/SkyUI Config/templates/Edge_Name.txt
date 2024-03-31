@@ -2,7 +2,7 @@
 
 [SearchBox]
 
-[ItemInfo]
+[ItemInfo_DDDM]
 
 [ItemList]
 
@@ -18,7 +18,7 @@
 [ListLayout.columns.Icon_EOT2]
 [ListLayout.columns]
 
-[ListLayout.views_Icon]
+[ListLayout.views_Name]
 
 [ListLayout.layouts]
 

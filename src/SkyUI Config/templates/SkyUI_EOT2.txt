@@ -2,7 +2,7 @@
 
 [SearchBox]
 
-[ItemInfo]
+[ItemInfo_Default]
 
 [ItemList]
 
