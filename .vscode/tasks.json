@@ -4,49 +4,49 @@
         {
             "label": "copy-img.bat",
             "type": "shell",
-            "command": ".vscode\\scripts\\copy-img.bat",
+            "command": "scripts\\copy-img.bat",
             "presentation": {"echo": false, "reveal": "always", "focus": false, "panel": "shared", "showReuseMessage": false, "clear": true},
         },
         {
             "label": "generate-config.py",
             "type": "shell",
             "command": "${command:python.interpreterPath}",
-            "args": [".vscode\\scripts\\generate-config.py"]
+            "args": ["scripts\\generate-config.py"]
         },
         {
             "label": "generate-json.py",
             "type": "shell",
             "command": "${command:python.interpreterPath}",
-            "args": [".vscode\\scripts\\generate-json.py"]
+            "args": ["scripts\\generate-json.py"]
         },
         {
             "label": "md2nexus.bat",
             "type": "shell",
-            "command": ".vscode\\scripts\\md2nexus.bat",
+            "command": "scripts\\md2nexus.bat",
             "presentation": {"echo": false, "reveal": "always", "focus": false, "panel": "shared", "showReuseMessage": false, "clear": true},
         },
         {
             "label": "mo2-downloads.bat",
             "type": "shell",
-            "command": ".vscode\\scripts\\mo2-downloads.bat",
+            "command": "scripts\\mo2-downloads.bat",
             "presentation": {"echo": false, "reveal": "always", "focus": false, "panel": "shared", "showReuseMessage": false, "clear": true},
         },
         {
             "label": "mo2-mod.bat",
             "type": "shell",
-            "command": ".vscode\\scripts\\mo2-mod.bat",
+            "command": "scripts\\mo2-mod.bat",
             "presentation": {"echo": false, "reveal": "always", "focus": false, "panel": "shared", "showReuseMessage": false, "clear": true},
         },
         {
             "label": "zip.bat",
             "type": "shell",
-            "command": ".vscode\\scripts\\zip.bat",
+            "command": "scripts\\zip.bat",
             "presentation": {"echo": false, "reveal": "always", "focus": false, "panel": "shared", "showReuseMessage": false, "clear": true},
         },
         {
             "label": "zip2.bat",
             "type": "shell",
-            "command": ".vscode\\scripts\\zip2.bat",
+            "command": "scripts\\zip2.bat",
             "presentation": {"echo": false, "reveal": "always", "focus": false, "panel": "shared", "showReuseMessage": false, "clear": true},
         },
         {
