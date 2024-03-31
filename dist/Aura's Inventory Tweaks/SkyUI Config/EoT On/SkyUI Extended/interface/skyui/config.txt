@@ -1293,6 +1293,86 @@ columns.craftNameColumn.state2.entry.text = @text
 columns.craftNameColumn.state2.sortAttributes = <text>
 columns.craftNameColumn.state2.sortOptions = <{DESCENDING | CASEINSENSITIVE}>
 
+; [CRAFT - ITEM] SUBTYPE COLUMN -------------------------------------------------------
+columns.craftSubTypeColumn.type = TEXT
+columns.craftSubTypeColumn.name = '$TYPE'
+columns.craftSubTypeColumn.states = 2
+columns.craftSubTypeColumn.width = 0.27
+columns.craftSubTypeColumn.border = a_textBorder
+columns.craftSubTypeColumn.hidden = false
+
+columns.craftSubTypeColumn.state1.label.text = '$TYPE'
+columns.craftSubTypeColumn.state1.label.arrowDown = false
+columns.craftSubTypeColumn.state1.entry.text = @subTypeDisplay
+columns.craftSubTypeColumn.state1.sortAttributes = <subTypeDisplay, text>
+columns.craftSubTypeColumn.state1.sortOptions = <{ASCENDING | CASEINSENSITIVE}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.craftSubTypeColumn.state2.label.text = '$TYPE'
+columns.craftSubTypeColumn.state2.label.arrowDown = true
+columns.craftSubTypeColumn.state2.entry.text = @subTypeDisplay
+columns.craftSubTypeColumn.state2.sortAttributes = <subTypeDisplay, text>
+columns.craftSubTypeColumn.state2.sortOptions = <{DESCENDING | CASEINSENSITIVE}, {ASCENDING | CASEINSENSITIVE}>
+
+; [CRAFT - ITEM] VALUE COLUMN -------------------------------------------------------
+columns.craftValColumn.type = TEXT
+columns.craftValColumn.name = '$VALUE'
+columns.craftValColumn.states = 2
+columns.craftValColumn.width = 0.08
+columns.craftValColumn.border = a_textBorder
+columns.craftValColumn.hidden = false
+
+columns.craftValColumn.state1.label.text = '$VAL'
+columns.craftValColumn.state1.label.arrowDown = true
+columns.craftValColumn.state1.entry.text = @infoValue
+columns.craftValColumn.state1.sortAttributes = <infoValue, text>
+columns.craftValColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.craftValColumn.state2.label.text = '$VAL'
+columns.craftValColumn.state2.label.arrowDown = false
+columns.craftValColumn.state2.entry.text = @infoValue
+columns.craftValColumn.state2.sortAttributes = <infoValue, text>
+columns.craftValColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+; [CRAFT - ITEM] VALUE/WEIGHT COLUMN -------------------------------------------------------
+columns.craftValWtColumn.type = TEXT
+columns.craftValWtColumn.name = '$VALUE/WEIGHT'
+columns.craftValWtColumn.states = 2
+columns.craftValWtColumn.width = 0.09
+columns.craftValWtColumn.border = a_textBorder
+columns.craftValWtColumn.hidden = true
+
+columns.craftValWtColumn.state1.label.text = '$V/W'
+columns.craftValWtColumn.state1.label.arrowDown = true
+columns.craftValWtColumn.state1.entry.text = @infoValueWeight
+columns.craftValWtColumn.state1.sortAttributes = <infoValueWeight, text>
+columns.craftValWtColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.craftValWtColumn.state2.label.text = '$V/W'
+columns.craftValWtColumn.state2.label.arrowDown = false
+columns.craftValWtColumn.state2.entry.text = @infoValueWeight
+columns.craftValWtColumn.state2.sortAttributes = <infoValueWeight, text>
+columns.craftValWtColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+; [CRAFT - ITEM] WEIGHT COLUMN -------------------------------------------------------
+columns.craftWtColumn.type = TEXT
+columns.craftWtColumn.name = '$WEIGHT'
+columns.craftWtColumn.states = 2
+columns.craftWtColumn.width = 0.08
+columns.craftWtColumn.border = a_textBorder
+columns.craftWtColumn.hidden = false
+
+columns.craftWtColumn.state1.label.text = '$WGT'
+columns.craftWtColumn.state1.label.arrowDown = true
+columns.craftWtColumn.state1.entry.text = @infoWeight
+columns.craftWtColumn.state1.sortAttributes = <infoWeight, text>
+columns.craftWtColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.craftWtColumn.state2.label.text = '$WGT'
+columns.craftWtColumn.state2.label.arrowDown = false
+columns.craftWtColumn.state2.entry.text = @infoWeight
+columns.craftWtColumn.state2.sortAttributes = <infoWeight, text>
+columns.craftWtColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
 ; [CRAFT - ENCHANT] EFFECT COLUMN -------------------------------------------------------
 columns.enchantEffectColumn.type = TEXT
 columns.enchantEffectColumn.name = '$EFFECT'
@@ -1528,7 +1608,7 @@ views.activeEffectView.category = <Inventory.FILTERFLAG_MAGIC_ACTIVEEFFECTS>
 
 ; CRAFTING VIEWS -------------------------------------------------------
 views.defaultCraftingView.primaryColumn = iconColumn
-views.defaultCraftingView.columns = <equipColumn, iconColumn, gearNameColumn, itemSubTypeColumn, itemValColumn, itemTValColumn, itemValWtColumn, itemWtColumn, itemTWtColumn>
+views.defaultCraftingView.columns = <equipColumn, iconColumn, gearNameColumn, craftSubTypeColumn, craftValColumn, craftValWtColumn, craftWtColumn>
 
 views.disenchantView.primaryColumn = iconColumn
 views.disenchantView.columns = <equipColumn, iconColumn, itemNameColumn, enchantEffectColumn, itemSubTypeColumn, itemValColumn, itemTValColumn, itemValWtColumn, itemWtColumn, itemTWtColumn>
