@@ -90,7 +90,7 @@ def main():
 					if section != "GENERAL" and 'SOURCE_FOLDER' in config_sources[section]:
 						print(f"GENERATE SECTION: {section}")
 						source_folder = os.path.join(ROOT_PATH, config_sources[section]['SOURCE_FOLDER'])
-						concatenated_content = concatenate_json_files_from_directory(source_folder, excluded_dirs)
+						concatenated_content = concatenate_files_from_directory(source_folder, excluded_dirs)
 						block_name = f"[{section}]"
 						output = output.replace(block_name, concatenated_content)
 						output = fix_formatting(output)

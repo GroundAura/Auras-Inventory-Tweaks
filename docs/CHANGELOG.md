@@ -1,14 +1,12 @@
 # Aura's Inventory Tweaks for SkyUI - Changelog
 
-## Version 4.4.3
-
-- **SkyUI Config:** Added seperate columns with adjusted widths for the default crafting view, which should resolve problems with cut-off text in [COCKS](https://www.nexusmods.com/skyrimspecialedition/mods/81409) menus for the most part. Minor fixes.
-
 ## Version 4.4.2
 
 - **I4 Main Module (Misc/AIO):** Fix minor inconsistencies between AIO and Modular versions.
 
 - **I4 Main Module (Spell/AIO):** Fix minor inconsistencies between AIO and Modular versions.
+
+- **SkyUI Config:** Added seperate columns with adjusted widths for the default crafting view, which should resolve problems with cut-off text in [COCKS](https://www.nexusmods.com/skyrimspecialedition/mods/81409) menus for the most part. Minor fixes.
 
 ## Version 4.4.1
 
