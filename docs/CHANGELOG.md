@@ -1,5 +1,11 @@
 # Aura's Inventory Tweaks for SkyUI - Changelog
 
+## Version 4.5.0
+
+- **AIT Translations:** Added new strings: "`$ItemPlaceholderJunk`" ("Junk").
+
+- **ESP:** Removed unnecessary keyword records from `AIT.esp`.
+
 ## Version 4.4.2
 
 - **I4 Main Module (Misc/AIO):** Fix minor inconsistencies between AIO and Modular versions.
