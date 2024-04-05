@@ -6,6 +6,8 @@
 
 - **ESP:** Removed unnecessary keyword records from `AIT.esp`.
 
+- **I4 Main Module (Weapon/AIO):** Fix for twinblade icon not rendering.
+
 ## Version 4.4.2
 
 - **I4 Main Module (Misc/AIO):** Fix minor inconsistencies between AIO and Modular versions.
