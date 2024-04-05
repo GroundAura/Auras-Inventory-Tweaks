@@ -1,12 +1,10 @@
-# \[center\]![Aura's Inventory Tweaks](https://raw.githubusercontent.com/GroundAura/Auras-Inventory-Tweaks/main/docs/images/brand/Title.png)\[/center\]
-
-## \[center\]![Overview](https://raw.githubusercontent.com/GroundAura/Auras-Inventory-Tweaks/main/docs/images/banners/Overview.png)\[/center\]
+# \[center\]![Aura's Inventory Tweaks](https://raw.githubusercontent.com/GroundAura/Auras-Inventory-Tweaks/main/docs/images/brand/Title.png)\[/center\]\[line\]
 
 SkyUI is an excellent mod that improves Skyrim's inventory menu and other interfaces. It is a great baseline that was the first mod I ever downloaded, and I would recommend to everyone. However, SkyUI was created in a time where the Dragonborn DLC didn't exist, and there are a few things I didn't love about it. So, I've gone on a long journey of learning how to improve Skyrim's inventories to make them easier to use and look at. Aura's Inventory Tweaks is the culmination of my efforts.
 
 \[font=Verdana\]**Aura's Inventory Tweaks**\[/font\] (or \[font=Verdana\]**AIT**\[/font\]) uses powerful tools and resources such as [Inventory Interface Information Injector](https://www.nexusmods.com/skyrimspecialedition/mods/85702) (I4), [Keyword Item Distributer](https://www.nexusmods.com/skyrimspecialedition/mods/55728) (KID), [Object Categorization Framework](https://www.nexusmods.com/skyrimspecialedition/mods/81469) (OCF), and [The Handy Icon Collection Collective](https://www.nexusmods.com/skyrimspecialedition/mods/90508) (THICC) to make SkyUI inventories prettier and more organized then ever before.
 
-## \[center\]![Features](https://raw.githubusercontent.com/GroundAura/Auras-Inventory-Tweaks/main/docs/images/banners/Features.png)\[/center\]
+## \[center\]![Features](https://raw.githubusercontent.com/GroundAura/Auras-Resources/main/Images/Banners/Skyrim-1/Features.png)\[/center\]
 
 ## \[font=Verdana\]**Classification Expansion (Items)**\[/font\]
 
@@ -166,7 +164,7 @@ _\[color=#d8d8d8\]I will be working to support more survival mods, so stay tuned
 
 AIT only has native support for English, but others have made translations for other languages. If you would like to translate AIT feel free, permissions are open. Also feel free to contact me through [Discord](https://discord.gg/zft8DmbfKv) and I'll keep you updated when I add new strings and answer questions about how I use strings.
 
-## \[center\]![Installation](https://raw.githubusercontent.com/GroundAura/Auras-Inventory-Tweaks/main/docs/images/banners/Installation.png)\[/center\]
+## \[center\]![Installation](https://raw.githubusercontent.com/GroundAura/Auras-Resources/main/Images/Banners/Skyrim-1/Installation.png)\[/center\]
 
 Install AIT like any other mod, with MO2 or another mod manager.
 
@@ -235,7 +233,7 @@ I4 loads and applies its configs based on the load order of plugins that have th
 `JunkIt.esp`
 `MarkAsJunk.esp`
 
-## \[center\]![Compatibility](https://raw.githubusercontent.com/GroundAura/Auras-Inventory-Tweaks/main/docs/images/banners/Compatibility.png)\[/center\]
+## \[center\]![Compatibility](https://raw.githubusercontent.com/GroundAura/Auras-Resources/main/Images/Banners/Skyrim-1/Compatibility.png)\[/center\]
 
 ## \[font=Verdana\]\[color=#00ac46\]**Compatible:**\[/color\]\[/font\]
 
@@ -478,7 +476,7 @@ Kome's Inventory Tweaks
 
 - [Unofficial Simonrim I4 Icons](https://www.nexusmods.com/skyrimspecialedition/mods/108060)
 
-## \[center\]![Recommendations](https://raw.githubusercontent.com/GroundAura/Auras-Inventory-Tweaks/main/docs/images/banners/Recommendations.png)\[/center\]
+## \[center\]![Recommendations](https://raw.githubusercontent.com/GroundAura/Auras-Resources/main/Images/Banners/Skyrim-1/Recommendations.png)\[/center\]
 
 I've spent a lot of time looking at UI mods, so here are some other cool inventory mods I've found that should work fine with AIT.
 
@@ -512,7 +510,7 @@ I've spent a lot of time looking at UI mods, so here are some other cool invento
 - [Stay at the System Page NG](https://www.nexusmods.com/skyrimspecialedition/mods/76927)
 - [Wider MCM Menu](https://www.nexusmods.com/skyrimspecialedition/mods/22825)
 
-## \[center\]![Thanks](https://raw.githubusercontent.com/GroundAura/Auras-Inventory-Tweaks/main/docs/images/banners/Thanks.png)\[/center\]
+## \[center\]![Thanks](https://raw.githubusercontent.com/GroundAura/Auras-Resources/main/Images/Banners/Skyrim-1/Thanks.png)\[/center\]
 
 - [Ashingda](https://www.nexusmods.com/skyrimspecialedition/users/10236085)
 - Bethesda
