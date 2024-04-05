@@ -345,7 +345,7 @@ I4 loads and applies its configs based on the load order of plugins that have th
 
 ## \[font=Verdana\]\[color=#dc0000\]**Obsolete/Included/Included Similar Functionality:**\[/color\]\[/font\]
 
-\[font=Verdana\]\[color=#dc0000\]These mods are completely replaced by AIT. Uninstall them for the best experience.\[/color\]\[/font\]
+\[font=Verdana\]\[color=#dc0000\]These mods are replaced by and redundant when using AIT. Uninstall them for the best experience.\[/color\]\[/font\]
 
 - [Arclight Icon - I4 Add-On](https://www.nexusmods.com/skyrimspecialedition/mods/92733)
 
@@ -401,14 +401,14 @@ I4 loads and applies its configs based on the load order of plugins that have th
 
 \[font=Verdana\]\[color=#dc0000\]These mods or mod series are overhauls that work very similarly to AIT. _Chose either AIT or mods in this list._ I am _not likely_ to offer support for these mods here, but I _may_ integrate some functionality from them.\[/color\]\[/font\]
 
-The "Bundle for Aesthetic Loot Lists with SkyUI (aka B.A.L.L.S.)" or "B.O.O.B.I.E.S.+" Experience
+B.O.O.B.I.E.S. and Addons
 
 - [Beautifully Overhauled & Objectively Better Icons Enriched for SkyUI (aka B.O.O.B.I.E.S., aka Immersive Icons)](https://www.nexusmods.com/skyrimspecialedition/mods/89241) (specifically the full "`Core Files`" version, the "`Only Files for AIT`" version works and is required for AIT)
 - [Aura's Scrumptious Supplement (aka A.S.S. for B.O.O.B.I.E.S.)](https://www.nexusmods.com/skyrimspecialedition/mods/89823)
 - [Phenomenally Enriched and Nuanced Ingredients for SkyUI (aka P.E.N.I.S. for B.O.O.B.I.E.S.)](https://www.nexusmods.com/skyrimspecialedition/mods/90526)
 - [Spell Tomes - I4 Icons](https://www.nexusmods.com/skyrimspecialedition/mods/96117)
 
-The "Komegaki" or "Kome's Inventory Tweaks (aka K.I.T.)" Experience
+Kome's Inventory Tweaks
 
 - Kome's Inventory Tweaks (aka K.I.T.) (WIP unreleased mod)
 

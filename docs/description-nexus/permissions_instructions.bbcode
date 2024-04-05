@@ -1,4 +1,4 @@
-You can use any assets included in this project as long as you follow the licenses and instructions of the original author(s)' of said assets.
+You can use any assets included in this project as long as you follow the licenses and instructions of the original author(s) of said assets.
 
 Any assets made solely by me are free to use for whatever, barring pay walling. Reasonable credits for my efforts are appreciated but not required.
 
