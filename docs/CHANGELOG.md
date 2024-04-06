@@ -2,6 +2,8 @@
 
 ## Version 4.5.0
 
+- **FOMOD:** Moved Skyrim Translation Tweaks into separate download.
+
 - **AIT Translations:** Added new strings: "`$ItemPlaceholderJunk`" ("Junk").
 
 - **ESP:** Removed unnecessary keyword records from `AIT.esp`.
