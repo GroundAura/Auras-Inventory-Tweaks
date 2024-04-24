@@ -10,6 +10,8 @@
 
 - **I4 Main Module (Weapon/AIO):** Fix for twinblade icon not rendering.
 
+- **SkyUI Config:** Added text color patch for Edge UI (v0.55).
+
 ## Version 4.4.2
 
 - **I4 Main Module (Misc/AIO):** Fix minor inconsistencies between AIO and Modular versions.
