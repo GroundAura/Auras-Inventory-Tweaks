@@ -14,10 +14,10 @@
             "args": ["scripts\\generate-config.py"]
         },
         {
-            "label": "generate-json.py",
+            "label": "generate-i4.py",
             "type": "shell",
             "command": "${command:python.interpreterPath}",
-            "args": ["scripts\\generate-json.py"]
+            "args": ["scripts\\generate-i4.py"]
         },
         {
             "label": "md2nexus.bat",
@@ -54,7 +54,7 @@
             "label": "Compile I4",
             "group": "build",
             "dependsOn": [
-                "generate-json.py"
+                "generate-i4.py"
             ]
         },
         {
@@ -69,7 +69,7 @@
             "group": "build",
             "dependsOn": [
                 "generate-config.py",
-                "generate-json.py",
+                "generate-i4.py",
                 "copy-img.bat"
             ]
         },
@@ -78,7 +78,7 @@
             "group": "build",
             "dependsOn": [
                 "generate-config.py",
-                "generate-json.py",
+                "generate-i4.py",
                 "copy-img.bat",
                 "mo2-mod.bat"
             ]
@@ -88,7 +88,7 @@
             "group": "build",
             "dependsOn": [
                 "generate-config.py",
-                "generate-json.py",
+                "generate-i4.py",
                 "copy-img.bat",
                 "zip.bat"
             ]
@@ -98,7 +98,7 @@
             "group": "build",
             "dependsOn": [
                 "generate-config.py",
-                "generate-json.py",
+                "generate-i4.py",
                 "copy-img.bat",
                 "zip.bat",
                 "mo2-downloads.bat"

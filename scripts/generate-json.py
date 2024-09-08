@@ -1,15 +1,10 @@
 import configparser
 import os
 # import regex
+from auralib.config import read_config
+from auralib.files import get_root_path
+from os.path import join as join_path
 
-ROOT_PATH = os.getcwd()
-
-def read_config(file_path, case_sensitive):
-	config = configparser.ConfigParser(comment_prefixes=(";", "#", "//"), inline_comment_prefixes=(";", "#", "//"))
-	if case_sensitive:
-		config.optionxform = lambda option: option
-	config.read(file_path)
-	return config
 
 def exclude_directories(dirs, exclude_list):
 	# if not exclude_list:
@@ -25,7 +20,7 @@ def concatenate_files_from_directory(starting_directory, excluded_dirs):
 		dirs[:] = exclude_directories(dirs, excluded_dirs)
 		for file in files:
 			if file.endswith('.json'):
-				with open(os.path.join(root, file), 'r') as f:
+				with open(join_path(root, file), 'r') as f:
 					combined_content = f.read()
 					combined_content = combined_content.removeprefix(prefix_to_remove_1)
 					combined_content = combined_content.removeprefix(prefix_to_remove_2)
@@ -52,30 +47,32 @@ def fix_formatting(text):
 # 			text = text.replace(key, value)
 
 def main():
-	SOURCES_PATH = os.path.join(ROOT_PATH, "src\\I4\\rules\\sources.ini")
+	ROOT_PATH = get_root_path()
 
-	print(f"Trying to read config file from: {SOURCES_PATH}")
-	config_sources = read_config(SOURCES_PATH, False)
-	if not config_sources:
-		print("sources config not found or failed to read")
-		return
+	SOURCES_PATH = join_path(ROOT_PATH, "src\\I4\\rules\\sources.ini")
+	config_sources = read_config(SOURCES_PATH)
+	#print(f"Trying to read config file from: {SOURCES_PATH}")
+	#config_sources = read_config(SOURCES_PATH, False)
+	#if not config_sources:
+	#	print("sources config not found or failed to read")
+	#	return
 
-	TEMPLATES_PATH = os.path.join(ROOT_PATH, "src\\I4\\templates")
+	TEMPLATES_PATH = join_path(ROOT_PATH, "src\\I4\\templates")
 	excluded_dirs = ['']
 
 	for _, _, files in os.walk(TEMPLATES_PATH):
 		for file in files:
 			if file.endswith('.ini'):
-				TEMPLATE_PATH = os.path.join(TEMPLATES_PATH, file)
+				TEMPLATE_PATH = join_path(TEMPLATES_PATH, file)
 				print(f"Trying to read config file from: {TEMPLATE_PATH}")
 				config_template = read_config(TEMPLATE_PATH, False)
 				if not config_template:
 					print("template config not found or failed to read")
 					return
 
-				template_file = os.path.join(ROOT_PATH, config_template.get('GENERAL', 'TEMPLATE_FILE'))
-				output_file = os.path.join(ROOT_PATH, config_template.get('GENERAL', 'OUTPUT_FILE'))
-				color_file = os.path.join(ROOT_PATH, config_template.get('GENERAL', 'COLOR_THEME'))
+				template_file = join_path(ROOT_PATH, config_template.get('GENERAL', 'TEMPLATE_FILE'))
+				output_file = join_path(ROOT_PATH, config_template.get('GENERAL', 'OUTPUT_FILE'))
+				color_file = join_path(ROOT_PATH, config_template.get('GENERAL', 'COLOR_THEME'))
 
 				print(f"Trying to read config file from: {color_file}")
 				config_colors = read_config(color_file, True)
@@ -89,7 +86,7 @@ def main():
 				for section in config_sources.sections():
 					if section != "GENERAL" and 'SOURCE_FOLDER' in config_sources[section]:
 						print(f"GENERATE SECTION: {section}")
-						source_folder = os.path.join(ROOT_PATH, config_sources[section]['SOURCE_FOLDER'])
+						source_folder = join_path(ROOT_PATH, config_sources[section]['SOURCE_FOLDER'])
 						concatenated_content = concatenate_files_from_directory(source_folder, excluded_dirs)
 						block_name = f"[{section}]"
 						output = output.replace(block_name, concatenated_content)
