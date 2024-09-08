@@ -1,652 +1,678 @@
 {
-"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
-"rules": [
-	{
-		"match": {
-			"equipSlot": "Skyrim.esm|35698"
-		},
-		"assign": {
-			"equipType": "0",
-			"equipTypeDisplay": "$EqpInstant"
-		}
-	},
-	{
-		"match": {
-			"equipSlot": {
-				"anyOf": [
-					"Skyrim.esm|13F42",
-					"Skyrim.esm|13F43",
-					"Skyrim.esm|13F44",
-					"Skyrim.esm|141E8"
-				]
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"equipSlot": "Skyrim.esm|35698"
+			},
+			"assign": {
+				"equipType": "0",
+				"equipTypeDisplay": "$EqpInstant"
 			}
 		},
-		"assign": {
-			"equipType": "1",
-			"equipTypeDisplay": "$EqpOneHanded"
-		}
-	},
-	{
-		"match": {
-			"equipSlot": "Skyrim.esm|13F45"
-		},
-		"assign": {
-			"equipType": "2",
-			"equipTypeDisplay": "$EqpTwoHanded"
-		}
-	},
-	{
-		"match": {
-			"equipSlot": "Skyrim.esm|25BEE"
-		},
-		"assign": {
-			"equipType": "3",
-			"equipTypeDisplay": "$EqpVoice"
-		}
-	},
-	{
-		"match": {
-			"formType": "Ammo",
-			"keywords": {
-				"anyOf": [
-					"OCF_AmmoTypeArrow",
-					"OCF_AmmoTypeBolt",
-					"OCF_AmmoTypeBullet",
-					"OCF_AmmoTypeDart",
-					"OCF_AmmoTypeSlingshot"
-				]
+		{
+			"match": {
+				"equipSlot": {
+					"anyOf": [
+						"Skyrim.esm|13F42",
+						"Skyrim.esm|13F43",
+						"Skyrim.esm|13F44",
+						"Skyrim.esm|141E8"
+					]
+				}
+			},
+			"assign": {
+				"equipType": "1",
+				"equipTypeDisplay": "$EqpOneHanded"
 			}
 		},
-		"assign": {
-			"equipType": "3",
-			"equipTypeDisplay": "$EqpAmmo"
-		}
-	},
-	{
-		"match": {
-			"duration": 0
-		},
-		"assign": {
-			"duration": "-"
-		}
-	},
-	{
-		"match": {
-			"duration": { "min": 86400 }
-		},
-		"assign": {
-			"duration": "-"
-		}
-	},
-	{
-		"match": {
-			"resistance": "DamageResist"
-		},
-		"assign": {
-			"resistanceDisplay": "$Damage"
-		}
-	},
-	{
-		"match": {
-			"resistance": "DiseaseResist"
-		},
-		"assign": {
-			"resistanceDisplay": "$MagicDisease"
-		}
-	},
-	{
-		"match": {
-			"resistance": "FireResist"
-		},
-		"assign": {
-			"resistanceDisplay": "$MagicFire"
-		}
-	},
-	{
-		"match": {
-			"resistance": "FrostResist"
-		},
-		"assign": {
-			"resistanceDisplay": "$MagicFrost"
-		}
-	},
-	{
-		"match": {
-			"resistance": "MagicResist"
-		},
-		"assign": {
-			"resistanceDisplay": "$Magic"
-		}
-	},
-	{
-		"match": {
-			"resistance": "PoisonResist"
-		},
-		"assign": {
-			"resistanceDisplay": "$MagicPoison"
-		}
-	},
-	{
-		"match": {
-			"resistance": "ElectricResist"
-		},
-		"assign": {
-			"resistanceDisplay": "$MagicShock"
-		}
-	},
-	{
-		"match": {
-			"keywords": {
-				"anyOf": [
-					"ArmorMaterialDaedric",
-					"WeapMaterialDaedric",
-					"REQ_ArmorSet_Daedric"
-				]
+		{
+			"match": {
+				"equipSlot": "Skyrim.esm|13F45"
+			},
+			"assign": {
+				"equipType": "2",
+				"equipTypeDisplay": "$EqpTwoHanded"
 			}
 		},
-		"assign": {
-			"materialDisplay": "$Daedric"
-		}
-	},
-	{
-		"match": {
-			"keywords": {
-				"anyOf": [
-					"ArmorMaterialDragonplate",
-					"REQ_ArmorSet_Dragonplate"
-				]
+		{
+			"match": {
+				"equipSlot": "Skyrim.esm|25BEE"
+			},
+			"assign": {
+				"equipType": "3",
+				"equipTypeDisplay": "$EqpVoice"
 			}
 		},
-		"assign": {
-			"materialDisplay": "$Dragonplate"
-		}
-	},
-	{
-		"match": {
-			"keywords": {
-				"anyOf": [
-					"ArmorMaterialDragonscale",
-					"REQ_ArmorSet_Dragonscale"
-				]
+		{
+			"match": {
+				"formType": "Ammo",
+				"keywords": {
+					"anyOf": [
+						"OCF_AmmoTypeArrow",
+						"OCF_AmmoTypeBolt",
+						"OCF_AmmoTypeBullet",
+						"OCF_AmmoTypeDart",
+						"OCF_AmmoTypeSlingshot"
+					]
+				}
+			},
+			"assign": {
+				"equipType": "3",
+				"equipTypeDisplay": "$EqpAmmo"
 			}
 		},
-		"assign": {
-			"materialDisplay": "$Dragonscale"
-		}
-	},
-	{
-		"match": {
-			"keywords": {
-				"anyOf": [
-					"ArmorMaterialDwarven",
-					"WeapMaterialDwarven",
-					"REQ_ArmorSet_DwarvenHeavy"
-				]
+		{
+			"match": {
+				"duration": 0
+			},
+			"assign": {
+				"duration": "-"
 			}
 		},
-		"assign": {
-			"materialDisplay": "$Dwarven"
-		}
-	},
-	{
-		"match": {
-			"keywords": {
-				"anyOf": [
-					"ArmorMaterialEbony",
-					"WeapMaterialEbony",
-					"REQ_ArmorSet_Ebony"
-				]
+		{
+			"match": {
+				"duration": {
+					"min": 86400
+				}
+			},
+			"assign": {
+				"duration": "-"
 			}
 		},
-		"assign": {
-			"materialDisplay": "$Ebony"
-		}
-	},
-	{
-		"match": {
-			"keywords": {
-				"anyOf": [
-					"ArmorMaterialElven",
-					"WeapMaterialElven",
-					"REQ_ArmorSet_Elven"
-				]
+		{
+			"match": {
+				"resistance": "DamageResist"
+			},
+			"assign": {
+				"resistanceDisplay": "$Damage"
 			}
 		},
-		"assign": {
-			"materialDisplay": "$Elven"
-		}
-	},
-	{
-		"match": {
-			"keywords": {
-				"anyOf": [
-					"ArmorMaterialElvenGilded",
-					"REQ_LEGACY_ArmorMaterialElvenGilded"
-				]
+		{
+			"match": {
+				"resistance": "DiseaseResist"
+			},
+			"assign": {
+				"resistanceDisplay": "$MagicDisease"
 			}
 		},
-		"assign": {
-			"materialDisplay": "$Elven Gilded"
-		}
-	},
-	{
-		"match": {
-			"keywords": {
-				"anyOf": [
-					"ArmorMaterialGlass",
-					"WeapMaterialGlass",
-					"REQ_ArmorSet_Glass"
-				]
+		{
+			"match": {
+				"resistance": "FireResist"
+			},
+			"assign": {
+				"resistanceDisplay": "$MagicFire"
 			}
 		},
-		"assign": {
-			"materialDisplay": "$Glass"
-		}
-	},
-	{
-		"match": {
-			"keywords": {
-				"anyOf": [
-					"ArmorMaterialHide",
-					"REQ_ArmorSet_Hide"
-				]
+		{
+			"match": {
+				"resistance": "FrostResist"
+			},
+			"assign": {
+				"resistanceDisplay": "$MagicFrost"
 			}
 		},
-		"assign": {
-			"materialDisplay": "$Hide"
-		}
-	},
-	{
-		"match": {
-			"keywords": {
-				"anyOf": [
-					"ArmorMaterialImperialHeavy",
-					"ArmorMaterialImperialLight",
-					"WeapMaterialImperial",
-					"REQ_ArmorSet_ImperialLight",
-					"REQ_ArmorSet_ImperialHeavy"
-				]
+		{
+			"match": {
+				"resistance": "MagicResist"
+			},
+			"assign": {
+				"resistanceDisplay": "$Magic"
 			}
 		},
-		"assign": {
-			"materialDisplay": "$Imperial"
-		}
-	},
-	{
-		"match": {
-			"keywords": {
-				"anyOf": [
-					"ArmorMaterialImperialStudded",
-					"ArmorMaterialStudded",
-					"REQ_LEGACY_ArmorMaterialStudded",
-					"REQ_LEGACY_ArmorMaterialImperialStudded"
-				]
+		{
+			"match": {
+				"resistance": "PoisonResist"
+			},
+			"assign": {
+				"resistanceDisplay": "$MagicPoison"
 			}
 		},
-		"assign": {
-			"materialDisplay": "$Studded"
-		}
-	},
-	{
-		"match": {
-			"keywords": {
-				"anyOf": [
-					"ArmorMaterialIron",
-					"WeapMaterialIron",
-					"REQ_ArmorSet_Iron"
-				]
+		{
+			"match": {
+				"resistance": "ElectricResist"
+			},
+			"assign": {
+				"resistanceDisplay": "$MagicShock"
 			}
 		},
-		"assign": {
-			"materialDisplay": "$Iron"
-		}
-	},
-	{
-		"match": {
-			"keywords": {
-				"anyOf": [
-					"ArmorMaterialIronBanded",
-					"REQ_LEGACY_ArmorMaterialIronBanded"
-				]
+		{
+			"match": {
+				"keywords": {
+					"anyOf": [
+						"ArmorMaterialDaedric",
+						"WeapMaterialDaedric",
+						"REQ_ArmorSet_Daedric"
+					]
+				}
+			},
+			"assign": {
+				"materialDisplay": "$Daedric"
 			}
 		},
-		"assign": {
-			"materialDisplay": "$Iron Banded"
-		}
-	},
-	{
-		"match": {
-			"keywords": {
-				"anyOf": [
-					"DLC1ArmorMaterialVampire",
-					"REQ_ArmorSet_Vampire"
-				]
+		{
+			"match": {
+				"keywords": {
+					"anyOf": [
+						"ArmorMaterialDragonplate",
+						"REQ_ArmorSet_Dragonplate"
+					]
+				}
+			},
+			"assign": {
+				"materialDisplay": "$Dragonplate"
 			}
 		},
-		"assign": {
-			"materialDisplay": "$Vampire"
-		}
-	},
-	{
-		"match": {
-			"keywords": {
-				"anyOf": [
-					"ArmorMaterialLeather",
-					"REQ_ArmorSet_Leather"
-				]
+		{
+			"match": {
+				"keywords": {
+					"anyOf": [
+						"ArmorMaterialDragonscale",
+						"REQ_ArmorSet_Dragonscale"
+					]
+				}
+			},
+			"assign": {
+				"materialDisplay": "$Dragonscale"
 			}
 		},
-		"assign": {
-			"materialDisplay": "$Leather"
-		}
-	},
-	{
-		"match": {
-			"keywords": {
-				"anyOf": [
-					"ArmorMaterialOrcish",
-					"WeapMaterialOrcish",
-					"REQ_ArmorSet_OrcishHeavy"
-				]
+		{
+			"match": {
+				"keywords": {
+					"anyOf": [
+						"ArmorMaterialDwarven",
+						"WeapMaterialDwarven",
+						"REQ_ArmorSet_DwarvenHeavy"
+					]
+				}
+			},
+			"assign": {
+				"materialDisplay": "$Dwarven"
 			}
 		},
-		"assign": {
-			"materialDisplay": "$Orcish"
-		}
-	},
-	{
-		"match": {
-			"keywords": {
-				"anyOf": [
-					"ArmorMaterialScaled",
-					"REQ_ArmorSet_Scale"
-				]
+		{
+			"match": {
+				"keywords": {
+					"anyOf": [
+						"ArmorMaterialEbony",
+						"WeapMaterialEbony",
+						"REQ_ArmorSet_Ebony"
+					]
+				}
+			},
+			"assign": {
+				"materialDisplay": "$Ebony"
 			}
 		},
-		"assign": {
-			"materialDisplay": "$Scaled"
-		}
-	},
-	{
-		"match": {
-			"keywords": {
-				"anyOf": [
-					"ArmorMaterialSteel",
-					"WeapMaterialSteel",
-					"REQ_ArmorSet_Steel"
-				]
+		{
+			"match": {
+				"keywords": {
+					"anyOf": [
+						"ArmorMaterialElven",
+						"WeapMaterialElven",
+						"REQ_ArmorSet_Elven"
+					]
+				}
+			},
+			"assign": {
+				"materialDisplay": "$Elven"
 			}
 		},
-		"assign": {
-			"materialDisplay": "$Steel"
-		}
-	},
-	{
-		"match": {
-			"keywords": {
-				"anyOf": [
-					"ArmorMaterialSteelPlate",
-					"REQ_ArmorSet_SteelPlate"
-				]
+		{
+			"match": {
+				"keywords": {
+					"anyOf": [
+						"ArmorMaterialElvenGilded",
+						"REQ_LEGACY_ArmorMaterialElvenGilded"
+					]
+				}
+			},
+			"assign": {
+				"materialDisplay": "$Elven Gilded"
 			}
 		},
-		"assign": {
-			"materialDisplay": "$Steel Plate"
-		}
-	},
-	{
-		"match": {
-			"keywords": {
-				"anyOf": [
-					"ArmorMaterialStormcloak",
-					"REQ_LEGACY_ArmorMaterialStormcloak"
-				]
+		{
+			"match": {
+				"keywords": {
+					"anyOf": [
+						"ArmorMaterialGlass",
+						"WeapMaterialGlass",
+						"REQ_ArmorSet_Glass"
+					]
+				}
+			},
+			"assign": {
+				"materialDisplay": "$Glass"
 			}
 		},
-		"assign": {
-			"materialDisplay": "$Stormcloak"
-		}
-	},
-	{
-		"match": {
-			"keywords": {
-				"anyOf": [
-					"DLC1ArmorMaterialDawnguard",
-					"REQ_ArmorSet_DawnguardHeavy"
-				]
+		{
+			"match": {
+				"keywords": {
+					"anyOf": [
+						"ArmorMaterialHide",
+						"REQ_ArmorSet_Hide"
+					]
+				}
+			},
+			"assign": {
+				"materialDisplay": "$Hide"
 			}
 		},
-		"assign": {
-			"materialDisplay": "$Dawnguard"
-		}
-	},
-	{
-		"match": {
-			"keywords": {
-				"anyOf": [
-					"DLC1ArmorMaterialFalmerHardened",
-					"DLC1ArmorMaterialFalmerHeavy",
-					"DLC1ArmorMaterielFalmerHeavyOriginal",
-					"REQ_NULL_DLC1ArmorMaterialFalmerHardened",
-					"REQ_ArmorSet_FalmerHeavy",
-					"REQ_NULL_DLC1ArmorMaterielFalmerHeavyOriginal"
-				]
+		{
+			"match": {
+				"keywords": {
+					"anyOf": [
+						"ArmorMaterialImperialHeavy",
+						"ArmorMaterialImperialLight",
+						"WeapMaterialImperial",
+						"REQ_ArmorSet_ImperialLight",
+						"REQ_ArmorSet_ImperialHeavy"
+					]
+				}
+			},
+			"assign": {
+				"materialDisplay": "$Imperial"
 			}
 		},
-		"assign": {
-			"materialDisplay": "$Falmer Hardened"
-		}
-	},
-	{
-		"match": {
-			"keywords": {
-				"anyOf": [
-					"DLC1ArmorMaterialHunter",
-					"REQ_ArmorSet_DawnguardLight"
-				]
+		{
+			"match": {
+				"keywords": {
+					"anyOf": [
+						"ArmorMaterialImperialStudded",
+						"ArmorMaterialStudded",
+						"REQ_LEGACY_ArmorMaterialStudded",
+						"REQ_LEGACY_ArmorMaterialImperialStudded"
+					]
+				}
+			},
+			"assign": {
+				"materialDisplay": "$Studded"
 			}
 		},
-		"assign": {
-			"materialDisplay": "$Hunter"
-		}
-	},
-	{
-		"match": {
-			"keywords": [ "DLC1LD_CraftingMaterialAetherium" ]
-		},
-		"assign": {
-			"materialDisplay": "$Aetherium"
-		}
-	},
-	{
-		"match": {
-			"keywords": [ "DLC1WeapMaterialDragonbone" ]
-		},
-		"assign": {
-			"materialDisplay": "$Dragonbone"
-		}
-	},
-	{
-		"match": {
-			"keywords": {
-				"anyOf": [
-					"DLC2ArmorMaterialBonemoldHeavy",
-					"DLC2ArmorMaterialBonemoldLight",
-					"REQ_ArmorSet_Bonemold"
-				]
+		{
+			"match": {
+				"keywords": {
+					"anyOf": [
+						"ArmorMaterialIron",
+						"WeapMaterialIron",
+						"REQ_ArmorSet_Iron"
+					]
+				}
+			},
+			"assign": {
+				"materialDisplay": "$Iron"
 			}
 		},
-		"assign": {
-			"materialDisplay": "$Bonemold"
-		}
-	},
-	{
-		"match": {
-			"keywords": {
-				"anyOf": [
-					"DLC2ArmorMaterialChitinHeavy",
-					"DLC2ArmorMaterialChitinLight",
-					"REQ_ArmorSet_ChitinLight",
-					"REQ_ArmorSet_ChitinHeavy"
-				]
+		{
+			"match": {
+				"keywords": {
+					"anyOf": [
+						"ArmorMaterialIronBanded",
+						"REQ_LEGACY_ArmorMaterialIronBanded"
+					]
+				}
+			},
+			"assign": {
+				"materialDisplay": "$Iron Banded"
 			}
 		},
-		"assign": {
-			"materialDisplay": "$Chitin"
-		}
-	},
-	{
-		"match": {
-			"keywords": {
-				"anyOf": [
-					"DLC2ArmorMaterialMoragTong",
-					"REQ_LEGACY_DLC2ArmorMaterialMoragTong"
-				]
+		{
+			"match": {
+				"keywords": {
+					"anyOf": [
+						"DLC1ArmorMaterialVampire",
+						"REQ_ArmorSet_Vampire"
+					]
+				}
+			},
+			"assign": {
+				"materialDisplay": "$Vampire"
 			}
 		},
-		"assign": {
-			"materialDisplay": "$Morag Tong"
-		}
-	},
-	{
-		"match": {
-			"keywords": {
-				"anyOf": [
-					"DLC2ArmorMaterialNordicHeavy",
-					"DLC2ArmorMaterialNordicLight",
-					"DLC2WeaponMaterialNordic",
-					"REQ_NULL_DLC2ArmorMaterialNordicLight",
-					"REQ_ArmorSet_Quicksilver"
-				]
+		{
+			"match": {
+				"keywords": {
+					"anyOf": [
+						"ArmorMaterialLeather",
+						"REQ_ArmorSet_Leather"
+					]
+				}
+			},
+			"assign": {
+				"materialDisplay": "$Leather"
 			}
 		},
-		"assign": {
-			"materialDisplay": "$Nordic"
-		}
-	},
-	{
-		"match": {
-			"keywords": {
-				"anyOf": [
-					"DLC2ArmorMaterialStalhrimHeavy",
-					"DLC2ArmorMaterialStalhrimLight",
-					"DLC2WeaponMaterialStalhrim",
-					"REQ_ArmorSet_StalhrimHeavy",
-					"REQ_ArmorSet_StalhrimLight"
-				]
+		{
+			"match": {
+				"keywords": {
+					"anyOf": [
+						"ArmorMaterialOrcish",
+						"WeapMaterialOrcish",
+						"REQ_ArmorSet_OrcishHeavy"
+					]
+				}
+			},
+			"assign": {
+				"materialDisplay": "$Orcish"
 			}
 		},
-		"assign": {
-			"materialDisplay": "$Stalhrim"
-		}
-	},
-	{
-		"match": {
-			"keywords": [ "DLC2dunHaknirArmor" ]
-		},
-		"assign": {
-			"materialDisplay": "$Deathbrand"
-		}
-	},
-	{
-		"match": {
-			"keywords": [ "WeapMaterialDraugr" ]
-		},
-		"assign": {
-			"materialDisplay": "$Draugr"
-		}
-	},
-	{
-		"match": {
-			"keywords": [ "WeapMaterialDraugrHoned" ]
-		},
-		"assign": {
-			"materialDisplay": "$Draugr Honed"
-		}
-	},
-	{
-		"match": {
-			"keywords": {
-				"anyOf": [
-					"WeapMaterialFalmer",
-					"ArmorMaterialFalmer",
-					"REQ_ArmorSet_FalmerLight"
-				]
+		{
+			"match": {
+				"keywords": {
+					"anyOf": [
+						"ArmorMaterialScaled",
+						"REQ_ArmorSet_Scale"
+					]
+				}
+			},
+			"assign": {
+				"materialDisplay": "$Scaled"
 			}
 		},
-		"assign": {
-			"materialDisplay": "$Falmer"
-		}
-	},
-	{
-		"match": {
-			"keywords": [ "WeapMaterialFalmerHoned" ]
-		},
-		"assign": {
-			"materialDisplay": "$Falmer Honed"
-		}
-	},
-	{
-		"match": {
-			"keywords": [ "WeapMaterialSilver" ]
-		},
-		"assign": {
-			"materialDisplay": "$Silver"
-		}
-	},
-	{
-		"match": {
-			"keywords": [ "WeapMaterialWood" ]
-		},
-		"assign": {
-			"materialDisplay": "$Wood"
-		}
-	},
-	{
-		"match": {
-			"keywords": {
-				"anyOf": [
-					"JELArmorMaterialAdamantium",
-					"JELWeaponMaterialAdamantium",
-					"OCF_MaterialDisplayAdamantium"
-				]
+		{
+			"match": {
+				"keywords": {
+					"anyOf": [
+						"ArmorMaterialSteel",
+						"WeapMaterialSteel",
+						"REQ_ArmorSet_Steel"
+					]
+				}
+			},
+			"assign": {
+				"materialDisplay": "$Steel"
 			}
 		},
-		"assign": {
-			"materialDisplay": "$ItemMaterialAdamantium"
-		}
-	},
-	{
-		"match": {
-			"keywords": [ "OCF_MaterialDisplayChitin" ]
+		{
+			"match": {
+				"keywords": {
+					"anyOf": [
+						"ArmorMaterialSteelPlate",
+						"REQ_ArmorSet_SteelPlate"
+					]
+				}
+			},
+			"assign": {
+				"materialDisplay": "$Steel Plate"
+			}
 		},
-		"assign": {
-			"materialDisplay": "$Chitin"
-		}
-	},
-	{
-		"match": {
-			"keywords": [ "OCF_MaterialDisplayDarkBrotherhood" ]
+		{
+			"match": {
+				"keywords": {
+					"anyOf": [
+						"ArmorMaterialStormcloak",
+						"REQ_LEGACY_ArmorMaterialStormcloak"
+					]
+				}
+			},
+			"assign": {
+				"materialDisplay": "$Stormcloak"
+			}
 		},
-		"assign": {
-			"materialDisplay": "$ItemMaterialDarkBrotherhood"
-		}
-	},
-	{
-		"match": {
-			"keywords": [ "OCF_MaterialDisplayLeather" ]
+		{
+			"match": {
+				"keywords": {
+					"anyOf": [
+						"DLC1ArmorMaterialDawnguard",
+						"REQ_ArmorSet_DawnguardHeavy"
+					]
+				}
+			},
+			"assign": {
+				"materialDisplay": "$Dawnguard"
+			}
 		},
-		"assign": {
-			"materialDisplay": "$Leather"
-		}
-	},
-	{
-		"match": {
-			"keywords": [ "OCF_MaterialDisplaySilver" ]
+		{
+			"match": {
+				"keywords": {
+					"anyOf": [
+						"DLC1ArmorMaterialFalmerHardened",
+						"DLC1ArmorMaterialFalmerHeavy",
+						"DLC1ArmorMaterielFalmerHeavyOriginal",
+						"REQ_NULL_DLC1ArmorMaterialFalmerHardened",
+						"REQ_ArmorSet_FalmerHeavy",
+						"REQ_NULL_DLC1ArmorMaterielFalmerHeavyOriginal"
+					]
+				}
+			},
+			"assign": {
+				"materialDisplay": "$Falmer Hardened"
+			}
 		},
-		"assign": {
-			"materialDisplay": "$Silver"
+		{
+			"match": {
+				"keywords": {
+					"anyOf": [
+						"DLC1ArmorMaterialHunter",
+						"REQ_ArmorSet_DawnguardLight"
+					]
+				}
+			},
+			"assign": {
+				"materialDisplay": "$Hunter"
+			}
+		},
+		{
+			"match": {
+				"keywords": [
+					"DLC1LD_CraftingMaterialAetherium"
+				]
+			},
+			"assign": {
+				"materialDisplay": "$Aetherium"
+			}
+		},
+		{
+			"match": {
+				"keywords": [
+					"DLC1WeapMaterialDragonbone"
+				]
+			},
+			"assign": {
+				"materialDisplay": "$Dragonbone"
+			}
+		},
+		{
+			"match": {
+				"keywords": {
+					"anyOf": [
+						"DLC2ArmorMaterialBonemoldHeavy",
+						"DLC2ArmorMaterialBonemoldLight",
+						"REQ_ArmorSet_Bonemold"
+					]
+				}
+			},
+			"assign": {
+				"materialDisplay": "$Bonemold"
+			}
+		},
+		{
+			"match": {
+				"keywords": {
+					"anyOf": [
+						"DLC2ArmorMaterialChitinHeavy",
+						"DLC2ArmorMaterialChitinLight",
+						"REQ_ArmorSet_ChitinLight",
+						"REQ_ArmorSet_ChitinHeavy"
+					]
+				}
+			},
+			"assign": {
+				"materialDisplay": "$Chitin"
+			}
+		},
+		{
+			"match": {
+				"keywords": {
+					"anyOf": [
+						"DLC2ArmorMaterialMoragTong",
+						"REQ_LEGACY_DLC2ArmorMaterialMoragTong"
+					]
+				}
+			},
+			"assign": {
+				"materialDisplay": "$Morag Tong"
+			}
+		},
+		{
+			"match": {
+				"keywords": {
+					"anyOf": [
+						"DLC2ArmorMaterialNordicHeavy",
+						"DLC2ArmorMaterialNordicLight",
+						"DLC2WeaponMaterialNordic",
+						"REQ_NULL_DLC2ArmorMaterialNordicLight",
+						"REQ_ArmorSet_Quicksilver"
+					]
+				}
+			},
+			"assign": {
+				"materialDisplay": "$Nordic"
+			}
+		},
+		{
+			"match": {
+				"keywords": {
+					"anyOf": [
+						"DLC2ArmorMaterialStalhrimHeavy",
+						"DLC2ArmorMaterialStalhrimLight",
+						"DLC2WeaponMaterialStalhrim",
+						"REQ_ArmorSet_StalhrimHeavy",
+						"REQ_ArmorSet_StalhrimLight"
+					]
+				}
+			},
+			"assign": {
+				"materialDisplay": "$Stalhrim"
+			}
+		},
+		{
+			"match": {
+				"keywords": [
+					"DLC2dunHaknirArmor"
+				]
+			},
+			"assign": {
+				"materialDisplay": "$Deathbrand"
+			}
+		},
+		{
+			"match": {
+				"keywords": [
+					"WeapMaterialDraugr"
+				]
+			},
+			"assign": {
+				"materialDisplay": "$Draugr"
+			}
+		},
+		{
+			"match": {
+				"keywords": [
+					"WeapMaterialDraugrHoned"
+				]
+			},
+			"assign": {
+				"materialDisplay": "$Draugr Honed"
+			}
+		},
+		{
+			"match": {
+				"keywords": {
+					"anyOf": [
+						"WeapMaterialFalmer",
+						"ArmorMaterialFalmer",
+						"REQ_ArmorSet_FalmerLight"
+					]
+				}
+			},
+			"assign": {
+				"materialDisplay": "$Falmer"
+			}
+		},
+		{
+			"match": {
+				"keywords": [
+					"WeapMaterialFalmerHoned"
+				]
+			},
+			"assign": {
+				"materialDisplay": "$Falmer Honed"
+			}
+		},
+		{
+			"match": {
+				"keywords": [
+					"WeapMaterialSilver"
+				]
+			},
+			"assign": {
+				"materialDisplay": "$Silver"
+			}
+		},
+		{
+			"match": {
+				"keywords": [
+					"WeapMaterialWood"
+				]
+			},
+			"assign": {
+				"materialDisplay": "$Wood"
+			}
+		},
+		{
+			"match": {
+				"keywords": {
+					"anyOf": [
+						"JELArmorMaterialAdamantium",
+						"JELWeaponMaterialAdamantium",
+						"OCF_MaterialDisplayAdamantium"
+					]
+				}
+			},
+			"assign": {
+				"materialDisplay": "$ItemMaterialAdamantium"
+			}
+		},
+		{
+			"match": {
+				"keywords": [
+					"OCF_MaterialDisplayChitin"
+				]
+			},
+			"assign": {
+				"materialDisplay": "$Chitin"
+			}
+		},
+		{
+			"match": {
+				"keywords": [
+					"OCF_MaterialDisplayDarkBrotherhood"
+				]
+			},
+			"assign": {
+				"materialDisplay": "$ItemMaterialDarkBrotherhood"
+			}
+		},
+		{
+			"match": {
+				"keywords": [
+					"OCF_MaterialDisplayLeather"
+				]
+			},
+			"assign": {
+				"materialDisplay": "$Leather"
+			}
+		},
+		{
+			"match": {
+				"keywords": [
+					"OCF_MaterialDisplaySilver"
+				]
+			},
+			"assign": {
+				"materialDisplay": "$Silver"
+			}
 		}
-	}
-]
+	]
 }
