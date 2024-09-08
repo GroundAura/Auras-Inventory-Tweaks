@@ -1,58 +1,66 @@
 {
-"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
-"rules": [
-	{
-		"match": {
-			"formType": "Key"
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Key"
+			},
+			"assign": {
+				"itemType": "8",
+				"iconLabel": "default_key"
+			}
 		},
-		"assign": {
-			"itemType": "8",
-			"iconLabel": "default_key"
-		}
-	},
-	{
-		"match": {
-			"formType": "Key",
-			"keywords": [ "OCF_KeyPlayerHome" ]
+		{
+			"match": {
+				"formType": "Key",
+				"keywords": [
+					"OCF_KeyPlayerHome"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemKeyHome",
+				"iconLabel": "key_house"
+			}
 		},
-		"assign": {
-			"subTypeDisplay": "$ItemKeyHome",
-			"iconLabel": "key_house"
-		}
-	},
-	{
-		"match": {
-			"formType": "Key",
-			"keywords": [ "OCF_IngrRemains_BoneSkull" ]
+		{
+			"match": {
+				"formType": "Key",
+				"keywords": [
+					"OCF_IngrRemains_BoneSkull"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Remains",
+				"iconLabel": "misc_remains"
+			}
 		},
-		"assign": {
-			"subTypeDisplay": "$Remains",
-			"iconLabel": "misc_remains"
-		}
-	},
-	{
-		"match": {
-			"formType": "Key",
-			"keywords": [ "OCF_RelicDaedric" ]
+		{
+			"match": {
+				"formType": "Key",
+				"keywords": [
+					"OCF_RelicDaedric"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscRelic",
+				"iconSource": "AIT/Aura/icons.swf",
+				"iconLabel": "misc_artifactdaedra",
+				"iconColor": "#A14040"
+			}
 		},
-		"assign": {
-			"subTypeDisplay": "$ItemMiscRelic",
-			"iconSource": "AIT/Aura/icons.swf",
-			"iconLabel": "misc_artifactdaedra",
-			"iconColor": "#A14040"
+		{
+			"match": {
+				"formType": "Key",
+				"keywords": [
+					"OCF_RelicDwarven"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscRelic",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_dwarvenscrap",
+				"iconColor": "#705F32"
+			}
 		}
-	},
-	{
-		"match": {
-			"formType": "Key",
-			"keywords": [ "OCF_RelicDwarven" ]
-		},
-		"assign": {
-			"subTypeDisplay": "$ItemMiscRelic",
-			"iconSource": "I4IconAddon/icons.swf",
-			"iconLabel": "misc_dwarvenscrap",
-			"iconColor": "#705F32"
-		}
-	}
-]
+	]
 }
