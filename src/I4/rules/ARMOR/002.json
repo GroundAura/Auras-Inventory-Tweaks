@@ -1,0 +1,186 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_ArmorTypeHead_Main"
+				]
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "1",
+				"subType": "Head",
+				"subTypeDisplay": "$Head"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_ArmorTypeBody_Main"
+				]
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "1",
+				"subTypeDisplay": "$Body"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_ArmorTypeHands_Main"
+				]
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "1",
+				"subTypeDisplay": "$Hands"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_ArmorTypeFeet_Main"
+				]
+			},
+			"assign": {
+				"itemClass": "4",
+				"itemSort": "1",
+				"subTypeDisplay": "$Feet"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"parts": [
+					46
+				]
+			},
+			"assign": {
+				"itemClass": "6",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemArmorCloak",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "clothing_cloak"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"parts": [
+					47
+				]
+			},
+			"assign": {
+				"itemClass": "10",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemArmorBackpack",
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "misc_backpack"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_ArmorTypeHead_Alt"
+				]
+			},
+			"assign": {
+				"itemClass": "5",
+				"itemSort": "2"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"mainPart": 42,
+				"keywords": {
+					"anyOf": [
+						"OCF_HeadTypeCirclet",
+						"ClothingCirclet"
+					]
+				}
+			},
+			"assign": {
+				"itemSort": "1",
+				"subTypeDisplay": "$Circlet",
+				"iconLabel": "armor_circlet"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"ArmorTypeBody_Alt"
+				]
+			},
+			"assign": {
+				"itemClass": "6",
+				"itemSort": "2"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"mainPart": 35,
+				"keywords": {
+					"anyOf": [
+						"OCF_BodyTypeAmulet",
+						"ClothingNecklace"
+					]
+				}
+			},
+			"assign": {
+				"itemSort": "1",
+				"subTypeDisplay": "$Amulet",
+				"iconLabel": "armor_amulet"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_ArmorTypeHands_Alt"
+				]
+			},
+			"assign": {
+				"itemClass": "7",
+				"itemSort": "2"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_HandTypeRing",
+						"ClothingRing"
+					]
+				}
+			},
+			"assign": {
+				"itemSort": "1",
+				"subTypeDisplay": "$Ring",
+				"iconLabel": "armor_ring"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_ArmorTypeFeet_Alt"
+				]
+			},
+			"assign": {
+				"itemClass": "8",
+				"itemSort": "2"
+			}
+		}
+	]
+}

@@ -1,0 +1,73 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_SlgmX0X"
+				]
+			},
+			"assign": {
+				"iconLabel": "soulgem_empty",
+				"iconColor": "#ABA3FF"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_SlgmX5X"
+				]
+			},
+			"assign": {
+				"itemClass": "3",
+				"gemSize": "5",
+				"subTypeDisplay": "$Soul Gem",
+				"iconLabel": "soulgem_grandempty",
+				"iconColor": "#ABA3FF"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_SlgmBXX"
+				]
+			},
+			"assign": {
+				"itemClass": "3",
+				"gemSize": "5",
+				"canHoldNPCSoul": "1",
+				"subTypeDisplay": "$Soul Gem",
+				"iconLabel": "soulgem_empty",
+				"iconColor": "#7569FF"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"formId": "BSHeartland.esm|83A2E"
+			},
+			"assign": {
+				"subTypeDisplay": "$Soul Gem",
+				"iconLabel": "soulgem_empty",
+				"iconColor": "#7569FF"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"formId": "Dawnguard.esm|EA6A"
+			},
+			"assign": {
+				"itemClass": "3",
+				"gemSize": "5",
+				"canHoldNPCSoul": "1",
+				"subTypeDisplay": "$ItemMiscSoulEssenceGem",
+				"iconLabel": "soulgem_partial",
+				"iconColor": "#7569FF"
+			}
+		}
+	]
+}

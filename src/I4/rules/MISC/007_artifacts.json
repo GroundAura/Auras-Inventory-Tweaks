@@ -1,0 +1,176 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"OCF_Artifact",
+						"IconArtifact"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$Artifact"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_ArtifactDaedric"
+				]
+			},
+			"assign": {
+				"iconColor": "#A14040"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_ArtifactDaedric_Bittercup"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_amphora"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_ArtifactDaedric_BrokenStar"
+				]
+			},
+			"assign": {
+				"iconLabel": "soulgem_azura"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_ArtifactDaedric_ObsidianHusk"
+				]
+			},
+			"assign": {
+				"iconLabel": "misc_ore"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_ArtifactDaedric_SkeletonKey"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_skeletonkey"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_ArtifactLegendary"
+				]
+			},
+			"assign": {
+				"iconColor": "#C1884D"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_ArtifactLegendary_WhitePhial"
+				]
+			},
+			"assign": {
+				"iconLabel": "default_potion"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_Relic"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscRelic"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_RelicAedric"
+				]
+			},
+			"assign": {
+				"iconColor": "#0099CC"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_RelicAedric_Sapling"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "misc_sapling"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"OCF_RelicAyleid_Crystal",
+						"IconAyleidCrystal"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscAyleidCrystal",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "soulgem_ayleidcrystalfull",
+				"iconColor": "#5BC4C9"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"OCF_RelicNordic_DragonClaw",
+						"IconClaw"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscDragonClaw",
+				"iconLabel": "misc_dragonclaw",
+				"iconColor": "#C1884D"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_RelicNordic_SkullKey"
+				]
+			},
+			"assign": {
+				"iconLabel": "misc_remains"
+			}
+		}
+	]
+}

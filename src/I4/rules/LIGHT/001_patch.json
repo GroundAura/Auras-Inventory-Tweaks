@@ -1,0 +1,45 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Light",
+				"formId": {
+					"anyOf": [
+						"HoldableCandleV1.0.esp|D63",
+						"Light of Cinder.esp|83E",
+						"Den of Cinder.esp|83E"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscCandle",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_candle"
+			}
+		},
+		{
+			"match": {
+				"formType": "Light",
+				"formId": {
+					"anyOf": [
+						"Undriel_Everlight.esp|406E5",
+						"Undriel_Everlight.esp|406E6",
+						"Undriel_Everlight.esp|406E7",
+						"Undriel_Everlight.esp|406E8",
+						"Undriel_Everlight.esp|406EA",
+						"Undriel_Everlight.esp|435B6",
+						"Undriel_Everlight.esp|435B7",
+						"Undriel_Everlight.esp|435D3",
+						"Undriel_Everlight.esp|5E621",
+						"Undriel_Everlight.esp|77B37"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscEverlight",
+				"iconLabel": "weapon_mace"
+			}
+		}
+	]
+}

@@ -1,0 +1,303 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_HeadTypeBandage"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorFace",
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "armor_eyepatch"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_HeadTypeBandana"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorBandana",
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "armor_bandana"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_HeadTypeBarrette"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorAccessory",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_feather"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_HeadTypeBlindfold"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorFace",
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "armor_eyepatch"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_HeadTypeCrown",
+						"ClothingCrown"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorCrown",
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "clothing_crown"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_HeadTypeEarCuffs",
+						"ClothingEarCuffs"
+					]
+				}
+			},
+			"assign": {
+				"itemClass": "5",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemArmorEarCuffs",
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "armor_earring"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_HeadTypeEarrings",
+						"ClothingEarrings"
+					]
+				}
+			},
+			"assign": {
+				"itemClass": "5",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemArmorEarrings",
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "armor_earring"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_HeadTypeEars",
+						"OCF_HeadTypeEarsReal"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$Ears",
+				"iconLabel": "default_armor"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_HeadTypeEyePatch"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorFace",
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "armor_eyepatch"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_HeadTypeGag"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorGag",
+				"iconLabel": "armor_mask"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_HeadTypeGlasses"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorFace",
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "armor_glasses"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_HeadTypeGoggles"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorFace",
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "armor_goggles"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_HeadTypeHalo"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorHalo",
+				"iconLabel": "armor_circlet"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_HeadTypeHat"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Head",
+				"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+				"iconLabel": "armor_hat"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_HeadTypeHood",
+						"OCF_HeadTypeHoodLowered"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$Head",
+				"iconLabel": "clothing_head"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_HeadTypeHorns"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorHorns",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "armor_horns"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_HeadTypeMask",
+						"OCF_HeadTypeMask_Full",
+						"OCF_HeadTypeMaskFull"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorFace",
+				"iconLabel": "armor_mask"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_HeadTypeMask_Eyes",
+						"OCF_HeadTypeMaskEyes"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorFace",
+				"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+				"iconLabel": "armor_smallmask"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_HeadTypeMask_Mouth",
+						"OCF_HeadTypeMaskMouth"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorFace",
+				"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+				"iconLabel": "armor_facemask"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_HeadTypeHoodMasked",
+						"OCF_HeadTypeMaskHood"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$Head",
+				"iconLabel": "clothing_head"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_HeadTypeWig"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorWig",
+				"iconLabel": "clothing_head"
+			}
+		}
+	]
+}

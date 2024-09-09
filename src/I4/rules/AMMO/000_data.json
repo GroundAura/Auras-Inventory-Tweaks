@@ -1,0 +1,15 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Ammo"
+			},
+			"assign": {
+				"itemType": "1",
+				"itemClass": "6",
+				"itemSort": "1"
+			}
+		}
+	]
+}

@@ -1,0 +1,67 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Scroll",
+				"keywords": [
+					"OCF_WeapTypeDart1H"
+				]
+			},
+			"assign": {
+				"equipType": "1",
+				"equipTypeDisplay": "$EqpOneHanded",
+				"itemType": "1",
+				"itemClass": "1",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemAmmoDart",
+				"iconLabel": "weapon_bolt",
+				"iconColor": "#A4A5BF"
+			}
+		},
+		{
+			"match": {
+				"formType": "Scroll",
+				"keywords": {
+					"anyOf": [
+						"OCF_WeapTypeKunai1H",
+						"WeapTypeKunai"
+					]
+				}
+			},
+			"assign": {
+				"equipType": "1",
+				"equipTypeDisplay": "$EqpOneHanded",
+				"itemType": "1",
+				"itemClass": "1",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponKunai",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "weapon_kunai",
+				"iconColor": "#A4A5BF"
+			}
+		},
+		{
+			"match": {
+				"formType": "Scroll",
+				"keywords": {
+					"anyOf": [
+						"OCF_WeapTypeShuriken1H",
+						"WeapTypeShuriken"
+					]
+				}
+			},
+			"assign": {
+				"equipType": "1",
+				"equipTypeDisplay": "$EqpOneHanded",
+				"itemType": "1",
+				"itemClass": "1",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponShuriken",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "weapon_shuriken",
+				"iconColor": "#A4A5BF"
+			}
+		}
+	]
+}

@@ -1,0 +1,70 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Ammo",
+				"keywords": [
+					"OCF_AmmoTypeGreatarrow"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemAmmoGreatarrow"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ammo",
+				"keywords": [
+					"OCF_AmmoTypeJavelin"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemWeaponJavelin",
+				"iconSource": "skyui_weapons_pack/icons.swf",
+				"iconLabel": "weapon_javelin"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ammo",
+				"keywords": {
+					"anyOf": [
+						"OCF_AmmoTypeBullet",
+						"OCF_AmmoTypeBullet1H",
+						"OCF_AmmoTypeBullet2H"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemAmmoBullet",
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "weapon_bullet"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ammo",
+				"keywords": [
+					"OCF_AmmoTypeDart"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemAmmoDart",
+				"iconLabel": "weapon_bolt"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ammo",
+				"keywords": [
+					"OCF_AmmoTypeSlingshot"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemAmmoPellet",
+				"iconLabel": "misc_goldsack"
+			}
+		}
+	]
+}

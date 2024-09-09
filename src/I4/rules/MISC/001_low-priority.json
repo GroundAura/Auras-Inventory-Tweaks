@@ -1,0 +1,174 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"VendorItemTool",
+						"WAF_ToolsMaterials",
+						"OCF_Tool",
+						"IconTool"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$Tool",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_tool"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"OCF_Artifact",
+						"OCF_Relic",
+						"IconArtifact"
+					]
+				}
+			},
+			"assign": {
+				"iconLabel": "misc_artifact"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"OCF_WeapBroken",
+						"IconBrokenWeapon"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$Clutter"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"VendorItemBook"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Book",
+				"iconLabel": "default_book"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"VendorItemScroll"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Scroll",
+				"iconLabel": "default_scroll"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscMaterial"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscMaterial",
+				"iconLabel": "misc_clutter",
+				"iconColor": "#FFFFFF"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"OCF_MiscMaterial_Ingot",
+						"VendorItemOreIngot"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$Ingot",
+				"iconLabel": "misc_ingot",
+				"iconColor": "#828282"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"VendorItemGem"
+				]
+			},
+			"assign": {
+				"iconLabel": "misc_gem",
+				"iconColor": "#FFB0D1"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"OCF_ArtifactDaedric",
+						"OCF_RelicDaedric"
+					]
+				}
+			},
+			"assign": {
+				"iconSource": "AIT/Aura/icons.swf",
+				"iconLabel": "misc_artifactdaedra",
+				"iconColor": "#A14040"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"OCF_ArtifactDwarven",
+						"OCF_RelicDwarven"
+					]
+				}
+			},
+			"assign": {
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_dwarvenscrap",
+				"iconColor": "#705F32"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"ClothingNecklace"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Amulet",
+				"iconLabel": "armor_amulet"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"VendorItemIngredient"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Ingredient",
+				"iconLabel": "default_ingredient",
+				"iconColor": "#FFFFFF"
+			}
+		}
+	]
+}

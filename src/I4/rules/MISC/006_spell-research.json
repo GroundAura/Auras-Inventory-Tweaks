@@ -1,0 +1,93 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"_SR_KeywordArtifact"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemSpellResearchArtifact"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_BookTextGrimoire"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemSpellResearchGrimoire",
+				"iconLabel": "book_tome"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_ScrlTypeShalidor"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemSpellResearchInsights",
+				"iconLabel": "default_scroll"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"_SR_KeywordSolution0",
+						"_SR_KeywordSolution1",
+						"_SR_KeywordSolution2",
+						"_SR_KeywordSolution3",
+						"_SR_KeywordSolution4",
+						"_SR_KeywordSolution5"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemSpellResearchSolution"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"_SR_KeywordTextTranslationAyleidoon",
+						"_SR_KeywordTextTranslationDaedric",
+						"_SR_KeywordTextTranslationDragon",
+						"_SR_KeywordTextTranslationDwemeris",
+						"_SR_KeywordTextTranslationFalmer",
+						"_SR_KeywordTextTranslationYoku",
+						"OCF_BookTextAncient"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemSpellResearchText",
+				"iconLabel": "default_book"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"_SR_KeywordThesis",
+						"OCF_BookTextThesis"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemSpellResearchThesis",
+				"iconLabel": "default_scroll"
+			}
+		}
+	]
+}

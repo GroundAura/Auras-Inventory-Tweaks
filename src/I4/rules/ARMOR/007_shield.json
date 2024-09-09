@@ -1,0 +1,156 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_ShieldTypeBuckler",
+						"ArmorShieldBuckler"
+					]
+				},
+				"weightClass": "Heavy"
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorShieldBuckler"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_ShieldTypeBuckler",
+						"ArmorShieldBuckler"
+					]
+				},
+				"weightClass": "Light"
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorShieldBuckler"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_ShieldTypeKite",
+						"ArmorShieldKite"
+					]
+				},
+				"weightClass": "Heavy"
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorShieldKite"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_ShieldTypeKite",
+						"ArmorShieldKite"
+					]
+				},
+				"weightClass": "Light"
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorShieldKite"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_ShieldTypeTower",
+						"ArmorShieldTower"
+					]
+				},
+				"weightClass": "Heavy"
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorShieldTower"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_ShieldTypeTower",
+						"ArmorShieldTower"
+					]
+				},
+				"weightClass": "Light"
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorShieldTower"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_ToolCompass",
+						"ArmorTypeShieldCompass"
+					]
+				}
+			},
+			"assign": {
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemMiscCompass",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_compass"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_BookTextMap",
+						"ArmorTypeShieldMap",
+						"IconMap"
+					]
+				}
+			},
+			"assign": {
+				"itemSort": "2",
+				"subTypeDisplay": "$Map",
+				"iconLabel": "book_map"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_ToolSpyglass"
+				]
+			},
+			"assign": {
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemMiscSpyglass",
+				"iconLabel": "misc_artifact"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_ToolWalkingStick"
+				]
+			},
+			"assign": {
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemArmorWalkingStick",
+				"iconSource": "skyui_weapons_pack/icons.swf",
+				"iconLabel": "weapon_quarterstaff"
+			}
+		}
+	]
+}

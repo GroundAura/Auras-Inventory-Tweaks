@@ -1,0 +1,38 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Book",
+				"keywords": [
+					"OCF_InvColorAedric"
+				]
+			},
+			"assign": {
+				"iconColor": "#0099CC"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"keywords": [
+					"OCF_InvColorDaedric"
+				]
+			},
+			"assign": {
+				"iconColor": "#A14040"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"keywords": [
+					"OCF_InvColorEldritch"
+				]
+			},
+			"assign": {
+				"iconColor": "#345F4C"
+			}
+		}
+	]
+}

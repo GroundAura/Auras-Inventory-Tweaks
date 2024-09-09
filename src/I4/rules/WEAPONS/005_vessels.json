@@ -1,0 +1,53 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": {
+					"anyOf": [
+						"OCF_MiscInstrument",
+						"IconInstrument"
+					]
+				}
+			},
+			"assign": {
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_instrument"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": [
+					"OCF_VesselBag"
+				]
+			},
+			"assign": {
+				"iconLabel": "misc_goldsack"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": [
+					"OCF_VesselBottlePoison"
+				]
+			},
+			"assign": {
+				"iconLabel": "potion_poison"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": [
+					"OCF_VesselBottlePotion"
+				]
+			},
+			"assign": {
+				"iconLabel": "default_potion"
+			}
+		}
+	]
+}

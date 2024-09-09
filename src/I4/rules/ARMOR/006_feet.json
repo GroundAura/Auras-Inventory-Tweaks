@@ -1,0 +1,110 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_FeetTypeCuisses"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorLegs",
+				"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+				"iconLabel": "armor_cuisses"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_FeetTypeGreaves"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorLegs",
+				"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+				"iconLabel": "armor_greaves"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_FeetTypeHeels"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Feet",
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "clothing_heels"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_FeetTypeHooves"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Feet",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "armor_hoof"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_FeetTypeNails"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorNails",
+				"iconLabel": "clothing_shoes"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_FeetTypeSabatons"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorSabatons",
+				"iconLabel": "armor_feet"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_FeetTypeFootwraps",
+						"OCF_FeetTypeSandals",
+						"OCF_FeetTypeShoes"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$Feet",
+				"iconLabel": "clothing_shoes"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_FeetTypeStockings"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorStockings",
+				"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+				"iconLabel": "armor_stockings"
+			}
+		}
+	]
+}

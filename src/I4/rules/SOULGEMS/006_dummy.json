@@ -1,0 +1,24 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "SoulGem",
+				"keywords": [
+					"OCF_AmmoTypeBullet"
+				]
+			},
+			"assign": {
+				"equipType": "3",
+				"equipTypeDisplay": "$EqpAmmo",
+				"itemType": "1",
+				"itemClass": "6",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemAmmoBullet",
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "weapon_bullet",
+				"iconColor": "#A89E8C"
+			}
+		}
+	]
+}

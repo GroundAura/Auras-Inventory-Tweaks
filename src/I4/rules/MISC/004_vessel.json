@@ -1,0 +1,404 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"ArmorCuirass"
+				]
+			},
+			"assign": {
+				"iconLabel": "armor_body"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"ClothingCrown"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "clothing_crown"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_HeadTypeMask"
+				]
+			},
+			"assign": {
+				"iconLabel": "armor_mask"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_BodyTypePants"
+				]
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+				"iconLabel": "armor_trousers"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_BookBindingBook"
+				]
+			},
+			"assign": {
+				"iconLabel": "default_book"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_BookBindingJournal"
+				]
+			},
+			"assign": {
+				"iconLabel": "book_journal"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_BookBindingNote"
+				]
+			},
+			"assign": {
+				"iconLabel": "book_note"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_BookBindingScroll"
+				]
+			},
+			"assign": {
+				"iconLabel": "default_scroll"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"OCF_BookTextMap",
+						"IconMap"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$Map",
+				"iconLabel": "book_map",
+				"iconColor": "#C2A487"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_VesselBag"
+				]
+			},
+			"assign": {
+				"iconLabel": "misc_goldsack"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_VesselBarrel"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_barrel"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_VesselBasket"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_basket"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"OCF_VesselBottleDunmer",
+						"_SH_SujammaBottleKeyword",
+						"OCF_VesselBottleWine",
+						"_SH_WineBottleKeyword"
+					]
+				}
+			},
+			"assign": {
+				"iconLabel": "food_wine"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"OCF_VesselBottleMead",
+						"_SH_MeadBottleKeyword"
+					]
+				}
+			},
+			"assign": {
+				"iconLabel": "food_beer"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_VesselBottlePotion"
+				]
+			},
+			"assign": {
+				"iconLabel": "default_potion"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_VesselBottleSkooma"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/Aura/icons.swf",
+				"iconLabel": "potion_skooma"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_VesselBowl"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "food_stew"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_VesselBucket"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_bucket"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_VesselCauldron"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_cauldron"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_VesselCloth"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_cloth"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_VesselComb"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_comb"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_VesselCrate"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "misc_crate"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_WeapTypeCutlery1H"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "misc_tablewear"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_VesselDice"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_gamepiece"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_VesselGamePiece"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_gamepiece"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_VesselJar"
+				]
+			},
+			"assign": {
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_jar"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_VesselKeg"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "misc_barrel"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"keywords": [
+					"OCF_VesselKettle"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_teapot"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_VesselSatchel"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/Aura/icons.swf",
+				"iconLabel": "misc_satchel"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_VesselTorch"
+				]
+			},
+			"assign": {
+				"iconLabel": "misc_torch"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_VesselVial"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/Aura/icons.swf",
+				"iconLabel": "potion_vial"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_VesselWaterskin"
+				]
+			},
+			"assign": {
+				"iconSource": "Dodo/powers.swf",
+				"iconLabel": "food_waterskin"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"OCF_WeapBroken",
+						"IconBrokenWeapon"
+					]
+				}
+			},
+			"assign": {
+				"iconLabel": "default_weapon"
+			}
+		}
+	]
+}

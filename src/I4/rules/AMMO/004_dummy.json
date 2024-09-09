@@ -1,0 +1,61 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Ammo",
+				"keywords": [
+					"WeapTypeDagger"
+				]
+			},
+			"assign": {
+				"equipType": "1",
+				"equipTypeDisplay": "$EqpOneHanded",
+				"itemType": "1",
+				"itemClass": "1",
+				"itemSort": "1",
+				"subTypeDisplay": "$Dagger",
+				"iconLabel": "weapon_dagger",
+				"iconColor": "#A4A5BF"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ammo",
+				"keywords": [
+					"OCF_WeapTypeHatchet1H"
+				]
+			},
+			"assign": {
+				"equipType": "1",
+				"equipTypeDisplay": "$EqpOneHanded",
+				"itemType": "1",
+				"itemClass": "1",
+				"itemSort": "6",
+				"subTypeDisplay": "$ItemWeaponHatchet",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "weapon_hatchet",
+				"iconColor": "#A4A5BF"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ammo",
+				"keywords": [
+					"OCF_WeapTypeJavelin1H"
+				]
+			},
+			"assign": {
+				"equipType": "1",
+				"equipTypeDisplay": "$EqpOneHanded",
+				"itemType": "1",
+				"itemClass": "1",
+				"itemSort": "9",
+				"subTypeDisplay": "$ItemWeaponJavelin",
+				"iconSource": "skyui_weapons_pack/icons.swf",
+				"iconLabel": "weapon_javelin",
+				"iconColor": "#A4A5BF"
+			}
+		}
+	]
+}

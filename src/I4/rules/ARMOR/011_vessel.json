@@ -1,0 +1,107 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_AccessoryToy",
+						"BYOHAdoptionToyKeyword",
+						"OCF_MiscChildToy",
+						"IconToy"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$Toy",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_toy"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_MiscChildToy_Doll"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscDoll",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_toy"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_MiscHorseGear",
+						"CCHorseArmorKeyword",
+						"IconHorseTack"
+					]
+				}
+			},
+			"assign": {
+				"itemClass": "11",
+				"itemSort": "3",
+				"subTypeDisplay": "$ItemMiscHorseTack",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_horsetack"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_BodyTypeStrapOn",
+						"ClothingStrapOn"
+					]
+				}
+			},
+			"assign": {
+				"itemClass": "12",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemArmorStrapOn"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"WAF_ClothingMedicalHealing"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorBandages"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_HandTypeCuffs",
+						"OCF_HeadTypeGag"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorBindings"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_IngrRemains_BoneSkull_Troll"
+				]
+			},
+			"assign": {
+				"iconLabel": "misc_trollskull"
+			}
+		}
+	]
+}

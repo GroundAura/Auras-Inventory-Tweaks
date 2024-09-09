@@ -1,0 +1,39 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Scroll",
+				"keywords": [
+					"OCF_ScrlPowder"
+				]
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "0",
+				"subTypeDisplay": "$ItemScrollPowder",
+				"iconLabel": "misc_goldsack",
+				"iconColor": "#FFFFFF"
+			}
+		},
+		{
+			"match": {
+				"formType": "Scroll",
+				"keywords": {
+					"anyOf": [
+						"OCF_ScrlSpider",
+						"IconSpider"
+					]
+				}
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "0",
+				"subTypeDisplay": "$ItemScrollSpider",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "scroll_spider",
+				"iconColor": "#FFFFFF"
+			}
+		}
+	]
+}

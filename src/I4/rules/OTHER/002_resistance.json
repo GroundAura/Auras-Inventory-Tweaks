@@ -1,0 +1,61 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"resistance": "DamageResist"
+			},
+			"assign": {
+				"resistanceDisplay": "$Damage"
+			}
+		},
+		{
+			"match": {
+				"resistance": "DiseaseResist"
+			},
+			"assign": {
+				"resistanceDisplay": "$MagicDisease"
+			}
+		},
+		{
+			"match": {
+				"resistance": "FireResist"
+			},
+			"assign": {
+				"resistanceDisplay": "$MagicFire"
+			}
+		},
+		{
+			"match": {
+				"resistance": "FrostResist"
+			},
+			"assign": {
+				"resistanceDisplay": "$MagicFrost"
+			}
+		},
+		{
+			"match": {
+				"resistance": "MagicResist"
+			},
+			"assign": {
+				"resistanceDisplay": "$Magic"
+			}
+		},
+		{
+			"match": {
+				"resistance": "PoisonResist"
+			},
+			"assign": {
+				"resistanceDisplay": "$MagicPoison"
+			}
+		},
+		{
+			"match": {
+				"resistance": "ElectricResist"
+			},
+			"assign": {
+				"resistanceDisplay": "$MagicShock"
+			}
+		}
+	]
+}

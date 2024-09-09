@@ -1,0 +1,17 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Scroll"
+			},
+			"assign": {
+				"sortByEffectData": "1",
+				"itemType": "4",
+				"itemClass": "2",
+				"itemSort": "0",
+				"iconLabel": "default_scroll"
+			}
+		}
+	]
+}

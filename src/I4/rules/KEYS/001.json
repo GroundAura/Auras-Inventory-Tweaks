@@ -3,15 +3,6 @@
 	"rules": [
 		{
 			"match": {
-				"formType": "Key"
-			},
-			"assign": {
-				"itemType": "8",
-				"iconLabel": "default_key"
-			}
-		},
-		{
-			"match": {
 				"formType": "Key",
 				"keywords": [
 					"OCF_KeyPlayerHome"

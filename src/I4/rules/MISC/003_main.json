@@ -1,0 +1,1266 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscArcana"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscArcana",
+				"iconLabel": "soulgem_full",
+				"iconColor": "#00BCFF"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_BookTextBook"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Book"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_BookTextDocument"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemBookDocument"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_BookTextJournal"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Journal"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_BookTextNote"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Note"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"OCF_BookTextRecipe_Alchemy",
+						"OCF_BookTextRecipe_Cooking",
+						"OCF_BookTextRecipe_Crafting",
+						"OCF_BookTextRecipe_Daedric",
+						"OCF_BookTextRecipe_Spider"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$Recipe"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_ScrlBasic"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Scroll",
+				"iconLabel": "default_scroll"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"OCF_MiscCampingGear",
+						"IconCampsite"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscCampingGear",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_tent",
+				"iconColor": "#BF8E60"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscCampingGear_CraftAlchemy"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/Aura/icons.swf",
+				"iconLabel": "misc_mortar"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscCampingGear_CraftCook"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/Aura/icons.swf",
+				"iconLabel": "misc_mortar"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscCampingGear_CraftEnchant"
+				]
+			},
+			"assign": {
+				"iconLabel": "misc_trollskull"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscCampingGear_Storage"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "misc_chest"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscCard"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscCard",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_card"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"ClothingCirclet"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Circlet",
+				"iconLabel": "armor_circlet"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"OCF_MiscInstrument",
+						"IconInstrument"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscInstrument"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"BYOHAdoptionToyKeyword",
+						"OCF_MiscChildToy",
+						"IconToy"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$Toy",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_toy"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscChildToy_Doll"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscDoll",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_toy"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"ClothingBody"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Clothing",
+				"iconLabel": "clothing_body"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"WeapTypeDagger"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Dagger",
+				"iconLabel": "weapon_dagger"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"MiscTypeDye"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscDye",
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "misc_palette",
+				"iconColor": "#FFFFFF"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscEmptyVessel_Bottle"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscEmptyBottle"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscEmptyVessel_Flask"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscEmptyFlask"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscEmptyVessel_Jar"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscEmptyJar"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscEmptyVessel_Waterskin"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscEmptyWaterskin",
+				"iconSource": "Dodo/powers.swf",
+				"iconLabel": "food_waterskin"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscFossil"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscFossil",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_fossil"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_SlgmPiece"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscGemShard",
+				"iconLabel": "soulgem_empty",
+				"iconColor": "#ABA3FF"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_SlgmPiece_Filled"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscGemShard",
+				"iconLabel": "soulgem_full",
+				"iconColor": "#ABA3FF"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"OCF_MiscHorseGear",
+						"CCHorseArmorKeyword",
+						"IconHorseTack"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscHorseTack",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_horsetack"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"OCF_MiscInstrument",
+						"IconInstrument"
+					]
+				}
+			},
+			"assign": {
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_instrument"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_IngrMisc_Mineral"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Ingredient"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_IngrPlant"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Ingredient",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_herbs",
+				"iconColor": "#216E23"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_IngrPlant_Flower"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_herbs"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscJarBug"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscJarBug",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_jar"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"VendorItemKey"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Key",
+				"iconLabel": "default_key"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"OCF_MiscMaterial_Ore",
+						"IconOre"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$Ore",
+				"iconLabel": "misc_ore",
+				"iconColor": "#828282"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"formId": {
+					"anyOf": [
+						"Dragonborn.esm|17749",
+						"Dragonborn.esm|195A9"
+					]
+				}
+			},
+			"assign": {
+				"iconColor": "#C73636"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"formId": "Dragonborn.esm|2B06B"
+			},
+			"assign": {
+				"iconColor": "#1FFBFF"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscMaterial_Scrap"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscScrap",
+				"iconLabel": "misc_ingot",
+				"iconColor": "#828282"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"OCF_MiscMaterial_ScrapDwarven",
+						"IconDwarvenScrap"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscScrap",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_dwarvenscrap",
+				"iconColor": "#705F32"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscMaterialGeneral"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscMaterial",
+				"iconLabel": "misc_clutter",
+				"iconColor": "#FFFFFF"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscMaterial_Metal"
+				]
+			},
+			"assign": {
+				"iconLabel": "misc_ingot",
+				"iconColor": "#828282"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscMaterial_Stone"
+				]
+			},
+			"assign": {
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "magic_earth",
+				"iconColor": "#828282"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"VendorItemFireword",
+						"VendorItemFirewood",
+						"IconFirewood"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$Wood",
+				"iconLabel": "misc_wood",
+				"iconColor": "#705842"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscOil"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscOil",
+				"iconLabel": "default_potion"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscPackage"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscPackage",
+				"iconSource": "AIT/Aura/icons.swf",
+				"iconLabel": "misc_satchel"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"formId": "BSHeartland.esm|86243"
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscPackage",
+				"iconSource": "AIT/Aura/icons.swf",
+				"iconLabel": "misc_satchel"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscPainting"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscPainting",
+				"iconLabel": "misc_clutter"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscPetGear"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscPetGear"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscPetGear_Bedding"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_tent"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscPetGear_Collar"
+				]
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+				"iconLabel": "armor_choker"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscPetGear_Pack"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "misc_backpack"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscPetGear_Toy"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Toy",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_toy"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscPillow"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Clutter",
+				"iconLabel": "misc_clutter"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"OCF_AlchDrinkAlcohol",
+						"VendorItemDrinkAlcohol",
+						"VendorItemDrinkAlcoholWeak",
+						"VendorItemDrinkAlcoholModerate",
+						"VendorItemDrinkAlcoholStrong"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemFoodAlcohol",
+				"iconColor": "#FFC878"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_AlchPoison"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Poison",
+				"iconLabel": "potion_poison",
+				"iconColor": "#AD00B3"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_AlchPoison_Food"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemFoodPoisoned",
+				"iconColor": "#AD00B3"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_AlchPotion"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Potion",
+				"iconLabel": "default_potion"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscPottery"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Clutter",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_amphora"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscPottery_Dwarven"
+				]
+			},
+			"assign": {
+				"iconColor": "#705F32"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscQuiver"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscQuiver",
+				"iconLabel": "weapon_arrow",
+				"iconColor": "#A89E8C"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"ClothingRing"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Ring",
+				"iconLabel": "armor_ring"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscSeashell"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscSeashell",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_seashell"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_AlchSnow"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemFoodSnow",
+				"iconLabel": "magic_frost",
+				"iconColor": "#FFFFFF"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscSoap"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscSoap",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_soap",
+				"iconColor": "#FFCC99"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_AlchSpoiled"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemFoodSpoiled",
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "food_stew",
+				"iconColor": "#4D3911"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"WeapTypeStaff"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Staff",
+				"iconLabel": "weapon_staff"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscTableware"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscTableware",
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "misc_tablewear"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"formId": "Skyrim.esm|1058AA"
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscTableware",
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "misc_tablewear"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscTableware_Dwarven"
+				]
+			},
+			"assign": {
+				"iconColor": "#705F32"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_Tool"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Tool",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_tool",
+				"iconColor": "#FFFFFF"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"OCF_ToolAlchemy",
+						"OCF_ToolCrucible",
+						"OCF_ToolMortarPestle"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscAlchemy",
+				"iconSource": "AIT/Aura/icons.swf",
+				"iconLabel": "misc_mortar",
+				"iconColor": "#059142"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_ToolExtractor"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscAlchemy",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_dwarvenscrap",
+				"iconColor": "#705F32"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"OCF_ToolAlembic",
+						"OCF_ToolRetort"
+					]
+				}
+			},
+			"assign": {
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "misc_flask"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_ToolCauldron"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_cauldron"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_ToolBroom"
+				]
+			},
+			"assign": {
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_tool"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"OCF_ToolCompass",
+						"ArmorTypeShieldCompass"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscCompass",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_compass"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_ToolHourglass"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_hourglass"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_ToolLantern"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "misc_lantern"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_ToolLight_Candle"
+				]
+			},
+			"assign": {
+				"itemType": "2",
+				"itemClass": "0",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemMiscCandle",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_candle",
+				"iconColor": "#FFAA00"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_ToolLight_Torch"
+				]
+			},
+			"assign": {
+				"itemType": "2",
+				"itemClass": "0",
+				"itemSort": "2",
+				"subTypeDisplay": "$Torch",
+				"iconLabel": "misc_torch",
+				"iconColor": "#FFAA00"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_ToolLockpick"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Lockpick",
+				"iconLabel": "misc_lockpick"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_ToolMirror"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_mirror"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_ToolParaglider"
+				]
+			},
+			"assign": {
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_tool"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_ToolQuill"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_feather"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_ToolSaw"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "weapon_saw"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_ToolScissors"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_scissors"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_ToolSextant"
+				]
+			},
+			"assign": {
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_tool"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_ToolShovel"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "tool_shovel"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_ToolSpyglass"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_spyglass"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"OCF_WeapTypeFishingRod1H",
+						"IconFishingRod"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemWeaponFishingRod",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "weapon_fishingrod"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"WAF_WeapTypeScalpel"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_scalpel"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"OCF_MiscTrap",
+						"IconBearTrap"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscTrap",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_beartrap",
+				"iconColor": "#BF8E60"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscTreasure"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscTreasure",
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "misc_chest"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"OCF_MiscTreasure_Coin",
+						"IconCurrency"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscCoin",
+				"iconLabel": "misc_gold"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscTreasure_Coinpurse"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscCoinpurse",
+				"iconLabel": "misc_goldsack"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscWashcloth"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscWashcloth",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_cloth",
+				"iconColor": "#FFCC99"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_MiscOther"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Misc"
+			}
+		}
+	]
+}

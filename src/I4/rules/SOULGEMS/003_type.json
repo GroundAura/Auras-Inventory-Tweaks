@@ -1,0 +1,118 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "SoulGem",
+				"keywords": {
+					"anyOf": [
+						"OCF_RelicAyleid_Crystal",
+						"IconAyleidCrystal"
+					]
+				},
+				"status": "Empty"
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscAyleidCrystal",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "soulgem_ayleidcrystalempty",
+				"iconColor": "#5BC4C9"
+			}
+		},
+		{
+			"match": {
+				"formType": "SoulGem",
+				"keywords": {
+					"anyOf": [
+						"OCF_RelicAyleid_Crystal",
+						"IconAyleidCrystal"
+					]
+				},
+				"status": "Partial"
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscAyleidCrystal",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "soulgem_ayleidcrystalpartial",
+				"iconColor": "#5BC4C9"
+			}
+		},
+		{
+			"match": {
+				"formType": "SoulGem",
+				"keywords": {
+					"anyOf": [
+						"OCF_RelicAyleid_Crystal",
+						"IconAyleidCrystal"
+					]
+				},
+				"status": "Full"
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscAyleidCrystal",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "soulgem_ayleidcrystalfull",
+				"iconColor": "#5BC4C9"
+			}
+		},
+		{
+			"match": {
+				"formType": "SoulGem",
+				"keywords": [
+					"OCF_RelicDaedric_SigilStone"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscSigilStone",
+				"iconSource": "AIT/Aura/icons.swf",
+				"iconLabel": "misc_artifactdaedra",
+				"iconColor": "#A14040"
+			}
+		},
+		{
+			"match": {
+				"formType": "SoulGem",
+				"keywords": [
+					"OCF_RelicDaedric_SoulTomato"
+				],
+				"status": "Empty"
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscSoulTomato",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "soulgem_tomatoempty",
+				"iconColor": "#7A0505"
+			}
+		},
+		{
+			"match": {
+				"formType": "SoulGem",
+				"keywords": [
+					"OCF_RelicDaedric_SoulTomato"
+				],
+				"status": "Partial"
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscSoulTomato",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "soulgem_tomatopartial",
+				"iconColor": "#7A0505"
+			}
+		},
+		{
+			"match": {
+				"formType": "SoulGem",
+				"keywords": [
+					"OCF_RelicDaedric_SoulTomato"
+				],
+				"status": "Full"
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscSoulTomato",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "soulgem_tomatofull",
+				"iconColor": "#7A0505"
+			}
+		}
+	]
+}

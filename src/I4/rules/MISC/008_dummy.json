@@ -1,0 +1,16 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"CraftingSmithingForge"
+				]
+			},
+			"assign": {
+				"itemClass": "1"
+			}
+		}
+	]
+}

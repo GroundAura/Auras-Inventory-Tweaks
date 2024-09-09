@@ -1,0 +1,66 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"equipSlot": "Skyrim.esm|35698"
+			},
+			"assign": {
+				"equipType": "0",
+				"equipTypeDisplay": "$EqpInstant"
+			}
+		},
+		{
+			"match": {
+				"equipSlot": {
+					"anyOf": [
+						"Skyrim.esm|13F42",
+						"Skyrim.esm|13F43",
+						"Skyrim.esm|13F44",
+						"Skyrim.esm|141E8"
+					]
+				}
+			},
+			"assign": {
+				"equipType": "1",
+				"equipTypeDisplay": "$EqpOneHanded"
+			}
+		},
+		{
+			"match": {
+				"equipSlot": "Skyrim.esm|13F45"
+			},
+			"assign": {
+				"equipType": "2",
+				"equipTypeDisplay": "$EqpTwoHanded"
+			}
+		},
+		{
+			"match": {
+				"equipSlot": "Skyrim.esm|25BEE"
+			},
+			"assign": {
+				"equipType": "3",
+				"equipTypeDisplay": "$EqpVoice"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ammo",
+				"keywords": {
+					"anyOf": [
+						"OCF_AmmoTypeArrow",
+						"OCF_AmmoTypeBolt",
+						"OCF_AmmoTypeBullet",
+						"OCF_AmmoTypeDart",
+						"OCF_AmmoTypeSlingshot"
+					]
+				}
+			},
+			"assign": {
+				"equipType": "3",
+				"equipTypeDisplay": "$EqpAmmo"
+			}
+		}
+	]
+}

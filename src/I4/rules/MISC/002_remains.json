@@ -1,0 +1,386 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"VendorItemAnimalPart"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Remains",
+				"iconLabel": "misc_remains",
+				"iconColor": "#FFFFFF"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"VendorItemAnimalHide"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Hide",
+				"iconLabel": "misc_hide",
+				"iconColor": "#DBB36E"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_IngrRemains_Bone"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_bone"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_IngrRemains_BonePelvis"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_bonepelvis"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"OCF_IngrRemains_BoneSkull_Animal",
+						"OCF_IngrRemains_BoneSkull_Dragon"
+					]
+				}
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_cowskull"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_IngrRemains_BoneSkull_Bird"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_birdskull"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"OCF_IngrRemains_BoneSkull_FrostGiant",
+						"OCF_AnimalPartKarstaag"
+					]
+				}
+			},
+			"assign": {
+				"iconSource": "AIT/Aura/icons.swf",
+				"iconLabel": "misc_karstaagskull"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"OCF_IngrRemains_BoneSkull_Hominid",
+						"OCF_IngrRemains_BoneSkull_Goblin"
+					]
+				}
+			},
+			"assign": {
+				"iconLabel": "misc_remains"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_IngrRemains_BoneSkull_Troll"
+				]
+			},
+			"assign": {
+				"iconLabel": "misc_trollskull"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_IngrRemains_Carcass"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscCarcass"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_IngrRemains_Fat"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "food_stew"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_IngrRemains_Feather"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_feather"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_IngrRemains_Organ"
+				]
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/ingredients.swf",
+				"iconLabel": "liver",
+				"iconColor": "#634538"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_IngrRemains_OrganEye"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_eyeball",
+				"iconColor": "#FFFFFF"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_IngrRemains_OrganHeart"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_heart",
+				"iconColor": "#7B2424"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_IngrRemains_Plate"
+				]
+			},
+			"assign": {
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_chitin"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"WAF_MaterialChitin",
+						"IconChitin"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$Chitin",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_chitin",
+				"iconColor": "#8B7C5A"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_IngrRemains_Sharp"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_tusk"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_IngrRemains_SharpAntler"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_antlers"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_IngrRemains_SharpBeak"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_birdclaw"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_IngrRemains_SharpClaw"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_claws"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_IngrRemains_SharpHorn"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_horn"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_IngrRemains_SharpTalon"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_birdclaw"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_IngrRemains_SharpTeeth"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_fangs"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_IngrRemains_SharpTusk"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_tusk"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"OCF_ScrlSpider",
+						"IconSpider"
+					]
+				}
+			},
+			"assign": {
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "scroll_spider"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_AnimalHideFurPlate"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscFurPlate"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_AnimalHideLeather"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Leather",
+				"iconLabel": "misc_leather",
+				"iconColor": "#BA8D23"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_AnimalHideStrip"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Strips",
+				"iconLabel": "misc_strips",
+				"iconColor": "#BA8D23"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_AnimalHideNetch"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Leather",
+				"iconLabel": "misc_strips",
+				"iconColor": "#78558E"
+			}
+		}
+	]
+}

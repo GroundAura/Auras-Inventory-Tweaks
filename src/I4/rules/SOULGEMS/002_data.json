@@ -1,0 +1,20 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "SoulGem",
+				"keywords": {
+					"anyOf": [
+						"OCF_SlgmBlack",
+						"OCF_SlgmBXX"
+					]
+				}
+			},
+			"assign": {
+				"canHoldNPCSoul": "1",
+				"iconColor": "#7569FF"
+			}
+		}
+	]
+}

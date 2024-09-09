@@ -1,0 +1,71 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_AccessoryBag",
+						"WAF_ClothingPouch"
+					]
+				}
+			},
+			"assign": {
+				"itemClass": "10",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemArmorBag",
+				"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+				"iconLabel": "armor_pouch"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_AccessoryBag_Backpack",
+						"OCF_BagTypeBackpack"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorBackpack",
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "misc_backpack"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_AccessoryBag_Belt",
+						"OCF_BagTypeBelt"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorBeltBag",
+				"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+				"iconLabel": "armor_pouch"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_AccessoryBag_Bandolier",
+						"OCF_BagTypeBandolier"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorBandolier",
+				"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+				"iconLabel": "armor_bandolier"
+			}
+		}
+	]
+}

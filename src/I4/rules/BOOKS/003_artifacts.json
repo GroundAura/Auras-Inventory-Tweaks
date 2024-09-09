@@ -1,0 +1,123 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Book",
+				"keywords": [
+					"OCF_ArtifactAedric"
+				]
+			},
+			"assign": {
+				"itemClass": "3",
+				"iconColor": "#0099CC"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"keywords": {
+					"anyOf": [
+						"OCF_ArtifactAedric_ElderScroll",
+						"OCF_ReplicaAedric_ElderScroll"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemBookElderScroll",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_elderscroll"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"keywords": {
+					"anyOf": [
+						"OCF_ArtifactDaedric",
+						"OCF_RelicDaedric"
+					]
+				}
+			},
+			"assign": {
+				"itemClass": "3",
+				"iconColor": "#A14040"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"keywords": [
+					"OCF_ArtifactDaedric_BlackBook"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemBookBlack",
+				"iconSource": "BOOBIES Immersive Icons/books.swf",
+				"iconLabel": "book_herma_mora"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"keywords": [
+					"OCF_ReplicaDaedric_BlackBook"
+				]
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/books.swf",
+				"iconLabel": "book_herma_mora"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"keywords": [
+					"OCF_ArtifactDaedric_OghmaInfinium"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Artifact",
+				"iconSource": "BOOBIES Immersive Icons/books.swf",
+				"iconLabel": "book_herma_mora"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"keywords": [
+					"OCF_ReplicaDaedric_OghmaInfinium"
+				]
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/books.swf",
+				"iconLabel": "book_herma_mora"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"keywords": [
+					"OCF_RelicDaedric_EldritchTome"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemBookEldritchTome",
+				"iconLabel": "book_tome"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"keywords": [
+					"OCF_RelicDaedric_EldritchPage"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemBookEldritchPage",
+				"iconSource": "BOOBIES Immersive Icons/books.swf",
+				"iconLabel": "book_atronachforge"
+			}
+		}
+	]
+}

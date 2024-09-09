@@ -1,0 +1,108 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Armor",
+				"mainPart": 30
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "1",
+				"subTypeDisplay": "$Head"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"mainPart": 31
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "1",
+				"subTypeDisplay": "$Head"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"mainPart": 41
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "1",
+				"subTypeDisplay": "$Head"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"mainPart": 32
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "1",
+				"subTypeDisplay": "$Body"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"mainPart": 33
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "1",
+				"subTypeDisplay": "$Hands"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"mainPart": 34
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "1",
+				"subTypeDisplay": "$Hands"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"mainPart": 37
+			},
+			"assign": {
+				"itemClass": "4",
+				"itemSort": "1",
+				"subTypeDisplay": "$Feet"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"mainPart": 38
+			},
+			"assign": {
+				"itemClass": "4",
+				"itemSort": "1",
+				"subTypeDisplay": "$Feet"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"mainPart": 32,
+				"keywords": [
+					"ClothingRing"
+				]
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "2",
+				"subTypeDisplay": "$Ring",
+				"iconLabel": "armor_ring"
+			}
+		}
+	]
+}

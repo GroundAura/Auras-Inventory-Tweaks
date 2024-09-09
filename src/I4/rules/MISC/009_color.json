@@ -1,0 +1,105 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"OCF_InvColorCopper",
+						"OCF_MiscTableware_Bronze",
+						"OCF_MiscTreasure_Bronze"
+					]
+				}
+			},
+			"assign": {
+				"iconColor": "#B87333"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"OCF_InvColorGold",
+						"OCF_MiscTableware_Gold",
+						"OCF_MiscTreasure_Gold"
+					]
+				}
+			},
+			"assign": {
+				"iconColor": "#CCCC33"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"OCF_InvColorSilver",
+						"OCF_MiscTableware_Silver",
+						"OCF_MiscTreasure_Silver"
+					]
+				}
+			},
+			"assign": {
+				"iconColor": "#C0C0C0"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_InvColorDaedric"
+				]
+			},
+			"assign": {
+				"iconColor": "#A14040"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_InvColorEldritch"
+				]
+			},
+			"assign": {
+				"iconColor": "#345F4C"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_InvColorLegendary"
+				]
+			},
+			"assign": {
+				"iconColor": "#C1884D"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_InvColorNecromancy"
+				]
+			},
+			"assign": {
+				"iconColor": "#20C47D"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_InvColorRed"
+				]
+			},
+			"assign": {
+				"iconColor": "#7B2424"
+			}
+		}
+	]
+}

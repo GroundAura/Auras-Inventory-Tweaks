@@ -1,13 +1,16 @@
 {
   "_TEST": "$rootDir/src/I4/rules/_TEST",
+  "AMMO": "$rootDir/src/I4/rules/AMMO",
   "ARMOR": "$rootDir/src/I4/rules/ARMOR",
   "BOOKS": "$rootDir/src/I4/rules/BOOKS",
   "INGESTIBLES": "$rootDir/src/I4/rules/INGESTIBLES",
   "INGREDIENTS": "$rootDir/src/I4/rules/INGREDIENTS",
   "KEYS": "$rootDir/src/I4/rules/KEYS",
+  "LIGHT": "$rootDir/src/I4/rules/LIGHT",
   "MISC": "$rootDir/src/I4/rules/MISC",
   "OTHER": "$rootDir/src/I4/rules/OTHER",
   "SCROLLS": "$rootDir/src/I4/rules/SCROLLS",
+  "SOULGEMS": "$rootDir/src/I4/rules/SOULGEMS",
   "SPELLS": "$rootDir/src/I4/rules/SPELLS",
   "WEAPONS": "$rootDir/src/I4/rules/WEAPONS"
 }

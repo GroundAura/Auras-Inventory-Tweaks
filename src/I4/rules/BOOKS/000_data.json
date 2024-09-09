@@ -1,0 +1,63 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Book"
+			},
+			"assign": {
+				"itemType": "7",
+				"itemClass": "2",
+				"subTypeDisplay": "$Note"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"bookType": "Book"
+			},
+			"assign": {
+				"itemClass": "1",
+				"subTypeDisplay": "$Book"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"keywords": [
+					"OCF_BookBindingNote"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Note",
+				"iconLabel": "book_note"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"keywords": [
+					"OCF_BookBindingScroll"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Scroll",
+				"iconLabel": "default_scroll"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"keywords": {
+					"anyOf": [
+						"OCF_BookTextJournal",
+						"VendorItemJournal"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemBookJournal"
+			}
+		}
+	]
+}

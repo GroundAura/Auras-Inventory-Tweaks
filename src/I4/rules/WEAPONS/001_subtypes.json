@@ -1,0 +1,118 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": [
+					"OCF_WeapTypeUnarmed"
+				]
+			},
+			"assign": {
+				"subType": "Melee"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"subType": {
+					"anyOf": [
+						"WarAxe",
+						"Mace"
+					]
+				},
+				"keywords": [
+					"WeapTypeSword"
+				]
+			},
+			"assign": {
+				"subType": "Sword"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"subType": {
+					"anyOf": [
+						"Sword",
+						"Mace"
+					]
+				},
+				"keywords": [
+					"WeapTypeWarAxe"
+				]
+			},
+			"assign": {
+				"subType": "WarAxe"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"subType": {
+					"anyOf": [
+						"Sword",
+						"WarAxe"
+					]
+				},
+				"keywords": [
+					"WeapTypeMace"
+				]
+			},
+			"assign": {
+				"subType": "Mace"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"subType": {
+					"anyOf": [
+						"Battleaxe",
+						"Warhammer"
+					]
+				},
+				"keywords": [
+					"WeapTypeGreatsword"
+				]
+			},
+			"assign": {
+				"subType": "Greatsword"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"subType": {
+					"anyOf": [
+						"Greatsword",
+						"Warhammer"
+					]
+				},
+				"keywords": [
+					"WeapTypeBattleaxe"
+				]
+			},
+			"assign": {
+				"subType": "Battleaxe"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"subType": {
+					"anyOf": [
+						"Greatsword",
+						"Battleaxe"
+					]
+				},
+				"keywords": [
+					"WeapTypeWarhammer"
+				]
+			},
+			"assign": {
+				"subType": "Warhammer"
+			}
+		}
+	]
+}

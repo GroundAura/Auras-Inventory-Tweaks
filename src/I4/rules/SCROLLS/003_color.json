@@ -1,0 +1,53 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Scroll",
+				"keywords": [
+					"OCF_InvColorFire"
+				]
+			},
+			"assign": {
+				"itemSort": "1",
+				"iconColor": "#C73636"
+			}
+		},
+		{
+			"match": {
+				"formType": "Scroll",
+				"keywords": [
+					"OCF_InvColorFrost"
+				]
+			},
+			"assign": {
+				"itemSort": "2",
+				"iconColor": "#1FFBFF"
+			}
+		},
+		{
+			"match": {
+				"formType": "Scroll",
+				"keywords": [
+					"OCF_InvColorShock"
+				]
+			},
+			"assign": {
+				"itemSort": "3",
+				"iconColor": "#EAAB00"
+			}
+		},
+		{
+			"match": {
+				"formType": "Scroll",
+				"keywords": [
+					"OCF_InvColorPoison"
+				]
+			},
+			"assign": {
+				"itemSort": "4",
+				"iconColor": "#62A636"
+			}
+		}
+	]
+}

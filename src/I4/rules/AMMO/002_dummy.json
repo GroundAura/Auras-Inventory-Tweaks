@@ -1,0 +1,24 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Ammo",
+				"keywords": [
+					"WAF_WeapTypeGrenade"
+				]
+			},
+			"assign": {
+				"equipType": "1",
+				"equipTypeDisplay": "$EqpOneHanded",
+				"itemType": "1",
+				"itemClass": "3",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemWeaponBomb",
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "weapon_bomb",
+				"iconColor": "#A4A5BF"
+			}
+		}
+	]
+}

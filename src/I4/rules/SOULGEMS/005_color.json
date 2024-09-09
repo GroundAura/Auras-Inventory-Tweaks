@@ -1,0 +1,33 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "SoulGem",
+				"keywords": {
+					"anyOf": [
+						"OCF_SlgmBasic_Blood",
+						"OCF_InvColorBlood"
+					]
+				}
+			},
+			"assign": {
+				"iconColor": "#8E2129"
+			}
+		},
+		{
+			"match": {
+				"formType": "SoulGem",
+				"keywords": {
+					"anyOf": [
+						"OCF_SlgmBasic_Rose",
+						"OCF_InvColorPink"
+					]
+				}
+			},
+			"assign": {
+				"iconColor": "#FF5050"
+			}
+		}
+	]
+}

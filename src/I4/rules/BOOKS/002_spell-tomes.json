@@ -1,0 +1,152 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Book",
+				"keywords": [
+					"OCF_BookSpellTome_Other"
+				]
+			},
+			"assign": {
+				"itemClass": "4",
+				"itemSort": "0",
+				"subTypeDisplay": "$ItemBookSpellTomePower",
+				"iconSource": "BOOBIES Immersive Icons/books.swf",
+				"iconLabel": "book_blank"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"subType": "SpellTome",
+				"keywords": [
+					"OCF_BookSpellTome_Alteration"
+				]
+			},
+			"assign": {
+				"itemClass": "4",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemBookSpellTomeAlteration",
+				"iconSource": "BOOBIES Immersive Icons/books.swf",
+				"iconLabel": "book_spell_alteration",
+				"iconColor": "#8F6B46"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"subType": "SpellTome",
+				"keywords": [
+					"OCF_BookSpellTome_Illusion"
+				]
+			},
+			"assign": {
+				"itemClass": "4",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemBookSpellTomeIllusion",
+				"iconSource": "BOOBIES Immersive Icons/books.swf",
+				"iconLabel": "book_spell_illusion",
+				"iconColor": "#4C9EA4"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"subType": "SpellTome",
+				"keywords": [
+					"OCF_BookSpellTome_Destruction"
+				]
+			},
+			"assign": {
+				"itemClass": "4",
+				"itemSort": "3",
+				"subTypeDisplay": "$ItemBookSpellTomeDestruction",
+				"iconSource": "BOOBIES Immersive Icons/books.swf",
+				"iconLabel": "book_spell_destruction",
+				"iconColor": "#C73636"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"subType": "SpellTome",
+				"keywords": [
+					"OCF_BookSpellTome_Conjuration"
+				]
+			},
+			"assign": {
+				"itemClass": "4",
+				"itemSort": "4",
+				"subTypeDisplay": "$ItemBookSpellTomeConjuration",
+				"iconSource": "BOOBIES Immersive Icons/books.swf",
+				"iconLabel": "book_spell_conjuration",
+				"iconColor": "#993899"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"subType": "SpellTome",
+				"keywords": [
+					"OCF_BookSpellTome_Restoration"
+				]
+			},
+			"assign": {
+				"itemClass": "4",
+				"itemSort": "5",
+				"subTypeDisplay": "$ItemBookSpellTomeRestoration",
+				"iconSource": "BOOBIES Immersive Icons/books.swf",
+				"iconLabel": "book_spell_restoration",
+				"iconColor": "#00AC00"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"subType": "SpellTome",
+				"keywords": [
+					"OCF_BookSpellTome_Shehai"
+				]
+			},
+			"assign": {
+				"itemClass": "4",
+				"itemSort": "0",
+				"subTypeDisplay": "$ItemBookSpellTomeSwordSing",
+				"iconSource": "BOOBIES Immersive Icons/books.swf",
+				"iconLabel": "book_spell_illusion",
+				"iconColor": "#CCCC33"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"subType": "SpellTome",
+				"keywords": [
+					"OCF_MiscChildToy_Doll"
+				]
+			},
+			"assign": {
+				"itemClass": "4",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_toy"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"subType": "SpellTome",
+				"keywords": [
+					"OCF_RelicDwarven"
+				]
+			},
+			"assign": {
+				"itemClass": "4",
+				"subTypeDisplay": "$ItemMiscRelic",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_dwarvenscrap",
+				"iconColor": "#705F32"
+			}
+		}
+	]
+}

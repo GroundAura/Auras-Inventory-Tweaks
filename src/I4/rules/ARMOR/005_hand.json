@@ -1,0 +1,100 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_HandTypeArmlet"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorArmlet",
+				"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+				"iconLabel": "armor_armlets"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_HandTypeBracelet",
+						"ClothingBracelet"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorBracelet",
+				"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+				"iconLabel": "armor_armlets"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_HandTypeBracer"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Hands",
+				"iconLabel": "armor_bracer"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"WAF_SpikedGauntletGloves"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorHandsBrawling",
+				"iconSource": "JELFearsomeFistsImproved/icons.swf",
+				"iconLabel": "fff_brawlinggauntlet"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_HandTypeClaws"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorClaws",
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_claws"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_HandTypeNails"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorNails",
+				"iconLabel": "clothing_hands"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_HandTypeCestus",
+						"OCF_WeapTypeCestus1H"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemWeaponFist",
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_knuckles"
+			}
+		}
+	]
+}

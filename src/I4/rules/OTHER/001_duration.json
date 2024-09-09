@@ -1,0 +1,23 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"duration": 0
+			},
+			"assign": {
+				"duration": "-"
+			}
+		},
+		{
+			"match": {
+				"duration": {
+					"min": 86400
+				}
+			},
+			"assign": {
+				"duration": "-"
+			}
+		}
+	]
+}

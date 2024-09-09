@@ -1,0 +1,60 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Book",
+				"bookType": "Book",
+				"keywords": {
+					"anyOf": [
+						"VendorItemRecipe",
+						"OCF_BookTextRecipe_Alchemy",
+						"OCF_BookTextRecipe_Cooking",
+						"OCF_BookTextRecipe_Spider"
+					]
+				}
+			},
+			"assign": {
+				"iconLabel": "default_book"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"bookType": "Book",
+				"keywords": [
+					"OCF_BookTextRecipe_Crafting"
+				]
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/books.swf",
+				"iconLabel": "book_crafting"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"bookType": "Book",
+				"keywords": [
+					"OCF_BookTextRecipe_Daedric"
+				]
+			},
+			"assign": {
+				"iconLabel": "book_tome"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"bookType": "Book",
+				"keywords": [
+					"OCF_BookBindingJournal"
+				]
+			},
+			"assign": {
+				"iconLabel": "book_journal",
+				"iconColor": "#685629"
+			}
+		}
+	]
+}

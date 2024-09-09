@@ -1,0 +1,188 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Armor",
+				"weightClass": {
+					"anyOf": [
+						"Jewelry",
+						"Other"
+					]
+				},
+				"keywords": {
+					"anyOf": [
+						"ArmorClothing",
+						"VendorItemClothing",
+						"BYOHAdoptionClothesKeyword",
+						"ClothingHead",
+						"ClothingBody",
+						"ClothingHands",
+						"ClothingFeet",
+						"OCF_HeadTypeBandana",
+						"OCF_HeadTypeBlindfold",
+						"OCF_HeadTypeEyePatch",
+						"OCF_HeadTypeGag",
+						"OCF_HeadTypeHat",
+						"OCF_HeadTypeHood",
+						"OCF_HeadTypeMask_Face",
+						"OCF_HeadTypeHood_Masked",
+						"OCF_BodyTypePants",
+						"OCF_BodyTypeTorso",
+						"OCF_BodyTypeUnderwear",
+						"OCF_HandTypeCuffs",
+						"OCF_FeetTypeHeels",
+						"OCF_FeetTypeShoes",
+						"OCF_FeetTypeStockings"
+					]
+				}
+			},
+			"assign": {
+				"weightClass": "Clothing",
+				"weightClassDisplay": "$Clothing",
+				"armorClass": "4"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"weightClass": {
+					"anyOf": [
+						"Clothing",
+						"Other"
+					]
+				},
+				"keywords": {
+					"anyOf": [
+						"ArmorJewelry",
+						"VendorItemJewelry",
+						"ClothingCrown",
+						"ClothingEarCuffs",
+						"ClothingEarrings",
+						"ClothingChoker",
+						"ClothingHighNecklace",
+						"ClothingNecklace",
+						"JewelryTorc",
+						"ClothingBracelet",
+						"ClothingRing",
+						"BodyTypeWings_Jewelry"
+					]
+				}
+			},
+			"assign": {
+				"weightClass": "Jewelry",
+				"weightClassDisplay": "$Jewelry",
+				"armorClass": "5"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"weightClass": {
+					"anyOf": [
+						"Clothing",
+						"Jewelry"
+					]
+				},
+				"keywords": {
+					"anyOf": [
+						"ArmorShield",
+						"WAF_ClothingPouch",
+						"WAF_ClothingAccessories",
+						"WAF_ClothingMedicalHealing",
+						"OCF_HeadTypeEarsReal",
+						"OCF_HeadTypeGlasses",
+						"OCF_HeadTypeGoggles",
+						"OCF_HeadTypeHorns",
+						"OCF_HeadTypeMask_Eyes",
+						"OCF_HeadTypeHoodMasked",
+						"OCF_HeadTypeWig",
+						"OCF_BodyTypePauldron",
+						"OCF_BodyTypeTail_Armor",
+						"OCF_BodyTypeTail_Real",
+						"OCF_BodyTypeWings_Real",
+						"OCF_HandTypeClaws",
+						"OCF_HandTypeNails",
+						"OCF_FeetTypeNails",
+						"OCF_FeetTypeSabatons"
+					]
+				}
+			},
+			"assign": {
+				"weightClass": "Other",
+				"weightClassDisplay": "$Other",
+				"armorClass": "6"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"formId": "Skyrim.esm|8895A"
+			},
+			"assign": {
+				"weightClass": "Other",
+				"armorClass": "6",
+				"weightClassDisplay": "$Other",
+				"subTypeDisplay": "$Circlet",
+				"iconLabel": "armor_circlet"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"weightClass": "Heavy"
+			},
+			"assign": {
+				"armorClass": "1"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"weightClass": "Light"
+			},
+			"assign": {
+				"armorClass": "3"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"weightClass": "Clothing"
+			},
+			"assign": {
+				"armorClass": "4"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"weightClass": "Jewelry"
+			},
+			"assign": {
+				"armorClass": "5"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"weightClass": "Other"
+			},
+			"assign": {
+				"armorClass": "6"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"ArmorMedium"
+				]
+			},
+			"assign": {
+				"armorClass": "2",
+				"weightClassDisplay": "$ArmorMedium"
+			}
+		}
+	]
+}

@@ -1,0 +1,52 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_Placeholder_BuildingPart",
+						"IconHousePart"
+					]
+				}
+			},
+			"assign": {
+				"itemType": "9",
+				"itemClass": "0",
+				"subTypeDisplay": "$ItemPlaceholderBuild",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_housepart",
+				"iconColor": "#FFFFFF"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_Placeholder_Filter"
+				]
+			},
+			"assign": {
+				"itemClass": "0",
+				"itemSort": "0",
+				"subTypeDisplay": "$ItemPlaceholderFilter",
+				"iconLabel": "default_book_read",
+				"iconColor": "#FFFFFF"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_Placeholder_Separate"
+				]
+			},
+			"assign": {
+				"itemClass": "0",
+				"itemSort": "0",
+				"subTypeDisplay": "$ItemPlaceholderSeparate"
+			}
+		}
+	]
+}

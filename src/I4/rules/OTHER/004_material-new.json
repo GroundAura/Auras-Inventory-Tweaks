@@ -1,0 +1,59 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"keywords": {
+					"anyOf": [
+						"JELArmorMaterialAdamantium",
+						"JELWeaponMaterialAdamantium",
+						"OCF_MaterialDisplayAdamantium"
+					]
+				}
+			},
+			"assign": {
+				"materialDisplay": "$ItemMaterialAdamantium"
+			}
+		},
+		{
+			"match": {
+				"keywords": [
+					"OCF_MaterialDisplayChitin"
+				]
+			},
+			"assign": {
+				"materialDisplay": "$Chitin"
+			}
+		},
+		{
+			"match": {
+				"keywords": [
+					"OCF_MaterialDisplayDarkBrotherhood"
+				]
+			},
+			"assign": {
+				"materialDisplay": "$ItemMaterialDarkBrotherhood"
+			}
+		},
+		{
+			"match": {
+				"keywords": [
+					"OCF_MaterialDisplayLeather"
+				]
+			},
+			"assign": {
+				"materialDisplay": "$Leather"
+			}
+		},
+		{
+			"match": {
+				"keywords": [
+					"OCF_MaterialDisplaySilver"
+				]
+			},
+			"assign": {
+				"materialDisplay": "$Silver"
+			}
+		}
+	]
+}

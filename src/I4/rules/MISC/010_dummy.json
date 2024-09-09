@@ -1,0 +1,85 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_Placeholder_Filter"
+				]
+			},
+			"assign": {
+				"itemClass": "0",
+				"itemSort": "0",
+				"subTypeDisplay": "$ItemPlaceholderFilter",
+				"iconLabel": "default_book_read",
+				"iconColor": "#FFFFFF"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": {
+					"anyOf": [
+						"OCF_Placeholder_BuildingPart",
+						"IconHousePart"
+					]
+				}
+			},
+			"assign": {
+				"itemClass": "0",
+				"subTypeDisplay": "$ItemPlaceholderBuild",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_housepart",
+				"iconColor": "#FFFFFF"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_Placeholder_Learn"
+				]
+			},
+			"assign": {
+				"itemClass": "0",
+				"itemSort": "0",
+				"subTypeDisplay": "$ItemPlaceholderLearn",
+				"iconLabel": "default_book_read",
+				"iconColor": "#FFFFFF"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_Placeholder_Separate"
+				]
+			},
+			"assign": {
+				"itemClass": "0",
+				"itemSort": "0",
+				"subTypeDisplay": "$ItemPlaceholderSeparate"
+			}
+		},
+		{
+			"match": {
+				"formType": "MiscItem",
+				"keywords": [
+					"OCF_AmmoTypeBullet"
+				]
+			},
+			"assign": {
+				"equipType": "3",
+				"equipTypeDisplay": "$EqpAmmo",
+				"itemType": "1",
+				"itemClass": "6",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemAmmoBullet",
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "weapon_bullet",
+				"iconColor": "#A89E8C"
+			}
+		}
+	]
+}

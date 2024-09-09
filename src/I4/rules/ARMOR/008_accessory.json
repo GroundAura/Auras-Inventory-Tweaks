@@ -1,0 +1,261 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_Accessory",
+						"WAF_ClothingAccessories"
+					]
+				}
+			},
+			"assign": {
+				"itemClass": "11",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemArmorAccessory",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "armor_ribbon"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_AccessoryBelt"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorAccessory",
+				"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+				"iconLabel": "armor_belt"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_ArmorBeltBook"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorBeltBook",
+				"iconLabel": "book_journal"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_MiscEmptyVessel_Flask",
+						"OCF_VesselFlask",
+						"OCF_MiscEmptyVessel_Waterskin",
+						"OCF_VesselWaterskin"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorAccessory",
+				"iconSource": "Dodo/powers.swf",
+				"iconLabel": "food_waterskin"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_AccessoryInstrument",
+						"OCF_MiscInstrument",
+						"IconInstrument"
+					]
+				}
+			},
+			"assign": {
+				"itemClass": "11",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemMiscInstrument",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_instrument"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_ToolLantern",
+						"OCF_ToolLanternPaper"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscLantern",
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "misc_lantern",
+				"iconColor": "#FFAA00"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_ToolLantern_Bug",
+						"OCF_MiscJarBug"
+					]
+				}
+			},
+			"assign": {
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_jar"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_ToolLantern_BugEmpty",
+						"OCF_MiscEmptyVessel_Jar"
+					]
+				}
+			},
+			"assign": {
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_jar",
+				"iconColor": "#FFFFFF"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_AccessoryJewelry"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorAccessory",
+				"iconLabel": "armor_amulet"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_AccessoryKatana"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorAccessory",
+				"iconSource": "skyui_weapons_pack/icons.swf",
+				"iconLabel": "weapon_katana"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_AccessoryPiercing"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorPiercing",
+				"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+				"iconLabel": "armor_piercing"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_AccessoryShield"
+				]
+			},
+			"assign": {
+				"itemClass": "11",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemArmorAccessory",
+				"iconLabel": "default_armor"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_AccessoryShield"
+				],
+				"weightClass": "Heavy"
+			},
+			"assign": {
+				"iconLabel": "armor_shield"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_AccessoryShield"
+				],
+				"weightClass": "Light"
+			},
+			"assign": {
+				"iconLabel": "lightarmor_shield"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_AccessoryTattoo"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorTattoo",
+				"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+				"iconLabel": "armor_tattoo"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_AccessoryMagic"
+				]
+			},
+			"assign": {
+				"iconLabel": "misc_artifact"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_ToolExtractor"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscAlchemy",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_dwarvenscrap",
+				"iconColor": "#705F32"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_AccessoryEffect"
+				]
+			},
+			"assign": {
+				"itemClass": "11",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemArmorEffect",
+				"iconLabel": "default_effect"
+			}
+		}
+	]
+}

@@ -1,0 +1,40 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Scroll",
+				"keywords": {
+					"anyOf": [
+						"BYOHAdoptionToyKeyword",
+						"OCF_MiscChildToy",
+						"OCF_MiscPetGear_Toy",
+						"IconToy"
+					]
+				}
+			},
+			"assign": {
+				"itemClass": "4",
+				"itemSort": "0",
+				"subTypeDisplay": "$Toy",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_toy",
+				"iconColor": "#FFFFFF"
+			}
+		},
+		{
+			"match": {
+				"formType": "Scroll",
+				"keywords": [
+					"OCF_MiscChildToy_Doll"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscDoll",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_toy",
+				"iconColor": "#FFFFFF"
+			}
+		}
+	]
+}

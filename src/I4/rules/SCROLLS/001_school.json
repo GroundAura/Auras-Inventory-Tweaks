@@ -1,0 +1,55 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Scroll",
+				"school": "Alteration"
+			},
+			"assign": {
+				"itemSort": "1",
+				"iconColor": "#8F6B46"
+			}
+		},
+		{
+			"match": {
+				"formType": "Scroll",
+				"school": "Illusion"
+			},
+			"assign": {
+				"itemSort": "2",
+				"iconColor": "#4C9EA4"
+			}
+		},
+		{
+			"match": {
+				"formType": "Scroll",
+				"school": "Destruction"
+			},
+			"assign": {
+				"itemSort": "3",
+				"iconColor": "#C73636"
+			}
+		},
+		{
+			"match": {
+				"formType": "Scroll",
+				"school": "Conjuration"
+			},
+			"assign": {
+				"itemSort": "4",
+				"iconColor": "#993899"
+			}
+		},
+		{
+			"match": {
+				"formType": "Scroll",
+				"school": "Restoration"
+			},
+			"assign": {
+				"itemSort": "5",
+				"iconColor": "#00AC00"
+			}
+		}
+	]
+}

@@ -1,0 +1,58 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "SoulGem",
+				"keywords": [
+					"OCF_Artifact"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Artifact"
+			}
+		},
+		{
+			"match": {
+				"formType": "SoulGem",
+				"keywords": {
+					"anyOf": [
+						"OCF_ArtifactDaedric",
+						"OCF_InvColorDaedric"
+					]
+				}
+			},
+			"assign": {
+				"iconColor": "#A14040"
+			}
+		},
+		{
+			"match": {
+				"formType": "SoulGem",
+				"keywords": [
+					"OCF_ArtifactDaedric_BlackStar"
+				]
+			},
+			"assign": {
+				"iconColor": "#7569FF"
+			}
+		},
+		{
+			"match": {
+				"formType": "SoulGem",
+				"keywords": {
+					"anyOf": [
+						"OCF_ArtifactDaedric_AzuraStar",
+						"OCF_ArtifactDaedric_BlackStar",
+						"OCF_ReplicaDaedric_AzuraStar",
+						"OCF_ReplicaDaedric_BlackStar",
+						"OCF_SlgmShapeStar"
+					]
+				}
+			},
+			"assign": {
+				"iconLabel": "soulgem_azura"
+			}
+		}
+	]
+}

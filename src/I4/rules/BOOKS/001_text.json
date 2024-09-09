@@ -1,0 +1,136 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Book",
+				"keywords": [
+					"OCF_BookTextSkill"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemBookSkill"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"keywords": [
+					"OCF_BookTextSong"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemBookSong"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"keywords": {
+					"anyOf": [
+						"VendorItemRecipe",
+						"OCF_BookTextRecipe_Alchemy",
+						"OCF_BookTextRecipe_Cooking",
+						"OCF_BookTextRecipe_Crafting",
+						"OCF_BookTextRecipe_Daedric",
+						"OCF_BookTextRecipe_Spider"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$Recipe"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"keywords": [
+					"OCF_BookTextRecipe_Alchemy"
+				]
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/books.swf",
+				"iconLabel": "book_recipe"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"keywords": [
+					"OCF_BookTextRecipe_Daedric"
+				]
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/books.swf",
+				"iconLabel": "book_atronachforge"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"keywords": [
+					"OCF_BookTextDocument"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemBookDocument"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"keywords": [
+					"OCF_BookTextManual"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemBookManual"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"keywords": {
+					"anyOf": [
+						"OCF_BookTextMap",
+						"IconMap"
+					]
+				}
+			},
+			"assign": {
+				"bookType": "Note",
+				"itemClass": "2",
+				"subTypeDisplay": "$Map",
+				"iconLabel": "book_map",
+				"iconColor": "#C2A487"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"keywords": [
+					"OCF_BookTextMissive"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemBookMissive",
+				"iconSource": "BOOBIES Immersive Icons/books.swf",
+				"iconLabel": "book_missive",
+				"iconColor": "#B4B454"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"keywords": [
+					"OCF_BookTextRansom"
+				]
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/books.swf",
+				"iconLabel": "book_missive",
+				"iconColor": "#7B2424"
+			}
+		}
+	]
+}

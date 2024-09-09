@@ -1,0 +1,337 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_BodyTypeGorget",
+						"ClothingChoker"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorChoker",
+				"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+				"iconLabel": "armor_choker"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_BodyTypeCloak",
+						"WAF_ClothingCloak"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorCloak",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "clothing_cloak"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_BodyTypeHighNecklace",
+						"ClothingHighNecklace"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorNecklace",
+				"iconLabel": "armor_amulet"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_BodyTypeNeck"
+				]
+			},
+			"assign": {
+				"iconLabel": "clothing_head"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_BodyTypeMantle"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorMantle",
+				"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+				"iconLabel": "armor_scarf"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_BodyTypePants"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorPants",
+				"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+				"iconLabel": "armor_trousers"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_BodyTypeScarf"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorScarf",
+				"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+				"iconLabel": "armor_scarf"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_BodyTypePauldron"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorPauldron",
+				"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+				"iconLabel": "armor_shoulder"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_BodyTypeSkirt"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorSkirt",
+				"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+				"iconLabel": "armor_skirt"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_BodyTypeTail_Real",
+						"OCF_BodyTypeTailReal"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$Tail",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "armor_tail"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_BodyTypeTail_Armor",
+						"OCF_BodyTypeTailArmor"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorTailArmor",
+				"iconLabel": "default_armor"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_BodyTypeTasset"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorTasset",
+				"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+				"iconLabel": "armor_skirt"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_BodyTypeTorc",
+						"OCF_ClothingTorc",
+						"ArmorTorc",
+						"JewelryTorc"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorTorc",
+				"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+				"iconLabel": "armor_choker"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_BodyTypeTorso"
+				]
+			},
+			"assign": {
+				"iconLabel": "clothing_body",
+				"subTypeDisplay": "$ItemArmorTorso"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_BodyTypeTorso"
+				],
+				"weightClass": "Light"
+			},
+			"assign": {
+				"iconLabel": "lightarmor_body"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_BodyTypeTorso"
+				],
+				"weightClass": "Heavy"
+			},
+			"assign": {
+				"iconLabel": "armor_body"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_BodyTypeUnderwear"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorUnderwear",
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "clothing_lingerie"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_BodyTypeUnderwearM"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "clothing_Mpanty"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_BodyTypeUnderwearF_Top",
+						"ClothingBra"
+					]
+				}
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+				"iconLabel": "armor_bra"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_BodyTypeUnderwearF_Bottom",
+						"ClothingPanties"
+					]
+				}
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+				"iconLabel": "armor_panties"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_BodyTypeUnderwearF_Full1P"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "clothing_lingerie"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_BodyTypeUnderwearF_Full2P"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "clothing_lingerie"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_BodyTypeWings"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemArmorWings",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "armor_wings"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"formId": "Skyrim On Skooma.esp|8EF"
+			},
+			"assign": {
+				"iconSource": "AIT/Aura/icons.swf",
+				"iconLabel": "potion_skooma"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"formId": "Skyrim On Skooma.esp|8F0"
+			},
+			"assign": {
+				"iconLabel": "food_beer"
+			}
+		}
+	]
+}

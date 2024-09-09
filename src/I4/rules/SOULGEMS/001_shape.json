@@ -1,0 +1,101 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "SoulGem",
+				"keywords": {
+					"anyOf": [
+						"OCF_SlgmShapePetty",
+						"OCF_SlgmShapeLesser",
+						"OCF_SlgmShapeCommon",
+						"OCF_SlgmShapeBlack"
+					]
+				},
+				"status": "Empty"
+			},
+			"assign": {
+				"iconLabel": "soulgem_empty"
+			}
+		},
+		{
+			"match": {
+				"formType": "SoulGem",
+				"keywords": {
+					"anyOf": [
+						"OCF_SlgmShapePetty",
+						"OCF_SlgmShapeLesser",
+						"OCF_SlgmShapeCommon",
+						"OCF_SlgmShapeBlack"
+					]
+				},
+				"status": "Partial"
+			},
+			"assign": {
+				"iconLabel": "soulgem_partial"
+			}
+		},
+		{
+			"match": {
+				"formType": "SoulGem",
+				"keywords": {
+					"anyOf": [
+						"OCF_SlgmShapePetty",
+						"OCF_SlgmShapeLesser",
+						"OCF_SlgmShapeCommon",
+						"OCF_SlgmShapeBlack"
+					]
+				},
+				"status": "Full"
+			},
+			"assign": {
+				"iconLabel": "soulgem_full"
+			}
+		},
+		{
+			"match": {
+				"formType": "SoulGem",
+				"keywords": {
+					"anyOf": [
+						"OCF_SlgmShapeGreater",
+						"OCF_SlgmShapeGrand"
+					]
+				},
+				"status": "Empty"
+			},
+			"assign": {
+				"iconLabel": "soulgem_grandempty"
+			}
+		},
+		{
+			"match": {
+				"formType": "SoulGem",
+				"keywords": {
+					"anyOf": [
+						"OCF_SlgmShapeGreater",
+						"OCF_SlgmShapeGrand"
+					]
+				},
+				"status": "Partial"
+			},
+			"assign": {
+				"iconLabel": "soulgem_grandpartial"
+			}
+		},
+		{
+			"match": {
+				"formType": "SoulGem",
+				"keywords": {
+					"anyOf": [
+						"OCF_SlgmShapeGreater",
+						"OCF_SlgmShapeGrand"
+					]
+				},
+				"status": "Full"
+			},
+			"assign": {
+				"iconLabel": "soulgem_grandfull"
+			}
+		}
+	]
+}

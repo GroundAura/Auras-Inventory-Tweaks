@@ -1,0 +1,81 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Armor"
+			},
+			"assign": {
+				"itemClass": "11",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemArmorAccessory"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"subType": "Circlet"
+			},
+			"assign": {
+				"itemClass": "5",
+				"itemSort": "1",
+				"subTypeDisplay": "$Circlet"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"subType": "Ears"
+			},
+			"assign": {
+				"itemClass": "5",
+				"itemSort": "2",
+				"subTypeDisplay": "$Ears"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"subType": "Amulet"
+			},
+			"assign": {
+				"itemClass": "6",
+				"itemSort": "1",
+				"subTypeDisplay": "$Amulet"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"subType": "Tail"
+			},
+			"assign": {
+				"itemClass": "6",
+				"itemSort": "2",
+				"subTypeDisplay": "$Tail"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"subType": "Ring"
+			},
+			"assign": {
+				"itemClass": "7",
+				"itemSort": "1",
+				"subTypeDisplay": "$Ring"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"subType": "Shield"
+			},
+			"assign": {
+				"itemClass": "0",
+				"itemSort": "1",
+				"subTypeDisplay": "$Shield"
+			}
+		}
+	]
+}

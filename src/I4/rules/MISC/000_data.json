@@ -1,0 +1,14 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "MiscItem"
+			},
+			"assign": {
+				"itemType": "9",
+				"itemClass": "2"
+			}
+		}
+	]
+}

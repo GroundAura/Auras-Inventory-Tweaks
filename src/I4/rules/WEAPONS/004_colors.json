@@ -1,0 +1,93 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": [
+					"OCF_InvColorBlood"
+				]
+			},
+			"assign": {
+				"iconColor": "#8E2129"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": [
+					"OCF_InvColorDwarven"
+				]
+			},
+			"assign": {
+				"iconColor": "#705F32"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": [
+					"OCF_InvColorFire"
+				]
+			},
+			"assign": {
+				"iconColor": "#C73636"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": [
+					"OCF_InvColorFrost"
+				]
+			},
+			"assign": {
+				"iconColor": "#1FFBFF"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": [
+					"OCF_InvColorPoison"
+				]
+			},
+			"assign": {
+				"iconColor": "#62A636"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": [
+					"OCF_InvColorShock"
+				]
+			},
+			"assign": {
+				"iconColor": "#EAAB00"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": [
+					"OCF_InvColorSun"
+				]
+			},
+			"assign": {
+				"iconColor": "#FF8700"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": [
+					"OCF_InvColorWater"
+				]
+			},
+			"assign": {
+				"iconColor": "#005493"
+			}
+		}
+	]
+}

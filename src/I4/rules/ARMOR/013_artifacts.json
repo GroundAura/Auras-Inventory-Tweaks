@@ -1,0 +1,363 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_ArtifactAedric"
+				]
+			},
+			"assign": {
+				"iconColor": "#0099CC"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_ArtifactAedric_AurielShield",
+						"OCF_ReplicaAedric_AurielShield"
+					]
+				}
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/aedric artefacts.swf",
+				"iconLabel": "auriel_shield"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_ArtifactAedric_CrusaderHelm",
+						"OCF_ReplicaAedric_CrusaderHelm"
+					]
+				}
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/aedric artefacts.swf",
+				"iconLabel": "crusader_helm"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_ArtifactAedric_CrusaderCuirass",
+						"OCF_ReplicaAedric_CrusaderCuirass"
+					]
+				}
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/aedric artefacts.swf",
+				"iconLabel": "crusader_cuirass"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_ArtifactAedric_CrusaderGauntlets",
+						"OCF_ReplicaAedric_CrusaderGauntlets"
+					]
+				}
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/aedric artefacts.swf",
+				"iconLabel": "crusader_gauntlets"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_ArtifactAedric_CrusaderBoots",
+						"OCF_ReplicaAedric_CrusaderBoots"
+					]
+				}
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/aedric artefacts.swf",
+				"iconLabel": "crusader_boots"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_ArtifactAedric_CrusaderShield",
+						"OCF_ReplicaAedric_CrusaderShield"
+					]
+				}
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/aedric artefacts.swf",
+				"iconLabel": "crusader_shield"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_ArtifactAedric_ElderScroll",
+						"OCF_ReplicaAedric_ElderScroll"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemBookElderScroll",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_elderscroll"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_ArtifactAedric_Worship"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Artifact",
+				"iconLabel": "misc_artifact"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_ArtifactDaedric"
+				]
+			},
+			"assign": {
+				"iconColor": "#A14040"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_ArtifactDaedric_EbonyMail",
+						"OCF_ReplicaDaedric_EbonyMail"
+					]
+				}
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/daedric artefacts.swf",
+				"iconLabel": "ebony_mail"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_ArtifactDaedric_MasqueClavicusVile",
+						"OCF_ReplicaDaedric_MasqueClavicusVile"
+					]
+				}
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/daedric artefacts.swf",
+				"iconLabel": "mask_clavicus_vile"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_ArtifactDaedric_RingHircine",
+						"OCF_ReplicaDaedric_RingHircine"
+					]
+				}
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/daedric artefacts.swf",
+				"iconLabel": "ring_hircine"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_ArtifactDaedric_RingNamira",
+						"OCF_ReplicaDaedric_RingNamira"
+					]
+				}
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/daedric artefacts.swf",
+				"iconLabel": "ring_namira"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_ArtifactDaedric_SaviorsHide",
+						"OCF_ReplicaDaedric_SaviorsHide"
+					]
+				}
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/daedric artefacts.swf",
+				"iconLabel": "savior_hide"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_ArtifactDaedric_Spellbreaker",
+						"OCF_ReplicaDaedric_Spellbreaker"
+					]
+				}
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/daedric artefacts.swf",
+				"iconLabel": "spellbreaker"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_ArtifactDaedric_Worship"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$Artifact",
+				"iconSource": "AIT/Aura/icons.swf",
+				"iconLabel": "misc_artifactdaedra"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": [
+					"OCF_ArtifactDwarven"
+				]
+			},
+			"assign": {
+				"iconColor": "#FFD700"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_ArtifactDwarven_AetherialCrown",
+						"OCF_ReplicaDwarven_AetherialCrown"
+					]
+				}
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/dwemer artefacts.swf",
+				"iconLabel": "aetherial_crown"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_ArtifactDwarven_AetherialShield",
+						"OCF_ReplicaDwarven_AetherialShield"
+					]
+				}
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/dwemer artefacts.swf",
+				"iconLabel": "aetherial_shield"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_ArtifactDwarven_Wraithguard",
+						"OCF_ReplicaDwarven_Wraithguard"
+					]
+				}
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/dwemer artefacts.swf",
+				"iconLabel": "armor_wraithguard"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_ArtifactLegendary",
+						"OCF_InvColorLegendary "
+					]
+				}
+			},
+			"assign": {
+				"iconColor": "#C1884D"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_ArtifactLegendary_DawnguardRuneShield",
+						"OCF_ReplicaLegendary_DawnguardRuneShield"
+					]
+				}
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/legendary artefacts.swf",
+				"iconLabel": "dawnguard_runeshield"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_ArtifactLegendary_DragonPriestMask",
+						"OCF_ReplicaLegendary_DragonPriestMask"
+					]
+				}
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/bodyparts.swf",
+				"iconLabel": "armor_dragonmask"
+			}
+		},
+		{
+			"match": {
+				"formType": "Armor",
+				"keywords": {
+					"anyOf": [
+						"OCF_ArtifactLegendary_ShieldYsgramor",
+						"OCF_ReplicaLegendary_ShieldYsgramor"
+					]
+				}
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/legendary artefacts.swf",
+				"iconLabel": "ysgramor_shield"
+			}
+		}
+	]
+}

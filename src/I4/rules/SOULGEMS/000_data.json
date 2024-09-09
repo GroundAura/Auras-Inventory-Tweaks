@@ -1,0 +1,16 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "SoulGem"
+			},
+			"assign": {
+				"itemType": "9",
+				"itemClass": "3",
+				"canHoldNPCSoul": "0",
+				"iconColor": "#ABA3FF"
+			}
+		}
+	]
+}

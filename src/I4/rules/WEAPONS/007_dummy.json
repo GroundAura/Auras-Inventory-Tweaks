@@ -1,0 +1,20 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": [
+					"OCF_Placeholder_Filter"
+				]
+			},
+			"assign": {
+				"itemClass": "0",
+				"itemSort": "0",
+				"subTypeDisplay": "$ItemPlaceholderFilter",
+				"iconLabel": "default_book_read",
+				"iconColor": "#FFFFFF"
+			}
+		}
+	]
+}

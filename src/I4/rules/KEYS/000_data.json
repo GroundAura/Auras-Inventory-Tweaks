@@ -1,0 +1,14 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Key"
+			},
+			"assign": {
+				"itemType": "8",
+				"iconLabel": "default_key"
+			}
+		}
+	]
+}
