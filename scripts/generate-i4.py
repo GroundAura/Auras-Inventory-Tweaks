@@ -73,9 +73,11 @@ def main():
 	# Read rules
 	rulesets: dict[str, list[dict[str, dict[str, any]]]] = {}
 	for key, source_dir in sources.items():
+		rulesets[key] = []
 		for path in Path(source_dir).rglob("*.json"):
 			with open(path, 'r') as f:
-				rulesets[key] = json.load(f)["rules"]
+				rules = json.load(f)["rules"]
+				rulesets[key].extend(rules)
 
 	# Read templates
 	templates: dict[str, dict[str, any]] = {}
