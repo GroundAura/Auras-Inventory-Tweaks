@@ -1,0 +1,217 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Spell"
+			},
+			"assign": {
+				"sortByEffectData": "1"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"castType": "Concentration"
+			},
+			"assign": {
+				"spellCast": "1",
+				"spellCastDisplay": "$MagicCastConcentration"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"castType": "FireAndForget"
+			},
+			"assign": {
+				"spellCast": "2",
+				"spellCastDisplay": "$MagicCastFireAndForget"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"deliveryType": "Self"
+			},
+			"assign": {
+				"spellTarget": "1",
+				"spellTargetDisplay": "$MagicDeliverSelf"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"deliveryType": "Aimed"
+			},
+			"assign": {
+				"spellTarget": "3",
+				"spellTargetDisplay": "$MagicDeliverAimed"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"deliveryType": "TargetActor"
+			},
+			"assign": {
+				"spellTarget": "4",
+				"spellTargetDisplay": "$MagicDeliverTargetActor"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"deliveryType": "TargetLocation"
+			},
+			"assign": {
+				"spellTarget": "5",
+				"spellTargetDisplay": "$MagicDeliverTargetLocation"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"effectKeywords": [
+					"OCF_MgefDeliverTouch"
+				]
+			},
+			"assign": {
+				"spellTarget": "2",
+				"spellTargetDisplay": "$MagicDeliverTouch"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": "Spell",
+				"school": "Alteration"
+			},
+			"assign": {
+				"magicSchool": "1"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": "Spell",
+				"school": "Illusion"
+			},
+			"assign": {
+				"magicSchool": "2"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": "Spell",
+				"school": "Destruction"
+			},
+			"assign": {
+				"magicSchool": "3"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": "Spell",
+				"school": "Conjuration"
+			},
+			"assign": {
+				"magicSchool": "4"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": "Spell",
+				"school": "Restoration"
+			},
+			"assign": {
+				"magicSchool": "5"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": "LesserPower"
+			},
+			"assign": {
+				"magicSchool": "6",
+				"infoSchoolName": "$MagicPower",
+				"skillLevel": "125",
+				"infoCastLevel": "$MagicPowerLesser"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": "Power"
+			},
+			"assign": {
+				"magicSchool": "6",
+				"infoSchoolName": "$MagicPower",
+				"skillLevel": "150",
+				"infoCastLevel": "$MagicPowerGreater"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Power",
+						"LesserPower"
+					]
+				},
+				"formId": {
+					"anyOf": [
+						"Dragonborn.esm|2970A",
+						"Dragonborn.esm|29709",
+						"Dragonborn.esm|24812",
+						"Dragonborn.esm|1DFA4",
+						"Dragonborn.esm|1DF9F",
+						"Dragonborn.esm|1DF9C",
+						"Dragonborn.esm|1DFAB",
+						"Dragonborn.esm|1DFA7",
+						"Dragonborn.esm|1DFA5",
+						"Sacrosanct - Vampires of Skyrim.esp|5EAFD"
+					]
+				}
+			},
+			"assign": {
+				"skillLevel": "175",
+				"infoCastLevel": "$MagicPowerGrand"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefPowerGrand"
+				]
+			},
+			"assign": {
+				"skillLevel": "175",
+				"infoCastLevel": "$MagicPowerGrand"
+			}
+		},
+		{
+			"match": {
+				"spellType": "VoicePower"
+			},
+			"assign": {
+				"magicSchool": "7",
+				"infoSchoolName": "$MagicShout",
+				"skillLevel": "200",
+				"infoCastLevel": "$MagicShout"
+			}
+		}
+	]
+}

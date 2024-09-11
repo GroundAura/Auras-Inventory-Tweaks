@@ -1,0 +1,68 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Potion",
+				"keywords": [
+					"OCF_AlchFood_EggMagic"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemFoodEggMagic",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "food_magicegg",
+				"iconColor": "#CCCC33"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"keywords": {
+					"anyOf": [
+						"WAF_WeapTypeGrenade",
+						"BOS_SmokeBombKeyword"
+					]
+				}
+			},
+			"assign": {
+				"itemType": "1",
+				"itemClass": "3",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemWeaponBomb",
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "weapon_bomb",
+				"iconColor": "#A4A5BF"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"keywords": {
+					"anyOf": [
+						"OCF_MiscCampingGear",
+						"IconCampsite"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscCampingGear",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_tent",
+				"iconColor": "#BF8E60"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"keywords": [
+					"CraftingSmithingForge"
+				]
+			},
+			"assign": {
+				"itemType": "9",
+				"itemClass": "1"
+			}
+		}
+	]
+}

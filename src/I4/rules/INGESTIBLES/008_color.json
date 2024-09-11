@@ -1,0 +1,27 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Potion",
+				"keywords": [
+					"OCF_InvColorDaedric"
+				]
+			},
+			"assign": {
+				"iconColor": "#A14040"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"keywords": [
+					"OCF_InvColorLegendary"
+				]
+			},
+			"assign": {
+				"iconColor": "#C1884D"
+			}
+		}
+	]
+}

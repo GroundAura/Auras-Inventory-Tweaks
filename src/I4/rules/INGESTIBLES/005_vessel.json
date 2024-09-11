@@ -1,0 +1,385 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Potion",
+				"keywords": [
+					"OCF_VesselBag"
+				]
+			},
+			"assign": {
+				"iconLabel": "misc_goldsack"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"keywords": {
+					"anyOf": [
+						"OCF_VesselBottleDunmer",
+						"_SH_SujammaBottleKeyword"
+					]
+				}
+			},
+			"assign": {
+				"iconLabel": "food_wine"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"keywords": {
+					"anyOf": [
+						"OCF_VesselBottleMead",
+						"_SH_MeadBottleKeyword"
+					]
+				}
+			},
+			"assign": {
+				"iconLabel": "food_beer"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"keywords": [
+					"OCF_VesselBottleSkooma"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/Aura/icons.swf",
+				"iconLabel": "potion_skooma"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"subType": {
+					"anyOf": [
+						"Food",
+						"Drink"
+					]
+				},
+				"keywords": [
+					"OCF_VesselBottlePoison"
+				]
+			},
+			"assign": {
+				"iconLabel": "potion_poison"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"subType": {
+					"anyOf": [
+						"Food",
+						"Drink"
+					]
+				},
+				"keywords": [
+					"OCF_VesselBottlePotion"
+				]
+			},
+			"assign": {
+				"iconLabel": "default_potion"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"keywords": {
+					"anyOf": [
+						"OCF_VesselBottleWine",
+						"_SH_WineBottleKeyword"
+					]
+				}
+			},
+			"assign": {
+				"iconLabel": "food_wine"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"subType": {
+					"anyOf": [
+						"Food",
+						"Drink"
+					]
+				},
+				"keywords": [
+					"OCF_VesselBowl"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "food_stew"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"subType": {
+					"anyOf": [
+						"Food",
+						"Drink"
+					]
+				},
+				"keywords": [
+					"OCF_VesselCup"
+				]
+			},
+			"assign": {
+				"iconLabel": "food_wine"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"subType": {
+					"anyOf": [
+						"Food",
+						"Drink"
+					]
+				},
+				"keywords": [
+					"OCF_VesselDrinkingHorn"
+				]
+			},
+			"assign": {
+				"iconLabel": "food_wine"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"subType": {
+					"anyOf": [
+						"Food",
+						"Drink"
+					]
+				},
+				"keywords": [
+					"OCF_VesselFlagon"
+				]
+			},
+			"assign": {
+				"iconLabel": "food_wine"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"subType": {
+					"anyOf": [
+						"Food",
+						"Drink"
+					]
+				},
+				"keywords": [
+					"OCF_VesselFlask"
+				]
+			},
+			"assign": {
+				"iconLabel": "food_wine"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"keywords": [
+					"OCF_VesselHoneyPot"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "food_stew"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"keywords": [
+					"OCF_VesselJar"
+				]
+			},
+			"assign": {
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_jar"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"subType": {
+					"anyOf": [
+						"Food",
+						"Drink"
+					]
+				},
+				"keywords": [
+					"OCF_VesselJug"
+				]
+			},
+			"assign": {
+				"iconLabel": "food_wine"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"keywords": [
+					"OCF_VesselKettle"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_teapot"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"keywords": [
+					"OCF_VesselSack"
+				]
+			},
+			"assign": {
+				"iconLabel": "misc_goldsack"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"keywords": [
+					"OCF_VesselSmokingPipe"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "misc_drug"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"subType": {
+					"anyOf": [
+						"Food",
+						"Drink"
+					]
+				},
+				"keywords": [
+					"OCF_VesselTankard"
+				]
+			},
+			"assign": {
+				"iconLabel": "food_wine"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"subType": {
+					"anyOf": [
+						"Food",
+						"Drink"
+					]
+				},
+				"keywords": [
+					"OCF_VesselVial"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/Aura/icons.swf",
+				"iconLabel": "potion_vial"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"subType": {
+					"anyOf": [
+						"Food",
+						"Drink"
+					]
+				},
+				"keywords": {
+					"anyOf": [
+						"OCF_VesselWaterskin",
+						"OCF_VesselWaterskin_100"
+					]
+				}
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/food.swf",
+				"iconLabel": "waterskin_3"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"subType": {
+					"anyOf": [
+						"Food",
+						"Drink"
+					]
+				},
+				"keywords": {
+					"anyOf": [
+						"OCF_VesselWaterskin_075",
+						"OCF_VesselWaterskin_066"
+					]
+				}
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/food.swf",
+				"iconLabel": "waterskin_2"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"subType": {
+					"anyOf": [
+						"Food",
+						"Drink"
+					]
+				},
+				"keywords": {
+					"anyOf": [
+						"OCF_VesselWaterskin_050",
+						"OCF_VesselWaterskin_033"
+					]
+				}
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/food.swf",
+				"iconLabel": "waterskin_1"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"subType": {
+					"anyOf": [
+						"Food",
+						"Drink"
+					]
+				},
+				"keywords": {
+					"anyOf": [
+						"OCF_VesselWaterskin_025",
+						"OCF_VesselWaterskin_000"
+					]
+				}
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/food.swf",
+				"iconLabel": "waterskin_0"
+			}
+		}
+	]
+}

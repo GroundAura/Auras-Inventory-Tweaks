@@ -1,0 +1,13 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Potion"
+			},
+			"assign": {
+				"sortByEffectData": "1"
+			}
+		}
+	]
+}

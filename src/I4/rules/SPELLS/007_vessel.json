@@ -1,0 +1,651 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_AmmoTypeArrow"
+				]
+			},
+			"assign": {
+				"iconLabel": "weapon_arrow"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_AmmoTypeBolt"
+				]
+			},
+			"assign": {
+				"iconLabel": "weapon_bolt"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_ArmorCuirass_Heavy"
+				]
+			},
+			"assign": {
+				"iconLabel": "armor_body"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_ArmorCuirass_Light"
+				]
+			},
+			"assign": {
+				"iconLabel": "lightarmor_body"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_ArmorShield_Heavy"
+				]
+			},
+			"assign": {
+				"iconLabel": "armor_shield"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_ArmorShield_Light"
+				]
+			},
+			"assign": {
+				"iconLabel": "lightarmor_shield"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MiscCampingGear"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_tent"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_WeapTypeBattleaxe2H"
+				]
+			},
+			"assign": {
+				"iconLabel": "weapon_battleaxe"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_WeapTypeBow2H"
+				]
+			},
+			"assign": {
+				"iconLabel": "weapon_bow"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_WeapTypeClaw1H"
+				]
+			},
+			"assign": {
+				"iconSource": "skyui_weapons_pack/icons.swf",
+				"iconLabel": "weapon_claw"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_WeapTypeCrescent2H"
+				]
+			},
+			"assign": {
+				"iconLabel": "weapon_greatsword"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_WeapTypeCrossbow2H"
+				]
+			},
+			"assign": {
+				"iconLabel": "weapon_crossbow"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_WeapTypeDagger1H"
+				]
+			},
+			"assign": {
+				"iconLabel": "weapon_dagger"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_WeapTypeFishingRod1H"
+				]
+			},
+			"assign": {
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "weapon_fishingrod"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_WeapTypeGreatsword2H"
+				]
+			},
+			"assign": {
+				"iconLabel": "weapon_greatsword"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_WeapTypeHalberd2H"
+				]
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_halberd"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_WeapTypeHuntingKnife1H"
+				]
+			},
+			"assign": {
+				"iconLabel": "weapon_dagger"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_WeapTypeKatana1H"
+				]
+			},
+			"assign": {
+				"iconSource": "skyui_weapons_pack/icons.swf",
+				"iconLabel": "weapon_katana"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_WeapTypeKatana2H"
+				]
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_nodachi"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_WeapTypeKunai1H"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "weapon_kunai"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_WeapTypeMace1H"
+				]
+			},
+			"assign": {
+				"iconLabel": "weapon_mace"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_WeapTypePickaxe1H"
+				]
+			},
+			"assign": {
+				"iconLabel": "weapon_pickaxe"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_WeapTypePike2H"
+				]
+			},
+			"assign": {
+				"iconSource": "skyui_weapons_pack/icons.swf",
+				"iconLabel": "weapon_pike"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_WeapTypeQuarterstaff2H"
+				]
+			},
+			"assign": {
+				"iconSource": "skyui_weapons_pack/icons.swf",
+				"iconLabel": "weapon_quarterstaff"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_WeapTypeRapier1H"
+				]
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_rapier"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_WeapTypeScimitar1H"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "weapon_saber"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_WeapTypeScythe2H"
+				]
+			},
+			"assign": {
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_scythe"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_WeapTypeShuriken1H"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "weapon_shuriken"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_WeapTypeSpear1H"
+				]
+			},
+			"assign": {
+				"iconSource": "skyui_weapons_pack/icons.swf",
+				"iconLabel": "weapon_spear"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_WeapTypeSword1H"
+				]
+			},
+			"assign": {
+				"iconLabel": "weapon_sword"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_WeapTypeWarAxe1H"
+				]
+			},
+			"assign": {
+				"iconLabel": "weapon_waraxe"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_WeapTypeWarhammer2H"
+				]
+			},
+			"assign": {
+				"iconLabel": "weapon_hammer"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_WeapTypeWhip1H"
+				]
+			},
+			"assign": {
+				"iconSource": "skyui_weapons_pack/icons.swf",
+				"iconLabel": "weapon_whip"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_WeapTypeWoodaxe1H"
+				]
+			},
+			"assign": {
+				"iconLabel": "weapon_woodaxe"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"WAF_ClothingCloak"
+				]
+			},
+			"assign": {
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "clothing_cloak"
+			}
+		}
+	]
+}

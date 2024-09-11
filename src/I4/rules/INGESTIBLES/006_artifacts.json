@@ -1,0 +1,63 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Potion",
+				"keywords": [
+					"OCF_ArtifactDaedric_Bittercup"
+				]
+			},
+			"assign": {
+				"itemClass": "0",
+				"subTypeDisplay": "$Artifact",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_amphora",
+				"iconColor": "#A14040"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"keywords": [
+					"OCF_ArtifactLegendary_WhitePhial"
+				]
+			},
+			"assign": {
+				"itemClass": "0",
+				"subTypeDisplay": "$Artifact"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"keywords": {
+					"anyOf": [
+						"OCF_RelicAyleid_Crystal",
+						"IconAyleidCrystal"
+					]
+				}
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscAyleidCrystal",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "soulgem_ayleidcrystalfull",
+				"iconColor": "#5BC4C9"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"keywords": [
+					"OCF_RelicDwarven_Fairy"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscRelic",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_dwarvenscrap",
+				"iconColor": "#705F32"
+			}
+		}
+	]
+}

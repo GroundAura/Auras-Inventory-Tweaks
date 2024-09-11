@@ -1,0 +1,89 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Spell",
+				"formId": "Spellsiphon.esp|2B4A26"
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicArcane",
+				"subTypeDisplay": "$MagicAction",
+				"iconSource": "Dodo/powers.swf",
+				"iconLabel": "power_spellsiphon"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"formId": "Spellsiphon.esp|1FD77B"
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicArcane",
+				"subTypeDisplay": "$MagicAction",
+				"iconSource": "Dodo/powers.swf",
+				"iconLabel": "power_reverse"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"formId": "Spellsiphon.esp|390EC9"
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicArcane",
+				"subTypeDisplay": "$MagicAction",
+				"iconSource": "Dodo/powers.swf",
+				"iconLabel": "power_refocus"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"formId": "Spellsiphon.esp|9DFA9"
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicArcane",
+				"subTypeDisplay": "$MagicAction",
+				"iconSource": "Dodo/powers.swf",
+				"iconLabel": "power_reshape"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"formId": "Spellsiphon.esp|721A40"
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicArcane",
+				"subTypeDisplay": "$MagicAction",
+				"iconSource": "Dodo/powers.swf",
+				"iconLabel": "power_realign"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"formId": "Spellsiphon.esp|721A3E"
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicArcane",
+				"subTypeDisplay": "$MagicAction",
+				"iconSource": "Dodo/powers.swf",
+				"iconLabel": "power_entangle"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"formId": "Spellsiphon.esp|73AF52"
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicArcane",
+				"subTypeDisplay": "$MagicAction",
+				"iconSource": "Dodo/powers.swf",
+				"iconLabel": "power_untangle"
+			}
+		}
+	]
+}

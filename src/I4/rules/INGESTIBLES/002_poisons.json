@@ -1,0 +1,40 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Potion",
+				"keywords": [
+					"VendorItemPoison"
+				]
+			},
+			"assign": {
+				"subType": "Poison",
+				"itemClass": "8"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"keywords": [
+					"OCF_AlchPoison_Food"
+				]
+			},
+			"assign": {
+				"iconLabel": "default_food"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"subType": "Poison",
+				"keywords": [
+					"CACO_MagicAlchWeaponOil"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemMiscOil"
+			}
+		}
+	]
+}

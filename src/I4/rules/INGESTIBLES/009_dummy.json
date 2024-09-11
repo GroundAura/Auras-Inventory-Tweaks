@@ -1,0 +1,20 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Potion",
+				"keywords": [
+					"OCF_Placeholder_Learn"
+				]
+			},
+			"assign": {
+				"itemClass": "0",
+				"itemSort": "0",
+				"subTypeDisplay": "$ItemPlaceholderLearn",
+				"iconLabel": "default_book_read",
+				"iconColor": "#FFFFFF"
+			}
+		}
+	]
+}

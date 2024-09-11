@@ -1,0 +1,105 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"school": "Alteration",
+				"effectKeywords": {
+					"anyOf": [
+						"OCF_MgefSpellDispel",
+						"MAG_MagicDispelSpell"
+					]
+				}
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicArcane",
+				"subTypeDisplay": "$MagicDispel",
+				"iconLabel": "default_alteration",
+				"iconColor": "#00BCFF"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"school": "Conjuration",
+				"effectKeywords": {
+					"anyOf": [
+						"OCF_MgefSpellDispel",
+						"MAG_MagicDispelSpell"
+					]
+				}
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicArcane",
+				"subTypeDisplay": "$MagicDispel",
+				"iconLabel": "default_conjuration",
+				"iconColor": "#993899"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"school": "Illusion",
+				"effectKeywords": {
+					"anyOf": [
+						"OCF_MgefSpellDispel",
+						"MAG_MagicDispelSpell"
+					]
+				}
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicArcane",
+				"subTypeDisplay": "$MagicDispel",
+				"iconLabel": "default_illusion",
+				"iconColor": "#00BCFF"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"school": "Restoration",
+				"effectKeywords": {
+					"anyOf": [
+						"OCF_MgefSpellDispel",
+						"MAG_MagicDispelSpell"
+					]
+				}
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicArcane",
+				"subTypeDisplay": "$MagicDispel",
+				"iconLabel": "default_restoration",
+				"iconColor": "#00BCFF"
+			}
+		}
+	]
+}

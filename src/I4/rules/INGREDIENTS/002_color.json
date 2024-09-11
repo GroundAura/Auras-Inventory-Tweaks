@@ -1,0 +1,214 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Ingredient",
+				"keywords": [
+					"OCF_AlchSpoiled"
+				]
+			},
+			"assign": {
+				"iconColor": "#4D3911"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ingredient",
+				"keywords": [
+					"OCF_InvColorAedric"
+				]
+			},
+			"assign": {
+				"iconColor": "#0099CC"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ingredient",
+				"keywords": [
+					"OCF_InvColorBlack"
+				]
+			},
+			"assign": {
+				"iconColor": "#333333"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ingredient",
+				"keywords": [
+					"OCF_InvColorBlue"
+				]
+			},
+			"assign": {
+				"iconColor": "#005493"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ingredient",
+				"keywords": [
+					"OCF_InvColorDaedric"
+				]
+			},
+			"assign": {
+				"iconColor": "#A14040"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ingredient",
+				"keywords": [
+					"OCF_InvColorDwarven"
+				]
+			},
+			"assign": {
+				"iconColor": "#705F32"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ingredient",
+				"keywords": [
+					"OCF_InvColorFire"
+				]
+			},
+			"assign": {
+				"iconColor": "#C73636"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ingredient",
+				"keywords": [
+					"OCF_InvColorFrost"
+				]
+			},
+			"assign": {
+				"iconColor": "#1FFBFF"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ingredient",
+				"keywords": [
+					"OCF_InvColorGray"
+				]
+			},
+			"assign": {
+				"iconColor": "#111111"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ingredient",
+				"keywords": [
+					"OCF_InvColorGreen"
+				]
+			},
+			"assign": {
+				"iconColor": "#216E23"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ingredient",
+				"keywords": [
+					"OCF_InvColorLegendary"
+				]
+			},
+			"assign": {
+				"iconColor": "#C1884D"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ingredient",
+				"keywords": [
+					"OCF_InvColorMagenta"
+				]
+			},
+			"assign": {
+				"iconColor": "#C03797"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ingredient",
+				"keywords": [
+					"OCF_InvColorOrange"
+				]
+			},
+			"assign": {
+				"iconColor": "#C07A00"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ingredient",
+				"keywords": [
+					"OCF_InvColorPink"
+				]
+			},
+			"assign": {
+				"iconColor": "#FF7AAC"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ingredient",
+				"keywords": [
+					"OCF_InvColorPurple"
+				]
+			},
+			"assign": {
+				"iconColor": "#782FAD"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ingredient",
+				"keywords": [
+					"OCF_InvColorRed"
+				]
+			},
+			"assign": {
+				"iconColor": "#7B2424"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ingredient",
+				"keywords": [
+					"OCF_InvColorShock"
+				]
+			},
+			"assign": {
+				"iconColor": "#EAAB00"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ingredient",
+				"keywords": [
+					"OCF_InvColorWhite"
+				]
+			},
+			"assign": {
+				"iconColor": "#FFFFFF"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ingredient",
+				"keywords": [
+					"OCF_InvColorYellow"
+				]
+			},
+			"assign": {
+				"iconColor": "#E0E021"
+			}
+		}
+	]
+}

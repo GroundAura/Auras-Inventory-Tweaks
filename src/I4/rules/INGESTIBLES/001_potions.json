@@ -1,0 +1,224 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Potion",
+				"keywords": {
+					"anyOf": [
+						"VendorItemPotion",
+						"VendorItemPoison"
+					]
+				}
+			},
+			"assign": {
+				"itemType": "3",
+				"itemClass": "6"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"subType": {
+					"anyOf": [
+						"Health",
+						"HealRate",
+						"HealRateMult"
+					]
+				}
+			},
+			"assign": {
+				"itemClass": "1"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"subType": {
+					"anyOf": [
+						"Stamina",
+						"StaminaRate",
+						"StaminaRateMult"
+					]
+				}
+			},
+			"assign": {
+				"itemClass": "2"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"subType": {
+					"anyOf": [
+						"Magicka",
+						"MagickaRate",
+						"MagickaRateMult"
+					]
+				}
+			},
+			"assign": {
+				"itemClass": "3"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"subType": "Potion",
+				"archetype": {
+					"anyOf": [
+						"CureAddiction",
+						"CureDisease",
+						"CureParalysis",
+						"CurePoison"
+					]
+				}
+			},
+			"assign": {
+				"itemClass": "4",
+				"subTypeDisplay": "$MagicCure",
+				"iconColor": "#DB2E73"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"subType": "Potion",
+				"archetype": "PeakValueModifier"
+			},
+			"assign": {
+				"itemClass": "7",
+				"subTypeDisplay": "$MagicFortify"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"subType": "Potion",
+				"archetype": "PeakValueModifier",
+				"actorValue": "CarryWeight"
+			},
+			"assign": {
+				"subTypeDisplay": "$MagicEnhance",
+				"iconColor": "#51DB2E"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"subType": "Potion",
+				"archetype": "Invisibility"
+			},
+			"assign": {
+				"itemClass": "6",
+				"subTypeDisplay": "$MagicInvisibility"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"subType": "Potion",
+				"actorValue": {
+					"anyOf": [
+						"WaterBreathing",
+						"WaterWalking"
+					]
+				}
+			},
+			"assign": {
+				"itemClass": "6",
+				"subTypeDisplay": "$MagicEnhance",
+				"iconColor": "#005493"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"keywords": [
+					"OCF_AlchPotion_Misc"
+				]
+			},
+			"assign": {
+				"itemClass": "6",
+				"subTypeDisplay": "$Potion",
+				"iconLabel": "default_potion",
+				"iconColor": "#FFFFFF"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"subType": "Potion",
+				"actorValue": "MagicResist"
+			},
+			"assign": {
+				"itemClass": "5",
+				"itemSort": "1",
+				"subTypeDisplay": "$MagicResist",
+				"iconColor": "#2E9FDB"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"subType": "FireResist"
+			},
+			"assign": {
+				"itemClass": "5",
+				"itemSort": "2",
+				"subTypeDisplay": "$MagicResist"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"subType": "FrostResist"
+			},
+			"assign": {
+				"itemClass": "5",
+				"itemSort": "3",
+				"subTypeDisplay": "$MagicResist"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"subType": "ElectricResist"
+			},
+			"assign": {
+				"itemClass": "5",
+				"itemSort": "4",
+				"subTypeDisplay": "$MagicResist"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"subType": "Potion",
+				"actorValue": "PoisonResist"
+			},
+			"assign": {
+				"itemClass": "5",
+				"itemSort": "5",
+				"subTypeDisplay": "$MagicResist"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"subType": "Potion",
+				"actorValue": {
+					"anyOf": [
+						"DiseaseResist",
+						"DamageResist"
+					]
+				}
+			},
+			"assign": {
+				"itemClass": "5",
+				"itemSort": "6",
+				"subTypeDisplay": "$MagicResist"
+			}
+		}
+	]
+}

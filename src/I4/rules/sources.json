@@ -3,6 +3,7 @@
   "AMMO": "$rootDir/src/I4/rules/AMMO",
   "ARMOR": "$rootDir/src/I4/rules/ARMOR",
   "BOOKS": "$rootDir/src/I4/rules/BOOKS",
+  "EFFECTS": "$rootDir/src/I4/rules/EFFECTS",
   "INGESTIBLES": "$rootDir/src/I4/rules/INGESTIBLES",
   "INGREDIENTS": "$rootDir/src/I4/rules/INGREDIENTS",
   "KEYS": "$rootDir/src/I4/rules/KEYS",
@@ -10,6 +11,7 @@
   "MISC": "$rootDir/src/I4/rules/MISC",
   "OTHER": "$rootDir/src/I4/rules/OTHER",
   "SCROLLS": "$rootDir/src/I4/rules/SCROLLS",
+  "SHOUTS": "$rootDir/src/I4/rules/SHOUTS",
   "SOULGEMS": "$rootDir/src/I4/rules/SOULGEMS",
   "SPELLS": "$rootDir/src/I4/rules/SPELLS",
   "WEAPONS": "$rootDir/src/I4/rules/WEAPONS"

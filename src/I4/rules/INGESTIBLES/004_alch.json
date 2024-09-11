@@ -1,0 +1,80 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Potion",
+				"subType": {
+					"anyOf": [
+						"Food",
+						"Drink"
+					]
+				},
+				"keywords": [
+					"OCF_AlchBait"
+				]
+			},
+			"assign": {
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemFoodBait"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"subType": {
+					"anyOf": [
+						"Food",
+						"Drink"
+					]
+				},
+				"keywords": [
+					"OCF_AlchSpoiled"
+				]
+			},
+			"assign": {
+				"itemClass": "4",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemFoodSpoiled",
+				"iconColor": "#4D3911"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"keywords": {
+					"anyOf": [
+						"OCF_AlchBlood",
+						"OCF_AlchBlood_Creature",
+						"OCF_AlchBlood_Humanoid",
+						"OCF_AlchBlood_Werebeast",
+						"VendorItemDrinkBloodPotion",
+						"_SHBloodDrink"
+					]
+				}
+			},
+			"assign": {
+				"itemType": "3",
+				"itemClass": "7",
+				"itemSort": "0",
+				"subTypeDisplay": "$ItemPotionBlood",
+				"iconLabel": "default_potion",
+				"iconColor": "#8E2129"
+			}
+		},
+		{
+			"match": {
+				"formType": "Potion",
+				"keywords": [
+					"OCF_AlchPoison_Food"
+				]
+			},
+			"assign": {
+				"itemType": "3",
+				"itemClass": "8",
+				"subTypeDisplay": "$ItemFoodPoisoned",
+				"iconColor": "#AD00B3"
+			}
+		}
+	]
+}

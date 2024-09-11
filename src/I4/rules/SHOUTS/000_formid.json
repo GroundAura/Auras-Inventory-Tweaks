@@ -1,0 +1,26 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formId": {
+					"anyOf": [
+						"Spellsiphon.esp|331C",
+						"Spellsiphon.esp|1FFF1C",
+						"Spellsiphon.esp|1FFF1D",
+						"Spellsiphon.esp|390ECB",
+						"Spellsiphon.esp|390ECC",
+						"Spellsiphon.esp|4B77B6",
+						"Spellsiphon.esp|4B77B7",
+						"Spellsiphon.esp|7AA573",
+						"Spellsiphon.esp|7AA574"
+					]
+				}
+			},
+			"assign": {
+				"iconSource": "Dodo/powers.swf",
+				"iconLabel": "voice_bind"
+			}
+		}
+	]
+}

@@ -1,0 +1,90 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"school": "Alteration",
+				"iconColor": null
+			},
+			"assign": {
+				"iconColor": "#8F6B46"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"school": "Illusion",
+				"iconColor": null
+			},
+			"assign": {
+				"iconColor": "#4C9EA4"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"school": "Destruction",
+				"iconColor": null
+			},
+			"assign": {
+				"iconColor": "#C73636"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"school": "Conjuration",
+				"iconColor": null
+			},
+			"assign": {
+				"iconColor": "#993899"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"school": "Restoration",
+				"iconColor": null
+			},
+			"assign": {
+				"iconColor": "#00AC00"
+			}
+		}
+	]
+}

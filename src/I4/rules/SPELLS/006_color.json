@@ -1,0 +1,455 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_InvColorArcane"
+				]
+			},
+			"assign": {
+				"iconColor": "#00BCFF"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_InvColorBlack"
+				]
+			},
+			"assign": {
+				"iconColor": "#191919"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_InvColorBlood"
+				]
+			},
+			"assign": {
+				"iconColor": "#8E2129"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_InvColorBlue"
+				]
+			},
+			"assign": {
+				"iconColor": "#3030CD"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_InvColorDaedric"
+				]
+			},
+			"assign": {
+				"iconColor": "#A14040"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_InvColorDruid"
+				]
+			},
+			"assign": {
+				"iconColor": "#6ED117"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_InvColorDwarven"
+				]
+			},
+			"assign": {
+				"iconColor": "#705F32"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_InvColorEldritch"
+				]
+			},
+			"assign": {
+				"iconColor": "#345F4C"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_InvColorFire"
+				]
+			},
+			"assign": {
+				"iconColor": "#C73636"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_InvColorFireVolcanic"
+				]
+			},
+			"assign": {
+				"iconColor": "#FF3C00"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_InvColorFrost"
+				]
+			},
+			"assign": {
+				"iconColor": "#1FFBFF"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_InvColorGreen"
+				]
+			},
+			"assign": {
+				"iconColor": "#216E23"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_InvColorHoly"
+				]
+			},
+			"assign": {
+				"iconColor": "#FF8700"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_InvColorMagenta"
+				]
+			},
+			"assign": {
+				"iconColor": "#C03797"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_InvColorOrange"
+				]
+			},
+			"assign": {
+				"iconColor": "#C07A00"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_InvColorPink"
+				]
+			},
+			"assign": {
+				"iconColor": "#FF7AAC"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_InvColorPurple"
+				]
+			},
+			"assign": {
+				"iconColor": "#782FAD"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_InvColorRed"
+				]
+			},
+			"assign": {
+				"iconColor": "#7B2424"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_InvColorShadow"
+				]
+			},
+			"assign": {
+				"iconColor": "#9328FF"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_InvColorShock"
+				]
+			},
+			"assign": {
+				"iconColor": "#EAAB00"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_InvColorShockArc"
+				]
+			},
+			"assign": {
+				"iconColor": "#FF8000"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_InvColorWater"
+				]
+			},
+			"assign": {
+				"iconColor": "#005493"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_InvColorWhite"
+				]
+			},
+			"assign": {
+				"iconColor": "#EEF4F6"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_InvColorYellow"
+				]
+			},
+			"assign": {
+				"iconColor": "#E0E021"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_InvColorDefault"
+				]
+			},
+			"assign": {
+				"iconColor": "#FFFFFF"
+			}
+		}
+	]
+}

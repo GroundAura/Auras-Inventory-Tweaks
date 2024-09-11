@@ -1,0 +1,80 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Power",
+						"LesserPower"
+					]
+				},
+				"school": "Alteration"
+			},
+			"assign": {
+				"iconLabel": "default_alteration"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Power",
+						"LesserPower"
+					]
+				},
+				"school": "Illusion"
+			},
+			"assign": {
+				"iconLabel": "default_illusion"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Power",
+						"LesserPower"
+					]
+				},
+				"school": "Destruction"
+			},
+			"assign": {
+				"iconLabel": "default_destruction"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Power",
+						"LesserPower"
+					]
+				},
+				"school": "Conjuration"
+			},
+			"assign": {
+				"iconLabel": "default_conjuration"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Power",
+						"LesserPower"
+					]
+				},
+				"school": "Restoration"
+			},
+			"assign": {
+				"iconLabel": "default_restoration"
+			}
+		}
+	]
+}

@@ -1,0 +1,77 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Ingredient",
+				"keywords": [
+					"OCF_VesselBag"
+				]
+			},
+			"assign": {
+				"iconLabel": "misc_goldsack"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ingredient",
+				"keywords": [
+					"OCF_VesselBottlePotion"
+				]
+			},
+			"assign": {
+				"iconLabel": "default_potion"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ingredient",
+				"keywords": {
+					"anyOf": [
+						"OCF_VesselBottleWine",
+						"_SH_WineBottleKeyword"
+					]
+				}
+			},
+			"assign": {
+				"iconLabel": "food_wine"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ingredient",
+				"keywords": [
+					"OCF_VesselBowl"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "food_stew"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ingredient",
+				"keywords": [
+					"OCF_VesselJar"
+				]
+			},
+			"assign": {
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_jar"
+			}
+		},
+		{
+			"match": {
+				"formType": "Ingredient",
+				"keywords": [
+					"OCF_VesselVial"
+				]
+			},
+			"assign": {
+				"iconSource": "AIT/Aura/icons.swf",
+				"iconLabel": "potion_vial"
+			}
+		}
+	]
+}

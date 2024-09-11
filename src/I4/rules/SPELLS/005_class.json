@@ -1,0 +1,715 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassArcane"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicArcane",
+				"iconColor": "#00BCFF"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassArtificer"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicArtificer",
+				"iconColor": "#705F32"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassAsh"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicAsh",
+				"iconColor": "#AA845E"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassAstral"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicAstral",
+				"iconColor": "#583FFF"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassBard"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicBard",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_instrument"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassBlood"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicBlood",
+				"iconColor": "#8E2129"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassDruid"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicDruid",
+				"iconColor": "#6ED117"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassEarth"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicEarth",
+				"iconColor": "#855A41"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassEldritch"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicEldritch",
+				"iconColor": "#345F4C"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassFire"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicFire",
+				"iconColor": "#C73636"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassFrost"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicFrost",
+				"iconColor": "#1FFBFF"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassHoly"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicHoly",
+				"iconColor": "#FF8700"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassMind"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicMind",
+				"iconColor": "#4C9EA4"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassNecromancy"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicNecromancy",
+				"iconColor": "#20C47D"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassPoison"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicToxin",
+				"iconColor": "#62A636"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassShadow"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicShadow",
+				"iconColor": "#9328FF"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassShock"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicShock",
+				"iconColor": "#EAAB00"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassWater"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicWater",
+				"iconColor": "#005493"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassWind"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicWind",
+				"iconColor": "#CDCBC4"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassWitcher"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicWitcher"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassRace_Altmer"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicRacial",
+				"iconSource": "IAmNotSimon/RacialIcons.swf",
+				"iconLabel": "race_altmer"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassRace_Argonian"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicRacial",
+				"iconSource": "IAmNotSimon/RacialIcons.swf",
+				"iconLabel": "race_argonian"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassRace_Bosmer"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicRacial",
+				"iconSource": "IAmNotSimon/RacialIcons.swf",
+				"iconLabel": "race_bosmer"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassRace_Breton"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicRacial",
+				"iconSource": "IAmNotSimon/RacialIcons.swf",
+				"iconLabel": "race_breton"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassRace_Dunmer"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicRacial",
+				"iconSource": "IAmNotSimon/RacialIcons.swf",
+				"iconLabel": "race_dunmer"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassRace_Imperial"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicRacial",
+				"iconSource": "IAmNotSimon/RacialIcons.swf",
+				"iconLabel": "race_imperial"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassRace_Khajiit"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicRacial",
+				"iconSource": "IAmNotSimon/RacialIcons.swf",
+				"iconLabel": "race_khajiit"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassRace_Nord"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicRacial",
+				"iconSource": "IAmNotSimon/RacialIcons.swf",
+				"iconLabel": "race_nord"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassRace_Orsimer"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicRacial",
+				"iconSource": "IAmNotSimon/RacialIcons.swf",
+				"iconLabel": "race_orsimer"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassRace_Other"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicRacial"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassRace_Redguard"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicRacial",
+				"iconSource": "IAmNotSimon/RacialIcons.swf",
+				"iconLabel": "race_redguard"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassRace_Vampire"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicVampire"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassRace_Werebeast"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicWerebeast",
+				"iconSource": "AIT/Aura/icons.swf",
+				"iconLabel": "magic_moons"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassSurvival"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicSurvival"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassSurvival_Needs"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicSurvival",
+				"iconColor": "#F48037"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassSurvival_Wilderness"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicSurvival",
+				"iconColor": "#E08300"
+			}
+		},
+		{
+			"match": {
+				"formType": "Spell",
+				"spellType": {
+					"anyOf": [
+						"Spell",
+						"Power",
+						"LesserPower"
+					]
+				},
+				"effectKeywords": [
+					"OCF_MgefClassUtility"
+				]
+			},
+			"assign": {
+				"magicClassDisplay": "$MagicUtility"
+			}
+		}
+	]
+}
