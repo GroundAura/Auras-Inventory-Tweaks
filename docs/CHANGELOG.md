@@ -1,5 +1,13 @@
 # Aura's Inventory Tweaks for SkyUI - Changelog
 
+## Version 4.6.0
+
+- **AIT Translations:** Added new strings: "`$CRIT`" ("CRIT"), "`$CRITICAL DAMAGE`" ("CRITICAL DAMAGE"), "`$FORTIFY EXPOSURE`" ("FORTIFY EXPOSURE"), "`F.EXP`" ("F.EXP").
+
+- **AIT Translation (English):** Changed translations: "`$CC FORTIFY WARMTH`" from ("CC FORTIFY WARMTH") to ("SM FORTIFY WARMTH"), "`CC HUNGER`" from ("CC HUNGER") to ("SM HUNGER"), "`CC RESTORE COLD`" from ("CC RESTORE COLD") to ("SM RESTORE COLD"), "`CC WARMTH`" from ("CC WARMTH") to ("SM WARMTH").
+
+- **SkyUI Config:** Added critical damage column.
+
 ## Version 4.5.0
 
 - **FOMOD:** Moved Skyrim Translation Tweaks into separate download.
