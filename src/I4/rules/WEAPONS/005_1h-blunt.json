@@ -1,0 +1,120 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeMace1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "7",
+				"subTypeDisplay": "$Mace",
+				"iconLabel": "weapon_mace"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeBoomerang1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "8",
+				"subTypeDisplay": "$ItemWeaponBoomerang",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "weapon_boomerang"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeCestus1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "8",
+				"subTypeDisplay": "$ItemWeaponFist",
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_knuckles"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeClub1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "8",
+				"subTypeDisplay": "$ItemWeaponClub",
+				"iconLabel": "weapon_mace"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeFishingRod1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "8",
+				"subTypeDisplay": "$ItemWeaponFishingRod",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "weapon_fishingrod"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeFlail1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "8",
+				"subTypeDisplay": "$ItemWeaponFlail",
+				"iconSource": "Muetzl/icons.swf",
+				"iconLabel": "custom_weapon_morningstar"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeHammer1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "8",
+				"subTypeDisplay": "$ItemWeaponHammer",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "misc_tool"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeQuarterstaff1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "8",
+				"subTypeDisplay": "$ItemWeaponQuarterstaff",
+				"iconSource": "skyui_weapons_pack/icons.swf",
+				"iconLabel": "weapon_quarterstaff"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeWhip1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "8",
+				"subTypeDisplay": "$ItemWeaponWhip",
+				"iconSource": "skyui_weapons_pack/icons.swf",
+				"iconLabel": "weapon_whip"
+			}
+		}
+	]
+}

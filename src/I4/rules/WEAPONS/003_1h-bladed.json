@@ -1,0 +1,121 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeSword1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "3",
+				"subTypeDisplay": "$Sword",
+				"iconLabel": "weapon_sword"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeKatana1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "4",
+				"subTypeDisplay": "$ItemWeaponKatana",
+				"iconSource": "skyui_weapons_pack/icons.swf",
+				"iconLabel": "weapon_katana"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeLightsaber1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "4",
+				"subTypeDisplay": "$ItemWeaponLightsaber",
+				"iconSource": "skyui_weapons_pack/icons.swf",
+				"iconLabel": "weapon_katana"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeLightsaber1H_1Blade"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "4",
+				"subTypeDisplay": "$ItemWeaponLightsaber",
+				"iconSource": "skyui_weapons_pack/icons.swf",
+				"iconLabel": "weapon_katana"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeLightsaber1H_2Blade"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "4",
+				"subTypeDisplay": "$ItemWeaponLightsaber",
+				"iconSource": "skyui_weapons_pack/icons.swf",
+				"iconLabel": "weapon_katana"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeRapier1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "4",
+				"subTypeDisplay": "$ItemWeaponRapier",
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_rapier"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeSaber1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "4",
+				"subTypeDisplay": "$ItemWeaponSaber",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "weapon_saber"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeScimitar1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "4",
+				"subTypeDisplay": "$ItemWeaponScimitar",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "weapon_saber"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeTwinblade1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "4",
+				"subTypeDisplay": "$ItemWeaponTwinblade",
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_twinblade"
+			}
+		}
+	]
+}

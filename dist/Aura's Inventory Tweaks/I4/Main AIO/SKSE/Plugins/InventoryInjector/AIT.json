@@ -679,281 +679,55 @@
 				"formType": "Weapon"
 			},
 			"assign": {
-				"itemType": "1"
+				"itemType": "1",
+				"iconColor": "#A4A5BF"
 			}
 		},
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_WeapTypeUnarmed"
-				]
-			},
-			"assign": {
-				"subType": "Melee"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"subType": {
-					"anyOf": [
-						"WarAxe",
-						"Mace"
-					]
-				},
-				"keywords": [
-					"WeapTypeSword"
-				]
-			},
-			"assign": {
-				"subType": "Sword"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"subType": {
-					"anyOf": [
-						"Sword",
-						"Mace"
-					]
-				},
-				"keywords": [
-					"WeapTypeWarAxe"
-				]
-			},
-			"assign": {
-				"subType": "WarAxe"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"subType": {
-					"anyOf": [
-						"Sword",
-						"WarAxe"
-					]
-				},
-				"keywords": [
-					"WeapTypeMace"
-				]
-			},
-			"assign": {
-				"subType": "Mace"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"subType": {
-					"anyOf": [
-						"Battleaxe",
-						"Warhammer"
-					]
-				},
-				"keywords": [
-					"WeapTypeGreatsword"
-				]
-			},
-			"assign": {
-				"subType": "Greatsword"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"subType": {
-					"anyOf": [
-						"Greatsword",
-						"Warhammer"
-					]
-				},
-				"keywords": [
-					"WeapTypeBattleaxe"
-				]
-			},
-			"assign": {
-				"subType": "Battleaxe"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"subType": {
-					"anyOf": [
-						"Greatsword",
-						"Battleaxe"
-					]
-				},
-				"keywords": [
-					"WeapTypeWarhammer"
-				]
-			},
-			"assign": {
-				"subType": "Warhammer"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"subType": "Melee"
+				"keywords": "OCF_WeapUnarmed_Basic"
 			},
 			"assign": {
 				"itemClass": "0",
 				"itemSort": "1",
-				"iconLabel": "clothing_hands"
+				"subTypeDisplay": "$ItemWeaponFist",
+				"iconLabel": "clothing_hands",
+				"iconColor": "#FFFFFF"
 			}
 		},
 		{
 			"match": {
 				"formType": "Weapon",
-				"subType": "Dagger"
+				"keywords": "OCF_WeapUnarmed_Claws"
+			},
+			"assign": {
+				"itemClass": "0",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemArmorClaws",
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_claws"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeDagger1H"
 			},
 			"assign": {
 				"itemClass": "1",
-				"itemSort": "1"
+				"itemSort": "1",
+				"subTypeDisplay": "$Dagger",
+				"iconLabel": "weapon_dagger"
 			}
 		},
 		{
 			"match": {
 				"formType": "Weapon",
-				"subType": "Sword"
+				"keywords": "OCF_WeapTypeChakram1H"
 			},
 			"assign": {
 				"itemClass": "1",
-				"itemSort": "3"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"subType": "WarAxe"
-			},
-			"assign": {
-				"itemClass": "1",
-				"itemSort": "5"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"subType": {
-					"anyOf": [
-						"Pickaxe",
-						"WoodAxe"
-					]
-				}
-			},
-			"assign": {
-				"itemClass": "1",
-				"itemSort": "6"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"subType": "Mace"
-			},
-			"assign": {
-				"itemClass": "1",
-				"itemSort": "7"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"subType": "Greatsword"
-			},
-			"assign": {
-				"itemClass": "2",
-				"itemSort": "3"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"subType": "Battleaxe"
-			},
-			"assign": {
-				"itemClass": "2",
-				"itemSort": "5"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"subType": "Warhammer"
-			},
-			"assign": {
-				"itemClass": "2",
-				"itemSort": "7"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"subType": {
-					"anyOf": [
-						"Bow",
-						"Crossbow"
-					]
-				}
-			},
-			"assign": {
-				"itemClass": "3",
-				"itemSort": "2"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"subType": "Staff"
-			},
-			"assign": {
-				"itemClass": "5",
-				"itemSort": "1"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"subType": "Staff",
-				"isEnchanted": false
-			},
-			"assign": {
-				"subTypeDisplay": "$ItemWeaponStaffUnenchanted"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"keywords": {
-					"anyOf": [
-						"OCF_WeapTypeClaw1H",
-						"WeapTypeClaw"
-					]
-				}
-			},
-			"assign": {
-				"itemSort": "2",
-				"subTypeDisplay": "$Claw",
-				"iconSource": "skyui_weapons_pack/icons.swf",
-				"iconLabel": "weapon_claw"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"keywords": {
-					"anyOf": [
-						"OCF_WeapTypeChakram1H",
-						"WeapTypeChakram"
-					]
-				}
-			},
-			"assign": {
 				"itemSort": "2",
 				"subTypeDisplay": "$ItemWeaponChakram",
 				"iconSource": "AIT/GameIcons/icons.swf",
@@ -963,93 +737,23 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": {
-					"anyOf": [
-						"OCF_WeapTypeKunai1H",
-						"WeapTypeKunai"
-					]
-				}
+				"keywords": "OCF_WeapTypeClaw1H"
 			},
 			"assign": {
+				"itemClass": "1",
 				"itemSort": "2",
-				"subTypeDisplay": "$ItemWeaponKunai",
-				"iconSource": "AIT/GameIcons/icons.swf",
-				"iconLabel": "weapon_kunai"
+				"subTypeDisplay": "$ItemWeaponClaw",
+				"iconSource": "skyui_weapons_pack/icons.swf",
+				"iconLabel": "weapon_claw"
 			}
 		},
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_WeapTypeRevDagger1H"
-				]
+				"keywords": "OCF_WeapTypeCutlery1H"
 			},
 			"assign": {
-				"iconSource": "AIT/Aura/icons.swf",
-				"iconLabel": "weapon_daggerrev"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"keywords": {
-					"anyOf": [
-						"OCF_WeapTypeShiv1H",
-						"WeapTypeShiv"
-					]
-				}
-			},
-			"assign": {
-				"itemSort": "2",
-				"subTypeDisplay": "$ItemWeaponShiv"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"keywords": {
-					"anyOf": [
-						"OCF_WeapTypeSai1H",
-						"WeapTypeSai"
-					]
-				}
-			},
-			"assign": {
-				"itemSort": "2",
-				"subTypeDisplay": "$ItemWeaponSai",
-				"iconSource": "AIT/GameIcons/icons.swf",
-				"iconLabel": "weapon_sai"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"keywords": {
-					"anyOf": [
-						"OCF_WeapTypeShuriken1H",
-						"WeapTypeShuriken"
-					]
-				}
-			},
-			"assign": {
-				"itemSort": "2",
-				"subTypeDisplay": "$ItemWeaponShuriken",
-				"iconSource": "AIT/GameIcons/icons.swf",
-				"iconLabel": "weapon_shuriken"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"keywords": {
-					"anyOf": [
-						"OCF_WeapTypeCutlery1H",
-						"OCF_VesselCutlery",
-						"OCF_MiscTableware"
-					]
-				}
-			},
-			"assign": {
+				"itemClass": "1",
 				"itemSort": "2",
 				"subTypeDisplay": "$ItemMiscTableware",
 				"iconSource": "AIT/GameIcons/icons.swf",
@@ -1059,14 +763,74 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": {
-					"anyOf": [
-						"OCF_WeapTypeTanto1H",
-						"WeapTypeTanto"
-					]
-				}
+				"keywords": "OCF_WeapTypeKunai1H"
 			},
 			"assign": {
+				"itemClass": "1",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponKunai",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "weapon_kunai"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeRevDagger1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponRevDagger",
+				"iconSource": "AIT/Aura/icons.swf",
+				"iconLabel": "weapon_daggerrev"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeSai1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponSai",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "weapon_sai"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeShiv1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponShiv",
+				"iconLabel": "weapon_dagger"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeShuriken1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponShuriken",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "weapon_shuriken"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeTanto1H"
+			},
+			"assign": {
+				"itemClass": "1",
 				"itemSort": "2",
 				"subTypeDisplay": "$ItemWeaponTanto",
 				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
@@ -1076,37 +840,36 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": {
-					"anyOf": [
-						"OCF_WeapTypeToolKnife1H",
-						"WeapTypeToolKnife"
-					]
-				}
+				"keywords": "OCF_WeapTypeToolKnife1H"
 			},
 			"assign": {
+				"itemClass": "1",
 				"itemSort": "2",
-				"subTypeDisplay": "$Tool"
+				"subTypeDisplay": "$Tool",
+				"iconLabel": "weapon_dagger"
 			}
 		},
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_WeapTypeHuntingKnife1H"
-				]
+				"keywords": "OCF_WeapTypeHuntingKnife1H"
 			},
 			"assign": {
-				"subTypeDisplay": "$ItemWeaponHuntingKnife"
+				"itemClass": "1",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponHuntingKnife",
+				"iconLabel": "weapon_dagger"
 			}
 		},
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"WAF_WeapTypeScalpel"
-				]
+				"keywords": "WAF_WeapTypeScalpel"
 			},
 			"assign": {
+				"itemClass": "1",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponScalpel",
 				"iconSource": "AIT/GameIcons/icons.swf",
 				"iconLabel": "misc_scalpel"
 			}
@@ -1114,14 +877,34 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": {
-					"anyOf": [
-						"OCF_WeapTypeKatana1H",
-						"WeapTypeKatana"
-					]
-				}
+				"keywords": "OCF_WeapTypeTwinDagger1H"
 			},
 			"assign": {
+				"itemClass": "1",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponTwinDagger",
+				"iconLabel": "weapon_dagger"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeSword1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "3",
+				"subTypeDisplay": "$Sword",
+				"iconLabel": "weapon_sword"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeKatana1H"
+			},
+			"assign": {
+				"itemClass": "1",
 				"itemSort": "4",
 				"subTypeDisplay": "$ItemWeaponKatana",
 				"iconSource": "skyui_weapons_pack/icons.swf",
@@ -1131,61 +914,49 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": {
-					"anyOf": [
-						"OCF_WeapTypeKatana2H",
-						"WeapTypeGreatKatana",
-						"WeapTypeDaiKatana",
-						"WeapTypeNodachi",
-						"WeapTypeOdachi"
-					]
-				}
+				"keywords": "OCF_WeapTypeLightsaber1H"
 			},
 			"assign": {
+				"itemClass": "1",
 				"itemSort": "4",
-				"subTypeDisplay": "$ItemWeaponDaiKatana",
-				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
-				"iconLabel": "weapon_nodachi"
+				"subTypeDisplay": "$ItemWeaponLightsaber",
+				"iconSource": "skyui_weapons_pack/icons.swf",
+				"iconLabel": "weapon_katana"
 			}
 		},
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_WeapTypeLongsword2H"
-				]
+				"keywords": "OCF_WeapTypeLightsaber1H_1Blade"
 			},
 			"assign": {
+				"itemClass": "1",
 				"itemSort": "4",
-				"subTypeDisplay": "$ItemWeaponLongsword"
+				"subTypeDisplay": "$ItemWeaponLightsaber",
+				"iconSource": "skyui_weapons_pack/icons.swf",
+				"iconLabel": "weapon_katana"
 			}
 		},
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_WeapTypeMassiveSword2H"
-				]
+				"keywords": "OCF_WeapTypeLightsaber1H_2Blade"
 			},
 			"assign": {
+				"itemClass": "1",
 				"itemSort": "4",
-				"subTypeDisplay": "$ItemWeaponColossalSword",
-				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
-				"iconLabel": "weapon_giantsword"
+				"subTypeDisplay": "$ItemWeaponLightsaber",
+				"iconSource": "skyui_weapons_pack/icons.swf",
+				"iconLabel": "weapon_katana"
 			}
 		},
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": {
-					"anyOf": [
-						"OCF_WeapTypeRapier1H",
-						"OCF_WeapTypeRapier2H",
-						"WeapTypeRapier"
-					]
-				}
+				"keywords": "OCF_WeapTypeRapier1H"
 			},
 			"assign": {
+				"itemClass": "1",
 				"itemSort": "4",
 				"subTypeDisplay": "$ItemWeaponRapier",
 				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
@@ -1195,16 +966,10 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": {
-					"anyOf": [
-						"OCF_WeapTypeSaber1H",
-						"OCF_WeapTypeSaber2H",
-						"WeapTypeSaber",
-						"WeapTypeCutlass"
-					]
-				}
+				"keywords": "OCF_WeapTypeSaber1H"
 			},
 			"assign": {
+				"itemClass": "1",
 				"itemSort": "4",
 				"subTypeDisplay": "$ItemWeaponSaber",
 				"iconSource": "AIT/GameIcons/icons.swf",
@@ -1214,15 +979,10 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": {
-					"anyOf": [
-						"OCF_WeapTypeScimitar1H",
-						"OCF_WeapTypeScimitar2H",
-						"WeapTypeScimitar"
-					]
-				}
+				"keywords": "OCF_WeapTypeScimitar1H"
 			},
 			"assign": {
+				"itemClass": "1",
 				"itemSort": "4",
 				"subTypeDisplay": "$ItemWeaponScimitar",
 				"iconSource": "AIT/GameIcons/icons.swf",
@@ -1232,15 +992,10 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": {
-					"anyOf": [
-						"OCF_WeapTypeTwinblade1H",
-						"OCF_WeapTypeTwinblade2H",
-						"WeapTypeTwinblade"
-					]
-				}
+				"keywords": "OCF_WeapTypeTwinblade1H"
 			},
 			"assign": {
+				"itemClass": "1",
 				"itemSort": "4",
 				"subTypeDisplay": "$ItemWeaponTwinblade",
 				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
@@ -1250,14 +1005,22 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": {
-					"anyOf": [
-						"OCF_WeapTypeCleaver1H",
-						"OCF_WeapTypeCleaver2H"
-					]
-				}
+				"keywords": "OCF_WeapTypeWarAxe1H"
 			},
 			"assign": {
+				"itemClass": "1",
+				"itemSort": "5",
+				"subTypeDisplay": "$War Axe",
+				"iconLabel": "weapon_waraxe"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeCleaver1H"
+			},
+			"assign": {
+				"itemClass": "1",
 				"itemSort": "6",
 				"subTypeDisplay": "$ItemWeaponCleaver",
 				"iconSource": "AIT/GameIcons/icons.swf",
@@ -1267,26 +1030,22 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": {
-					"anyOf": [
-						"OCF_WeapTypeCrescent1H",
-						"OCF_WeapTypeCrescent2H"
-					]
-				}
+				"keywords": "OCF_WeapTypeCrescent1H"
 			},
 			"assign": {
+				"itemClass": "1",
 				"itemSort": "6",
-				"subTypeDisplay": "$ItemWeaponCrescent"
+				"subTypeDisplay": "$ItemWeaponCrescent",
+				"iconLabel": "weapon_waraxe"
 			}
 		},
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_WeapTypeHandBlade1H"
-				]
+				"keywords": "OCF_WeapTypeHandBlade1H"
 			},
 			"assign": {
+				"itemClass": "1",
 				"itemSort": "6",
 				"subTypeDisplay": "$ItemWeaponHandBlade",
 				"iconLabel": "weapon_waraxe"
@@ -1295,11 +1054,10 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_WeapTypeHatchet1H"
-				]
+				"keywords": "OCF_WeapTypeHatchet1H"
 			},
 			"assign": {
+				"itemClass": "1",
 				"itemSort": "6",
 				"subTypeDisplay": "$ItemWeaponHatchet",
 				"iconSource": "AIT/GameIcons/icons.swf",
@@ -1309,16 +1067,10 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": {
-					"anyOf": [
-						"OCF_WeapTypePickaxe1H",
-						"OCF_WeapTypePickaxe2H",
-						"WeapTypePickaxe",
-						"IconPickaxe"
-					]
-				}
+				"keywords": "OCF_WeapTypePickaxe1H"
 			},
 			"assign": {
+				"itemClass": "1",
 				"itemSort": "6",
 				"subTypeDisplay": "$Pickaxe",
 				"iconLabel": "weapon_pickaxe"
@@ -1327,28 +1079,10 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": {
-					"anyOf": [
-						"OCF_WeapTypeScythe2H",
-						"WeapTypeScythe"
-					]
-				}
+				"keywords": "OCF_WeapTypeSickle1H"
 			},
 			"assign": {
-				"itemSort": "6",
-				"subTypeDisplay": "$ItemWeaponScythe",
-				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
-				"iconLabel": "weapon_scythe"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"keywords": [
-					"OCF_WeapTypeSickle1H"
-				]
-			},
-			"assign": {
+				"itemClass": "1",
 				"itemSort": "6",
 				"subTypeDisplay": "$ItemWeaponSickle",
 				"iconSource": "AIT/GameIcons/icons.swf",
@@ -1358,14 +1092,10 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": {
-					"anyOf": [
-						"OCF_WeapTypeWarpick1H",
-						"OCF_WeapTypeWarpick2H"
-					]
-				}
+				"keywords": "OCF_WeapTypeWarpick1H"
 			},
 			"assign": {
+				"itemClass": "1",
 				"itemSort": "6",
 				"subTypeDisplay": "$ItemWeaponWarpick",
 				"iconLabel": "weapon_pickaxe"
@@ -1374,17 +1104,10 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": {
-					"anyOf": [
-						"OCF_WeapTypeWoodaxe1H",
-						"OCF_WeapTypeWoodaxe2H",
-						"OCF_WeapTypeWoodHatchet2H",
-						"WeapTypeWoodaxe",
-						"IconWoodAxe"
-					]
-				}
+				"keywords": "OCF_WeapTypeWoodaxe1H"
 			},
 			"assign": {
+				"itemClass": "1",
 				"itemSort": "6",
 				"subTypeDisplay": "$Wood Axe",
 				"iconLabel": "weapon_woodaxe"
@@ -1393,11 +1116,10 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_WeapTypeWoodHatchet1H"
-				]
+				"keywords": "OCF_WeapTypeWoodHatchet1H"
 			},
 			"assign": {
+				"itemClass": "1",
 				"itemSort": "6",
 				"subTypeDisplay": "$ItemWeaponWoodHatchet",
 				"iconSource": "AIT/GameIcons/icons.swf",
@@ -1407,14 +1129,22 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": {
-					"anyOf": [
-						"OCF_WeapTypeBoomerang1H",
-						"WeapTypeBoomerang"
-					]
-				}
+				"keywords": "OCF_WeapTypeMace1H"
 			},
 			"assign": {
+				"itemClass": "1",
+				"itemSort": "7",
+				"subTypeDisplay": "$Mace",
+				"iconLabel": "weapon_mace"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeBoomerang1H"
+			},
+			"assign": {
+				"itemClass": "1",
 				"itemSort": "8",
 				"subTypeDisplay": "$ItemWeaponBoomerang",
 				"iconSource": "AIT/GameIcons/icons.swf",
@@ -1424,58 +1154,10 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_WeapTypeClub1H"
-				]
+				"keywords": "OCF_WeapTypeCestus1H"
 			},
 			"assign": {
-				"itemSort": "8",
-				"subTypeDisplay": "$ItemWeaponClub",
-				"iconLabel": "weapon_mace"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"keywords": [
-					"OCF_WeapTypeClub2H"
-				]
-			},
-			"assign": {
-				"itemSort": "8",
-				"subTypeDisplay": "$ItemWeaponGreatclub",
-				"iconLabel": "weapon_hammer"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"keywords": {
-					"anyOf": [
-						"OCF_WeapTypeFishingRod1H",
-						"ccBGSSSE001_FishingPoleKW",
-						"IconFishingRod"
-					]
-				}
-			},
-			"assign": {
-				"itemSort": "8",
-				"subTypeDisplay": "$ItemWeaponFishingRod",
-				"iconSource": "I4IconAddon/icons.swf",
-				"iconLabel": "weapon_fishingrod"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"keywords": {
-					"anyOf": [
-						"OCF_WeapTypeCestus1H",
-						"WeapTypeCestus"
-					]
-				}
-			},
-			"assign": {
+				"itemClass": "1",
 				"itemSort": "8",
 				"subTypeDisplay": "$ItemWeaponFist",
 				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
@@ -1485,9 +1167,45 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_WeapTypeHammer1H"
-				]
+				"keywords": "OCF_WeapTypeClub1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "8",
+				"subTypeDisplay": "$ItemWeaponClub",
+				"iconLabel": "weapon_mace"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeFishingRod1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "8",
+				"subTypeDisplay": "$ItemWeaponFishingRod",
+				"iconSource": "I4IconAddon/icons.swf",
+				"iconLabel": "weapon_fishingrod"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeFlail1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "8",
+				"subTypeDisplay": "$ItemWeaponFlail",
+				"iconSource": "Muetzl/icons.swf",
+				"iconLabel": "custom_weapon_morningstar"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeHammer1H"
 			},
 			"assign": {
 				"itemClass": "1",
@@ -1500,30 +1218,10 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_WeapTypeMace2H"
-				]
+				"keywords": "OCF_WeapTypeQuarterstaff1H"
 			},
 			"assign": {
-				"itemSort": "8",
-				"subTypeDisplay": "$ItemWeaponLongmace",
-				"iconLabel": "weapon_mace"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"keywords": {
-					"anyOf": [
-						"OCF_WeapTypeQuarterstaff1H",
-						"OCF_WeapTypeQuarterstaff2H",
-						"WeapTypeQuarterstaff",
-						"WeapTypeQtrStaff",
-						"WeapTypeQStaff"
-					]
-				}
-			},
-			"assign": {
+				"itemClass": "1",
 				"itemSort": "8",
 				"subTypeDisplay": "$ItemWeaponQuarterstaff",
 				"iconSource": "skyui_weapons_pack/icons.swf",
@@ -1533,14 +1231,10 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": {
-					"anyOf": [
-						"OCF_WeapTypeWhip1H",
-						"WeapTypeWhip"
-					]
-				}
+				"keywords": "OCF_WeapTypeWhip1H"
 			},
 			"assign": {
+				"itemClass": "1",
 				"itemSort": "8",
 				"subTypeDisplay": "$ItemWeaponWhip",
 				"iconSource": "skyui_weapons_pack/icons.swf",
@@ -1550,66 +1244,7 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"weaponType": "Staff",
-				"keywords": {
-					"anyOf": [
-						"OCF_WeapTypeJavelin1H",
-						"OCF_WeapTypePole1H_Thrust",
-						"OCF_WeapTypeJavelin1H",
-						"WeapTypeSpear",
-						"WeapTypeShortspear",
-						"WeapTypeOneHandedSpear"
-					]
-				}
-			},
-			"assign": {
-				"itemClass": "1",
-				"itemSort": "9"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"keywords": [
-					"WeapTypePike"
-				]
-			},
-			"assign": {
-				"itemClass": "2",
-				"itemSort": "9",
-				"subTypeDisplay": "$ItemWeaponPike",
-				"iconSource": "skyui_weapons_pack/icons.swf",
-				"iconLabel": "weapon_pike"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"keywords": {
-					"anyOf": [
-						"WeapTypeSpear",
-						"WeapTypeShortspear",
-						"WeapTypeOneHandedSpear"
-					]
-				}
-			},
-			"assign": {
-				"itemClass": "1",
-				"itemSort": "9",
-				"subTypeDisplay": "$Spear",
-				"iconSource": "skyui_weapons_pack/icons.swf",
-				"iconLabel": "weapon_spear"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"keywords": {
-					"anyOf": [
-						"OCF_WeapTypeJavelin1H",
-						"OCF_WeapTypeJavelin1H"
-					]
-				}
+				"keywords": "OCF_WeapTypeJavelin1H"
 			},
 			"assign": {
 				"itemClass": "1",
@@ -1622,9 +1257,7 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_WeapTypeLance1H"
-				]
+				"keywords": "OCF_WeapTypeLance1H"
 			},
 			"assign": {
 				"itemClass": "1",
@@ -1637,24 +1270,7 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_WeapTypeLance2H"
-				]
-			},
-			"assign": {
-				"itemClass": "2",
-				"itemSort": "9",
-				"subTypeDisplay": "$ItemWeaponLance",
-				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
-				"iconLabel": "weapon_lance"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"keywords": [
-					"OCF_WeapTypePike1H"
-				]
+				"keywords": "OCF_WeapTypePike1H"
 			},
 			"assign": {
 				"itemClass": "1",
@@ -1667,24 +1283,7 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_WeapTypePike2H"
-				]
-			},
-			"assign": {
-				"itemClass": "2",
-				"itemSort": "9",
-				"subTypeDisplay": "$ItemWeaponPike",
-				"iconSource": "skyui_weapons_pack/icons.swf",
-				"iconLabel": "weapon_pike"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"keywords": [
-					"OCF_WeapTypeSpear1H"
-				]
+				"keywords": "OCF_WeapTypeSpear1H"
 			},
 			"assign": {
 				"itemClass": "1",
@@ -1697,24 +1296,7 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_WeapTypeSpear2H"
-				]
-			},
-			"assign": {
-				"itemClass": "2",
-				"itemSort": "9",
-				"subTypeDisplay": "$Spear",
-				"iconSource": "skyui_weapons_pack/icons.swf",
-				"iconLabel": "weapon_spear"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"keywords": [
-					"OCF_WeapTypeTrident1H"
-				]
+				"keywords": "OCF_WeapTypeTrident1H"
 			},
 			"assign": {
 				"itemClass": "1",
@@ -1727,69 +1309,7 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_WeapTypeTrident2H"
-				]
-			},
-			"assign": {
-				"itemClass": "2",
-				"itemSort": "9",
-				"subTypeDisplay": "$ItemWeaponTrident",
-				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
-				"iconLabel": "weapon_trident"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"keywords": [
-					"WeapTypeHalberd"
-				]
-			},
-			"assign": {
-				"itemClass": "2",
-				"itemSort": "10",
-				"subTypeDisplay": "$ItemWeaponHalberd",
-				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
-				"iconLabel": "weapon_halberd"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"keywords": [
-					"OCF_WeapTypeHalberd1H"
-				]
-			},
-			"assign": {
-				"itemClass": "1",
-				"itemSort": "10",
-				"subTypeDisplay": "$ItemWeaponHalberd",
-				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
-				"iconLabel": "weapon_halberd"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"keywords": [
-					"OCF_WeapTypeHalberd2H"
-				]
-			},
-			"assign": {
-				"itemClass": "2",
-				"itemSort": "10",
-				"subTypeDisplay": "$ItemWeaponHalberd",
-				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
-				"iconLabel": "weapon_halberd"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"keywords": [
-					"OCF_WeapTypeGlaive1H"
-				]
+				"keywords": "OCF_WeapTypeGlaive1H"
 			},
 			"assign": {
 				"itemClass": "1",
@@ -1802,14 +1322,12 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_WeapTypeGlaive2H"
-				]
+				"keywords": "OCF_WeapTypeHalberd1H"
 			},
 			"assign": {
-				"itemClass": "2",
+				"itemClass": "1",
 				"itemSort": "10",
-				"subTypeDisplay": "$ItemWeaponGlaive",
+				"subTypeDisplay": "$ItemWeaponHalberd",
 				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
 				"iconLabel": "weapon_halberd"
 			}
@@ -1817,9 +1335,7 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_WeapTypeWarscythe1H"
-				]
+				"keywords": "OCF_WeapTypeWarscythe1H"
 			},
 			"assign": {
 				"itemClass": "1",
@@ -1832,182 +1348,412 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_WeapTypeWarscythe2H"
-				]
+				"keywords": "OCF_WeapTypeGreatsword2H"
 			},
 			"assign": {
 				"itemClass": "2",
-				"itemSort": "10",
-				"subTypeDisplay": "$ItemWeaponWarscythe",
+				"itemSort": "3",
+				"subTypeDisplay": "$Greatsword",
+				"iconLabel": "weapon_greatsword"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeKatana2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "4",
+				"subTypeDisplay": "$ItemWeaponDaiKatana",
 				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
-				"iconLabel": "weapon_halberd"
+				"iconLabel": "weapon_nodachi"
 			}
 		},
 		{
 			"match": {
 				"formType": "Weapon",
-				"weaponType": "Staff",
-				"keywords": {
-					"anyOf": [
-						"WeapTypeBow",
-						"OCF_WeapTypeBlowgun2H",
-						"OCF_WeapTypeCrossbow1H",
-						"OCF_WeapTypeGun",
-						"OCF_WeapTypeSlingshot2H",
-						"WeapTypeCrossbow1H",
-						"WeapTypeGun",
-						"WeapTypeGun1H",
-						"WeapTypePistol1H"
-					]
-				}
+				"keywords": "OCF_WeapTypeLightsaber2H"
 			},
 			"assign": {
-				"itemClass": "3",
-				"itemSort": "1"
+				"itemClass": "2",
+				"itemSort": "4",
+				"subTypeDisplay": "$ItemWeaponLightsaber",
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_nodachi"
 			}
 		},
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_WeapTypeBlowgun2H"
-				]
+				"keywords": "OCF_WeapTypeLightsaber2H_1Blade"
 			},
 			"assign": {
-				"subTypeDisplay": "$ItemWeaponBlowgun",
-				"iconSource": "skyui_weapons_pack/icons.swf",
-				"iconLabel": "weapon_gun"
+				"itemClass": "2",
+				"itemSort": "4",
+				"subTypeDisplay": "$ItemWeaponLightsaber",
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_nodachi"
 			}
 		},
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": {
-					"anyOf": [
-						"OCF_WeapTypeBowblade2H",
-						"WeapTypeBowblade"
-					]
-				}
+				"keywords": "OCF_WeapTypeLightsaber2H_2Blade"
 			},
 			"assign": {
-				"subTypeDisplay": "$ItemWeaponBowblade"
+				"itemClass": "2",
+				"itemSort": "4",
+				"subTypeDisplay": "$ItemWeaponLightsaber",
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_nodachi"
 			}
 		},
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_WeapTypeGreatbow2H"
-				]
+				"keywords": "OCF_WeapTypeMassiveSword2H"
 			},
 			"assign": {
-				"subTypeDisplay": "$ItemWeaponGreatbow"
+				"itemClass": "2",
+				"itemSort": "4",
+				"subTypeDisplay": "$ItemWeaponColossalSword",
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_giantsword"
 			}
 		},
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_WeapTypeLongbow2H"
-				]
+				"keywords": "OCF_WeapTypeRapier2H"
 			},
 			"assign": {
-				"subTypeDisplay": "$ItemWeaponLongbow"
+				"itemClass": "2",
+				"itemSort": "4",
+				"subTypeDisplay": "$ItemWeaponRapier",
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_rapier"
 			}
 		},
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_WeapTypeShortbow2H"
-				]
+				"keywords": "OCF_WeapTypeSaber2H"
 			},
 			"assign": {
-				"subTypeDisplay": "$ItemWeaponShortbow"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"keywords": {
-					"anyOf": [
-						"OCF_WeapTypeCrossbow1H",
-						"WeapTypeCrossbow1H"
-					]
-				}
-			},
-			"assign": {
-				"subTypeDisplay": "$ItemWeaponHandCrossbow",
-				"iconLabel": "weapon_crossbow"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"keywords": {
-					"anyOf": [
-						"OCF_WeapTypeGun2H",
-						"WeapTypeGun"
-					]
-				}
-			},
-			"assign": {
-				"subTypeDisplay": "$ItemWeaponGun",
-				"iconSource": "skyui_weapons_pack/icons.swf",
-				"iconLabel": "weapon_gun"
-			}
-		},
-		{
-			"match": {
-				"formType": "Weapon",
-				"keywords": {
-					"anyOf": [
-						"OCF_WeapTypeGun1H",
-						"WeapTypeGun1H",
-						"WeapTypePistol1H"
-					]
-				}
-			},
-			"assign": {
-				"subTypeDisplay": "$ItemWeaponGun",
+				"itemClass": "2",
+				"itemSort": "4",
+				"subTypeDisplay": "$ItemWeaponSaber",
 				"iconSource": "AIT/GameIcons/icons.swf",
-				"iconLabel": "weapon_pistol"
+				"iconLabel": "weapon_saber"
 			}
 		},
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": {
-					"anyOf": [
-						"OCF_WeapTypeGun1H_Gravity",
-						"OCF_WeapTypeGun1H_Special",
-						"OCF_WeapTypeGun2H_Special"
-					]
-				}
+				"keywords": "OCF_WeapTypeScimitar2H"
 			},
 			"assign": {
-				"iconLabel": "weapon_staff"
+				"itemClass": "2",
+				"itemSort": "4",
+				"subTypeDisplay": "$ItemWeaponScimitar",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "weapon_saber"
 			}
 		},
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_WeapTypeSlingshot2H"
-				]
+				"keywords": "OCF_WeapTypeTwinblade2H"
 			},
 			"assign": {
-				"subTypeDisplay": "$ItemWeaponSlingshot",
-				"iconLabel": "weapon_bow"
+				"itemClass": "2",
+				"itemSort": "4",
+				"subTypeDisplay": "$ItemWeaponTwinblade",
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_twinblade"
 			}
 		},
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"WAF_WeapTypeGrenade"
-				]
+				"keywords": "OCF_WeapTypeBattleaxe2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "5",
+				"subTypeDisplay": "$Battleaxe",
+				"iconLabel": "weapon_battleaxe"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeCleaver2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "6",
+				"subTypeDisplay": "$ItemWeaponCleaver",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "weapon_saw"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeCrescent2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "6",
+				"subTypeDisplay": "$ItemWeaponCrescent",
+				"iconLabel": "weapon_battleaxe"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeMassiveAxe2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "6",
+				"subTypeDisplay": "$ItemWeaponColossalAxe",
+				"iconLabel": "weapon_battleaxe"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypePickaxe2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "6",
+				"subTypeDisplay": "$Pickaxe",
+				"iconLabel": "weapon_pickaxe"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeScythe2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "6",
+				"subTypeDisplay": "$ItemWeaponScythe",
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_scythe"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeWarpick2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "6",
+				"subTypeDisplay": "$ItemWeaponWarpick",
+				"iconLabel": "weapon_pickaxe"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeWoodaxe2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "6",
+				"subTypeDisplay": "$Wood Axe",
+				"iconLabel": "weapon_woodaxe"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeWarhammer2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "7",
+				"subTypeDisplay": "$Warhammer",
+				"iconLabel": "weapon_hammer"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeBladestaff2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "8",
+				"subTypeDisplay": "$ItemWeaponBladestaff",
+				"iconSource": "skyui_weapons_pack/icons.swf",
+				"iconLabel": "weapon_quarterstaff"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeClub2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "8",
+				"subTypeDisplay": "$ItemWeaponGreatclub",
+				"iconLabel": "weapon_hammer"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeFlail2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "8",
+				"subTypeDisplay": "$ItemWeaponFlail",
+				"iconSource": "Muetzl/icons.swf",
+				"iconLabel": "custom_weapon_morningstar"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeMace2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "8",
+				"subTypeDisplay": "$ItemWeaponLongmace",
+				"iconLabel": "weapon_mace"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeMassiveHammer2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "8",
+				"subTypeDisplay": "$ItemWeaponColossalHammer",
+				"iconLabel": "weapon_hammer"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeQuarterstaff2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "8",
+				"subTypeDisplay": "$ItemWeaponQuarterstaff",
+				"iconSource": "skyui_weapons_pack/icons.swf",
+				"iconLabel": "weapon_quarterstaff"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeLance2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "9",
+				"subTypeDisplay": "$ItemWeaponLance",
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_lance"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypePike2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "9",
+				"subTypeDisplay": "$ItemWeaponPike",
+				"iconSource": "skyui_weapons_pack/icons.swf",
+				"iconLabel": "weapon_pike"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeSpear2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "9",
+				"subTypeDisplay": "$Spear",
+				"iconSource": "skyui_weapons_pack/icons.swf",
+				"iconLabel": "weapon_spear"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeTrident2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "9",
+				"subTypeDisplay": "$ItemWeaponTrident",
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_trident"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeGlaive2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "10",
+				"subTypeDisplay": "$ItemWeaponGlaive",
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_halberd"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeHalberd2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "10",
+				"subTypeDisplay": "$ItemWeaponHalberd",
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_halberd"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeWarscythe2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "10",
+				"subTypeDisplay": "$ItemWeaponWarscythe",
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_halberd"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeBomb1H"
 			},
 			"assign": {
 				"itemClass": "3",
@@ -2020,9 +1766,322 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_InvColorBlood"
-				]
+				"keywords": "OCF_WeapTypeCrossbow1H"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemWeaponHandCrossbow",
+				"iconLabel": "weapon_crossbow"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeGun1H_Axe"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemWeaponGun",
+				"iconSource": "SkyUI_Weapons_Pack/icons.swf",
+				"iconLabel": "weapon_gun"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeGun1H_Basic"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemWeaponGun",
+				"iconSource": "SkyUI_Weapons_Pack/icons.swf",
+				"iconLabel": "weapon_gun"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeGun1H_BasicSword"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemWeaponGun",
+				"iconSource": "SkyUI_Weapons_Pack/icons.swf",
+				"iconLabel": "weapon_gun"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeGun1H_Energy"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemWeaponGun",
+				"iconSource": "SkyUI_Weapons_Pack/icons.swf",
+				"iconLabel": "weapon_gun"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeGun1H_Flamethrower"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemWeaponGun",
+				"iconSource": "SkyUI_Weapons_Pack/icons.swf",
+				"iconLabel": "weapon_gun"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeGun1H_Launcher"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemWeaponGun",
+				"iconSource": "SkyUI_Weapons_Pack/icons.swf",
+				"iconLabel": "weapon_gun"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeGun1H_Gravity"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemWeaponGun",
+				"iconSource": "SkyUI_Weapons_Pack/icons.swf",
+				"iconLabel": "weapon_gun"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeGun1H_Shockthrower"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemWeaponGun",
+				"iconSource": "SkyUI_Weapons_Pack/icons.swf",
+				"iconLabel": "weapon_gun"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeGun1H_Shotgun"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemWeaponGun",
+				"iconSource": "SkyUI_Weapons_Pack/icons.swf",
+				"iconLabel": "weapon_gun"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeGun1H_Sword"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemWeaponGun",
+				"iconSource": "SkyUI_Weapons_Pack/icons.swf",
+				"iconLabel": "weapon_gun"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeBow2H"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "2",
+				"subTypeDisplay": "$Bow",
+				"iconLabel": "weapon_bow"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeBowblade2H"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponBowblade",
+				"iconLabel": "weapon_bow"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeCrossbow2H"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "2",
+				"subTypeDisplay": "$Crossbow",
+				"iconLabel": "weapon_crossbow"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeGreatbow2H"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponGreatbow",
+				"iconLabel": "weapon_bow"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeGun2H_Basic"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponGun",
+				"iconSource": "SkyUI_Weapons_Pack/icons.swf",
+				"iconLabel": "weapon_gun"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeGun2H_Energy"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponGun",
+				"iconSource": "SkyUI_Weapons_Pack/icons.swf",
+				"iconLabel": "weapon_gun"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeGun2H_Launcher"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponGun",
+				"iconSource": "SkyUI_Weapons_Pack/icons.swf",
+				"iconLabel": "weapon_gun"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeGun2H_Shotgun"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponGun",
+				"iconSource": "SkyUI_Weapons_Pack/icons.swf",
+				"iconLabel": "weapon_gun"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeGun2H_Spear"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponGun",
+				"iconSource": "SkyUI_Weapons_Pack/icons.swf",
+				"iconLabel": "weapon_gun"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeShortbow2H"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponShortbow",
+				"iconLabel": "weapon_bow"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeStaff1H"
+			},
+			"assign": {
+				"itemClass": "5",
+				"itemSort": "1",
+				"subTypeDisplay": "$Staff",
+				"iconLabel": "weapon_staff"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeStaffBlank"
+			},
+			"assign": {
+				"itemClass": "5",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponStaffUnenchanted",
+				"iconLabel": "weapon_staff"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeWand1H"
+			},
+			"assign": {
+				"itemClass": "5",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemWeaponWand",
+				"iconLabel": "weapon_staff"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeWandBlank"
+			},
+			"assign": {
+				"itemClass": "5",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponWandUnenchanted",
+				"iconLabel": "weapon_staff"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_InvColorBlood"
 			},
 			"assign": {
 				"iconColor": "#8E2129"
@@ -2031,9 +2090,7 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_InvColorDwarven"
-				]
+				"keywords": "OCF_InvColorDwarven"
 			},
 			"assign": {
 				"iconColor": "#705F32"
@@ -2042,9 +2099,7 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_InvColorFire"
-				]
+				"keywords": "OCF_InvColorFire"
 			},
 			"assign": {
 				"iconColor": "#C73636"
@@ -2053,9 +2108,7 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_InvColorFrost"
-				]
+				"keywords": "OCF_InvColorFrost"
 			},
 			"assign": {
 				"iconColor": "#1FFBFF"
@@ -2064,9 +2117,7 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_InvColorPoison"
-				]
+				"keywords": "OCF_InvColorPoison"
 			},
 			"assign": {
 				"iconColor": "#62A636"
@@ -2075,9 +2126,7 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_InvColorShock"
-				]
+				"keywords": "OCF_InvColorShock"
 			},
 			"assign": {
 				"iconColor": "#EAAB00"
@@ -2086,9 +2135,7 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_InvColorSun"
-				]
+				"keywords": "OCF_InvColorSun"
 			},
 			"assign": {
 				"iconColor": "#FF8700"
@@ -2097,9 +2144,7 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_InvColorWater"
-				]
+				"keywords": "OCF_InvColorWater"
 			},
 			"assign": {
 				"iconColor": "#005493"
@@ -2123,9 +2168,7 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_VesselBag"
-				]
+				"keywords": "OCF_VesselBag"
 			},
 			"assign": {
 				"iconLabel": "misc_goldsack"
@@ -2134,9 +2177,7 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_VesselBottlePoison"
-				]
+				"keywords": "OCF_VesselBottlePoison"
 			},
 			"assign": {
 				"iconLabel": "potion_poison"
@@ -2145,9 +2186,7 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_VesselBottlePotion"
-				]
+				"keywords": "OCF_VesselBottlePotion"
 			},
 			"assign": {
 				"iconLabel": "default_potion"
@@ -2660,9 +2699,7 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_Placeholder_Filter"
-				]
+				"keywords": "OCF_Placeholder_Filter"
 			},
 			"assign": {
 				"itemClass": "0",

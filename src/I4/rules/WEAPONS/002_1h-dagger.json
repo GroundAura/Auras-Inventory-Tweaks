@@ -1,0 +1,182 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeDagger1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "1",
+				"subTypeDisplay": "$Dagger",
+				"iconLabel": "weapon_dagger"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeChakram1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponChakram",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "weapon_chakram"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeClaw1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponClaw",
+				"iconSource": "skyui_weapons_pack/icons.swf",
+				"iconLabel": "weapon_claw"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeCutlery1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemMiscTableware",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_cutlery"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeKunai1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponKunai",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "weapon_kunai"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeRevDagger1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponRevDagger",
+				"iconSource": "AIT/Aura/icons.swf",
+				"iconLabel": "weapon_daggerrev"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeSai1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponSai",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "weapon_sai"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeShiv1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponShiv",
+				"iconLabel": "weapon_dagger"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeShuriken1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponShuriken",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "weapon_shuriken"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeTanto1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponTanto",
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_wakizashi"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeToolKnife1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "2",
+				"subTypeDisplay": "$Tool",
+				"iconLabel": "weapon_dagger"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeHuntingKnife1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponHuntingKnife",
+				"iconLabel": "weapon_dagger"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "WAF_WeapTypeScalpel"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponScalpel",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "misc_scalpel"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeTwinDagger1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponTwinDagger",
+				"iconLabel": "weapon_dagger"
+			}
+		}
+	]
+}

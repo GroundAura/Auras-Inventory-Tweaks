@@ -1,0 +1,96 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeLance2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "9",
+				"subTypeDisplay": "$ItemWeaponLance",
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_lance"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypePike2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "9",
+				"subTypeDisplay": "$ItemWeaponPike",
+				"iconSource": "skyui_weapons_pack/icons.swf",
+				"iconLabel": "weapon_pike"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeSpear2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "9",
+				"subTypeDisplay": "$Spear",
+				"iconSource": "skyui_weapons_pack/icons.swf",
+				"iconLabel": "weapon_spear"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeTrident2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "9",
+				"subTypeDisplay": "$ItemWeaponTrident",
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_trident"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeGlaive2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "10",
+				"subTypeDisplay": "$ItemWeaponGlaive",
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_halberd"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeHalberd2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "10",
+				"subTypeDisplay": "$ItemWeaponHalberd",
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_halberd"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeWarscythe2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "10",
+				"subTypeDisplay": "$ItemWeaponWarscythe",
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_halberd"
+			}
+		}
+	]
+}

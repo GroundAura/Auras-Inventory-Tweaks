@@ -1,0 +1,53 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeStaff1H"
+			},
+			"assign": {
+				"itemClass": "5",
+				"itemSort": "1",
+				"subTypeDisplay": "$Staff",
+				"iconLabel": "weapon_staff"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeStaffBlank"
+			},
+			"assign": {
+				"itemClass": "5",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponStaffUnenchanted",
+				"iconLabel": "weapon_staff"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeWand1H"
+			},
+			"assign": {
+				"itemClass": "5",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemWeaponWand",
+				"iconLabel": "weapon_staff"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeWandBlank"
+			},
+			"assign": {
+				"itemClass": "5",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponWandUnenchanted",
+				"iconLabel": "weapon_staff"
+			}
+		}
+	]
+}

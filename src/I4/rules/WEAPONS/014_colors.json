@@ -4,89 +4,73 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_InvColorBlood"
-				]
+				"keywords": "OCF_InvColorBlood"
 			},
 			"assign": {
-				"iconColor": "#8E2129"
+				"iconColor": "ColorWeaponThrownBlood"
 			}
 		},
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_InvColorDwarven"
-				]
+				"keywords": "OCF_InvColorDwarven"
 			},
 			"assign": {
-				"iconColor": "#705F32"
+				"iconColor": "ColorStaffDwarven"
 			}
 		},
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_InvColorFire"
-				]
+				"keywords": "OCF_InvColorFire"
 			},
 			"assign": {
-				"iconColor": "#C73636"
+				"iconColor": "ColorWeaponThrownFire"
 			}
 		},
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_InvColorFrost"
-				]
+				"keywords": "OCF_InvColorFrost"
 			},
 			"assign": {
-				"iconColor": "#1FFBFF"
+				"iconColor": "ColorWeaponThrownFrost"
 			}
 		},
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_InvColorPoison"
-				]
+				"keywords": "OCF_InvColorPoison"
 			},
 			"assign": {
-				"iconColor": "#62A636"
+				"iconColor": "ColorWeaponThrownPoision"
 			}
 		},
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_InvColorShock"
-				]
+				"keywords": "OCF_InvColorShock"
 			},
 			"assign": {
-				"iconColor": "#EAAB00"
+				"iconColor": "ColorWeaponThrownShock"
 			}
 		},
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_InvColorSun"
-				]
+				"keywords": "OCF_InvColorSun"
 			},
 			"assign": {
-				"iconColor": "#FF8700"
+				"iconColor": "ColorWeaponThrownSun"
 			}
 		},
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_InvColorWater"
-				]
+				"keywords": "OCF_InvColorWater"
 			},
 			"assign": {
-				"iconColor": "#005493"
+				"iconColor": "ColorWeaponThrownWater"
 			}
 		}
 	]

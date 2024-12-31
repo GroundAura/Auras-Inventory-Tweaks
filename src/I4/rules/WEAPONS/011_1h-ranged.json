@@ -1,0 +1,160 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeBomb1H"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemWeaponBomb",
+				"iconSource": "AIT/MoreIcons/icons.swf",
+				"iconLabel": "weapon_bomb"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeCrossbow1H"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemWeaponHandCrossbow",
+				"iconLabel": "weapon_crossbow"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeGun1H_Axe"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemWeaponGun",
+				"iconSource": "SkyUI_Weapons_Pack/icons.swf",
+				"iconLabel": "weapon_gun"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeGun1H_Basic"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemWeaponGun",
+				"iconSource": "SkyUI_Weapons_Pack/icons.swf",
+				"iconLabel": "weapon_gun"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeGun1H_BasicSword"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemWeaponGun",
+				"iconSource": "SkyUI_Weapons_Pack/icons.swf",
+				"iconLabel": "weapon_gun"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeGun1H_Energy"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemWeaponGun",
+				"iconSource": "SkyUI_Weapons_Pack/icons.swf",
+				"iconLabel": "weapon_gun"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeGun1H_Flamethrower"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemWeaponGun",
+				"iconSource": "SkyUI_Weapons_Pack/icons.swf",
+				"iconLabel": "weapon_gun"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeGun1H_Launcher"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemWeaponGun",
+				"iconSource": "SkyUI_Weapons_Pack/icons.swf",
+				"iconLabel": "weapon_gun"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeGun1H_Gravity"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemWeaponGun",
+				"iconSource": "SkyUI_Weapons_Pack/icons.swf",
+				"iconLabel": "weapon_gun"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeGun1H_Shockthrower"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemWeaponGun",
+				"iconSource": "SkyUI_Weapons_Pack/icons.swf",
+				"iconLabel": "weapon_gun"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeGun1H_Shotgun"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemWeaponGun",
+				"iconSource": "SkyUI_Weapons_Pack/icons.swf",
+				"iconLabel": "weapon_gun"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeGun1H_Sword"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemWeaponGun",
+				"iconSource": "SkyUI_Weapons_Pack/icons.swf",
+				"iconLabel": "weapon_gun"
+			}
+		}
+	]
+}

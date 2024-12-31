@@ -6,7 +6,8 @@
 				"formType": "Weapon"
 			},
 			"assign": {
-				"itemType": "1"
+				"itemType": "1",
+				"iconColor": "ColorWeaponDefault"
 			}
 		}
 	]

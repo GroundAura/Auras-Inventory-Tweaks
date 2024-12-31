@@ -1,0 +1,92 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeWarhammer2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "7",
+				"subTypeDisplay": "$Warhammer",
+				"iconLabel": "weapon_hammer"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeBladestaff2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "8",
+				"subTypeDisplay": "$ItemWeaponBladestaff",
+				"iconSource": "skyui_weapons_pack/icons.swf",
+				"iconLabel": "weapon_quarterstaff"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeClub2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "8",
+				"subTypeDisplay": "$ItemWeaponGreatclub",
+				"iconLabel": "weapon_hammer"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeFlail2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "8",
+				"subTypeDisplay": "$ItemWeaponFlail",
+				"iconSource": "Muetzl/icons.swf",
+				"iconLabel": "custom_weapon_morningstar"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeMace2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "8",
+				"subTypeDisplay": "$ItemWeaponLongmace",
+				"iconLabel": "weapon_mace"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeMassiveHammer2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "8",
+				"subTypeDisplay": "$ItemWeaponColossalHammer",
+				"iconLabel": "weapon_hammer"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeQuarterstaff2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "8",
+				"subTypeDisplay": "$ItemWeaponQuarterstaff",
+				"iconSource": "skyui_weapons_pack/icons.swf",
+				"iconLabel": "weapon_quarterstaff"
+			}
+		}
+	]
+}

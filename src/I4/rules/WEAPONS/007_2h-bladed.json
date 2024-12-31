@@ -1,0 +1,134 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeGreatsword2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "3",
+				"subTypeDisplay": "$Greatsword",
+				"iconLabel": "weapon_greatsword"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeKatana2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "4",
+				"subTypeDisplay": "$ItemWeaponDaiKatana",
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_nodachi"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeLightsaber2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "4",
+				"subTypeDisplay": "$ItemWeaponLightsaber",
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_nodachi"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeLightsaber2H_1Blade"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "4",
+				"subTypeDisplay": "$ItemWeaponLightsaber",
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_nodachi"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeLightsaber2H_2Blade"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "4",
+				"subTypeDisplay": "$ItemWeaponLightsaber",
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_nodachi"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeMassiveSword2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "4",
+				"subTypeDisplay": "$ItemWeaponColossalSword",
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_giantsword"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeRapier2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "4",
+				"subTypeDisplay": "$ItemWeaponRapier",
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_rapier"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeSaber2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "4",
+				"subTypeDisplay": "$ItemWeaponSaber",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "weapon_saber"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeScimitar2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "4",
+				"subTypeDisplay": "$ItemWeaponScimitar",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "weapon_saber"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeTwinblade2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "4",
+				"subTypeDisplay": "$ItemWeaponTwinblade",
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_twinblade"
+			}
+		}
+	]
+}

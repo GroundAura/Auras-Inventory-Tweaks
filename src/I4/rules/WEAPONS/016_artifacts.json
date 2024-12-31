@@ -13,7 +13,7 @@
 				}
 			},
 			"assign": {
-				"iconColor": "#0099CC"
+				"iconColor": "ColorRarityAedric"
 			}
 		},
 		{
@@ -88,7 +88,7 @@
 				}
 			},
 			"assign": {
-				"iconColor": "#A14040"
+				"iconColor": "ColorRarityDaedric"
 			}
 		},
 		{
@@ -326,7 +326,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#FFD700"
+				"iconColor": "ColorRarityDwarven"
 			}
 		},
 		{
@@ -397,7 +397,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#C1884D"
+				"iconColor": "ColorRarityLegendary"
 			}
 		},
 		{

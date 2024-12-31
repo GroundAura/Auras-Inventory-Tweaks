@@ -1,0 +1,129 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeWarAxe1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "5",
+				"subTypeDisplay": "$War Axe",
+				"iconLabel": "weapon_waraxe"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeCleaver1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "6",
+				"subTypeDisplay": "$ItemWeaponCleaver",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "weapon_saw"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeCrescent1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "6",
+				"subTypeDisplay": "$ItemWeaponCrescent",
+				"iconLabel": "weapon_waraxe"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeHandBlade1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "6",
+				"subTypeDisplay": "$ItemWeaponHandBlade",
+				"iconLabel": "weapon_waraxe"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeHatchet1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "6",
+				"subTypeDisplay": "$ItemWeaponHatchet",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "weapon_hatchet"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypePickaxe1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "6",
+				"subTypeDisplay": "$Pickaxe",
+				"iconLabel": "weapon_pickaxe"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeSickle1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "6",
+				"subTypeDisplay": "$ItemWeaponSickle",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "weapon_sickle"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeWarpick1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "6",
+				"subTypeDisplay": "$ItemWeaponWarpick",
+				"iconLabel": "weapon_pickaxe"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeWoodaxe1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "6",
+				"subTypeDisplay": "$Wood Axe",
+				"iconLabel": "weapon_woodaxe"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeWoodHatchet1H"
+			},
+			"assign": {
+				"itemClass": "1",
+				"itemSort": "6",
+				"subTypeDisplay": "$ItemWeaponWoodHatchet",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "weapon_hatchet"
+			}
+		}
+	]
+}

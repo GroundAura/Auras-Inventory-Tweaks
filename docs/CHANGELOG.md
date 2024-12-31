@@ -2,9 +2,11 @@
 
 ## Version 4.6.0
 
-- **AIT Translations:** Added new strings: "`$CRIT`" ("CRIT"), "`$CRITICAL DAMAGE`" ("CRITICAL DAMAGE"), "`$FORTIFY EXPOSURE`" ("FORTIFY EXPOSURE"), "`F.EXP`" ("F.EXP").
+- **AIT Translations:** Added new strings: "`$CRIT`" ("CRIT"), "`$CRITICAL DAMAGE`" ("CRITICAL DAMAGE"), "`$FORTIFY EXPOSURE`" ("FORTIFY EXPOSURE"), "`F.EXP`" ("F.EXP"), "`$ItemWeaponBladestaff`" ("Bladestaff"), "`ItemWeaponClaw`" ("Claw"), "`$ItemWeaponColossalAxe`" ("Colossal Axe"), "`$ItemWeaponColossalHammer`" ("Colossal Hammer"), "`$ItemWeaponFlail`" ("Flail"), "`ItemWeaponLightsaber`" ("Magicka Saber"), "`ItemWeaponTwinDagger`" ("Twin Dagger").
 
 - **AIT Translation (English):** Changed translations: "`$CC FORTIFY WARMTH`" from ("CC FORTIFY WARMTH") to ("SM FORTIFY WARMTH"), "`CC HUNGER`" from ("CC HUNGER") to ("SM HUNGER"), "`CC RESTORE COLD`" from ("CC RESTORE COLD") to ("SM RESTORE COLD"), "`CC WARMTH`" from ("CC WARMTH") to ("SM WARMTH").
+
+- **I4 Main Module (Weapon/AIO):** Cleanup and add support for more weapon types.
 
 - **SkyUI Config:** Added critical damage column.
 

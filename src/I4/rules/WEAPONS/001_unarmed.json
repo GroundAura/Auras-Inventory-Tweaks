@@ -1,0 +1,31 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapUnarmed_Basic"
+			},
+			"assign": {
+				"itemClass": "0",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemWeaponFist",
+				"iconLabel": "clothing_hands",
+				"iconColor": "ColorBase"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapUnarmed_Claws"
+			},
+			"assign": {
+				"itemClass": "0",
+				"itemSort": "1",
+				"subTypeDisplay": "$ItemArmorClaws",
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_claws"
+			}
+		}
+	]
+}

@@ -1,0 +1,103 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeBattleaxe2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "5",
+				"subTypeDisplay": "$Battleaxe",
+				"iconLabel": "weapon_battleaxe"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeCleaver2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "6",
+				"subTypeDisplay": "$ItemWeaponCleaver",
+				"iconSource": "AIT/GameIcons/icons.swf",
+				"iconLabel": "weapon_saw"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeCrescent2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "6",
+				"subTypeDisplay": "$ItemWeaponCrescent",
+				"iconLabel": "weapon_battleaxe"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeMassiveAxe2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "6",
+				"subTypeDisplay": "$ItemWeaponColossalAxe",
+				"iconLabel": "weapon_battleaxe"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypePickaxe2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "6",
+				"subTypeDisplay": "$Pickaxe",
+				"iconLabel": "weapon_pickaxe"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeScythe2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "6",
+				"subTypeDisplay": "$ItemWeaponScythe",
+				"iconSource": "BOOBIES Immersive Icons/weapons.swf",
+				"iconLabel": "weapon_scythe"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeWarpick2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "6",
+				"subTypeDisplay": "$ItemWeaponWarpick",
+				"iconLabel": "weapon_pickaxe"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeWoodaxe2H"
+			},
+			"assign": {
+				"itemClass": "2",
+				"itemSort": "6",
+				"subTypeDisplay": "$Wood Axe",
+				"iconLabel": "weapon_woodaxe"
+			}
+		}
+	]
+}

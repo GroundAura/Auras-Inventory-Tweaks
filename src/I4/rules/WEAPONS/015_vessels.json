@@ -19,9 +19,7 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_VesselBag"
-				]
+				"keywords": "OCF_VesselBag"
 			},
 			"assign": {
 				"iconLabel": "misc_goldsack"
@@ -30,9 +28,7 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_VesselBottlePoison"
-				]
+				"keywords": "OCF_VesselBottlePoison"
 			},
 			"assign": {
 				"iconLabel": "potion_poison"
@@ -41,9 +37,7 @@
 		{
 			"match": {
 				"formType": "Weapon",
-				"keywords": [
-					"OCF_VesselBottlePotion"
-				]
+				"keywords": "OCF_VesselBottlePotion"
 			},
 			"assign": {
 				"iconLabel": "default_potion"

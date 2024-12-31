@@ -1,0 +1,130 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeBow2H"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "2",
+				"subTypeDisplay": "$Bow",
+				"iconLabel": "weapon_bow"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeBowblade2H"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponBowblade",
+				"iconLabel": "weapon_bow"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeCrossbow2H"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "2",
+				"subTypeDisplay": "$Crossbow",
+				"iconLabel": "weapon_crossbow"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeGreatbow2H"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponGreatbow",
+				"iconLabel": "weapon_bow"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeGun2H_Basic"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponGun",
+				"iconSource": "SkyUI_Weapons_Pack/icons.swf",
+				"iconLabel": "weapon_gun"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeGun2H_Energy"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponGun",
+				"iconSource": "SkyUI_Weapons_Pack/icons.swf",
+				"iconLabel": "weapon_gun"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeGun2H_Launcher"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponGun",
+				"iconSource": "SkyUI_Weapons_Pack/icons.swf",
+				"iconLabel": "weapon_gun"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeGun2H_Shotgun"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponGun",
+				"iconSource": "SkyUI_Weapons_Pack/icons.swf",
+				"iconLabel": "weapon_gun"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeGun2H_Spear"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponGun",
+				"iconSource": "SkyUI_Weapons_Pack/icons.swf",
+				"iconLabel": "weapon_gun"
+			}
+		},
+		{
+			"match": {
+				"formType": "Weapon",
+				"keywords": "OCF_WeapTypeShortbow2H"
+			},
+			"assign": {
+				"itemClass": "3",
+				"itemSort": "2",
+				"subTypeDisplay": "$ItemWeaponShortbow",
+				"iconLabel": "weapon_bow"
+			}
+		}
+	]
+}
