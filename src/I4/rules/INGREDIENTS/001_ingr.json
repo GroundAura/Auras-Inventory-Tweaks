@@ -34,7 +34,7 @@
 			"assign": {
 				"iconSource": "AIT/MoreIcons/icons.swf",
 				"iconLabel": "food_honeycomb",
-				"iconColor": "#EBAF4C"
+				"iconColor": "ColorIngrHoneycomb"
 			}
 		},
 		{
@@ -46,7 +46,7 @@
 			},
 			"assign": {
 				"iconLabel": "magic_frost",
-				"iconColor": "#FFFFFF"
+				"iconColor": "ColorIngrSnow"
 			}
 		},
 		{
@@ -59,7 +59,7 @@
 			"assign": {
 				"iconSource": "AIT/GameIcons/icons.swf",
 				"iconLabel": "misc_herbs",
-				"iconColor": "#216E23"
+				"iconColor": "ColorIngrPlant"
 			}
 		},
 		{
@@ -72,7 +72,7 @@
 			"assign": {
 				"iconSource": "AIT/GameIcons/icons.swf",
 				"iconLabel": "food_mushroom",
-				"iconColor": "#634538"
+				"iconColor": "ColorIngrMushroom"
 			}
 		},
 		{
@@ -83,7 +83,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#634538"
+				"iconColor": "ColorIngrRoot"
 			}
 		},
 		{
@@ -96,7 +96,7 @@
 			"assign": {
 				"iconSource": "AIT/GameIcons/icons.swf",
 				"iconLabel": "misc_herbs",
-				"iconColor": "#8FA0A5"
+				"iconColor": "ColorIngrSoulHusk"
 			}
 		},
 		{
@@ -142,7 +142,7 @@
 			},
 			"assign": {
 				"iconLabel": "default_potion",
-				"iconColor": "#8E2129"
+				"iconColor": "ColorIngrBlood"
 			}
 		},
 		{
@@ -191,7 +191,7 @@
 			"assign": {
 				"iconSource": "BOOBIES Immersive Icons/food.swf",
 				"iconLabel": "crab",
-				"iconColor": "#8FA0A5"
+				"iconColor": "ColorIngrCrustacean"
 			}
 		},
 		{
@@ -252,7 +252,7 @@
 			"assign": {
 				"iconSource": "AIT/MoreIcons/icons.swf",
 				"iconLabel": "food_fish",
-				"iconColor": "#8FA0A5"
+				"iconColor": "ColorIngrFish"
 			}
 		},
 		{
@@ -265,7 +265,7 @@
 			"assign": {
 				"iconSource": "AIT/MoreIcons/icons.swf",
 				"iconLabel": "food_meat",
-				"iconColor": "#F9906F"
+				"iconColor": "ColorIngrMeatRaw"
 			}
 		},
 		{
@@ -276,7 +276,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#6F3729"
+				"iconColor": "ColorIngrMeatCooked"
 			}
 		},
 		{
@@ -301,7 +301,7 @@
 			"assign": {
 				"iconSource": "BOOBIES Immersive Icons/ingredients.swf",
 				"iconLabel": "liver",
-				"iconColor": "#634538"
+				"iconColor": "ColorIngrOrgan"
 			}
 		},
 		{
@@ -314,7 +314,7 @@
 			"assign": {
 				"iconSource": "AIT/GameIcons/icons.swf",
 				"iconLabel": "misc_eyeball",
-				"iconColor": "#FFFFFF"
+				"iconColor": "ColorIngrEyeball"
 			}
 		},
 		{
@@ -327,7 +327,7 @@
 			"assign": {
 				"iconSource": "AIT/GameIcons/icons.swf",
 				"iconLabel": "misc_heart",
-				"iconColor": "#7B2424"
+				"iconColor": "ColorIngrHeart"
 			}
 		},
 		{
@@ -340,7 +340,7 @@
 			"assign": {
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "misc_chitin",
-				"iconColor": "#8FA0A5"
+				"iconColor": "ColorIngrPlate"
 			}
 		},
 		{
@@ -352,7 +352,7 @@
 			},
 			"assign": {
 				"iconLabel": "misc_hide",
-				"iconColor": "#DBB36E"
+				"iconColor": "ColorIngrHide"
 			}
 		},
 		{
@@ -364,7 +364,7 @@
 			},
 			"assign": {
 				"iconLabel": "potion_poison",
-				"iconColor": "#AD00B3"
+				"iconColor": "ColorIngrPoison"
 			}
 		},
 		{
@@ -389,7 +389,7 @@
 			"assign": {
 				"iconSource": "AIT/GameIcons/icons.swf",
 				"iconLabel": "misc_antlers",
-				"iconColor": "#634538"
+				"iconColor": "ColorIngrAntler"
 			}
 		},
 		{
@@ -402,7 +402,7 @@
 			"assign": {
 				"iconSource": "AIT/GameIcons/icons.swf",
 				"iconLabel": "misc_birdclaw",
-				"iconColor": "#634538"
+				"iconColor": "ColorIngrBeak"
 			}
 		},
 		{
@@ -439,7 +439,7 @@
 			"assign": {
 				"iconSource": "AIT/GameIcons/icons.swf",
 				"iconLabel": "misc_birdclaw",
-				"iconColor": "#634538"
+				"iconColor": "ColorIngrTalon"
 			}
 		},
 		{
@@ -475,7 +475,7 @@
 			},
 			"assign": {
 				"iconLabel": "misc_gem",
-				"iconColor": "#FFB0D1"
+				"iconColor": "ColorIngrGem"
 			}
 		},
 		{
@@ -488,7 +488,7 @@
 			"assign": {
 				"iconSource": "AIT/GameIcons/icons.swf",
 				"iconLabel": "misc_seashell",
-				"iconColor": "#FFFFFF"
+				"iconColor": "ColorIngrPearl"
 			}
 		}
 	]

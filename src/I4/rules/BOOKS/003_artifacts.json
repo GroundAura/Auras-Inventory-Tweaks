@@ -10,7 +10,7 @@
 			},
 			"assign": {
 				"itemClass": "3",
-				"iconColor": "#0099CC"
+				"iconColor": "ColorRarityAedric"
 			}
 		},
 		{
@@ -41,7 +41,7 @@
 			},
 			"assign": {
 				"itemClass": "3",
-				"iconColor": "#A14040"
+				"iconColor": "ColorRarityDaedric"
 			}
 		},
 		{

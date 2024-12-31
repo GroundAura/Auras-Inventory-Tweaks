@@ -30,7 +30,7 @@
 				"subTypeDisplay": "$ItemBookSpellTomeAlteration",
 				"iconSource": "BOOBIES Immersive Icons/books.swf",
 				"iconLabel": "book_spell_alteration",
-				"iconColor": "#8F6B46"
+				"iconColor": "ColorTomeAlteration"
 			}
 		},
 		{
@@ -47,7 +47,7 @@
 				"subTypeDisplay": "$ItemBookSpellTomeIllusion",
 				"iconSource": "BOOBIES Immersive Icons/books.swf",
 				"iconLabel": "book_spell_illusion",
-				"iconColor": "#4C9EA4"
+				"iconColor": "ColorTomeIllusion"
 			}
 		},
 		{
@@ -64,7 +64,7 @@
 				"subTypeDisplay": "$ItemBookSpellTomeDestruction",
 				"iconSource": "BOOBIES Immersive Icons/books.swf",
 				"iconLabel": "book_spell_destruction",
-				"iconColor": "#C73636"
+				"iconColor": "ColorTomeDestruction"
 			}
 		},
 		{
@@ -81,7 +81,7 @@
 				"subTypeDisplay": "$ItemBookSpellTomeConjuration",
 				"iconSource": "BOOBIES Immersive Icons/books.swf",
 				"iconLabel": "book_spell_conjuration",
-				"iconColor": "#993899"
+				"iconColor": "ColorTomeConjuration"
 			}
 		},
 		{
@@ -98,7 +98,7 @@
 				"subTypeDisplay": "$ItemBookSpellTomeRestoration",
 				"iconSource": "BOOBIES Immersive Icons/books.swf",
 				"iconLabel": "book_spell_restoration",
-				"iconColor": "#00AC00"
+				"iconColor": "ColorTomeRestoration"
 			}
 		},
 		{
@@ -115,7 +115,7 @@
 				"subTypeDisplay": "$ItemBookSpellTomeSwordSing",
 				"iconSource": "BOOBIES Immersive Icons/books.swf",
 				"iconLabel": "book_spell_illusion",
-				"iconColor": "#CCCC33"
+				"iconColor": "ColorTomeShehai"
 			}
 		},
 		{
@@ -145,7 +145,7 @@
 				"subTypeDisplay": "$ItemMiscRelic",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "misc_dwarvenscrap",
-				"iconColor": "#705F32"
+				"iconColor": "ColorMiscMetalDwarven"
 			}
 		}
 	]

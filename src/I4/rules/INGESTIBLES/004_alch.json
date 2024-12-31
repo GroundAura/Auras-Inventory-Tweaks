@@ -36,7 +36,7 @@
 				"itemClass": "4",
 				"itemSort": "2",
 				"subTypeDisplay": "$ItemFoodSpoiled",
-				"iconColor": "#4D3911"
+				"iconColor": "ColorFoodSpoiled"
 			}
 		},
 		{
@@ -59,7 +59,7 @@
 				"itemSort": "0",
 				"subTypeDisplay": "$ItemPotionBlood",
 				"iconLabel": "default_potion",
-				"iconColor": "#8E2129"
+				"iconColor": "ColorPotionBlood"
 			}
 		},
 		{
@@ -73,7 +73,7 @@
 				"itemType": "3",
 				"itemClass": "8",
 				"subTypeDisplay": "$ItemFoodPoisoned",
-				"iconColor": "#AD00B3"
+				"iconColor": "ColorFoodPoisoned"
 			}
 		}
 	]

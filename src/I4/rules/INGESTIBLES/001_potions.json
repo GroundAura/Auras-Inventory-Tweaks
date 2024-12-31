@@ -77,7 +77,7 @@
 			"assign": {
 				"itemClass": "4",
 				"subTypeDisplay": "$MagicCure",
-				"iconColor": "#DB2E73"
+				"iconColor": "ColorPotionCure"
 			}
 		},
 		{
@@ -100,7 +100,7 @@
 			},
 			"assign": {
 				"subTypeDisplay": "$MagicEnhance",
-				"iconColor": "#51DB2E"
+				"iconColor": "ColorPotionEnhance"
 			}
 		},
 		{
@@ -128,7 +128,7 @@
 			"assign": {
 				"itemClass": "6",
 				"subTypeDisplay": "$MagicEnhance",
-				"iconColor": "#005493"
+				"iconColor": "ColorPotionWater"
 			}
 		},
 		{
@@ -142,7 +142,7 @@
 				"itemClass": "6",
 				"subTypeDisplay": "$Potion",
 				"iconLabel": "default_potion",
-				"iconColor": "#FFFFFF"
+				"iconColor": "ColorBase"
 			}
 		},
 		{
@@ -155,7 +155,7 @@
 				"itemClass": "5",
 				"itemSort": "1",
 				"subTypeDisplay": "$MagicResist",
-				"iconColor": "#2E9FDB"
+				"iconColor": "ColorPotionResistMagic"
 			}
 		},
 		{

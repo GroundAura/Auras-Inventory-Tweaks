@@ -23,7 +23,7 @@
 				"magicClassDisplay": "$MagicArcane",
 				"subTypeDisplay": "$MagicDispel",
 				"iconLabel": "default_alteration",
-				"iconColor": "#00BCFF"
+				"iconColor": "ColorSpellDispelDefault"
 			}
 		},
 		{
@@ -48,7 +48,7 @@
 				"magicClassDisplay": "$MagicArcane",
 				"subTypeDisplay": "$MagicDispel",
 				"iconLabel": "default_conjuration",
-				"iconColor": "#993899"
+				"iconColor": "ColorSpellDispelSummon"
 			}
 		},
 		{
@@ -73,7 +73,7 @@
 				"magicClassDisplay": "$MagicArcane",
 				"subTypeDisplay": "$MagicDispel",
 				"iconLabel": "default_illusion",
-				"iconColor": "#00BCFF"
+				"iconColor": "ColorSpellDispelDefault"
 			}
 		},
 		{
@@ -98,7 +98,7 @@
 				"magicClassDisplay": "$MagicArcane",
 				"subTypeDisplay": "$MagicDispel",
 				"iconLabel": "default_restoration",
-				"iconColor": "#00BCFF"
+				"iconColor": "ColorSpellDispelDefault"
 			}
 		}
 	]

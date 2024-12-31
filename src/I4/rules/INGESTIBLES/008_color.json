@@ -9,7 +9,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#A14040"
+				"iconColor": "ColorRarityDaedric"
 			}
 		},
 		{
@@ -20,7 +20,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#C1884D"
+				"iconColor": "ColorRarityLegendary"
 			}
 		}
 	]

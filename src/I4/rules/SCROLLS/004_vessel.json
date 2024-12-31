@@ -19,7 +19,7 @@
 				"subTypeDisplay": "$Toy",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "misc_toy",
-				"iconColor": "#FFFFFF"
+				"iconColor": "ColorBase"
 			}
 		},
 		{
@@ -33,7 +33,7 @@
 				"subTypeDisplay": "$ItemMiscDoll",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "misc_toy",
-				"iconColor": "#FFFFFF"
+				"iconColor": "ColorBase"
 			}
 		}
 	]

@@ -84,7 +84,7 @@
 				"subTypeDisplay": "$ItemFoodBaked",
 				"iconSource": "AIT/MoreIcons/icons.swf",
 				"iconLabel": "food_pie",
-				"iconColor": "#634538"
+				"iconColor": "ColorFoodPastry"
 			}
 		},
 		{
@@ -102,7 +102,7 @@
 				"subTypeDisplay": "$ItemFoodBread",
 				"iconSource": "AIT/MoreIcons/icons.swf",
 				"iconLabel": "food_bread",
-				"iconColor": "#8E745B"
+				"iconColor": "ColorFoodBread"
 			}
 		},
 		{
@@ -122,7 +122,7 @@
 				"subTypeDisplay": "$ItemFoodCheese",
 				"iconSource": "AIT/MoreIcons/icons.swf",
 				"iconLabel": "food_cheese",
-				"iconColor": "#FFD867"
+				"iconColor": "ColorFoodCheese"
 			}
 		},
 		{
@@ -139,7 +139,7 @@
 			"assign": {
 				"subTypeDisplay": "$ItemFoodFruit",
 				"iconLabel": "default_food",
-				"iconColor": "#7A0505"
+				"iconColor": "ColorFoodFruit"
 			}
 		},
 		{
@@ -157,7 +157,7 @@
 				"subTypeDisplay": "$ItemFoodMeal",
 				"iconSource": "AIT/MoreIcons/icons.swf",
 				"iconLabel": "food_meal",
-				"iconColor": "#7F5F23"
+				"iconColor": "ColorFoodMeal"
 			}
 		},
 		{
@@ -175,7 +175,7 @@
 				"subTypeDisplay": "$ItemFoodSandwich",
 				"iconSource": "MissileSandwiches/icons.swf",
 				"iconLabel": "missile_sandwich",
-				"iconColor": "#8E745B"
+				"iconColor": "ColorFoodSandwich"
 			}
 		},
 		{
@@ -195,7 +195,7 @@
 				"subTypeDisplay": "$ItemFoodStew",
 				"iconSource": "AIT/MoreIcons/icons.swf",
 				"iconLabel": "food_stew",
-				"iconColor": "#C9B889"
+				"iconColor": "ColorFoodStew"
 			}
 		},
 		{
@@ -213,7 +213,7 @@
 				"subTypeDisplay": "$ItemFoodTreat",
 				"iconSource": "AIT/MoreIcons/icons.swf",
 				"iconLabel": "food_honeycomb",
-				"iconColor": "#EBAF4C"
+				"iconColor": "ColorFoodTreat"
 			}
 		},
 		{
@@ -231,7 +231,7 @@
 				"subTypeDisplay": "$ItemFoodVegetable",
 				"iconSource": "AIT/MoreIcons/icons.swf",
 				"iconLabel": "food_vegetable",
-				"iconColor": "#216E23"
+				"iconColor": "ColorFoodVegetable"
 			}
 		},
 		{
@@ -248,7 +248,7 @@
 			"assign": {
 				"iconSource": "AIT/GameIcons/icons.swf",
 				"iconLabel": "misc_herbs",
-				"iconColor": "#216E23"
+				"iconColor": "ColorFoodVegetable"
 			}
 		},
 		{
@@ -262,7 +262,7 @@
 			"assign": {
 				"iconSource": "AIT/GameIcons/icons.swf",
 				"iconLabel": "food_mushroom",
-				"iconColor": "#634538"
+				"iconColor": "ColorFoodMushroom"
 			}
 		},
 		{
@@ -276,7 +276,7 @@
 			"assign": {
 				"iconSource": "AIT/GameIcons/icons.swf",
 				"iconLabel": "misc_herbs",
-				"iconColor": "#634538"
+				"iconColor": "ColorFoodRoot"
 			}
 		},
 		{
@@ -290,7 +290,7 @@
 			"assign": {
 				"iconSource": "AIT/GameIcons/icons.swf",
 				"iconLabel": "misc_herbs",
-				"iconColor": "#8FA0A5"
+				"iconColor": "ColorFoodSoulHusk"
 			}
 		},
 		{
@@ -308,7 +308,7 @@
 				"subTypeDisplay": "$ItemFoodMeat",
 				"iconSource": "AIT/MoreIcons/icons.swf",
 				"iconLabel": "food_meat",
-				"iconColor": "#6F3729"
+				"iconColor": "ColorFoodMeatCooked"
 			}
 		},
 		{
@@ -324,7 +324,7 @@
 				"subTypeDisplay": "$ItemFoodMeatRaw",
 				"iconSource": "AIT/MoreIcons/icons.swf",
 				"iconLabel": "food_meat",
-				"iconColor": "#F9906F"
+				"iconColor": "ColorFoodMeatRaw"
 			}
 		},
 		{
@@ -410,7 +410,7 @@
 				"subTypeDisplay": "$ItemFoodSeafood",
 				"iconSource": "BOOBIES Immersive Icons/food.swf",
 				"iconLabel": "crab",
-				"iconColor": "#E0642F"
+				"iconColor": "ColorFoodSeafoodCooked"
 			}
 		},
 		{
@@ -424,7 +424,7 @@
 			"assign": {
 				"itemSort": "2",
 				"subTypeDisplay": "$ItemFoodSeafoodRaw",
-				"iconColor": "#D8CA9E"
+				"iconColor": "ColorFoodSeafoodRaw"
 			}
 		},
 		{
@@ -442,7 +442,7 @@
 				"subTypeDisplay": "$ItemFoodFish",
 				"iconSource": "AIT/MoreIcons/icons.swf",
 				"iconLabel": "food_fish",
-				"iconColor": "#F9A602"
+				"iconColor": "ColorFoodFishCooked"
 			}
 		},
 		{
@@ -456,7 +456,7 @@
 			"assign": {
 				"itemSort": "2",
 				"subTypeDisplay": "$ItemFoodFishRaw",
-				"iconColor": "#8FA0A5"
+				"iconColor": "ColorFoodFishRaw"
 			}
 		},
 		{
@@ -474,7 +474,7 @@
 				"subTypeDisplay": "$ItemFoodEgg",
 				"iconSource": "AIT/GameIcons/icons.swf",
 				"iconLabel": "food_egg",
-				"iconColor": "#F9A602"
+				"iconColor": "ColorFoodEggCooked"
 			}
 		},
 		{
@@ -490,7 +490,7 @@
 				"subTypeDisplay": "$ItemFoodEggRaw",
 				"iconSource": "AIT/GameIcons/icons.swf",
 				"iconLabel": "food_egg",
-				"iconColor": "#DDDDDD"
+				"iconColor": "ColorFoodEggRaw"
 			}
 		},
 		{
@@ -509,7 +509,7 @@
 			},
 			"assign": {
 				"subTypeDisplay": "$ItemFoodAlcohol",
-				"iconColor": "#FFC878"
+				"iconColor": "ColorFoodDrinkAlcohol"
 			}
 		},
 		{
@@ -522,7 +522,7 @@
 			},
 			"assign": {
 				"subTypeDisplay": "$ItemFoodCoffee",
-				"iconColor": "#634538"
+				"iconColor": "ColorFoodDrinkCoffee"
 			}
 		},
 		{
@@ -535,7 +535,7 @@
 			},
 			"assign": {
 				"subTypeDisplay": "$ItemFoodJuice",
-				"iconColor": "#7A0505"
+				"iconColor": "ColorFoodDrinkJuice"
 			}
 		},
 		{
@@ -551,7 +551,7 @@
 			},
 			"assign": {
 				"subTypeDisplay": "$ItemFoodMilk",
-				"iconColor": "#DDDDDD"
+				"iconColor": "ColorFoodDrinkMilk"
 			}
 		},
 		{
@@ -577,7 +577,7 @@
 			},
 			"assign": {
 				"subTypeDisplay": "$ItemFoodTea",
-				"iconColor": "#216E23"
+				"iconColor": "ColorFoodDrinkTea"
 			}
 		},
 		{
@@ -593,7 +593,7 @@
 			},
 			"assign": {
 				"subTypeDisplay": "$ItemFoodWater",
-				"iconColor": "#005493"
+				"iconColor": "ColorFoodDrinkWaterDefault"
 			}
 		},
 		{
@@ -607,7 +607,7 @@
 			"assign": {
 				"itemSort": "2",
 				"subTypeDisplay": "$ItemFoodWaterRaw",
-				"iconColor": "#4D3911"
+				"iconColor": "ColorFoodDrinkWaterDirty"
 			}
 		},
 		{
@@ -624,7 +624,7 @@
 			"assign": {
 				"itemSort": "2",
 				"subTypeDisplay": "$ItemFoodWaterSalt",
-				"iconColor": "#005493"
+				"iconColor": "ColorFoodDrinkWaterSalt"
 			}
 		},
 		{
@@ -643,7 +643,7 @@
 			"assign": {
 				"itemSort": "2",
 				"subTypeDisplay": "$ItemMiscEmptyWaterskin",
-				"iconColor": "#FFFFFF"
+				"iconColor": "ColorBase"
 			}
 		},
 		{
@@ -658,7 +658,7 @@
 				"itemSort": "2",
 				"subTypeDisplay": "$ItemFoodSnow",
 				"iconLabel": "magic_frost",
-				"iconColor": "#FFFFFF"
+				"iconColor": "ColorFoodSnow"
 			}
 		},
 		{
@@ -674,7 +674,7 @@
 				"subTypeDisplay": "$ItemPotionDrug",
 				"iconSource": "AIT/Aura/icons.swf",
 				"iconLabel": "potion_skooma",
-				"iconColor": "#712754"
+				"iconColor": "ColorFoodDrug"
 			}
 		},
 		{
@@ -738,7 +738,7 @@
 			"assign": {
 				"itemSort": "2",
 				"subTypeDisplay": "$Ingredient",
-				"iconColor": "#C9B889"
+				"iconColor": "ColorFoodIngredient"
 			}
 		},
 		{

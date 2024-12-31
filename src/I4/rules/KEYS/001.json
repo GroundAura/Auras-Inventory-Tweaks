@@ -36,7 +36,7 @@
 				"subTypeDisplay": "$ItemMiscRelic",
 				"iconSource": "AIT/Aura/icons.swf",
 				"iconLabel": "misc_artifactdaedra",
-				"iconColor": "#A14040"
+				"iconColor": "ColorRarityDaedric"
 			}
 		},
 		{
@@ -50,7 +50,7 @@
 				"subTypeDisplay": "$ItemMiscRelic",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "misc_dwarvenscrap",
-				"iconColor": "#705F32"
+				"iconColor": "ColorMiscMetalDwarven"
 			}
 		}
 	]

@@ -95,7 +95,7 @@
 				"subTypeDisplay": "$ItemMiscLantern",
 				"iconSource": "AIT/MoreIcons/icons.swf",
 				"iconLabel": "misc_lantern",
-				"iconColor": "#FFAA00"
+				"iconColor": "ColorArmorLantern"
 			}
 		},
 		{
@@ -126,7 +126,7 @@
 			"assign": {
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "misc_jar",
-				"iconColor": "#FFFFFF"
+				"iconColor": "ColorBase"
 			}
 		},
 		{
@@ -240,7 +240,7 @@
 				"subTypeDisplay": "$ItemMiscAlchemy",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "misc_dwarvenscrap",
-				"iconColor": "#705F32"
+				"iconColor": "ColorMiscToolDwarven"
 			}
 		},
 		{

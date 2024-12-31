@@ -102,7 +102,7 @@
 				"itemClass": "2",
 				"subTypeDisplay": "$Map",
 				"iconLabel": "book_map",
-				"iconColor": "#C2A487"
+				"iconColor": "ColorBookMap"
 			}
 		},
 		{
@@ -116,7 +116,7 @@
 				"subTypeDisplay": "$ItemBookMissive",
 				"iconSource": "BOOBIES Immersive Icons/books.swf",
 				"iconLabel": "book_missive",
-				"iconColor": "#B4B454"
+				"iconColor": "ColorBookMissive"
 			}
 		},
 		{
@@ -129,7 +129,7 @@
 			"assign": {
 				"iconSource": "BOOBIES Immersive Icons/books.swf",
 				"iconLabel": "book_missive",
-				"iconColor": "#7B2424"
+				"iconColor": "ColorBookRansom"
 			}
 		}
 	]

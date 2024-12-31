@@ -13,7 +13,7 @@
 				"itemSort": "0",
 				"subTypeDisplay": "$ItemScrollPowder",
 				"iconLabel": "misc_goldsack",
-				"iconColor": "#FFFFFF"
+				"iconColor": "ColorScrollPowder"
 			}
 		},
 		{
@@ -32,7 +32,7 @@
 				"subTypeDisplay": "$ItemScrollSpider",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "scroll_spider",
-				"iconColor": "#FFFFFF"
+				"iconColor": "ColorScrollSpider"
 			}
 		}
 	]

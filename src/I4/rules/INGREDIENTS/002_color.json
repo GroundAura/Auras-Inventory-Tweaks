@@ -9,7 +9,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#4D3911"
+				"iconColor": "ColorIngrSpoiled"
 			}
 		},
 		{
@@ -20,7 +20,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#0099CC"
+				"iconColor": "ColorRarityAedric"
 			}
 		},
 		{
@@ -31,7 +31,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#333333"
+				"iconColor": "ColorIngrBlack"
 			}
 		},
 		{
@@ -42,7 +42,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#005493"
+				"iconColor": "ColorIngrBlue"
 			}
 		},
 		{
@@ -53,7 +53,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#A14040"
+				"iconColor": "ColorIngrDaedric"
 			}
 		},
 		{
@@ -64,7 +64,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#705F32"
+				"iconColor": "ColorMiscMetalDwarven"
 			}
 		},
 		{
@@ -75,7 +75,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#C73636"
+				"iconColor": "ColorIngrFire"
 			}
 		},
 		{
@@ -86,7 +86,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#1FFBFF"
+				"iconColor": "ColorIngrFrost"
 			}
 		},
 		{
@@ -97,7 +97,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#111111"
+				"iconColor": "ColorIngrGray"
 			}
 		},
 		{
@@ -108,7 +108,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#216E23"
+				"iconColor": "ColorIngrGreen"
 			}
 		},
 		{
@@ -119,7 +119,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#C1884D"
+				"iconColor": "ColorRarityLegendary"
 			}
 		},
 		{
@@ -130,7 +130,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#C03797"
+				"iconColor": "ColorIngrMagenta"
 			}
 		},
 		{
@@ -141,7 +141,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#C07A00"
+				"iconColor": "ColorIngrOrange"
 			}
 		},
 		{
@@ -152,7 +152,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#FF7AAC"
+				"iconColor": "ColorIngrPink"
 			}
 		},
 		{
@@ -163,7 +163,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#782FAD"
+				"iconColor": "ColorIngrPurple"
 			}
 		},
 		{
@@ -174,7 +174,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#7B2424"
+				"iconColor": "ColorIngrRed"
 			}
 		},
 		{
@@ -185,7 +185,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#EAAB00"
+				"iconColor": "ColorIngrShock"
 			}
 		},
 		{
@@ -196,7 +196,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#FFFFFF"
+				"iconColor": "ColorIngrWhite"
 			}
 		},
 		{
@@ -207,7 +207,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#E0E021"
+				"iconColor": "ColorIngrYellow"
 			}
 		}
 	]

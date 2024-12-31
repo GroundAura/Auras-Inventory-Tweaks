@@ -6,6 +6,8 @@
 
 - **AIT Translation (English):** Changed translations: "`$CC FORTIFY WARMTH`" from ("CC FORTIFY WARMTH") to ("SM FORTIFY WARMTH"), "`CC HUNGER`" from ("CC HUNGER") to ("SM HUNGER"), "`CC RESTORE COLD`" from ("CC RESTORE COLD") to ("SM RESTORE COLD"), "`CC WARMTH`" from ("CC WARMTH") to ("SM WARMTH").
 
+- **I4 Main Module (Spell/AIO):** Minor tweaks and fixes.
+
 - **I4 Main Module (Weapon/AIO):** Cleanup and add support for more weapon types.
 
 - **SkyUI Config:** Added critical damage column.

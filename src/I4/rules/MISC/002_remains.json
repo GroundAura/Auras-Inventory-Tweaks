@@ -11,7 +11,7 @@
 			"assign": {
 				"subTypeDisplay": "$Remains",
 				"iconLabel": "misc_remains",
-				"iconColor": "#FFFFFF"
+				"iconColor": "ColorBase"
 			}
 		},
 		{
@@ -24,7 +24,7 @@
 			"assign": {
 				"subTypeDisplay": "$Hide",
 				"iconLabel": "misc_hide",
-				"iconColor": "#DBB36E"
+				"iconColor": "ColorMiscHide"
 			}
 		},
 		{
@@ -163,7 +163,7 @@
 			"assign": {
 				"iconSource": "BOOBIES Immersive Icons/ingredients.swf",
 				"iconLabel": "liver",
-				"iconColor": "#634538"
+				"iconColor": "ColorMiscOrganDefault"
 			}
 		},
 		{
@@ -176,7 +176,7 @@
 			"assign": {
 				"iconSource": "AIT/GameIcons/icons.swf",
 				"iconLabel": "misc_eyeball",
-				"iconColor": "#FFFFFF"
+				"iconColor": "ColorMiscOrganEyeball"
 			}
 		},
 		{
@@ -189,7 +189,7 @@
 			"assign": {
 				"iconSource": "AIT/GameIcons/icons.swf",
 				"iconLabel": "misc_heart",
-				"iconColor": "#7B2424"
+				"iconColor": "ColorMiscOrganHeart"
 			}
 		},
 		{
@@ -218,7 +218,7 @@
 				"subTypeDisplay": "$Chitin",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "misc_chitin",
-				"iconColor": "#8B7C5A"
+				"iconColor": "ColorMiscChitin"
 			}
 		},
 		{
@@ -353,7 +353,7 @@
 			"assign": {
 				"subTypeDisplay": "$Leather",
 				"iconLabel": "misc_leather",
-				"iconColor": "#BA8D23"
+				"iconColor": "ColorMiscLeather"
 			}
 		},
 		{
@@ -366,7 +366,7 @@
 			"assign": {
 				"subTypeDisplay": "$Strips",
 				"iconLabel": "misc_strips",
-				"iconColor": "#BA8D23"
+				"iconColor": "ColorMiscLeather"
 			}
 		},
 		{
@@ -379,7 +379,7 @@
 			"assign": {
 				"subTypeDisplay": "$Leather",
 				"iconLabel": "misc_strips",
-				"iconColor": "#78558E"
+				"iconColor": "ColorMiscNetchLeather"
 			}
 		}
 	]

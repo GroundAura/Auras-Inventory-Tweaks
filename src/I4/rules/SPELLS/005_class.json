@@ -17,7 +17,7 @@
 			},
 			"assign": {
 				"magicClassDisplay": "$MagicArcane",
-				"iconColor": "#00BCFF"
+				"iconColor": "ColorSpellArcaneDefault"
 			}
 		},
 		{
@@ -36,7 +36,7 @@
 			},
 			"assign": {
 				"magicClassDisplay": "$MagicArtificer",
-				"iconColor": "#705F32"
+				"iconColor": "ColorSpellArtificer"
 			}
 		},
 		{
@@ -55,7 +55,7 @@
 			},
 			"assign": {
 				"magicClassDisplay": "$MagicAsh",
-				"iconColor": "#AA845E"
+				"iconColor": "ColorSpellAsh"
 			}
 		},
 		{
@@ -74,7 +74,7 @@
 			},
 			"assign": {
 				"magicClassDisplay": "$MagicAstral",
-				"iconColor": "#583FFF"
+				"iconColor": "ColorSpellAstral"
 			}
 		},
 		{
@@ -113,7 +113,7 @@
 			},
 			"assign": {
 				"magicClassDisplay": "$MagicBlood",
-				"iconColor": "#8E2129"
+				"iconColor": "ColorSpellBlood"
 			}
 		},
 		{
@@ -132,7 +132,7 @@
 			},
 			"assign": {
 				"magicClassDisplay": "$MagicDruid",
-				"iconColor": "#6ED117"
+				"iconColor": "ColorSpellDruidGreen"
 			}
 		},
 		{
@@ -151,7 +151,7 @@
 			},
 			"assign": {
 				"magicClassDisplay": "$MagicEarth",
-				"iconColor": "#855A41"
+				"iconColor": "ColorSpellEarth"
 			}
 		},
 		{
@@ -170,7 +170,7 @@
 			},
 			"assign": {
 				"magicClassDisplay": "$MagicEldritch",
-				"iconColor": "#345F4C"
+				"iconColor": "ColorSpellEldritch"
 			}
 		},
 		{
@@ -189,7 +189,7 @@
 			},
 			"assign": {
 				"magicClassDisplay": "$MagicFire",
-				"iconColor": "#C73636"
+				"iconColor": "ColorSpellFireDefault"
 			}
 		},
 		{
@@ -208,7 +208,7 @@
 			},
 			"assign": {
 				"magicClassDisplay": "$MagicFrost",
-				"iconColor": "#1FFBFF"
+				"iconColor": "ColorSpellFrost"
 			}
 		},
 		{
@@ -227,7 +227,7 @@
 			},
 			"assign": {
 				"magicClassDisplay": "$MagicHoly",
-				"iconColor": "#FF8700"
+				"iconColor": "ColorSpellHoly"
 			}
 		},
 		{
@@ -246,7 +246,7 @@
 			},
 			"assign": {
 				"magicClassDisplay": "$MagicMind",
-				"iconColor": "#4C9EA4"
+				"iconColor": "ColorSpellIllusion"
 			}
 		},
 		{
@@ -265,7 +265,7 @@
 			},
 			"assign": {
 				"magicClassDisplay": "$MagicNecromancy",
-				"iconColor": "#20C47D"
+				"iconColor": "ColorSpellNecromancy"
 			}
 		},
 		{
@@ -284,7 +284,7 @@
 			},
 			"assign": {
 				"magicClassDisplay": "$MagicToxin",
-				"iconColor": "#62A636"
+				"iconColor": "ColorSpellPoisonDefault"
 			}
 		},
 		{
@@ -303,7 +303,7 @@
 			},
 			"assign": {
 				"magicClassDisplay": "$MagicShadow",
-				"iconColor": "#9328FF"
+				"iconColor": "ColorSpellShadow"
 			}
 		},
 		{
@@ -322,7 +322,7 @@
 			},
 			"assign": {
 				"magicClassDisplay": "$MagicShock",
-				"iconColor": "#EAAB00"
+				"iconColor": "ColorSpellShockDefault"
 			}
 		},
 		{
@@ -341,7 +341,7 @@
 			},
 			"assign": {
 				"magicClassDisplay": "$MagicWater",
-				"iconColor": "#005493"
+				"iconColor": "ColorSpellWater"
 			}
 		},
 		{
@@ -360,7 +360,7 @@
 			},
 			"assign": {
 				"magicClassDisplay": "$MagicWind",
-				"iconColor": "#CDCBC4"
+				"iconColor": "ColorSpellWind"
 			}
 		},
 		{
@@ -671,7 +671,7 @@
 			},
 			"assign": {
 				"magicClassDisplay": "$MagicSurvival",
-				"iconColor": "#F48037"
+				"iconColor": "ColorSpellSurvivalNeeds"
 			}
 		},
 		{
@@ -690,7 +690,7 @@
 			},
 			"assign": {
 				"magicClassDisplay": "$MagicSurvival",
-				"iconColor": "#E08300"
+				"iconColor": "ColorSpellSurvivalWilderness"
 			}
 		},
 		{

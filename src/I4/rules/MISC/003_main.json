@@ -11,7 +11,7 @@
 			"assign": {
 				"subTypeDisplay": "$ItemMiscArcana",
 				"iconLabel": "soulgem_full",
-				"iconColor": "#00BCFF"
+				"iconColor": "ColorMiscArcana"
 			}
 		},
 		{
@@ -101,7 +101,7 @@
 				"subTypeDisplay": "$ItemMiscCampingGear",
 				"iconSource": "AIT/GameIcons/icons.swf",
 				"iconLabel": "misc_tent",
-				"iconColor": "#BF8E60"
+				"iconColor": "ColorMiscCampingGear"
 			}
 		},
 		{
@@ -255,7 +255,7 @@
 				"subTypeDisplay": "$ItemMiscDye",
 				"iconSource": "AIT/MoreIcons/icons.swf",
 				"iconLabel": "misc_palette",
-				"iconColor": "#FFFFFF"
+				"iconColor": "ColorBase"
 			}
 		},
 		{
@@ -327,7 +327,7 @@
 			"assign": {
 				"subTypeDisplay": "$ItemMiscGemShard",
 				"iconLabel": "soulgem_empty",
-				"iconColor": "#ABA3FF"
+				"iconColor": "ColorMiscSlgmPiece"
 			}
 		},
 		{
@@ -340,7 +340,7 @@
 			"assign": {
 				"subTypeDisplay": "$ItemMiscGemShard",
 				"iconLabel": "soulgem_full",
-				"iconColor": "#ABA3FF"
+				"iconColor": "ColorMiscSlgmPiece"
 			}
 		},
 		{
@@ -397,7 +397,7 @@
 				"subTypeDisplay": "$Ingredient",
 				"iconSource": "AIT/GameIcons/icons.swf",
 				"iconLabel": "misc_herbs",
-				"iconColor": "#216E23"
+				"iconColor": "ColorMiscPlant"
 			}
 		},
 		{
@@ -450,7 +450,7 @@
 			"assign": {
 				"subTypeDisplay": "$Ore",
 				"iconLabel": "misc_ore",
-				"iconColor": "#828282"
+				"iconColor": "ColorMiscMetalDefault"
 			}
 		},
 		{
@@ -464,7 +464,7 @@
 				}
 			},
 			"assign": {
-				"iconColor": "#C73636"
+				"iconColor": "ColorMiscHeartStone"
 			}
 		},
 		{
@@ -473,7 +473,7 @@
 				"formId": "Dragonborn.esm|2B06B"
 			},
 			"assign": {
-				"iconColor": "#1FFBFF"
+				"iconColor": "ColorMiscStalhrim"
 			}
 		},
 		{
@@ -486,7 +486,7 @@
 			"assign": {
 				"subTypeDisplay": "$ItemMiscScrap",
 				"iconLabel": "misc_ingot",
-				"iconColor": "#828282"
+				"iconColor": "ColorMiscMetalDefault"
 			}
 		},
 		{
@@ -503,7 +503,7 @@
 				"subTypeDisplay": "$ItemMiscScrap",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "misc_dwarvenscrap",
-				"iconColor": "#705F32"
+				"iconColor": "ColorMiscMetalDwarven"
 			}
 		},
 		{
@@ -516,7 +516,7 @@
 			"assign": {
 				"subTypeDisplay": "$ItemMiscMaterial",
 				"iconLabel": "misc_clutter",
-				"iconColor": "#FFFFFF"
+				"iconColor": "ColorBase"
 			}
 		},
 		{
@@ -528,7 +528,7 @@
 			},
 			"assign": {
 				"iconLabel": "misc_ingot",
-				"iconColor": "#828282"
+				"iconColor": "ColorMiscMetalDefault"
 			}
 		},
 		{
@@ -541,7 +541,7 @@
 			"assign": {
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "magic_earth",
-				"iconColor": "#828282"
+				"iconColor": "ColorMiscStone"
 			}
 		},
 		{
@@ -558,7 +558,7 @@
 			"assign": {
 				"subTypeDisplay": "$Wood",
 				"iconLabel": "misc_wood",
-				"iconColor": "#705842"
+				"iconColor": "ColorMiscWood"
 			}
 		},
 		{
@@ -696,7 +696,7 @@
 			},
 			"assign": {
 				"subTypeDisplay": "$ItemFoodAlcohol",
-				"iconColor": "#FFC878"
+				"iconColor": "ColorFoodDrinkAlcohol"
 			}
 		},
 		{
@@ -709,7 +709,7 @@
 			"assign": {
 				"subTypeDisplay": "$Poison",
 				"iconLabel": "potion_poison",
-				"iconColor": "#AD00B3"
+				"iconColor": "ColorPotionPoison"
 			}
 		},
 		{
@@ -721,7 +721,7 @@
 			},
 			"assign": {
 				"subTypeDisplay": "$ItemFoodPoisoned",
-				"iconColor": "#AD00B3"
+				"iconColor": "ColorFoodPoisoned"
 			}
 		},
 		{
@@ -757,7 +757,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#705F32"
+				"iconColor": "ColorMiscPotteryDwarven"
 			}
 		},
 		{
@@ -770,7 +770,7 @@
 			"assign": {
 				"subTypeDisplay": "$ItemMiscQuiver",
 				"iconLabel": "weapon_arrow",
-				"iconColor": "#A89E8C"
+				"iconColor": "ColorMiscQuiver"
 			}
 		},
 		{
@@ -808,7 +808,7 @@
 			"assign": {
 				"subTypeDisplay": "$ItemFoodSnow",
 				"iconLabel": "magic_frost",
-				"iconColor": "#FFFFFF"
+				"iconColor": "ColorMiscSnow"
 			}
 		},
 		{
@@ -822,7 +822,7 @@
 				"subTypeDisplay": "$ItemMiscSoap",
 				"iconSource": "AIT/GameIcons/icons.swf",
 				"iconLabel": "misc_soap",
-				"iconColor": "#FFCC99"
+				"iconColor": "ColorMiscSoap"
 			}
 		},
 		{
@@ -836,7 +836,7 @@
 				"subTypeDisplay": "$ItemFoodSpoiled",
 				"iconSource": "AIT/MoreIcons/icons.swf",
 				"iconLabel": "food_stew",
-				"iconColor": "#4D3911"
+				"iconColor": "ColorMiscSpoiled"
 			}
 		},
 		{
@@ -883,7 +883,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#705F32"
+				"iconColor": "ColorMiscTablewearDwarven"
 			}
 		},
 		{
@@ -897,7 +897,7 @@
 				"subTypeDisplay": "$Tool",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "misc_tool",
-				"iconColor": "#FFFFFF"
+				"iconColor": "ColorBase"
 			}
 		},
 		{
@@ -915,7 +915,7 @@
 				"subTypeDisplay": "$ItemMiscAlchemy",
 				"iconSource": "AIT/Aura/icons.swf",
 				"iconLabel": "misc_mortar",
-				"iconColor": "#059142"
+				"iconColor": "ColorMiscToolAlchemy"
 			}
 		},
 		{
@@ -929,7 +929,7 @@
 				"subTypeDisplay": "$ItemMiscAlchemy",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "misc_dwarvenscrap",
-				"iconColor": "#705F32"
+				"iconColor": "ColorMiscToolDwarven"
 			}
 		},
 		{
@@ -1025,7 +1025,7 @@
 				"subTypeDisplay": "$ItemMiscCandle",
 				"iconSource": "AIT/GameIcons/icons.swf",
 				"iconLabel": "misc_candle",
-				"iconColor": "#FFAA00"
+				"iconColor": "ColorMiscLight"
 			}
 		},
 		{
@@ -1041,7 +1041,7 @@
 				"itemSort": "2",
 				"subTypeDisplay": "$Torch",
 				"iconLabel": "misc_torch",
-				"iconColor": "#FFAA00"
+				"iconColor": "ColorMiscLight"
 			}
 		},
 		{
@@ -1194,7 +1194,7 @@
 				"subTypeDisplay": "$ItemMiscTrap",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "misc_beartrap",
-				"iconColor": "#BF8E60"
+				"iconColor": "ColorMiscTrap"
 			}
 		},
 		{
@@ -1248,7 +1248,7 @@
 				"subTypeDisplay": "$ItemMiscWashcloth",
 				"iconSource": "AIT/GameIcons/icons.swf",
 				"iconLabel": "misc_cloth",
-				"iconColor": "#FFCC99"
+				"iconColor": "ColorMiscWashcloth"
 			}
 		},
 		{

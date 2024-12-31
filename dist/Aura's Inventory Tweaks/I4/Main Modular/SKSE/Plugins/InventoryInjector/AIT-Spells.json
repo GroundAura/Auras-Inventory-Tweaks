@@ -1863,7 +1863,8 @@
 			"assign": {
 				"magicClassDisplay": "$MagicArcane",
 				"subTypeDisplay": "$MagicWard",
-				"iconLabel": "default_armor"
+				"iconLabel": "default_armor",
+				"iconColor": "#8F6B46"
 			}
 		},
 		{
@@ -3867,10 +3868,10 @@
 				]
 			},
 			"assign": {
-				"magicClassDisplay": "$MagicDruid",
+				"magicClassDisplay": "$MagicEldritch",
 				"subTypeDisplay": "$MagicEnhance",
 				"iconLabel": "default_alteration",
-				"iconColor": "#6ED117"
+				"iconColor": "#345F4C"
 			}
 		},
 		{

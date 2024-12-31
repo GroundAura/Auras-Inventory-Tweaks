@@ -16,7 +16,7 @@
 				"itemSort": "2",
 				"subTypeDisplay": "$ItemAmmoDart",
 				"iconLabel": "weapon_bolt",
-				"iconColor": "#A4A5BF"
+				"iconColor": "ColorAmmoDart"
 			}
 		},
 		{
@@ -38,7 +38,7 @@
 				"subTypeDisplay": "$ItemWeaponKunai",
 				"iconSource": "AIT/GameIcons/icons.swf",
 				"iconLabel": "weapon_kunai",
-				"iconColor": "#A4A5BF"
+				"iconColor": "ColorWeaponThrownDefault"
 			}
 		},
 		{
@@ -60,7 +60,7 @@
 				"subTypeDisplay": "$ItemWeaponShuriken",
 				"iconSource": "AIT/GameIcons/icons.swf",
 				"iconLabel": "weapon_shuriken",
-				"iconColor": "#A4A5BF"
+				"iconColor": "ColorWeaponThrownDefault"
 			}
 		}
 	]

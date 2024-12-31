@@ -9,7 +9,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#0099CC"
+				"iconColor": "ColorRarityAedric"
 			}
 		},
 		{
@@ -20,7 +20,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#A14040"
+				"iconColor": "ColorRarityDaedric"
 			}
 		},
 		{
@@ -31,7 +31,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#345F4C"
+				"iconColor": "ColorSpellEldritch"
 			}
 		}
 	]

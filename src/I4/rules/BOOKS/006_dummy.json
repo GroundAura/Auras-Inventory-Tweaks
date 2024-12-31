@@ -87,7 +87,7 @@
 			"assign": {
 				"iconSource": "AIT/MoreIcons/icons.swf",
 				"iconLabel": "food_stew",
-				"iconColor": "#705F32"
+				"iconColor": "ColorMiscMetalDwarven"
 			}
 		},
 		{
@@ -112,7 +112,7 @@
 			"assign": {
 				"iconSource": "AIT/MoreIcons/icons.swf",
 				"iconLabel": "food_stew",
-				"iconColor": "#C73636"
+				"iconColor": "ColorIngrFire"
 			}
 		},
 		{
@@ -136,7 +136,7 @@
 			"assign": {
 				"iconSource": "AIT/GameIcons/icons.swf",
 				"iconLabel": "food_mushroom",
-				"iconColor": "#634538"
+				"iconColor": "ColorIngrMushroom"
 			}
 		},
 		{
@@ -163,7 +163,7 @@
 			"assign": {
 				"iconSource": "AIT/GameIcons/icons.swf",
 				"iconLabel": "misc_herbs",
-				"iconColor": "#216E23"
+				"iconColor": "ColorIngrPlant"
 			}
 		},
 		{
@@ -176,7 +176,7 @@
 			"assign": {
 				"iconSource": "AIT/GameIcons/icons.swf",
 				"iconLabel": "misc_herbs",
-				"iconColor": "#634538"
+				"iconColor": "ColorIngrRoot"
 			}
 		},
 		{
@@ -188,7 +188,7 @@
 			},
 			"assign": {
 				"iconLabel": "misc_wood",
-				"iconColor": "#705842"
+				"iconColor": "ColorMiscWood"
 			}
 		},
 		{
@@ -214,7 +214,7 @@
 			},
 			"assign": {
 				"iconLabel": "magic_fire",
-				"iconColor": "#C73636"
+				"iconColor": "ColorSpellFireDefault"
 			}
 		},
 		{
@@ -227,7 +227,7 @@
 			"assign": {
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "magic_earth",
-				"iconColor": "#828282"
+				"iconColor": "ColorMiscStone"
 			}
 		}
 	]

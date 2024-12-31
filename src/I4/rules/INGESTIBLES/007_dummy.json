@@ -12,7 +12,7 @@
 				"subTypeDisplay": "$ItemFoodEggMagic",
 				"iconSource": "AIT/GameIcons/icons.swf",
 				"iconLabel": "food_magicegg",
-				"iconColor": "#CCCC33"
+				"iconColor": "ColorFoodEggMagic"
 			}
 		},
 		{
@@ -32,7 +32,7 @@
 				"subTypeDisplay": "$ItemWeaponBomb",
 				"iconSource": "AIT/MoreIcons/icons.swf",
 				"iconLabel": "weapon_bomb",
-				"iconColor": "#A4A5BF"
+				"iconColor": "ColorWeaponThrownDefault"
 			}
 		},
 		{
@@ -49,7 +49,7 @@
 				"subTypeDisplay": "$ItemMiscCampingGear",
 				"iconSource": "AIT/GameIcons/icons.swf",
 				"iconLabel": "misc_tent",
-				"iconColor": "#BF8E60"
+				"iconColor": "ColorMiscCampingGear"
 			}
 		},
 		{

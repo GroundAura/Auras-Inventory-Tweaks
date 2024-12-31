@@ -13,7 +13,7 @@
 			},
 			"assign": {
 				"canHoldNPCSoul": "1",
-				"iconColor": "#7569FF"
+				"iconColor": "ColorSlgmBlack"
 			}
 		}
 	]

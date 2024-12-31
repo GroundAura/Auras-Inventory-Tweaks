@@ -104,7 +104,7 @@
 			"assign": {
 				"subTypeDisplay": "$Map",
 				"iconLabel": "book_map",
-				"iconColor": "#C2A487"
+				"iconColor": "ColorMiscMap"
 			}
 		},
 		{

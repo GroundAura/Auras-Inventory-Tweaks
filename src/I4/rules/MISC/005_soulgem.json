@@ -10,7 +10,7 @@
 			},
 			"assign": {
 				"iconLabel": "soulgem_empty",
-				"iconColor": "#ABA3FF"
+				"iconColor": "ColorSlgmDefault"
 			}
 		},
 		{
@@ -25,7 +25,7 @@
 				"gemSize": "5",
 				"subTypeDisplay": "$Soul Gem",
 				"iconLabel": "soulgem_grandempty",
-				"iconColor": "#ABA3FF"
+				"iconColor": "ColorSlgmGrand"
 			}
 		},
 		{
@@ -41,7 +41,7 @@
 				"canHoldNPCSoul": "1",
 				"subTypeDisplay": "$Soul Gem",
 				"iconLabel": "soulgem_empty",
-				"iconColor": "#7569FF"
+				"iconColor": "ColorSlgmBlack"
 			}
 		},
 		{
@@ -52,7 +52,7 @@
 			"assign": {
 				"subTypeDisplay": "$Soul Gem",
 				"iconLabel": "soulgem_empty",
-				"iconColor": "#7569FF"
+				"iconColor": "ColorSlgmBlack"
 			}
 		},
 		{
@@ -66,7 +66,7 @@
 				"canHoldNPCSoul": "1",
 				"subTypeDisplay": "$ItemMiscSoulEssenceGem",
 				"iconLabel": "soulgem_partial",
-				"iconColor": "#7569FF"
+				"iconColor": "ColorSlgmBlack"
 			}
 		}
 	]

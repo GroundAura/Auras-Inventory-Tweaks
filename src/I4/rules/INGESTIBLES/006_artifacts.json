@@ -13,7 +13,7 @@
 				"subTypeDisplay": "$Artifact",
 				"iconSource": "AIT/GameIcons/icons.swf",
 				"iconLabel": "misc_amphora",
-				"iconColor": "#A14040"
+				"iconColor": "ColorIngrDaedric"
 			}
 		},
 		{
@@ -42,7 +42,7 @@
 				"subTypeDisplay": "$ItemMiscAyleidCrystal",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "soulgem_ayleidcrystalfull",
-				"iconColor": "#5BC4C9"
+				"iconColor": "ColorMiscAyleidCrystal"
 			}
 		},
 		{
@@ -56,7 +56,7 @@
 				"subTypeDisplay": "$ItemMiscRelic",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "misc_dwarvenscrap",
-				"iconColor": "#705F32"
+				"iconColor": "ColorMiscMetalDwarven"
 			}
 		}
 	]

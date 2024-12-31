@@ -13,7 +13,7 @@
 				"itemSort": "0",
 				"subTypeDisplay": "$ItemPlaceholderFilter",
 				"iconLabel": "default_book_read",
-				"iconColor": "#FFFFFF"
+				"iconColor": "ColorBase"
 			}
 		},
 		{
@@ -31,7 +31,7 @@
 				"subTypeDisplay": "$ItemPlaceholderBuild",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "misc_housepart",
-				"iconColor": "#FFFFFF"
+				"iconColor": "ColorBase"
 			}
 		},
 		{
@@ -46,7 +46,7 @@
 				"itemSort": "0",
 				"subTypeDisplay": "$ItemPlaceholderLearn",
 				"iconLabel": "default_book_read",
-				"iconColor": "#FFFFFF"
+				"iconColor": "ColorBase"
 			}
 		},
 		{
@@ -78,7 +78,7 @@
 				"subTypeDisplay": "$ItemAmmoBullet",
 				"iconSource": "AIT/MoreIcons/icons.swf",
 				"iconLabel": "weapon_bullet",
-				"iconColor": "#A89E8C"
+				"iconColor": "ColorAmmoBullet"
 			}
 		}
 	]

@@ -13,7 +13,7 @@
 				"itemSort": "0",
 				"subTypeDisplay": "$ItemPlaceholderLearn",
 				"iconLabel": "default_book_read",
-				"iconColor": "#FFFFFF"
+				"iconColor": "ColorBase"
 			}
 		}
 	]

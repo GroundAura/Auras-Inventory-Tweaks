@@ -16,7 +16,7 @@
 				"subTypeDisplay": "$ItemMiscAyleidCrystal",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "soulgem_ayleidcrystalempty",
-				"iconColor": "#5BC4C9"
+				"iconColor": "ColorSlgmAyleid"
 			}
 		},
 		{
@@ -34,7 +34,7 @@
 				"subTypeDisplay": "$ItemMiscAyleidCrystal",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "soulgem_ayleidcrystalpartial",
-				"iconColor": "#5BC4C9"
+				"iconColor": "ColorSlgmAyleid"
 			}
 		},
 		{
@@ -52,7 +52,7 @@
 				"subTypeDisplay": "$ItemMiscAyleidCrystal",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "soulgem_ayleidcrystalfull",
-				"iconColor": "#5BC4C9"
+				"iconColor": "ColorSlgmAyleid"
 			}
 		},
 		{
@@ -66,7 +66,7 @@
 				"subTypeDisplay": "$ItemMiscSigilStone",
 				"iconSource": "AIT/Aura/icons.swf",
 				"iconLabel": "misc_artifactdaedra",
-				"iconColor": "#A14040"
+				"iconColor": "ColorSlgmSigilStone"
 			}
 		},
 		{
@@ -81,7 +81,7 @@
 				"subTypeDisplay": "$ItemMiscSoulTomato",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "soulgem_tomatoempty",
-				"iconColor": "#7A0505"
+				"iconColor": "ColorSlgmTomato"
 			}
 		},
 		{
@@ -96,7 +96,7 @@
 				"subTypeDisplay": "$ItemMiscSoulTomato",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "soulgem_tomatopartial",
-				"iconColor": "#7A0505"
+				"iconColor": "ColorSlgmTomato"
 			}
 		},
 		{
@@ -111,7 +111,7 @@
 				"subTypeDisplay": "$ItemMiscSoulTomato",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "soulgem_tomatofull",
-				"iconColor": "#7A0505"
+				"iconColor": "ColorSlgmTomato"
 			}
 		}
 	]

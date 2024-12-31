@@ -213,7 +213,7 @@
 				"subTypeDisplay": "$MagicAction",
 				"iconSource": "Dodo/powers.swf",
 				"iconLabel": "power_instincts",
-				"iconColor": "#705F32"
+				"iconColor": "ColorSpellArtificer"
 			}
 		},
 		{
@@ -543,7 +543,7 @@
 				"subTypeDisplay": "$MagicAction",
 				"iconSource": "Dodo/powers.swf",
 				"iconLabel": "power_commandfollowers",
-				"iconColor": "#FFFFFF"
+				"iconColor": "ColorSpellSpeech"
 			}
 		},
 		{
@@ -565,7 +565,7 @@
 				"subTypeDisplay": "$MagicConfig",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "misc_dwarvenscrap",
-				"iconColor": "#FFFFFF"
+				"iconColor": "ColorSpellConfig"
 			}
 		},
 		{
@@ -590,7 +590,7 @@
 				"subTypeDisplay": "$MagicConfig",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "misc_dwarvenscrap",
-				"iconColor": "#FFFFFF"
+				"iconColor": "ColorSpellConfig"
 			}
 		},
 		{
@@ -616,7 +616,7 @@
 				"subTypeDisplay": "$MagicAbsorb",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "magic_vampire",
-				"iconColor": "#2E9FDB"
+				"iconColor": "ColorSpellMagicka"
 			}
 		},
 		{
@@ -642,7 +642,7 @@
 				"subTypeDisplay": "$MagicAbsorb",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "magic_vampire",
-				"iconColor": "#00AC00"
+				"iconColor": "ColorSpellStamina"
 			}
 		},
 		{
@@ -681,7 +681,7 @@
 			"assign": {
 				"magicClassDisplay": "$MagicDruid",
 				"subTypeDisplay": "$MagicAssist",
-				"iconColor": "#FF7AAC"
+				"iconColor": "ColorSpellDruidPink"
 			}
 		},
 		{
@@ -701,7 +701,7 @@
 			"assign": {
 				"magicClassDisplay": "$MagicDruid",
 				"subTypeDisplay": "$MagicAssist",
-				"iconColor": "#FF7AAC"
+				"iconColor": "ColorSpellDruidPink"
 			}
 		},
 		{
@@ -722,7 +722,7 @@
 				"magicClassDisplay": "$MagicNecromancy",
 				"subTypeDisplay": "$MagicAssist",
 				"iconLabel": "misc_remains",
-				"iconColor": "#20C47D"
+				"iconColor": "ColorSpellNecromancy"
 			}
 		},
 		{
@@ -767,7 +767,7 @@
 				"magicClassDisplay": "$MagicAstral",
 				"subTypeDisplay": "$MagicCounter",
 				"iconLabel": "default_armor",
-				"iconColor": "#583FFF"
+				"iconColor": "ColorSpellAstral"
 			}
 		},
 		{
@@ -788,7 +788,7 @@
 				"magicClassDisplay": "$MagicDruid",
 				"subTypeDisplay": "$MagicCounter",
 				"iconLabel": "default_armor",
-				"iconColor": "#8E2129"
+				"iconColor": "ColorSpellBlood"
 			}
 		},
 		{
@@ -809,7 +809,7 @@
 				"magicClassDisplay": "$MagicDruid",
 				"subTypeDisplay": "$MagicCounter",
 				"iconLabel": "default_armor",
-				"iconColor": "#6ED117"
+				"iconColor": "ColorSpellDruidGreen"
 			}
 		},
 		{
@@ -830,7 +830,7 @@
 				"magicClassDisplay": "$MagicDruid",
 				"subTypeDisplay": "$MagicCounter",
 				"iconLabel": "default_restoration",
-				"iconColor": "#6ED117"
+				"iconColor": "ColorSpellDruidGreen"
 			}
 		},
 		{
@@ -851,7 +851,7 @@
 				"magicClassDisplay": "$MagicFire",
 				"subTypeDisplay": "$MagicCounter",
 				"iconLabel": "default_restoration",
-				"iconColor": "#C73636"
+				"iconColor": "ColorSpellFireDefault"
 			}
 		},
 		{
@@ -911,7 +911,7 @@
 				"subTypeDisplay": "$MagicDismantle",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "misc_dwarvenscrap",
-				"iconColor": "#705F32"
+				"iconColor": "ColorSpellArtificer"
 			}
 		},
 		{
@@ -931,7 +931,7 @@
 			"assign": {
 				"magicClassDisplay": "$MagicDruid",
 				"subTypeDisplay": "$MagicCurse",
-				"iconColor": "#6ED117"
+				"iconColor": "ColorSpellDruidGreen"
 			}
 		},
 		{
@@ -952,7 +952,7 @@
 				"magicClassDisplay": "$MagicNecromancy",
 				"subTypeDisplay": "$MagicCurse",
 				"iconLabel": "misc_remains",
-				"iconColor": "#20C47D"
+				"iconColor": "ColorSpellNecromancy"
 			}
 		},
 		{
@@ -972,7 +972,7 @@
 			"assign": {
 				"magicClassDisplay": "$MagicShadow",
 				"subTypeDisplay": "$MagicCurse",
-				"iconColor": "#9328FF"
+				"iconColor": "ColorSpellShadow"
 			}
 		},
 		{
@@ -996,7 +996,7 @@
 				"magicClassDisplay": "$MagicArcane",
 				"subTypeDisplay": "$MagicArcane",
 				"iconLabel": "default_destruction",
-				"iconColor": "#00BCFF"
+				"iconColor": "ColorSpellArcaneDefault"
 			}
 		},
 		{
@@ -1020,7 +1020,7 @@
 				"magicClassDisplay": "$MagicArcane",
 				"subTypeDisplay": "$MagicArcane",
 				"iconLabel": "magic_fire",
-				"iconColor": "#00BCFF"
+				"iconColor": "ColorSpellArcaneFire"
 			}
 		},
 		{
@@ -1043,7 +1043,7 @@
 			"assign": {
 				"magicClassDisplay": "$MagicAsh",
 				"subTypeDisplay": "$MagicAsh",
-				"iconColor": "#AA845E"
+				"iconColor": "ColorSpellAsh"
 			}
 		},
 		{
@@ -1067,7 +1067,7 @@
 				"magicClassDisplay": "$MagicAsh",
 				"subTypeDisplay": "$MagicFire",
 				"iconLabel": "magic_fire",
-				"iconColor": "#FF3C00"
+				"iconColor": "ColorSpellVolcanic"
 			}
 		},
 		{
@@ -1092,7 +1092,7 @@
 				"subTypeDisplay": "$MagicAstral",
 				"iconSource": "I4IconAstral/icons.swf",
 				"iconLabel": "magic_astral3",
-				"iconColor": "#583FFF"
+				"iconColor": "ColorSpellAstral"
 			}
 		},
 		{
@@ -1117,7 +1117,7 @@
 				"subTypeDisplay": "$MagicBlood",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "magic_vampire",
-				"iconColor": "#8E2129"
+				"iconColor": "ColorSpellBlood"
 			}
 		},
 		{
@@ -1141,7 +1141,7 @@
 				"magicClassDisplay": "$MagicBlood",
 				"subTypeDisplay": "$MagicBloodstorm",
 				"iconLabel": "magic_shock",
-				"iconColor": "#8E2129"
+				"iconColor": "ColorSpellBlood"
 			}
 		},
 		{
@@ -1166,7 +1166,7 @@
 				"subTypeDisplay": "$MagicDismantle",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "misc_dwarvenscrap",
-				"iconColor": "#705F32"
+				"iconColor": "ColorSpellArtificer"
 			}
 		},
 		{
@@ -1190,7 +1190,7 @@
 				"magicClassDisplay": "$MagicToxin",
 				"subTypeDisplay": "$MagicDisease",
 				"iconLabel": "misc_remains",
-				"iconColor": "#62A636"
+				"iconColor": "ColorSpellDisease"
 			}
 		},
 		{
@@ -1215,7 +1215,7 @@
 				"subTypeDisplay": "$MagicEarth",
 				"iconSource": "IAmNotSimon/Earth.swf",
 				"iconLabel": "magic_earth",
-				"iconColor": "#855A41"
+				"iconColor": "ColorSpellEarth"
 			}
 		},
 		{
@@ -1239,7 +1239,7 @@
 				"magicClassDisplay": "$MagicFire",
 				"subTypeDisplay": "$MagicFire",
 				"iconLabel": "magic_fire",
-				"iconColor": "#C73636"
+				"iconColor": "ColorSpellFireDefault"
 			}
 		},
 		{
@@ -1260,7 +1260,7 @@
 				"magicClassDisplay": "$MagicRacial",
 				"iconSource": "IAmNotSimon/RacialIcons.swf",
 				"iconLabel": "race_dunmer",
-				"iconColor": "#C73636"
+				"iconColor": "ColorSpellFireDefault"
 			}
 		},
 		{
@@ -1284,7 +1284,7 @@
 				"magicClassDisplay": "$MagicFire",
 				"subTypeDisplay": "$MagicChaos",
 				"iconLabel": "default_destruction",
-				"iconColor": "#EAAB00"
+				"iconColor": "ColorSpellFireShockDefault"
 			}
 		},
 		{
@@ -1308,7 +1308,7 @@
 				"magicClassDisplay": "$MagicFire",
 				"subTypeDisplay": "$MagicChaos",
 				"iconLabel": "default_destruction",
-				"iconColor": "#EAAB00"
+				"iconColor": "ColorSpellFireShockFrost"
 			}
 		},
 		{
@@ -1354,7 +1354,7 @@
 				"magicClassDisplay": "$MagicFrost",
 				"subTypeDisplay": "$MagicFrost",
 				"iconLabel": "magic_frost",
-				"iconColor": "#1FFBFF"
+				"iconColor": "ColorSpellFrost"
 			}
 		},
 		{
@@ -1378,7 +1378,7 @@
 				"magicClassDisplay": "$MagicFrost",
 				"subTypeDisplay": "$MagicColdfire",
 				"iconLabel": "magic_fire",
-				"iconColor": "#1FFBFF"
+				"iconColor": "ColorSpellColdFire"
 			}
 		},
 		{
@@ -1403,7 +1403,7 @@
 				"subTypeDisplay": "$MagicSun",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "magic_sun",
-				"iconColor": "#FF8700"
+				"iconColor": "ColorSpellSun"
 			}
 		},
 		{
@@ -1428,7 +1428,7 @@
 				"subTypeDisplay": "$MagicAstral",
 				"iconSource": "I4IconAstral/icons.swf",
 				"iconLabel": "magic_astral3",
-				"iconColor": "#583FFF"
+				"iconColor": "ColorSpellAstral"
 			}
 		},
 		{
@@ -1453,7 +1453,7 @@
 				"subTypeDisplay": "$MagicLunar",
 				"iconSource": "I4IconLunaris/icons.swf",
 				"iconLabel": "magic_lunar",
-				"iconColor": "#1FFBFF"
+				"iconColor": "ColorSpellLunar"
 			}
 		},
 		{
@@ -1478,7 +1478,7 @@
 				"subTypeDisplay": "$MagicLight",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "magic_sun",
-				"iconColor": "#68FBFF"
+				"iconColor": "ColorSpellMagelight"
 			}
 		},
 		{
@@ -1502,7 +1502,7 @@
 				"magicClassDisplay": "$MagicNecromancy",
 				"subTypeDisplay": "$MagicNecrotic",
 				"iconLabel": "misc_remains",
-				"iconColor": "#20C47D"
+				"iconColor": "ColorSpellNecromancy"
 			}
 		},
 		{
@@ -1527,7 +1527,7 @@
 				"subTypeDisplay": "$MagicNecroticFire",
 				"iconSource": "I4IconDesecration/icons.swf",
 				"iconLabel": "magic_desecration",
-				"iconColor": "#20C47D"
+				"iconColor": "ColorSpellNecromancy"
 			}
 		},
 		{
@@ -1551,7 +1551,7 @@
 				"magicClassDisplay": "$MagicShadow",
 				"subTypeDisplay": "$MagicShadow",
 				"iconLabel": "default_destruction",
-				"iconColor": "#9328FF"
+				"iconColor": "ColorSpellShadow"
 			}
 		},
 		{
@@ -1575,7 +1575,7 @@
 				"magicClassDisplay": "$MagicShock",
 				"subTypeDisplay": "$MagicShock",
 				"iconLabel": "magic_shock",
-				"iconColor": "#EAAB00"
+				"iconColor": "ColorSpellShockDefault"
 			}
 		},
 		{
@@ -1599,7 +1599,7 @@
 				"magicClassDisplay": "$MagicShock",
 				"subTypeDisplay": "$MagicShock",
 				"iconLabel": "magic_shock",
-				"iconColor": "#FF8000"
+				"iconColor": "ColorSpellShockArc"
 			}
 		},
 		{
@@ -1624,7 +1624,7 @@
 				"subTypeDisplay": "$MagicStorm",
 				"iconSource": "I4IconStormcalling/icons.swf",
 				"iconLabel": "magic_stormcalling",
-				"iconColor": "#EAAB00"
+				"iconColor": "ColorSpellShockStorm"
 			}
 		},
 		{
@@ -1673,7 +1673,7 @@
 				"subTypeDisplay": "$MagicPoison",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "magic_water",
-				"iconColor": "#62A636"
+				"iconColor": "ColorSpellPoisonDefault"
 			}
 		},
 		{
@@ -1698,7 +1698,7 @@
 				"subTypeDisplay": "$MagicPoison",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "scroll_spider",
-				"iconColor": "#6ED117"
+				"iconColor": "ColorSpellPoisonBug"
 			}
 		},
 		{
@@ -1720,7 +1720,7 @@
 				"subTypeDisplay": "$MagicPoison",
 				"iconSource": "IAmNotSimon/StandingStone.swf",
 				"iconLabel": "effect_stone",
-				"iconColor": "#62A636"
+				"iconColor": "ColorSpellPoisonDefault"
 			}
 		},
 		{
@@ -1745,7 +1745,7 @@
 				"subTypeDisplay": "$MagicPoison",
 				"iconSource": "I4IconNecrom/icons.swf",
 				"iconLabel": "magic_necrom",
-				"iconColor": "#345F4C"
+				"iconColor": "ColorSpellPoisonEldritch"
 			}
 		},
 		{
@@ -1770,7 +1770,7 @@
 				"subTypeDisplay": "$MagicSteam",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "magic_wind",
-				"iconColor": "#C73636"
+				"iconColor": "ColorSpellSteam"
 			}
 		},
 		{
@@ -1795,7 +1795,7 @@
 				"subTypeDisplay": "$MagicWater",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "magic_water",
-				"iconColor": "#005493"
+				"iconColor": "ColorSpellWater"
 			}
 		},
 		{
@@ -1820,7 +1820,7 @@
 				"subTypeDisplay": "$MagicWind",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "magic_wind",
-				"iconColor": "#CDCBC4"
+				"iconColor": "ColorSpellWind"
 			}
 		},
 		{
@@ -1901,7 +1901,7 @@
 				"magicClassDisplay": "$MagicNecromancy",
 				"subTypeDisplay": "$MagicEnhance",
 				"iconLabel": "misc_remains",
-				"iconColor": "#20C47D"
+				"iconColor": "ColorMiscNecromancy"
 			}
 		},
 		{
@@ -1962,7 +1962,7 @@
 				"magicClassDisplay": "$MagicDruid",
 				"subTypeDisplay": "$MagicEnhance",
 				"iconLabel": "default_alteration",
-				"iconColor": "#6ED117"
+				"iconColor": "ColorSpellDruidGreen"
 			}
 		},
 		{
@@ -1980,10 +1980,10 @@
 				]
 			},
 			"assign": {
-				"magicClassDisplay": "$MagicDruid",
+				"magicClassDisplay": "$MagicEldritch",
 				"subTypeDisplay": "$MagicEnhance",
 				"iconLabel": "default_alteration",
-				"iconColor": "#6ED117"
+				"iconColor": "ColorSpellEldritch"
 			}
 		},
 		{
@@ -2003,7 +2003,7 @@
 			"assign": {
 				"magicClassDisplay": "$MagicShadow",
 				"subTypeDisplay": "$MagicEnhance",
-				"iconColor": "#9328FF"
+				"iconColor": "ColorSpellShadow"
 			}
 		},
 		{
@@ -2043,7 +2043,7 @@
 				"magicClassDisplay": "$MagicArcane",
 				"subTypeDisplay": "$MagicEnhance",
 				"iconLabel": "default_alteration",
-				"iconColor": "#00BCFF"
+				"iconColor": "ColorSpellArcaneDefault"
 			}
 		},
 		{
@@ -2064,7 +2064,7 @@
 				"magicClassDisplay": "$MagicAsh",
 				"subTypeDisplay": "$MagicEnhance",
 				"iconLabel": "default_alteration",
-				"iconColor": "#FF3C00"
+				"iconColor": "ColorSpellVolcanic"
 			}
 		},
 		{
@@ -2085,7 +2085,7 @@
 				"magicClassDisplay": "$MagicBlood",
 				"subTypeDisplay": "$MagicEnhance",
 				"iconLabel": "default_alteration",
-				"iconColor": "#8E2129"
+				"iconColor": "ColorSpellBlood"
 			}
 		},
 		{
@@ -2106,7 +2106,7 @@
 				"magicClassDisplay": "$MagicDruid",
 				"subTypeDisplay": "$MagicEnhance",
 				"iconLabel": "default_alteration",
-				"iconColor": "#8E2129"
+				"iconColor": "ColorSpellBlood"
 			}
 		},
 		{
@@ -2126,7 +2126,7 @@
 			"assign": {
 				"magicClassDisplay": "$MagicDruid",
 				"subTypeDisplay": "$MagicEnhance",
-				"iconColor": "#FF7AAC"
+				"iconColor": "ColorSpellDruidPink"
 			}
 		},
 		{
@@ -2147,7 +2147,7 @@
 				"magicClassDisplay": "$MagicFire",
 				"subTypeDisplay": "$MagicEnhance",
 				"iconLabel": "default_alteration",
-				"iconColor": "#C73636"
+				"iconColor": "ColorSpellFireDefault"
 			}
 		},
 		{
@@ -2168,7 +2168,7 @@
 				"magicClassDisplay": "$MagicFrost",
 				"subTypeDisplay": "$MagicEnhance",
 				"iconLabel": "default_alteration",
-				"iconColor": "#1FFBFF"
+				"iconColor": "ColorSpellFrost"
 			}
 		},
 		{
@@ -2189,7 +2189,7 @@
 				"magicClassDisplay": "$MagicAstral",
 				"subTypeDisplay": "$MagicEnhance",
 				"iconLabel": "default_alteration",
-				"iconColor": "#583FFF"
+				"iconColor": "ColorSpellAstral"
 			}
 		},
 		{
@@ -2210,7 +2210,7 @@
 				"magicClassDisplay": "$MagicHoly",
 				"subTypeDisplay": "$MagicEnhance",
 				"iconLabel": "default_alteration",
-				"iconColor": "#1FFBFF"
+				"iconColor": "ColorSpellLunar"
 			}
 		},
 		{
@@ -2231,7 +2231,7 @@
 				"magicClassDisplay": "$MagicToxin",
 				"subTypeDisplay": "$MagicEnhance",
 				"iconLabel": "default_alteration",
-				"iconColor": "#62A636"
+				"iconColor": "ColorSpellPoisonDefault"
 			}
 		},
 		{
@@ -2252,7 +2252,7 @@
 				"magicClassDisplay": "$MagicEldritch",
 				"subTypeDisplay": "$MagicEnhance",
 				"iconLabel": "default_alteration",
-				"iconColor": "#345F4C"
+				"iconColor": "ColorSpellPoisonEldritch"
 			}
 		},
 		{
@@ -2273,7 +2273,7 @@
 				"magicClassDisplay": "$MagicShadow",
 				"subTypeDisplay": "$MagicEnhance",
 				"iconLabel": "default_alteration",
-				"iconColor": "#9328FF"
+				"iconColor": "ColorSpellShadow"
 			}
 		},
 		{
@@ -2294,7 +2294,7 @@
 				"magicClassDisplay": "$MagicShock",
 				"subTypeDisplay": "$MagicEnhance",
 				"iconLabel": "default_alteration",
-				"iconColor": "#EAAB00"
+				"iconColor": "ColorSpellShockDefault"
 			}
 		},
 		{
@@ -2315,7 +2315,7 @@
 				"magicClassDisplay": "$MagicShock",
 				"subTypeDisplay": "$MagicEnhance",
 				"iconLabel": "default_alteration",
-				"iconColor": "#FF8000"
+				"iconColor": "ColorSpellShockArc"
 			}
 		},
 		{
@@ -2337,7 +2337,7 @@
 				"subTypeDisplay": "$MagicEnhance",
 				"iconSource": "BOOBIES Immersive Icons/books.swf",
 				"iconLabel": "book_herma_mora",
-				"iconColor": "#345F4C"
+				"iconColor": "ColorSpellEldritch"
 			}
 		},
 		{
@@ -2376,7 +2376,7 @@
 			"assign": {
 				"magicClassDisplay": "$MagicDruid",
 				"subTypeDisplay": "$MagicEnhance",
-				"iconColor": "#FF7AAC"
+				"iconColor": "ColorSpellDruidPink"
 			}
 		},
 		{
@@ -2499,7 +2499,7 @@
 				"magicClassDisplay": "$MagicDruid",
 				"subTypeDisplay": "$MagicEnhance",
 				"iconLabel": "default_alteration",
-				"iconColor": "#6ED117"
+				"iconColor": "ColorSpellDruidGreen"
 			}
 		},
 		{
@@ -2539,7 +2539,7 @@
 			"assign": {
 				"magicClassDisplay": "$MagicShadow",
 				"subTypeDisplay": "$MagicEnhance",
-				"iconColor": "#9328FF"
+				"iconColor": "ColorSpellShadow"
 			}
 		},
 		{
@@ -2603,7 +2603,7 @@
 				"subTypeDisplay": "$MagicDivination",
 				"iconSource": "Dodo/powers.swf",
 				"iconLabel": "power_instincts",
-				"iconColor": "#8E2129"
+				"iconColor": "ColorSpellBlood"
 			}
 		},
 		{
@@ -2625,7 +2625,7 @@
 				"subTypeDisplay": "$MagicDivination",
 				"iconSource": "Dodo/powers.swf",
 				"iconLabel": "power_instincts",
-				"iconColor": "#9328FF"
+				"iconColor": "ColorSpellShadow"
 			}
 		},
 		{
@@ -2667,7 +2667,7 @@
 				"magicClassDisplay": "$MagicDruid",
 				"subTypeDisplay": "$MagicEnhance",
 				"iconLabel": "default_restoration",
-				"iconColor": "#6ED117"
+				"iconColor": "ColorSpellDruidGreen"
 			}
 		},
 		{
@@ -2688,7 +2688,7 @@
 				"magicClassDisplay": "$MagicWater",
 				"subTypeDisplay": "$MagicEnhance",
 				"iconLabel": "default_alteration",
-				"iconColor": "#005493"
+				"iconColor": "ColorSpellWater"
 			}
 		},
 		{
@@ -2709,7 +2709,7 @@
 				"magicClassDisplay": "$MagicWater",
 				"subTypeDisplay": "$MagicEnhance",
 				"iconLabel": "default_alteration",
-				"iconColor": "#005493"
+				"iconColor": "ColorSpellWater"
 			}
 		},
 		{
@@ -2730,7 +2730,7 @@
 				"magicClassDisplay": "$MagicWater",
 				"subTypeDisplay": "$MagicEnhance",
 				"iconLabel": "default_alteration",
-				"iconColor": "#005493"
+				"iconColor": "ColorSpellWater"
 			}
 		},
 		{
@@ -2751,7 +2751,7 @@
 				"magicClassDisplay": "$MagicArcane",
 				"subTypeDisplay": "$MagicEthereal",
 				"iconLabel": "default_illusion",
-				"iconColor": "#00BCFF"
+				"iconColor": "ColorSpellArcaneDefault"
 			}
 		},
 		{
@@ -2813,7 +2813,7 @@
 				"subTypeDisplay": "$MagicMend",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "misc_dwarvenscrap",
-				"iconColor": "#705F32"
+				"iconColor": "ColorSpellArtificer"
 			}
 		},
 		{
@@ -2834,7 +2834,7 @@
 				"magicClassDisplay": "$MagicArcane",
 				"subTypeDisplay": "$MagicMend",
 				"iconLabel": "default_restoration",
-				"iconColor": "#993899"
+				"iconColor": "ColorSpellHealSummon"
 			}
 		},
 		{
@@ -2858,7 +2858,7 @@
 				"magicClassDisplay": "$MagicHoly",
 				"subTypeDisplay": "$MagicHeal",
 				"iconLabel": "default_restoration",
-				"iconColor": "#00AC00"
+				"iconColor": "ColorSpellHealDefault"
 			}
 		},
 		{
@@ -2879,7 +2879,7 @@
 				"magicClassDisplay": "$MagicWater",
 				"subTypeDisplay": "$MagicHeal",
 				"iconLabel": "default_restoration",
-				"iconColor": "#005493"
+				"iconColor": "ColorSpellWater"
 			}
 		},
 		{
@@ -2903,7 +2903,7 @@
 				"magicClassDisplay": "$MagicHoly",
 				"subTypeDisplay": "$MagicHeal",
 				"iconLabel": "default_restoration",
-				"iconColor": "#00AC00"
+				"iconColor": "ColorSpellHealDefault"
 			}
 		},
 		{
@@ -2924,7 +2924,7 @@
 				"magicClassDisplay": "$MagicNecromancy",
 				"subTypeDisplay": "$MagicMend",
 				"iconLabel": "default_restoration",
-				"iconColor": "#20C47D"
+				"iconColor": "ColorSpellHealUndead"
 			}
 		},
 		{
@@ -2946,7 +2946,7 @@
 				"subTypeDisplay": "$MagicLight",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "magic_sun",
-				"iconColor": "#68FBFF"
+				"iconColor": "ColorSpellMagelight"
 			}
 		},
 		{
@@ -2967,7 +2967,7 @@
 				"magicClassDisplay": "$MagicMind",
 				"subTypeDisplay": "$MagicCharm",
 				"iconLabel": "default_illusion",
-				"iconColor": "#4C9EA4"
+				"iconColor": "ColorSpellIllusion"
 			}
 		},
 		{
@@ -3009,7 +3009,7 @@
 				"magicClassDisplay": "$MagicMind",
 				"subTypeDisplay": "$MagicControl",
 				"iconLabel": "default_illusion",
-				"iconColor": "#4C9EA4"
+				"iconColor": "ColorSpellIllusion"
 			}
 		},
 		{
@@ -3051,7 +3051,7 @@
 				"magicClassDisplay": "$MagicVampire",
 				"subTypeDisplay": "$MagicControl",
 				"iconLabel": "default_illusion",
-				"iconColor": "#9328FF"
+				"iconColor": "ColorSpellShadow"
 			}
 		},
 		{
@@ -3072,7 +3072,7 @@
 				"magicClassDisplay": "$MagicMind",
 				"subTypeDisplay": "$MagicCourage",
 				"iconLabel": "default_illusion",
-				"iconColor": "#4C9EA4"
+				"iconColor": "ColorSpellIllusion"
 			}
 		},
 		{
@@ -3093,7 +3093,7 @@
 				"magicClassDisplay": "$MagicMind",
 				"subTypeDisplay": "$MagicFear",
 				"iconLabel": "default_illusion",
-				"iconColor": "#4C9EA4"
+				"iconColor": "ColorSpellIllusion"
 			}
 		},
 		{
@@ -3135,7 +3135,7 @@
 				"magicClassDisplay": "$MagicVampire",
 				"subTypeDisplay": "$MagicFear",
 				"iconLabel": "default_illusion",
-				"iconColor": "#8E2129"
+				"iconColor": "ColorSpellBlood"
 			}
 		},
 		{
@@ -3156,7 +3156,7 @@
 				"magicClassDisplay": "$MagicMind",
 				"subTypeDisplay": "$MagicFrenzy",
 				"iconLabel": "default_illusion",
-				"iconColor": "#4C9EA4"
+				"iconColor": "ColorSpellIllusion"
 			}
 		},
 		{
@@ -3177,7 +3177,7 @@
 				"magicClassDisplay": "$MagicShadow",
 				"subTypeDisplay": "$MagicFrenzy",
 				"iconLabel": "default_illusion",
-				"iconColor": "#9328FF"
+				"iconColor": "ColorSpellShadow"
 			}
 		},
 		{
@@ -3198,7 +3198,7 @@
 				"magicClassDisplay": "$MagicMind",
 				"subTypeDisplay": "$MagicParalyze",
 				"iconLabel": "default_illusion",
-				"iconColor": "#4C9EA4"
+				"iconColor": "ColorSpellIllusion"
 			}
 		},
 		{
@@ -3219,7 +3219,7 @@
 				"magicClassDisplay": "$MagicMind",
 				"subTypeDisplay": "$MagicAssist",
 				"iconLabel": "default_illusion",
-				"iconColor": "#4C9EA4"
+				"iconColor": "ColorSpellIllusion"
 			}
 		},
 		{
@@ -3261,7 +3261,7 @@
 			"assign": {
 				"magicClassDisplay": "$MagicAsh",
 				"subTypeDisplay": "$MagicParalyze",
-				"iconColor": "#AA845E"
+				"iconColor": "ColorSpellAsh"
 			}
 		},
 		{
@@ -3282,7 +3282,7 @@
 				"magicClassDisplay": "$MagicDruid",
 				"subTypeDisplay": "$MagicParalyze",
 				"iconLabel": "default_alteration",
-				"iconColor": "#6ED117"
+				"iconColor": "ColorSpellDruidGreen"
 			}
 		},
 		{
@@ -3342,7 +3342,7 @@
 				"magicClassDisplay": "$MagicFire",
 				"subTypeDisplay": "$MagicShield",
 				"iconLabel": "default_armor",
-				"iconColor": "#C73636"
+				"iconColor": "ColorSpellFireDefault"
 			}
 		},
 		{
@@ -3363,7 +3363,7 @@
 				"magicClassDisplay": "$MagicFrost",
 				"subTypeDisplay": "$MagicShield",
 				"iconLabel": "default_armor",
-				"iconColor": "#1FFBFF"
+				"iconColor": "ColorSpellFrost"
 			}
 		},
 		{
@@ -3384,7 +3384,7 @@
 				"magicClassDisplay": "$MagicToxin",
 				"subTypeDisplay": "$MagicShield",
 				"iconLabel": "default_armor",
-				"iconColor": "#62A636"
+				"iconColor": "ColorSpellPoisonDefault"
 			}
 		},
 		{
@@ -3405,7 +3405,7 @@
 				"magicClassDisplay": "$MagicShock",
 				"subTypeDisplay": "$MagicShield",
 				"iconLabel": "default_armor",
-				"iconColor": "#EAAB00"
+				"iconColor": "ColorSpellShockDefault"
 			}
 		},
 		{
@@ -3426,7 +3426,7 @@
 				"magicClassDisplay": "$MagicArcane",
 				"subTypeDisplay": "$MagicShield",
 				"iconLabel": "default_armor",
-				"iconColor": "#00BCFF"
+				"iconColor": "ColorSpellArcaneDefault"
 			}
 		},
 		{
@@ -3467,7 +3467,7 @@
 				"magicClassDisplay": "$MagicNecromancy",
 				"subTypeDisplay": "$MagicReanimate",
 				"iconLabel": "misc_remains",
-				"iconColor": "#20C47D"
+				"iconColor": "ColorSpellReanimate"
 			}
 		},
 		{
@@ -3489,7 +3489,7 @@
 				"subTypeDisplay": "$MagicReanimate",
 				"iconSource": "IAmNotSimon/StandingStone.swf",
 				"iconLabel": "effect_stone",
-				"iconColor": "#20C47D"
+				"iconColor": "ColorSpellReanimate"
 			}
 		},
 		{
@@ -3509,7 +3509,7 @@
 			"assign": {
 				"magicClassDisplay": "$MagicDruid",
 				"subTypeDisplay": "$MagicCounter",
-				"iconColor": "#6ED117"
+				"iconColor": "ColorSpellDruidGreen"
 			}
 		},
 		{
@@ -3552,7 +3552,7 @@
 				"magicClassDisplay": "$MagicArcane",
 				"subTypeDisplay": "$MagicRestore",
 				"iconLabel": "default_restoration",
-				"iconColor": "#2E9FDB"
+				"iconColor": "ColorSpellMagicka"
 			}
 		},
 		{
@@ -3573,7 +3573,7 @@
 				"magicClassDisplay": "$MagicWater",
 				"subTypeDisplay": "$MagicRestore",
 				"iconLabel": "default_restoration",
-				"iconColor": "#005493"
+				"iconColor": "ColorSpellWater"
 			}
 		},
 		{
@@ -3597,7 +3597,7 @@
 				"magicClassDisplay": "$MagicArcane",
 				"subTypeDisplay": "$MagicRestore",
 				"iconLabel": "default_restoration",
-				"iconColor": "#00AC00"
+				"iconColor": "ColorSpellStamina"
 			}
 		},
 		{
@@ -3618,7 +3618,7 @@
 				"magicClassDisplay": "$MagicDruid",
 				"subTypeDisplay": "$MagicRestore",
 				"iconLabel": "default_restoration",
-				"iconColor": "#6ED117"
+				"iconColor": "ColorSpellDruidGreen"
 			}
 		},
 		{
@@ -3678,7 +3678,7 @@
 				"subTypeDisplay": "$MagicSacrifice",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "magic_vampire",
-				"iconColor": "#8E2129"
+				"iconColor": "ColorSpellBlood"
 			}
 		},
 		{
@@ -3699,7 +3699,7 @@
 				"magicClassDisplay": "$MagicNecromancy",
 				"subTypeDisplay": "$MagicSacrifice",
 				"iconLabel": "misc_remains",
-				"iconColor": "#20C47D"
+				"iconColor": "ColorSpellNecromancy"
 			}
 		},
 		{
@@ -3802,7 +3802,7 @@
 			"assign": {
 				"magicClassDisplay": "$MagicArcane",
 				"subTypeDisplay": "$MagicSilence",
-				"iconColor": "#00BCFF"
+				"iconColor": "ColorSpellArcaneDefault"
 			}
 		},
 		{
@@ -3908,7 +3908,7 @@
 				"magicClassDisplay": "$MagicShadow",
 				"subTypeDisplay": "$MagicStealth",
 				"iconLabel": "default_illusion",
-				"iconColor": "#9328FF"
+				"iconColor": "ColorSpellShadow"
 			}
 		},
 		{
@@ -3929,7 +3929,7 @@
 				"magicClassDisplay": "$MagicShadow",
 				"subTypeDisplay": "$MagicStealth",
 				"iconLabel": "default_illusion",
-				"iconColor": "#9328FF"
+				"iconColor": "ColorSpellShadow"
 			}
 		},
 		{
@@ -3951,7 +3951,7 @@
 				"subTypeDisplay": "$MagicStealth",
 				"iconSource": "IAmNotSimon/StandingStone.swf",
 				"iconLabel": "effect_stone",
-				"iconColor": "#9328FF"
+				"iconColor": "ColorSpellShadow"
 			}
 		},
 		{
@@ -3972,7 +3972,7 @@
 				"magicClassDisplay": "$MagicDruid",
 				"subTypeDisplay": "$MagicStealth",
 				"iconLabel": "default_alteration",
-				"iconColor": "#6ED117"
+				"iconColor": "ColorSpellDruidGreen"
 			}
 		},
 		{
@@ -3993,7 +3993,7 @@
 				"magicClassDisplay": "$MagicVampire",
 				"subTypeDisplay": "$MagicStealth",
 				"iconLabel": "default_illusion",
-				"iconColor": "#9328FF"
+				"iconColor": "ColorSpellShadow"
 			}
 		},
 		{
@@ -4014,7 +4014,7 @@
 				"magicClassDisplay": "$MagicArcane",
 				"subTypeDisplay": "$MagicSummonConstruct",
 				"iconLabel": "default_conjuration",
-				"iconColor": "#993899"
+				"iconColor": "ColorSpellSummonConstruct"
 			}
 		},
 		{
@@ -4035,7 +4035,7 @@
 				"magicClassDisplay": "$MagicArcane",
 				"subTypeDisplay": "$MagicSummonCreature",
 				"iconLabel": "default_conjuration",
-				"iconColor": "#993899"
+				"iconColor": "ColorSpellSummonCreature"
 			}
 		},
 		{
@@ -4056,7 +4056,7 @@
 				"magicClassDisplay": "$MagicArcane",
 				"subTypeDisplay": "$MagicSummonDaedra",
 				"iconLabel": "default_conjuration",
-				"iconColor": "#A14040"
+				"iconColor": "ColorSpellSummonDaedra"
 			}
 		},
 		{
@@ -4077,7 +4077,7 @@
 				"magicClassDisplay": "$MagicArcane",
 				"subTypeDisplay": "$MagicSummonObject",
 				"iconLabel": "default_conjuration",
-				"iconColor": "#993899"
+				"iconColor": "ColorSpellSummonObject"
 			}
 		},
 		{
@@ -4098,7 +4098,7 @@
 				"magicClassDisplay": "$MagicArcane",
 				"subTypeDisplay": "$MagicSummonSpirit",
 				"iconLabel": "default_conjuration",
-				"iconColor": "#00BCFF"
+				"iconColor": "ColorSpellSummonSpirit"
 			}
 		},
 		{
@@ -4119,7 +4119,7 @@
 				"magicClassDisplay": "$MagicNecromancy",
 				"subTypeDisplay": "$MagicSummonUndead",
 				"iconLabel": "default_conjuration",
-				"iconColor": "#20C47D"
+				"iconColor": "ColorSpellSummonUndead"
 			}
 		},
 		{
@@ -4182,7 +4182,7 @@
 			"assign": {
 				"magicClassDisplay": "$MagicHoly",
 				"subTypeDisplay": "$MagicTurnUndead",
-				"iconColor": "#FF8700"
+				"iconColor": "ColorSpellTurnUndead"
 			}
 		},
 		{
@@ -4222,7 +4222,7 @@
 				"magicClassDisplay": "$MagicArcane",
 				"subTypeDisplay": "$MagicWard",
 				"iconLabel": "default_armor",
-				"iconColor": "#00BCFF"
+				"iconColor": "ColorSpellWardRestoration"
 			}
 		}
 	]

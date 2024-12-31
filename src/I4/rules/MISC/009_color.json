@@ -13,7 +13,7 @@
 				}
 			},
 			"assign": {
-				"iconColor": "#B87333"
+				"iconColor": "ColorMiscCopper"
 			}
 		},
 		{
@@ -28,7 +28,7 @@
 				}
 			},
 			"assign": {
-				"iconColor": "#CCCC33"
+				"iconColor": "ColorMiscGold"
 			}
 		},
 		{
@@ -43,7 +43,7 @@
 				}
 			},
 			"assign": {
-				"iconColor": "#C0C0C0"
+				"iconColor": "ColorMiscSilver"
 			}
 		},
 		{
@@ -54,7 +54,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#A14040"
+				"iconColor": "ColorMiscDaedric"
 			}
 		},
 		{
@@ -65,7 +65,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#345F4C"
+				"iconColor": "ColorMiscEldritch"
 			}
 		},
 		{
@@ -76,7 +76,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#C1884D"
+				"iconColor": "ColorRarityLegendary"
 			}
 		},
 		{
@@ -87,7 +87,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#20C47D"
+				"iconColor": "ColorMiscNecromancy"
 			}
 		},
 		{
@@ -98,7 +98,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#7B2424"
+				"iconColor": "ColorMiscRed"
 			}
 		}
 	]

@@ -16,7 +16,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#00BCFF"
+				"iconColor": "ColorSpellArcaneDefault"
 			}
 		},
 		{
@@ -34,7 +34,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#191919"
+				"iconColor": "ColorSpellBlack"
 			}
 		},
 		{
@@ -52,7 +52,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#8E2129"
+				"iconColor": "ColorSpellBlood"
 			}
 		},
 		{
@@ -70,7 +70,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#3030CD"
+				"iconColor": "ColorSpellBlue"
 			}
 		},
 		{
@@ -88,7 +88,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#A14040"
+				"iconColor": "ColorSpellDaedric"
 			}
 		},
 		{
@@ -106,7 +106,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#6ED117"
+				"iconColor": "ColorSpellDruidGreen"
 			}
 		},
 		{
@@ -124,7 +124,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#705F32"
+				"iconColor": "ColorSpellArtificer"
 			}
 		},
 		{
@@ -142,7 +142,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#345F4C"
+				"iconColor": "ColorSpellEldritch"
 			}
 		},
 		{
@@ -160,7 +160,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#C73636"
+				"iconColor": "ColorSpellFireDefault"
 			}
 		},
 		{
@@ -178,7 +178,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#FF3C00"
+				"iconColor": "ColorSpellVolcanic"
 			}
 		},
 		{
@@ -196,7 +196,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#1FFBFF"
+				"iconColor": "ColorSpellFrost"
 			}
 		},
 		{
@@ -214,7 +214,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#216E23"
+				"iconColor": "ColorSpellGreen"
 			}
 		},
 		{
@@ -232,7 +232,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#FF8700"
+				"iconColor": "ColorSpellHoly"
 			}
 		},
 		{
@@ -250,7 +250,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#C03797"
+				"iconColor": "ColorSpellMagenta"
 			}
 		},
 		{
@@ -268,7 +268,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#C07A00"
+				"iconColor": "ColorSpellOrange"
 			}
 		},
 		{
@@ -286,7 +286,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#FF7AAC"
+				"iconColor": "ColorSpellPink"
 			}
 		},
 		{
@@ -304,7 +304,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#782FAD"
+				"iconColor": "ColorSpellPurple"
 			}
 		},
 		{
@@ -322,7 +322,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#7B2424"
+				"iconColor": "ColorSpellRed"
 			}
 		},
 		{
@@ -340,7 +340,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#9328FF"
+				"iconColor": "ColorSpellShadow"
 			}
 		},
 		{
@@ -358,7 +358,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#EAAB00"
+				"iconColor": "ColorSpellShockDefault"
 			}
 		},
 		{
@@ -376,7 +376,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#FF8000"
+				"iconColor": "ColorSpellShockArc"
 			}
 		},
 		{
@@ -394,7 +394,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#005493"
+				"iconColor": "ColorSpellWater"
 			}
 		},
 		{
@@ -412,7 +412,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#EEF4F6"
+				"iconColor": "ColorSpellWhite"
 			}
 		},
 		{
@@ -430,7 +430,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#E0E021"
+				"iconColor": "ColorSpellYellow"
 			}
 		},
 		{
@@ -448,7 +448,7 @@
 				]
 			},
 			"assign": {
-				"iconColor": "#FFFFFF"
+				"iconColor": "ColorBase"
 			}
 		}
 	]

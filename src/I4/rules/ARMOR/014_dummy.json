@@ -17,7 +17,7 @@
 				"subTypeDisplay": "$ItemPlaceholderBuild",
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "misc_housepart",
-				"iconColor": "#FFFFFF"
+				"iconColor": "ColorBase"
 			}
 		},
 		{
@@ -32,7 +32,7 @@
 				"itemSort": "0",
 				"subTypeDisplay": "$ItemPlaceholderFilter",
 				"iconLabel": "default_book_read",
-				"iconColor": "#FFFFFF"
+				"iconColor": "ColorBase"
 			}
 		},
 		{

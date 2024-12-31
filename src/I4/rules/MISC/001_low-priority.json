@@ -82,7 +82,7 @@
 			"assign": {
 				"subTypeDisplay": "$ItemMiscMaterial",
 				"iconLabel": "misc_clutter",
-				"iconColor": "#FFFFFF"
+				"iconColor": "ColorBase"
 			}
 		},
 		{
@@ -98,7 +98,7 @@
 			"assign": {
 				"subTypeDisplay": "$Ingot",
 				"iconLabel": "misc_ingot",
-				"iconColor": "#828282"
+				"iconColor": "ColorMiscMetalDefault"
 			}
 		},
 		{
@@ -110,7 +110,7 @@
 			},
 			"assign": {
 				"iconLabel": "misc_gem",
-				"iconColor": "#FFB0D1"
+				"iconColor": "ColorMiscGem"
 			}
 		},
 		{
@@ -126,7 +126,7 @@
 			"assign": {
 				"iconSource": "AIT/Aura/icons.swf",
 				"iconLabel": "misc_artifactdaedra",
-				"iconColor": "#A14040"
+				"iconColor": "ColorRarityDaedric"
 			}
 		},
 		{
@@ -142,7 +142,7 @@
 			"assign": {
 				"iconSource": "I4IconAddon/icons.swf",
 				"iconLabel": "misc_dwarvenscrap",
-				"iconColor": "#705F32"
+				"iconColor": "ColorMiscMetalDwarven"
 			}
 		},
 		{
@@ -167,7 +167,7 @@
 			"assign": {
 				"subTypeDisplay": "$Ingredient",
 				"iconLabel": "default_ingredient",
-				"iconColor": "#FFFFFF"
+				"iconColor": "ColorBase"
 			}
 		}
 	]

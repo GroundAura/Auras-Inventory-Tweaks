@@ -10,7 +10,7 @@
 			},
 			"assign": {
 				"itemSort": "1",
-				"iconColor": "#C73636"
+				"iconColor": "ColorScrollFire"
 			}
 		},
 		{
@@ -22,7 +22,7 @@
 			},
 			"assign": {
 				"itemSort": "2",
-				"iconColor": "#1FFBFF"
+				"iconColor": "ColorScrollFrost"
 			}
 		},
 		{
@@ -34,7 +34,7 @@
 			},
 			"assign": {
 				"itemSort": "3",
-				"iconColor": "#EAAB00"
+				"iconColor": "ColorScrollShock"
 			}
 		},
 		{
@@ -46,7 +46,7 @@
 			},
 			"assign": {
 				"itemSort": "4",
-				"iconColor": "#62A636"
+				"iconColor": "ColorScrollPoison"
 			}
 		}
 	]

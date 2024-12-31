@@ -53,7 +53,7 @@
 			},
 			"assign": {
 				"iconLabel": "book_journal",
-				"iconColor": "#685629"
+				"iconColor": "ColorBookJournal"
 			}
 		}
 	]

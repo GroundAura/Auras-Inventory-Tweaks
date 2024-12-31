@@ -8,7 +8,7 @@
 			},
 			"assign": {
 				"itemSort": "1",
-				"iconColor": "#8F6B46"
+				"iconColor": "ColorScrollAlteration"
 			}
 		},
 		{
@@ -18,7 +18,7 @@
 			},
 			"assign": {
 				"itemSort": "2",
-				"iconColor": "#4C9EA4"
+				"iconColor": "ColorScrollIllusion"
 			}
 		},
 		{
@@ -28,7 +28,7 @@
 			},
 			"assign": {
 				"itemSort": "3",
-				"iconColor": "#C73636"
+				"iconColor": "ColorScrollDestruction"
 			}
 		},
 		{
@@ -38,7 +38,7 @@
 			},
 			"assign": {
 				"itemSort": "4",
-				"iconColor": "#993899"
+				"iconColor": "ColorScrollConjuration"
 			}
 		},
 		{
@@ -48,7 +48,7 @@
 			},
 			"assign": {
 				"itemSort": "5",
-				"iconColor": "#00AC00"
+				"iconColor": "ColorScrollRestoration"
 			}
 		}
 	]
