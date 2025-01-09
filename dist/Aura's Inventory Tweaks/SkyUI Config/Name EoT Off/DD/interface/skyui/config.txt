@@ -396,6 +396,26 @@ columns.weaponBaseDamageColumn.state2.entry.text = @infoBaseDamage
 columns.weaponBaseDamageColumn.state2.sortAttributes = <infoBaseDamage, text>
 columns.weaponBaseDamageColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
+; [ITEM - WEAPON] CRIT DAMAGE COLUMN -------------------------------------------------------
+columns.weaponCritDamageColumn.type = TEXT
+columns.weaponCritDamageColumn.name = '$CRITICAL DAMAGE'
+columns.weaponCritDamageColumn.states = 2
+columns.weaponCritDamageColumn.width = 0.06
+columns.weaponCritDamageColumn.border = a_textBorder
+columns.weaponCritDamageColumn.hidden = true
+
+columns.weaponCritDamageColumn.state1.label.text = '$CRIT'
+columns.weaponCritDamageColumn.state1.label.arrowDown = true
+columns.weaponCritDamageColumn.state1.entry.text = @critDamage
+columns.weaponCritDamageColumn.state1.sortAttributes = <critDamage, text>
+columns.weaponCritDamageColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
+columns.weaponCritDamageColumn.state2.label.text = '$CRIT'
+columns.weaponCritDamageColumn.state2.label.arrowDown = false
+columns.weaponCritDamageColumn.state2.entry.text = @critDamage
+columns.weaponCritDamageColumn.state2.sortAttributes = <critDamage, text>
+columns.weaponCritDamageColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
+
 ; [ITEM - WEAPON] REACH COLUMN -------------------------------------------------------
 columns.weaponReachColumn.type = TEXT
 columns.weaponReachColumn.name = '$REACH'
@@ -1530,7 +1550,7 @@ views.allItemView.columns = <equipColumn, iconColumn, gearNameColumn, itemSubTyp
 views.allItemView.category = <Inventory.FILTERFLAG_INV_ALL, Inventory.FILTERFLAG_CONTAINER_ALL>
 
 views.weaponView.primaryColumn = gearNameColumn
-views.weaponView.columns = <equipColumn, iconColumn, gearNameColumn, itemSubTypeColumn, gearMaterialColumn, weaponEquipColumn, weaponDamageColumn, weaponBaseDamageColumn, weaponSpeedColumn, weaponReachColumn, weaponStaggerColumn, itemValColumn, itemTValColumn, itemValWtColumn, itemWtColumn, itemTWtColumn>
+views.weaponView.columns = <equipColumn, iconColumn, gearNameColumn, itemSubTypeColumn, gearMaterialColumn, weaponEquipColumn, weaponDamageColumn, weaponBaseDamageColumn, weaponCritDamageColumn, weaponSpeedColumn, weaponReachColumn, weaponStaggerColumn, itemValColumn, itemTValColumn, itemValWtColumn, itemWtColumn, itemTWtColumn>
 views.weaponView.category = <Inventory.FILTERFLAG_INV_WEAPONS, Inventory.FILTERFLAG_CONTAINER_WEAPONS>
 
 views.armorView.primaryColumn = gearNameColumn
@@ -1627,7 +1647,7 @@ views.enchantSoulView.columns = <equipColumn, iconColumn, itemNameColumn, enchan
 views.enchantSoulView.category = <Inventory.FILTERFLAG_ENCHANTING_SOULGEM>
 
 views.craftWeaponView.primaryColumn = gearNameColumn
-views.craftWeaponView.columns = <equipColumn, iconColumn, gearNameColumn, itemSubTypeColumn, gearMaterialColumn, weaponDamageColumn, weaponBaseDamageColumn, weaponSpeedColumn, weaponReachColumn, weaponStaggerColumn, itemValColumn, itemTValColumn, itemValWtColumn, itemWtColumn, itemTWtColumn>
+views.craftWeaponView.columns = <equipColumn, iconColumn, gearNameColumn, itemSubTypeColumn, gearMaterialColumn, weaponDamageColumn, weaponBaseDamageColumn, weaponCritDamageColumn, weaponSpeedColumn, weaponReachColumn, weaponStaggerColumn, itemValColumn, itemTValColumn, itemValWtColumn, itemWtColumn, itemTWtColumn>
 views.craftWeaponView.category = <Inventory.FILTERFLAG_CUST_CRAFT_WEAPONS, Inventory.FILTERFLAG_CUST_CRAFT_AMMO>
 
 views.craftArmorView.primaryColumn = gearNameColumn
