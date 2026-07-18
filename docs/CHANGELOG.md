@@ -1,35 +1,36 @@
 # Aura's Inventory Tweaks for SkyUI - Changelog
 
-## Version 4.6.0
+## Version 5.0.0
 
-- **AIT Translations:** Added new strings: "`$CRIT`" ("CRIT"), "`$CRITICAL DAMAGE`" ("CRITICAL DAMAGE"), "`$FORTIFY EXPOSURE`" ("FORTIFY EXPOSURE"), "`F.EXP`" ("F.EXP"), "`$ItemWeaponBladestaff`" ("Bladestaff"), "`ItemWeaponClaw`" ("Claw"), "`$ItemWeaponColossalAxe`" ("Colossal Axe"), "`$ItemWeaponColossalHammer`" ("Colossal Hammer"), "`$ItemWeaponFlail`" ("Flail"), "`ItemWeaponLightsaber`" ("Magicka Saber"), "`ItemWeaponTwinDagger`" ("Twin Dagger").
+- Refactor.
+- **Now requires** [Inventory Atlas](https://www.nexusmods.com/skyrimspecialedition/mods/178801).
+~~- **Now requires** [SkySift](https://www.nexusmods.com/skyrimspecialedition/mods/176741).~~
+- **Now requires** [I4 Alchemy Fix](https://www.nexusmods.com/skyrimspecialedition/mods/141883) (for Skyrim 1.6.318-1.6.1179 or Skyrim VR) OR [I4 for 1.5](https://www.nexusmods.com/skyrimspecialedition/mods/87002) v1.1.0-SE.1+ (for Skyrim 1.5.97) to fix icons not displaying properly in the alchemy menu.
+- **No longer requires** SkyUI AIO Survival (SAS), Dear Diary Dark Mode, Body Slots, Total Value, or any similar mods that directly modify the interface SWF files to assign attribute values. Inventory Atlas now handles assigning attribute values and injects them dynamically into menus, making AIT mostly interface agnostic.
+- **FOMOD:** Updated some descriptions. 
+~~- **SkySift Configs:** ~~
+- **SkyUI Config:**
 
+## ~4.6.0
+
+- **AIT Translations:** Added new strings: "`$CRIT`" ("CRIT"), "`$CRITICAL DAMAGE`" ("CRITICAL DAMAGE"), "`$FORTIFY EXPOSURE`" ("FORTIFY EXPOSURE"), "`$F.EXP`" ("F.EXP"), "`$ItemWeaponBladestaff`" ("Bladestaff"), "`ItemWeaponClaw`" ("Claw"), "`$ItemWeaponColossalAxe`" ("Colossal Axe"), "`$ItemWeaponColossalHammer`" ("Colossal Hammer"), "`$ItemWeaponFlail`" ("Flail"), "`ItemWeaponLightsaber`" ("Magicka Saber"), "`ItemWeaponTwinDagger`" ("Twin Dagger").
 - **AIT Translation (English):** Changed translations: "`$CC FORTIFY WARMTH`" from ("CC FORTIFY WARMTH") to ("SM FORTIFY WARMTH"), "`CC HUNGER`" from ("CC HUNGER") to ("SM HUNGER"), "`CC RESTORE COLD`" from ("CC RESTORE COLD") to ("SM RESTORE COLD"), "`CC WARMTH`" from ("CC WARMTH") to ("SM WARMTH").
-
 - **I4 Main Module (Spell/AIO):** Minor tweaks and fixes.
-
 - **I4 Main Module (Weapon/AIO):** Cleanup and add support for more weapon types.
-
 - **SkyUI Config:** Added critical damage column.
 
 ## Version 4.5.0
 
 - **FOMOD:** Moved Skyrim Translation Tweaks into separate download.
-
 - **AIT Translations:** Added new strings: "`$ItemPlaceholderJunk`" ("Junk").
-
 - **ESP:** Removed unnecessary keyword records from `AIT.esp`.
-
 - **I4 Main Module (Weapon/AIO):** Fix for twinblade icon not rendering.
-
 - **SkyUI Config:** Added text color patch for Edge UI (v0.55).
 
 ## Version 4.4.2
 
 - **I4 Main Module (Misc/AIO):** Fix minor inconsistencies between AIO and Modular versions.
-
 - **I4 Main Module (Spell/AIO):** Fix minor inconsistencies between AIO and Modular versions.
-
 - **SkyUI Config:** Added seperate columns with adjusted widths for the default crafting view, which should resolve problems with cut-off text in [COCKS](https://www.nexusmods.com/skyrimspecialedition/mods/81409) menus for the most part. Minor fixes.
 
 ## Version 4.4.1
@@ -39,79 +40,52 @@
 ## Version 4.4.0
 
 - **Now requires** Object Categorization Framework v5.0.0+ for keyword changes and new mod support. Also make sure you update Keyword Item Distributor to v3.2.0+.
-
 - **Now requires** The Handy Icon Collection Collective v1.6.0+ for bugfixes and new icons.
-
 - **FOMOD:** Added more dummy overwrite files.
-
 - **AIT Translations:** Added new strings: "$ItemMiscArcana" ("Arcana"), "$ItemMiscSoulShard" ("Soul Shard").
-
 - **I4 Main Module (Armor/AIO):** Updated keywords to work with OCF v5.0.0.
-
 - **I4 Main Module (Misc/AIO):** Added keywords for additional mod support.
-
 - **I4 Main Module (Spell/AIO):** Added keywords for additional mod support.
 
 ## Version 4.3.0
 
 - **FOMOD:** Updated some descriptions and added an option.
-
 - **SkyUI Config:** Added option for default SkyUI name-only sorting.
 
 ## Version 4.2.0
 
 - **Now requires** BOOBIES v2.1.1+ for new icons, bugfixes, and icons-only FOMOD option. Now recommended to choose icons-only option in BOOBIES' FOMOD.
-
 - **Now requires** OCF v4.5.0+ for keyword changes and new mod support.
-
 - **FOMOD:** Added more options for dummy overwrite files.
-
 - **I4 Main Module (Armor/AIO):** Added support and icon for equippable "knuckles". Changes to Wintersun artifacts including better icons.
-
 - **I4 Main Module (Book/AIO):** Added support for more icon colors through keyword.
-
 - **I4 Main Module (Ingestible/AIO):** Changes to waterskins including new "fill status" icons. Added new icons for hair and organs.
-
 - **I4 Main Module (Ingredient/AIO):** Added new icons for hair and organs.
-
 - **I4 Main Module (Key/AIO):** Added support and icons for skulls and daedric/dwemer relics.
-
 - **I4 Main Module (Misc/AIO):** Added support and icons for hair, organs, game pieces, bullets, and more. Fixes and tweaks.
-
 - **I4 Main Module (Spell/AIO):** Added keyword for additional mod support.
 
 ## Version 4.1.5
 
 - **FOMOD:** Updated dummy BOOBIES files. Should be temporary as WDAL should be adding an icons-only option in BOOBIES' next update.
-
 - **FOMOD:** Updated some descriptions and added a couple of options.
-
 - **AIT Translations:** Added new strings: "$MagicEnchant" ("Enchant"), "$MagicSkill" ("Skill").
-
 - **AIT Translations:** Added temporary updated Polish translation.
-
 - **I4 Main Module (Spell/AIO):** Added more support for Spellsiphon.
-
 - **SkyUI Config:** Added text color patch for Edge UI (v0.45).
 
 ## Version 4.1.4
 
 - **Now requires** OCF v4.2.3+. For new mod support and fixes.
-
 - **I4 Main Module (Armor/AIO):** Underwear changes.
-
 - **I4 Main Module (Ingredient/AIO):** Added mod support.
-
 - **I4 Main Module (Spell/AIO):** New icon. Added mod support. Fixes.
 
 ## Version 4.1.3
 
 - **Now requires** OCF v4.2.2+.
-
 - **I4 Main Module (Misc/AIO):** Tweak.
-
 - **I4 Main Module (Scroll/AIO):** Added mod support.
-
 - **I4 Main Module (Spell/AIO):** Added mod support. Fix.
 
 ## Version 4.1.2
@@ -121,11 +95,8 @@
 ## Version 4.1.1
 
 - **Now requires** OCF v4.2.1+.
-
 - **AIT Translations:** Added new strings: "$ItemBookSong" ("Songbook").
-
 - **I4 Main Module (Book/AIO):** Added songbook type.
-
 - **I4 Main Module (Spell/AIO):** Added mod support and power icons.
 
 ## Version 4.1.0
