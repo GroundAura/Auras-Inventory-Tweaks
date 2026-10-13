@@ -93,11 +93,13 @@
 | `infoTotalValue`      |               |                       | [Total Value](https://www.nexusmods.com/skyrimspecialedition/mods/68423) |
 | `infoTotalWeight`     |               |                       | SAS, DD/DDDM-based Overhauls, etc.                                       |
 | `iconSource`          |               |                       | Inventory Interface Information Injector                                 |
+| `infoBaseDamage`      |               |                       | SAS, DD/DDDM-based Overhauls, etc.                                       |
 | `infoReach`           |               |                       | SAS, DD/DDDM-based Overhauls, etc.                                       |
 | `infoSpeed`           |               |                       | SAS, DD/DDDM-based Overhauls, etc.                                       |
 | `infoStagger`         |               |                       | SAS, DD/DDDM-based Overhauls, etc.                                       |
 | `bipedSlots`          |               |                       | Body Slots, SAS, DD/DDDM-based Overhauls, etc.                           |
 | `bipedSlotsDisplay`   |               |                       | Body Slots, SAS, DD/DDDM-based Overhauls, etc.                           |
+| `infoBaseArmor`       |               |                       | SAS, DD/DDDM-based Overhauls, etc.                                       |
 | `infoWarmth`          |               |                       | SAS, DDDM-based Overhauls, etc.                                          |
 | `warmth`              |               |                       | SkyUI AIO Survival                                                       |
 | `coverage`            |               |                       | SkyUI AIO Survival                                                       |
@@ -269,7 +271,7 @@
 | `magicClassDisplay`    |               |                       |                 |
 | `soulSizeDisplay`      |               |                       |                 |
 | `itemType`             |               |                       |                 |
-| `ItemClass`            |               |                       |                 |
+| `itemClass`            |               |                       |                 |
 | `itemSort`             |               |                       |                 |
 | `sortByEffectData`     |               |                       |                 |
 | `soulGemStats`         |               |                       |                 |
