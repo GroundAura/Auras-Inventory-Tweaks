@@ -200,14 +200,14 @@ columns.itemTValColumn.hidden = true
 
 columns.itemTValColumn.state1.label.text = '$T.VAL'
 columns.itemTValColumn.state1.label.arrowDown = true
-columns.itemTValColumn.state1.entry.text = @infoTotalValue
-columns.itemTValColumn.state1.sortAttributes = <infoTotalValue, text>
+columns.itemTValColumn.state1.entry.text = @inat_totalValueDisp
+columns.itemTValColumn.state1.sortAttributes = <inat_totalValue, text>
 columns.itemTValColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 columns.itemTValColumn.state2.label.text = '$T.VAL'
 columns.itemTValColumn.state2.label.arrowDown = false
-columns.itemTValColumn.state2.entry.text = @infoTotalValue
-columns.itemTValColumn.state2.sortAttributes = <infoTotalValue, text>
+columns.itemTValColumn.state2.entry.text = @inat_totalValueDisp
+columns.itemTValColumn.state2.sortAttributes = <inat_totalValue, text>
 columns.itemTValColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 ; [ITEM] VALUE/WEIGHT COLUMN -------------------------------------------------------
@@ -260,14 +260,14 @@ columns.itemTWtColumn.hidden = true
 
 columns.itemTWtColumn.state1.label.text = '$T.WGT'
 columns.itemTWtColumn.state1.label.arrowDown = true
-columns.itemTWtColumn.state1.entry.text = @infoTotalWeight
-columns.itemTWtColumn.state1.sortAttributes = <infoTotalWeight, text>
+columns.itemTWtColumn.state1.entry.text = @inat_totalWeightDisp
+columns.itemTWtColumn.state1.sortAttributes = <inat_totalWeight, text>
 columns.itemTWtColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 columns.itemTWtColumn.state2.label.text = '$T.WGT'
 columns.itemTWtColumn.state2.label.arrowDown = false
-columns.itemTWtColumn.state2.entry.text = @infoTotalWeight
-columns.itemTWtColumn.state2.sortAttributes = <infoTotalWeight, text>
+columns.itemTWtColumn.state2.entry.text = @inat_totalWeightDisp
+columns.itemTWtColumn.state2.sortAttributes = <inat_totalWeight, text>
 columns.itemTWtColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 ; [ITEM - WEAPON/ARMOR] NAME COLUMN -------------------------------------------------------
@@ -386,14 +386,14 @@ columns.weaponBaseDamageColumn.hidden = true
 
 columns.weaponBaseDamageColumn.state1.label.text = '$B.DAM'
 columns.weaponBaseDamageColumn.state1.label.arrowDown = true
-columns.weaponBaseDamageColumn.state1.entry.text = @infoBaseDamage
-columns.weaponBaseDamageColumn.state1.sortAttributes = <infoBaseDamage, text>
+columns.weaponBaseDamageColumn.state1.entry.text = @inat_baseDamageDisp
+columns.weaponBaseDamageColumn.state1.sortAttributes = <inat_baseDamage, text>
 columns.weaponBaseDamageColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 columns.weaponBaseDamageColumn.state2.label.text = '$B.DAM'
 columns.weaponBaseDamageColumn.state2.label.arrowDown = false
-columns.weaponBaseDamageColumn.state2.entry.text = @infoBaseDamage
-columns.weaponBaseDamageColumn.state2.sortAttributes = <infoBaseDamage, text>
+columns.weaponBaseDamageColumn.state2.entry.text = @inat_baseDamageDisp
+columns.weaponBaseDamageColumn.state2.sortAttributes = <inat_baseDamage, text>
 columns.weaponBaseDamageColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 ; [ITEM - WEAPON] CRIT DAMAGE COLUMN -------------------------------------------------------
@@ -426,14 +426,14 @@ columns.weaponReachColumn.hidden = true
 
 columns.weaponReachColumn.state1.label.text = '$RCH'
 columns.weaponReachColumn.state1.label.arrowDown = true
-columns.weaponReachColumn.state1.entry.text = @infoReach
-columns.weaponReachColumn.state1.sortAttributes = <infoReach, text>
+columns.weaponReachColumn.state1.entry.text = @inat_reachDisp
+columns.weaponReachColumn.state1.sortAttributes = <inat_reach, text>
 columns.weaponReachColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 columns.weaponReachColumn.state2.label.text = '$RCH'
 columns.weaponReachColumn.state2.label.arrowDown = false
-columns.weaponReachColumn.state2.entry.text = @infoReach
-columns.weaponReachColumn.state2.sortAttributes = <infoReach, text>
+columns.weaponReachColumn.state2.entry.text = @inat_reachDisp
+columns.weaponReachColumn.state2.sortAttributes = <inat_reach, text>
 columns.weaponReachColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 ; [ITEM - WEAPON] SPEED COLUMN -------------------------------------------------------
@@ -446,14 +446,14 @@ columns.weaponSpeedColumn.hidden = true
 
 columns.weaponSpeedColumn.state1.label.text = '$SPD'
 columns.weaponSpeedColumn.state1.label.arrowDown = true
-columns.weaponSpeedColumn.state1.entry.text = @infoSpeed
-columns.weaponSpeedColumn.state1.sortAttributes = <infoSpeed, text>
+columns.weaponSpeedColumn.state1.entry.text = @inat_speedDisp
+columns.weaponSpeedColumn.state1.sortAttributes = <inat_speed, text>
 columns.weaponSpeedColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 columns.weaponSpeedColumn.state2.label.text = '$SPD'
 columns.weaponSpeedColumn.state2.label.arrowDown = false
-columns.weaponSpeedColumn.state2.entry.text = @infoSpeed
-columns.weaponSpeedColumn.state2.sortAttributes = <infoSpeed, text>
+columns.weaponSpeedColumn.state2.entry.text = @inat_speedDisp
+columns.weaponSpeedColumn.state2.sortAttributes = <inat_speed, text>
 columns.weaponSpeedColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 ; [ITEM - WEAPON] STAGGER COLUMN -------------------------------------------------------
@@ -466,14 +466,14 @@ columns.weaponStaggerColumn.hidden = true
 
 columns.weaponStaggerColumn.state1.label.text = '$STGR'
 columns.weaponStaggerColumn.state1.label.arrowDown = true
-columns.weaponStaggerColumn.state1.entry.text = @infoStagger
-columns.weaponStaggerColumn.state1.sortAttributes = <infoStagger, text>
+columns.weaponStaggerColumn.state1.entry.text = @inat_staggerDisp
+columns.weaponStaggerColumn.state1.sortAttributes = <inat_stagger, text>
 columns.weaponStaggerColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 columns.weaponStaggerColumn.state2.label.text = '$STGR'
 columns.weaponStaggerColumn.state2.label.arrowDown = false
-columns.weaponStaggerColumn.state2.entry.text = @infoStagger
-columns.weaponStaggerColumn.state2.sortAttributes = <infoStagger, text>
+columns.weaponStaggerColumn.state2.entry.text = @inat_staggerDisp
+columns.weaponStaggerColumn.state2.sortAttributes = <inat_stagger, text>
 columns.weaponStaggerColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 ; [ITEM - ARMOR] ARMOR RATING COLUMN -------------------------------------------------------
@@ -506,14 +506,14 @@ columns.armorBaseRatingColumn.hidden = true
 
 columns.armorBaseRatingColumn.state1.label.text = '$B.ARM'
 columns.armorBaseRatingColumn.state1.label.arrowDown = true
-columns.armorBaseRatingColumn.state1.entry.text = @infoBaseArmor
-columns.armorBaseRatingColumn.state1.sortAttributes = <infoBaseArmor, text>
+columns.armorBaseRatingColumn.state1.entry.text = @inat_baseArmorDisp
+columns.armorBaseRatingColumn.state1.sortAttributes = <inat_baseArmor, text>
 columns.armorBaseRatingColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 columns.armorBaseRatingColumn.state2.label.text = '$B.ARM'
 columns.armorBaseRatingColumn.state2.label.arrowDown = false
-columns.armorBaseRatingColumn.state2.entry.text = @infoBaseArmor
-columns.armorBaseRatingColumn.state2.sortAttributes = <infoBaseArmor, text>
+columns.armorBaseRatingColumn.state2.entry.text = @inat_baseArmorDisp
+columns.armorBaseRatingColumn.state2.sortAttributes = <inat_baseArmor, text>
 columns.armorBaseRatingColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 ; [ITEM - ARMOR] SLOT COLUMN -------------------------------------------------------
@@ -526,14 +526,14 @@ columns.armorSlotsColumn.hidden = true
 
 columns.armorSlotsColumn.state1.label.text = '$SLOT'
 columns.armorSlotsColumn.state1.label.arrowDown = false
-columns.armorSlotsColumn.state1.entry.text = @bipedSlotsDisplay
-columns.armorSlotsColumn.state1.sortAttributes = <bipedSlotsDisplay, text>
+columns.armorSlotsColumn.state1.entry.text = @inat_slots
+columns.armorSlotsColumn.state1.sortAttributes = <inat_slots, text>
 columns.armorSlotsColumn.state1.sortOptions = <{ASCENDING | CASEINSENSITIVE}, {ASCENDING | CASEINSENSITIVE}>
 
 columns.armorSlotsColumn.state2.label.text = '$SLOT'
 columns.armorSlotsColumn.state2.label.arrowDown = true
-columns.armorSlotsColumn.state2.entry.text = @bipedSlotsDisplay
-columns.armorSlotsColumn.state2.sortAttributes = <bipedSlotsDisplay, text>
+columns.armorSlotsColumn.state2.entry.text = @inat_slots
+columns.armorSlotsColumn.state2.sortAttributes = <inat_slots, text>
 columns.armorSlotsColumn.state2.sortOptions = <{DESCENDING | CASEINSENSITIVE}, {ASCENDING | CASEINSENSITIVE}>
 
 ; [ITEM - ARMOR] CLASS COLUMN -------------------------------------------------------
@@ -566,14 +566,14 @@ columns.armorCCWarmthColumn.hidden = true
 
 columns.armorCCWarmthColumn.state1.label.text = '$WRMT'
 columns.armorCCWarmthColumn.state1.label.arrowDown = true
-columns.armorCCWarmthColumn.state1.entry.text = @infoWarmth
-columns.armorCCWarmthColumn.state1.sortAttributes = <infoWarmth, text>
+columns.armorCCWarmthColumn.state1.entry.text = @inat_ccWarmthDisp
+columns.armorCCWarmthColumn.state1.sortAttributes = <inat_ccWarmth, text>
 columns.armorCCWarmthColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 columns.armorCCWarmthColumn.state2.label.text = '$WRMT'
 columns.armorCCWarmthColumn.state2.label.arrowDown = false
-columns.armorCCWarmthColumn.state2.entry.text = @infoWarmth
-columns.armorCCWarmthColumn.state2.sortAttributes = <infoWarmth, text>
+columns.armorCCWarmthColumn.state2.entry.text = @inat_ccWarmthDisp
+columns.armorCCWarmthColumn.state2.sortAttributes = <inat_ccWarmth, text>
 columns.armorCCWarmthColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 ; [ITEM - ARMOR] (FROSTFALL) WARMTH COLUMN -----------------------------------------------------
@@ -586,14 +586,14 @@ columns.armorFFWarmthColumn.hidden = true
 
 columns.armorFFWarmthColumn.state1.label.text = '$WRMT'
 columns.armorFFWarmthColumn.state1.label.arrowDown = true
-columns.armorFFWarmthColumn.state1.entry.text = @warmth
-columns.armorFFWarmthColumn.state1.sortAttributes = <warmth, text>
+columns.armorFFWarmthColumn.state1.entry.text = @inat_frostWarmthDisp
+columns.armorFFWarmthColumn.state1.sortAttributes = <inat_frostWarmth, text>
 columns.armorFFWarmthColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 columns.armorFFWarmthColumn.state2.label.text = '$WRMT'
 columns.armorFFWarmthColumn.state2.label.arrowDown = false
-columns.armorFFWarmthColumn.state2.entry.text = @warmth
-columns.armorFFWarmthColumn.state2.sortAttributes = <warmth, text>
+columns.armorFFWarmthColumn.state2.entry.text = @inat_frostWarmthDisp
+columns.armorFFWarmthColumn.state2.sortAttributes = <inat_frostWarmth, text>
 columns.armorFFWarmthColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 ; [ITEM - ARMOR] (FROSTFALL) COVERAGE COLUMN -------------------------------------------------------
@@ -606,14 +606,14 @@ columns.armorFFCoverageColumn.hidden = true
 
 columns.armorFFCoverageColumn.state1.label.text = '$COVR'
 columns.armorFFCoverageColumn.state1.label.arrowDown = true
-columns.armorFFCoverageColumn.state1.entry.text = @coverage
-columns.armorFFCoverageColumn.state1.sortAttributes = <coverage, text>
+columns.armorFFCoverageColumn.state1.entry.text = @inat_frostCoverageDisp
+columns.armorFFCoverageColumn.state1.sortAttributes = <inat_frostCoverage, text>
 columns.armorFFCoverageColumn.state1.sortOptions = <{DESCENDING | NUMERIC}>
 
 columns.armorFFCoverageColumn.state2.label.text = '$COVR'
 columns.armorFFCoverageColumn.state2.label.arrowDown = false
-columns.armorFFCoverageColumn.state2.entry.text = @coverage
-columns.armorFFCoverageColumn.state2.sortAttributes = <coverage, text>
+columns.armorFFCoverageColumn.state2.entry.text = @inat_frostCoverageDisp
+columns.armorFFCoverageColumn.state2.sortAttributes = <inat_frostCoverage, text>
 columns.armorFFCoverageColumn.state2.sortOptions = <{ASCENDING | NUMERIC}>
 
 ; [ITEM - ARMOR] (SUNHELM) WARMTH COLUMN -----------------------------------------------------
@@ -626,13 +626,13 @@ columns.armorSHWarmthColumn.hidden = true
 
 columns.armorSHWarmthColumn.state1.label.text = '$WRMT'
 columns.armorSHWarmthColumn.state1.label.arrowDown = true
-columns.armorSHWarmthColumn.state1.entry.text = @infoWarmth
-columns.armorSHWarmthColumn.state1.sortAttributes = <infoWarmth, text>
+columns.armorSHWarmthColumn.state1.entry.text = @inat_ccWarmthDisp
+columns.armorSHWarmthColumn.state1.sortAttributes = <inat_ccWarmth, text>
 columns.armorSHWarmthColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 columns.armorSHWarmthColumn.state2.label.text = '$WRMT'
-columns.armorSHWarmthColumn.state2.entry.text = @infoWarmth
-columns.armorSHWarmthColumn.state2.sortAttributes = <infoWarmth, text>
+columns.armorSHWarmthColumn.state2.entry.text = @inat_ccWarmthDisp
+columns.armorSHWarmthColumn.state2.sortAttributes = <inat_ccWarmth, text>
 columns.armorSHWarmthColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 ; [ITEM - POTION/SCROLL] RESIST COLUMN -------------------------------------------
@@ -705,14 +705,14 @@ columns.foodCCHungerColumn.hidden = true
 
 columns.foodCCHungerColumn.state1.label.text = '$HNGR'
 columns.foodCCHungerColumn.state1.label.arrowDown = true
-columns.foodCCHungerColumn.state1.entry.text = @infoHunger
-columns.foodCCHungerColumn.state1.sortAttributes = <infoHunger, text>
+columns.foodCCHungerColumn.state1.entry.text = @inat_hungerDisp
+columns.foodCCHungerColumn.state1.sortAttributes = <inat_hunger, text>
 columns.foodCCHungerColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 columns.foodCCHungerColumn.state2.label.text = '$HNGR'
 columns.foodCCHungerColumn.state2.label.arrowDown = false
-columns.foodCCHungerColumn.state2.entry.text = @infoHunger
-columns.foodCCHungerColumn.state2.sortAttributes = <infoHunger, text>
+columns.foodCCHungerColumn.state2.entry.text = @inat_hungerDisp
+columns.foodCCHungerColumn.state2.sortAttributes = <inat_hunger, text>
 columns.foodCCHungerColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 ; [ITEM - FOOD] (CC SURVIVAL MODE) RESTORE COLD COLUMN -----------------------------------
@@ -725,14 +725,14 @@ columns.foodCCRestoreColdColumn.hidden = true
 
 columns.foodCCRestoreColdColumn.state1.label.text = '$R.COLD'
 columns.foodCCRestoreColdColumn.state1.label.arrowDown = true
-columns.foodCCRestoreColdColumn.state1.entry.text = @restoreCold
-columns.foodCCRestoreColdColumn.state1.sortAttributes = <restoreCold, text>
+columns.foodCCRestoreColdColumn.state1.entry.text = @inat_restoreColdDisp
+columns.foodCCRestoreColdColumn.state1.sortAttributes = <inat_restoreCold, text>
 columns.foodCCRestoreColdColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 columns.foodCCRestoreColdColumn.state2.label.text = '$R.COLD'
 columns.foodCCRestoreColdColumn.state2.label.arrowDown = false
-columns.foodCCRestoreColdColumn.state2.entry.text = @restoreCold
-columns.foodCCRestoreColdColumn.state2.sortAttributes = <restoreCold, text>
+columns.foodCCRestoreColdColumn.state2.entry.text = @inat_restoreColdDisp
+columns.foodCCRestoreColdColumn.state2.sortAttributes = <inat_restoreCold, text>
 columns.foodCCRestoreColdColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 ; [ITEM - FOOD] (CC SURVIVAL MODE) FORTIFY WARMTH COLUMN --------------------------------
@@ -745,14 +745,14 @@ columns.foodCCFortifyWarmthColumn.hidden = true
 
 columns.foodCCFortifyWarmthColumn.state1.label.text = '$F.WRMT'
 columns.foodCCFortifyWarmthColumn.state1.label.arrowDown = true
-columns.foodCCFortifyWarmthColumn.state1.entry.text = @fWarmth
-columns.foodCCFortifyWarmthColumn.state1.sortAttributes = <fWarmth, text>
+columns.foodCCFortifyWarmthColumn.state1.entry.text = @inat_fortifyWarmthDisp
+columns.foodCCFortifyWarmthColumn.state1.sortAttributes = <inat_fortifyWarmth, text>
 columns.foodCCFortifyWarmthColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 columns.foodCCFortifyWarmthColumn.state2.label.text = '$F.WRMT'
 columns.foodCCFortifyWarmthColumn.state2.label.arrowDown = false
-columns.foodCCFortifyWarmthColumn.state2.entry.text = @fWarmth
-columns.foodCCFortifyWarmthColumn.state2.sortAttributes = <fWarmth, text>
+columns.foodCCFortifyWarmthColumn.state2.entry.text = @inat_fortifyWarmthDisp
+columns.foodCCFortifyWarmthColumn.state2.sortAttributes = <inat_fortifyWarmth, text>
 columns.foodCCFortifyWarmthColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 ; [ITEM - FOOD] (SUNHELM) HUNGER COLUMN ------------------------------------------------
@@ -765,13 +765,13 @@ columns.foodSHHungerColumn.hidden = true
 
 columns.foodSHHungerColumn.state1.label.text = '$HNGR'
 columns.foodSHHungerColumn.state1.label.arrowDown = true
-columns.foodSHHungerColumn.state1.entry.text = @SHHunger
-columns.foodSHHungerColumn.state1.sortAttributes = <SHHunger, text>
+columns.foodSHHungerColumn.state1.entry.text = @inat_shHungerDisp
+columns.foodSHHungerColumn.state1.sortAttributes = <inat_shHunger, text>
 columns.foodSHHungerColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 columns.foodSHHungerColumn.state2.label.text = '$HNGR'
-columns.foodSHHungerColumn.state2.entry.text = @SHHunger
-columns.foodSHHungerColumn.state2.sortAttributes = <SHHunger, text>
+columns.foodSHHungerColumn.state2.entry.text = @inat_shHungerDisp
+columns.foodSHHungerColumn.state2.sortAttributes = <inat_shHunger, text>
 columns.foodSHHungerColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 ; [ITEM - FOOD] (SUNHELM) THIRST COLUMN -----------------------------------------------
@@ -784,13 +784,13 @@ columns.foodSHThirstColumn.hidden = true
 
 columns.foodSHThirstColumn.state1.label.text = '$TRST'
 columns.foodSHThirstColumn.state1.label.arrowDown = true
-columns.foodSHThirstColumn.state1.entry.text = @SHThirst
-columns.foodSHThirstColumn.state1.sortAttributes = <SHThirst, text>
+columns.foodSHThirstColumn.state1.entry.text = @inat_shThirstDisp
+columns.foodSHThirstColumn.state1.sortAttributes = <inat_shThirst, text>
 columns.foodSHThirstColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 columns.foodSHThirstColumn.state2.label.text = '$TRST'
-columns.foodSHThirstColumn.state2.entry.text = @SHThirst
-columns.foodSHThirstColumn.state2.sortAttributes = <SHThirst, text>
+columns.foodSHThirstColumn.state2.entry.text = @inat_shThirstDisp
+columns.foodSHThirstColumn.state2.sortAttributes = <inat_shThirst, text>
 columns.foodSHThirstColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 ; [ITEM - FOOD] (SUNHELM) FORTIFY WARMTH COLUMN --------------------------------
@@ -803,14 +803,14 @@ columns.foodSHFortifyWarmthColumn.hidden = true
 
 columns.foodSHFortifyWarmthColumn.state1.label.text = '$F.WRMT'
 columns.foodSHFortifyWarmthColumn.state1.label.arrowDown = true
-columns.foodSHFortifyWarmthColumn.state1.entry.text = @SHFW
-columns.foodSHFortifyWarmthColumn.state1.sortAttributes = <SHFW, text>
+columns.foodSHFortifyWarmthColumn.state1.entry.text = @inat_shFortifyWarmthDisp
+columns.foodSHFortifyWarmthColumn.state1.sortAttributes = <inat_shFortifyWarmth, text>
 columns.foodSHFortifyWarmthColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 columns.foodSHFortifyWarmthColumn.state2.label.text = '$F.WRMT'
 columns.foodSHFortifyWarmthColumn.state2.label.arrowDown = false
-columns.foodSHFortifyWarmthColumn.state2.entry.text = @SHFW
-columns.foodSHFortifyWarmthColumn.state2.sortAttributes = <SHFW, text>
+columns.foodSHFortifyWarmthColumn.state2.entry.text = @inat_shFortifyWarmthDisp
+columns.foodSHFortifyWarmthColumn.state2.sortAttributes = <inat_shFortifyWarmth, text>
 columns.foodSHFortifyWarmthColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 ; [ITEM - FOOD] GREENPACT COLUMN --------------------------------
@@ -1175,14 +1175,14 @@ columns.powerCostColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING 
 ;
 ;columns.powerCooldownColumn.state1.label.text = '$COOLDOWN'
 ;columns.powerCooldownColumn.state1.label.arrowDown = false
-;columns.powerCooldownColumn.state1.entry.text = @PowerCooldown
-;columns.powerCooldownColumn.state1.sortAttributes = <PowerCooldown, text>
+;columns.powerCooldownColumn.state1.entry.text = @inat_powerRemainingDisp
+;columns.powerCooldownColumn.state1.sortAttributes = <inat_powerRemaining, text>
 ;columns.powerCooldownColumn.state1.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 ;
 ;columns.powerCooldownColumn.state2.label.text = '$COOLDOWN'
 ;columns.powerCooldownColumn.state2.label.arrowDown = true
-;columns.powerCooldownColumn.state2.entry.text = @PowerCooldown
-;columns.powerCooldownColumn.state2.sortAttributes = <PowerCooldown, text>
+;columns.powerCooldownColumn.state2.entry.text = @inat_powerRemainingDisp
+;columns.powerCooldownColumn.state2.sortAttributes = <inat_powerRemaining, text>
 ;columns.powerCooldownColumn.state2.sortOptions = <{DESCENDING | NUMERIC}, {DESCENDING | CASEINSENSITIVE}>
 
 ; [MAGIC - SHOUT] WORD 1 COLUMN -------------------------------------------
@@ -1425,14 +1425,14 @@ columns.enchantSoulColumn.hidden = false
 
 columns.enchantSoulColumn.state1.label.text = '$SOUL'
 columns.enchantSoulColumn.state1.label.arrowDown = false
-columns.enchantSoulColumn.state1.entry.text = @soulSizeDisplay
-columns.enchantSoulColumn.state1.sortAttributes = <soulSize, text>
+columns.enchantSoulColumn.state1.entry.text = @inat_soulSizeName
+columns.enchantSoulColumn.state1.sortAttributes = <inat_soulSize, text>
 columns.enchantSoulColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 columns.enchantSoulColumn.state2.label.text = '$SOUL'
 columns.enchantSoulColumn.state2.label.arrowDown = true
-columns.enchantSoulColumn.state2.entry.text = @soulSizeDisplay
-columns.enchantSoulColumn.state2.sortAttributes = <soulSize, text>
+columns.enchantSoulColumn.state2.entry.text = @inat_soulSizeName
+columns.enchantSoulColumn.state2.sortAttributes = <inat_soulSize, text>
 columns.enchantSoulColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 ; [CRAFT - ALCHEMY] VALUE COLUMN -------------------------------------------------------
@@ -1525,14 +1525,14 @@ columns.alchTWtColumn.hidden = true
 
 columns.alchTWtColumn.state1.label.text = '$T.WGT'
 columns.alchTWtColumn.state1.label.arrowDown = true
-columns.alchTWtColumn.state1.entry.text = @infoTotalWeight
-columns.alchTWtColumn.state1.sortAttributes = <infoTotalWeight, text>
+columns.alchTWtColumn.state1.entry.text = @inat_totalWeightDisp
+columns.alchTWtColumn.state1.sortAttributes = <inat_totalWeight, text>
 columns.alchTWtColumn.state1.sortOptions = <{DESCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 columns.alchTWtColumn.state2.label.text = '$T.WGT'
 columns.alchTWtColumn.state2.label.arrowDown = false
-columns.alchTWtColumn.state2.entry.text = @infoTotalWeight
-columns.alchTWtColumn.state2.sortAttributes = <infoTotalWeight, text>
+columns.alchTWtColumn.state2.entry.text = @inat_totalWeightDisp
+columns.alchTWtColumn.state2.sortAttributes = <inat_totalWeight, text>
 columns.alchTWtColumn.state2.sortOptions = <{ASCENDING | NUMERIC}, {ASCENDING | CASEINSENSITIVE}>
 
 
@@ -1701,11 +1701,11 @@ magicProperties = <dataMagic>
 ; Item Compound Properties ----------------------------------------------------------------------------------------------------
 compoundProps.sortDataWeapon.propertyToSet = 'weaponStats'
 compoundProps.sortDataWeapon.filter = <'itemType': 1>
-compoundProps.sortDataWeapon.concatenateList = <'infoDamage', 'infoBaseDamage', 'infoSpeed', 'infoReach', 'infoStagger', 'isEnchanted'>
+compoundProps.sortDataWeapon.concatenateList = <'infoDamage', 'inat_baseDamage', 'inat_speed', 'inat_reach', 'inat_stagger', 'isEnchanted'>
 
 compoundProps.sortDataArmor.propertyToSet = 'armorStats'
 compoundProps.sortDataArmor.filter = <'itemType': 2>
-compoundProps.sortDataArmor.concatenateList = <'infoArmor', 'infoBaseArmor', 'warmth', 'coverage', 'infoWarmth', 'isEnchanted'>
+compoundProps.sortDataArmor.concatenateList = <'infoArmor', 'inat_baseArmor', 'inat_frostWarmth', 'inat_frostCoverage', 'inat_ccWarmth', 'isEnchanted'>
 
 compoundProps.sortDataPotion.propertyToSet = 'potionStats'
 compoundProps.sortDataPotion.filter = <'itemType': 3>
@@ -1717,11 +1717,11 @@ compoundProps.sortDataScroll.concatenateList = <'magnitude', 'duration'>
 
 compoundProps.sortDataFood.propertyToSet = 'foodStats'
 compoundProps.sortDataFood.filter = <'itemType': 5>
-compoundProps.sortDataFood.concatenateList = <'SHHunger', 'infoHunger', 'SHThirst', 'restoreCold', 'SHFW', 'fWarmth', 'magnitude', 'duration'>
+compoundProps.sortDataFood.concatenateList = <'inat_shHunger', 'inat_hunger', 'inat_shThirst', 'inat_restoreCold', 'inat_shFortifyWarmth', 'inat_fortifyWarmth', 'magnitude', 'duration'>
 
 compoundProps.sortDataSoulGem.propertyToSet = 'soulGemStats'
 compoundProps.sortDataSoulGem.filter = <'itemType': 9, 'itemClass': 3>
-compoundProps.sortDataSoulGem.concatenateList = <'gemSize', 'canHoldNPCSoul', 'soulSize'>
+compoundProps.sortDataSoulGem.concatenateList = <'inat_gemSize', 'inat_gemCanHoldNPC', 'inat_soulSize'>
 
 itemCompoundProperties = <sortDataWeapon, sortDataArmor, sortDataPotion, sortDataScroll, sortDataFood, sortDataSoulGem>
 
