@@ -4,17 +4,15 @@
 
 - Refactor.
 - **Now requires** [Inventory Atlas](https://www.nexusmods.com/skyrimspecialedition/mods/178801).
-~~- **Now requires** [SkySift](https://www.nexusmods.com/skyrimspecialedition/mods/176741).~~
 - **Now requires** [I4 Alchemy Fix](https://www.nexusmods.com/skyrimspecialedition/mods/141883) (for Skyrim 1.6.318-1.6.1179 or Skyrim VR) OR [I4 for 1.5](https://www.nexusmods.com/skyrimspecialedition/mods/87002) v1.1.0-SE.1+ (for Skyrim 1.5.97) to fix icons not displaying properly in the alchemy menu.
 - **No longer requires** SkyUI AIO Survival (SAS), Dear Diary Dark Mode, Body Slots, Total Value, or any similar mods that directly modify the interface SWF files to assign attribute values. Inventory Atlas now handles assigning attribute values and injects them dynamically into menus, making AIT mostly interface agnostic.
-- **FOMOD:** Updated some descriptions. 
-~~- **SkySift Configs:** ~~
-- **SkyUI Config:**
+- **FOMOD:** Updated some descriptions.
+- **SkyUI Config:** Now uses properties from Inventory Atlas where possible.
 
-## ~4.6.0
+## Version ~4.6.0
 
-- **AIT Translations:** Added new strings: "`$CRIT`" ("CRIT"), "`$CRITICAL DAMAGE`" ("CRITICAL DAMAGE"), "`$FORTIFY EXPOSURE`" ("FORTIFY EXPOSURE"), "`$F.EXP`" ("F.EXP"), "`$ItemWeaponBladestaff`" ("Bladestaff"), "`ItemWeaponClaw`" ("Claw"), "`$ItemWeaponColossalAxe`" ("Colossal Axe"), "`$ItemWeaponColossalHammer`" ("Colossal Hammer"), "`$ItemWeaponFlail`" ("Flail"), "`ItemWeaponLightsaber`" ("Magicka Saber"), "`ItemWeaponTwinDagger`" ("Twin Dagger").
-- **AIT Translation (English):** Changed translations: "`$CC FORTIFY WARMTH`" from ("CC FORTIFY WARMTH") to ("SM FORTIFY WARMTH"), "`CC HUNGER`" from ("CC HUNGER") to ("SM HUNGER"), "`CC RESTORE COLD`" from ("CC RESTORE COLD") to ("SM RESTORE COLD"), "`CC WARMTH`" from ("CC WARMTH") to ("SM WARMTH").
+- **AIT Translations:** Added new strings: "`$CRIT`" ("CRIT"), "`$CRITICAL DAMAGE`" ("CRITICAL DAMAGE"), "`$FORTIFY EXPOSURE`" ("FORTIFY EXPOSURE"), "`$F.EXP`" ("F.EXP"), "`$ItemWeaponBladestaff`" ("Bladestaff"), "`$ItemWeaponClaw`" ("Claw"), "`$ItemWeaponColossalAxe`" ("Colossal Axe"), "`$ItemWeaponColossalHammer`" ("Colossal Hammer"), "`$ItemWeaponFlail`" ("Flail"), "`$ItemWeaponLightsaber`" ("Magicka Saber"), "`$ItemWeaponTwinDagger`" ("Twin Dagger").
+- **AIT Translation (English):** Changed translations: "`$CC FORTIFY WARMTH`" from ("CC FORTIFY WARMTH") to ("SM FORTIFY WARMTH"), "`$CC HUNGER`" from ("CC HUNGER") to ("SM HUNGER"), "`$CC RESTORE COLD`" from ("CC RESTORE COLD") to ("SM RESTORE COLD"), "`$CC WARMTH`" from ("CC WARMTH") to ("SM WARMTH").
 - **I4 Main Module (Spell/AIO):** Minor tweaks and fixes.
 - **I4 Main Module (Weapon/AIO):** Cleanup and add support for more weapon types.
 - **SkyUI Config:** Added critical damage column.
