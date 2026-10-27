@@ -1,5 +1,6 @@
 import configparser
 import os
+#from pathlib import Path
 
 def read_config(file_path, case_sensitive):
 	config = configparser.ConfigParser(comment_prefixes=(";", "#", "//"), inline_comment_prefixes=(";", "#", "//"))
@@ -7,6 +8,14 @@ def read_config(file_path, case_sensitive):
 		config.optionxform = lambda option: option
 	config.read(file_path)
 	return config
+
+def create_text_file(file_path, content):
+	try:
+		with open(file_path, 'w') as file:
+			file.write(content)
+		print(f"INFO: Generated file '{output_file}'.")
+	except Exception as e:
+		print(f"ERROR: Error creating file '{file_path}': {e}")
 
 def exclude_directories(dirs, exclude_list):
 	# if not exclude_list:
@@ -77,9 +86,16 @@ def main():
 					# 	output = output.replace(block_name, content)
 					# 	output = fix_formatting(output)
 
-				with open(output_file, 'w') as f:
-					f.write(output)
-				print(f"INFO: Generated file '{output_file}'.")
+				if os.path.exists(output_file):
+					try:
+						with open(output_file, 'w') as f:
+							f.write(output)
+						print(f"INFO: Generated file '{output_file}'.")
+					except Exception as e:
+						print(f"ERROR: Error writing to file '{output_file}': {e}")
+				else:
+					print(f"INFO: File '{output_file}' can't be found, creating file.")
+					create_text_file(output_file, output)
 
 if __name__ == "__main__":
 	main()
