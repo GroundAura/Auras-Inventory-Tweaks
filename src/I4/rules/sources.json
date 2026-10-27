@@ -14,5 +14,6 @@
   "SHOUTS": "$rootDir/src/I4/rules/SHOUTS",
   "SOULGEMS": "$rootDir/src/I4/rules/SOULGEMS",
   "SPELLS": "$rootDir/src/I4/rules/SPELLS",
-  "WEAPONS": "$rootDir/src/I4/rules/WEAPONS"
+  "WEAPONS": "$rootDir/src/I4/rules/WEAPONS",
+  "PATCH_BOOBIES-BOOKS": "$rootDir/src/I4/rules/PATCH/BOOBIES-BOOKS"
 }

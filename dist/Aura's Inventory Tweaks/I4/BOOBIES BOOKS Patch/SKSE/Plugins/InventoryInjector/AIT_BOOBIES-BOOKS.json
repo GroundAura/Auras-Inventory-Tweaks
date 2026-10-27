@@ -1,0 +1,82 @@
+{
+	"$schema": "https://raw.githubusercontent.com/GroundAura/InventoryInjector/main/docs/InventoryInjector.schema.json",
+	"rules": [
+		{
+			"match": {
+				"formType": "Book",
+				"keywords": [
+					"OCF_BookSpellTome_Other"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemBookSpellTomePower"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"keywords": [
+					"OCF_BookSpellTome_Alteration"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemBookSpellTomeAlteration"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"keywords": [
+					"OCF_BookSpellTome_Illusion"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemBookSpellTomeIllusion"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"keywords": [
+					"OCF_BookSpellTome_Destruction"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemBookSpellTomeDestruction"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"keywords": [
+					"OCF_BookSpellTome_Conjuration"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemBookSpellTomeConjuration"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"keywords": [
+					"OCF_BookSpellTome_Restoration"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemBookSpellTomeRestoration"
+			}
+		},
+		{
+			"match": {
+				"formType": "Book",
+				"keywords": [
+					"OCF_BookSpellTome_Shehai"
+				]
+			},
+			"assign": {
+				"subTypeDisplay": "$ItemBookSpellTomeSwordSing"
+			}
+		}
+	]
+}
